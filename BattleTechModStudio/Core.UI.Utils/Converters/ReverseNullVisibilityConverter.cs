@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace Core.UI.Utils
+namespace Core.UI.Utils.Converters
 {
     public class ReverseNullVisibilityConverter : IValueConverter
     {

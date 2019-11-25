@@ -10,6 +10,18 @@ namespace HomePlugin
         private string _battleTechDlcDirectory;
         private string _modDirectory;
         private string _modCollectionName;
+        private string _modTargetDirectory;
+
+        public string ModTargetDirectory
+        {
+            get => _modTargetDirectory;
+            set
+            {
+                if (value == _modTargetDirectory) return;
+                _modTargetDirectory = value;
+                OnPropertyChanged();
+            }
+        }
 
         public string ModCollectionName
         {

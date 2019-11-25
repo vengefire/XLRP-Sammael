@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace Core.UI.Utils
+namespace Core.UI.Utils.Utils
 {
     public class MarginSetter
     {
