@@ -16,6 +16,8 @@ namespace HomePlugin
         {
             HomePluginViewModel = new HomePluginViewModel(new HomePluginModel());
             InitializeComponent();
+            DataContext = HomePluginViewModel;
+            PluginCommands = new List<IPluginCommand>();
         }
 
         public string ModuleName => @"Battle Tech Mod Studio - Home";

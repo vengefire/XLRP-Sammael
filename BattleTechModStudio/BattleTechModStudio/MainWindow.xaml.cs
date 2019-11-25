@@ -47,13 +47,13 @@ namespace BattleTechModStudio
             var tabControl = sender as TabControl;
 
             // Every Tab Control in the entire app, I tell you... ffs.
-            if (tabControl == null || tabControl.Name != "tabPages")
+            if (tabControl == null || tabControl.Name != "TabPages")
             {
                 return;
             }
 
             // Remove non-common tool bars...
-            var toolbars = ToolbarTray.ToolBars.Where(bar => bar.Name != "tbCommon").ToList();
+            var toolbars = ToolbarTray.ToolBars.Where(bar => bar.Name != "TbCommon").ToList();
             toolbars.ForEach(bar => ToolbarTray.ToolBars.Remove(bar));
 
             var tabItem = (sender as TabControl).SelectedItem as TabItem;

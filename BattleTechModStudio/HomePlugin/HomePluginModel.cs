@@ -15,6 +15,7 @@ namespace HomePlugin
             {
                 if (Equals(value, _settings)) return;
                 _settings = value;
+                _settings.PropertyChanged += (sender, args) => OnPropertyChanged(args.PropertyName);
                 OnPropertyChanged();
             }
         }
