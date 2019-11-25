@@ -1,0 +1,86 @@
+﻿<Window x:Class="BattleTechModStudio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:utils="clr-namespace:Core.UI.Utils;assembly=Core.UI.Utils"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:commands="clr-namespace:BattleTechModStudio.Commands"
+        mc:Ignorable="d"
+        Title="BattleTech - Mod Studio" Height="1024" Width="1280">
+    <Window.Resources>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="commands:CommonCommands.SaveCurrentSettingsCommand" />
+    </Window.CommandBindings>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Settings" />
+                <MenuItem Header="E_xit" />
+            </MenuItem>
+            <MenuItem Header="_Plugins" />
+            <MenuItem Header="_About" />
+        </Menu>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Expander Grid.Row="0" ExpandDirection="Up">
+                <Expander.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Messages"></Label>
+                        <Button Content="Clear List" Margin="5,2,0,2" Click="ClearMessages_OnClick"></Button>
+                    </StackPanel>
+                </Expander.Header>
+                <ListView ItemsSource="{Binding Messages, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"></ListView>
+            </Expander>
+            <StatusBar Grid.Row="1">
+                <StatusBar.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                    </ItemsPanelTemplate>
+                </StatusBar.ItemsPanel>
+                <StatusBarItem>
+                    <TextBlock Name="LblStatus">
+                        Ready
+                    </TextBlock>
+                </StatusBarItem>
+                <Separator Grid.Column="1" />
+                <StatusBarItem Grid.Column="2">
+                    <TextBlock Text="c:\path\of\current\file.txt" />
+                </StatusBarItem>
+                <Separator Grid.Column="3" />
+                <StatusBarItem Grid.Column="4">
+                    <ProgressBar Value="50" Width="90" Height="16" />
+                </StatusBarItem>
+            </StatusBar>
+        </Grid>
+        <xctk:BusyIndicator Name="BusyIndicator" IsBusy="{Binding IsBusy, UpdateSourceTrigger=PropertyChanged}">
+            <xctk:BusyIndicator.Content>
+                <DockPanel>
+                    <ToolBarTray Name="ToolbarTray" DockPanel.Dock="Bottom" utils:MarginSetter.Margin="5">
+                        <ToolBar Name="TbCommon">
+                            <Button Content="Save Current Settings"
+                                    Command="commands:CommonCommands.SaveCurrentSettingsCommand"
+                                    CommandParameter="{Binding CurrentPluginControl}" />
+                        </ToolBar>
+                    </ToolBarTray>
+                    <TabControl Name="TabPages" SelectionChanged="TabPages_SelectionChanged" />
+                </DockPanel>
+            </xctk:BusyIndicator.Content>
+        </xctk:BusyIndicator>
+    </DockPanel>
+</Window>
