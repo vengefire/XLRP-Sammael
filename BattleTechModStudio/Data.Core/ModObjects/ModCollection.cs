@@ -56,8 +56,8 @@ namespace Data.Core.ModObjects
             // Phase 2 - Check each mods dependency validity. We can only do this after setting mod inter-dependency in phase 1
             Mods
                 .Where(mod => mod.DependsOn.Any())
-                //.AsParallel().ForAll(
-                .ToList().ForEach(
+                .AsParallel().ForAll(
+                //.ToList().ForEach(
                     mod =>
                     {
                         var dependencyTree = GetModDependenciesWithLevel(mod, 1, null);
