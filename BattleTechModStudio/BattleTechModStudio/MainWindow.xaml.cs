@@ -3,9 +3,9 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using BattleTechModStudio.Commands;
-using Core.Interfaces.Data;
-using Core.Interfaces.Models;
-using Core.Services;
+using UI.Core.Interfaces.Data;
+using UI.Core.Interfaces.Models;
+using UI.Core.Services;
 using Framework.Interfaces.Injection;
 
 namespace BattleTechModStudio

@@ -1,5 +1,5 @@
 ﻿using System.Windows.Input;
-using Core.Interfaces.Services;
+using UI.Core.Interfaces.Services;
 
 namespace BattleTechModStudio.Commands
 {

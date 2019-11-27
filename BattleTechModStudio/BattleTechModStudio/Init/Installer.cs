@@ -4,9 +4,9 @@ using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Services.Logging.Log4netIntegration;
 using Castle.Windsor;
-using Core.Interfaces.Models;
-using Core.Interfaces.Services;
-using Core.Services;
+using UI.Core.Interfaces.Models;
+using UI.Core.Interfaces.Services;
+using UI.Core.Services;
 using Framework.Interfaces.Logging;
 
 namespace BattleTechModStudio.Init

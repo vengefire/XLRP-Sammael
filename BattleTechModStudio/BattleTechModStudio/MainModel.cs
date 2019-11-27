@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using Core.Data;
-using Core.Interfaces.Models;
-using Core.Interfaces.Services;
-using Core.Services.Annotations;
+using UI.Core.Data;
+using UI.Core.Interfaces.Models;
+using UI.Core.Interfaces.Services;
+using UI.Core.Services.Annotations;
 
 namespace BattleTechModStudio
 {

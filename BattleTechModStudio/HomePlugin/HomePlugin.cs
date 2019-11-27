@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Core.Interfaces.Data;
+using UI.Core.Interfaces.Data;
 
 namespace HomePlugin
 {

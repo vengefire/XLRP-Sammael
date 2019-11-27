@@ -138,21 +138,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core.Data\Core.Data.csproj">
+    <ProjectReference Include="..\UI.Core.Data\UI.Core.Data.csproj">
       <Project>{E361D3AD-E3D7-47A7-94BB-CF0D72A1B99F}</Project>
-      <Name>Core.Data</Name>
+      <Name>UI.Core.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Core.Interfaces\Core.Interfaces.csproj">
+    <ProjectReference Include="..\UI.Core.Interfaces\UI.Core.Interfaces.csproj">
       <Project>{C304D838-9C62-4FAD-B774-8EC56B85F4E8}</Project>
-      <Name>Core.Interfaces</Name>
+      <Name>UI.Core.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Core.Services\Core.Services.csproj">
+    <ProjectReference Include="..\UI.Core.Services\UI.Core.Services.csproj">
       <Project>{1A03C409-7689-4786-91CA-9B0B40C93E77}</Project>
-      <Name>Core.Services</Name>
+      <Name>UI.Core.Services</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Core.UI.Utils\Core.UI.Utils.csproj">
+    <ProjectReference Include="..\UI.Core.Utils\UI.Core.Utils.csproj">
       <Project>{632dce9d-276e-4ee5-ab71-65f73a43a837}</Project>
-      <Name>Core.UI.Utils</Name>
+      <Name>UI.Core.Utils</Name>
     </ProjectReference>
     <ProjectReference Include="..\Framework\Framework.Interfaces\Framework.Interfaces.csproj">
       <Project>{10be1f82-995b-4a1b-ae48-aff3b784f24b}</Project>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
-using Core.Interfaces.Data;
-using Core.Interfaces.Services;
+using UI.Core.Interfaces.Data;
+using UI.Core.Interfaces.Services;
 
 namespace BattleTechModStudio.Commands
 {

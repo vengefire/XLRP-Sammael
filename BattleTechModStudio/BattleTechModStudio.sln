@@ -5,13 +5,13 @@ VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleTechModStudio", "BattleTechModStudio\BattleTechModStudio.csproj", "{5EA7D02B-51CA-42F8-B1A3-87431C318FE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Interfaces", "Core.Interfaces\Core.Interfaces.csproj", "{C304D838-9C62-4FAD-B774-8EC56B85F4E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Core.Interfaces", "UI.Core.Interfaces\UI.Core.Interfaces.csproj", "{C304D838-9C62-4FAD-B774-8EC56B85F4E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.UI.Utils", "Core.UI.Utils\Core.UI.Utils.csproj", "{632DCE9D-276E-4EE5-AB71-65F73A43A837}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Core.Utils", "UI.Core.Utils\UI.Core.Utils.csproj", "{632DCE9D-276E-4EE5-AB71-65F73A43A837}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Services", "Core.Services\Core.Services.csproj", "{1A03C409-7689-4786-91CA-9B0B40C93E77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Core.Services", "UI.Core.Services\UI.Core.Services.csproj", "{1A03C409-7689-4786-91CA-9B0B40C93E77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Data", "Core.Data\Core.Data.csproj", "{E361D3AD-E3D7-47A7-94BB-CF0D72A1B99F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Core.Data", "UI.Core.Data\UI.Core.Data.csproj", "{E361D3AD-E3D7-47A7-94BB-CF0D72A1B99F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{B03F72BA-2873-400B-9287-EDB8FFBB289F}"
 EndProject
