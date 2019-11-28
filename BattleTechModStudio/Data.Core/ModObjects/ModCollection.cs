@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using Data.Core.Annotations;
-using Data.Core.Enums;
 
 namespace Data.Core.ModObjects
 {
@@ -96,9 +94,9 @@ namespace Data.Core.ModObjects
             }
         }
 
-        public void ExpandManifests()
+        public void ExpandManifestGroups()
         {
-            ValidMods.ToList().ForEach(mod => mod.Manifest.ForEach(entry => entry.Expand(mod.ModDirectory)));
+            ValidMods.ToList().ForEach(mod => mod.ExpandManifestEntries());
         }
     }
 }

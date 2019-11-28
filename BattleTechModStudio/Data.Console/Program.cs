@@ -40,7 +40,7 @@ namespace Data.Console
 
             var typeEnumString = TypeEnumGenerator.GenerateEnum(
                 TypeEnumGenerator.GetUniqueTypes(
-                    modCollection.ValidMods.SelectMany(mod => mod.Manifest.Select(entry => entry)).ToList()
+                    modCollection.ValidMods.SelectMany(mod => mod.ManifestEntryGroups.Select(entry => entry)).ToList()
                 ).ToList(),
                 "",
                 "GameObjectTypeEnum"
@@ -50,7 +50,7 @@ namespace Data.Console
                                      $"{typeEnumString}");
 
             // TODO: Solve the null list from JSON source issue. Default value to empty list?
-            var weapons = modCollection.Mods.SelectMany(mod => mod.Manifest.Where(entry => entry.ManifestObjectType == GameObjectTypeEnum.WeaponDef).SelectMany(entry => entry.ManifestSourceFiles.Select(info => info.Name))).Distinct();
+            var weapons = modCollection.Mods.SelectMany(mod => mod.ManifestEntryGroups.Where(entry => entry.ManifestGroupObjectType == GameObjectTypeEnum.WeaponDef).SelectMany(entry => entry.ManifestSourceFiles.Select(info => info.Name))).Distinct();
             System.Console.WriteLine($"Distinct Weapon Definitions:\r\n" +
                                      $"{string.Join("\r\n", weapons)}");
 

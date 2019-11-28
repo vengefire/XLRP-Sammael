@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using Data.Core.ModObjects.Generated;
 
 namespace Data.Core.ModObjects
 {
@@ -15,5 +17,15 @@ namespace Data.Core.ModObjects
 
         public int LoadCycle { get; set; }
         public DirectoryInfo ModDirectory { get; set; }
+
+        public IEnumerable<ManifestEntry> ManifestEntries()
+        {
+            return ManifestEntryGroups.SelectMany(group => group.ManifestEntries);
+        }
+
+        public void ExpandManifestEntries()
+        {
+            ManifestEntryGroups.ForEach(entry => entry.Expand(ModDirectory));
+        }
     }
 }

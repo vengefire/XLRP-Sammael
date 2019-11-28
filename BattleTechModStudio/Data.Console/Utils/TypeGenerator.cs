@@ -7,7 +7,7 @@ namespace Data.Console.Utils
 {
     internal static class TypeEnumGenerator
     {
-        public static IEnumerable<string> GetUniqueTypes(List<ManifestEntry> manifestEntries)
+        public static IEnumerable<string> GetUniqueTypes(List<ManifestEntryGroup> manifestEntries)
         {
             return manifestEntries.Select(entry => entry.Type).ToList().Distinct().OrderBy(s => s);
         }

@@ -56,7 +56,7 @@ namespace Data.Core.ModObjects
 
         [JsonProperty("CustomResourceTypes")] public List<string> CustomResourceTypes { get; set; } = new List<string>();
 
-        [JsonProperty("Manifest")] public List<ManifestEntry> Manifest { get; set; } = new List<ManifestEntry>();
+        [JsonProperty("Manifest")] public List<ManifestEntryGroup> ManifestEntryGroups { get; set; } = new List<ManifestEntryGroup>();
 
         [JsonProperty("LoadImplicitManifest")] public bool LoadImplicitManifest { get; set; }
 

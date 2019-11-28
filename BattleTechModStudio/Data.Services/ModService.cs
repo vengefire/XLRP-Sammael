@@ -15,9 +15,11 @@ namespace Data.Services
                 .ToList().ForEach(
                     directory => { modCollection.AddMod(LoadModBaseFromDirectory(directory)); }
                 );
+
             modCollection.ProcessModDependencies();
             modCollection.ProcessModLoadOrder();
-            modCollection.ExpandManifests();
+            modCollection.ExpandManifestGroups();
+
             return modCollection;
         }
 

@@ -50,8 +50,10 @@
     <Compile Include="GameObjects\Description.cs" />
     <Compile Include="GameObjects\Gear\WeaponBase.cs" />
     <Compile Include="GameObjects\JsonObjectBase.cs" />
-    <Compile Include="ModObjects\ManifestEntry.cs" />
+    <Compile Include="Misc\Utils.cs" />
     <Compile Include="ModObjects\Generated\ManifestEntry.cs" />
+    <Compile Include="ModObjects\ManifestEntryGroup.cs" />
+    <Compile Include="ModObjects\Generated\ManifestEntryGroup.cs" />
     <Compile Include="ModObjects\Mod.cs" />
     <Compile Include="ModObjects\Generated\Mod.cs" />
     <Compile Include="ModObjects\ModCollection.cs" />
