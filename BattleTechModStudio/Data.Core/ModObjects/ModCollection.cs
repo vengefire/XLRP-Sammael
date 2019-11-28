@@ -10,6 +10,9 @@ namespace Data.Core.ModObjects
     {
         public List<Mod> Mods { get; } = new List<Mod>();
 
+        public IEnumerable<Mod> ValidMods => Mods.Where(mod => mod.IsValid);
+        public IEnumerable<Mod> InvalidMods => Mods.Where(mod => !mod.IsValid);
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
@@ -27,8 +30,7 @@ namespace Data.Core.ModObjects
         {
             // Phase 1 - Set object inter-dependencies...
             Mods
-                .AsParallel().ForAll(
-                    //.ToList().ForEach(
+                .ToList().ForEach(
                     mod =>
                     {
                         if (mod.ConflictsWithModNames != null && mod.ConflictsWithModNames.Any())
@@ -56,8 +58,7 @@ namespace Data.Core.ModObjects
             // Phase 2 - Check each mods dependency validity. We can only do this after setting mod inter-dependency in phase 1
             Mods
                 .Where(mod => mod.DependsOn.Any())
-                .AsParallel().ForAll(
-                //.ToList().ForEach(
+                .ToList().ForEach(
                     mod =>
                     {
                         var dependencyTree = GetModDependenciesWithLevel(mod, 1, null);
@@ -66,10 +67,6 @@ namespace Data.Core.ModObjects
                         var invalidDependencies = dependencyTree.Where(o => !o.mod.IsValid).Select(o => o.mod.Name);
                         invalidDependencies.ToList().ForEach(s => mod.InvalidReasonList.Add($"Dependency [{s}] is invalid."));
                         mod.IsValid = !mod.InvalidReasonList.Any();
-
-                        /*var invalidDependencies = mod.DependsOn.Where(mod1 => !mod1.IsValid).Select(mod1 => mod1.Name);
-                        invalidDependencies.ToList().ForEach(s => mod.InvalidReasonList.Add($"Dependency [{s}] is invalid."));
-                        mod.IsValid = !mod.InvalidReasonList.Any();*/
                     });
         }
 
@@ -78,7 +75,7 @@ namespace Data.Core.ModObjects
             dependencies = dependencies ?? new List<dynamic>();
             mod.DependsOn.ForEach(mod1 =>
             {
-                dependencies.Add(new {mod = mod1, level = level});
+                dependencies.Add(new {mod = mod1, level});
                 GetModDependenciesWithLevel(mod1, level + 1, dependencies);
             });
             return dependencies;
@@ -86,7 +83,24 @@ namespace Data.Core.ModObjects
 
         public void ProcessModLoadOrder()
         {
-            var modsToLoad = Mods.Where(mod => mod.IsValid);
+            var remainingModsToLoad = Mods.Where(mod => mod.IsValid).ToList();
+            var modsLoaded = new List<Mod>(remainingModsToLoad.Count());
+            var loadOrder = 0;
+            var loadCycle = 0;
+            while (remainingModsToLoad.Any())
+            {
+                loadCycle += 1;
+                var modsToLoad = remainingModsToLoad
+                    .Where(mod => mod.DependsOn.All(mod1 => modsLoaded.Contains(mod1) && mod.OptionallyDependsOn.All(mod2 => modsLoaded.Contains(mod2))))
+                    .OrderBy(mod => mod.Name).ToList();
+                modsToLoad.ForEach(mod =>
+                {
+                    mod.LoadOrder = ++loadOrder;
+                    mod.LoadCycle = loadCycle;
+                    modsLoaded.Add(mod);
+                    remainingModsToLoad.Remove(mod);
+                });
+            }
         }
     }
 }

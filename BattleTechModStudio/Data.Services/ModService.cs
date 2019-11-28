@@ -17,6 +17,7 @@ namespace Data.Services
                     directory => { modCollection.AddMod(LoadModBaseFromDirectory(directory)); }
                     );
             modCollection.ProcessModDependencies();
+            modCollection.ProcessModLoadOrder();
             return modCollection;
         }
 

@@ -7,19 +7,33 @@ namespace Data.Console
     {
         private static void Main(string[] args)
         {
-            var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
+            // var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
+            var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
 
             var modService = new ModService();
             var modCollection = modService.LoadModCollectionFromDirectory(sourceDirectory);
 
-            System.Console.WriteLine($"Summary for mods loaded from [{sourceDirectory}]:\r\n" +
-                                     $"Mods Loaded - {modCollection.Mods.Count}\r\n" +
-                                     $"Invalid Mods - {modCollection.Mods.Count(mod => !mod.IsValid)}\r\n");
+            var validMods = modCollection.ValidMods.ToList();
+            var invalidMods = modCollection.InvalidMods.ToList();
 
-            modCollection.Mods.Where(mod => !mod.IsValid).ToList().ForEach(mod =>
+            System.Console.WriteLine($"Summary for mods loaded from [{sourceDirectory}]:\r\n" +
+                                     $"Mods Loaded - {validMods.Count}\r\n" +
+                                     $"Invalid Mods - {invalidMods.Count}\r\n");
+
+            System.Console.WriteLine("Invalid Mods:");
+            invalidMods.ForEach(mod =>
             {
-                System.Console.WriteLine($"Mod [{mod.Name}] is invalid for the following reasons:");
-                System.Console.WriteLine($"{string.Join("\r\n", mod.InvalidReasonList)}\r\n");
+                System.Console.WriteLine($"{mod.Name}\r\n" +
+                                         $"\t{string.Join("\r\n", mod.InvalidReasonList)}");
+            });
+            System.Console.WriteLine();
+
+            System.Console.WriteLine("Valid Mods Load Order : ");
+            validMods.GroupBy(mod => mod.LoadCycle).OrderBy(mods => mods.Key).ToList().ForEach(mods =>
+            {
+                System.Console.WriteLine($"Load Cycle [{mods.Key}]:\r\n" +
+                                         $"{new string('-', 10)}\r\n" +
+                                         $"{string.Join("\r\n", mods.OrderBy(mod => mod.LoadOrder).Select(mod => $"[{mod.LoadOrder,-3}] - {mod.Name}"))}\r\n");
             });
 
             System.Console.WriteLine("Press any key to exit...");

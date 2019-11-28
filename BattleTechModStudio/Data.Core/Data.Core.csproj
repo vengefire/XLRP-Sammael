@@ -48,6 +48,7 @@
     <Compile Include="GameObjects\ComponentTags.cs" />
     <Compile Include="GameObjects\Description.cs" />
     <Compile Include="GameObjects\Weapon.cs" />
+    <Compile Include="ModObjects\GameObjectBase.cs" />
     <Compile Include="ModObjects\ManifestBase.cs" />
     <Compile Include="ModObjects\Mod.cs" />
     <Compile Include="ModObjects\ModBase.cs" />

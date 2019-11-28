@@ -14,7 +14,7 @@ using Newtonsoft.Json.Converters;
 
 namespace Data.Core.ModObjects
 {
-    public partial class ModBase
+    public partial class ModBase : GameObjectBase
     {
         [JsonProperty("Name")] public string Name { get; set; }
 
