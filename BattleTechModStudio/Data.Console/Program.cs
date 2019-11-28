@@ -9,8 +9,8 @@ namespace Data.Console
     {
         private static void Main(string[] args)
         {
-            // var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
-            var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
+            var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
+            //var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
 
             var modService = new ModService();
             var modCollection = modService.LoadModCollectionFromDirectory(sourceDirectory);
@@ -49,7 +49,8 @@ namespace Data.Console
             System.Console.WriteLine($"Generated Type Enum:\r\n" +
                                      $"{typeEnumString}");
 
-            // TODO: Solve the null list from JSON source issue. Default value to empty list?
+            modCollection.ExpandManifestGroups();
+
             var weapons = modCollection.Mods.SelectMany(mod => mod.ManifestEntries().Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => entry.Id)).Distinct();
             System.Console.WriteLine($"Distinct Weapon Definitions:\r\n" +
                                      $"{string.Join("\r\n", weapons)}");

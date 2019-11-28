@@ -18,7 +18,6 @@ namespace Data.Services
 
             modCollection.ProcessModDependencies();
             modCollection.ProcessModLoadOrder();
-            modCollection.ExpandManifestGroups();
 
             return modCollection;
         }
