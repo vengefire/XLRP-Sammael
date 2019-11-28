@@ -50,7 +50,7 @@ namespace Data.Console
                                      $"{typeEnumString}");
 
             // TODO: Solve the null list from JSON source issue. Default value to empty list?
-            var weapons = modCollection.Mods.SelectMany(mod => mod.ManifestEntryGroups.Where(entry => entry.ManifestGroupObjectType == GameObjectTypeEnum.WeaponDef).SelectMany(entry => entry.ManifestSourceFiles.Select(info => info.Name))).Distinct();
+            var weapons = modCollection.Mods.SelectMany(mod => mod.ManifestEntries().Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => entry.Id)).Distinct();
             System.Console.WriteLine($"Distinct Weapon Definitions:\r\n" +
                                      $"{string.Join("\r\n", weapons)}");
 
