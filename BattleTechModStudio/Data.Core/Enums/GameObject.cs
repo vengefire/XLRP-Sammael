@@ -1,0 +1,37 @@
+﻿namespace Data.Core.Enums
+{
+    public enum GameObjectTypeEnum
+    {
+        AbilityDef,
+        AdvancedJSONMerge,
+        AmmunitionBoxDef,
+        AmmunitionDef,
+        AssetBundle,
+        CCCategories,
+        CCDefaults,
+        CCTagRestrictions,
+        ChassisDef,
+        ContractOverride,
+        DesignMaskDef,
+        HardpointDataDef,
+        HeatSinkDef,
+        ItemCollectionDef,
+        LanceDef,
+        MEBonusDescriptions,
+        MechDef,
+        MECriticalEffects,
+        MovementCapabilitiesDef,
+        PathingCapabilitiesDef,
+        Prefab,
+        SimGameEventDef,
+        SimGameMilestoneSet,
+        Sprite,
+        Texture2D,
+        TurretChassisDef,
+        TurretDef,
+        UpgradeDef,
+        VehicleChassisDef,
+        VehicleDef,
+        WeaponDef
+    }
+}

@@ -1,4 +1,6 @@
 ﻿using System.Linq;
+using Data.Console.Utils;
+using Data.Core.Enums;
 using Data.Services;
 
 namespace Data.Console
@@ -35,6 +37,22 @@ namespace Data.Console
                                          $"{new string('-', 10)}\r\n" +
                                          $"{string.Join("\r\n", mods.OrderBy(mod => mod.LoadOrder).Select(mod => $"[{mod.LoadOrder,-3}] - {mod.Name}"))}\r\n");
             });
+
+            var typeEnumString = TypeEnumGenerator.GenerateEnum(
+                TypeEnumGenerator.GetUniqueTypes(
+                    modCollection.ValidMods.SelectMany(mod => mod.Manifest.Select(entry => entry)).ToList()
+                ).ToList(),
+                "",
+                "GameObjectTypeEnum"
+            );
+
+            System.Console.WriteLine($"Generated Type Enum:\r\n" +
+                                     $"{typeEnumString}");
+
+            // TODO: Solve the null list from JSON source issue. Default value to empty list?
+            var weapons = modCollection.Mods.SelectMany(mod => mod.Manifest.Where(entry => entry.ManifestObjectType == GameObjectTypeEnum.WeaponDef).SelectMany(entry => entry.ManifestSourceFiles.Select(info => info.Name))).Distinct();
+            System.Console.WriteLine($"Distinct Weapon Definitions:\r\n" +
+                                     $"{string.Join("\r\n", weapons)}");
 
             System.Console.WriteLine("Press any key to exit...");
             System.Console.ReadKey();

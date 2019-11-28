@@ -4,17 +4,18 @@
 //
 //    using Data.Core.ModObjects;
 //
-//    var mod = ModBase.FromJson(jsonString);
+//    var mod = Mod.FromJson(jsonString);
 
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using Data.Core.GameObjects;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
 namespace Data.Core.ModObjects
 {
-    public partial class ModBase : GameObjectBase
+    public partial class Mod : JsonObjectBase
     {
         [JsonProperty("Name")] public string Name { get; set; }
 
@@ -38,11 +39,11 @@ namespace Data.Core.ModObjects
 
         [JsonProperty("BattleTechVersionMax")] public string BattleTechVersionMax { get; set; }
 
-        [JsonProperty("DependsOn")] public List<string> DependsOnModNames { get; set; }
+        [JsonProperty("DependsOn")] public List<string> DependsOnModNames { get; set; } = new List<string>();
 
-        [JsonProperty("ConflictsWith")] public List<string> ConflictsWithModNames { get; set; }
+        [JsonProperty("ConflictsWith")] public List<string> ConflictsWithModNames { get; set; } = new List<string>();
 
-        [JsonProperty("OptionallyDependsOn")] public List<string> OptionallyDependsOnModNames { get; set; }
+        [JsonProperty("OptionallyDependsOn")] public List<string> OptionallyDependsOnModNames { get; set; } = new List<string>();
 
         [JsonProperty("DLL")] public string DllName { get; set; }
 
@@ -53,26 +54,26 @@ namespace Data.Core.ModObjects
 
         [JsonProperty("Settings")] public object Settings { get; set; }
 
-        [JsonProperty("CustomResourceTypes")] public List<string> CustomResourceTypes { get; set; }
+        [JsonProperty("CustomResourceTypes")] public List<string> CustomResourceTypes { get; set; } = new List<string>();
 
-        [JsonProperty("Manifest")] public List<ManifestBase> Manifest { get; set; }
+        [JsonProperty("Manifest")] public List<ManifestEntry> Manifest { get; set; } = new List<ManifestEntry>();
 
         [JsonProperty("LoadImplicitManifest")] public bool LoadImplicitManifest { get; set; }
 
         [JsonProperty("IgnoreLoadFailure")] public bool IgnoreLoadFailure { get; set; }
     }
 
-    public partial class ModBase
+    public partial class Mod
     {
-        public static ModBase FromJson(string json)
+        public static Mod FromJson(string json)
         {
-            return JsonConvert.DeserializeObject<ModBase>(json, Converter.Settings);
+            return JsonConvert.DeserializeObject<Mod>(json, Converter.Settings);
         }
     }
 
     public static class Serialize
     {
-        public static string ToJson(this ModBase self)
+        public static string ToJson(this Mod self)
         {
             return JsonConvert.SerializeObject(self, Converter.Settings);
         }

@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 
-namespace Data.Core.ModObjects
+namespace Data.Core.GameObjects
 {
-    public class GameObjectBase
+    public class JsonObjectBase
     {
         public void InitFromBase<TBase>(TBase baseObject)
         {

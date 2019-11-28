@@ -1,22 +1,19 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 
 namespace Data.Core.ModObjects
 {
-    public class Mod : ModBase
+    public partial class Mod
     {
         public bool IsValid = false;
 
-        public Mod(ModBase modBase)
-        {
-            InitFromBase(modBase);
-        }
-
-        public List<Mod> DependsOn { get; set; } = new List<Mod>();
-        public List<Mod> ConflictsWith { get; set; } = new List<Mod>();
-        public List<Mod> OptionallyDependsOn { get; set; } = new List<Mod>();
+        public List<Mod> DependsOnMods { get; set; } = new List<Mod>();
+        public List<Mod> ConflictsWithMods { get; set; } = new List<Mod>();
+        public List<Mod> OptionallyDependsOnMods { get; set; } = new List<Mod>();
         public List<string> InvalidReasonList { get; } = new List<string>();
         public int LoadOrder { get; set; }
 
         public int LoadCycle { get; set; }
+        public DirectoryInfo ModDirectory { get; set; }
     }
 }

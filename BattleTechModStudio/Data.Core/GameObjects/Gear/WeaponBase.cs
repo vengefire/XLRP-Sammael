@@ -4,16 +4,16 @@
 //
 //    using Data.Core.GameObjects;
 //
-//    var Weapon = Weapon.FromJson(jsonString);
+//    var WeaponBase = WeaponBase.FromJson(jsonString);
 
 using System.Collections.Generic;
 using System.Globalization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace Data.Core.GameObjects
+namespace Data.Core.GameObjects.Gear
 {
-    public partial class Weapon
+    public partial class WeaponBase
     {
         [JsonProperty("Category")] public string Category { get; set; }
 
@@ -101,17 +101,17 @@ namespace Data.Core.GameObjects
         [JsonProperty("ComponentTags")] public ComponentTags ComponentTags { get; set; }
     }
 
-    public partial class Weapon
+    public partial class WeaponBase
     {
-        public static Weapon FromJson(string json)
+        public static WeaponBase FromJson(string json)
         {
-            return JsonConvert.DeserializeObject<Weapon>(json, Converter.Settings);
+            return JsonConvert.DeserializeObject<WeaponBase>(json, Converter.Settings);
         }
     }
 
     public static class Serialize
     {
-        public static string ToJson(this Weapon self)
+        public static string ToJson(this WeaponBase self)
         {
             return JsonConvert.SerializeObject(self, Converter.Settings);
         }

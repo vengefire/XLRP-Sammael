@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using Data.Core.Annotations;
+using Data.Core.Enums;
 
 namespace Data.Core.ModObjects
 {
@@ -21,9 +23,9 @@ namespace Data.Core.ModObjects
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public void AddMod(ModBase modBase)
+        public void AddMod(Mod mod)
         {
-            Mods.Add(new Mod(modBase));
+            Mods.Add(mod);
         }
 
         public void ProcessModDependencies()
@@ -33,31 +35,22 @@ namespace Data.Core.ModObjects
                 .ToList().ForEach(
                     mod =>
                     {
-                        if (mod.ConflictsWithModNames != null && mod.ConflictsWithModNames.Any())
-                        {
-                            mod.ConflictsWith = Mods.Where(mod1 => mod.ConflictsWithModNames.Contains(mod1.Name)).ToList();
-                            var conflictingMods = mod.ConflictsWith.Select(mod1 => mod1.Name);
-                            conflictingMods.ToList().ForEach(s => mod.InvalidReasonList.Add($"Conflicting dependency [{s}]"));
-                        }
+                        mod.ConflictsWithMods = Mods.Where(mod1 => mod.ConflictsWithModNames.Contains(mod1.Name)).ToList();
+                        var conflictingMods = mod.ConflictsWithMods.Select(mod1 => mod1.Name);
+                        conflictingMods.ToList().ForEach(s => mod.InvalidReasonList.Add($"Conflicting dependency [{s}]"));
 
-                        if (mod.OptionallyDependsOnModNames != null && mod.OptionallyDependsOnModNames.Any())
-                        {
-                            mod.OptionallyDependsOn = Mods.Where(mod1 => mod.OptionallyDependsOnModNames.Contains(mod1.Name)).ToList();
-                        }
+                        mod.OptionallyDependsOnMods = Mods.Where(mod1 => mod.OptionallyDependsOnModNames.Contains(mod1.Name)).ToList();
 
-                        if (mod.DependsOnModNames != null && mod.DependsOnModNames.Any())
-                        {
-                            mod.DependsOn = Mods.Where(mod1 => mod.DependsOnModNames.Contains(mod1.Name)).ToList();
-                            var missingDependencies = mod.DependsOnModNames.Except(mod.DependsOn.Select(mod1 => mod1.Name));
-                            missingDependencies.ToList().ForEach(s => mod.InvalidReasonList.Add($"Missing dependency [{s}]"));
-                        }
+                        mod.DependsOnMods = Mods.Where(mod1 => mod.DependsOnModNames.Contains(mod1.Name)).ToList();
+                        var missingDependencies = mod.DependsOnModNames.Except(mod.DependsOnMods.Select(mod1 => mod1.Name));
+                        missingDependencies.ToList().ForEach(s => mod.InvalidReasonList.Add($"Missing dependency [{s}]"));
 
                         mod.IsValid = !mod.InvalidReasonList.Any();
                     });
 
-            // Phase 2 - Check each mods dependency validity. We can only do this after setting mod inter-dependency in phase 1
+            // Phase 2 - Check each mods dependency validity. We can only do this after setting Mod inter-dependency in phase 1
             Mods
-                .Where(mod => mod.DependsOn.Any())
+                .Where(mod => mod.DependsOnMods.Any())
                 .ToList().ForEach(
                     mod =>
                     {
@@ -73,7 +66,7 @@ namespace Data.Core.ModObjects
         private List<dynamic> GetModDependenciesWithLevel(Mod mod, int level, List<dynamic> dependencies)
         {
             dependencies = dependencies ?? new List<dynamic>();
-            mod.DependsOn.ForEach(mod1 =>
+            mod.DependsOnMods.ForEach(mod1 =>
             {
                 dependencies.Add(new {mod = mod1, level});
                 GetModDependenciesWithLevel(mod1, level + 1, dependencies);
@@ -91,7 +84,7 @@ namespace Data.Core.ModObjects
             {
                 loadCycle += 1;
                 var modsToLoad = remainingModsToLoad
-                    .Where(mod => mod.DependsOn.All(mod1 => modsLoaded.Contains(mod1) && mod.OptionallyDependsOn.All(mod2 => modsLoaded.Contains(mod2))))
+                    .Where(mod => mod.DependsOnMods.All(mod1 => modsLoaded.Contains(mod1) && mod.OptionallyDependsOnMods.All(mod2 => modsLoaded.Contains(mod2))))
                     .OrderBy(mod => mod.Name).ToList();
                 modsToLoad.ForEach(mod =>
                 {
@@ -101,6 +94,11 @@ namespace Data.Core.ModObjects
                     remainingModsToLoad.Remove(mod);
                 });
             }
+        }
+
+        public void ExpandManifests()
+        {
+            ValidMods.ToList().ForEach(mod => mod.Manifest.ForEach(entry => entry.Expand(mod.ModDirectory)));
         }
     }
 }
