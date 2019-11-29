@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Data.Core.Enums;
+using Data.Core.GameObjects;
 using Data.Core.Misc;
-using Data.Core.ModObjects.Generated;
 
 namespace Data.Core.ModObjects
 {

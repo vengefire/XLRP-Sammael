@@ -1,7 +1,8 @@
 ﻿using System.IO;
 using Data.Core.Enums;
+using Data.Core.ModObjects;
 
-namespace Data.Core.ModObjects.Generated
+namespace Data.Core.GameObjects
 {
     public class ManifestEntry
     {

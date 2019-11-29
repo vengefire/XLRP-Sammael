@@ -44,20 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\GameConstants.cs" />
     <Compile Include="Enums\GameObject.cs" />
     <Compile Include="GameObjects\AdditionalDatum.cs" />
     <Compile Include="GameObjects\ComponentTags.cs" />
     <Compile Include="GameObjects\Description.cs" />
     <Compile Include="GameObjects\Gear\WeaponBase.cs" />
     <Compile Include="GameObjects\JsonObjectBase.cs" />
+    <Compile Include="GameObjects\Manifest.cs" />
+    <Compile Include="Misc\TypeEnumGenerator.cs" />
     <Compile Include="Misc\Utils.cs" />
-    <Compile Include="ModObjects\Generated\ManifestEntry.cs" />
+    <Compile Include="GameObjects\ManifestEntry.cs" />
     <Compile Include="ModObjects\ManifestEntryGroup.cs" />
     <Compile Include="ModObjects\Generated\ManifestEntryGroup.cs" />
     <Compile Include="ModObjects\Mod.cs" />
     <Compile Include="ModObjects\Generated\Mod.cs" />
     <Compile Include="ModObjects\ModCollection.cs" />
-    <Compile Include="ModObjects\ModObjectConstants.cs" />
+    <Compile Include="Constants\ModObjectConstants.cs" />
+    <Compile Include="Parsers\VersionManifestParser.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

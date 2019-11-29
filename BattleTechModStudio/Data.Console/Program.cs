@@ -1,6 +1,7 @@
 ﻿using System.Linq;
-using Data.Console.Utils;
 using Data.Core.Enums;
+using Data.Core.Misc;
+using Data.Core.Parsers;
 using Data.Services;
 
 namespace Data.Console
@@ -10,9 +11,25 @@ namespace Data.Console
         private static void Main(string[] args)
         {
             var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
+            var btDirectory = @"D:\Test Data\BT Base Data";
             //var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
 
-            var modService = new ModService();
+            var manifestService = new ManifestService();
+            var manifest = manifestService.InitManifestFromDisk(btDirectory, null);
+
+            System.Console.WriteLine($"Unknown types = \r\n" +
+                                     $"{string.Join("\r\n", VersionManifestParser.UnknownTypes.ToList())}");
+
+            var typeEnumString = TypeEnumGenerator.GenerateEnum(
+                VersionManifestParser.AllTypes.ToList(),
+                "",
+                "GameObjectTypeEnum"
+            );
+
+            System.Console.WriteLine($"Generated Type Enum:\r\n" +
+                                     $"{typeEnumString}");
+
+            /*var modService = new ModService();
             var modCollection = modService.LoadModCollectionFromDirectory(sourceDirectory);
 
             var validMods = modCollection.ValidMods.ToList();
@@ -53,7 +70,7 @@ namespace Data.Console
 
             var weapons = modCollection.Mods.SelectMany(mod => mod.ManifestEntries().Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => entry.Id)).Distinct();
             System.Console.WriteLine($"Distinct Weapon Definitions:\r\n" +
-                                     $"{string.Join("\r\n", weapons)}");
+                                     $"{string.Join("\r\n", weapons)}");*/
 
             System.Console.WriteLine("Press any key to exit...");
             System.Console.ReadKey();

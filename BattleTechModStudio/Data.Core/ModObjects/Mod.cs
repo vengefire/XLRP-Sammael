@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Data.Core.ModObjects.Generated;
+using Data.Core.GameObjects;
 
 namespace Data.Core.ModObjects
 {

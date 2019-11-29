@@ -1,4 +1,4 @@
-﻿namespace Data.Core.ModObjects
+﻿namespace Data.Core.Constants
 {
     public static class ModObjectConstants
     {

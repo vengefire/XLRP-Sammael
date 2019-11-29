@@ -3,9 +3,9 @@ using System.Linq;
 using System.Text;
 using Data.Core.ModObjects;
 
-namespace Data.Console.Utils
+namespace Data.Core.Misc
 {
-    internal static class TypeEnumGenerator
+    public static class TypeEnumGenerator
     {
         public static IEnumerable<string> GetUniqueTypes(List<ManifestEntryGroup> manifestEntries)
         {
