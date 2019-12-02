@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using Data.Core.Enums;
 using Data.Core.Misc;
+using Data.Core.ModObjects;
 using Data.Core.Parsers;
 using Data.Services;
 
@@ -63,9 +64,11 @@ namespace Data.Console
 
             modCollection.ExpandManifestGroups();
 
-            var weapons = modCollection.Mods.SelectMany(mod => mod.ManifestEntries().Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => entry.Id)).Distinct();
+            /*var weapons = modCollection.Mods.SelectMany(mod => mod.ManifestEntries().Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => entry.Id)).Distinct();
             System.Console.WriteLine("Distinct Weapon Definitions:\r\n" +
-                                     $"{string.Join("\r\n", weapons)}");
+                                     $"{string.Join("\r\n", weapons)}");*/
+
+            var result = ModMerger.Merge(manifest, modCollection);
 
             System.Console.WriteLine("Press any key to exit...");
             System.Console.ReadKey();

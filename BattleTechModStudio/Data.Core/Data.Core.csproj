@@ -61,6 +61,7 @@
     <Compile Include="ModObjects\Generated\Mod.cs" />
     <Compile Include="ModObjects\ModCollection.cs" />
     <Compile Include="Constants\ModObjectConstants.cs" />
+    <Compile Include="ModObjects\ModMerger.cs" />
     <Compile Include="Parsers\VersionManifestParser.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

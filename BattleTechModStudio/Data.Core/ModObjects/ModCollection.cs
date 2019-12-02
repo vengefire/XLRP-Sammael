@@ -13,6 +13,8 @@ namespace Data.Core.ModObjects
         public IEnumerable<Mod> ValidMods => Mods.Where(mod => mod.IsValid);
         public IEnumerable<Mod> InvalidMods => Mods.Where(mod => !mod.IsValid);
 
+        public List<Mod> ValidModsLoadOrder => ValidMods.OrderBy(mod => mod.LoadOrder).ToList();
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]

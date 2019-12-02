@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using Data.Core.Constants;
 using Data.Core.Parsers;
 using Data.Core.Scrapers;
@@ -26,7 +25,7 @@ namespace Data.Core.GameObjects
 
             var dataDirectory = new DirectoryInfo(Path.Combine(streamingAssetDirectoryInfo.FullName, GameConstants.DataDirectory));
             _baseManifestEntries = VersionManifestParser.ParseVersionManifest(streamingAssetDirectoryInfo.FullName, Path.Combine(dataDirectory.FullName, GameConstants.VersionManifestFilename));
-            var duplicatedIds = _baseManifestEntries.GroupBy(entry => new {entry.Id, entry.GameObjectType}).Where(entries => entries.Count() > 1);
+            _baseManifestEntries.ForEach(entry => manifestEntriesById[entry.Id] = entry);
         }
 
         public void InitDlcManifest(string dlcDataDirectory)
@@ -41,6 +40,15 @@ namespace Data.Core.GameObjects
             // TODO : Check which DLC are installed and constrain to installed DLC?
             _dlcManifestEntries = new List<ManifestEntry>();
             knownDlc.ForEach(s => { _dlcManifestEntries.AddRange(StreamingAssetsScraper.ScrapeStreamingAssets(Path.Combine(dlcDataDirectory, s))); });
+            _dlcManifestEntries.ForEach(entry =>
+            {
+                if (manifestEntriesById.ContainsKey(entry.Id))
+                {
+                    Console.WriteLine($"DLC overwriting original base def for [{entry.Id}]");
+                }
+
+                manifestEntriesById[entry.Id] = entry;
+            });
         }
     }
 }
