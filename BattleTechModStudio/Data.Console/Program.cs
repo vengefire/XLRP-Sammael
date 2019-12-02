@@ -10,26 +10,19 @@ namespace Data.Console
     {
         private static void Main(string[] args)
         {
-            var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
+            //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
+            //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\RogueTech";
+            var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
             var btDirectory = @"D:\Test Data\BT Base Data";
-            //var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
+            var dlcDirectory = @"C:\Users\Stephen Weistra\gitrepos\bt-dlc-designdata";
 
             var manifestService = new ManifestService();
-            var manifest = manifestService.InitManifestFromDisk(btDirectory, null);
+            var manifest = manifestService.InitManifestFromDisk(btDirectory, dlcDirectory);
 
-            System.Console.WriteLine($"Unknown types = \r\n" +
+            System.Console.WriteLine("Unknown types = \r\n" +
                                      $"{string.Join("\r\n", VersionManifestParser.UnknownTypes.ToList())}");
 
-            var typeEnumString = TypeEnumGenerator.GenerateEnum(
-                VersionManifestParser.AllTypes.ToList(),
-                "",
-                "GameObjectTypeEnum"
-            );
-
-            System.Console.WriteLine($"Generated Type Enum:\r\n" +
-                                     $"{typeEnumString}");
-
-            /*var modService = new ModService();
+            var modService = new ModService();
             var modCollection = modService.LoadModCollectionFromDirectory(sourceDirectory);
 
             var validMods = modCollection.ValidMods.ToList();
@@ -55,22 +48,24 @@ namespace Data.Console
                                          $"{string.Join("\r\n", mods.OrderBy(mod => mod.LoadOrder).Select(mod => $"[{mod.LoadOrder,-3}] - {mod.Name}"))}\r\n");
             });
 
+            var typeUnion = VersionManifestParser.AllTypes;
+            modCollection.Mods.SelectMany(mod => mod.ManifestEntryGroups.Select(group => group.Type)).Distinct().ToList().ForEach(s => typeUnion.Add(s));
+            var sortedTypes = typeUnion.ToList();
+            sortedTypes.Sort(string.CompareOrdinal);
             var typeEnumString = TypeEnumGenerator.GenerateEnum(
-                TypeEnumGenerator.GetUniqueTypes(
-                    modCollection.ValidMods.SelectMany(mod => mod.ManifestEntryGroups.Select(entry => entry)).ToList()
-                ).ToList(),
+                sortedTypes,
                 "",
                 "GameObjectTypeEnum"
             );
 
-            System.Console.WriteLine($"Generated Type Enum:\r\n" +
+            System.Console.WriteLine("Generated Type Enum:\r\n" +
                                      $"{typeEnumString}");
 
             modCollection.ExpandManifestGroups();
 
             var weapons = modCollection.Mods.SelectMany(mod => mod.ManifestEntries().Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => entry.Id)).Distinct();
-            System.Console.WriteLine($"Distinct Weapon Definitions:\r\n" +
-                                     $"{string.Join("\r\n", weapons)}");*/
+            System.Console.WriteLine("Distinct Weapon Definitions:\r\n" +
+                                     $"{string.Join("\r\n", weapons)}");
 
             System.Console.WriteLine("Press any key to exit...");
             System.Console.ReadKey();

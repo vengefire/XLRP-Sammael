@@ -21,7 +21,6 @@ namespace Data.Core.GameObjects
         public ManifestEntryGroup ManifestEntryGroup { get; set; }
         public string Id { get; set; }
         public GameObjectTypeEnum GameObjectType { get; set; }
-
         public string AssetBundleName { get; set; }
     }
 }

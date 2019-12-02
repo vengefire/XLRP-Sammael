@@ -8,7 +8,7 @@ namespace Data.Services
         {
             var manifest = new Manifest();
             manifest.InitBaseManifest(battleTechDirectory);
-            // manifest.InitDlcManifest(dlcDataDirectory);
+            manifest.InitDlcManifest(dlcDataDirectory);
             return manifest;
         }
     }

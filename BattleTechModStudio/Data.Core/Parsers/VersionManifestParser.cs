@@ -67,7 +67,12 @@ namespace Data.Core.Parsers
                         var pathString = rowValues[pathIndex];
                         var assetBundleString = rowValues[assetBundleNameIndex];
 
-                        if (string.IsNullOrEmpty(typeString))
+                        if (pathString.StartsWith("Assets/") /*&& string.IsNullOrEmpty(assetBundleString)*/)
+                        {
+                            continue;
+                        }
+
+                        if (string.IsNullOrEmpty(typeString) || id == "id")
                         {
                             continue;
                         }
@@ -78,9 +83,25 @@ namespace Data.Core.Parsers
                             UnknownTypes.Add(typeString);
                         }
 
-                        var contentDirectory = gameObjectType == GameObjectTypeEnum.Prefab ? null : new DirectoryInfo(Path.Combine(dataDirectory, pathString));
-                        var fileInfo = gameObjectType == GameObjectTypeEnum.Prefab ? null : new FileInfo(Path.Combine(contentDirectory.FullName, pathString));
-                        manifestEntries.Add(new ManifestEntry(contentDirectory, fileInfo, gameObjectType, id, null, assetBundleString));
+                        var fileInfo = gameObjectType == GameObjectTypeEnum.Prefab ? null : new FileInfo(Path.Combine(dataDirectory, pathString));
+                        var contentDirectory = gameObjectType == GameObjectTypeEnum.Prefab ? null : fileInfo.Directory;
+
+                        if (fileInfo != null && !fileInfo.Exists)
+                        {
+                            Console.WriteLine($"Warning - Manifest Entry file [{fileInfo.FullName}] does not exist. Skipping...");
+                        }
+                        else
+                        {
+                            // Don't add updated entries, we don't care about these as they're overwritten...
+                            if (!manifestEntries.Any(entry => entry.Id == id && entry.GameObjectType == gameObjectType))
+                            {
+                                manifestEntries.Add(new ManifestEntry(contentDirectory, fileInfo, gameObjectType, id, null, assetBundleString));
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Skipped adding duplicated entry for [{fileInfo.FullName}]");
+                            }
+                        }
                     }
                 }
             }
