@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using Data.Core.Constants;
+using Data.Core.Enums;
 using Data.Core.Parsers;
 using Data.Core.Scrapers;
 
@@ -12,7 +13,7 @@ namespace Data.Core.GameObjects
         private List<ManifestEntry> _baseManifestEntries;
         private List<ManifestEntry> _dlcManifestEntries;
 
-        public Dictionary<string, ManifestEntry> manifestEntriesById = new Dictionary<string, ManifestEntry>();
+        public Dictionary<Tuple<string, GameObjectTypeEnum, string>, ManifestEntry> ManifestEntriesById = new Dictionary<Tuple<string, GameObjectTypeEnum, string>, ManifestEntry>();
 
         public void InitBaseManifest(string battleTechDirectory)
         {
@@ -25,7 +26,10 @@ namespace Data.Core.GameObjects
 
             var dataDirectory = new DirectoryInfo(Path.Combine(streamingAssetDirectoryInfo.FullName, GameConstants.DataDirectory));
             _baseManifestEntries = VersionManifestParser.ParseVersionManifest(streamingAssetDirectoryInfo.FullName, Path.Combine(dataDirectory.FullName, GameConstants.VersionManifestFilename));
-            _baseManifestEntries.ForEach(entry => manifestEntriesById[entry.Id] = entry);
+            _baseManifestEntries.ForEach(entry =>
+            {
+                ManifestEntriesById[new Tuple<string, GameObjectTypeEnum, string>(entry.Id, entry.GameObjectType, entry.AssetBundleName)] = entry;
+            });
         }
 
         public void InitDlcManifest(string dlcDataDirectory)
@@ -42,12 +46,12 @@ namespace Data.Core.GameObjects
             knownDlc.ForEach(s => { _dlcManifestEntries.AddRange(StreamingAssetsScraper.ScrapeStreamingAssets(Path.Combine(dlcDataDirectory, s))); });
             _dlcManifestEntries.ForEach(entry =>
             {
-                if (manifestEntriesById.ContainsKey(entry.Id))
+                if (ManifestEntriesById.ContainsKey(new Tuple<string, GameObjectTypeEnum, string>(entry.Id, entry.GameObjectType, entry.AssetBundleName)))
                 {
                     Console.WriteLine($"DLC overwriting original base def for [{entry.Id}]");
                 }
 
-                manifestEntriesById[entry.Id] = entry;
+                ManifestEntriesById[new Tuple<string, GameObjectTypeEnum, string>(entry.Id, entry.GameObjectType, entry.AssetBundleName)] = entry;
             });
         }
     }

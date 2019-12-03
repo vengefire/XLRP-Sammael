@@ -11,9 +11,9 @@ namespace Data.Console
     {
         private static void Main(string[] args)
         {
-            //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
+            var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
             //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\RogueTech";
-            var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
+            //var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
             var btDirectory = @"D:\Test Data\BT Base Data";
             var dlcDirectory = @"C:\Users\Stephen Weistra\gitrepos\bt-dlc-designdata";
 
@@ -26,12 +26,22 @@ namespace Data.Console
             var modService = new ModService();
             var modCollection = modService.LoadModCollectionFromDirectory(sourceDirectory);
 
+            var disabledMods = modCollection.DisabledMods.ToList();
             var validMods = modCollection.ValidMods.ToList();
             var invalidMods = modCollection.InvalidMods.ToList();
 
             System.Console.WriteLine($"Summary for mods loaded from [{sourceDirectory}]:\r\n" +
-                                     $"Mods Loaded - {validMods.Count}\r\n" +
+                                     $"Total Mods Found - {modCollection.Mods.Count}\r\n" +
+                                     $"Disabled Mods - {disabledMods.Count}\r\n" +
+                                     $"Valid Mods Loaded - {validMods.Count}\r\n" +
                                      $"Invalid Mods - {invalidMods.Count}\r\n");
+
+            System.Console.WriteLine("Disabled Mods:");
+            disabledMods.ForEach(mod =>
+            {
+                System.Console.WriteLine($"{mod.Name}");
+            });
+            System.Console.WriteLine();
 
             System.Console.WriteLine("Invalid Mods:");
             invalidMods.ForEach(mod =>
@@ -64,11 +74,16 @@ namespace Data.Console
 
             modCollection.ExpandManifestGroups();
 
-            /*var weapons = modCollection.Mods.SelectMany(mod => mod.ManifestEntries().Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => entry.Id)).Distinct();
-            System.Console.WriteLine("Distinct Weapon Definitions:\r\n" +
-                                     $"{string.Join("\r\n", weapons)}");*/
-
             var result = ModMerger.Merge(manifest, modCollection);
+
+            var modifiedIds = result.manifestEntryStackById.Where(pair => pair.Value.Count > 1);
+            System.Console.WriteLine($"Ids modified multiple times via modifications:\r\n" +
+                                     $"{string.Join("\r\n", modifiedIds.Select(pair => $"\t{pair.Key} - {pair.Value.Count}"))}");
+
+            var weapons = result.mergedManifestEntries.Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => $"{entry.Id} - {entry.GameObjectType} - {entry.AssetBundleName}").ToList();
+            weapons.Sort();
+            System.Console.WriteLine("Distinct Weapon Definitions:\r\n" +
+                                     $"{string.Join("\r\n", weapons)}");
 
             System.Console.WriteLine("Press any key to exit...");
             System.Console.ReadKey();

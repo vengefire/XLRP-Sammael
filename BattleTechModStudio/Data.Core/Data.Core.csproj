@@ -70,6 +70,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\Framework.Utils\Framework.Utils.csproj">
+      <Project>{E851E212-1EB4-40B4-8596-31FF26AE2594}</Project>
+      <Name>Framework.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

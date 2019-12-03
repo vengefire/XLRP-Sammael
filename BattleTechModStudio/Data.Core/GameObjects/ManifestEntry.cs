@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Data.Core.Enums;
 using Data.Core.ModObjects;
+using Newtonsoft.Json.Linq;
 
 namespace Data.Core.GameObjects
 {
@@ -22,5 +23,42 @@ namespace Data.Core.GameObjects
         public string Id { get; set; }
         public GameObjectTypeEnum GameObjectType { get; set; }
         public string AssetBundleName { get; set; }
+        private JObject _json;
+        private string _text;
+        public JObject Json {
+            get
+            {
+                if (_json == null)
+                {
+                    _json = ReadJson();
+                }
+
+                return _json;
+            }
+            set => _json = value;
+        }
+
+        public string Text
+        {
+            get
+            {
+                if (_text == null)
+                {
+                    _text = ReadText();
+                }
+                return _text;
+            }
+            set => _text = value;
+        }
+
+        public JObject ReadJson()
+        {
+            return JsonUtils.DeserializeJson(FileInfo.FullName);
+        }
+
+        public string ReadText()
+        {
+            return File.ReadAllText(FileInfo.FullName);
+        }
     }
 }
