@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Data.Core.Enums;
 using Data.Core.GameObjects;
+using Newtonsoft.Json.Linq;
 
 namespace Data.Core.ModObjects
 {
@@ -54,7 +55,7 @@ namespace Data.Core.ModObjects
                             continue;
                         }
 
-                        if (!currentManifestEntry.ManifestEntryGroup.ShouldMergeJson)
+                        if (!currentManifestEntry.ManifestEntryGroup.ShouldMergeJson && currentManifestEntry.GameObjectType != GameObjectTypeEnum.AdvancedJSONMerge)
                         {
                             Console.WriteLine($"Overwrite merge result to {currentManifestEntry.Id} - {currentManifestEntry.GameObjectType} - {currentManifestEntry.AssetBundleName} - {currentManifestEntry.DirectoryInfo?.FullName} - Manifest Group specifies overwrite.");
                             mergedResult = currentManifestEntry;
@@ -68,7 +69,28 @@ namespace Data.Core.ModObjects
                             targetJson.Merge(mergeJson);
                             mergedResult.Json = targetJson;
                             Console.WriteLine($"Merged result with {currentManifestEntry.Id} - {currentManifestEntry.GameObjectType} - {currentManifestEntry.AssetBundleName} - {currentManifestEntry.DirectoryInfo?.FullName} - Basic Merge specified.");
+                            continue;
                         }
+
+                        // AdvancedJsonMerge...
+                        var mergeSpec = currentManifestEntry.Json;
+                        ((JArray)mergeSpec["Instructions"]).ToList().ForEach(token =>
+                        {
+                            var path = token["JSONPath"].ToString();
+                            var action = token["Action"].ToString();
+                            dynamic value = null;
+                            switch (action)
+                            {
+                                case "Replace":
+                                    break;
+                                case "ArrayAdd":
+                                    break;
+                                case "ArrayConcat":
+                                    break;
+                                case "Remove":
+                                    break;
+                            }
+                        });
                     }
                 }
 
@@ -87,18 +109,52 @@ namespace Data.Core.ModObjects
                 mod.ManifestEntries().ToList().ForEach(entry =>
                 {
                     var key = new Tuple<string, GameObjectTypeEnum, string>(entry.Id, entry.GameObjectType, entry.AssetBundleName);
-                    if (manifest.ManifestEntriesById.ContainsKey(key) && !manifestEntryStackById.ContainsKey(key))
+                    if (key.Item2 != GameObjectTypeEnum.AdvancedJSONMerge)
                     {
-                        manifestEntryStackById[key] = new List<ManifestEntry> {manifest.ManifestEntriesById[key]};
-                        manifestEntryStackById[key].Add(entry);
-                    }
-                    else if (!manifest.ManifestEntriesById.ContainsKey(key) && !manifestEntryStackById.ContainsKey(key))
-                    {
-                        manifestEntryStackById[key] = new List<ManifestEntry> {entry};
+                        if (manifest.ManifestEntriesById.ContainsKey(key) && !manifestEntryStackById.ContainsKey(key))
+                        {
+                            manifestEntryStackById[key] = new List<ManifestEntry> {manifest.ManifestEntriesById[key]};
+                            manifestEntryStackById[key].Add(entry);
+                        }
+                        else if (!manifest.ManifestEntriesById.ContainsKey(key) && !manifestEntryStackById.ContainsKey(key))
+                        {
+                            manifestEntryStackById[key] = new List<ManifestEntry> {entry};
+                        }
+                        else
+                        {
+                            manifestEntryStackById[key].Add(entry);
+                        }
                     }
                     else
                     {
-                        manifestEntryStackById[key].Add(entry);
+                        var mergeSpec = entry.Json;
+                        var targetIds = new List<string>();
+                        if (mergeSpec["TargetID"] != null)
+                        {
+                            targetIds.Add(mergeSpec["TargetID"].ToString());
+                        }
+                        else
+                        {
+                            targetIds.AddRange(((JArray)mergeSpec["TargetIDs"]).Select(token => token.ToString()));
+                        }
+
+                        targetIds.ForEach(targetId =>
+                        {
+                            var keys = manifestEntryStackById.Keys.Where(tuple => tuple.Item1 == targetId).Union(manifest.ManifestEntriesById.Keys.Where(tuple => tuple.Item1 == targetId)).ToList();
+                            keys.ForEach(tuple =>
+                            {
+                                key = tuple;
+                                if (manifest.ManifestEntriesById.ContainsKey(key) && !manifestEntryStackById.ContainsKey(key))
+                                {
+                                    manifestEntryStackById[key] = new List<ManifestEntry> { manifest.ManifestEntriesById[key] };
+                                    manifestEntryStackById[key].Add(entry);
+                                }
+                                else
+                                {
+                                    manifestEntryStackById[tuple].Add(entry);
+                                }
+                            });
+                        });
                     }
                 });
             });
