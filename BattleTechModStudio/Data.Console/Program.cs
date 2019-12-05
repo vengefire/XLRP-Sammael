@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Data.Core.Enums;
 using Data.Core.Misc;
 using Data.Core.ModObjects;
@@ -76,6 +77,9 @@ namespace Data.Console
 
             var result = ModMerger.Merge(manifest, modCollection);
 
+            System.Console.WriteLine($"Failed Merges : \r\n" +
+                                     $"{string.Join("\r\n", ModMerger.FailedMerges.Select(tuple => $"{tuple.Item1.FileInfo.FullName} - {tuple.Item2}"))}");
+
             var modifiedIds = result.manifestEntryStackById.Where(pair => pair.Value.Count > 1);
             System.Console.WriteLine($"Ids modified multiple times via modifications:\r\n" +
                                      $"{string.Join("\r\n", modifiedIds.Select(pair => $"\t{pair.Key} - {pair.Value.Count}"))}");
@@ -84,6 +88,12 @@ namespace Data.Console
             weapons.Sort();
             System.Console.WriteLine("Distinct Weapon Definitions:\r\n" +
                                      $"{string.Join("\r\n", weapons)}");
+
+            System.Console.WriteLine($"Mechs!\r\n" +
+                $"{string.Join("\r\n", result.mergedManifestEntries.Where(entry => entry.GameObjectType == GameObjectTypeEnum.MechDef).Select(entry => entry.Id))}");
+
+            System.Console.WriteLine($"mechdef_annihilator_ANH-1A\r\n" +
+                                     $"{result.mergedManifestEntries.First(entry => entry.Id == "mechdef_annihilator_ANH-1A").Json}");
 
             System.Console.WriteLine("Press any key to exit...");
             System.Console.ReadKey();

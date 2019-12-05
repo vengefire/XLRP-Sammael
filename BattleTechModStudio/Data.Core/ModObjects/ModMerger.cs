@@ -9,10 +9,17 @@ namespace Data.Core.ModObjects
 {
     public class ModMerger
     {
+        public static List<(ManifestEntry, string)> FailedMerges { get; set; } = new List<(ManifestEntry, string)>();
+
         public static (List<ManifestEntry> mergedManifestEntries, Dictionary<Tuple<string, GameObjectTypeEnum, string>, List<ManifestEntry>> manifestEntryStackById) Merge(Manifest manifest, ModCollection modCollection)
         {
             var manifestEntryStackById = ModMerger.BuildMergeStack(manifest, modCollection);
+
+            var test = manifestEntryStackById.Where(pair => pair.Key.Item1 == "mechdef_annihilator_ANH-1A" && pair.Key.Item2 == GameObjectTypeEnum.MechDef);
+
             var mergedManifestEntries = ModMerger.ProcessMergeStack(manifestEntryStackById);
+            mergedManifestEntries.Sort((entry, manifestEntry) => entry.GameObjectType.CompareTo(manifestEntry.GameObjectType));
+            mergedManifestEntries.Sort((entry, manifestEntry) => entry.Id.CompareTo(manifestEntry.Id));
             return (mergedManifestEntries, manifestEntryStackById);
         }
 
@@ -22,10 +29,18 @@ namespace Data.Core.ModObjects
             foreach (var manifestEntryStackItem in manifestEntryStackById)
             {
                 ManifestEntry mergedResult = null;
+                if (manifestEntryStackItem.Key.Item1 == "mechdef_annihilator_ANH-1A")
+                {
+                    int i = 666;
+                }
 
                 if (manifestEntryStackItem.Value.Count == 1)
                 {
-                    mergedResult = manifestEntryStackItem.Value.First();
+                    var entry = manifestEntryStackItem.Value.First();
+                    if (entry.ManifestEntryGroup == null || entry.ManifestEntryGroup.AddToDb)
+                    {
+                        mergedResult = entry;
+                    }
                 }
                 else
                 {
@@ -34,14 +49,16 @@ namespace Data.Core.ModObjects
                     {
                         if (mergedResult == null)
                         {
-                            mergedResult = currentManifestEntry;
-                            Console.WriteLine($"Initialize merge result to {currentManifestEntry.Id} - {currentManifestEntry.GameObjectType} - {currentManifestEntry.AssetBundleName} - {currentManifestEntry.DirectoryInfo?.FullName}");
+                            if (currentManifestEntry.ManifestEntryGroup == null || currentManifestEntry.ManifestEntryGroup.AddToDb)
+                            {
+                                mergedResult = currentManifestEntry;
+                            }
+                            
                             continue;
                         }
 
                         if (currentManifestEntry.ManifestEntryGroup == null)
                         {
-                            Console.WriteLine($"Overwrite merge result to {currentManifestEntry.Id} - {currentManifestEntry.GameObjectType} - {currentManifestEntry.AssetBundleName} - {currentManifestEntry.DirectoryInfo?.FullName} - No Manifest Group.");
                             mergedResult = currentManifestEntry;
                             continue;
                         }
@@ -51,13 +68,12 @@ namespace Data.Core.ModObjects
                             var targetText = mergedResult.Text;
                             var appendText = currentManifestEntry.Text;
                             mergedResult.Text = targetText += appendText;
-                            Console.WriteLine($"Appended Text result with {currentManifestEntry.Id} - {currentManifestEntry.GameObjectType} - {currentManifestEntry.AssetBundleName} - {currentManifestEntry.DirectoryInfo?.FullName} - ShouldAppendText specified.");
                             continue;
                         }
 
                         if (!currentManifestEntry.ManifestEntryGroup.ShouldMergeJson && currentManifestEntry.GameObjectType != GameObjectTypeEnum.AdvancedJSONMerge)
                         {
-                            Console.WriteLine($"Overwrite merge result to {currentManifestEntry.Id} - {currentManifestEntry.GameObjectType} - {currentManifestEntry.AssetBundleName} - {currentManifestEntry.DirectoryInfo?.FullName} - Manifest Group specifies overwrite.");
+                            Console.WriteLine($"Warning - Overwriting merged result for {mergedResult.Id} with mod instruction from {currentManifestEntry.ManifestEntryGroup.BaseDirectory.FullName}.");
                             mergedResult = currentManifestEntry;
                             continue;
                         }
@@ -68,33 +84,67 @@ namespace Data.Core.ModObjects
                             var mergeJson = currentManifestEntry.Json;
                             targetJson.Merge(mergeJson);
                             mergedResult.Json = targetJson;
-                            Console.WriteLine($"Merged result with {currentManifestEntry.Id} - {currentManifestEntry.GameObjectType} - {currentManifestEntry.AssetBundleName} - {currentManifestEntry.DirectoryInfo?.FullName} - Basic Merge specified.");
                             continue;
                         }
 
                         // AdvancedJsonMerge...
                         var mergeSpec = currentManifestEntry.Json;
-                        ((JArray)mergeSpec["Instructions"]).ToList().ForEach(token =>
+                        ((JArray) mergeSpec["Instructions"]).ToList().ForEach(instruction =>
                         {
-                            var path = token["JSONPath"].ToString();
-                            var action = token["Action"].ToString();
+                            var path = instruction["JSONPath"].ToString();
+                            // path = path.Replace("$.", mergedResult.Id);
+                            path = path.Replace("$.", string.Empty);
+                            var action = instruction["Action"].ToString();
                             dynamic value = null;
                             switch (action)
                             {
                                 case "Replace":
+                                    var valueToReplaceWith = instruction["Value"];
+                                    var valueToReplace = mergedResult.Json.SelectToken(path);
+
+                                    if (valueToReplace == null)
+                                    {
+                                        ModMerger.FailedMerges.Add((currentManifestEntry, $"Failed to find value by path to replace. Path - [{path}]"));
+                                        break;
+                                    }
+
+                                    if (valueToReplace.Type == JTokenType.Null)
+                                    {
+                                        var parent = (JProperty) valueToReplace.Parent;
+                                        parent.Value = valueToReplaceWith;
+                                    }
+                                    else
+                                    {
+                                        valueToReplace.Replace(valueToReplaceWith);
+                                    }
+
                                     break;
                                 case "ArrayAdd":
+                                    var valueToAdd = instruction["Value"];
+                                    var targetAddArray = (JArray) mergedResult.Json.SelectToken(path);
+                                    targetAddArray?.Add(valueToAdd);
                                     break;
                                 case "ArrayConcat":
+                                    var valuesToConcat = (JArray) instruction["Value"];
+                                    var targetConcatArray = (JArray) mergedResult.Json.SelectToken(path);
+                                    targetConcatArray?.Merge(valuesToConcat);
                                     break;
                                 case "Remove":
+                                    var targetToken = mergedResult.Json.SelectToken(path, false);
+                                    targetToken?.Parent.Remove();
                                     break;
                             }
                         });
+
+                        // Free the content once we've completed processing the merge directives...
+                        currentManifestEntry.ClearContent();
                     }
                 }
 
-                mergedManifestEntries.Add(mergedResult);
+                if (mergedResult != null)
+                {
+                    mergedManifestEntries.Add(mergedResult);
+                }
             }
 
             return mergedManifestEntries;
@@ -109,6 +159,7 @@ namespace Data.Core.ModObjects
                 mod.ManifestEntries().ToList().ForEach(entry =>
                 {
                     var key = new Tuple<string, GameObjectTypeEnum, string>(entry.Id, entry.GameObjectType, entry.AssetBundleName);
+
                     if (key.Item2 != GameObjectTypeEnum.AdvancedJSONMerge)
                     {
                         if (manifest.ManifestEntriesById.ContainsKey(key) && !manifestEntryStackById.ContainsKey(key))
@@ -135,7 +186,7 @@ namespace Data.Core.ModObjects
                         }
                         else
                         {
-                            targetIds.AddRange(((JArray)mergeSpec["TargetIDs"]).Select(token => token.ToString()));
+                            targetIds.AddRange(((JArray) mergeSpec["TargetIDs"]).Select(token => token.ToString()));
                         }
 
                         targetIds.ForEach(targetId =>
@@ -146,7 +197,7 @@ namespace Data.Core.ModObjects
                                 key = tuple;
                                 if (manifest.ManifestEntriesById.ContainsKey(key) && !manifestEntryStackById.ContainsKey(key))
                                 {
-                                    manifestEntryStackById[key] = new List<ManifestEntry> { manifest.ManifestEntriesById[key] };
+                                    manifestEntryStackById[key] = new List<ManifestEntry> {manifest.ManifestEntriesById[key]};
                                     manifestEntryStackById[key].Add(entry);
                                 }
                                 else
@@ -160,10 +211,7 @@ namespace Data.Core.ModObjects
             });
 
             // Add any manifest entries that haven't been touched by mods...
-            manifest.ManifestEntriesById.Where(pair => !manifestEntryStackById.ContainsKey(pair.Key)).ToList().ForEach(pair =>
-            {
-                manifestEntryStackById[pair.Key] = new List<ManifestEntry> {pair.Value};
-            });
+            manifest.ManifestEntriesById.Where(pair => !manifestEntryStackById.ContainsKey(pair.Key)).ToList().ForEach(pair => { manifestEntryStackById[pair.Key] = new List<ManifestEntry> {pair.Value}; });
 
             return manifestEntryStackById;
         }

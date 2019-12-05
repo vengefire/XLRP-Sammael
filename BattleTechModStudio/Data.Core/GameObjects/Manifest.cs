@@ -26,10 +26,7 @@ namespace Data.Core.GameObjects
 
             var dataDirectory = new DirectoryInfo(Path.Combine(streamingAssetDirectoryInfo.FullName, GameConstants.DataDirectory));
             _baseManifestEntries = VersionManifestParser.ParseVersionManifest(streamingAssetDirectoryInfo.FullName, Path.Combine(dataDirectory.FullName, GameConstants.VersionManifestFilename));
-            _baseManifestEntries.ForEach(entry =>
-            {
-                ManifestEntriesById[new Tuple<string, GameObjectTypeEnum, string>(entry.Id, entry.GameObjectType, entry.AssetBundleName)] = entry;
-            });
+            _baseManifestEntries.ForEach(entry => { ManifestEntriesById[new Tuple<string, GameObjectTypeEnum, string>(entry.Id, entry.GameObjectType, entry.AssetBundleName ?? string.Empty)] = entry; });
         }
 
         public void InitDlcManifest(string dlcDataDirectory)
@@ -51,7 +48,7 @@ namespace Data.Core.GameObjects
                     Console.WriteLine($"DLC overwriting original base def for [{entry.Id}]");
                 }
 
-                ManifestEntriesById[new Tuple<string, GameObjectTypeEnum, string>(entry.Id, entry.GameObjectType, entry.AssetBundleName)] = entry;
+                ManifestEntriesById[new Tuple<string, GameObjectTypeEnum, string>(entry.Id, entry.GameObjectType, entry.AssetBundleName ?? string.Empty)] = entry;
             });
         }
     }

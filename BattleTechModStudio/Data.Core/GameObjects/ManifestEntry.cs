@@ -60,5 +60,11 @@ namespace Data.Core.GameObjects
         {
             return File.ReadAllText(FileInfo.FullName);
         }
+
+        public void ClearContent()
+        {
+            Json = null;
+            Text = null;
+        }
     }
 }
