@@ -14,9 +14,6 @@ namespace Data.Core.ModObjects
         public static (List<ManifestEntry> mergedManifestEntries, Dictionary<Tuple<string, GameObjectTypeEnum, string>, List<ManifestEntry>> manifestEntryStackById) Merge(Manifest manifest, ModCollection modCollection)
         {
             var manifestEntryStackById = ModMerger.BuildMergeStack(manifest, modCollection);
-
-            var test = manifestEntryStackById.Where(pair => pair.Key.Item1 == "mechdef_annihilator_ANH-1A" && pair.Key.Item2 == GameObjectTypeEnum.MechDef);
-
             var mergedManifestEntries = ModMerger.ProcessMergeStack(manifestEntryStackById);
             mergedManifestEntries.Sort((entry, manifestEntry) => entry.GameObjectType.CompareTo(manifestEntry.GameObjectType));
             mergedManifestEntries.Sort((entry, manifestEntry) => entry.Id.CompareTo(manifestEntry.Id));
@@ -29,10 +26,6 @@ namespace Data.Core.ModObjects
             foreach (var manifestEntryStackItem in manifestEntryStackById)
             {
                 ManifestEntry mergedResult = null;
-                if (manifestEntryStackItem.Key.Item1 == "mechdef_annihilator_ANH-1A")
-                {
-                    int i = 666;
-                }
 
                 if (manifestEntryStackItem.Value.Count == 1)
                 {
@@ -44,8 +37,22 @@ namespace Data.Core.ModObjects
                 }
                 else
                 {
-                    Console.WriteLine($"Merging {manifestEntryStackItem.Key}...");
-                    foreach (var currentManifestEntry in manifestEntryStackItem.Value)
+                    // Console.WriteLine($"Merging {manifestEntryStackItem.Key}...");
+                    var stackOrder = manifestEntryStackItem.Value;
+
+                    if (stackOrder.Count > 1 && stackOrder.Any(entry => entry.GameObjectType == GameObjectTypeEnum.AdvancedJSONMerge))
+                    {
+                        var i = 666;
+                    }
+
+                    stackOrder.Sort((entry, manifestEntry) => entry.GameObjectType == manifestEntry.GameObjectType ? 0 : entry.GameObjectType == GameObjectTypeEnum.AdvancedJSONMerge ? 1 : -1);
+
+                    if (manifestEntryStackItem.Key.Item1 == "mechdef_victor_VTR-9S")
+                    {
+                        var i = 777;
+                    }
+
+                    foreach (var currentManifestEntry in stackOrder)
                     {
                         if (mergedResult == null)
                         {
@@ -53,7 +60,7 @@ namespace Data.Core.ModObjects
                             {
                                 mergedResult = currentManifestEntry;
                             }
-                            
+
                             continue;
                         }
 
@@ -82,7 +89,7 @@ namespace Data.Core.ModObjects
                         {
                             var targetJson = mergedResult.Json;
                             var mergeJson = currentManifestEntry.Json;
-                            targetJson.Merge(mergeJson);
+                            targetJson.Merge(mergeJson, new JsonMergeSettings {MergeArrayHandling = MergeArrayHandling.Union});
                             mergedResult.Json = targetJson;
                             continue;
                         }
@@ -127,7 +134,10 @@ namespace Data.Core.ModObjects
                                 case "ArrayConcat":
                                     var valuesToConcat = (JArray) instruction["Value"];
                                     var targetConcatArray = (JArray) mergedResult.Json.SelectToken(path);
-                                    targetConcatArray?.Merge(valuesToConcat);
+                                    targetConcatArray?.Merge(valuesToConcat, new JsonMergeSettings
+                                    {
+                                        MergeArrayHandling = MergeArrayHandling.Union
+                                    });
                                     break;
                                 case "Remove":
                                     var targetToken = mergedResult.Json.SelectToken(path, false);
