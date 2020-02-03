@@ -1,0 +1,65 @@
+{
+    "Category" : "Missile",
+    "Type" : "SRM",
+    "WeaponSubType" : "SRM6",
+    "MinRange" : 0,
+    "MaxRange" : 270,
+    "RangeSplit" : [
+        180,
+        180,
+        270
+    ],
+    "AmmoCategory" : "ArtemisSRM",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 12,
+    "Damage" : 9,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 0,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : 0,
+    "CriticalChanceMultiplier" : 1,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 0,
+    "ShotsWhenFired" : 6,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 1,
+    "Instability" : 3,
+    "WeaponEffectID" : "WeaponEffect-Weapon_SRM6",
+    "Description" : {
+        "Cost" : 360000,
+        "Rarity" : 0,
+        "Purchasable" : true,
+        "Manufacturer" : "Harpoon",
+        "Model" : "Precision SRM",
+        "UIName" : "SRM6 + Artemis IV",
+        "Id" : "Weapon_SRM_SRM6_ArtemisIV_0-STOCK",
+        "Name" : "SRM6 + Artemis IV",
+        "Details" : "SRM6s are the largest available rack of Short-Range Missiles and pack considerable punch while also being lightweight. As for all SRMs, SRM6 shots deal above-average stability impact per hit compared to other weapons. This SRM rack is equipped with an Artemis IV Fire Control System, dramatically increasing its accuracy at the cost of increased space and weight requirements. Artemis-compatible ammunition is required.\r\n\r\n<color=#dd7e6b><b>Artemis IV-equipped weapons can not be used in conjunction with standard launchers. If one or more Artemis-enhanced launchers are present, all other SRMs/LRMs must have an Artemis IV FCS as well.</color></b>",
+        "Icon" : "uixSvgIcon_weapon_Missile"
+    },
+    "BonusValueA" : "+1 Dmg.",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "srm6",
+    "BattleValue" : 0,
+    "InventorySize" : 3,
+    "Tonnage" : 4,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_standard",
+			"ArtemisMissile"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

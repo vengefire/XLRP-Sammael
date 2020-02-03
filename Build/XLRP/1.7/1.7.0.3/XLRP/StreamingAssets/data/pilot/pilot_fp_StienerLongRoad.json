@@ -1,0 +1,17 @@
+{
+  "abilityDefNames": [
+    "AbilityDefGu5",
+    "AbilityDefP5",
+    "TraitDefEvasiveChargeAddOne",
+    "TraitDefHealthAddOne",
+    "TraitDefIndirectReduceOne",
+	"TraitDefVisualRange4",
+    "TraitDefMeleeHit7",
+    "TraitDefMinRangeReduce45",
+    "TraitDefOverheatAddFifteen",
+    "TraitDefRefireReduceOne",
+    "TraitDefSprintIncrease20",
+    "TraitDefUnsteadySet60",
+    "TraitDefWeaponHit6"
+  ]
+}

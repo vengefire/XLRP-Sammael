@@ -1,0 +1,51 @@
+{
+    "Description" : {
+        "Id" : "cheeky",
+        "Name" : "cheeky",
+        "Details" : "Random",
+        "Icon" : "cheeky"
+    },
+    "ID" : "cheeky",
+    "backgroundColor" : {
+        "r" : 0,
+        "g" : 0,
+        "b" : 0,
+        "a" : 0
+    },
+    "headMesh" : 0.5,
+    "hairMesh" : 5,
+    "beardMesh" : 0,
+    "suitMesh" : 2,
+    "scar" : 6,
+    "lightRig" : 5,
+    "cameraPosition" : 1,
+    "complexionTex" : 4,
+    "eyebrowTex" : 3,
+    "tattooTex" : 11,
+    "actualTattooTex" : 0,
+    "weights" : [
+        22.93072,
+        3.770149,
+        43.9396,
+        0.2691149,
+        0.3592233,
+        28.73119
+    ],
+    "browOffsetY" : 0.003552274,
+    "browOffsetZ" : -0.003498828,
+    "noseBridgeScale" : -0.1997473,
+    "noseTipScale" : -0.03760432,
+    "chinScale" : -0.04246409,
+    "cheekOffsetY" : 0.002435029,
+    "eyeWidth" : -0.03077344,
+    "jawWidth" : -0.05394473,
+    "animation" : 4,
+    "isCommander" : true,
+    "skinToneId" : "Skin_00",
+    "eyeColorId" : "Eye_01",
+    "hairRootId" : "Hair_14",
+    "hairTipId" : "Hair_14",
+    "tattooColorId" : "Tattoo_09",
+    "lipColorId" : "Lip_01",
+    "customPortraitSaveVersion" : 0
+}

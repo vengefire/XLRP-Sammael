@@ -1,0 +1,41 @@
+{
+	"Custom": {
+		"ComponentExplosion": {
+			"ExplosionDamagePerAmmo": 63
+		}
+	},
+    "AmmoID" : "Ammunition_ArrowIV",
+    "Capacity" : 5,
+    "Description" : {
+        "Cost" : 90000,
+        "Rarity" : 99,
+        "Purchasable" : false,
+        "Manufacturer" : "Generic",
+        "Model" : "Arrow IV",
+        "UIName" : "Arrow IV Ammo",
+        "Id" : "Ammo_AmmunitionBox_Generic_ArrowIV",
+        "Name" : "Arrow IV Ammo",
+        "Details" : "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Ammo Bins will explode and destroy their installed location when they receive a Critical Hit. Arrow IV Ammo Bins each contain 5 rounds and may feed multiple weapons.\r\n\r\n<b><color=#ffcc00>Explosion damage per ammo: 63</color></b>",
+        "Icon" : "uixSvgIcon_ammoBox_Missile"
+    },
+    "BonusValueA" : "+50 AOE Dmg.",
+    "BonusValueB" : "+45m AOE Range",
+    "ComponentType" : "AmmunitionBox",
+    "ComponentSubType" : "Ammunition",
+    "PrefabIdentifier" : "",
+    "BattleValue" : 0,
+    "InventorySize" : 1,
+    "Tonnage" : 1,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+		"component_type_stock"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

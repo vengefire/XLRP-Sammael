@@ -1,0 +1,194 @@
+CustomSalvage [LOG] Loaded CustomSalvage v0.1.4 for bt 1.5.2
+CustomSalvage [DEBUG] done
+CustomSalvage [DEBUG] {
+    "LogLevel" : "Debug",
+    "RecoveryType" : "PartDestroyed",
+    "PartCountType" : "PartDestroyed",
+    "LostMechAction" : "ReturnItemsAndPartsToPlayer",
+    "AllowDropBlackListed" : false,
+    "RecoveryMod" : 1,
+    "LimbRecoveryPenalty" : 0.05,
+    "TorsoRecoveryPenalty" : 0.1,
+    "HeadRecoveryPenaly" : 0,
+    "EjectRecoveryBonus" : 0.25,
+    "CenterTorsoDestroyedParts" : 1,
+    "SalvageArmWeight" : 0.75,
+    "SalvageLegWeight" : 0.75,
+    "SalvageTorsoWeight" : 1,
+    "SalvageHeadWeight" : 0.5,
+    "VACTDestroyedMod" : 0.35,
+    "VABLDestroyedMod" : 0.68,
+    "SalvageTurrets" : true,
+    "SalvageTurretsComponentChance" : 0.5,
+    "UpgradeSalvage" : true,
+    "BGColors" : [
+        {
+            "Tag" : "unit_assault",
+            "Color" : "#b2babb10",
+            "color" : {
+                "r" : 0.6980392,
+                "g" : 0.7294118,
+                "b" : 0.7333333,
+                "a" : 0.0627451
+            }
+        },
+        {
+            "Tag" : "unit_heavy",
+            "Color" : "#f0b27a10",
+            "color" : {
+                "r" : 0.9411765,
+                "g" : 0.6980392,
+                "b" : 0.4784314,
+                "a" : 0.0627451
+            }
+        },
+        {
+            "Tag" : "unit_medium",
+            "Color" : "#82e0aa10",
+            "color" : {
+                "r" : 0.509804,
+                "g" : 0.8784314,
+                "b" : 0.6666667,
+                "a" : 0.0627451
+            }
+        },
+        {
+            "Tag" : "unit_light",
+            "Color" : "#85c1e910",
+            "color" : {
+                "r" : 0.5215687,
+                "g" : 0.7568628,
+                "b" : 0.9137255,
+                "a" : 0.0627451
+            }
+        }
+    ],
+    "StoredMechColor" : "#7FFFD4",
+    "ReadyColor" : "#32CD32",
+    "VariantsColor" : "yellow",
+    "NotReadyColor" : "white",
+    "ExcludedColor" : "magenta",
+    "color_ready" : {
+        "r" : 0.1960784,
+        "g" : 0.8039216,
+        "b" : 0.1960784,
+        "a" : 1
+    },
+    "color_variant" : {
+        "r" : 1,
+        "g" : 1,
+        "b" : 0,
+        "a" : 1
+    },
+    "color_stored" : {
+        "r" : 0.4980392,
+        "g" : 1,
+        "b" : 0.8313726,
+        "a" : 1
+    },
+    "color_notready" : {
+        "r" : 1,
+        "g" : 1,
+        "b" : 1,
+        "a" : 1
+    },
+    "color_exclude" : {
+        "r" : 1,
+        "g" : 0,
+        "b" : 1,
+        "a" : 1
+    },
+    "AssemblyVariants" : true,
+    "MinPartsToAssembly" : 0.5,
+    "MinPartsToAssemblySpecial" : 0.5,
+    "ExcludeTags" : [
+        "BLACKLISTED"
+    ],
+    "ExclideVariants" : [
+        
+    ],
+    "SpecialTags" : [
+        {
+            "Tag" : "unit_LosTech",
+            "Mod" : 1.5
+        },
+        {
+            "Tag" : "unit_SLDFRoyal",
+            "Mod" : 3
+        },
+        {
+            "Tag" : "unit_SLDF",
+            "Mod" : 2
+        }
+    ],
+    "MaxVariantsInDescription" : 5,
+    "UnEquipedMech" : true,
+    "BrokenMech" : true,
+    "HeadRepaired" : false,
+    "LeftArmRepaired" : false,
+    "RightArmRepaired" : false,
+    "CentralTorsoRepaired" : false,
+    "LeftTorsoRepaired" : false,
+    "RightTorsoRepaired" : false,
+    "LeftLegRepaired" : false,
+    "RightLegRepaired" : false,
+    "RepairMechLimbs" : true,
+    "RepairMechLimbsChance" : 0.75,
+    "RandomStructureOnRepairedLimbs" : true,
+    "MinStructure" : 0.25,
+    "RepairMechComponents" : true,
+    "RepairComponentsFunctionalThreshold" : 0.25,
+    "RepairComponentsNonFunctionalThreshold" : 0.5,
+    "AdaptPartBaseCost" : 0.015,
+    "MaxAdaptMod" : 5,
+    "AdaptModWeight" : 2,
+    "ApplyPartPriceMod" : false,
+    "OmniTechTag" : null,
+    "OmniSpecialtoSpecialMod" : 0.1,
+    "OmniSpecialtoNormalMod" : 0.25,
+    "OmniNormalMod" : 0
+}
+CustomSalvage [DEBUG] Registring mechdef_blackjack_BJ-1(Blackjack BJ-1) => chassisdef_blackjack_BJ-1
+CustomSalvage [DEBUG] -- Exclude:False MinParts:2 PriceMult:1
+CustomSalvage [DEBUG] -- remove parts
+CustomSalvage [DEBUG] -- making mech
+CustomSalvage [DEBUG] Mech Assembly started for Blackjack BJ-1
+CustomSalvage [DEBUG] -- Clear Inventory
+CustomSalvage [DEBUG] -- broke parts
+CustomSalvage [DEBUG] --- RepairMechLimbsChance: 0.75, RepairMechLimbs: True 
+CustomSalvage [DEBUG] --- HeadRepaired: False, roll: 0.9151112 
+CustomSalvage [DEBUG] --- CentralTorsoRepaired: False, roll: 0.6921021 
+CustomSalvage [DEBUG] --- RightTorsoRepaired: False, roll: 0.7262461 
+CustomSalvage [DEBUG] --- LeftTorsoRepaired: False, roll: 0.06082099 
+CustomSalvage [DEBUG] --- RightArmRepaired: False, roll: 0.6331314 
+CustomSalvage [DEBUG] --- LeftArmRepaired: False, roll: 0.1475584 
+CustomSalvage [DEBUG] --- RightLegRepaired: False, roll: 0.2197178 
+CustomSalvage [DEBUG] --- LeftLegRepaired: False, roll: 0.2197178 
+CustomSalvage [DEBUG] -- broke equipment
+CustomSalvage [DEBUG] ---- Gear_Cockpit_LifeSupportA_Standard - location destroyed
+CustomSalvage [DEBUG] ---- emod_armorslots_standard - 0.7483268 vs 0.5 - fubar 
+CustomSalvage [DEBUG] ---- emod_leg_hip - location destroyed
+CustomSalvage [DEBUG] ---- emod_leg_hip - 0.6924213 vs 0.5 - fubar 
+CustomSalvage [DEBUG] ---- Gear_Cockpit_SensorsA_Standard - location destroyed
+CustomSalvage [DEBUG] ---- emod_structureslots_standard - 0.6827998 vs 0.5 - fubar 
+CustomSalvage [DEBUG] ---- emod_leg_upper - location destroyed
+CustomSalvage [DEBUG] ---- emod_leg_upper - 0.5206934 vs 0.5 - fubar 
+CustomSalvage [DEBUG] ---- Gear_Cockpit_Generic_Standard - location destroyed
+CustomSalvage [DEBUG] ---- emod_kit_shs - 0.3222342 vs 0.5 - broken 
+CustomSalvage [DEBUG] ---- emod_leg_lower - location destroyed
+CustomSalvage [DEBUG] ---- emod_leg_lower - 0.5927647 vs 0.5 - fubar 
+CustomSalvage [DEBUG] ---- Gear_Cockpit_SensorsB_Standard - location destroyed
+CustomSalvage [DEBUG] ---- Gear_Gyro_Generic_Standard - 0.9121445 vs 0.5 - fubar 
+CustomSalvage [DEBUG] ---- emod_leg_foot - location destroyed
+CustomSalvage [DEBUG] ---- emod_leg_foot - 0.9317331 vs 0.5 - fubar 
+CustomSalvage [DEBUG] ---- Gear_Cockpit_LifeSupportB_Standard - location destroyed
+CustomSalvage [DEBUG] ---- emod_engineslots_std_center - 0.2296537 vs 0.25 - repaired 
+CustomSalvage [DEBUG] ---- emod_engine_cooling - 0.2505199 vs 0.5 - broken 
+CustomSalvage [DEBUG] ---- emod_engine_dummy - 0.4545099 vs 0.5 - broken 
+CustomSalvage [DEBUG] ---- emod_arm_part_shoulder - 0.9988767 vs 0.5 - fubar 
+CustomSalvage [DEBUG] ---- emod_arm_part_upper - 0.2087607 vs 0.25 - repaired 
+CustomSalvage [DEBUG] ---- emod_arm_part_shoulder - 0.9842723 vs 0.5 - fubar 
+CustomSalvage [DEBUG] ---- emod_arm_part_upper - 0.6609209 vs 0.5 - fubar 
+CustomSalvage [DEBUG] -- Adding mech
+CustomSalvage [DEBUG] -- Posting Message
+CustomSalvage [DEBUG] -- refresh mechlab

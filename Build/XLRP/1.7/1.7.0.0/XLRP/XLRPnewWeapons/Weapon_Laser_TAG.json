@@ -1,0 +1,114 @@
+{
+    "Category" : "AntiPersonnel",
+    "Type" : "Laser",
+    "WeaponSubType" : "SmallLaserER",
+    "MinRange" : 0,
+    "MaxRange" : 450,
+    "RangeSplit" : [
+        90,
+        150,
+        270
+    ],
+    "AmmoCategory" : "NotSet",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 0,
+    "Damage" : 1,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 1,
+    "DamageVariance" : 0,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : -1,
+    "CriticalChanceMultiplier" : 0,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 0,
+    "ShotsWhenFired" : 1,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 0,
+    "Instability" : 0,
+	"NotUseInMelee" : true,
+    "WeaponEffectID" : "WeaponEffect-Weapon_LaserER_Small",
+    "Description" : {
+        "Cost" : 420000,
+        "Rarity" : 99,
+        "Purchasable" : true,
+        "Manufacturer" : "Apple Churchill",
+        "Model" : "442x TAG",
+        "UIName" : "TAG",
+        "Id" : "Weapon_Laser_TAG",
+        "Name" : "Target Acquisition Gear",
+        "Details" : "Target Acquisition Gear (TAG) is an advanced targeting device for use by artillery spotters. It utilizes several active scanning systems like lasers and EM sensors to scan the target and then relay the gathered information to other units. The system was first introduced by the Terran Hegemony in 2593 as a bulkier prototype, and then mass produced in 2600, but it became LosTech during the Succession Wars around the year 2835. Painting a target with the TAG system grants attacks against that target a <color=#f79924>+1 bonus to hit chance</color> for two turns.",
+        "Icon" : "uixSvgIcon_weapon_Support"
+    },
+    "BonusValueA" : "+1 Acc. vs. Target",
+    "BonusValueB" : "2 turn duration",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "Laser",
+    "BattleValue" : 0,
+    "InventorySize" : 1,
+    "Tonnage" : 1,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+		        {
+            "durationData" : {
+                "duration" : 2,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true,
+                "ticksOnEndOfRound" : false,
+                "ticksOnMovements" : false,
+                "stackLimit" : 1,
+                "clearedWhenAttacked" : false
+            },
+            "targetingData" : {
+                "effectTriggerType" : "OnHit",
+                "triggerLimit" : 0,
+                "extendDurationOnTrigger" : 0,
+                "specialRules" : "NotSet",
+                "effectTargetType" : "NotSet",
+                "range" : 0,
+                "forcePathRebuild" : false,
+                "forceVisRebuild" : false,
+                "showInTargetPreview" : false,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "TAG-Effect",
+                "Name" : "Target Acquired",
+                "Details" : "This target was marked by a TAG. +1 accuracy to all attacks against the target.",
+                "Icon" : "uixSvgIcon_artillery"
+            },
+            "nature" : "Debuff",
+            "statisticData" : {
+                "statName": "ToHitThisActor",
+                "operation": "Float_Add",
+                "modValue": "-1.0",
+                "modType": "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            },
+            "tagData" : null,
+            "floatieData" : null,
+            "actorBurningData" : null,
+            "vfxData" : null,
+            "instantModData" : null,
+            "poorlyMaintainedEffectData" : null
+        }
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+			"component_type_lostech",
+            "range_long"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

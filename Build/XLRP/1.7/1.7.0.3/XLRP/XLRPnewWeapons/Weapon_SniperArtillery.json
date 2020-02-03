@@ -1,0 +1,75 @@
+{
+    "Category" : "Ballistic",
+    "Type" : "Autocannon",
+    "WeaponSubType" : "AC20",
+    "MinRange" : 180,
+    "MaxRange" : 600,
+    "RangeSplit" : [
+        180,
+        360,
+        600
+    ],
+    "AmmoCategory" : "Sniper",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 30,
+    "Damage" : 50,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 0,
+    "HeatDamage" : 1,
+    "AccuracyModifier" : 2,
+    "CriticalChanceMultiplier" : 0.5,
+    "IndirectFireCapable" : true,
+    "RefireModifier" : 3,
+    "ShotsWhenFired" : 1,
+	"NotUseInMelee" : true,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 3,
+    "Instability" : 4,
+	"AMSImmune" : true,
+	"AlwaysIndirectVisuals" : true,
+	"Modes": [
+		{
+			"Id":"Area",
+			"UIName":"AoE",
+			"ForbiddenRange": 180,
+			"isBaseMode":true
+		}
+	],
+    "WeaponEffectID" : "WeaponEffect-Weapon_AC10_Single",
+    "Description" : {
+        "Cost" : 300000,
+        "Rarity" : 99,
+        "Purchasable" : true,
+        "Manufacturer" : "LAW",
+        "Model" : "Sniper Artillery",
+        "UIName" : "Sniper",
+        "Id" : "Weapon_SniperArtillery",
+        "Name" : "Sniper",
+        "Details" : "The Sniper Rifle Artillery Piece is the smaller cousin to the Long Tom Artillery Piece designed by Armstrong Industries. As the second most-powerful tube artillery in the Inner Sphere, the Sniper can cripple or destroy most light and medium BattleMechs with a single hit. The weapon has an effective range of 9 kilometers. The Sniper is slightly inaccurate but is capable of dealing damage in a large area of effect via indirect fire. Being a long-range artillery weapon, it is also <color=#dd7e6b>unable to fire on targets at 180 meters or less.</color>\n\nFor standard HE artillery shells, damage is dealt twice; once for a direct hit and as additional damage to all units within the blast radius.",
+        "Icon" : "uixSvgIcon_weapon_Ballistic"
+    },
+    "BonusValueA" : "-2 Acc.",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "AC20",
+    "BattleValue" : 0,
+    "InventorySize" : 10,
+    "Tonnage" : 20,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+	"ImprovedBallistic": true,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_extreme"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

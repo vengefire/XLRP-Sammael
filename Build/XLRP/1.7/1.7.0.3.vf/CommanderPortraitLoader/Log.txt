@@ -1,0 +1,28 @@
+Applying Hardset Icon to Pilot: Valkyr, guiTxrPort_Kharak_utr
+Date :7/10/2019 12:52:33 AM
+
+-----------------------------------------------------------------------------
+
+Applying Hardset Icon to Pilot: Valkyr, guiTxrPort_Jyn_utr
+Date :7/11/2019 10:44:15 PM
+
+-----------------------------------------------------------------------------
+
+Message :Object reference not set to an instance of an object<br/>
+StackTrace :  at CommanderPortraitLoader.SpawnableUnit_Init_Patch.Prefix (BattleTech.SpawnableUnit& __instance, BattleTech.PilotDef pilotDef) [0x00000] in <filename unknown>:0 
+Date :7/14/2019 8:04:10 AM
+
+-----------------------------------------------------------------------------
+
+Message :Object reference not set to an instance of an object<br/>
+StackTrace :  at CommanderPortraitLoader.SpawnableUnit_Init_Patch.Prefix (BattleTech.SpawnableUnit& __instance, BattleTech.PilotDef pilotDef) [0x00000] in <filename unknown>:0 
+Date :7/19/2019 10:15:59 PM
+
+-----------------------------------------------------------------------------
+
+Message :Object reference not set to an instance of an object<br/>
+StackTrace :  at CommanderPortraitLoader.SpawnableUnit_Init_Patch.Prefix (BattleTech.SpawnableUnit& __instance, BattleTech.PilotDef pilotDef) [0x00000] in <filename unknown>:0 
+Date :7/19/2019 10:34:50 PM
+
+-----------------------------------------------------------------------------
+

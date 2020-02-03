@@ -1,0 +1,13 @@
+{
+   "CareerMode" : {
+        "CampaignStartDate" : "3046-05-01T05:00:00Z",
+		"StartingGlobalContractDifficulty" : 0,
+		"GlobalContractDifficultyIncreasePerMRBRating" : 0,
+		"CareerStartingTags" :[
+			"map_travel_1",
+			"map_travel_2",
+			"map_travel_2a",
+			"map_travel_3"
+		]
+   }
+}

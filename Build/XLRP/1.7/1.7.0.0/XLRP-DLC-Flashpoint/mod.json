@@ -1,0 +1,21 @@
+{
+    "Name": "XLRP-Flashpoint",
+    "Enabled": true,
+	
+    "Version": "1.0.0",
+	
+    "Description": "This optional patch updates the Flashpoint DLC Mechs with XLRP weapons according to lore.",
+	
+    "Author": "XTRMNTR2K",
+    "Website": "https://www.youtube.com/XTRMNTR2K",
+
+  "DependsOn": [ "XLRP", "MechEngineer"],
+  "ConflictsWith": [],
+  
+    "Manifest": [
+        { "Type": "ChassisDef", "Path": "FlashpointChassis", "ShouldMergeJSON": false, "AddToDB": true },
+		{ "Type": "MechDef", "Path": "XLRPFlashpoint", "ShouldMergeJSON": false, "AddToDB": false },
+		{ "Type": "UpgradeDef", "Path": "FlashpointUpgrades", "ShouldMergeJSON": false, "AddToDB": true },
+		{ "Type": "ItemCollectionDef", "Path": "ItemCollections", "ShouldAppendText": true }
+    ]
+}

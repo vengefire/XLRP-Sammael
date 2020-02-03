@@ -1,0 +1,65 @@
+{
+    "Category" : "Missile",
+    "Type" : "LRM",
+    "WeaponSubType" : "LRM20",
+    "MinRange" : 180,
+    "MaxRange" : 630,
+    "RangeSplit" : [
+        420,
+        420,
+        630
+    ],
+    "AmmoCategory" : "ArtemisLRM",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 18,
+    "Damage" : 5,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 0,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : 0,
+    "CriticalChanceMultiplier" : 1,
+    "AOECapable" : false,
+    "IndirectFireCapable" : true,
+    "RefireModifier" : 0,
+    "ShotsWhenFired" : 20,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 1,
+    "Instability" : 2,
+    "WeaponEffectID" : "WeaponEffect-Weapon_LRM20",
+    "Description" : {
+        "Cost" : 800000,
+        "Rarity" : 0,
+        "Purchasable" : true,
+        "Manufacturer" : "Zeus",
+        "Model" : "Precision LRM",
+        "UIName" : "LRM20 + Artemis IV",
+        "Id" : "Weapon_LRM_LRM20_ArtemisIV_0-STOCK",
+        "Name" : "LRM20 + Artemis IV",
+        "Details" : "The Artemis IV Fire Control System is a guidance system that utilizes an infrared laser designator and tight-beam microwave transmitter which improves the accuracy of LRMs and SRMs. The Artemis IV FCS must be mounted in the same location as the launcher it controls, taking up space and weight on a BattleMech like other components. In order to actually benefit from Artemis IV, the firing unit must have line of sight to its target. Indirect fire accuracy is not affected and Artemis-compatible ammunition is required in order to function.\r\n\r\n<color=#dd7e6b><b>Artemis IV-equipped weapons can not be used in conjunction with standard launchers. If one or more Artemis-enhanced launchers are present, all other SRMs/LRMs must have an Artemis IV FCS as well.</color></b>",
+        "Icon" : "uixSvgIcon_weapon_Missile"
+    },
+    "BonusValueA" : "+1 Dmg.",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "lrm20",
+    "BattleValue" : 0,
+    "InventorySize" : 6,
+    "Tonnage" : 11,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_extreme",
+			"ArtemisMissile"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

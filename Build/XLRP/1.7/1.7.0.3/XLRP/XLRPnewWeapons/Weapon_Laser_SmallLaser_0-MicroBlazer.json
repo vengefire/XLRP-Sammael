@@ -1,0 +1,64 @@
+{
+    "Category" : "Energy",
+    "Type" : "Laser",
+    "WeaponSubType" : "SmallLaser",
+    "MinRange" : 0,
+    "MaxRange" : 120,
+    "RangeSplit" : [
+        120,
+        120,
+        120
+    ],
+    "AmmoCategory" : "NotSet",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 14,
+    "Damage" : 35,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 5,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : -1,
+    "CriticalChanceMultiplier" : 2,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 0,
+    "ShotsWhenFired" : 1,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 0,
+    "Instability" : 0,
+    "WeaponEffectID" : "WeaponEffect-Weapon_Laser_Small",
+    "Description" : {
+        "Cost" : 40000,
+        "Rarity" : 1,
+        "Purchasable" : true,
+        "Manufacturer" : "Custom-Built",
+        "Model" : "Small Laser (Dual Mount)",
+        "UIName" : "Micro Blazer",
+        "Id" : "Weapon_Laser_SmallLaser_0-MicroBlazer",
+        "Name" : "Micro Blazer",
+        "Details" : "Remember the Blazer, Boss? No? Not a surprise. Slapping two Large Lasers together doesn't make for a very heat effective weapon. Strangely enough someone did just about the same thing to a pair of small lasers. The housing is a strange jumble of Medium and Large Laser parts, to ensure that this abomination fits into an energy hardpoint. Needless to say that the heat generation is off the charts for such a small weapon. It IS better at dealing critical hits, though. \r\n\r\nSince energy hardpoints have limited speed when tracking targets at point-blank range, this weapon can no longer be fired during melee attacks. <color=#f79924>Like all other Small Lasers this one has a damage variance of +/- 5 points of damage.</color>",
+        "Icon" : "uixSvgIcon_weapon_Support"
+    },
+    "BonusValueA" : "+100% Crit.",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "Laser",
+    "BattleValue" : 0,
+    "InventorySize" : 2,
+    "Tonnage" : 1,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_close"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

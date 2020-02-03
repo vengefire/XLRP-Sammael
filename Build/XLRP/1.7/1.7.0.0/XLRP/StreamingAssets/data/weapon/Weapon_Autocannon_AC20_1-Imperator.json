@@ -1,0 +1,20 @@
+{
+    "HeatGenerated" : 20,
+    "Damage" : 120,
+    "DamageVariance" : 5,
+	"Instability" : 55,
+    "Description" : {
+        "Details" : "The king of the battlefield in terms of raw damage, AC/20s hit harder than any other weapon. However, this comes at the expense of weight, range, and severely limited ammunition. AC/20s suffer from <color=#dd7e6b> -2 Recoil/refire penalty </color>, when continuously fired. Your pilots guts skill can counteract this. Additionally, <color=#f79924>this AC20 has a damage variance of +/- 5 points of damage.</color>"
+    },
+    "BonusValueA" : "+10 Dmg.",
+    "BonusValueB" : "-5 Dmg.Variance",
+    "ComponentTags" : {
+        "items" : [
+            "component_type_variant",
+            "component_type_variant1",
+            "range_standard",
+            "wr-jammable_weapon",
+            "wr-jam_chance_multiplier-1"
+        ]
+    }
+}

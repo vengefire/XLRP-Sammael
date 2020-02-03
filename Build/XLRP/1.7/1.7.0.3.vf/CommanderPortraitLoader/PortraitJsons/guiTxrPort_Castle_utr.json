@@ -1,0 +1,51 @@
+{
+    "Description" : {
+        "Id" : "guiTxrPort_Castle_utr",
+        "Name" : "guiTxrPort_Castle_utr",
+        "Details" : "Random",
+        "Icon" : "guiTxrPort_Castle_utr"
+    },
+    "ID" : "guiTxrPort_Castle_utr",
+    "backgroundColor" : {
+        "r" : 0,
+        "g" : 0,
+        "b" : 0,
+        "a" : 0
+    },
+    "headMesh" : 0.5,
+    "hairMesh" : 8,
+    "beardMesh" : 0,
+    "suitMesh" : 1,
+    "scar" : 2,
+    "lightRig" : 1,
+    "cameraPosition" : 2,
+    "complexionTex" : 3,
+    "eyebrowTex" : 0,
+    "tattooTex" : 0,
+    "actualTattooTex" : 0,
+    "weights" : [
+        31.3582,
+        39.81775,
+        17.64185,
+        2.621001,
+        5.968912,
+        2.592298
+    ],
+    "browOffsetY" : 0.001779652,
+    "browOffsetZ" : -0.002756137,
+    "noseBridgeScale" : -0.06700752,
+    "noseTipScale" : 0.02659246,
+    "chinScale" : 0.1972665,
+    "cheekOffsetY" : 0.002751814,
+    "eyeWidth" : 0.03362064,
+    "jawWidth" : -0.01893548,
+    "animation" : 2,
+    "isCommander" : true,
+    "skinToneId" : "Skin_07",
+    "eyeColorId" : "Eye_03",
+    "hairRootId" : "Hair_14",
+    "hairTipId" : "Hair_14",
+    "tattooColorId" : "Tattoo_05",
+    "lipColorId" : "Lip_01",
+    "customPortraitSaveVersion" : 0
+}

@@ -1,0 +1,40 @@
+{
+	"Custom": {
+		"ComponentExplosion": {
+			"ExplosionDamagePerAmmo": 40
+		}
+	},
+    "AmmoID" : "Ammunition_ThumperCluster",
+    "Capacity" : 20,
+    "Description" : {
+        "Cost" : 60000,
+        "Rarity" : 99,
+        "Purchasable" : false,
+        "Manufacturer" : "Generic",
+        "Model" : "Thumper",
+        "UIName" : "Thumper Cluster Ammo",
+        "Id" : "Ammo_AmmunitionBox_Generic_ThumperCluster",
+        "Name" : "Thumper Cluster Ammo",
+        "Details" : "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Ammo Bins will explode and destroy their installed location when they receive a Critical Hit. Thumper Ammo Bins each contain 20 rounds and may feed multiple weapons.\r\n\r\n<b><color=#ffcc00>Explosion damage per ammo: 40</color></b>",
+        "Icon" : "uixSvgIcon_ammoBox_Ballistic"
+    },
+    "BonusValueA" : "10 x 10 Dmg.",
+    "BonusValueB" : "45m Scatter Range +3 Acc.",
+    "ComponentType" : "AmmunitionBox",
+    "ComponentSubType" : "Ammunition",
+    "PrefabIdentifier" : "",
+    "BattleValue" : 0,
+    "InventorySize" : 1,
+    "Tonnage" : 1,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+    ],
+    "ComponentTags" : {
+        "items" : [
+		"component_type_stock"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

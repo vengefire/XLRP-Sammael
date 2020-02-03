@@ -1,0 +1,9 @@
+{
+  "abilityDefNames": [
+    "AbilityDefT5A",
+    "TraitDefCalledShotImprove",
+    "TraitDefIndirectReduceOne",
+    "TraitDefMinRangeReduce45",
+	"TraitDefVisualRange5"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+    "Description" : {
+        "Id" : "cosmonaut2",
+        "Name" : "cosmonaut2",
+        "Details" : "Random",
+        "Icon" : "cosmonaut2"
+    },
+    "ID" : "cosmonaut2",
+    "backgroundColor" : {
+        "r" : 0,
+        "g" : 0,
+        "b" : 0,
+        "a" : 0
+    },
+    "headMesh" : 0.5,
+    "hairMesh" : 13,
+    "beardMesh" : 0,
+    "suitMesh" : 1,
+    "scar" : 0,
+    "lightRig" : 4,
+    "cameraPosition" : 4,
+    "complexionTex" : 2,
+    "eyebrowTex" : 5,
+    "tattooTex" : 10,
+    "actualTattooTex" : 17,
+    "weights" : [
+        13.65373,
+        0.4133938,
+        28.74578,
+        12.98939,
+        31.73574,
+        12.46196
+    ],
+    "browOffsetY" : -0.00506041,
+    "browOffsetZ" : 0.003516651,
+    "noseBridgeScale" : -0.01091034,
+    "noseTipScale" : 0.167886,
+    "chinScale" : -0.1790337,
+    "cheekOffsetY" : -0.001791698,
+    "eyeWidth" : 0.032022,
+    "jawWidth" : 0.04096362,
+    "animation" : 0,
+    "isCommander" : true,
+    "skinToneId" : "Skin_03",
+    "eyeColorId" : "Eye_07",
+    "hairRootId" : "Hair_01",
+    "hairTipId" : "Hair_01",
+    "tattooColorId" : "Tattoo_03",
+    "lipColorId" : "Lip_01",
+    "customPortraitSaveVersion" : 0
+}

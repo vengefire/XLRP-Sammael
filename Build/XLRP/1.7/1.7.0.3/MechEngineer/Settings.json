@@ -1,0 +1,278 @@
+{
+  "ArmorStructureRatio": {
+    "SkipMechDefs": [
+    ],
+    "Enabled": false
+  },
+  "DebugSaveMechToFile": {
+    "Enabled": true
+  },
+  "AutoFixer": {
+    "ChassisDefSlotsChanges": [
+      {
+        "Location": "LeftTorso",
+        "Change": {
+          "From": 10,
+          "By": 2,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "RightTorso",
+        "Change": {
+          "From": 10,
+          "By": 2,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "LeftLeg",
+        "Change": {
+          "From": 4,
+          "By": 2,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "RightLeg",
+        "Change": {
+          "From": 4,
+          "By": 2,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "Head",
+        "Change": {
+          "From": 1,
+          "By": 5,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "CenterTorso",
+        "Change": {
+          "From": 4,
+          "By": 11,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "LeftArm",
+        "Change": {
+          "From": 8,
+          "By": 4,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "RightArm",
+        "Change": {
+          "From": 8,
+          "By": 4,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "LeftLeg",
+        "Change": {
+          "From": 2,
+          "By": 4,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "RightLeg",
+        "Change": {
+          "From": 2,
+          "By": 4,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "Head",
+        "Change": {
+          "From": 3,
+          "By": 3,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "LeftArm",
+        "Change": {
+          "From": 11,
+          "By": 1,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "RightArm",
+        "Change": {
+          "From": 11,
+          "By": 1,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "CenterTorso",
+        "Change": {
+          "From": 16,
+          "By": -1,
+          "FromIsMin": false
+        }
+      },
+      {
+        "Location": "Head",
+        "Change": {
+          "From": 4,
+          "By": 2,
+          "FromIsMin": false
+        }
+      }
+    ]
+  },
+  "ShutdownInjuryProtection": {
+    "Enabled": true,
+    "EnabledDescription": "Pilots receive injury when mech receives overheat damage or has to shut down.",
+    "HeatDamageInjuryEnabled": false,
+    "ShutdownInjuryEnabled": true
+  },
+  "NewSaveFolder": {
+    "Path": "Mods/Saves",
+    "Enabled": false
+  },
+  "MechLabSlots": {
+    "Enabled": true,
+    "EnabledDescription": "Makes the mech lab adhere to any custom mech slot counts.",
+    "MechLabArmTopPadding": 150,
+    "MechLabGeneralSlots": 3
+  },
+  "HardpointFix" : {
+      "Enabled" : true,
+      "EnabledDescription" : "Optimizes the way installed weapons are shown on a mech model.",
+      "AutoFixChassisDefWeaponHardpointCounts" : false,
+      "AutoFixChassisDefWeaponHardpointCountsDescription" : "Changes chassis hardpoints based on configured prefabs.",
+      "EnforceHardpointLimits" : false,
+      "EnforceHardpointLimitsDescription" : "Enforces hardpoint limits in mechlab only allowing configured prefabs.",
+      "AllowDefaultLoadoutWeapons" : false,
+      "AllowDefaultLoadoutWeaponsDescription" : "Ignore limits that would prevent mounting default loadouts.",
+      "WeaponPrefabMappings" : [
+          {
+              "PrefabIdentifier" : "AC2",
+              "HardpointCandidates" : [
+                  "ac2",
+                  "ac",
+                  "lbx"
+              ]
+          },
+          {
+              "PrefabIdentifier" : "AC5",
+              "HardpointCandidates" : [
+                  "ac5",
+                  "uac5",
+                  "ac",
+                  "lbx"
+              ]
+          },
+          {
+              "PrefabIdentifier" : "AC10",
+              "HardpointCandidates" : [
+                  "ac10",
+                  "lbx10",
+                  "ac",
+                  "lbx"
+              ]
+          },
+          {
+              "PrefabIdentifier" : "AC20",
+              "HardpointCandidates" : [
+                  "ac20",
+                  "ac",
+                  "lbx"
+              ]
+          },
+          {
+              "PrefabIdentifier" : "artillery",
+              "HardpointCandidates" : [
+                  "artillery",
+                  "ac20",
+                  "ac",
+                  "lbx",
+                  "sniper",
+                  "thumper"
+              ]
+          },
+          {
+              "PrefabIdentifier" : "lrm5",
+              "HardpointCandidates" : [
+                  "lrm5",
+                  "lrm10",
+                  "lrm15",
+                  "lrm20",
+                  "srm20"
+              ]
+          },
+          {
+              "PrefabIdentifier" : "lrm10",
+              "HardpointCandidates" : [
+                  "lrm10",
+                  "lrm15",
+                  "lrm20",
+                  "srm20",
+                  "lrm5"
+              ]
+          },
+          {
+              "PrefabIdentifier" : "lrm15",
+              "HardpointCandidates" : [
+                  "lrm15",
+                  "lrm20",
+                  "srm20",
+                  "lrm10",
+                  "lrm5"
+              ]
+          },
+          {
+              "PrefabIdentifier" : "lrm20",
+              "HardpointCandidates" : [
+                  "lrm20",
+                  "srm20",
+                  "lrm15",
+                  "lrm10",
+                  "lrm5"
+              ]
+          },
+          {
+              "PrefabIdentifier" : "MachineGun",
+              "HardpointCandidates" : [
+                  "machinegun",
+                  "mg"
+              ]
+          },
+          {
+              "PrefabIdentifier" : "srm2",
+              "HardpointCandidates" : [
+                  "srm2",
+                  "srm4",
+                  "srm6"
+              ]
+          },
+          {
+              "PrefabIdentifier" : "srm4",
+              "HardpointCandidates" : [
+                  "srm4",
+                  "srm6",
+                  "srm2"
+              ]
+          },
+          {
+              "PrefabIdentifier" : "srm6",
+              "HardpointCandidates" : [
+                  "srm6",
+                  "srm4",
+                  "srm2"
+              ]
+          }
+      ]
+  }
+}

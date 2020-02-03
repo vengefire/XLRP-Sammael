@@ -1,0 +1,11 @@
+{
+	"Custom": {
+		"ComponentExplosion": {
+			"ExplosionDamagePerAmmo": 28
+		}
+	},
+    "Capacity" : 6,
+	    "Description" : {
+        "Details" : "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Ammo Bins will explode and destroy their installed location when they receive a Critical Hit. AC/20 Ammo Bins each contain <color=#6aa84f>6 rounds</color> and may feed multiple weapons.\r\n\r\n<b><color=#ffcc00>Explosion damage per ammo: 28</color></b>"
+    }
+}

@@ -1,0 +1,268 @@
+{
+    "MechTags": {
+        "items": [
+            "unit_mech",
+            "unit_medium",
+			"unit_release",
+            "unit_role_brawler",
+            "unit_lance_tank",
+			"unit_dlc",
+			"unit_type_LosTech",
+			"unit_SLDFRoyal",
+			"BLACKLISTED"
+        ],
+        "tagSetSourceFile": ""
+    },
+    "ChassisID": "chassisdef_crab_CRB-27b",
+    "HeraldryID": null,
+    "Description": {
+        "Cost": 5390000,
+        "Rarity": 2,
+        "Purchasable": true,
+        "Manufacturer": null,
+        "Model": null,
+        "UIName": "Crab CRB-27b",
+        "Id": "mechdef_crab_CRB-27b",
+        "Name": "Crab SLDF",
+        "Details": "Crabs fulfill an oft overlooked role, that of a skirmisher with firepower. Wielding strong energy weapons, the Crab delivers a punch at nearly all ranges, with no ammunition constraints.<color=#f79924> Used by the SLDF Royals the ancient 27b variant replaces the standard heat sinks with double-strength models and the large lasers with ER Large Lasers.</color>",
+        "Icon": "uixTxrIcon_crab"
+    },
+    "simGameMechPartCost": 1510000,
+    "Version": 1,
+    "Locations": [
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "Head",
+            "CurrentArmor" : 45,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 16,
+            "AssignedArmor" : 45,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "CenterTorso",
+            "CurrentArmor" : 100,
+            "CurrentRearArmor" : 40,
+            "CurrentInternalStructure" : 80,
+            "AssignedArmor" : 100,
+            "AssignedRearArmor" : 40
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "LeftTorso",
+            "CurrentArmor" : 80,
+            "CurrentRearArmor" : 35,
+            "CurrentInternalStructure" : 60,
+            "AssignedArmor" : 80,
+            "AssignedRearArmor" : 35
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "RightTorso",
+            "CurrentArmor" : 80,
+            "CurrentRearArmor" : 35,
+            "CurrentInternalStructure" : 60,
+            "AssignedArmor" : 80,
+            "AssignedRearArmor" : 35
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "LeftArm",
+            "CurrentArmor" : 75,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 40,
+            "AssignedArmor" : 75,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "RightArm",
+            "CurrentArmor" : 75,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 40,
+            "AssignedArmor" : 75,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "LeftLeg",
+            "CurrentArmor" : 120,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 60,
+            "AssignedArmor" : 120,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "RightLeg",
+            "CurrentArmor" : 120,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 60,
+            "AssignedArmor" : 120,
+            "AssignedRearArmor" : 0
+        }
+    ],
+    "inventory" : [
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "Weapon_Laser_MediumLaser_0-STOCK",
+            "ComponentDefType" : "Weapon",
+            "HardpointSlot" : 0,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "chrPrfWeap_crab_centertorso_laser_eh1",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "Head",
+            "ComponentDefID" : "Weapon_Laser_SmallLaser_0-STOCK",
+            "ComponentDefType" : "Weapon",
+            "HardpointSlot" : 0,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "chrPrfWeap_crab_centertorso_flamer_eh1",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "Gear_Gyro_Generic_Standard",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_structureslots_standard",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_engine_250",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_engineslots_std_center",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_engine_cooling",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightTorso",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Double",
+            "SimGameUID" : "",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "RightTorso",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Double",
+            "SimGameUID" : "",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftTorso",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Double",
+            "SimGameUID" : "",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftTorso",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Double",
+            "SimGameUID" : "",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "RightArm",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Double",
+            "SimGameUID" : "",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftArm",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Double",
+            "SimGameUID" : "",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "RightArm",
+            "ComponentDefID" : "Weapon_Laser_LargeLaserER_1-Blankenburg25",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Weapon",
+            "HardpointSlot" : 0,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftArm",
+            "ComponentDefID" : "Weapon_Laser_LargeLaserER_1-Blankenburg25",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Weapon",
+            "HardpointSlot" : 0,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_armorslots_ferrosfibrous",
+            "SimGameUID" : "",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        }
+    ]
+}

@@ -1,0 +1,162 @@
+{
+   "Finances" : {  
+        "DefaultShopMaxInventory" : 100,
+        "DefaultShopMaxSpecials" : 4,
+   },
+   "Progression" : {
+		"GunnerySkills" :[
+			[
+				"TraitDefWeaponHit1"
+			],
+			[
+				"TraitDefWeaponHit2"
+			],
+			[
+				"TraitDefWeaponHit3"
+			],
+			[
+				"TraitDefWeaponHit4"
+			],
+			[
+				"TraitDefWeaponHit5",
+				"AbilityDefG5"				
+			],
+			[
+				"TraitDefCalledShotImprove",
+				"TraitDefWeaponHit6"
+			],
+			[
+				"TraitDefWeaponHit7"
+			],
+			[
+				"TraitDefWeaponHit8",
+				"AbilityDefG8"				
+			],
+			[
+				"TraitDefCalledShotMaster",
+				"TraitDefWeaponHit9"
+			],
+			[
+				"TraitDefWeaponHit10"
+			]
+		],
+		"PilotingSkills" :[
+			[
+				"TraitDefMeleeHit1"
+			],
+			[
+				"TraitDefMeleeHit2"
+			],
+			[
+				"TraitDefMeleeHit3"
+			],
+			[
+				"TraitDefMeleeHit4",
+				"TraitDefUnsteadySet60"
+			],
+			[
+				"TraitDefMeleeHit5",
+				"AbilityDefP5"
+			],
+			[
+				"TraitDefMeleeHit6",
+				"TraitDefEvasiveChargeAddOne"
+			],
+			[
+				"TraitDefMeleeHit7",
+				"TraitDefSprintIncrease20"
+			],
+			[
+				"TraitDefMeleeHit8",
+				"AbilityDefP8"
+			],
+			[
+				"TraitDefMeleeHit9",
+				"TraitDefUnsteadySet80"
+			],
+			[
+				"TraitDefMeleeHit10",
+				"TraitDefEvasiveChargeAddTwo"
+			]
+		],
+		"GutsSkills" :[
+			[
+			],
+			[
+			],
+			[
+			],
+			[
+				"TraitDefHealthAddOne"
+			],
+			[
+				"TraitDefRefireReduceOne",
+				"AbilityDefGu5"	
+			],
+			[
+				"TraitDefOverheatAddFifteen"
+			],
+			[
+				"TraitDefHealthAddTwo"
+			],
+			[
+				"TraitDefRefireReduceTwo",
+				"AbilityDefGu8"
+			],
+			[
+				"TraitDefOverheatAddThirty"
+			],
+			[
+                "TraitDefHealthAddThree"
+			]
+		],
+		"TacticsSkills" :[
+			[
+				"TraitDefVisualRange1"
+			],
+			[
+				"TraitDefVisualRange2"
+			],
+			[
+				"TraitDefVisualRange3"
+			],
+			[
+				"TraitDefVisualRange4",
+				"TraitDefIndirectReduceOne"
+			],
+			[
+				"TraitDefVisualRange5",
+				"TraitDefMinRangeReduce45",
+				"AbilityDefT5A"	
+			],
+			[
+				"TraitDefVisualRange6"
+			],
+			[
+				"TraitDefVisualRange7",
+				"TraitDefIndirectReduceTwo"
+			],
+			[
+				"TraitDefVisualRange8",
+				"AbilityDefT8A"	
+			],
+			[
+				"TraitDefVisualRange9",
+				"TraitDefMinRangeReduce90"
+			],
+			[
+				"TraitDefVisualRange10",
+				"TraitDefIndirectReduceThree"
+			]
+		]
+	},
+   "CareerMode" : {
+		"LoathedMaxContractDifficulty" : 3,
+		"HatedMaxContractDifficulty" : 4,
+		"DislikedMaxContractDifficulty" : 5,
+		"IndifferentMaxContractDifficulty" : 6,
+		"LikedMaxContractDifficulty" : 8,
+		"FriendlyMaxContractDifficulty" : 9,
+		"HonoredMaxContractDifficulty" : 10,
+   }
+}

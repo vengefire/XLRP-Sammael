@@ -1,0 +1,15 @@
+{
+  "abilityDefNames": [
+    "AbilityDefGu5",
+    "AbilityDefGu8",
+    "AbilityDefP5",
+    "TraitDefHealthAddOne",
+    "TraitDefHealthAddTwo",
+    "TraitDefIndirectReduceOne",
+	"TraitDefVisualRange4",
+    "TraitDefOverheatAddFifteen",
+    "TraitDefRefireReduceOne",
+    "TraitDefRefireReduceTwo",
+    "TraitDefUnsteadySet60"
+  ]
+}

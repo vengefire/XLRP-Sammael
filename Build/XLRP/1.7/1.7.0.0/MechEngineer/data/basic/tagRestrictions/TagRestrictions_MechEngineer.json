@@ -1,0 +1,80 @@
+{
+    "Settings" : [
+        {
+            "Tag" : "emod_case",
+            "IncompatibleTags" : [
+                "emod_case2"
+            ]
+        },
+		{
+            "Tag" : "MASC",
+            "IncompatibleTags" : [
+                "TSM",
+				"Supercharger"
+            ]
+        },
+		{
+            "Tag" : "TSM",
+            "IncompatibleTags" : [
+                "MASC"
+            ]
+        },
+		{
+            "Tag" : "Supercharger",
+            "IncompatibleTags" : [
+                "MASC"
+            ]
+        },
+		{
+            "Tag" : "StandardMissile",
+            "IncompatibleTags" : [
+                "ArtemisMissile"
+            ]
+        },
+		{
+            "Tag" : "ArtemisMissile",
+            "IncompatibleTags" : [
+                "StandardMissile"
+            ]
+        },
+		{
+            "Tag" : "ProtoECM",
+            "IncompatibleTags" : [
+                "ProtoActiveProbe",
+				"ProtoEWSuite"
+            ]
+        },
+		{
+            "Tag" : "ProtoActiveProbe",
+            "IncompatibleTags" : [
+                "ProtoECM",
+				"ProtoEWSuite"
+            ]
+        },
+		{
+            "Tag" : "ECM",
+            "IncompatibleTags" : [
+                "ProtoActiveProbe",
+				"ProtoECM",
+				"ProtoEWSuite"
+            ]
+        },
+		{
+            "Tag" : "ActiveProbe",
+            "IncompatibleTags" : [
+                "ProtoActiveProbe",
+				"ProtoECM",
+				"ProtoEWSuite"
+            ]
+        },
+		{
+            "Tag" : "ProtoEWSuite",
+            "IncompatibleTags" : [
+                "ProtoActiveProbe",
+				"ProtoECM",
+				"ActiveProbe",
+				"ECM"
+            ]
+        }
+    ]
+}

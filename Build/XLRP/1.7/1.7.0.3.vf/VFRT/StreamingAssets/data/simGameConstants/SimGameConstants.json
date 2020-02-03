@@ -1,0 +1,15 @@
+{
+	"Story": {
+        "LoathedRepPaymentAdjustment": -0.9,
+        "HatedRepPaymentAdjustment": -0.5,
+        "DislikedRepPaymentAdjustment": -0.1,
+        "HatedRepShopAdjustment": 0.5,
+        "TargetRepSuccessMod": -0.2,
+        "TargetRepGoodFaithMod": -0.1
+	},
+    "CareerMode": {
+      "LoathedMaxContractDifficulty": 5,
+      "HatedMaxContractDifficulty": 5,
+      "DislikedMaxContractDifficulty": 6
+    }
+}

@@ -1,0 +1,46 @@
+{
+   "Version" : 1,
+   "Description" : {
+      "Id" : "turretdef_Light_artillery",
+      "Name" : "Light Artillery Turret",
+      "Details" : "",
+      "Icon" : "",
+      "Cost" : 993,
+      "Rarity" : 0,
+      "Purchasable" : false
+   },
+   "ChassisID" : "turretchassisdef_Light_artillery",
+   "TurretTags": {
+      "items": [
+         "unit_turret",
+         "unit_light",
+		 "unit_turret_artillery",
+		 "unit_indirectFire"
+      ],
+      "tagSetSourceFile": ""
+   },
+   "CurrentArmor" : 80,
+   "CurrentInternalStructure" : 1,
+   "AssignedArmor" : 80,
+   "DamageLevel" : "Functional",
+   "inventory" : [
+    {
+      "ComponentDefID": "Weapon_ThumperArtillery",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 0,
+	  "DamageLevel" : "Functional"
+    },
+    {
+      "ComponentDefID": "Weapon_ThumperArtillery",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 1,
+	  "DamageLevel" : "Functional"
+    },
+    {
+      "ComponentDefID": "Ammo_AmmunitionBox_Generic_Thumper",
+      "ComponentDefType": "AmmunitionBox",
+      "HardpointSlot": -1,
+	  "DamageLevel" : "Functional"
+    }
+   ]
+}

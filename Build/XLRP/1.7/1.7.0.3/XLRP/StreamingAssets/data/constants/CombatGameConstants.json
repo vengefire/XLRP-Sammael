@@ -1,0 +1,239 @@
+{
+    "Visibility":
+    {
+        "BaseSpotterDistance": 240.0,
+        "SpotterTacticsMultiplier": 15.0,
+        "RatioFullVis": 0.79,
+        "RatioObstructedVis": 0.41,
+        "MinRatioFromActors": 0.2,
+        "ShutDownVisibilityModifier": 0.0,
+        "ShutDownSignatureModifier": -0.5,
+        "BaseSensorDistance": 400.0,
+        "UseAsymmetricalSensors": true,
+        "ShowExtendedBlipsBeforeContact": false,
+        "ExtendedSensorDistanceMultiplier": 1.0,
+        "SensorHysteresisAdditive": 50.0,
+        "ShutdownSpottingDistanceMultiplier": 0.1,
+        "ProneSpottingDistanceMultiplier": 0.25,
+        "AllowRearArcSpotting": true,
+        "NumSensorLockSteps": 1,
+        "SensorLockSingleStepEffect":
+        {
+            "durationData":
+            {
+                "duration": 1,
+                "ticksOnEndOfRound": true,
+                "stackLimit": 1
+            },
+            "targetingData":
+            {
+                "effectTargetType": "SingleTarget",
+                "forceVisRebuild": true
+            },
+            "effectType": "StatisticEffect",
+            "Description":
+            {
+                "Id": "AbilityDefT6A",
+                "Name": "SENSOR LOCK",
+                "Details": "SIGNATURE BOOSTED",
+        		"Icon" : "uixSvgIcon_action_sensorlock"
+            },
+            "statisticData":
+            {
+                "statName": "ToHitThisActorDirectFire",
+                "operation": "Float_Add",
+                "modValue": "0.0",
+                "modType": "System.Single"
+            },
+            "nature": "Debuff"
+        },
+        "NumSensorLockImpairedEffects": 0,
+        "SensorsImpairedEffect":
+        {
+            "durationData" : {
+                "duration" : 0,
+                "ticksOnActivations" : true,
+                "useActivationsOfTarget" : true
+            },
+            "targetingData" : {
+                "effectTargetType" : "SingleTarget",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "AbilityDefPPC",
+                "Name" : "",
+                "Details" : "",
+                "Icon" : ""
+            },
+            "nature" : "Debuff",
+            "statisticData" : {
+                "statName" : "AccuracyModifier",
+                "operation" : "Float_Add",
+                "modValue" : "0.0",
+                "modType" : "System.Single"
+            }
+        },
+        "FiredWeaponsEffect":
+        {
+            "durationData":
+            {
+                "duration": 1,
+                "ticksOnActivations": true,
+                "useActivationsOfTarget": true
+            },
+            "targetingData":
+            {
+                "effectTriggerType": "OnActivation",
+                "effectTargetType": "SingleTarget"
+            },
+            "effectType": "StatisticEffect",
+            "Description":
+            {
+                "Id": "FiredWeaponsSignatureEffect",
+                "Name": "FIRED WEAPONS",
+                "Details": "+100% SIGNATURE",
+                "Icon": "uixSvgIcon_genericDiamond"
+            },
+            "statisticData":
+            {
+                "statName": "SensorSignatureModifier",
+                "operation": "Float_Add",
+                "modValue": "0.0",
+                "modType": "System.Single"
+            },
+            "nature": "Debuff"
+        },
+        "MaxShadowingDistance": 80.0,
+        "NumShadowingSteps": -1
+    },
+    "ToHit":
+    {
+        "FiringArcDegrees": 60.0,
+        "ToHitBaseFloor": 0.75,
+        "ToHitGunneryDivisor": 40,
+        "ToHitUseSteppedAlgorithm": true,
+        "ToHitStepThresholds":
+        [
+            0,
+            10
+        ],
+        "ToHitStepValues":
+        [
+            0.05,
+            0.025
+        ],
+        "ToHitModifierDivisor": 10,
+        "ToHitAssault": -1,
+        "ToHitHeavy": 0,
+        "ToHitMedium": 1,
+        "ToHitLight": 2,
+        "ToHitShutdownTargetBonus": -4,
+        "ToHitShutdownTargetBonusMelee": -10,
+        "ToHitProneTargetBonus": 0,
+        "ToHitProneTargetBonusMelee": -10,
+        "ToHitSelfOverheated": 1,
+        "ToHitSelfSprinted": 1,
+        "ToHitSelfWalkLight": 0,
+        "ToHitSelfWalkMedium": 1,
+        "ToHitSelfWalkHeavy": 1,
+        "ToHitSelfWalkAssault": 2,
+        "ToHitSelfWalkVehicle": 1,
+        "ToHitSelfStoodUp": 4,
+        "ToHitSelfArmMountedWeapon": -1,
+        "SensorLockStripsEvasivePips": true,
+        "SensorLockPipsStripped": 3,
+        "ToHitMovingTargetDistances": 
+		[
+			45,
+            90,
+            130,
+            165,
+            195,
+            220,
+			240
+		],
+        "EvasivePipsMovingTarget":
+        [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+			7
+        ],
+        "ToHitMovingPipUMs": 
+		[
+			2,
+            4,
+            6,
+            8,
+            10,
+            12,
+			14
+		],
+        "ToHitMovingTargetStrings": 
+		[
+			"1 EVASIVE charge: +{0} Difficulty to hit this unit with ranged attacks.",
+            "2 EVASIVE charges: +{0} Difficulty to hit this unit with ranged attacks.",
+            "3 EVASIVE charges: +{0} Difficulty to hit this unit with ranged attacks.",
+            "4 EVASIVE charges: +{0} Difficulty to hit this unit with ranged attacks.",
+            "5 EVASIVE charges: +{0} Difficulty to hit this unit with ranged attacks.",
+            "6 EVASIVE charges: +{0} Difficulty to hit this unit with ranged attacks.",
+			"7 EVASIVE charges: +{0} Difficulty to hit this unit with ranged attacks."
+		],
+        "ToHitSelfWeaponDamaged": 2,
+        "ToHitSelfWeaponLocationDamagedMinor": 0,
+        "ToHitSelfWeaponLocationDamagedMajor": 0,
+        "UseMultipleGuardLevels": true,
+        "WeaponsAffectedByEvasive": 
+		[
+			1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+		],
+        "WeaponCategoriesAffectedByEvasive":
+        [
+            1,
+            2,
+            3
+        ],
+        "WeaponTypesGuaranteedEvasiveStrip":
+        [
+            3
+		],
+        "TacticsBaseFloor": 0.65,
+        "TacticsDivisor": 20,
+        "TacticsModifierDivisor": 10,
+        "ToHitOffensivePush": -4
+    },
+	"ResolutionConstants": {
+    "MeleeDamageTonnageMultiplier": 1.25,
+    "MeleeDamageDFAMultiplier": 1.25,
+    "DFASelfDamageMultiplier": 0,
+    "DFASelfDamagePilotingDivisor": 99999.0,
+    "DFAMissedPilotingModifier": 4.0
+	},
+	    "PilotingConstants":
+    {
+        "PilotingBaseFloor": 0.75,
+        "PilotingDivisor": 40,
+        "PilotingModifierDivisor": 10,
+        "GutsBaseFloor": 0.7,
+        "GutsDivisor": 20,
+        "GutsModifierDivisor": 10,
+        "DefaultMaxInjuries": 3,
+        "GutsPenaltyFromHeadDamageMinor": 0,
+        "GutsPenaltyFromHeadDamageMajor": 0,
+        "InjuryPenaltyOnlyPastGuts": true,
+        "UseFixedInjuryPenalty": true,
+        "FixedInjuryPenalty": 1
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "Category" : "Ballistic",
+    "Type" : "Autocannon",
+    "WeaponSubType" : "AC5",
+    "MinRange" : 60,
+    "MaxRange" : 600,
+    "RangeSplit" : [
+        400,
+        400,
+        600
+    ],
+    "AmmoCategory" : "AC5",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 8,
+    "Damage" : 50,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 5,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : -2,
+    "CriticalChanceMultiplier" : 1,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 2,
+    "ShotsWhenFired" : 1,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 2,
+    "Instability" : 23,
+    "WeaponEffectID" : "WeaponEffect-Weapon_AC5",
+    "Description" : {
+        "Cost" : 1920000,
+        "Rarity" : 10,
+        "Purchasable" : true,
+        "Manufacturer" : "Kawabata",
+        "Model" : "Tactical Ultra AC",
+        "UIName" : "UAC/5 + + +",
+        "Id" : "Weapon_Autocannon_UAC5_3-Kawabata",
+        "Name" : "UAC/5 + + +",
+        "Details" : "Developed in 2640 by Kawabata Weapons Inc, the Ultra Autocannon/5 is an upgraded version of the standard Autocannon/5. Utilizing a different loading mechanism, UACs are capable of maintaining a substantially increased rate of fire over traditional or LB-X Autocannons at the cost of higher heat and increased recoil and risk of jamming. A high dependence on ammunition limits the effectiveness of the weapon. Like many pieces of advanced Star League technology, Kawabata and their unique weapons disappeared during the maelstrom of the Succession Wars. UAC/5s suffer from <color=#dd7e6b> -2 Recoil/refire penalty </color>, when continuously fired. Your pilots guts skill can counteract this. Additionally, <color=#f79924>UAC5s have a damage variance of +/- 5 points of damage per shot.</color> \r\n\r\n<b>Firing modes:</b>\r\nSingle: <color=#ffcc00>+1 Acc.</color>\r\nDouble: <color=#ffcc00>+1 shot, +2 recoil, +10% extra chance to jam</color>\r\n\r\n<color=#d9d9d9><b>Firing modes can be changed by clicking the right side of the weapons activation panel during combat.</b></color>",
+        "Icon" : "uixSvgIcon_weapon_Ballistic"
+    },
+    "BonusValueA" : "+5 Dmg.",
+    "BonusValueB" : "+2 Acc.",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "AC5",
+    "BattleValue" : 0,
+    "InventorySize" : 5,
+    "Tonnage" : 9,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+	"Modes":[
+		{
+			"Id":"SingleShot",
+			"UIName":"x1",
+			"isBaseMode":false,
+			"AccuracyModifier" : -1.0,
+			"ShotsWhenFired":0
+		},
+		{
+			"Id":"DoubleShot",
+			"UIName":"x2",
+			"isBaseMode":true,
+			"RefireModifier" : 2,
+			"HeatGenerated" : 6,
+			"FlatJammingChance": 0.1,
+			"ShotsWhenFired":1
+		}
+	],
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_variant",
+			"component_type_variant3",
+            "component_type_lostech",
+            "range_very-long",
+            "wr-jammable_weapon",
+            "wr-jam_chance_multiplier-1"
+        ]
+    }
+}

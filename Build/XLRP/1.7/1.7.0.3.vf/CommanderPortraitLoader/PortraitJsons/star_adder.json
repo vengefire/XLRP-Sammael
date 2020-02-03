@@ -1,0 +1,51 @@
+{
+    "Description" : {
+        "Id" : "star_adder",
+        "Name" : "star_adder",
+        "Details" : "Random",
+        "Icon" : "star_adder"
+    },
+    "ID" : "star_adder",
+    "backgroundColor" : {
+        "r" : 0,
+        "g" : 0,
+        "b" : 0,
+        "a" : 0
+    },
+    "headMesh" : 0.5,
+    "hairMesh" : 11,
+    "beardMesh" : 0,
+    "suitMesh" : 1,
+    "scar" : 7,
+    "lightRig" : 1,
+    "cameraPosition" : 1,
+    "complexionTex" : 0,
+    "eyebrowTex" : 1,
+    "tattooTex" : 8,
+    "actualTattooTex" : 0,
+    "weights" : [
+        7.426235,
+        67.18973,
+        22.55355,
+        1.375786,
+        0.5991196,
+        0.8555856
+    ],
+    "browOffsetY" : -0.003074973,
+    "browOffsetZ" : -0.00148661,
+    "noseBridgeScale" : 0.07313809,
+    "noseTipScale" : -0.2119462,
+    "chinScale" : -0.01266019,
+    "cheekOffsetY" : -0.004400049,
+    "eyeWidth" : 0.03862691,
+    "jawWidth" : -0.06230462,
+    "animation" : 2,
+    "isCommander" : true,
+    "skinToneId" : "Skin_05",
+    "eyeColorId" : "Eye_03",
+    "hairRootId" : "Hair_11",
+    "hairTipId" : "Hair_11",
+    "tattooColorId" : "Tattoo_01",
+    "lipColorId" : "Lip_01",
+    "customPortraitSaveVersion" : 0
+}

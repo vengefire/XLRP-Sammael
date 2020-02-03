@@ -1,0 +1,96 @@
+{
+    "Name": "XLRP-CAB-3030",
+    "Enabled": true,
+    "Version": "1.0.0",
+    "Description": "An expansion pack for XLRP containing Battlemechs using community made models. Equipment availability for the 4th Succession War up to the year 3030.",
+    "Author": "XTRMNTR2K and Xalibur75",
+    "Website": "https://www.nexusmods.com/battletech/mods/339",
+	"DependsOn": [ "XLRP", "CommunityBundles", "MechEngineer"],
+  
+    "Manifest": [
+        {
+		"Type": "WeaponDef",
+		"Path": "3030Weapons",
+		"AddToDB": true
+		},
+		{
+		"Type": "UpgradeDef",
+		"Path": "3030Upgrades",
+		"AddToDB": true
+		},
+		{
+		"Type": "MechDef",
+		"Path": "3030Mechs",
+		"AddToDB": true
+		},
+		{
+		"Type": "ChassisDef",
+		"Path": "3030Chassis",
+		"AddToDB": true
+		},
+		{
+		"Type": "Sprite",
+		"Path": "3030Portraits",
+		"AddToDB": true
+		},
+		{
+		"Type": "MovementCapabilitiesDef",
+		"Path": "3030Movement",
+		"AddToDB": true
+		},
+		{
+		"Type": "AmmunitionBoxDef",
+		"Path": "3030Ammo",
+		"AddToDB": true
+		},
+		{
+		"Type": "AmmunitionDef",
+		"Path": "3030Ammunition",
+		"AddToDB": true
+		},
+		{
+		"Type": "HeatSinkDef",
+		"Path": "3030Heatsinks",
+		"AddToDB": true
+		},
+		{
+		"Type": "TurretChassisDef",
+		"Path": "3030TurretChassis",
+		"AddToDB": true
+		},
+		{
+		"Type": "TurretDef",
+		"Path": "3030Turret",
+		"AddToDB": true
+		},
+		{
+		"Type": "VehicleDef",
+		"Path": "3030Vehicle",
+		"AddToDB": true
+		},
+		{
+		"Type": "VehicleChassisDef",
+		"Path": "3030VehicleChassis",
+		"AddToDB": true
+		},
+		{
+		"Type": "LanceDef",
+		"Path": "3030Lances",
+		"AddToDB": true
+		},
+		{ 
+		"Type": "ItemCollectionDef",
+		"Path": "3030ItemCollections",
+		"ShouldAppendText": true 
+		},
+		{
+		"Type": "PathingCapabilitiesDef",
+		"Path": "3030pathing"
+		},
+		{
+		"Type": "ContractOverride",
+		"Path": "3030contracts",
+		"AddToDB": true
+		}
+    ]
+}

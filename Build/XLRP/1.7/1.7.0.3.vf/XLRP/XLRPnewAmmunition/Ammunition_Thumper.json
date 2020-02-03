@@ -1,0 +1,30 @@
+{
+   "Description" : {
+      "Id" : "Ammunition_Thumper",
+      "Name" : "Thumper Ammo",
+      "UIName" : "HE",
+      "Details" : "Massive rounds, designed for devastating impact, to be used in a Thumper Artillery PIece.",
+      "Icon" : null,
+      "Cost" : 0,
+      "Rarity" : 0,
+      "Purchasable" : false
+   },
+   "Type" : "Normal",
+   "Category" : "Thumper",
+   "DamageVariance": 0,
+   "AOECapable" : true,
+   "AOERange": 45,
+   "AOEDamage" : 40,
+   "AOEHeatDamage" : 2,
+   "WeaponEffectID" : "WeaponEffect-Weapon_SRM6",
+   "HeatGenerated" : 0,
+   "HeatGeneratedModifier" : 1,
+   "ArmorDamageModifier" : 1,
+   "ISDamageModifier" : 1,
+   "CriticalDamageModifier" : 1,
+   "AdditionalImpactVFX":"WFX_Nuke",
+   "AdditionalImpactVFXScaleX":1,
+   "AdditionalImpactVFXScaleY":1,
+   "AdditionalImpactVFXScaleZ":1,
+   "statusEffects" : []
+}

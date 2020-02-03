@@ -1,0 +1,10 @@
+{
+  "Name": "MechSpin",
+  "Enabled": true,
+  "Author": "mpStark",
+  "Website": "",
+  "Version": "0.0.1",
+  "DLL": "MechSpin.dll",
+  "DependsOn": [],
+  "ConflictsWith": []
+}

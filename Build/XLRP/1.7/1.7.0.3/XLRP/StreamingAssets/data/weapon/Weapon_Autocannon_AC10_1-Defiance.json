@@ -1,0 +1,20 @@
+{
+	"Damage" : 70,
+    "DamageVariance" : 3,
+    "AccuracyModifier" : -2,
+    "Instability" : 35,
+	"Description" : {
+        "Details" : "One of the most powerful and efficient weapons mounted in combat, AC/10s are known for their heavy damage and ability to stagger opponents. AC/10s suffer from <color=#dd7e6b> -2 Recoil/refire penalty </color>, when continuously fired. Your pilots guts skill can counteract this. Additionally, <color=#f79924>this AC10 has a damage variance of +/- 3 points of damage.</color>"
+    },
+    "BonusValueA" : "+2 Acc.",
+    "BonusValueB" : "-2 Dmg.Variance",
+    "ComponentTags" : {
+        "items" : [
+            "component_type_variant",
+            "component_type_variant1",
+            "range_long",
+            "wr-jammable_weapon",
+            "wr-jam_chance_multiplier-1"
+        ]
+    }
+}

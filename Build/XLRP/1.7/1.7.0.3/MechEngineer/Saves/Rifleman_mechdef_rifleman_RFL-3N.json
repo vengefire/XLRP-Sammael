@@ -1,0 +1,835 @@
+{
+    "Chassis" : {
+        "Description" : {
+            "Cost" : 5900000,
+            "Rarity" : 3,
+            "Purchasable" : true,
+            "Manufacturer" : "",
+            "Model" : "",
+            "UIName" : "Rifleman",
+            "Id" : "chassisdef_rifleman_RFL-3N",
+            "Name" : "Rifleman",
+            "Details" : "The definitive anti-aircraft 'Mech, the Rifleman was first fielded in 2505, making it among the earliest 'Mechs ever built. Armed with medium autocannons and a bevy of lasers, the Rifleman is a great fire-support mech but a bad line combatant, thanks to poor armoring.",
+            "Icon" : "uixTxrIcon_rifleman"
+        },
+        "VariantName" : "RFL-3N",
+        "StockRole" : "Anti-Aircraft & Direct-Fire Support",
+        "YangsThoughts" : "The definitive anti-aircraft 'Mech, the Rifleman was first fielded in 2505, making it among the earliest 'Mechs ever built. Armed with medium autocannons and a bevy of lasers, the Rifleman is a great fire-support mech but a bad line combatant, thanks to poor armoring.",
+        "PrefabIdentifier" : "chrprfmech_riflemanbase-001",
+        "PrefabBase" : "rifleman",
+        "Tonnage" : 60,
+        "InitialTonnage" : 6,
+        "weightClass" : "HEAVY",
+        "BattleValue" : 5514000,
+        "Heatsinks" : 0,
+        "TopSpeed" : 120,
+        "TurnRadius" : 90,
+        "MaxJumpjets" : 6,
+        "Stability" : 160,
+        "StabilityDefenses" : [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpotterDistanceMultiplier" : 1,
+        "VisibilityMultiplier" : 1,
+        "SensorRangeMultiplier" : 1,
+        "Signature" : 0,
+        "Radius" : 8,
+        "PunchesWithLeftArm" : false,
+        "EngageRangeModifier" : 0,
+        "MeleeDamage" : 50,
+        "MeleeInstability" : 55,
+        "MeleeToHitModifier" : 0,
+        "DFADamage" : 80,
+        "DFAToHitModifier" : 0,
+        "DFASelfDamage" : 80,
+        "DFAInstability" : 80,
+        "ChassisTags" : {
+            "items" : [
+                
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "MechPartMax" : 0,
+        "Head" : {
+            "Location" : "Head",
+            "Hardpoints" : [
+                
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 6,
+            "MaxArmor" : 45,
+            "MaxRearArmor" : -1,
+            "InternalStructure" : 16
+        },
+        "LeftArm" : {
+            "Location" : "LeftArm",
+            "Hardpoints" : [
+                {
+                    "WeaponMount" : "Energy",
+                    "Omni" : false
+                },
+                {
+                    "WeaponMount" : "Ballistic",
+                    "Omni" : false
+                },
+                {
+                    "WeaponMount" : "Ballistic",
+                    "Omni" : false
+                }
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 12,
+            "MaxArmor" : 100,
+            "MaxRearArmor" : -1,
+            "InternalStructure" : 50
+        },
+        "LeftTorso" : {
+            "Location" : "LeftTorso",
+            "Hardpoints" : [
+                {
+                    "WeaponMount" : "Energy",
+                    "Omni" : false
+                }
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 12,
+            "MaxArmor" : 140,
+            "MaxRearArmor" : 70,
+            "InternalStructure" : 70
+        },
+        "CenterTorso" : {
+            "Location" : "CenterTorso",
+            "Hardpoints" : [
+                
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 15,
+            "MaxArmor" : 200,
+            "MaxRearArmor" : 100,
+            "InternalStructure" : 100
+        },
+        "RightTorso" : {
+            "Location" : "RightTorso",
+            "Hardpoints" : [
+                {
+                    "WeaponMount" : "Energy",
+                    "Omni" : false
+                }
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 12,
+            "MaxArmor" : 140,
+            "MaxRearArmor" : 70,
+            "InternalStructure" : 70
+        },
+        "RightArm" : {
+            "Location" : "RightArm",
+            "Hardpoints" : [
+                {
+                    "WeaponMount" : "Energy",
+                    "Omni" : false
+                },
+                {
+                    "WeaponMount" : "Ballistic",
+                    "Omni" : false
+                },
+                {
+                    "WeaponMount" : "Ballistic",
+                    "Omni" : false
+                }
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 12,
+            "MaxArmor" : 100,
+            "MaxRearArmor" : -1,
+            "InternalStructure" : 50
+        },
+        "LeftLeg" : {
+            "Location" : "LeftLeg",
+            "Hardpoints" : [
+                
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 6,
+            "MaxArmor" : 140,
+            "MaxRearArmor" : -1,
+            "InternalStructure" : 70
+        },
+        "RightLeg" : {
+            "Location" : "RightLeg",
+            "Hardpoints" : [
+                
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 6,
+            "MaxArmor" : 140,
+            "MaxRearArmor" : -1,
+            "InternalStructure" : 70
+        },
+        "MovementCapDefID" : "movedef_rifleman_RFL-3N",
+        "PathingCapDefID" : "pathingdef_heavy",
+        "HardpointDataDefID" : "hardpointdatadef_rifleman",
+        "LOSSourcePositions" : [
+            {
+                "x" : 0,
+                "y" : 14,
+                "z" : 1
+            },
+            {
+                "x" : 4,
+                "y" : 13,
+                "z" : 0
+            },
+            {
+                "x" : -4,
+                "y" : 13,
+                "z" : 0
+            }
+        ],
+        "LOSTargetPositions" : [
+            {
+                "x" : 0,
+                "y" : 14,
+                "z" : 1
+            },
+            {
+                "x" : 4,
+                "y" : 13,
+                "z" : 0
+            },
+            {
+                "x" : -4,
+                "y" : 13,
+                "z" : 0
+            },
+            {
+                "x" : 2,
+                "y" : 5,
+                "z" : 0
+            },
+            {
+                "x" : -2,
+                "y" : 5,
+                "z" : 0
+            }
+        ],
+        "MechPartCount" : 0,
+        "Locations" : [
+            {
+                "Location" : "Head",
+                "Hardpoints" : [
+                    
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 6,
+                "MaxArmor" : 45,
+                "MaxRearArmor" : -1,
+                "InternalStructure" : 16
+            },
+            {
+                "Location" : "LeftArm",
+                "Hardpoints" : [
+                    {
+                        "WeaponMount" : "Energy",
+                        "Omni" : false
+                    },
+                    {
+                        "WeaponMount" : "Ballistic",
+                        "Omni" : false
+                    },
+                    {
+                        "WeaponMount" : "Ballistic",
+                        "Omni" : false
+                    }
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 12,
+                "MaxArmor" : 100,
+                "MaxRearArmor" : -1,
+                "InternalStructure" : 50
+            },
+            {
+                "Location" : "LeftTorso",
+                "Hardpoints" : [
+                    {
+                        "WeaponMount" : "Energy",
+                        "Omni" : false
+                    }
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 12,
+                "MaxArmor" : 140,
+                "MaxRearArmor" : 70,
+                "InternalStructure" : 70
+            },
+            {
+                "Location" : "CenterTorso",
+                "Hardpoints" : [
+                    
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 15,
+                "MaxArmor" : 200,
+                "MaxRearArmor" : 100,
+                "InternalStructure" : 100
+            },
+            {
+                "Location" : "RightTorso",
+                "Hardpoints" : [
+                    {
+                        "WeaponMount" : "Energy",
+                        "Omni" : false
+                    }
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 12,
+                "MaxArmor" : 140,
+                "MaxRearArmor" : 70,
+                "InternalStructure" : 70
+            },
+            {
+                "Location" : "RightArm",
+                "Hardpoints" : [
+                    {
+                        "WeaponMount" : "Energy",
+                        "Omni" : false
+                    },
+                    {
+                        "WeaponMount" : "Ballistic",
+                        "Omni" : false
+                    },
+                    {
+                        "WeaponMount" : "Ballistic",
+                        "Omni" : false
+                    }
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 12,
+                "MaxArmor" : 100,
+                "MaxRearArmor" : -1,
+                "InternalStructure" : 50
+            },
+            {
+                "Location" : "LeftLeg",
+                "Hardpoints" : [
+                    
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 6,
+                "MaxArmor" : 140,
+                "MaxRearArmor" : -1,
+                "InternalStructure" : 70
+            },
+            {
+                "Location" : "RightLeg",
+                "Hardpoints" : [
+                    
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 6,
+                "MaxArmor" : 140,
+                "MaxRearArmor" : -1,
+                "InternalStructure" : 70
+            }
+        ]
+    },
+    "MechTags" : {
+        "items" : [
+            "unit_mech",
+            "unit_heavy",
+            "unit_release",
+            "unit_lance_support",
+            "unit_role_sniper",
+            "unit_common",
+            "unit_common_MagistracyOfCanopus",
+            "unit_common_TaurianConcordat",
+            "unit_common_Liao",
+            "unit_common_Marik",
+            "unit_common_Davion",
+            "unit_common_Steiner",
+            "unit_common_Kurita",
+            "unit_common_ComStar",
+            "unit_common_AuriganDirectorate",
+            "unit_common_Betrayers",
+            "unit_common_AuriganMercenaries",
+            "unit_common_AuriganPirates",
+            "unit_common_AuriganRestoration",
+            "unit_common_Locals",
+            "unit_common_MajestyMetals",
+            "unit_common_MercenaryReviewBoard",
+            "unit_common_FlakJackals",
+            "unit_common_LocalsBrockwayRefugees",
+            "unit_common_SelfEmployed",
+            "unit_common_MasonsMarauders",
+            "unit_common_SteelBeast",
+            "unit_common_KellHounds",
+            "unit_common_RazorbackMercs",
+            "unit_common_HostileMercenaries",
+            "unit_common_NoFaction",
+            "component_type_stock"
+        ],
+        "tagSetSourceFile" : ""
+    },
+    "ChassisID" : "chassisdef_rifleman_RFL-3N",
+    "Description" : {
+        "Cost" : 10260000,
+        "Rarity" : 3,
+        "Purchasable" : false,
+        "UIName" : "Rifleman RFL-3N",
+        "Id" : "mechdef_rifleman_RFL-3N",
+        "Name" : "Rifleman",
+        "Details" : "The definitive anti-aircraft 'Mech, the Rifleman was first fielded in 2505, making it among the earliest 'Mechs ever built. Armed with medium autocannons and a bevy of lasers, the Rifleman is a great fire-support mech but a bad line combatant, thanks to poor armoring.",
+        "Icon" : "uixTxrIcon_rifleman"
+    },
+    "RequiredToSpawnCompanyTags" : {
+        "items" : [
+            
+        ],
+        "tagSetSourceFile" : ""
+    },
+    "Version" : 1,
+    "Locations" : [
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "Head",
+            "CurrentArmor" : 30,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 16,
+            "AssignedArmor" : 30,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "CenterTorso",
+            "CurrentArmor" : 130,
+            "CurrentRearArmor" : 30,
+            "CurrentInternalStructure" : 100,
+            "AssignedArmor" : 130,
+            "AssignedRearArmor" : 30
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "LeftTorso",
+            "CurrentArmor" : 90,
+            "CurrentRearArmor" : 20,
+            "CurrentInternalStructure" : 70,
+            "AssignedArmor" : 90,
+            "AssignedRearArmor" : 20
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "RightTorso",
+            "CurrentArmor" : 90,
+            "CurrentRearArmor" : 20,
+            "CurrentInternalStructure" : 70,
+            "AssignedArmor" : 90,
+            "AssignedRearArmor" : 20
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "LeftArm",
+            "CurrentArmor" : 80,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 50,
+            "AssignedArmor" : 80,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "RightArm",
+            "CurrentArmor" : 80,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 50,
+            "AssignedArmor" : 80,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "LeftLeg",
+            "CurrentArmor" : 75,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 70,
+            "AssignedArmor" : 75,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "RightLeg",
+            "CurrentArmor" : 75,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 70,
+            "AssignedArmor" : 75,
+            "AssignedRearArmor" : 0
+        }
+    ],
+    "inventory" : [
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_armorslots_standard",
+            "SimGameUID" : "SGRef_8391",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_structureslots_standard",
+            "SimGameUID" : "SGRef_8392",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_kit_shs",
+            "SimGameUID" : "SGRef_8394",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_engine_cooling",
+            "SimGameUID" : "SGRef_8395",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "Gear_Gyro_Generic_Standard",
+            "SimGameUID" : "SGRef_8396",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_engineslots_std_center",
+            "SimGameUID" : "SGRef_8397",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "Ammo_AmmunitionBox_Generic_AC5",
+            "SimGameUID" : "SGRef_8402",
+            "ComponentDefType" : "AmmunitionBox",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "Head",
+            "ComponentDefID" : "Gear_Cockpit_LifeSupportA_Standard",
+            "SimGameUID" : "SGRef_8407",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "Head",
+            "ComponentDefID" : "Gear_Cockpit_SensorsA_Standard",
+            "SimGameUID" : "SGRef_8408",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftLeg",
+            "ComponentDefID" : "emod_leg_hip",
+            "SimGameUID" : "SGRef_8411",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftLeg",
+            "ComponentDefID" : "emod_leg_upper",
+            "SimGameUID" : "SGRef_8412",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftLeg",
+            "ComponentDefID" : "emod_leg_lower",
+            "SimGameUID" : "SGRef_8413",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftLeg",
+            "ComponentDefID" : "emod_leg_foot",
+            "SimGameUID" : "SGRef_8414",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightLeg",
+            "ComponentDefID" : "emod_leg_hip",
+            "SimGameUID" : "SGRef_8415",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightLeg",
+            "ComponentDefID" : "emod_leg_upper",
+            "SimGameUID" : "SGRef_8416",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightLeg",
+            "ComponentDefID" : "emod_leg_lower",
+            "SimGameUID" : "SGRef_8417",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightLeg",
+            "ComponentDefID" : "emod_leg_foot",
+            "SimGameUID" : "SGRef_8418",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightArm",
+            "ComponentDefID" : "emod_arm_part_shoulder",
+            "SimGameUID" : "SGRef_8419",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightArm",
+            "ComponentDefID" : "emod_arm_part_upper",
+            "SimGameUID" : "SGRef_8420",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftArm",
+            "ComponentDefID" : "emod_arm_part_shoulder",
+            "SimGameUID" : "SGRef_8421",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftArm",
+            "ComponentDefID" : "emod_arm_part_upper",
+            "SimGameUID" : "SGRef_8422",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "Ammo_AmmunitionBox_Generic_AC5",
+            "SimGameUID" : "SGRef_8445",
+            "ComponentDefType" : "AmmunitionBox",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftTorso",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Standard",
+            "SimGameUID" : "SGRef_8406",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_engine_210",
+            "SimGameUID" : "SGRef_8675",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "Head",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Standard",
+            "SimGameUID" : "SGRef_8703",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftTorso",
+            "ComponentDefID" : "Weapon_Laser_MediumLaser_2-Diverse_Optics",
+            "SimGameUID" : "SGRef_8939",
+            "ComponentDefType" : "Weapon",
+            "HardpointSlot" : 0,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "RightTorso",
+            "ComponentDefID" : "Weapon_Laser_MediumLaser_2-Diverse_Optics",
+            "SimGameUID" : "SGRef_8920",
+            "ComponentDefType" : "Weapon",
+            "HardpointSlot" : 0,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "Head",
+            "ComponentDefID" : "Gear_Cockpit_AdvancedCombatComputer-1",
+            "SimGameUID" : "SGRef_9152",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "RightTorso",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Standard",
+            "SimGameUID" : "SGRef_9176",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftTorso",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Standard",
+            "SimGameUID" : "SGRef_9198",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "RightArm",
+            "ComponentDefID" : "Weapon_Autocannon_AC5_2-Mydron",
+            "SimGameUID" : "SGRef_8429",
+            "ComponentDefType" : "Weapon",
+            "HardpointSlot" : 2,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftArm",
+            "ComponentDefID" : "Weapon_Autocannon_AC5_3-Mydron",
+            "SimGameUID" : "SGRef_8425",
+            "ComponentDefType" : "Weapon",
+            "HardpointSlot" : 1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftArm",
+            "ComponentDefID" : "Weapon_Laser_MediumLaser_2-Magna",
+            "SimGameUID" : "SGRef_9014",
+            "ComponentDefType" : "Weapon",
+            "HardpointSlot" : 1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "RightArm",
+            "ComponentDefID" : "Weapon_Laser_LargeLaserPulse_1-Thunderbolt12",
+            "SimGameUID" : "SGRef_10371",
+            "ComponentDefType" : "Weapon",
+            "HardpointSlot" : 1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        }
+    ],
+    "simGameMechPartCost" : 0
+}

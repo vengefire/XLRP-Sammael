@@ -1,0 +1,51 @@
+{
+	"Custom": {
+		"Weights": {
+			"EngineFactor": 2.0
+		},
+		"WorkOrderCosts": {
+			"Default": {
+				"TechCost": "0",
+				"CBillCost": "0"
+			},
+			"Install": {
+				"TechCost": "1.2 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 40",
+				"CBillCost": "5000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 40"
+			}
+		},
+		"Category" : [
+			{"CategoryID": "EngineShield"},
+			{"CategoryID": "EnginePart"}
+		]
+	},
+    "Description" : {
+        "Cost" : 100000,
+        "Rarity" : 0,
+        "Purchasable" : true,
+        "Manufacturer" : "GM",
+        "Model" : "Internal Combustion Engine",
+        "UIName" : "I.C.E.",
+        "Id" : "emod_engineslots_ICE",
+        "Name" : "Engine (ICE)",
+        "Details" : "Internal Combustion Engines (I.C.E.) are used mainly for conventional vehicles and IndustrialMechs. Its power output is less than a fusion engine of similar mass, meaning an I.C.E. needs to be heavier in order to have the same engine rating of a fusion engine. In fact, it has the greatest weight-to-rating ratio of all engines available. The saving grace of the I.C.E. is its cost. Since they are considerably cheaper and easier to manufacture than fusion engines, the I.C.E. is used in the many conventional vehicles that tend to form the backbone of a planetary militia.",
+        "Icon" : "uixSvgIcon_equipment_Heatsink"
+    },
+    "BonusValueA" : "+100% engine weight",
+    "BonusValueB" : "",
+    "ComponentType" : "HeatSink",
+    "ComponentSubType" : "Heatsink",
+    "PrefabIdentifier" : "",
+    "BattleValue" : 0,
+    "InventorySize" : 4,
+    "Tonnage" : 0,
+    "AllowedLocations" : "CenterTorso",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : null,
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

@@ -1,0 +1,40 @@
+{
+	"Custom": {
+		"ComponentExplosion": {
+			"ExplosionDamage": 80
+		}
+	},
+    "AmmoID" : "Ammunition_Flamer",
+    "Capacity" : 32,
+    "Description" : {
+        "Cost" : 50000,
+        "Rarity" : 0,
+        "Purchasable" : false,
+        "Manufacturer" : "Generic",
+        "Model" : "Extended",
+        "UIName" : "Fuel Tank",
+        "Id" : "FuelTank_Extended",
+        "Name" : "Extended FuelTank",
+        "Details" : "Fuel tank which allows I.C.E. equipped vehicles to operate for extended periods of time.\r\n\r\nThough this is not what they were designed for, these fuel tanks can be hooked up to one or more Flamers to supply them with additional fuel that way.\r\n\r\n<b><color=#ffcc00>Explosion damage when destroyed: 120</color></b>",
+        "Icon" : "uixSvgIcon_ammoBox_Support"
+    },
+    "BonusValueA" : "Explodes when destroyed",
+    "BonusValueB" : "+32 Flamer Ammo",
+    "ComponentType" : "AmmunitionBox",
+    "ComponentSubType" : "Ammunition",
+    "PrefabIdentifier" : "",
+    "BattleValue" : 0,
+    "InventorySize" : 3,
+    "Tonnage" : 3,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [            
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

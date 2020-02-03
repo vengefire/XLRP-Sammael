@@ -1,0 +1,976 @@
+{
+  "Chassis": {
+    "Description": {
+      "Cost": 4700000,
+      "Rarity": 2,
+      "Purchasable": true,
+      "Manufacturer": "",
+      "Model": "",
+      "UIName": "Hunchback",
+      "Id": "chassisdef_hunchback_HBK-4P",
+      "Name": "Hunchback",
+      "Details": "The 4P version of the Hunchback trades the singular impact of a massive Autocannon for a frightening array of lighter Energy weaponry that is actually capable of dealing more damage overall. This all comes at the cost of greatly increased heat buildup, of course.",
+      "Icon": "uixTxrIcon_hunchback"
+    },
+    "VariantName": "HBK-4P",
+    "StockRole": "Juggernaut & Close Assault",
+    "YangsThoughts": "The 4P version of the Hunchback trades the singular impact of a massive Autocannon for a frightening array of lighter Energy weaponry that is actually capable of dealing more damage overall. This all comes at the cost of greatly increased heat buildup, of course.",
+    "PrefabIdentifier": "chrPrfMech_hunchbackBase-001",
+    "PrefabBase": "hunchback",
+    "Tonnage": 50,
+    "InitialTonnage": 5,
+    "weightClass": "MEDIUM",
+    "BattleValue": 4048000,
+    "Heatsinks": 0,
+    "TopSpeed": 65,
+    "TurnRadius": 90,
+    "MaxJumpjets": 8,
+    "Stability": 130,
+    "StabilityDefenses": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "SpotterDistanceMultiplier": 1,
+    "VisibilityMultiplier": 1,
+    "SensorRangeMultiplier": 1,
+    "Signature": 0,
+    "Radius": 5,
+    "PunchesWithLeftArm": false,
+    "EngageRangeModifier": 0,
+    "MeleeDamage": 60,
+    "MeleeInstability": 50,
+    "MeleeToHitModifier": 0,
+    "DFADamage": 65,
+    "DFAToHitModifier": 0,
+    "DFASelfDamage": 20,
+    "DFAInstability": 65,
+    "ChassisTags": {
+      "items": [],
+      "tagSetSourceFile": ""
+    },
+    "MechPartMax": 0,
+    "Head": {
+      "Location": "Head",
+      "Hardpoints": [
+        {
+          "WeaponMount": "AntiPersonnel",
+          "Omni": false
+        }
+      ],
+      "Tonnage": 0,
+      "InventorySlots": 6,
+      "MaxArmor": 45,
+      "MaxRearArmor": -1,
+      "InternalStructure": 16
+    },
+    "LeftArm": {
+      "Location": "LeftArm",
+      "Hardpoints": [
+        {
+          "WeaponMount": "Energy",
+          "Omni": false
+        },
+        {
+          "WeaponMount": "AntiPersonnel",
+          "Omni": false
+        }
+      ],
+      "Tonnage": 0,
+      "InventorySlots": 12,
+      "MaxArmor": 80,
+      "MaxRearArmor": -1,
+      "InternalStructure": 40
+    },
+    "LeftTorso": {
+      "Location": "LeftTorso",
+      "Hardpoints": [],
+      "Tonnage": 0,
+      "InventorySlots": 12,
+      "MaxArmor": 120,
+      "MaxRearArmor": 60,
+      "InternalStructure": 60
+    },
+    "CenterTorso": {
+      "Location": "CenterTorso",
+      "Hardpoints": [],
+      "Tonnage": 0,
+      "InventorySlots": 15,
+      "MaxArmor": 160,
+      "MaxRearArmor": 80,
+      "InternalStructure": 80
+    },
+    "RightTorso": {
+      "Location": "RightTorso",
+      "Hardpoints": [
+        {
+          "WeaponMount": "Energy",
+          "Omni": false
+        },
+        {
+          "WeaponMount": "Energy",
+          "Omni": false
+        },
+        {
+          "WeaponMount": "Energy",
+          "Omni": false
+        },
+        {
+          "WeaponMount": "Energy",
+          "Omni": false
+        },
+        {
+          "WeaponMount": "Energy",
+          "Omni": false
+        },
+        {
+          "WeaponMount": "Energy",
+          "Omni": false
+        }
+      ],
+      "Tonnage": 0,
+      "InventorySlots": 12,
+      "MaxArmor": 120,
+      "MaxRearArmor": 60,
+      "InternalStructure": 60
+    },
+    "RightArm": {
+      "Location": "RightArm",
+      "Hardpoints": [
+        {
+          "WeaponMount": "Energy",
+          "Omni": false
+        },
+        {
+          "WeaponMount": "AntiPersonnel",
+          "Omni": false
+        }
+      ],
+      "Tonnage": 0,
+      "InventorySlots": 12,
+      "MaxArmor": 80,
+      "MaxRearArmor": -1,
+      "InternalStructure": 40
+    },
+    "LeftLeg": {
+      "Location": "LeftLeg",
+      "Hardpoints": [],
+      "Tonnage": 0,
+      "InventorySlots": 6,
+      "MaxArmor": 120,
+      "MaxRearArmor": -1,
+      "InternalStructure": 60
+    },
+    "RightLeg": {
+      "Location": "RightLeg",
+      "Hardpoints": [],
+      "Tonnage": 0,
+      "InventorySlots": 6,
+      "MaxArmor": 120,
+      "MaxRearArmor": -1,
+      "InternalStructure": 60
+    },
+    "MovementCapDefID": "movedef_hunchback_HBK-4G",
+    "PathingCapDefID": "pathingdef_medium",
+    "HardpointDataDefID": "hardpointdatadef_hunchback",
+    "LOSSourcePositions": [
+      {
+        "x": 0,
+        "y": 12.5,
+        "z": 1
+      },
+      {
+        "x": 3,
+        "y": 13,
+        "z": 0
+      },
+      {
+        "x": -3,
+        "y": 13,
+        "z": 0
+      }
+    ],
+    "LOSTargetPositions": [
+      {
+        "x": 0,
+        "y": 12.5,
+        "z": 1
+      },
+      {
+        "x": 3,
+        "y": 13,
+        "z": 0
+      },
+      {
+        "x": -3,
+        "y": 13,
+        "z": 0
+      },
+      {
+        "x": 2.5,
+        "y": 4.5,
+        "z": 2
+      },
+      {
+        "x": -2.5,
+        "y": 4.5,
+        "z": 2
+      }
+    ],
+    "MechPartCount": 0,
+    "Locations": [
+      {
+        "Location": "Head",
+        "Hardpoints": [
+          {
+            "WeaponMount": "AntiPersonnel",
+            "Omni": false
+          }
+        ],
+        "Tonnage": 0,
+        "InventorySlots": 6,
+        "MaxArmor": 45,
+        "MaxRearArmor": -1,
+        "InternalStructure": 16
+      },
+      {
+        "Location": "LeftArm",
+        "Hardpoints": [
+          {
+            "WeaponMount": "Energy",
+            "Omni": false
+          },
+          {
+            "WeaponMount": "AntiPersonnel",
+            "Omni": false
+          }
+        ],
+        "Tonnage": 0,
+        "InventorySlots": 12,
+        "MaxArmor": 80,
+        "MaxRearArmor": -1,
+        "InternalStructure": 40
+      },
+      {
+        "Location": "LeftTorso",
+        "Hardpoints": [],
+        "Tonnage": 0,
+        "InventorySlots": 12,
+        "MaxArmor": 120,
+        "MaxRearArmor": 60,
+        "InternalStructure": 60
+      },
+      {
+        "Location": "CenterTorso",
+        "Hardpoints": [],
+        "Tonnage": 0,
+        "InventorySlots": 15,
+        "MaxArmor": 160,
+        "MaxRearArmor": 80,
+        "InternalStructure": 80
+      },
+      {
+        "Location": "RightTorso",
+        "Hardpoints": [
+          {
+            "WeaponMount": "Energy",
+            "Omni": false
+          },
+          {
+            "WeaponMount": "Energy",
+            "Omni": false
+          },
+          {
+            "WeaponMount": "Energy",
+            "Omni": false
+          },
+          {
+            "WeaponMount": "Energy",
+            "Omni": false
+          },
+          {
+            "WeaponMount": "Energy",
+            "Omni": false
+          },
+          {
+            "WeaponMount": "Energy",
+            "Omni": false
+          }
+        ],
+        "Tonnage": 0,
+        "InventorySlots": 12,
+        "MaxArmor": 120,
+        "MaxRearArmor": 60,
+        "InternalStructure": 60
+      },
+      {
+        "Location": "RightArm",
+        "Hardpoints": [
+          {
+            "WeaponMount": "Energy",
+            "Omni": false
+          },
+          {
+            "WeaponMount": "AntiPersonnel",
+            "Omni": false
+          }
+        ],
+        "Tonnage": 0,
+        "InventorySlots": 12,
+        "MaxArmor": 80,
+        "MaxRearArmor": -1,
+        "InternalStructure": 40
+      },
+      {
+        "Location": "LeftLeg",
+        "Hardpoints": [],
+        "Tonnage": 0,
+        "InventorySlots": 6,
+        "MaxArmor": 120,
+        "MaxRearArmor": -1,
+        "InternalStructure": 60
+      },
+      {
+        "Location": "RightLeg",
+        "Hardpoints": [],
+        "Tonnage": 0,
+        "InventorySlots": 6,
+        "MaxArmor": 120,
+        "MaxRearArmor": -1,
+        "InternalStructure": 60
+      }
+    ]
+  },
+  "MechTags": {
+    "items": [
+      "unit_mech",
+      "unit_medium",
+      "unit_custom_mech",
+      "unit_none_MagistracyOfCanopus",
+      "unit_none_TaurianConcordat",
+      "unit_none_Liao",
+      "unit_none_Marik",
+      "unit_none_Davion",
+      "unit_none_Steiner",
+      "unit_none_Kurita",
+      "unit_none_ComStar",
+      "unit_ext_rare_AuriganDirectorate",
+      "unit_ext_rare_Betrayers",
+      "unit_ext_rare_AuriganMercenaries",
+      "unit_ext_rare_AuriganPirates",
+      "unit_none_AuriganRestoration",
+      "unit_none_Locals",
+      "unit_none_MajestyMetals",
+      "unit_ext_rare_MercenaryReviewBoard",
+      "unit_ext_rare_FlakJackals",
+      "unit_none_LocalsBrockwayRefugees",
+      "unit_ext_rare_SelfEmployed",
+      "unit_ext_rare_MasonsMarauders",
+      "unit_none_SteelBeast",
+      "unit_ext_rare_KellHounds",
+      "unit_ext_rare_RazorbackMercs",
+      "unit_ext_rare_HostileMercenaries",
+      "unit_none_NoFaction",
+      "NotMagistracyOfCanopus",
+      "NotTaurianConcordat",
+      "NotLiao",
+      "NotMarik",
+      "NotDavion",
+      "NotSteiner",
+      "NotKurita",
+      "NotComStar",
+      "NotAuriganDirectorate",
+      "NotBetrayers",
+      "NotAuriganMercenaries",
+      "NotAuriganPirates",
+      "NotAuriganRestoration",
+      "NotLocals",
+      "NotMajestyMetals",
+      "NotMercenaryReviewBoard",
+      "NotFlakJackals",
+      "NotLocalsBrockwayRefugees",
+      "NotSelfEmployed",
+      "NotMasonsMarauders",
+      "NotSteelBeast",
+      "NotKellHounds",
+      "NotRazorbackMercs",
+      "NotHostileMercenaries",
+      "BLACKLISTED"
+    ],
+    "tagSetSourceFile": ""
+  },
+  "ChassisID": "chassisdef_hunchback_HBK-4P",
+  "Description": {
+    "Cost": 13960000,
+    "Rarity": 2,
+    "Purchasable": false,
+    "Id": "mechdef_hunchback_HBK-4P_Lightshow",
+    "Name": "Lightshow",
+    "Details": "The 4P version of the Hunchback trades the singular impact of a massive Autocannon for a frightening array of lighter Energy weaponry that is actually capable of dealing more damage overall. This all comes at the cost of greatly increased heat buildup, of course.",
+    "Icon": "uixTxrIcon_hunchback",
+    "UIName": "Hunchback HBK-4P Lightshow"
+  },
+  "RequiredToSpawnCompanyTags": {
+    "items": [],
+    "tagSetSourceFile": ""
+  },
+  "Version": 1,
+  "Locations": [
+    {
+      "DamageLevel": "Functional",
+      "Location": "Head",
+      "CurrentArmor": 45,
+      "CurrentRearArmor": 0,
+      "CurrentInternalStructure": 16,
+      "AssignedArmor": 45,
+      "AssignedRearArmor": 0
+    },
+    {
+      "DamageLevel": "Functional",
+      "Location": "CenterTorso",
+      "CurrentArmor": 130,
+      "CurrentRearArmor": 45,
+      "CurrentInternalStructure": 80,
+      "AssignedArmor": 130,
+      "AssignedRearArmor": 45
+    },
+    {
+      "DamageLevel": "Functional",
+      "Location": "LeftTorso",
+      "CurrentArmor": 105,
+      "CurrentRearArmor": 35,
+      "CurrentInternalStructure": 60,
+      "AssignedArmor": 105,
+      "AssignedRearArmor": 35
+    },
+    {
+      "DamageLevel": "Functional",
+      "Location": "RightTorso",
+      "CurrentArmor": 105,
+      "CurrentRearArmor": 35,
+      "CurrentInternalStructure": 60,
+      "AssignedArmor": 105,
+      "AssignedRearArmor": 35
+    },
+    {
+      "DamageLevel": "Functional",
+      "Location": "LeftArm",
+      "CurrentArmor": 80,
+      "CurrentRearArmor": 0,
+      "CurrentInternalStructure": 40,
+      "AssignedArmor": 80,
+      "AssignedRearArmor": 0
+    },
+    {
+      "DamageLevel": "Functional",
+      "Location": "RightArm",
+      "CurrentArmor": 80,
+      "CurrentRearArmor": 0,
+      "CurrentInternalStructure": 40,
+      "AssignedArmor": 80,
+      "AssignedRearArmor": 0
+    },
+    {
+      "DamageLevel": "Functional",
+      "Location": "LeftLeg",
+      "CurrentArmor": 110,
+      "CurrentRearArmor": 0,
+      "CurrentInternalStructure": 60,
+      "AssignedArmor": 110,
+      "AssignedRearArmor": 0
+    },
+    {
+      "DamageLevel": "Functional",
+      "Location": "RightLeg",
+      "CurrentArmor": 110,
+      "CurrentRearArmor": 0,
+      "CurrentInternalStructure": 60,
+      "AssignedArmor": 110,
+      "AssignedRearArmor": 0
+    }
+  ],
+  "inventory": [
+    {
+      "MountedLocation": "Head",
+      "ComponentDefID": "Gear_Cockpit_LifeSupportA_Standard",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftLeg",
+      "ComponentDefID": "emod_leg_hip",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightLeg",
+      "ComponentDefID": "emod_leg_hip",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightArm",
+      "ComponentDefID": "emod_arm_part_shoulder",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftArm",
+      "ComponentDefID": "emod_arm_part_shoulder",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "Head",
+      "ComponentDefID": "Gear_Cockpit_SensorsA_Standard",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftLeg",
+      "ComponentDefID": "emod_leg_upper",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightLeg",
+      "ComponentDefID": "emod_leg_upper",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightArm",
+      "ComponentDefID": "emod_arm_part_upper",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftArm",
+      "ComponentDefID": "emod_arm_part_upper",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftLeg",
+      "ComponentDefID": "emod_leg_lower",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightLeg",
+      "ComponentDefID": "emod_leg_lower",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightArm",
+      "ComponentDefID": "emod_arm_part_lower",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftArm",
+      "ComponentDefID": "emod_arm_part_lower",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftLeg",
+      "ComponentDefID": "emod_leg_foot",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightLeg",
+      "ComponentDefID": "emod_leg_foot",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "CenterTorso",
+      "ComponentDefID": "emod_engineslots_std_center",
+      "SimGameUID": "",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "CenterTorso",
+      "ComponentDefID": "emod_engine_cooling",
+      "SimGameUID": "",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "CenterTorso",
+      "ComponentDefID": "emod_engine_200",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftTorso",
+      "ComponentDefID": "Gear_MASC",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "Head",
+      "ComponentDefID": "Gear_Cockpit_AdvancedCombatComputer-3",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "CenterTorso",
+      "ComponentDefID": "emod_kit_dhs",
+      "SimGameUID": "",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftTorso",
+      "ComponentDefID": "Gear_HeatSink_Generic_Double",
+      "SimGameUID": "",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftTorso",
+      "ComponentDefID": "Gear_HeatSink_Generic_Double",
+      "SimGameUID": "",
+      "ComponentDefType": "HeatSink",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightTorso",
+      "ComponentDefID": "Weapon_Laser_SmallLaser_0-MicroBlazer",
+      "SimGameUID": "",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 0,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_hunchback_righttorso_laser_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightTorso",
+      "ComponentDefID": "Weapon_Laser_SmallLaser_0-MicroBlazer",
+      "SimGameUID": "",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_hunchback_righttorso_laser_eh2",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightTorso",
+      "ComponentDefID": "Weapon_Laser_SmallLaser_0-MicroBlazer",
+      "SimGameUID": "",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 2,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_hunchback_righttorso_laser_eh3",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightTorso",
+      "ComponentDefID": "Weapon_Laser_SmallLaser_0-EnergyMount",
+      "SimGameUID": "",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 3,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_hunchback_righttorso_laser_eh4",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightTorso",
+      "ComponentDefID": "Weapon_Laser_SmallLaser_0-EnergyMount",
+      "SimGameUID": "",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 4,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_hunchback_righttorso_laser_eh5",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightTorso",
+      "ComponentDefID": "Weapon_Laser_SmallLaser_0-EnergyMount",
+      "SimGameUID": "",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 5,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_hunchback_righttorso_laser_eh6",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightArm",
+      "ComponentDefID": "Weapon_PPC_SnubNosePPC_2-Magna",
+      "SimGameUID": "",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 0,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_hunchback_rightarm_ppc_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftArm",
+      "ComponentDefID": "Weapon_PPC_SnubNosePPC_2-Magna",
+      "SimGameUID": "",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 0,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "chrPrfWeap_hunchback_leftarm_ppc_eh1",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightArm",
+      "ComponentDefID": "Gear_Actuator_Coventry_X65-Standard",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftArm",
+      "ComponentDefID": "Gear_Actuator_Coventry_X65-Standard",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "CenterTorso",
+      "ComponentDefID": "emod_armorslots_standard",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": true,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "CenterTorso",
+      "ComponentDefID": "Gear_Gyro_Coventry_Mark-95",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightLeg",
+      "ComponentDefID": "Gear_JumpJet_Generic_Standard",
+      "SimGameUID": "",
+      "ComponentDefType": "JumpJet",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftLeg",
+      "ComponentDefID": "Gear_JumpJet_Generic_Standard",
+      "SimGameUID": "",
+      "ComponentDefType": "JumpJet",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightLeg",
+      "ComponentDefID": "Gear_JumpJet_Generic_Standard",
+      "SimGameUID": "",
+      "ComponentDefType": "JumpJet",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "LeftLeg",
+      "ComponentDefID": "Gear_JumpJet_Generic_Standard",
+      "SimGameUID": "",
+      "ComponentDefType": "JumpJet",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "CenterTorso",
+      "ComponentDefID": "emod_structureslots_endosteel",
+      "SimGameUID": "",
+      "ComponentDefType": "Upgrade",
+      "HardpointSlot": -1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "prefabName": "",
+      "hasPrefabName": true
+    },
+    {
+      "MountedLocation": "RightArm",
+      "ComponentDefID": "Weapon_Laser_SmallLaser_2-Magna",
+      "SimGameUID": "",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "hasPrefabName": false
+    },
+    {
+      "MountedLocation": "Head",
+      "ComponentDefID": "Weapon_Laser_SmallLaser_2-Magna",
+      "SimGameUID": "",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 0,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "hasPrefabName": false
+    },
+    {
+      "MountedLocation": "LeftArm",
+      "ComponentDefID": "Weapon_Laser_SmallLaser_2-Magna",
+      "SimGameUID": "",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 1,
+      "IsFixed": false,
+      "DamageLevel": "Functional",
+      "hasPrefabName": false
+    }
+  ],
+  "simGameMechPartCost": 0
+}

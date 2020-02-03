@@ -1,0 +1,66 @@
+{
+    "Category" : "Ballistic",
+    "Type" : "Autocannon",
+    "WeaponSubType" : "AC10",
+    "MinRange" : 0,
+    "MaxRange" : 420,
+    "RangeSplit" : [
+        330,
+        330,
+        420
+    ],
+    "AmmoCategory" : "AC10",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 14,
+    "Damage" : 70,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 5,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : 0,
+    "CriticalChanceMultiplier" : 1,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 2,
+    "ShotsWhenFired" : 1,
+    "ProjectilesPerShot" : 3,
+    "AttackRecoil" : 3,
+    "Instability" : 40,
+    "WeaponEffectID" : "WeaponEffect-Weapon_AC10_Single",
+    "Description" : {
+        "Cost" : 140000,
+        "Rarity" : 1,
+        "Purchasable" : true,
+        "Manufacturer" : "Mydron",
+        "Model" : "Mydron Class-B",
+        "UIName" : "AC/10 *",
+        "Id" : "Weapon_Autocannon_AC10_0-Mydron",
+        "Name" : "AC/10 *",
+        "Details" : "One of the most powerful and efficient weapons mounted in combat, AC/10s are known for their heavy damage and ability to stagger opponents. AC/10s suffer from <color=#dd7e6b>-2 Recoil/refire penalty </color> when continuously fired. Your pilots guts skill can counteract this. Additionally, <color=#f79924>AC10s have a damage variance of +/- 5 points of damage.</color>",
+        "Icon" : "uixSvgIcon_weapon_Ballistic"
+    },
+    "BonusValueA" : "+5 Stb.Dmg.",
+    "BonusValueB" : "+2 Heat",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "AC10",
+    "BattleValue" : 0,
+    "InventorySize" : 3,
+    "Tonnage" : 12,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_long",
+            "wr-jammable_weapon",
+            "wr-jam_chance_multiplier-1"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

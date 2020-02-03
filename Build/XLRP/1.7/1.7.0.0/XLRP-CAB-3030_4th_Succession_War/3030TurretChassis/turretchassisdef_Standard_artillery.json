@@ -1,0 +1,73 @@
+{
+	"Description" : {
+		"Id" : "turretchassisdef_Standard_artillery",
+		"Name" : "Standard Artillery Turret Chassis",
+		"Details" : "",
+		"Icon" : "TURRET",
+		"Cost" : 993,
+		"Rarity" : 0,
+		"Purchasable" : false
+	},
+	"MovementCapDefID" : "",
+	"PathingCapDefID" : "",
+   	"HardpointDataDefID" : "hardpointdatadef_arty2turret",
+	"PrefabIdentifier" : "chrprftrt_arty2turret",
+	"PrefabBase" : "turretsniper",
+	"weightClass" : "ASSAULT",
+    "Tonnage" : 100,
+    "InventorySlots" : 20,
+    "MaxArmor" : 400,
+    "MaxInternalStructure" : 10,
+    "BattleValue" : 100,
+	"SpotterDistanceMultiplier" : 0.6,
+    "VisibilityMultiplier" : 0.6,
+    "SensorRangeMultiplier" : 0.5,
+    "Signature" : 0,
+    "Radius" : 4,
+    "FiringArcDegrees" : 360,
+	"Hardpoints" : [
+		{
+			"WeaponMount" : "Ballistic",
+			"Omni" : false
+		}
+	],
+	"LOSSourcePositions" : [
+		{
+		    "x" : -2,
+		    "y" : 9,
+		    "z" : 0
+	    },
+		{
+		    "x" : 2,
+		    "y" : 9,
+		    "z" : 0
+	    }
+	],
+	"LOSTargetPositions" : [
+		{
+		    "x" : -2,
+		    "y" : 9,
+		    "z" : 0
+		},
+		{
+		    "x" : 2,
+		    "y" : 9,
+		    "z" : 0
+		},
+		{
+		    "x" : 0,
+		    "y" : 9,
+		    "z" : -2.5
+		},
+		{
+		    "x" : 0,
+		    "y" : 9,
+		    "z" : 2.5
+		},
+		{
+		    "x" : 0.0,
+		    "y" : 4.5,
+		    "z" : 0
+	    }
+	]
+}

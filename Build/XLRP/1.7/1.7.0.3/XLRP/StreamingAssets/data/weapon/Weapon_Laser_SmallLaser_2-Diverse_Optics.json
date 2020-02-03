@@ -1,0 +1,14 @@
+{
+    "MaxRange" : 120,
+    "RangeSplit" : [
+        120,
+        120,
+        120
+    ],
+    "DamageVariance" : 5,
+	"Description" : {
+        "Details" : "Small Lasers deal superb damage for their weight and heat generation but have extremely limited range. Like all Lasers, Small Lasers enjoy a baseline accuracy bonus over other weapons. Additionally, <color=#f79924>Small Lasers have a damage variance of +/- 5 points of damage.</color>"
+    },
+    "BonusValueA" : "+3 Acc.",
+    "BonusValueB" : "+30m Range"
+}

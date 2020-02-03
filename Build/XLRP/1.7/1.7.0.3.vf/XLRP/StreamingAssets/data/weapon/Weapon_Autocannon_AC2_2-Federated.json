@@ -1,0 +1,19 @@
+{
+    "Damage" : 30,
+    "DamageVariance" : 5,
+    "CriticalChanceMultiplier" : 2.0,
+    "Instability" : 15,
+    "Description" : {
+        "Details" : "Intended for use as supporting fire at very long range, AC/2s deal moderate damage with low heat and a large ammunition count per ton. AC/2s suffer from <color=#dd7e6b> -1 Recoil/refire penalty </color>, when continuously fired. Your pilots guts skill can counteract this. Additionally, <color=#f79924>AC2s have a damage variance of +/- 5 points of damage.</color>"
+    },
+    "BonusValueA" : "+100% Crit.",
+    "ComponentTags" : {
+        "items" : [
+            "component_type_variant",
+            "component_type_variant2",
+            "range_extreme",
+            "wr-jammable_weapon",
+            "wr-jam_chance_multiplier-1"
+        ]
+    }
+}

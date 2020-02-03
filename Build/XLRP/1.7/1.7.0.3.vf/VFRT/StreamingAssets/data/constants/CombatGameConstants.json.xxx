@@ -1,0 +1,17 @@
+{
+  "Heat": {
+    "EngineDamageHeat": 0,
+    "InternalHeatSinkCount": 0,
+    "DefaultHeatSinkDissipationCapacity": 3,
+    "ShutdownCausesInjury": false,
+    "ShowPeakHeat": true,
+    "CriticalHeatPerLocationLight": 0,
+    "CriticalHeatPerLocationMedium": 0,
+    "CriticalHeatPerLocationHeavy": 0,
+    "CriticalHeatPerLocationAssault": 0
+  },
+  "MoveConstants":
+  {
+      "OverheatedMovePenalty": 0
+  }
+}

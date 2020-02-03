@@ -1,0 +1,51 @@
+{
+    "Description" : {
+        "Id" : "jade_falcon",
+        "Name" : "jade_falcon",
+        "Details" : "Random",
+        "Icon" : "jade_falcon"
+    },
+    "ID" : "jade_falcon",
+    "backgroundColor" : {
+        "r" : 0,
+        "g" : 0,
+        "b" : 0,
+        "a" : 0
+    },
+    "headMesh" : 0.5,
+    "hairMesh" : 4,
+    "beardMesh" : 0,
+    "suitMesh" : 1,
+    "scar" : 0,
+    "lightRig" : 0,
+    "cameraPosition" : 4,
+    "complexionTex" : 4,
+    "eyebrowTex" : 0,
+    "tattooTex" : 5,
+    "actualTattooTex" : 6,
+    "weights" : [
+        34.02079,
+        3.423102,
+        38.21724,
+        21.61899,
+        0.350704,
+        2.369179
+    ],
+    "browOffsetY" : -0.004489747,
+    "browOffsetZ" : 0.002647141,
+    "noseBridgeScale" : 0.04003504,
+    "noseTipScale" : 0.06261825,
+    "chinScale" : 0.01818783,
+    "cheekOffsetY" : -0.002912297,
+    "eyeWidth" : 0.03833472,
+    "jawWidth" : -0.02726258,
+    "animation" : 0,
+    "isCommander" : true,
+    "skinToneId" : "Skin_00",
+    "eyeColorId" : "Eye_02",
+    "hairRootId" : "Hair_01",
+    "hairTipId" : "Hair_01",
+    "tattooColorId" : "Tattoo_06",
+    "lipColorId" : "Lip_01",
+    "customPortraitSaveVersion" : 0
+}

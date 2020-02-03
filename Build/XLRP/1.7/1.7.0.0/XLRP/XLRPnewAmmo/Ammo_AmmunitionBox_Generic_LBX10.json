@@ -1,0 +1,41 @@
+{
+	"Custom": {
+		"ComponentExplosion": {
+			"ExplosionDamagePerAmmo": 18
+		}
+	},
+    "AmmoID" : "Ammunition_LBX10",
+    "Capacity" : 10,
+    "Description" : {
+        "Cost" : 60000,
+        "Rarity" : 0,
+        "Purchasable" : true,
+        "Manufacturer" : "Generic",
+        "Model" : "LB 10-X AC",
+        "UIName" : "LB 10-X Ammo",
+        "Id" : "Ammo_AmmunitionBox_Generic_LBX10",
+        "Name" : "LB 10-X Ammo",
+        "Details" : "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Ammo Bins will explode and destroy their installed location when they receive a Critical Hit. LB 10-X AC Slug Ammo Bins each contain <color=#6aa84f>12 rounds</color> and may feed multiple weapons. Slugs are single large projectiles, similar to standard AC/10 rounds and deal the amount of damage indicated by the autocannon itself <color=#f79924>+/- 5 points of damage variance.</color> <b>Ammunition type can be changed by clicking the middle of the weapons activation panel during combat if more than one type of ammunition is present.</b></color>\r\n\r\n<b><color=#ffcc00>Explosion damage per ammo: 18</color></b>",
+        "Icon" : "uixSvgIcon_ammoBox_Ballistic"
+    },
+    "BonusValueA" : "",
+    "BonusValueB" : "",
+    "ComponentType" : "AmmunitionBox",
+    "ComponentSubType" : "Ammunition",
+    "PrefabIdentifier" : "",
+    "BattleValue" : 0,
+    "InventorySize" : 1,
+    "Tonnage" : 1,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

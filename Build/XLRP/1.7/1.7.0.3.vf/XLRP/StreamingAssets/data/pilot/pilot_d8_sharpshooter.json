@@ -1,0 +1,14 @@
+{
+  "abilityDefNames": [
+    "AbilityDefG5",
+    "AbilityDefG8",
+    "AbilityDefT5A",
+    "TraitDefCalledShotImprove",
+    "TraitDefHealthAddOne",
+    "TraitDefIndirectReduceOne",
+    "TraitDefMinRangeReduce45",
+	"TraitDefVisualRange6",
+    "TraitDefRefireReduceOne",
+    "TraitDefUnsteadySet60"
+  ]
+}

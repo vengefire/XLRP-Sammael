@@ -1,0 +1,9 @@
+{
+  "abilityDefNames": [
+    "AbilityDefG5",
+    "AbilityDefGu5",
+    "TraitDefHealthAddOne",
+	"TraitDefVisualRange3",
+    "TraitDefRefireReduceOne"
+  ]
+}

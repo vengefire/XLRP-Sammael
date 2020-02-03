@@ -1,0 +1,51 @@
+{
+    "Description" : {
+        "Id" : "bear",
+        "Name" : "bear",
+        "Details" : "Random",
+        "Icon" : "bear"
+    },
+    "ID" : "bear",
+    "backgroundColor" : {
+        "r" : 0,
+        "g" : 0,
+        "b" : 0,
+        "a" : 0
+    },
+    "headMesh" : 0.5,
+    "hairMesh" : 0,
+    "beardMesh" : 0,
+    "suitMesh" : 2,
+    "scar" : 7,
+    "lightRig" : 0,
+    "cameraPosition" : 4,
+    "complexionTex" : 2,
+    "eyebrowTex" : 2,
+    "tattooTex" : 11,
+    "actualTattooTex" : 0,
+    "weights" : [
+        4.736353,
+        51.20872,
+        23.47182,
+        18.98147,
+        0.7354118,
+        0.8662146
+    ],
+    "browOffsetY" : -0.003613481,
+    "browOffsetZ" : 0.003050732,
+    "noseBridgeScale" : -0.1739619,
+    "noseTipScale" : 0.2480433,
+    "chinScale" : 0.08754673,
+    "cheekOffsetY" : 0.001732597,
+    "eyeWidth" : -0.02569385,
+    "jawWidth" : 0.02421957,
+    "animation" : 0,
+    "isCommander" : true,
+    "skinToneId" : "Skin_07",
+    "eyeColorId" : "Eye_02",
+    "hairRootId" : "Hair_09",
+    "hairTipId" : "Hair_09",
+    "tattooColorId" : "Tattoo_10",
+    "lipColorId" : "Lip_01",
+    "customPortraitSaveVersion" : 0
+}

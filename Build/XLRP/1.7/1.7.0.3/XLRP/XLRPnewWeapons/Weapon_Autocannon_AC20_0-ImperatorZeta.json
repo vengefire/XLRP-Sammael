@@ -1,0 +1,65 @@
+{
+    "Category" : "Ballistic",
+    "Type" : "Autocannon",
+    "WeaponSubType" : "AC20",
+    "MinRange" : 0,
+    "MaxRange" : 240,
+    "RangeSplit" : [
+        180,
+        180,
+        240
+    ],
+    "AmmoCategory" : "AC20",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 20,
+    "Damage" : 110,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 20,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : 0,
+    "CriticalChanceMultiplier" : 2,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 2,
+    "ShotsWhenFired" : 1,
+    "ProjectilesPerShot" : 2,
+    "AttackRecoil" : 4,
+    "Instability" : 55,
+    "WeaponEffectID" : "WeaponEffect-Weapon_AC20_Single",
+    "Description" : {
+        "Cost" : 180000,
+        "Rarity" : 1,
+        "Purchasable" : true,
+        "Manufacturer" : "Imperator",
+        "Model" : "Imperator-Zeta",
+        "UIName" : "AC/20 *",
+        "Id" : "Weapon_Autocannon_AC20_0-ImperatorZeta",
+        "Name" : "AC/20 *",
+        "Details" : "The king of the battlefield in terms of raw damage, AC/20s hit harder than any other weapon. However, this comes at the expense of weight, range, and severely limited ammunition. Imperator-Zeta Autocannons are usually used on the Banshee BNC-3Q and the Urbanmech UM-R60L. AC/20s suffer from <color=#dd7e6b> -2 Recoil/refire penalty </color>, when continuously fired. Your pilots guts skill can counteract this. Additionally, <color=#f79924>this AC20 has a damage variance of +/- 20 points of damage.</color>",
+        "Icon" : "uixSvgIcon_weapon_Ballistic"
+    },
+    "BonusValueA" : "+100% Crit.",
+    "BonusValueB" : "-30m Range +10 Dmg.Variance",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "AC20",
+    "BattleValue" : 0,
+    "InventorySize" : 4,
+    "Tonnage" : 14,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_standard",
+            "wr-jammable_weapon",
+            "wr-jam_chance_multiplier-1"
+        ]
+    }
+}

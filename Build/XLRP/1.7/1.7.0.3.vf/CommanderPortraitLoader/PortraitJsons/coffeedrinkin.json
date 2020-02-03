@@ -1,0 +1,51 @@
+{
+    "Description" : {
+        "Id" : "coffeedrinkin",
+        "Name" : "coffeedrinkin",
+        "Details" : "Random",
+        "Icon" : "coffeedrinkin"
+    },
+    "ID" : "coffeedrinkin",
+    "backgroundColor" : {
+        "r" : 0,
+        "g" : 0,
+        "b" : 0,
+        "a" : 0
+    },
+    "headMesh" : 0.5,
+    "hairMesh" : 13,
+    "beardMesh" : 0,
+    "suitMesh" : 2,
+    "scar" : 0,
+    "lightRig" : 0,
+    "cameraPosition" : 3,
+    "complexionTex" : 0,
+    "eyebrowTex" : 4,
+    "tattooTex" : 4,
+    "actualTattooTex" : 16,
+    "weights" : [
+        31.06349,
+        37.60849,
+        1.142144,
+        1.045125,
+        0.5439476,
+        28.59681
+    ],
+    "browOffsetY" : -0.0007485594,
+    "browOffsetZ" : -0.004123177,
+    "noseBridgeScale" : -0.1226161,
+    "noseTipScale" : -0.1153068,
+    "chinScale" : 0.1681904,
+    "cheekOffsetY" : -0.0006539565,
+    "eyeWidth" : -0.01701054,
+    "jawWidth" : -0.02817827,
+    "animation" : 3,
+    "isCommander" : true,
+    "skinToneId" : "Skin_05",
+    "eyeColorId" : "Eye_01",
+    "hairRootId" : "Hair_01",
+    "hairTipId" : "Hair_01",
+    "tattooColorId" : "Tattoo_10",
+    "lipColorId" : "Lip_01",
+    "customPortraitSaveVersion" : 0
+}

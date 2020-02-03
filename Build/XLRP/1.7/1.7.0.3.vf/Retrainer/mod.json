@@ -1,0 +1,14 @@
+﻿{
+    "Name": "Retrainer",
+    "Version": "1.1",
+    "Enabled": true,
+    "ConflictsWith": [
+        "RogueTech Enhanced",
+        "RogueTech Enhanced Clans"
+    ],
+    "DLL": "Retrainer.dll",
+    "Settings": {
+        "cost": 500000,
+        "onceOnly": true
+    }
+}

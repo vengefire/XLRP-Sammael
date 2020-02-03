@@ -1,0 +1,20 @@
+{
+  "abilityDefNames": [
+    "AbilityDefGu5",
+    "AbilityDefGu8",
+    "AbilityDefP5",
+    "TraitDefCalledShotImprove",
+    "TraitDefEvasiveChargeAddOne",
+    "TraitDefHealthAddOne",
+    "TraitDefHealthAddThree",
+    "TraitDefHealthAddTwo",
+    "TraitDefIndirectReduceOne",
+    "TraitDefMinRangeReduce45",
+	"TraitDefVisualRange6",
+    "TraitDefOverheatAddFifteen",
+    "TraitDefOverheatAddThirty",
+    "TraitDefRefireReduceOne",
+    "TraitDefRefireReduceTwo",
+    "TraitDefUnsteadySet60"
+  ]
+}

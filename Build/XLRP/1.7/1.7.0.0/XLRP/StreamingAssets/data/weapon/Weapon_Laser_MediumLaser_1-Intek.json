@@ -1,0 +1,8 @@
+{
+    "DamageVariance" : 3,
+	"Description" : {
+        "Details" : "Medium Lasers are lightweight with respectable damage. Because of this, at least one can be found mounted on most units that cross the battlefield. Like all Lasers, Medium Lasers enjoy a baseline accuracy bonus over other weapons. Additionally, <color=#f79924>this Medium Laser has a damage variance of +/- 3 points of damage.</color>"
+    },
+    "BonusValueA" : "+1 Acc.",
+    "BonusValueB" : "-2 Dmg.Variance"
+}

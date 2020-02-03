@@ -1,0 +1,51 @@
+{
+    "Description" : {
+        "Id" : "LadyAlekto",
+        "Name" : "LadyAlekto",
+        "Details" : "Random",
+        "Icon" : "LadyAlekto"
+    },
+    "ID" : "LadyAlekto",
+    "backgroundColor" : {
+        "r" : 0,
+        "g" : 0,
+        "b" : 0,
+        "a" : 0
+    },
+    "headMesh" : 0.5,
+    "hairMesh" : 16,
+    "beardMesh" : 0,
+    "suitMesh" : 1,
+    "scar" : 0,
+    "lightRig" : 2,
+    "cameraPosition" : 3,
+    "complexionTex" : 5,
+    "eyebrowTex" : 0,
+    "tattooTex" : 2,
+    "actualTattooTex" : 4,
+    "weights" : [
+        69.17734,
+        0.1045633,
+        0.6294991,
+        29.98704,
+        0.1015121,
+        5.092559E-05
+    ],
+    "browOffsetY" : -0.006793185,
+    "browOffsetZ" : 0.001913685,
+    "noseBridgeScale" : -0.1255809,
+    "noseTipScale" : -0.2272953,
+    "chinScale" : 0.1510406,
+    "cheekOffsetY" : 0.002649726,
+    "eyeWidth" : -0.03283578,
+    "jawWidth" : 0.05670431,
+    "animation" : 3,
+    "isCommander" : true,
+    "skinToneId" : "Skin_04",
+    "eyeColorId" : "Eye_01",
+    "hairRootId" : "Hair_17",
+    "hairTipId" : "Hair_17",
+    "tattooColorId" : "Tattoo_08",
+    "lipColorId" : "Lip_01",
+    "customPortraitSaveVersion" : 0
+}

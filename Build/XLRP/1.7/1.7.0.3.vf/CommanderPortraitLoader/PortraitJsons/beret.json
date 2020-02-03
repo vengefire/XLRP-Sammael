@@ -1,0 +1,51 @@
+{
+    "Description" : {
+        "Id" : "beret",
+        "Name" : "beret",
+        "Details" : "Random",
+        "Icon" : "beret"
+    },
+    "ID" : "beret",
+    "backgroundColor" : {
+        "r" : 0,
+        "g" : 0,
+        "b" : 0,
+        "a" : 0
+    },
+    "headMesh" : 0.5,
+    "hairMesh" : 0,
+    "beardMesh" : 0,
+    "suitMesh" : 1,
+    "scar" : 0,
+    "lightRig" : 5,
+    "cameraPosition" : 2,
+    "complexionTex" : 1,
+    "eyebrowTex" : 5,
+    "tattooTex" : 2,
+    "actualTattooTex" : 0,
+    "weights" : [
+        0.6261008,
+        52.01978,
+        21.63807,
+        16.20572,
+        8.693769,
+        0.8165752
+    ],
+    "browOffsetY" : 0.004773771,
+    "browOffsetZ" : -0.003547973,
+    "noseBridgeScale" : 0.01023839,
+    "noseTipScale" : 0.01421911,
+    "chinScale" : -0.1916837,
+    "cheekOffsetY" : -0.0009029752,
+    "eyeWidth" : -0.03899388,
+    "jawWidth" : -0.001663792,
+    "animation" : 2,
+    "isCommander" : true,
+    "skinToneId" : "Skin_07",
+    "eyeColorId" : "Eye_04",
+    "hairRootId" : "Hair_02",
+    "hairTipId" : "Hair_02",
+    "tattooColorId" : "Tattoo_04",
+    "lipColorId" : "Lip_01",
+    "customPortraitSaveVersion" : 0
+}

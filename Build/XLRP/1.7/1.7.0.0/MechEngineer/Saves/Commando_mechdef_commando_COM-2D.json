@@ -1,0 +1,820 @@
+{
+    "Chassis" : {
+        "Description" : {
+            "Cost" : 2100000,
+            "Rarity" : 0,
+            "Purchasable" : true,
+            "Manufacturer" : "",
+            "Model" : "",
+            "UIName" : "Commando",
+            "Id" : "chassisdef_commando_COM-2D",
+            "Name" : "Commando",
+            "Details" : "With all those SRMs, the COM-2D is like a small, highly mobile shotgun that can take down 'Mechs twice its size or bigger. You've gotta be careful with it, though, because it's not meant to take much of a beating.",
+            "Icon" : "uixTxrIcon_commando"
+        },
+        "VariantName" : "COM-2D",
+        "StockRole" : "Light Striker & Scout",
+        "YangsThoughts" : "With all those SRMs, the COM-2D is like a small, highly mobile shotgun that can take down 'Mechs twice its size or bigger. You've gotta be careful with it, though, because it's not meant to take much of a beating.",
+        "PrefabIdentifier" : "chrPrfMech_commandoBase-001",
+        "PrefabBase" : "commando",
+        "Tonnage" : 25,
+        "InitialTonnage" : 2.5,
+        "weightClass" : "LIGHT",
+        "BattleValue" : 2061000,
+        "Heatsinks" : 0,
+        "TopSpeed" : 85,
+        "TurnRadius" : 90,
+        "MaxJumpjets" : 8,
+        "Stability" : 100,
+        "StabilityDefenses" : [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpotterDistanceMultiplier" : 1,
+        "VisibilityMultiplier" : 1,
+        "SensorRangeMultiplier" : 1,
+        "Signature" : 0,
+        "Radius" : 4,
+        "PunchesWithLeftArm" : false,
+        "EngageRangeModifier" : 0,
+        "MeleeDamage" : 30,
+        "MeleeInstability" : 25,
+        "MeleeToHitModifier" : 0,
+        "DFADamage" : 30,
+        "DFAToHitModifier" : 0,
+        "DFASelfDamage" : 30,
+        "DFAInstability" : 30,
+        "ChassisTags" : {
+            "items" : [
+                
+            ],
+            "tagSetSourceFile" : ""
+        },
+        "MechPartMax" : 0,
+        "Head" : {
+            "Location" : "Head",
+            "Hardpoints" : [
+                
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 6,
+            "MaxArmor" : 45,
+            "MaxRearArmor" : -1,
+            "InternalStructure" : 16
+        },
+        "LeftArm" : {
+            "Location" : "LeftArm",
+            "Hardpoints" : [
+                {
+                    "WeaponMount" : "Energy",
+                    "Omni" : false
+                },
+                {
+                    "WeaponMount" : "AntiPersonnel",
+                    "Omni" : false
+                }
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 12,
+            "MaxArmor" : 40,
+            "MaxRearArmor" : -1,
+            "InternalStructure" : 20
+        },
+        "LeftTorso" : {
+            "Location" : "LeftTorso",
+            "Hardpoints" : [
+                
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 12,
+            "MaxArmor" : 60,
+            "MaxRearArmor" : 30,
+            "InternalStructure" : 30
+        },
+        "CenterTorso" : {
+            "Location" : "CenterTorso",
+            "Hardpoints" : [
+                {
+                    "WeaponMount" : "Missile",
+                    "Omni" : false
+                }
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 15,
+            "MaxArmor" : 80,
+            "MaxRearArmor" : 40,
+            "InternalStructure" : 40
+        },
+        "RightTorso" : {
+            "Location" : "RightTorso",
+            "Hardpoints" : [
+                
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 12,
+            "MaxArmor" : 60,
+            "MaxRearArmor" : 30,
+            "InternalStructure" : 30
+        },
+        "RightArm" : {
+            "Location" : "RightArm",
+            "Hardpoints" : [
+                {
+                    "WeaponMount" : "Missile",
+                    "Omni" : false
+                },
+                {
+                    "WeaponMount" : "Missile",
+                    "Omni" : false
+                }
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 12,
+            "MaxArmor" : 40,
+            "MaxRearArmor" : -1,
+            "InternalStructure" : 20
+        },
+        "LeftLeg" : {
+            "Location" : "LeftLeg",
+            "Hardpoints" : [
+                
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 6,
+            "MaxArmor" : 60,
+            "MaxRearArmor" : -1,
+            "InternalStructure" : 30
+        },
+        "RightLeg" : {
+            "Location" : "RightLeg",
+            "Hardpoints" : [
+                
+            ],
+            "Tonnage" : 0,
+            "InventorySlots" : 6,
+            "MaxArmor" : 60,
+            "MaxRearArmor" : -1,
+            "InternalStructure" : 30
+        },
+        "MovementCapDefID" : "movedef_commando_COM-2D",
+        "PathingCapDefID" : "pathingdef_light",
+        "HardpointDataDefID" : "hardpointdatadef_commando",
+        "LOSSourcePositions" : [
+            {
+                "x" : 0,
+                "y" : 9.5,
+                "z" : 0.5
+            },
+            {
+                "x" : -2.5,
+                "y" : 8.5,
+                "z" : -0.5
+            },
+            {
+                "x" : 2.5,
+                "y" : 8.5,
+                "z" : -0.5
+            }
+        ],
+        "LOSTargetPositions" : [
+            {
+                "x" : 0,
+                "y" : 9.5,
+                "z" : 0.5
+            },
+            {
+                "x" : -2.5,
+                "y" : 8.5,
+                "z" : -0.5
+            },
+            {
+                "x" : 2.5,
+                "y" : 8.5,
+                "z" : -0.5
+            },
+            {
+                "x" : -1.5,
+                "y" : 3,
+                "z" : 0.5
+            },
+            {
+                "x" : 1.5,
+                "y" : 3,
+                "z" : 0.5
+            }
+        ],
+        "MechPartCount" : 0,
+        "Locations" : [
+            {
+                "Location" : "Head",
+                "Hardpoints" : [
+                    
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 6,
+                "MaxArmor" : 45,
+                "MaxRearArmor" : -1,
+                "InternalStructure" : 16
+            },
+            {
+                "Location" : "LeftArm",
+                "Hardpoints" : [
+                    {
+                        "WeaponMount" : "Energy",
+                        "Omni" : false
+                    },
+                    {
+                        "WeaponMount" : "AntiPersonnel",
+                        "Omni" : false
+                    }
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 12,
+                "MaxArmor" : 40,
+                "MaxRearArmor" : -1,
+                "InternalStructure" : 20
+            },
+            {
+                "Location" : "LeftTorso",
+                "Hardpoints" : [
+                    
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 12,
+                "MaxArmor" : 60,
+                "MaxRearArmor" : 30,
+                "InternalStructure" : 30
+            },
+            {
+                "Location" : "CenterTorso",
+                "Hardpoints" : [
+                    {
+                        "WeaponMount" : "Missile",
+                        "Omni" : false
+                    }
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 15,
+                "MaxArmor" : 80,
+                "MaxRearArmor" : 40,
+                "InternalStructure" : 40
+            },
+            {
+                "Location" : "RightTorso",
+                "Hardpoints" : [
+                    
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 12,
+                "MaxArmor" : 60,
+                "MaxRearArmor" : 30,
+                "InternalStructure" : 30
+            },
+            {
+                "Location" : "RightArm",
+                "Hardpoints" : [
+                    {
+                        "WeaponMount" : "Missile",
+                        "Omni" : false
+                    },
+                    {
+                        "WeaponMount" : "Missile",
+                        "Omni" : false
+                    }
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 12,
+                "MaxArmor" : 40,
+                "MaxRearArmor" : -1,
+                "InternalStructure" : 20
+            },
+            {
+                "Location" : "LeftLeg",
+                "Hardpoints" : [
+                    
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 6,
+                "MaxArmor" : 60,
+                "MaxRearArmor" : -1,
+                "InternalStructure" : 30
+            },
+            {
+                "Location" : "RightLeg",
+                "Hardpoints" : [
+                    
+                ],
+                "Tonnage" : 0,
+                "InventorySlots" : 6,
+                "MaxArmor" : 60,
+                "MaxRearArmor" : -1,
+                "InternalStructure" : 30
+            }
+        ]
+    },
+    "MechTags" : {
+        "items" : [
+            "unit_release",
+            "unit_mech",
+            "unit_light",
+            "unit_ready",
+            "unit_lance_assassin",
+            "unit_role_scout",
+            "component_type_stock"
+        ],
+        "tagSetSourceFile" : ""
+    },
+    "ChassisID" : "chassisdef_commando_COM-2D",
+    "Description" : {
+        "Cost" : 3830000,
+        "Rarity" : 0,
+        "Purchasable" : false,
+        "Manufacturer" : "",
+        "Model" : "",
+        "UIName" : "Commando COM-2D",
+        "Id" : "mechdef_commando_COM-2D",
+        "Name" : "Commando",
+        "Details" : "With all those SRMs, the COM-2D is like a small, highly mobile shotgun that can take down 'Mechs twice its size or bigger. You've gotta be careful with it, though, because it's not meant to take much of a beating.",
+        "Icon" : "uixTxrIcon_commando"
+    },
+    "RequiredToSpawnCompanyTags" : {
+        "items" : [
+            
+        ],
+        "tagSetSourceFile" : ""
+    },
+    "Version" : 1,
+    "Locations" : [
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "Head",
+            "CurrentArmor" : 30,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 16,
+            "AssignedArmor" : 30,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "CenterTorso",
+            "CurrentArmor" : 55,
+            "CurrentRearArmor" : 25,
+            "CurrentInternalStructure" : 40,
+            "AssignedArmor" : 55,
+            "AssignedRearArmor" : 25
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "LeftTorso",
+            "CurrentArmor" : 40,
+            "CurrentRearArmor" : 20,
+            "CurrentInternalStructure" : 30,
+            "AssignedArmor" : 40,
+            "AssignedRearArmor" : 20
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "RightTorso",
+            "CurrentArmor" : 40,
+            "CurrentRearArmor" : 20,
+            "CurrentInternalStructure" : 30,
+            "AssignedArmor" : 40,
+            "AssignedRearArmor" : 20
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "LeftArm",
+            "CurrentArmor" : 40,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 20,
+            "AssignedArmor" : 40,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "RightArm",
+            "CurrentArmor" : 40,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 20,
+            "AssignedArmor" : 40,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "LeftLeg",
+            "CurrentArmor" : 45,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 30,
+            "AssignedArmor" : 45,
+            "AssignedRearArmor" : 0
+        },
+        {
+            "DamageLevel" : "Functional",
+            "Location" : "RightLeg",
+            "CurrentArmor" : 45,
+            "CurrentRearArmor" : 0,
+            "CurrentInternalStructure" : 30,
+            "AssignedArmor" : 45,
+            "AssignedRearArmor" : 0
+        }
+    ],
+    "inventory" : [
+        {
+            "MountedLocation" : "Head",
+            "ComponentDefID" : "Gear_Cockpit_LifeSupportA_Standard",
+            "SimGameUID" : "SGRef_1757",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_armorslots_standard",
+            "SimGameUID" : "SGRef_1758",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftLeg",
+            "ComponentDefID" : "emod_leg_hip",
+            "SimGameUID" : "SGRef_1759",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightLeg",
+            "ComponentDefID" : "emod_leg_hip",
+            "SimGameUID" : "SGRef_1760",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightArm",
+            "ComponentDefID" : "emod_arm_part_shoulder",
+            "SimGameUID" : "SGRef_1761",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftArm",
+            "ComponentDefID" : "emod_arm_part_shoulder",
+            "SimGameUID" : "SGRef_1762",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Destroyed",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "Head",
+            "ComponentDefID" : "Gear_Cockpit_SensorsA_Standard",
+            "SimGameUID" : "SGRef_1763",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_structureslots_standard",
+            "SimGameUID" : "SGRef_1764",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftLeg",
+            "ComponentDefID" : "emod_leg_upper",
+            "SimGameUID" : "SGRef_1765",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightLeg",
+            "ComponentDefID" : "emod_leg_upper",
+            "SimGameUID" : "SGRef_1766",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightArm",
+            "ComponentDefID" : "emod_arm_part_upper",
+            "SimGameUID" : "SGRef_1767",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftArm",
+            "ComponentDefID" : "emod_arm_part_upper",
+            "SimGameUID" : "SGRef_1768",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Destroyed",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "Head",
+            "ComponentDefID" : "Gear_Cockpit_Generic_Standard",
+            "SimGameUID" : "SGRef_1769",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_kit_shs",
+            "SimGameUID" : "SGRef_1770",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftLeg",
+            "ComponentDefID" : "emod_leg_lower",
+            "SimGameUID" : "SGRef_1771",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightLeg",
+            "ComponentDefID" : "emod_leg_lower",
+            "SimGameUID" : "SGRef_1772",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightArm",
+            "ComponentDefID" : "emod_arm_part_lower",
+            "SimGameUID" : "SGRef_1773",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftArm",
+            "ComponentDefID" : "emod_arm_part_lower",
+            "SimGameUID" : "SGRef_1774",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Penalized",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "Head",
+            "ComponentDefID" : "Gear_Cockpit_SensorsB_Standard",
+            "SimGameUID" : "SGRef_1775",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "Gear_Gyro_Generic_Standard",
+            "SimGameUID" : "SGRef_1776",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftLeg",
+            "ComponentDefID" : "emod_leg_foot",
+            "SimGameUID" : "SGRef_1777",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightLeg",
+            "ComponentDefID" : "emod_leg_foot",
+            "SimGameUID" : "SGRef_1778",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightArm",
+            "ComponentDefID" : "emod_arm_part_hand",
+            "SimGameUID" : "SGRef_1779",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "LeftArm",
+            "ComponentDefID" : "emod_arm_part_hand",
+            "SimGameUID" : "SGRef_1780",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Penalized",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "Head",
+            "ComponentDefID" : "Gear_Cockpit_LifeSupportB_Standard",
+            "SimGameUID" : "SGRef_1781",
+            "ComponentDefType" : "Upgrade",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_engineslots_std_center",
+            "SimGameUID" : "SGRef_1782",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_engine_cooling",
+            "SimGameUID" : "SGRef_1783",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : true,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "emod_engine_155",
+            "SimGameUID" : "SGRef_1784",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightArm",
+            "ComponentDefID" : "Weapon_SRM_SRM4_1-Coventry",
+            "SimGameUID" : "SGRef_1788",
+            "ComponentDefType" : "Weapon",
+            "HardpointSlot" : 0,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "chrPrfWeap_commando_rightarm_srm4_mh1",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightTorso",
+            "ComponentDefID" : "Ammo_AmmunitionBox_Generic_SRM",
+            "SimGameUID" : "SGRef_1789",
+            "ComponentDefType" : "AmmunitionBox",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightTorso",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Standard",
+            "SimGameUID" : "SGRef_1791",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "RightTorso",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Standard",
+            "SimGameUID" : "SGRef_1793",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "prefabName" : "",
+            "hasPrefabName" : true
+        },
+        {
+            "MountedLocation" : "CenterTorso",
+            "ComponentDefID" : "Weapon_SRM_SRM6_0-Telos",
+            "SimGameUID" : "SGRef_1836",
+            "ComponentDefType" : "Weapon",
+            "HardpointSlot" : 0,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftTorso",
+            "ComponentDefID" : "Ammo_AmmunitionBox_Generic_SRM",
+            "SimGameUID" : "SGRef_1844",
+            "ComponentDefType" : "AmmunitionBox",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftTorso",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Standard",
+            "SimGameUID" : "SGRef_1853",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        },
+        {
+            "MountedLocation" : "LeftTorso",
+            "ComponentDefID" : "Gear_HeatSink_Generic_Standard",
+            "SimGameUID" : "SGRef_1863",
+            "ComponentDefType" : "HeatSink",
+            "HardpointSlot" : -1,
+            "IsFixed" : false,
+            "DamageLevel" : "Functional",
+            "hasPrefabName" : false
+        }
+    ],
+    "simGameMechPartCost" : 0
+}

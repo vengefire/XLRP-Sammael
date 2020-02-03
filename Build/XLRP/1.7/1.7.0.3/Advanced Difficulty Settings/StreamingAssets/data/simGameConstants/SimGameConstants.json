@@ -1,0 +1,7 @@
+{
+	"Story": {
+		"MaxContractsPerSystem": 12,
+		"MaxBreadcrumbsPerSystem": 4,
+		"MissionsForFirstBreadcrumb": 1
+	}
+}

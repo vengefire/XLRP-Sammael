@@ -1,0 +1,81 @@
+{
+    "Category" : "Ballistic",
+    "Type" : "MachineGun",
+    "WeaponSubType" : "MachineGun",
+    "MinRange" : 0,
+    "MaxRange" : 150,
+    "RangeSplit" : [
+        90,
+        120,
+        150
+    ],
+    "AmmoCategory" : "MG",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 5,
+    "Damage" : 3,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 0,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : 1,
+    "CriticalChanceMultiplier" : 1.5,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 1,
+    "ShotsWhenFired" : 10,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 1,
+    "Instability" : 0,
+    "WeaponEffectID" : "WeaponEffect-Weapon_MachineGun",
+    "Description" : {
+        "Cost" : 80000,
+        "Rarity" : 2,
+        "Purchasable" : true,
+        "Manufacturer" : "Custom-Built",
+        "Model" : "Twin Mount Machine Gun",
+        "UIName" : "Twin MG",
+        "Id" : "Weapon_Autocannon_TwinMountMachineGun_0-STOCK",
+        "Name" : "Twin MG",
+        "Details" : "Apparently someone took two standard MGs and built an AC/2-based custom housing for them, complete with ammo feed and everything. The idea behind this was to make it fit into a ballistic hardpoint. It seems not a lot of thought was put into cooling this frankengun, so it accumulates a bit of heat.\r\n\r\nThe twin-mount machine gun connects to the ballistic targeting computer, increasing the effective range compared to standard MGs, but this comes at the cost of <color=#dd7e6b>-1 accuracy</color> and being unable to aim and fire at targets during melee attacks. The two MGs also vibrate heavily under fire, generating <color=#dd7e6b>1 recoil with every attack</color>. Other than that, it works like a normal Machine Gun.\r\n\r\n<b>Firing modes:</b>\r\nBurst: <color=#ffcc00>Default mode</color>\r\nRapid Fire: <color=#ffcc00>+10 shots, +10 heat,\r\n -2 Accuracy, 2 rounds weapon cooldown</color>\r\n\r\n<color=#d9d9d9><b>Firing modes can be changed by clicking the right side of the weapons activation panel during combat.</b></color>",
+        "Icon" : "uixSvgIcon_weapon_Support"
+    },
+    "BonusValueA" : "",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "AC2",
+    "BattleValue" : 0,
+    "InventorySize" : 2,
+    "Tonnage" : 1,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+	"Modes":[
+		{
+			"Id":"Standard",
+			"UIName":"Burst",
+			"isBaseMode":true,
+			"ShotsWhenFired":0
+		},
+		{
+			"Id":"RapidFire",
+			"UIName":"Rapid",
+			"isBaseMode":false,
+			"HeatGenerated" : 10,
+			"AccuracyModifier" : 2,
+			"ShotsWhenFired": 10,
+			"Cooldown": 2
+		}
+	],	
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_close"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"Damage" : 45,
+    "HeatGenerated" : 18,
+    "DamageVariance" : 5,
+	"Description" : {
+        "Details" : "Large Lasers exhibit a powerful combination of damage, range, and compactness but generate a substantial amount of heat. Like all Lasers, Large Lasers enjoy a baseline accuracy bonus over other weapons. Additionally, <color=#f79924>Large Lasers have a damage variance of +/- 5 points of damage.</color>"
+    },
+    "BonusValueA" : "+25% Crit.",
+    "BonusValueB" : "-2 Heat"
+}

@@ -1,0 +1,51 @@
+{
+    "Description" : {
+        "Id" : "hobo",
+        "Name" : "hobo",
+        "Details" : "Random",
+        "Icon" : "hobo"
+    },
+    "ID" : "hobo",
+    "backgroundColor" : {
+        "r" : 0,
+        "g" : 0,
+        "b" : 0,
+        "a" : 0
+    },
+    "headMesh" : 0.5,
+    "hairMesh" : 15,
+    "beardMesh" : 0,
+    "suitMesh" : 1,
+    "scar" : 0,
+    "lightRig" : 4,
+    "cameraPosition" : 1,
+    "complexionTex" : 5,
+    "eyebrowTex" : 0,
+    "tattooTex" : 6,
+    "actualTattooTex" : 0,
+    "weights" : [
+        52.11768,
+        26.05521,
+        9.578832,
+        1.449495,
+        10.56575,
+        0.2330406
+    ],
+    "browOffsetY" : 0.004790495,
+    "browOffsetZ" : 0.005799712,
+    "noseBridgeScale" : -0.01544707,
+    "noseTipScale" : 0.04243144,
+    "chinScale" : -0.1961541,
+    "cheekOffsetY" : 0.00328116,
+    "eyeWidth" : -0.0002632677,
+    "jawWidth" : -0.09289961,
+    "animation" : 3,
+    "isCommander" : true,
+    "skinToneId" : "Skin_06",
+    "eyeColorId" : "Eye_05",
+    "hairRootId" : "Hair_09",
+    "hairTipId" : "Hair_09",
+    "tattooColorId" : "Tattoo_04",
+    "lipColorId" : "Lip_01",
+    "customPortraitSaveVersion" : 0
+}

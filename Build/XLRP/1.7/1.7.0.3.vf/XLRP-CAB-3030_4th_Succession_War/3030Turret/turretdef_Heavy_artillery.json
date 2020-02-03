@@ -1,0 +1,46 @@
+{
+   "Version" : 1,
+   "Description" : {
+      "Id" : "turretdef_Heavy_artillery",
+      "Name" : "Heavy Artillery Turret",
+      "Details" : "",
+      "Icon" : "",
+      "Cost" : 993,
+      "Rarity" : 0,
+      "Purchasable" : false
+   },
+   "ChassisID" : "turretchassisdef_Heavy_artillery",
+   "TurretTags": {
+      "items": [
+         "unit_turret",
+		 "unit_turret_artillery",
+         "unit_heavy",
+		 "unit_indirectFire"
+      ],
+      "tagSetSourceFile": ""
+   },
+   "CurrentArmor" : 200,
+   "CurrentInternalStructure" : 1,
+   "AssignedArmor" : 200,
+   "DamageLevel" : "Functional",
+   "inventory" : [
+    {
+      "ComponentDefID": "Weapon_LongTomArtillery",
+      "ComponentDefType": "Weapon",
+      "HardpointSlot": 0,
+	  "DamageLevel" : "Functional"
+    },
+    {
+      "ComponentDefID": "Ammo_AmmunitionBox_Generic_LongTom",
+      "ComponentDefType": "AmmunitionBox",
+      "HardpointSlot": -1,
+	  "DamageLevel" : "Functional"
+    },
+    {
+      "ComponentDefID": "Ammo_AmmunitionBox_Generic_LongTom",
+      "ComponentDefType": "AmmunitionBox",
+      "HardpointSlot": -1,
+	  "DamageLevel" : "Functional"
+    }
+   ]
+}

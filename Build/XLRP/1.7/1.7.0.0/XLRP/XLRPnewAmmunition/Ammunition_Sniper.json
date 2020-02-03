@@ -1,0 +1,30 @@
+{
+   "Description" : {
+      "Id" : "Ammunition_Sniper",
+      "Name" : "Sniper Ammo",
+      "UIName" : "HE",
+      "Details" : "Massive rounds, designed for devastating impact, to be used in a Sniper Artillery PIece.",
+      "Icon" : null,
+      "Cost" : 0,
+      "Rarity" : 0,
+      "Purchasable" : false
+   },
+   "Type" : "Normal",
+   "Category" : "Sniper",
+   "DamageVariance": 0,
+   "AOECapable" : true,
+   "AOERange": 45,
+   "AOEDamage" : 50,
+   "AOEHeatDamage" : 3,
+   "WeaponEffectID" : "WeaponEffect-Weapon_SRM6",
+   "HeatGenerated" : 0,
+   "HeatGeneratedModifier" : 1,
+   "ArmorDamageModifier" : 1,
+   "ISDamageModifier" : 1,
+   "CriticalDamageModifier" : 1,
+   "AdditionalImpactVFX":"WFX_Nuke",
+   "AdditionalImpactVFXScaleX":2,
+   "AdditionalImpactVFXScaleY":2,
+   "AdditionalImpactVFXScaleZ":2,
+   "statusEffects" : []
+}

@@ -1,0 +1,8 @@
+{
+	"Name": "Advanced Difficulty Settings",
+	"Version": "1.3",
+	"Description": "Difficulty menu with more options for custom new game.",
+	"Author": "taintedloki and LadyAlekto",
+	"Enabled": true,
+    "OptionallyDependsOn": ["Galaxy at War", "GalaxyAtWar"]
+}

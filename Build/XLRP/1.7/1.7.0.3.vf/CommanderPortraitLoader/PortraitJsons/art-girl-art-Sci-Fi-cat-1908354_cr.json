@@ -1,0 +1,51 @@
+{
+    "Description" : {
+        "Id" : "art-girl-art-Sci-Fi-cat-1908354_cr",
+        "Name" : "art-girl-art-Sci-Fi-cat-1908354_cr",
+        "Details" : "Random",
+        "Icon" : "art-girl-art-Sci-Fi-cat-1908354_cr"
+    },
+    "ID" : "art-girl-art-Sci-Fi-cat-1908354_cr",
+    "backgroundColor" : {
+        "r" : 0,
+        "g" : 0,
+        "b" : 0,
+        "a" : 0
+    },
+    "headMesh" : 0.5,
+    "hairMesh" : 2,
+    "beardMesh" : 0,
+    "suitMesh" : 0,
+    "scar" : 0,
+    "lightRig" : 5,
+    "cameraPosition" : 2,
+    "complexionTex" : 0,
+    "eyebrowTex" : 1,
+    "tattooTex" : 11,
+    "actualTattooTex" : 4,
+    "weights" : [
+        35.71806,
+        32.05373,
+        29.90939,
+        1.733225,
+        0.4969937,
+        0.08860969
+    ],
+    "browOffsetY" : -0.003667993,
+    "browOffsetZ" : -0.001901875,
+    "noseBridgeScale" : -0.0804066,
+    "noseTipScale" : 0.1509189,
+    "chinScale" : -0.1373197,
+    "cheekOffsetY" : 0.003318264,
+    "eyeWidth" : -0.04917745,
+    "jawWidth" : 0.05022819,
+    "animation" : 2,
+    "isCommander" : true,
+    "skinToneId" : "Skin_04",
+    "eyeColorId" : "Eye_00",
+    "hairRootId" : "Hair_00",
+    "hairTipId" : "Hair_00",
+    "tattooColorId" : "Tattoo_06",
+    "lipColorId" : "Lip_01",
+    "customPortraitSaveVersion" : 0
+}

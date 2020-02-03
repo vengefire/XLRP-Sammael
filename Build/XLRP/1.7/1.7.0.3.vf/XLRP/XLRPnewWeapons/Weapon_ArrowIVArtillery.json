@@ -1,0 +1,74 @@
+{
+    "Category" : "Missile",
+    "Type" : "LRM",
+    "WeaponSubType" : "LRM20",
+    "MinRange" : 120,
+    "MaxRange" : 540,
+    "RangeSplit" : [
+        120,
+        360,
+        540
+    ],
+    "AmmoCategory" : "ArrowIV",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 30,
+    "Damage" : 75,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 0,
+    "HeatDamage" : 2,
+    "AccuracyModifier" : 0,
+    "CriticalChanceMultiplier" : 0.5,
+    "IndirectFireCapable" : true,
+    "RefireModifier" : 0,
+    "ShotsWhenFired" : 1,
+	"NotUseInMelee" : true,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 1,
+    "Instability" : 4,
+	"AMSImmune" : false,
+	"AMSHitChance": -0.2,
+	"Modes": [
+		{
+			"Id":"Area",
+			"UIName":"AoE",
+			"ForbiddenRange": 120,
+			"isBaseMode":true
+		}
+	],
+    "WeaponEffectID" : "WeaponEffect-Weapon_SRM6",
+    "Description" : {
+        "Cost" : 450000,
+        "Rarity" : 99,
+        "Purchasable" : true,
+        "Manufacturer" : "Shigunga",
+        "Model" : "Arrow IV Artillery",
+        "UIName" : "Arrow IV",
+        "Id" : "Weapon_ArrowIVArtillery",
+        "Name" : "Arrow IV",
+        "Details" : "The Arrow IV is a stand-alone, missile based, artillery system, designed to augment conventional systems such as the Long Tom and the Sniper. It was first introduced by the Terran Hegemony in 2593 and became a staple of the Star League Defense Force by 2600. However, the technology to create Arrow IVs was lost during the Star League's collapse.\n\nArrow IV launchers can be equipped with standard unguided area saturation missiles, causing massive damage to any unit within its 45-meter blast radius, as well as other types of specialized ammunition. Being a long-range artillery weapon, it is also <color=#dd7e6b>unable to fire at targets closer than 120 meters.</color>\n\nFor standard HE missiles, damage is dealt twice; once for a direct hit and as slightly reduced blast damage to all units within the area of effect.",
+        "Icon" : "uixSvgIcon_weapon_Missile"
+    },
+    "BonusValueA" : "",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "LRM5",
+    "BattleValue" : 0,
+    "InventorySize" : 10,
+    "Tonnage" : 15,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_extreme"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "Category" : "Energy",
+    "Type" : "Laser",
+    "WeaponSubType" : "SmallLaser",
+    "MinRange" : 0,
+    "MaxRange" : 120,
+    "RangeSplit" : [
+        120,
+        120,
+        120
+    ],
+    "AmmoCategory" : "NotSet",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 4,
+    "Damage" : 25,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 5,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : -1,
+    "CriticalChanceMultiplier" : 1,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 0,
+    "ShotsWhenFired" : 1,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 0,
+    "Instability" : 0,
+    "WeaponEffectID" : "WeaponEffect-Weapon_Laser_Small",
+    "Description" : {
+        "Cost" : 40000,
+        "Rarity" : 1,
+        "Purchasable" : true,
+        "Manufacturer" : "Custom-Built",
+        "Model" : "Small Laser (Energy Mount)",
+        "UIName" : "S Laser (Custom)",
+        "Id" : "Weapon_Laser_SmallLaser_0-EnergyMount",
+        "Name" : "S Laser (Custom)",
+        "Details" : "This is an interesting one. Whoever built this weapon took an Intek Small Laser and converted it so it would fit into a regular energy hardpoint. Considering the cooling jacket and housing were designed for larger energy weapons that generate much more heat, they can easily deal with what little heat this small laser generates. The focusing and targeting mechanisms were also switched, which, in combination with linking it to the energy targeting computer, increases the effective range by 30 meters. \r\n\r\nUnfortunately energy hardpoints have limited speed when tracking targets at point-blank range, so this weapon can no longer be fired during melee attacks. <color=#f79924>Like all other Small Lasers this one has a damage variance of +/- 5 points of damage.</color>",
+        "Icon" : "uixSvgIcon_weapon_Support"
+    },
+    "BonusValueA" : "",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "Laser",
+    "BattleValue" : 0,
+    "InventorySize" : 1,
+    "Tonnage" : 0.5,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_close"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}
