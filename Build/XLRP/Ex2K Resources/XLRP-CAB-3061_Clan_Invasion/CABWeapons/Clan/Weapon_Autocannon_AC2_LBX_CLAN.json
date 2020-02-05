@@ -1,0 +1,68 @@
+{
+    "Category" : "Ballistic",
+    "Type" : "Autocannon",
+    "WeaponSubType" : "AC2",
+    "MinRange": 120,
+    "MaxRange": 960,
+    "RangeSplit": [
+        300,
+        560,
+        860
+    ],
+    "AmmoCategory" : "LBX2",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 5,
+    "Damage" : 30,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 3,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : 0,
+    "CriticalChanceMultiplier" : 1,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 2,
+    "ShotsWhenFired" : 1,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 4,
+    "Instability" : 10,
+    "WeaponEffectID" : "WeaponEffect-Weapon_AC2",
+    "Description" : {
+        "Cost" : 150000,
+        "Rarity" : 10,
+        "Purchasable" : true,
+        "Manufacturer" : "Clan",
+        "Model" : "Heavy Autocannon",
+        "UIName": "LBX AC/2 (C)",
+        "Id": "Weapon_Autocannon_AC2_LBX_CLAN",
+        "Name": "LBX AC/2 (C)",
+        "Details" : "The LB 2-X Autocannon is essentially a 'Mech-mounted shotgun, capable of firing special 'cluster rounds' that split apart after being fired, allowing the weapon to either spread damage out or focus damage on a small area, depending on the range. LB-X Autocannons can switch between special cluster rounds made up of 10 pellets and standard slugs that are functionally identical to standard AC/2 when both are present. LB5-Xs suffer from <color=#dd7e6b> -2 Recoil/refire penalty </color>, when continuously fired. Your pilots guts skill can counteract this. \n\n<b><color=#ffcc00>Uses LB 2-X AC Slug or Cluster Ammo.</color>",
+        "Icon" : "uixSvgIcon_weapon_Ballistic"
+    },
+    "BonusValueA" : "Switchable",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "AC2",
+    "BattleValue" : 0,
+    "InventorySize" : 3,
+    "Tonnage" : 5,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+	"DisableClustering": false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_very-long",
+            "wr-jammable_weapon",
+            "wr-jam_chance_multiplier-5",
+			"wr-clustered_shots"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

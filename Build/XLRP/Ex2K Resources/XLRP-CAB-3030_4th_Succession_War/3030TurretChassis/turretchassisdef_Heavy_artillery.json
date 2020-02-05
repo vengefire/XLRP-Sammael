@@ -1,0 +1,73 @@
+{
+	"Description" : {
+		"Id" : "turretchassisdef_Heavy_artillery",
+		"Name" : "Heavy Artillery Turret Chassis",
+		"Details" : "",
+		"Icon" : "TURRET",
+		"Cost" : 993,
+		"Rarity" : 0,
+		"Purchasable" : false
+	},
+	"MovementCapDefID" : "",
+	"PathingCapDefID" : "",
+   	"HardpointDataDefID" : "hardpointdatadef_arty1turret",
+	"PrefabIdentifier" : "chrprftrt_arty1turret",
+	"PrefabBase" : "turretHeavySniper",
+	"weightClass" : "ASSAULT",
+    "Tonnage" : 100,
+    "InventorySlots" : 20,
+    "MaxArmor" : 200,
+    "MaxInternalStructure" : 10,
+    "BattleValue" : 100,
+	"SpotterDistanceMultiplier" : 0.6,
+    "VisibilityMultiplier" : 0.6,
+    "SensorRangeMultiplier" : 0.5,
+    "Signature" : 0,
+    "Radius" : 4,
+    "FiringArcDegrees" : 360,
+	"Hardpoints" : [
+		{
+			"WeaponMount" : "Ballistic",
+			"Omni" : false
+		}
+	],
+	"LOSSourcePositions" : [
+		{
+		    "x" : -4,
+		    "y" : 9,
+		    "z" : 0
+	    },
+		{
+		    "x" : 4,
+		    "y" : 9,
+		    "z" : 0
+	    }
+	],
+	"LOSTargetPositions" : [
+		{
+		    "x" : -4,
+		    "y" : 9,
+		    "z" : 0
+	    },
+		{
+		    "x" : 4,
+		    "y" : 9,
+		    "z" : 0
+	    },
+		{
+		    "x" : 0,
+		    "y" : 9,
+		    "z" : -3
+	    },
+		{
+		    "x" : 0,
+		    "y" : 9,
+		    "z" : 3
+	    },
+		{
+		    "x" : 0.0,
+		    "y" : 4,
+		    "z" : 0
+	    }
+	]
+}

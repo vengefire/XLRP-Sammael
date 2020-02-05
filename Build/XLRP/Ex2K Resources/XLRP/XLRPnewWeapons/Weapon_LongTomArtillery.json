@@ -1,0 +1,75 @@
+{
+    "Category" : "Ballistic",
+    "Type" : "Autocannon",
+    "WeaponSubType" : "AC20",
+    "MinRange" : 300,
+    "MaxRange" : 900,
+    "RangeSplit" : [
+        450,
+        600,
+        900
+    ],
+    "AmmoCategory" : "LongTom",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 60,
+    "Damage" : 75,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 0,
+    "HeatDamage" : 1,
+    "AccuracyModifier" : 6,
+    "CriticalChanceMultiplier" : 0.5,
+    "IndirectFireCapable" : true,
+    "RefireModifier" : 4,
+    "ShotsWhenFired" : 1,
+	"NotUseInMelee" : true,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 4,
+    "Instability" : 5,
+	"AMSImmune" : true,
+	"AlwaysIndirectVisuals" : true,
+	"Modes": [
+		{
+			"Id":"Area",
+			"UIName":"AoE",
+			"ForbiddenRange": 300,
+			"isBaseMode":true
+		}
+	],
+    "WeaponEffectID" : "WeaponEffect-Weapon_AC20_Single",
+    "Description" : {
+        "Cost" : 450000,
+        "Rarity" : 99,
+        "Purchasable" : true,
+        "Manufacturer" : "Armstrong",
+        "Model" : "Long Tom Artillery",
+        "UIName" : "Long Tom",
+        "Id" : "Weapon_LongTomArtillery",
+        "Name" : "Long Tom",
+        "Details" : "The Long Tom Artillery Piece is the largest conventional artillery piece designed by Armstrong Industries. It is the primary weapon of the LT-MOB-25 Mobile Long Tom Artillery vehicle, which is better known as the Mobile Long Tom. The Long Tom is inherently inaccurate but is capable of dealing damage in a large area of effect via indirect fire. Being a large long-range artillery weapon, it is also <color=#dd7e6b>unable to fire on targets at 300 meters or less.</color>\n\nFor standard HE artillery shells, damage is dealt twice; once for a direct hit and as additional damage to all units within the blast radius.",
+        "Icon" : "uixSvgIcon_weapon_Ballistic"
+    },
+    "BonusValueA" : "-6 Acc.",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "AC20",
+    "BattleValue" : 0,
+    "InventorySize" : 10,
+    "Tonnage" : 30,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+	"ImprovedBallistic": true,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_extreme"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

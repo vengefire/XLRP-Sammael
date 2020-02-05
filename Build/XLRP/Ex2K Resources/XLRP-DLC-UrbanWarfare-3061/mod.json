@@ -1,0 +1,21 @@
+{
+    "Name": "XLRP-UrbanWarfare-3061",
+    "Enabled": true,
+	
+    "Version": "1.0.0",
+	
+    "Description": "This optional patch updates the Urban Warfare DLC with Mechs up to the year 3061.",
+	
+    "Author": "XTRMNTR2K",
+    "Website": "https://www.youtube.com/XTRMNTR2K",
+
+  "DependsOn": [ "XLRP", "MechEngineer", "XLRP-CAB-3030", "XLRP-UrbanWarfare", "XLRP-UrbanWarfare-3049" ],
+  "ConflictsWith": [],
+  
+    "Manifest": [
+        { "Type": "ChassisDef", "Path": "UrbanWarfareChassis", "ShouldMergeJSON": false, "AddToDB": true },
+		{ "Type": "MechDef", "Path": "UrbanWarfareMechs", "ShouldMergeJSON": false, "AddToDB": true },
+		{ "Type": "UpgradeDef", "Path": "UrbanWarfareUpgrades", "ShouldMergeJSON": false, "AddToDB": true },
+		{ "Type": "ItemCollectionDef", "Path": "ItemCollections", "ShouldAppendText": true }
+    ]
+}

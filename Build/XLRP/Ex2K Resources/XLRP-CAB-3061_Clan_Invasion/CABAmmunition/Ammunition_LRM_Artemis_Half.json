@@ -1,0 +1,26 @@
+{
+   "Description" : {
+      "Id" : "Ammunition_LRM_Artemis_Half",
+      "Name" : "Artemis IV LRM Ammo [Half]",
+      "UIName" : "ArtemisIV",
+      "Details" : "Long range missiles using Artemis IV guidance.",
+      "Icon" : null,
+      "Cost" : 0,
+      "Rarity" : 0,
+      "Purchasable" : false
+   },
+   "Type" : "Normal",
+   "Category" : "ArtemisLRM",
+   "DamagePerShot": 0,
+   "HeatDamagePerShot": 0,
+   "Instability": 0,
+   "IndirectFireCapable": true,
+   "DirectFireModifier": -4.0,
+   "AIBattleValue":60,
+   "AccuracyModifier": 0.0,
+   "HeatGenerated" : 0,
+   "HeatGeneratedModifier" : 1,
+   "ArmorDamageModifier" : 1,
+   "ISDamageModifier" : 1,
+   "CriticalDamageModifier" : 1
+}

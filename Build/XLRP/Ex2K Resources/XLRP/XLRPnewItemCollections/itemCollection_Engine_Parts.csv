@@ -1,0 +1,8 @@
+itemCollection_Engine_Parts,,,
+emod_engine_cooling_1,HeatSink,1,10
+emod_engine_cooling_2,HeatSink,1,10
+emod_engine_cooling_3,HeatSink,1,8
+emod_engine_cooling_4,HeatSink,1,8
+emod_engine_cooling_5,HeatSink,1,6
+emod_engine_cooling_6,HeatSink,1,4
+emod_engineslots_ICE,HeatSink,1,2

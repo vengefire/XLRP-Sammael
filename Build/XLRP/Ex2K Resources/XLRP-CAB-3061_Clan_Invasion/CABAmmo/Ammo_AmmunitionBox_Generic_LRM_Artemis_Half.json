@@ -1,0 +1,41 @@
+{
+	"Custom": {
+		"ComponentExplosion": {
+			"ExplosionDamagePerAmmo": 4
+		}
+	},
+    "AmmoID" : "Ammunition_LRM_Artemis_Half",
+    "Capacity" : 160,
+    "Description" : {
+        "Cost" : 20000,
+        "Rarity" : 0,
+        "Purchasable" : true,
+        "Manufacturer" : "Generic",
+        "Model" : "Enhanced LRM",
+        "UIName" : "Artemis LRM Ammo [Half]",
+        "Id" : "Ammo_AmmunitionBox_Generic_LRM_Artemis_Half",
+        "Name" : "Artemis IV LRM Ammo [Half]",
+        "Details" : "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Ammo Bins will explode and destroy their installed location when they receive a Critical Hit. Artemis IV LRM Ammo Bins each contain <color=#6aa84f>120 rounds</color> and may feed multiple weapons. \r\n\r\nArtemis IV LRMs have an enhanced guidance system that require an Artemis-equipped launcher but grant a <color=#f79924>+4 bonus to direct-fire accuracy.</color> Indirect fire accuracy is not affected.",
+        "Icon" : "uixSvgIcon_ammoBox_Missile"
+    },
+    "BonusValueA" : "+4 Acc.",
+    "BonusValueB" : "",
+    "ComponentType" : "AmmunitionBox",
+    "ComponentSubType" : "Ammunition",
+    "PrefabIdentifier" : "",
+    "BattleValue" : 0,
+    "InventorySize" : 1,
+    "Tonnage" : 0.5,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

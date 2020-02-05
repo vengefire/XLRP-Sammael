@@ -1,0 +1,21 @@
+{
+   "Description" : {
+      "Id" : "Ammunition_LBX2",
+      "Name" : "LB 2-X AC Slug Ammo",
+      "UIName" : "Slug",
+      "Details" : "Large caliber rounds capable of dealing heavy damage, and designed to be used in an LB 2-X AC.",
+      "Icon" : null,
+      "Cost" : 0,
+      "Rarity" : 0,
+      "Purchasable" : false
+   },
+   "Type" : "Normal",
+   "Category" : "LBX2",
+   "Instability" : 5,
+   "HeatGenerated" : 0,
+   "HeatGeneratedModifier" : 1,
+   "DamageVariance": 5,
+   "ArmorDamageModifier" : 1,
+   "ISDamageModifier" : 1,
+   "CriticalDamageModifier" : 1
+}

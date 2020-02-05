@@ -1,0 +1,75 @@
+{
+    "Category" : "Ballistic",
+    "Type" : "Autocannon",
+    "WeaponSubType" : "AC20",
+    "MinRange" : 240,
+    "MaxRange" : 750,
+    "RangeSplit" : [
+        240,
+        480,
+        750
+    ],
+    "AmmoCategory" : "Thumper",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 18,
+    "Damage" : 40,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 0,
+    "HeatDamage" : 1,
+    "AccuracyModifier" : 4,
+    "CriticalChanceMultiplier" : 0.5,
+    "IndirectFireCapable" : true,
+    "RefireModifier" : 3,
+    "ShotsWhenFired" : 1,
+	"NotUseInMelee" : true,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 3,
+    "Instability" : 4,
+	"AMSImmune" : true,
+	"AlwaysIndirectVisuals" : true,
+	"Modes": [
+		{
+			"Id":"Area",
+			"UIName":"AoE",
+			"ForbiddenRange": 240,
+			"isBaseMode":true
+		}
+	],
+    "WeaponEffectID" : "WeaponEffect-Weapon_AC10_Single",
+    "Description" : {
+        "Cost" : 187500,
+        "Rarity" : 99,
+        "Purchasable" : true,
+        "Manufacturer" : "Defiance",
+        "Model" : "Thumper Artillery",
+        "UIName" : "Thumper",
+        "Id" : "Weapon_ThumperArtillery",
+        "Name" : "Thumper",
+        "Details" : "The Thumper Artillery Piece is the smallest conventional artillery piece with an effective range of 10.5 kilometers. While an effective Field Artillery weapon, the Thumper is perhaps best known for its use as the main gun on the SLDF's Thor Artillery Vehicle, as well as the Thor's knock-off the Thumper. The Thumper is inherently inaccurate but is capable of dealing damage in a large area of effect via indirect fire. Being a long-range artillery weapon, it is also <color=#dd7e6b>unable to fire on targets at 240 meters or less.</color>\n\nFor standard HE artillery shells, damage is dealt twice; once for a direct hit and as additional damage to all units within the blast radius.",
+        "Icon" : "uixSvgIcon_weapon_Ballistic"
+    },
+    "BonusValueA" : "-4 Acc.",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "AC20",
+    "BattleValue" : 0,
+    "InventorySize" : 10,
+    "Tonnage" : 15,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+	"ImprovedBallistic": true,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_extreme"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

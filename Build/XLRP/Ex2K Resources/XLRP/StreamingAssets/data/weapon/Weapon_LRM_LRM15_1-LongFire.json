@@ -1,0 +1,14 @@
+{
+    "AccuracyModifier" : -1,
+    "BonusValueA" : "+25% Crit.",
+    "BonusValueB" : "+1 Acc.",
+	"ComponentTags" : {
+        "items" : [
+            "component_type_variant",
+            "component_type_variant1",
+            "range_extreme",
+			"StandardMissile"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

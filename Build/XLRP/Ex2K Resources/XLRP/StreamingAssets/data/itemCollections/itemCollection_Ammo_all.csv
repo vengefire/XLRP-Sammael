@@ -1,0 +1,16 @@
+itemCollection_Ammo_all,,,
+itemCollection_rareAmmo,Reference,2,10
+Ammo_AmmunitionBox_Generic_AC2,AmmunitionBox,0,10
+Ammo_AmmunitionBox_Generic_AC5,AmmunitionBox,0,10
+Ammo_AmmunitionBox_Generic_AC10,AmmunitionBox,0,10
+Ammo_AmmunitionBox_Generic_AC20,AmmunitionBox,0,10
+Ammo_AmmunitionBox_Generic_SRM,AmmunitionBox,0,10
+Ammo_AmmunitionBox_Generic_LRM,AmmunitionBox,0,10
+Ammo_AmmunitionBox_Generic_MG,AmmunitionBox,0,10
+Ammo_AmmunitionBox_Generic_MG_Half_Ton,AmmunitionBox,0,10
+Ammo_AmmunitionBox_Generic_AC2_Half_Ton,AmmunitionBox,0,10
+Ammo_AmmunitionBox_Generic_AC5_Half_Ton,AmmunitionBox,0,10
+Ammo_AmmunitionBox_Generic_AC10_Half_Ton,AmmunitionBox,0,10
+Ammo_AmmunitionBox_Generic_AC20_Half_Ton,AmmunitionBox,0,10
+Ammo_AmmunitionBox_Generic_SRM_Half_Ton,AmmunitionBox,0,10
+Ammo_AmmunitionBox_Generic_LRM_Half_Ton,AmmunitionBox,0,10

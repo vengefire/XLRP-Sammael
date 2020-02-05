@@ -1,0 +1,28 @@
+Manufacturers
+
+    Armstrong (J11, AC5) - Free Worlds League, Draconis Combine, Capellan Confederation (up until before 3025, at least until 3011), Outworlds Alliance
+    GM (Whirlwind, AC5) - Lyran Commonwealth, Federated Suns
+    Luxor (D-Series, AC10) - Federated Suns
+    Pontiac (100, AC20) - Taurian Concordat
+    Tomodzuru (AC20) - Capellan Confederation
+    Martell (Lasers) - Magistracy of Canopus
+    Thunderbolt (A5M, Large Laser) - Most likely Lyran Commonwealth (since it's used on the Zeus manufactured by Defiance Industries)
+    Tronel  (Lasers) - Everyone? (later medium pulse lasers are manufactured by Nimakachi Fusion Products Limited which is based in the FWL, but is an interstellar company mainly exporting to the Draconis Combine, but probably others as well.) Tronels are also supposed to be ancient, so everyone and their dog probably has these lying around.
+    Aberdovey (Medium Laser) - Everyone; Kong Interstellar exports these from the FWL
+    Omicron (Lasers) - Free Worlds League, manufactured by Fusigon Heavy Weaponry
+    Doombud (LRM) - Free Worlds League, Outworlds Alliance
+    FarFire (LRM) - Capellan Confederation
+    Lord's Light (PPC) - Draconis Combine
+    PartiKill (PPC) - Lyran Commonwealth, Magistracy of Canopus, ComStar
+    Starcutter (PPC) - Draconis Combine
+    Kinslaughter (PPC, kinda LosTech) - ComStar
+    Hovertec (SRM) - Lyran Commonwealth, Capellan Confederation
+    Telos (SRM) - Federated Suns, Dracons Combine (the planet Marduk is currently in possession of the Federated Suns in 3025, but actually belongs to the DC)
+    Coventry (SRM) - Lyran Commonwealth
+    Harpoon (SRM6) - Capellan Confederation, Federated Suns, Free Worlds League
+    Bical (Inferno SRMs) - Draconis Combine, Outworlds Alliance
+    Coventry (MG) - Lyran Commonwealth
+    Grizzly (Grizzly-3 Minigun, MG) - Everyone; Veridian Dynamics is located in the Federated Suns but is an interstellar corporation.
+    20mm Gatling Gun (MG) - Everyone; Quikscell is an interstellar corporation.
+	Kreuss (PPC) - Lyran Commonwealth?
+	RamTech (Lasers) - Lyran Commonwealth

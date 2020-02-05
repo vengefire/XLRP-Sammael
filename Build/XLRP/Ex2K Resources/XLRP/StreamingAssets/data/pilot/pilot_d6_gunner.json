@@ -1,0 +1,10 @@
+{
+  "abilityDefNames": [
+    "AbilityDefG5",
+    "AbilityDefP5",
+    "TraitDefHealthAddOne",
+    "TraitDefIndirectReduceOne",
+	"TraitDefVisualRange4",
+    "TraitDefUnsteadySet60"
+  ]
+}

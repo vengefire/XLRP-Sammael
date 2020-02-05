@@ -1,0 +1,64 @@
+{
+    "Category" : "Energy",
+    "Type" : "Laser",
+    "WeaponSubType" : "MediumLaserER",
+    "MinRange" : 0,
+    "MaxRange" : 360,
+    "RangeSplit" : [
+        270,
+        270,
+        360
+    ],
+    "AmmoCategory" : "NotSet",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 16,
+    "Damage" : 25,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 5,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : -1,
+    "CriticalChanceMultiplier" : 1.25,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 0,
+    "ShotsWhenFired" : 1,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 1,
+    "Instability" : 0,
+    "WeaponEffectID" : "WeaponEffect-Weapon_LaserER_Medium",
+    "Description" : {
+        "Cost" : 160000,
+        "Rarity" : 0,
+        "Purchasable" : true,
+        "Manufacturer" : "General Systems",
+        "Model" : "Extended-Range Medium Laser",
+        "UIName" : "ER M Laser",
+        "Id" : "Weapon_Laser_MediumLaserER_0-GeneralSystems",
+        "Name" : "ER M Laser",
+        "Details" : "An improvement upon standard Medium Lasers, Extended-Range Medium Lasers extend their effective range at the cost of considerable heat generation. Like all Lasers, ER Medium Lasers enjoy a baseline accuracy bonus over other weapons. Additionally, <color=#f79924>ER Medium Lasers have a damage variance of +/- 5 points of damage.</color>",
+        "Icon" : "uixSvgIcon_weapon_Energy"
+    },
+    "BonusValueA" : "",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "Laser",
+    "BattleValue" : 0,
+    "InventorySize" : 1,
+    "Tonnage" : 1,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_standard"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

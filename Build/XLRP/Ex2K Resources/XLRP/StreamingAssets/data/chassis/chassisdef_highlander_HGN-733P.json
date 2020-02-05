@@ -1,0 +1,9 @@
+{
+    "MeleeDamage": 85,
+    "MeleeInstability": 90,
+    "MeleeToHitModifier": 0,
+    "DFADamage": 115,
+    "DFAToHitModifier": 0,
+    "DFASelfDamage": 30,
+    "DFAInstability": 115
+}

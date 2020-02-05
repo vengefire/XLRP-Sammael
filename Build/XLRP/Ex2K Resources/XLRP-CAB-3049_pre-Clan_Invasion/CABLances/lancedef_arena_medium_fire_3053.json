@@ -1,0 +1,69 @@
+{
+   "Description" : {
+      "Id" : "lancedef_arena_medium_fire_3053",
+      "Name" : "Medium Fire (IS, 170t, 3053)",
+      "Details" : "HelmCore",
+      "Icon" : "",
+      "Cost" : 28861507,
+      "Rarity" : 0,
+      "Purchasable" : false
+   },
+   "Difficulty" : 6,
+   "LanceTags" : {
+      "items" : [
+         "lance_bracket_med",
+         "lance_bracket_skirmish",
+         "lance_release",
+         "lance_type_fire",
+         "lance_type_medium",
+		 "BLACKLISTED"
+      ],
+      "tagSetSourceFile" : "Tags/LanceTags"
+   },
+   "LanceUnits" : [
+      {
+         "unitType" : "Mech",
+         "unitId" : "mechdef_locust_LCT-3S",
+         
+         "pilotId" : "pilot_kbeta_showboat",
+         
+         "unitTagSet" : null,
+         "excludedUnitTagSet" : null,
+         "pilotTagSet" : null,
+         "excludedPilotTagSet" : null
+      },
+      {
+         "unitType" : "Mech",
+         "unitId" : "mechdef_wasp_WSP-1S",
+         
+         "pilotId" : "pilot_kbeta_mockingbird",
+         
+         "unitTagSet" : null,
+         "excludedUnitTagSet" : null,
+         "pilotTagSet" : null,
+         "excludedPilotTagSet" : null
+      },
+      {
+         "unitType" : "Mech",
+         "unitId" : "mechdef_bushwacker_BWS-X1",
+         
+         "pilotId" : "pilot_kbeta_wildfire",
+         
+         "unitTagSet" : null,
+         "excludedUnitTagSet" : null,
+         "pilotTagSet" : null,
+         "excludedPilotTagSet" : null
+      },
+      {
+         "unitType" : "Mech",
+         "unitId" : "mechdef_marauder_MAD-5D",
+         
+         "pilotId" : "pilot_kbeta_apex",
+         
+         "unitTagSet" : null,
+         "excludedUnitTagSet" : null,
+         "pilotTagSet" : null,
+         "excludedPilotTagSet" : null
+      }
+   ]
+}

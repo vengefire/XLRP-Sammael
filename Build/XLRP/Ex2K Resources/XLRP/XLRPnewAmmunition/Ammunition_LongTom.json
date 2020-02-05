@@ -1,0 +1,30 @@
+{
+   "Description" : {
+      "Id" : "Ammunition_LongTom",
+      "Name" : "Long Tom Ammo",
+      "UIName" : "HE",
+      "Details" : "Massive rounds, designed for devastating impact, to be used in a Long Tom Artillery PIece.",
+      "Icon" : null,
+      "Cost" : 0,
+      "Rarity" : 0,
+      "Purchasable" : false
+   },
+   "Type" : "Normal",
+   "Category" : "LongTom",
+   "DamageVariance": 0,
+   "AOECapable" : true,
+   "AOERange": 60,
+   "AOEDamage" : 100,
+   "AOEHeatDamage" : 4,
+   "WeaponEffectID" : "WeaponEffect-Weapon_SRM6",
+   "HeatGenerated" : 0,
+   "HeatGeneratedModifier" : 1,
+   "ArmorDamageModifier" : 1,
+   "ISDamageModifier" : 1,
+   "CriticalDamageModifier" : 1,
+   "AdditionalImpactVFX":"WFX_Nuke",
+   "AdditionalImpactVFXScaleX":3,
+   "AdditionalImpactVFXScaleY":3,
+   "AdditionalImpactVFXScaleZ":3,
+   "statusEffects" : []
+}

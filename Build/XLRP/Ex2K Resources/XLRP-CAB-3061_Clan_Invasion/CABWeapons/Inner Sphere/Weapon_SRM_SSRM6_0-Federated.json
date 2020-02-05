@@ -1,0 +1,66 @@
+{
+    "Category" : "Missile",
+    "Type" : "SRM",
+    "WeaponSubType" : "SRM6",
+    "MinRange" : 0,
+    "MaxRange" : 270,
+    "RangeSplit" : [
+        180,
+        180,
+        270
+    ],
+    "AmmoCategory" : "SSRM",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 8,
+    "Damage" : 11,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 1,
+    "DamageVariance" : 0,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : -2,
+    "CriticalChanceMultiplier" : 1,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 0,
+    "ShotsWhenFired" : 6,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 1,
+    "Instability" : 2,
+    "WeaponEffectID" : "WeaponEffect-Weapon_SRM6",
+    "Description" : {
+        "Cost" : 120000,
+        "Rarity" : 1,
+        "Purchasable" : true,
+        "Manufacturer" : "Federated",
+        "Model" : "SuperStreak",
+        "UIName" : "Streak SRM6 *",
+        "Id" : "Weapon_SRM_SSRM6_0-Federated",
+        "Name" : "Streak SRM6 *",
+        "Details" : "Streak Missile Launcher technology was developed and applied to the SRM-2 by the Terran Hegemony in 2647. It ensures that all missile tubes acquire a target lock before its missiles fire. This improvement upon standard Short-Range Missiles conserves ammunition and increases efficiency. <b>Streak Missiles only consume ammunition for a successful hit, and either hit with all or none of the missiles. They also ignore 1 pip of evasion and have a +2 bonus to accuracy.</b> The Streak SRM-6 is the largest and heaviest of the Streak launchers.",
+        "Icon" : "uixSvgIcon_weapon_Missile"
+    },
+    "BonusValueA" : "Streak",
+    "BonusValueB" : "+1 Dmg. -1 Stb.Dmg.",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "srm6",
+    "Streak" : true,
+    "HitGenerator" : "Streak",
+    "BattleValue" : 0,
+    "InventorySize" : 2,
+    "Tonnage" : 4.5,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_standard"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

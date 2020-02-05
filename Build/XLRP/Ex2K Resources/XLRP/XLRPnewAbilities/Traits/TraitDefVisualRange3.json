@@ -1,0 +1,13 @@
+{
+	"Description" : {
+		"Id" : "TraitDefVisualRange3",
+		"Name" : "",
+		"Details" : "",
+		"Icon" : ""
+	},
+	"Type" : "Tactics",
+	"ShortDesc" : "+ 45m visual range",
+    "DisplayParams" : "ShowInPilotToolTip",
+	"ActivationTime" : "Passive",
+	"EffectData" : []
+}

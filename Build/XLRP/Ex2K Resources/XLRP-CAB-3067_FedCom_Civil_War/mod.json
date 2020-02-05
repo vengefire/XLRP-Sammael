@@ -1,0 +1,86 @@
+{
+    "Name": "XLRP-CAB-3067",
+    "Enabled": true,
+    "Version": "1.0.0",
+    "Description": "An expansion pack for XLRP containing Battlemechs using community made models. Equipment availability for the era of the FedCom Civil War up to the year 3067.",
+    "Author": "XTRMNTR2K and Xalibur75",
+    "Website": "https://www.nexusmods.com/battletech/mods/339",
+	"DependsOn": [ "XLRP", "XLRP-CAB-3030", "XLRP-CAB-3049", "XLRP-CAB-3061", "CommunityBundles", "MechEngineer"],
+  
+    "Manifest": [
+        {
+		"Type": "WeaponDef",
+		"Path": "CABWeapons",
+		"AddToDB": true
+		},
+		{
+		"Type": "UpgradeDef",
+		"Path": "CABUpgrades",
+		"AddToDB": true
+		},
+		{
+		"Type": "MechDef",
+		"Path": "CABMechs",
+		"AddToDB": true
+		},
+		{
+		"Type": "ChassisDef",
+		"Path": "CABChassis",
+		"AddToDB": true
+		},
+		{
+		"Type": "Sprite",
+		"Path": "CABPortraits",
+		"AddToDB": true
+		},
+		{
+		"Type": "MovementCapabilitiesDef",
+		"Path": "CABMovement",
+		"AddToDB": true
+		},
+		{
+		"Type": "AmmunitionBoxDef",
+		"Path": "CABAmmo",
+		"AddToDB": true
+		},
+		{
+		"Type": "AmmunitionDef",
+		"Path": "CABAmmunition",
+		"AddToDB": true
+		},
+		{
+		"Type": "HeatSinkDef",
+		"Path": "CABHeatsinks",
+		"AddToDB": true
+		},
+		{
+		"Type": "VehicleDef",
+		"Path": "CABVehicle",
+		"AddToDB": true
+		},
+		{
+		"Type": "VehicleChassisDef",
+		"Path": "CABVehicleChassis",
+		"AddToDB": true
+		},
+		{
+		"Type": "LanceDef",
+		"Path": "CABLances",
+		"AddToDB": true
+		},
+		{ 
+		"Type": "ItemCollectionDef",
+		"Path": "CAB3067ItemCollections",
+		"ShouldAppendText": true 
+		},
+		{
+		"Type": "PathingCapabilitiesDef",
+		"Path": "CABpathing"
+		},
+		{
+		"Type": "ContractOverride",
+		"Path": "CABcontracts",
+		"AddToDB": true
+		}
+    ]
+}

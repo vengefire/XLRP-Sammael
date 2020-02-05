@@ -1,0 +1,18 @@
+Useful existing Mech Tags from JK Rarity:
+
+			"unit_era_2750",
+			"unit_era_2900",
+			"unit_LosTech",
+			"unit_SLDFRoyal",
+			"unit_SLDF",
+			
+
+Custom XLRP Mech Tags for custom missions:
+
+			"unit_custom_mech",
+			
+			
+Custom Lance Tags
+
+			"lance_type_LosTech",
+			"lance_type_custom"

@@ -1,0 +1,73 @@
+{
+    "Category" : "Missile",
+    "Type" : "SRM",
+    "WeaponSubType" : "SRM6",
+	"BonusDescriptions": {
+		"Bonuses": [
+			"WpnAccuracy: +2",
+            "PipsIgnored: +1",
+            "Streak"
+            ]
+        },
+    "MinRange" : 0,
+    "MaxRange" : 360,
+    "RangeSplit" : [
+        150,
+        270,
+        360
+    ],
+    "AmmoCategory" : "SSRM",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 4,
+    "Damage" : 10,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 1,
+    "DamageVariance" : 0,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : -2,
+    "CriticalChanceMultiplier" : 1,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 0,
+    "ShotsWhenFired" : 6,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 1,
+    "Instability" : 3,
+    "WeaponEffectID" : "WeaponEffect-Weapon_SRM2",
+    "Description" : {
+        "Cost" : 120000,
+        "Rarity" : 10,
+        "Purchasable" : true,
+        "Manufacturer" : "Clan",
+        "Model" : "Guided SRM",
+        "UIName" : "Streak SRM6 (C)",
+        "Id" : "Weapon_SRM_SRM6_STREAK_CLAN",
+        "Name" : "Streak SRM6 (C)",
+        "Details": "The Streak SRM-6 launcher uses an advanced active guidance system to track targets, but at the cost of 50% increased weight and heat generation. Streak technology ensures that all missile tubes acquire a target lock before its missiles fire. This improvement upon standard Short-Range Missiles conserves ammunition and eliminates unnecessary heat buildup. \n\n<b><color=#ffcc00>Uses Streak SRM Ammo.</color></b>",
+        "Icon" : "uixSvgIcon_weapon_Missile"
+    },
+    "BonusValueA" : "",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "srm6",
+    "Streak" : true,
+    "HitGenerator" : "Streak",
+    "BattleValue" : 0,
+    "InventorySize" : 2,
+    "Tonnage" : 3,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_standard"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

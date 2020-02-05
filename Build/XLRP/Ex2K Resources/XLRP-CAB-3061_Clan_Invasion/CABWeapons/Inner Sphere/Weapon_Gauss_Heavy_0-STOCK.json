@@ -1,0 +1,69 @@
+{
+  
+"Custom": { "ComponentExplosion": { "ExplosionDamage": 75, "StabilityDamage": 30 } },
+
+  
+	"Category" : "Ballistic",
+    "Type" : "Gauss",
+    "WeaponSubType" : "Gauss",
+    "MinRange" : 30,
+    "MaxRange" : 580,
+    "RangeSplit" : [
+        340,
+        340,
+        580
+    ],
+    "AmmoCategory" : "HeavyGAUSS",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 6,
+    "Damage" : 135,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 0,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : -1,
+    "CriticalChanceMultiplier" : 1,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 0,
+    "ShotsWhenFired" : 1,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 4,
+    "Instability" : 55,
+    "WeaponEffectID" : "WeaponEffect-Weapon_GaussRifle",
+    "Description" : {
+        "Cost" : 850000,
+        "Rarity" : 20,
+        "Purchasable" : true,
+        "Manufacturer" : "Defiance",
+        "Model" : "Heavy Magnetic Cannon",
+        "UIName" : "Heavy Gauss Rifle",
+        "Id" : "Weapon_Gauss_Heavy_0-STOCK",
+        "Name" : "Heavy Gauss Rifle",
+        "Details" : "Invented in the Lyran Alliance as the final word in BattleMech armament, the Heavy Gauss Rifle is capable of almost-unbelievable amounts of damage at absurd ranges and with little to no heat build-up. While the Heavy Gauss Rifle is extremely powerful, it also suffers from a number of drawbacks. The heavy projectile fired by the rifle experiences a significant loss of velocity, so it is weaker at greater distances. Additionally, the Heavy Gauss Rifle's capacitors are unstable and <color=#f79924>explode for 75 points of damage and 30 points of stability damage if the weapon is struck by weapons fire.</color>",
+        "Icon" : "uixSvgIcon_weapon_Ballistic"
+    },
+    "BonusValueA" : "",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "Gauss",
+    "BattleValue" : 0,
+    "InventorySize" : 8,
+    "Tonnage" : 18,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_very-long",
+			"WR-variance_by_distance-0.2"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "Category" : "Ballistic",
+    "Type" : "Autocannon",
+    "WeaponSubType" : "AC20",
+    "MinRange": 0,
+    "MaxRange": 360,
+    "RangeSplit": [
+        120,
+        210,
+        270
+    ],
+    "AmmoCategory" : "LBX20",
+    "StartingAmmoCapacity" : 0,
+    "HeatGenerated" : 30,
+    "Damage" : 100,
+    "OverheatedDamageMultiplier" : 0,
+    "EvasiveDamageMultiplier" : 0,
+    "EvasivePipsIgnored" : 0,
+    "DamageVariance" : 0,
+    "HeatDamage" : 0,
+    "AccuracyModifier" : 0,
+    "CriticalChanceMultiplier" : 1,
+    "AOECapable" : false,
+    "IndirectFireCapable" : false,
+    "RefireModifier" : 2,
+    "ShotsWhenFired" : 1,
+    "ProjectilesPerShot" : 1,
+    "AttackRecoil" : 4,
+    "Instability" : 22.5,
+    "WeaponEffectID" : "WeaponEffect-Weapon_AC20_Single",
+    "Description" : {
+        "Cost" : 600000,
+        "Rarity" : 10,
+        "Purchasable" : true,
+        "Manufacturer" : "Clan",
+        "Model" : "Heavy Autocannon",
+        "UIName": "LBX AC/20 (C)",
+        "Id": "Weapon_Autocannon_AC20_LBX_CLAN",
+        "Name": "LBX AC/20 (C)",
+        "Details" : "The LB 20-X Autocannon is essentially a 'Mech-mounted shotgun, capable of firing special 'cluster rounds' that split apart after being fired, allowing the weapon to either spread damage out or focus damage on a small area, depending on the range. LB-X Autocannons can switch between special cluster rounds made up of 20 pellets and standard slugs that are functionally identical to standard AC/20 when both are present. LB20-Xs suffer from <color=#dd7e6b> -2 Recoil/refire penalty </color>, when continuously fired. Your pilots guts skill can counteract this. \n\n<b><color=#ffcc00>Uses LB 20-X AC Slug or Cluster Ammo.</color>",
+        "Icon" : "uixSvgIcon_weapon_Ballistic"
+    },
+    "BonusValueA" : "Switchable",
+    "BonusValueB" : "",
+    "ComponentType" : "Weapon",
+    "ComponentSubType" : "Weapon",
+    "PrefabIdentifier" : "AC20",
+    "BattleValue" : 0,
+    "InventorySize" : 9,
+    "Tonnage" : 12,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+	"DisableClustering": false,
+    "statusEffects" : [
+        
+    ],
+    "ComponentTags" : {
+        "items" : [
+            "component_type_stock",
+            "range_very-long",
+            "wr-jammable_weapon",
+            "wr-jam_chance_multiplier-5",
+			"wr-clustered_shots"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}

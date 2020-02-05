@@ -1,0 +1,69 @@
+{
+   "Description" : {
+      "Id" : "lancedef_arena_light_assault_CLAN",
+      "Name" : "Light Assault (Clan, 145t)",
+      "Details" : "",
+      "Icon" : "",
+      "Cost" : 14580000,
+      "Rarity" : 0,
+      "Purchasable" : false
+   },
+   "Difficulty" : 4,
+   "LanceTags" : {
+      "items" : [
+         "lance_bracket_low",
+         "lance_bracket_skirmish",
+         "lance_release",
+         "lance_type_assault",
+         "lance_type_light",
+		 "BLACKLISTED"
+      ],
+      "tagSetSourceFile" : "Tags/LanceTags"
+   },
+   "LanceUnits" : [
+      {
+         "unitType" : "Mech",
+         "unitId" : "mechdef_mistlynx_MLX-PRIME",
+         
+         "pilotId" : "pilot_kbeta_arclight",
+         
+         "unitTagSet" : null,
+         "excludedUnitTagSet" : null,
+         "pilotTagSet" : null,
+         "excludedPilotTagSet" : null
+      },
+      {
+         "unitType" : "Mech",
+         "unitId" : "mechdef_kitfox_PRIME",
+         
+         "pilotId" : "pilot_kbeta_kraken",
+         
+         "unitTagSet" : null,
+         "excludedUnitTagSet" : null,
+         "pilotTagSet" : null,
+         "excludedPilotTagSet" : null
+      },
+      {
+         "unitType" : "Mech",
+         "unitId" : "mechdef_arcticwolf_ACW-1",
+         
+         "pilotId" : "pilot_kbeta_wildfire",
+         
+         "unitTagSet" : null,
+         "excludedUnitTagSet" : null,
+         "pilotTagSet" : null,
+         "excludedPilotTagSet" : null
+      },
+      {
+         "unitType" : "Mech",
+         "unitId" : "mechdef_hunchback_HBK-IIC",
+         
+         "pilotId" : "pilot_kbeta_bulwark",
+         
+         "unitTagSet" : null,
+         "excludedUnitTagSet" : null,
+         "pilotTagSet" : null,
+         "excludedPilotTagSet" : null
+      }
+   ]
+}
