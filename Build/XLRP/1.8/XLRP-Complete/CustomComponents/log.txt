@@ -1,0 +1,44 @@
+CustomComponents [ERROR] False
+CustomComponents [LOG] SimpleCustom Category registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom ChassisDefaults registered for type BattleTech.ChassisDef
+CustomComponents [LOG] SimpleCustom Lootable registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom ColorTag registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom TColorTag registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom InventorySorter registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom RGBColor registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom TRGBColor registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom Sorter registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom AutoReplace registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom Flags registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom Linked registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom Color registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom TColor registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom TonnageAllowed registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom TonnageLimit registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom WorkOrderCosts registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] Loaded CustomComponents v0.11 for bt 1.8
+CustomComponents [DEBUG] done
+CustomComponents [LOG] SimpleCustom Weights registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom Cooling registered for type BattleTech.HeatSinkDef
+CustomComponents [LOG] SimpleCustom EngineCore registered for type BattleTech.HeatSinkDef
+CustomComponents [LOG] SimpleCustom EngineHeatBlock registered for type BattleTech.HeatSinkDef
+CustomComponents [LOG] SimpleCustom EngineHeatSink registered for type BattleTech.HeatSinkDef
+CustomComponents [LOG] SimpleCustom MechCriticalEffects registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom TurretCriticalEffects registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom VehicleCriticalEffects registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom CriticalEffects registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom BonusDescriptions registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom BonusDescriptions already registered
+CustomComponents [LOG] SimpleCustom ArmActuator registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom ArmActuatorSupport registered for type BattleTech.ChassisDef
+CustomComponents [LOG] SimpleCustom DynamicSlots registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom MechConfiguration registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom CASE registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom ComponentExplosion registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom ArmorStructureChanges registered for type BattleTech.MechComponentDef
+CustomComponents [LOG] SimpleCustom LootMagnetComp registered for type BattleTech.MechComponentDef
+CustomComponents [DEBUG] Get data:
+CustomComponents [DEBUG] - key: key.svg C:\Games\Steam\steamapps\common\BATTLETECH\Mods\CustomComponents\test\icons\key.svg key
+CustomComponents [DEBUG] - laptop: laptop.svg C:\Games\Steam\steamapps\common\BATTLETECH\Mods\CustomComponents\test\icons\laptop.svg laptop
+CustomComponents [DEBUG] - layers: layers.svg C:\Games\Steam\steamapps\common\BATTLETECH\Mods\CustomComponents\test\icons\layers.svg layers
+CustomComponents [LOG] Clearing tags cache
