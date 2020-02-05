@@ -1,6 +1,8 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using Data.Core.Enums;
+using Data.Core.GameObjects.Gear;
 using Data.Core.Misc;
 using Data.Core.ModObjects;
 using Data.Core.Parsers;
@@ -12,9 +14,9 @@ namespace Data.Console
     {
         private static void Main(string[] args)
         {
-            var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
+            // var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
             //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\RogueTech";
-            //var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
+            var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
             var btDirectory = @"D:\Test Data\BT Base Data";
             var dlcDirectory = @"C:\Users\Stephen Weistra\gitrepos\bt-dlc-designdata";
 
@@ -80,11 +82,31 @@ namespace Data.Console
             System.Console.WriteLine($"Failed Merges : \r\n" +
                                      $"{string.Join("\r\n", ModMerger.FailedMerges.Select(tuple => $"{tuple.Item1.FileInfo.FullName} - {tuple.Item2}"))}");
 
-            var modifiedIds = result.manifestEntryStackById.Where(pair => pair.Value.Count > 1);
+            /*var modifiedIds = result.manifestEntryStackById.Where(pair => pair.Value.Count > 1);
             System.Console.WriteLine($"Ids modified multiple times via modifications:\r\n" +
-                                     $"{string.Join("\r\n", modifiedIds.Select(pair => $"\t{pair.Key} - {pair.Value.Count}"))}");
+                                     $"{string.Join("\r\n", modifiedIds.Select(pair => $"\t{pair.Key} - {pair.Value.Count}"))}");*/
 
-            var weapons = result.mergedManifestEntries.Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => $"{entry.Id} - {entry.GameObjectType} - {entry.AssetBundleName}").ToList();
+            var weapons = result.mergedManifestEntries.Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => WeaponBase.FromJson(entry.Json.ToString())).ToList();
+            weapons.Sort((weapon1, weapon2) => string.CompareOrdinal(weapon1.Description.Id, weapon2.Description.Id));
+            using (var file = File.CreateText(@"c:\tmp\btms-weapons.csv"))
+            {
+                file.WriteLine($"Description.Id|Category|AttackRecoil|weapon.AccuracyModifier|weapon.AmmoCategory|weapon.AoeCapable|" +
+                               $"weapon.BonusValueA|weapon.BonusValueB|weapon.CanExplode|weapon.Category|weapon.CriticalChanceMultiplier|" +
+                               $"weapon.Damage|weapon.DamageVariance|weapon.EvasiveDamageMultiplier|weapon.EvasivePipsIgnored|weapon.HeatDamage|weapon.HeatGenerated|" +
+                               $"weapon.IndirectFireCapable|weapon.Instability|weapon.InventorySize|weapon.MaxRange|weapon.MinRange|weapon.OverheatedDamageMultiplier|" +
+                               $"weapon.ProjectilesPerShot|weapon.RefireModifier|weapon.ShotsWhenFired|weapon.StartingAmmoCapacity|weapon.RangeSplit|" +
+                               $"weapon.WeaponSubType");
+                foreach (var weapon in weapons)
+                {
+                    file.WriteLine($"{weapon.Description.Id}|{weapon.Category}|{weapon.AttackRecoil}|{weapon.AccuracyModifier}|{weapon.AmmoCategory}|{weapon.AoeCapable}|" +
+                                   $"'{weapon.BonusValueA}|'{weapon.BonusValueB}|{weapon.CanExplode}|{weapon.Category}|{weapon.CriticalChanceMultiplier}|" +
+                                   $"{weapon.Damage}|{weapon.DamageVariance}|{weapon.EvasiveDamageMultiplier}|{weapon.EvasivePipsIgnored}|{weapon.HeatDamage}|{weapon.HeatGenerated}|" +
+                                   $"{weapon.IndirectFireCapable}|{weapon.Instability}|{weapon.InventorySize}|{weapon.MaxRange}|{weapon.MinRange}|{weapon.OverheatedDamageMultiplier}|" +
+                                   $"{weapon.ProjectilesPerShot}|{weapon.RefireModifier}|{weapon.ShotsWhenFired}|{weapon.StartingAmmoCapacity}|{string.Join(",", weapon.RangeSplit)}|" +
+                                   $"{weapon.WeaponSubType}");
+                }
+            }
+            /*var weapons = result.mergedManifestEntries.Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => $"{entry.Id} - {entry.GameObjectType} - {entry.AssetBundleName}").ToList();
             weapons.Sort();
             System.Console.WriteLine("Distinct Weapon Definitions:\r\n" +
                                      $"{string.Join("\r\n", weapons)}");
@@ -93,7 +115,7 @@ namespace Data.Console
                 $"{string.Join("\r\n", result.mergedManifestEntries.Where(entry => entry.GameObjectType == GameObjectTypeEnum.MechDef).Select(entry => entry.Id))}");
 
             System.Console.WriteLine($"mechdef_annihilator_ANH-1A\r\n" +
-                                     $"{result.mergedManifestEntries.First(entry => entry.Id == "mechdef_annihilator_ANH-1A").Json}");
+                                     $"{result.mergedManifestEntries.First(entry => entry.Id == "mechdef_annihilator_ANH-1A").Json}");*/
 
             System.Console.WriteLine("Press any key to exit...");
             System.Console.ReadKey();

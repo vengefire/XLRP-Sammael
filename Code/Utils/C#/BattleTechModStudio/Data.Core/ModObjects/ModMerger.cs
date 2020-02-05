@@ -140,8 +140,24 @@ namespace Data.Core.ModObjects
                                     });
                                     break;
                                 case "Remove":
-                                    var targetToken = mergedResult.Json.SelectToken(path, false);
-                                    targetToken?.Parent.Remove();
+                                    var targetTokens = mergedResult.Json.SelectTokens(path, false).ToList();
+                                    foreach (var targetToken in targetTokens)
+                                    {
+                                        var targetTokenParent = targetToken?.Parent;
+                                        if (targetTokenParent is JArray)
+                                        {
+                                            targetToken?.Remove();
+                                        }
+                                        else if (targetTokenParent is JObject)
+                                        {
+                                            targetToken?.Remove();
+                                        }
+                                        else
+                                        {
+                                            targetTokenParent?.Remove();
+                                        }
+                                    }
+
                                     break;
                             }
                         });
