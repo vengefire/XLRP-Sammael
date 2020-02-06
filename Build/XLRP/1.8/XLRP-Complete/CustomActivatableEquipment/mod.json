@@ -1,6 +1,6 @@
 {
 	"Name": "CustomActivatableEquipment",
-	"Enabled": false,
+    "Enabled": true,
 
 	"Version": "0.0.60",
 	"PackagedOn": "2019-01-31T00:00:00Z",
@@ -12,12 +12,7 @@
 	"Description": "Activatable equipment",
 	"Author": "KMiSSioN",
   "Website": "https://www.nexusmods.com/battletech/mods/381",
-  "DataAddendumEntries":[
-    {
-      "name": "BattleTech.AmmoCategoryEnumeration",
-      "path": "AmmoCategory.json"
-    }
-  ],
+    "DataAddendumEntries": [ ],
 	"Settings": {
 		"debug": true,
     "ToolTipWarningFailChance": 0.2,
@@ -92,8 +87,6 @@
     }
 	},
 	"Manifest": [
-		{ "Type": "AbilityDef", "Path": "abilities\\" },
 		{ "Type": "UpgradeDef", "Path": "upgrades\\" },
-    { "Type": "WeaponDef", "Path": "weapons\\" }
   ]
 }
