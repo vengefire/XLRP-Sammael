@@ -1,6 +1,6 @@
 {
 	"Name": "CustomVoices",
-	"Enabled": true,
+	"Enabled": false,
 	"Version": "0.0.4",
 	"PackagedOn": "2019-01-31T00:00:00Z",
 	"DLL": "CustomVoices.dll",

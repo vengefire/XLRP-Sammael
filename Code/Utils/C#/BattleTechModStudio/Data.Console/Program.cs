@@ -14,9 +14,9 @@ namespace Data.Console
     {
         private static void Main(string[] args)
         {
-            // var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
+            var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
             //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\RogueTech";
-            var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
+            //var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
             var btDirectory = @"D:\Test Data\BT Base Data";
             var dlcDirectory = @"C:\Users\Stephen Weistra\gitrepos\bt-dlc-designdata";
 

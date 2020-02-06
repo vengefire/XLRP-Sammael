@@ -9,8 +9,8 @@
 
     "DLL": "MechResizer.dll",
     "DLLEntryPoint": "MechResizer.MechResizer.Init",
-	"DependsOn": [ "BT_Extended_3025" ],
-	"OptionallyDependsOn": [ "BT_Extended_3025_Plus" ],
+	"DependsOn": [],
+	"OptionallyDependsOn": [ "BT_Extended_3025", "BT_Extended_3025_Plus" ],
 	"ConflictsWith": [],
 
   "Settings": {
