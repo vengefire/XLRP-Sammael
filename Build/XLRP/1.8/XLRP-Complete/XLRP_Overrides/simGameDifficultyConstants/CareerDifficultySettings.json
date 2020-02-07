@@ -600,7 +600,7 @@
         },
         {
             "ID" : "diff_rareItems",
-            "Name" : "No Rare Salvage",
+            "Name" : "No Rare Salvage - Moot",
 			"TelemetryEventName": "no_rare_salvage",
             "UIOrder" : 10,
             "Tooltip" : "This setting controls whether \"+\" and \"++\" items can be found as salvage after a battle. If this setting is enabled, only basic items will be found.",
