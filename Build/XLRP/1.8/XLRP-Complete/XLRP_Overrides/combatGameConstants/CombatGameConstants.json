@@ -1344,7 +1344,7 @@
     "EdgeAutoZoomSize": 0.05,
     "MinDistToFocalPoint": 50.0,
     "MinHeightAboveTerrain": 20.0,
-    "MaxHeightAboveTerrain": 520.0,
+    "MaxHeightAboveTerrain": 800.0,
     "MinAngle": 10.0,
     "MaxAngle": 75.0,
     "DefaultAngle": 40.0,
