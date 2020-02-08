@@ -1,7 +1,0 @@
-{
-	Name: "Camera Settings",
-	Version: "1.2",
-	"Description": "All combat camera settings from CombatGameConstants.",
-	"Author": "taintedloki",
-	"Enabled": true
-}
