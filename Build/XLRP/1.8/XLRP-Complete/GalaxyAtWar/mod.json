@@ -27,7 +27,7 @@
 		"ExternalHotSpots" : 5,
 		
 		"ChangeDifficulty" : true,
-		"ResetMap" : false,
+		"ResetMap" : true,
 		
 		"DeploymentMinDays" : 1,
 		"DeploymentMaxDays" : 6,
