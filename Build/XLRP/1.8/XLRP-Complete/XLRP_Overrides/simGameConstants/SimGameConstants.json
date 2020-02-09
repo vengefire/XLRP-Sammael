@@ -55,9 +55,9 @@
 		"GenerousCostModifier" : 1.4,
 		"ExtravagantCostModifier" : 1.8,
 		"JumpShipCost" : 30000,
-		"MechWarriorBaseCostPerPoint" : 1900.0,
-		"MechWarriorBonusCostPerPoint" : 1000.0,
-		"MechWarriorHiringCostPerPoint" : 2800.0,
+		"MechWarriorBaseCostPerPoint" : 1000.0,
+		"MechWarriorBonusCostPerPoint" : 500.0,
+		"MechWarriorHiringCostPerPoint" : 1500.0,
 		"DefaultShopRefreshRate" : 14,
         "DefaultShopMaxInventory" : 50,
         "DefaultShopMaxSpecials" : 2,
@@ -77,8 +77,8 @@
 		"MechLabRefundModifier": 0.9,
 		"RecoveredChassisShopModifier" : 0.9,
 		"LeopardBaseMaintenanceCost" : 70000,
-		"ArgoBaseMaintenanceCost" : 80000,
-		"QuartersYouCanAffordWithoutTriggeringWarning" : 2,
+		"ArgoBaseMaintenanceCost" : 140000,
+		"QuartersYouCanAffordWithoutTriggeringWarning" : 0,
 		"ContractBaseRepDifficultyMultiplier" : 1.5,
 		"ContractBaseReputationAddition" : 0,
 		"ContractNegotiableRepDifficultyMultiplier" : 1,
@@ -174,12 +174,12 @@
 		"SystemUseMilestoneTag" : "SYSTEM_UseMilestone",
 		"SystemMissionCompleteCountStat" : "MissionsComplete",
 		"StartingCBills" : 1000000,
-		"StartingMechTechSkill" : 4,
+		"StartingMechTechSkill" : 3000,
         "StartingMedTechSkill" : 6,
 		"DailyUpgradeValue" : 1,
         "ArgoMechTechs" : 0,
         "ArgoMedTechs" : 0,
-		"MaxMechWarriorsPerPod" : 8,
+		"MaxMechWarriorsPerPod" : 7,
 		"MaxMechsPerPod" : 6,
 		"StartingDropShip" : "argo",
 		"UpgradedDropShip" : "argo",
@@ -250,7 +250,7 @@
 		"LikedRepShopAdjustment" : 0,
 		"FriendlyRepShopAdjustment" : -0.05,
 		"HonoredRepShopAdjustment" : -0.1,
-		"StartingMorale": 28,
+		"StartingMorale": 20,
 		"MaxMorale": 50,
 		"MoraleLevelNames" : [
 			"Mutinous",
@@ -259,11 +259,11 @@
 			"Spirited",
 			"Resolute"
 		],
-		"SpartanMoraleModifier" : -4,
-		"RestrictedMoraleModifier" : -2,
+		"SpartanMoraleModifier" : -15,
+		"RestrictedMoraleModifier" : -5,
 		"NormalMoraleModifier" : 0,
-		"GenerousMoraleModifier" : 1,
-		"ExtravagantMoraleModifier" : 2,
+		"GenerousMoraleModifier" : 5,
+		"ExtravagantMoraleModifier" : 10,
 		"BadFaithMoraleModifier" : 1,
 		"CatastropheMoraleModifier" : 2,
 		"MaxMechTechID" : "MechTechHireLimit",
@@ -276,11 +276,11 @@
 		"DefaultMedTechsPerSystem" : 2,
 		"DailyHealValue" : 0,
 		"MedTechSkillMod" : 1,
-		"TargetRepSuccessMod" : -0.8,
-		"TargetRepGoodFaithMod" : -0.4,
+		"TargetRepSuccessMod" : -0.5,
+		"TargetRepGoodFaithMod" : -0.25,
 		"TargetRepBadFaithMod" : 0,
-		"EmployerRepSuccessMod" : 1,
-		"EmployerRepGoodFaithMod" : 0.5,
+		"EmployerRepSuccessMod" : 1.1,
+		"EmployerRepGoodFaithMod" : 0.6,
 		"EmployerRepBadFaithMod" : -2,
 		"MRBSuccessMod" : 1,
 		"MRBGoodFaithMod" : 0.5,
@@ -328,7 +328,7 @@
 			12,
 			24
 		]
-		"MaxContractsPerSystem" : 7,
+		"MaxContractsPerSystem" : 8,
 		"ContractRenewalPerWeek" : 0.5,
 		"ContractSuccessReduction" : 1.0,
 		"MaxBreadcrumbsPerSystem" : 2,
@@ -337,11 +337,11 @@
 		"StartingTargetSystem" : "Detroit",
 		"StartingPassiveXPGainCap" : 0,
 		"StartingPassiveXPGain" : 0,
-		"MechReadyTime" :  7,
-		"DefaultMechPartMax" : 3,
+		"MechReadyTime" :  7000,
+		"DefaultMechPartMax" : 5,
 		"DefaultMechPartName" : "Partial Mech Salvage",
 		"DefaultFullMechName" : "BattleMech",
-		"DefaultContractRefreshRate" : 30,
+		"DefaultContractRefreshRate" : 20,
 		"ExternalMilestones" : false,
 		"MilestonePath" : "",
 		"TimeStartTag" : "LeopardAcquired",
@@ -415,30 +415,30 @@
 
    },
    "MechLab" :{
-		"StructureRepairTechPoints" : 0.3,
-		"StructureRepairCost" : 300,
-		"ComponentRepairTechPoints" : 5,
-		"ComponentRepairCost" : 500,
-		"BallisticInstallTechPoints" : 10,
+		"StructureRepairTechPoints" : 20,
+		"StructureRepairCost" : 4,
+		"ComponentRepairTechPoints" : 2000,
+		"ComponentRepairCost" : 200,
+		"BallisticInstallTechPoints" : 5000,
 		"BallisticInstallCost" : 500,
-		"MissileInstallTechPoints" : 10,
+		"MissileInstallTechPoints" : 5000,
 		"MissileInstallCost" : 500,
-		"EnergyInstallTechPoints" : 10,
+		"EnergyInstallTechPoints" : 5000,
 		"EnergyInstallCost" : 500,
-		"APInstallTechPoints" : 5,
+		"APInstallTechPoints" : 2500,
 		"APInstallCost" : 250,
-		"AmmoInstallTechPoints" : 5,
+		"AmmoInstallTechPoints" : 2500,
 		"AmmoInstallCost" : 100,
-		"JumpJetInstallTechPoints" : 5,
+		"JumpJetInstallTechPoints" : 2500,
 		"JumpJetInstallCost" : 250,
-		"HeatSinkInstallTechPoints" : 5,
+		"HeatSinkInstallTechPoints" : 2500,
 		"HeatSinkInstallCost" : 250,
 		"ArmorInstallTechPoints" : 0,
 		"ArmorInstallCost" : 0,
-		"OtherInstallTechPoints" : 5,
+		"OtherInstallTechPoints" : 2500,
 		"OtherInstallCost" : 500,
 		"UninstallTechPoints" : 0,
-		"ZeroStructureCBillModifier" : 4.0,
+		"ZeroStructureCBillModifier" : 10.0,
 		"ZeroStructureTechPointModifier" : 1.5,
 		"LanceDropTonnageBrackets" : [
 		100,
@@ -594,17 +594,16 @@
 			[
 			],
 			[
-				"TraitDefHealthAddOne"
 			],
 			[
 				"TraitDefRefireReduceOne",
 				"AbilityDefGu5"				
 			],
 			[
+				"TraitDefHealthAddOne"
 				"TraitDefOverheatAddFifteen"
 			],
 			[
-				"TraitDefHealthAddTwo"
 			],
 			[
 				"TraitDefRefireReduceTwo",
@@ -614,7 +613,7 @@
 				"TraitDefOverheatAddThirty"
 			],
 			[
-                "TraitDefHealthAddThree"
+                "TraitDefHealthAddTwo"
 			]
 		],
 		"TacticsSkills" :[
@@ -839,13 +838,13 @@
 			"argoUpgrade_pod1",
 			"argoUpgrade_structure0"
 		],
-		"LoathedMaxContractDifficulty" : 1,
-		"HatedMaxContractDifficulty" : 2,
-		"DislikedMaxContractDifficulty" : 3,
+		"LoathedMaxContractDifficulty" : 2,
+		"HatedMaxContractDifficulty" : 4,
+		"DislikedMaxContractDifficulty" : 5,
 		"IndifferentMaxContractDifficulty" : 6,
 		"LikedMaxContractDifficulty" : 8,
 		"FriendlyMaxContractDifficulty" : 9,
-		"HonoredMaxContractDifficulty" : 10,
+		"HonoredMaxContractDifficulty" : 12,
 		"StartWithRandomMechs" : true
    }
 }

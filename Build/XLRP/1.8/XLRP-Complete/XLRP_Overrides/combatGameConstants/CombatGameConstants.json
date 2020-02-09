@@ -50,14 +50,14 @@
     "ShowPeakHeat": false
   },
   "Visibility": {
-    "BaseSpotterDistance": 300.0,
-    "SpotterTacticsMultiplier": 0.0,
+    "BaseSpotterDistance": 350.0,
+    "SpotterTacticsMultiplier": 25.0,
     "RatioFullVis": 0.79,
     "RatioObstructedVis": 0.41,
     "MinRatioFromActors": 0.2,
     "ShutDownVisibilityModifier": 0.0,
     "ShutDownSignatureModifier": -0.5,
-    "BaseSensorDistance": 400.0,
+    "BaseSensorDistance": 500.0,
     "UseAsymmetricalSensors": true,
     "ShowExtendedBlipsBeforeContact": false,
     "ExtendedSensorDistanceMultiplier": 1.0,
@@ -207,7 +207,7 @@
   "ToHit": {
     "FiringArcDegrees": 60.0,
     "ToHitBaseFloor": 0.75,
-    "ToHitGunneryDivisor": 40,
+    "ToHitGunneryDivisor": 50,
     "ToHitUseSteppedAlgorithm": true,
     "ToHitStepThresholds": [
       0,
@@ -230,7 +230,7 @@
     "ToHitTurretHeavy": -4,
     "ToHitTurretMedium": -4,
     "ToHitTurretLight": -4,
-    "ToHitElevationLevelHeight": 16,
+    "ToHitElevationLevelHeight": 24,
     "ToHitElevationModifierPerLevel": 1,
     "ToHitElevationUseMultipleLevels": true,
     "ToHitElevationApplyPenalties": false,
@@ -239,15 +239,15 @@
     "ToHitMediumRange": 0,
     "ToHitLongRange": 4,
     "ToHitMaximumRange": 4,
-    "ToHitCoverObstructed": 2,
+    "ToHitCoverObstructed": 3,
     "DamageResistanceObstructed": 1.0,
     "DamageResistanceIndirectFire": 1.0,
-    "ClusterChanceOriginalLocationMultiplier": 8,
-    "ClusterChanceAdjacentMultiplier": 4,
-    "ClusterChanceNonadjacentMultiplier": 1,
+    "ClusterChanceOriginalLocationMultiplier": 4,
+    "ClusterChanceAdjacentMultiplier": 3,
+    "ClusterChanceNonadjacentMultiplier": 2,
     "ClusterChanceNeverMultiplyHead": true,
     "ClusterChanceNeverClusterHead": true,
-    "ToHitIndirect": 3,
+    "ToHitIndirect": 5,
     "ToHitShutdownTargetBonus": -4,
     "ToHitShutdownTargetBonusMelee": -10,
     "ToHitProneTargetBonus": 0,
@@ -297,7 +297,7 @@
       "5 EVASIVE charges: +{0} Difficulty to hit this unit with ranged attacks.",
       "6 EVASIVE charges: +{0} Difficulty to hit this unit with ranged attacks."
     ],
-    "ToHitSelfWeaponDamaged": 2,
+    "ToHitSelfWeaponDamaged": 3,
     "ToHitSelfWeaponLocationDamagedMinor": 0,
     "ToHitSelfWeaponLocationDamagedMajor": 0,
     "UseMultipleGuardLevels": true,
@@ -318,7 +318,7 @@
     "TacticsBaseFloor": 0.65,
     "TacticsDivisor": 20,
     "TacticsModifierDivisor": 10,
-    "ToHitOffensivePush": -4,
+    "ToHitOffensivePush": -2,
 	"StrayShotsEnabled":true,
 	"StrayShotsHitUnits":true,
 	"StrayShotValidTargets": 0
@@ -334,7 +334,7 @@
     "DFAMissedPilotingModifier": 4.0,
     "MeleeDamageMultiplierTurret": 2.0,
     "MeleeDamageMultiplierVehicle": 2.0,
-    "DefaultUnsteadyThreshold": 41.0,
+    "DefaultUnsteadyThreshold": 61.0,
     "MeleeInstabilityNormalMultiplier": 1.5,
     "MeleeInstabilityChargeMultiplier": 1.5,
     "MeleeInstabilityDFAMultiplier": 1.5,
@@ -350,7 +350,7 @@
     "HeavyDamageThreshold": 100,
     "LowArmorThreshold": 0.25,
     "SolidBlowDamageMultiplier": 1.0,
-    "AICritChanceBaseMultiplier": 0.2,
+    "AICritChanceBaseMultiplier": 1.0,
     "NormalBlowDamageMultiplier": 0.8,
     "GlancingBlowDamageMultiplier": 0.6,
     "IneffectiveBlowDamageMultiplier": 0.4,
@@ -573,15 +573,15 @@
       },
       {
         "k": "CenterTorsoRear",
-        "v": 16
+        "v": 12
       },
       {
         "k": "LeftTorsoRear",
-        "v": 14
+        "v": 16
       },
       {
         "k": "RightTorsoRear",
-        "v": 14
+        "v": 16
       }
     ],
     "HitMechLocationFromTop": [
@@ -808,14 +808,14 @@
     ]
   },
   "PilotingConstants": {
-    "PilotingBaseFloor": 0.9,
-    "PilotingDivisor": 40,
+    "PilotingBaseFloor": 0.8,
+    "PilotingDivisor": 50,
     "PilotingModifierDivisor": 6.5,
     "PilotingDamageCTPenalizedModifier": 0.0,
     "PilotingDamageLegPenalizedModifier": 0.0,
     "PilotingDamageLegNonfunctionalModifier": 0.0,
     "PilotingDFAModifier": 6.0,
-    "LocationDestroyedPermanentStabilityLoss": 0.2,
+    "LocationDestroyedPermanentStabilityLoss": 0.4,
     "OnlyPermanentLossFromLegs": true,
     "SideTorsoBlackRelativeInstability": 0.0,
     "CenterTorsoYellowRelativeInstability": 0.0,
@@ -849,13 +849,13 @@
     "InspireCost": 0,
     "AutoInspire": true,
     "UseOffensivePush": true,
-    "OffensivePushCost": 30,
-    "OffensivePushLowMoraleCost": 40,
-    "OffensivePushHighMoraleCost": 20,
+    "OffensivePushCost": 45,
+    "OffensivePushLowMoraleCost": 60,
+    "OffensivePushHighMoraleCost": 30,
     "UseDefensivePush": true,
-    "DefensivePushCost": 30,
-    "DefensivePushLowMoraleCost": 40,
-    "DefensivePushHighMoraleCost": 20,
+    "DefensivePushCost": 45,
+    "DefensivePushLowMoraleCost": 60,
+    "DefensivePushHighMoraleCost": 30,
     "MoraleInitialDefault": 0,
     "UseBaselineMoraleGainEachRound": true,
     "MoraleBaselineGainPerRound": 1,
@@ -872,9 +872,9 @@
     "BaselineAddFromSimGameValues": [
       0,
       5,
+      10,
       15,
-      25,
-      35
+      20
     ],
     "BaselineAddMoraleMods": true,
     "BaselineModsOnlyBiggest": true,
@@ -893,10 +893,10 @@
     "ChangeEnemyMajorArmorDamage": 0,
     "ChangeEnemyKnockedDown": 0,
     "ChangeDFADealt": 0,
-    "ChangeEnemyDestroyedLight": 10,
-    "ChangeEnemyDestroyedMedium": 10,
-    "ChangeEnemyDestroyedHeavy": 10,
-    "ChangeEnemyDestroyedAssault": 10,
+    "ChangeEnemyDestroyedLight": 5,
+    "ChangeEnemyDestroyedMedium": 5,
+    "ChangeEnemyDestroyedHeavy": 5,
+    "ChangeEnemyDestroyedAssault": 5,
     "ChangeEnemyDestroyedMeleeAdditional": 0,
     "ChangeObjectiveCompleted": 0,
     "ChangeObjectiveFailed": 0,
@@ -913,7 +913,7 @@
     "ChangeAllyDestroyedHeavy": 0,
     "ChangeAllyDestroyedAssault": 0,
     "ChangeAllyDestroyedMeleeAdditional": 0,
-    "CanAIBeInspired": false,
+    "CanAIBeInspired": true,
     "InspirationAccelerationMultiplier": 0.0,
     "InspiredEffect": {
       "durationData": {
@@ -1162,39 +1162,39 @@
     },
     "MoraleAttackDescription": {
       "Name": "PRECISION STRIKE",
-      "Details": "Take a Called Shot against a single target at -4 Difficulty. The target's next Initiative is reduced by 1 (to a minimum of 1).\n"
+      "Details": "Take a Called Shot against a single target at -2 Difficulty. The target's next Initiative is reduced by 1 (to a minimum of 1).\n"
     },
     "MoraleCostAttackDescription": {
-      "Name": "PRECISION STRIKE COST",
-      "Details": "Cost: 30 Resolve"
+		"Name": "PRECISION STRIKE COST",
+		"Details": "Cost: 45 Resolve"
     },
     "MoraleCostAttackDescriptionFury": {
       "Name": "PRECISION STRIKE COST FURY",
       "Details": "Cost: 100 Fury"
     },
     "MoraleCostAttackDescriptionLow": {
-      "Name": "PRECISION STRIKE COST LOW",
-      "Details": "Cost: <color=#F04228FF>40 Resolve (this MechWarrior has Low Spirits)</color>"
+		"Name": "PRECISION STRIKE COST LOW",
+		"Details": "Cost: <color=#F04228FF>60 Resolve (this MechWarrior has Low Spirits)</color>"
     },
     "MoraleCostAttackDescriptionHigh": {
-      "Name": "PRECISION STRIKE COST HIGH",
-      "Details": "Cost: <color=#85DBF6FF>20 Resolve (this MechWarrior has High Spirits)</color>"
+		"Name": "PRECISION STRIKE COST HIGH",
+		"Details": "Cost: <color=#85DBF6FF>30 Resolve (this MechWarrior has High Spirits)</color>"
     },
     "MoraleDefendDescription": {
       "Name": "VIGILANCE",
       "Details": "Gain GUARDED and ENTRENCHED and remove all stability damage. Your next Initiative is increased by 1 (to a maximum of 5).\n"
     },
     "MoraleCostDefendDescription": {
-      "Name": "VIGILANCE COST",
-      "Details": "Cost: 30 Resolve"
+		"Name": "VIGILANCE COST",
+		"Details": "Cost: 45 Resolve"
     },
     "MoraleCostDefendDescriptionLow": {
-      "Name": "VIGILANCE COST LOW",
-      "Details": "Cost: <color=#F04228FF>40 Resolve (this MechWarrior has Low Spirits)</color>"
+		"Name": "VIGILANCE COST LOW",
+		"Details": "Cost: <color=#F04228FF>60 Resolve (this MechWarrior has Low Spirits)</color>"
     },
     "MoraleCostDefendDescriptionHigh": {
-      "Name": "VIGILANCE COST HIGH",
-      "Details": "Cost: <color=#85DBF6FF>20 Resolve (this MechWarrior has High Spirits)</color>"
+		"Name": "VIGILANCE COST HIGH",
+		"Details": "Cost: <color=#85DBF6FF>30 Resolve (this MechWarrior has High Spirits)</color>"
     },
     "FireMultiDescription": {
       "Name": "MULTI-TARGET",
