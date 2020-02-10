@@ -1,7 +1,7 @@
 {
     "Name": "CBTBehaviorsEnhanced",
     "Enabled": true,
-    "Version": "0.3.6",
+    "Version": "0.3.6-dZ",
     "Description": "",
     "Author": "FrostRaptor",
     "Website": "https://github.com/IceRaptor/CBTBehaviorsEnhanced/",
@@ -14,6 +14,7 @@
         "Trace" : false,
 		"EnablePermanentEvasion" : false,
         "ToHitSelfJumped": 2,
+		"dZ_Abilities" : true,
         "Heat" : {
             "Movement" : { "15": -1, "30" : -2, "45" : -3, "60" : -4, "75" : -5, "93" : -6, "111" : -7, "129" : -8, "147" : -9 },
             "Firing" : { "24" : 1, "39" : 2, "51" : 3, "72" : 4, "99" : 5, "123" : 6, "144" : 7 },
