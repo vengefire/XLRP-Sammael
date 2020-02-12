@@ -18,21 +18,3 @@ CustomComponents [LOG] SimpleCustom TonnageLimit registered for type BattleTech.
 CustomComponents [LOG] SimpleCustom WorkOrderCosts registered for type BattleTech.MechComponentDef
 CustomComponents [LOG] Loaded CustomComponents v0.11 for bt 1.8
 CustomComponents [DEBUG] done
-CustomComponents [LOG] SimpleCustom Weights registered for type BattleTech.MechComponentDef
-CustomComponents [LOG] SimpleCustom Cooling registered for type BattleTech.HeatSinkDef
-CustomComponents [LOG] SimpleCustom EngineCore registered for type BattleTech.HeatSinkDef
-CustomComponents [LOG] SimpleCustom EngineHeatBlock registered for type BattleTech.HeatSinkDef
-CustomComponents [LOG] SimpleCustom EngineHeatSink registered for type BattleTech.HeatSinkDef
-CustomComponents [LOG] SimpleCustom MechCriticalEffects registered for type BattleTech.MechComponentDef
-CustomComponents [LOG] SimpleCustom TurretCriticalEffects registered for type BattleTech.MechComponentDef
-CustomComponents [LOG] SimpleCustom VehicleCriticalEffects registered for type BattleTech.MechComponentDef
-CustomComponents [LOG] SimpleCustom CriticalEffects registered for type BattleTech.MechComponentDef
-CustomComponents [LOG] SimpleCustom BonusDescriptions registered for type BattleTech.MechComponentDef
-CustomComponents [LOG] SimpleCustom BonusDescriptions already registered
-CustomComponents [LOG] SimpleCustom ArmActuator registered for type BattleTech.MechComponentDef
-CustomComponents [LOG] SimpleCustom ArmActuatorSupport registered for type BattleTech.ChassisDef
-CustomComponents [LOG] SimpleCustom DynamicSlots registered for type BattleTech.MechComponentDef
-CustomComponents [LOG] SimpleCustom MechConfiguration registered for type BattleTech.MechComponentDef
-CustomComponents [LOG] SimpleCustom CASE registered for type BattleTech.MechComponentDef
-CustomComponents [LOG] SimpleCustom ComponentExplosion registered for type BattleTech.MechComponentDef
-CustomComponents [LOG] SimpleCustom ArmorStructureChanges registered for type BattleTech.MechComponentDef

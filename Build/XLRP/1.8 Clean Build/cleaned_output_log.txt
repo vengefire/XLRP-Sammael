@@ -1,4 +1,4 @@
-2/12/2020 10:18:42 AM Cleaned Log
+2/12/2020 10:46:34 AM Cleaned Log
 --------------------------------------------------------------------------------
 ProductName: BATTLETECH
 ProductVersion: 1.8.1
@@ -9,51 +9,232 @@ BuildDate: 2019-12-07T09:01:50
 BuildStamp: 191207-live-983c3e2
 BuildNumber: 640R
 
-2020-02-12T10:18:50 FYLS [DEBUG] Suspending Audio Engine. Still proccess? True
-2020-02-12T10:18:55 FYLS [LOG] MDD opened successfully.
-2020-02-12T10:18:56 FYLS [DEBUG] Get data:
-2020-02-12T10:18:56 FYLS [DEBUG] - key: key.svg C:\Program Files (x86)\Steam\steamapps\common\BATTLETECH\Mods\CustomComponents\test\icons\key.svg key
-2020-02-12T10:18:56 FYLS [DEBUG] - laptop: laptop.svg C:\Program Files (x86)\Steam\steamapps\common\BATTLETECH\Mods\CustomComponents\test\icons\laptop.svg laptop
-2020-02-12T10:18:56 FYLS [DEBUG] - layers: layers.svg C:\Program Files (x86)\Steam\steamapps\common\BATTLETECH\Mods\CustomComponents\test\icons\layers.svg layers
-2020-02-12T10:18:56 FYLS [LOG] loaded
-2020-02-12T10:18:57 FYLS [LOG] [NetworkSynchronizationMessageHandler] Creating!
-2020-02-12T10:18:57 FYLS [LOG] GameInstance created: Wed Feb 12 2020 15:18:57
-2020-02-12T10:18:58 FYLS [LOG] clearing
-2020-02-12T10:18:58 FYLS [LOG] starting refresh
-2020-02-12T10:18:58 FYLS [LOG] 	Failed to load Newtonsoft.Json.dll at path C:\Users\Dadderino\Documents\My Games\BattleTech\mods\HBS\Newtonsoft.Json.dll, because it doesn't exist at that path.
-2020-02-12T10:18:58 FYLS [LOG] ModPath : C:\Users\Dadderino\Documents\My Games\BattleTech\mods\HBS\ModSample\mod.json
-2020-02-12T10:18:58 FYLS [WARNING] Node UIRoot already contains module uixPrf_UIManagerFader(Clone)
-2020-02-12T10:18:58 FYLS [LOG] StoreStats - success
-2020-02-12T10:18:58 FYLS [LOG] Received stats and achievements from Steam
+2020-02-12T10:46:35 FYLS [DEBUG] setting up features
+2020-02-12T10:46:35 FYLS [DEBUG] OrderedStatusEffectsFeature setting up (Enabled=True Namespace=MechEngineer.Features.OrderedStatusEffects)
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch StatCollection_ModifyStatistic_Patch
+2020-02-12T10:46:35 FYLS [LOG] OrderedStatusEffectsFeature enabled
+2020-02-12T10:46:35 FYLS [DEBUG] OverrideTonnageFeature setting up (Enabled=True Namespace=MechEngineer.Features.OverrideTonnage)
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch MechValidationRules_ValidateMechTonnage_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch MechLabMechInfoWidget_CalculateTonnage_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch MechStatisticsRules_CalculateTonnage_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Custom Weights
+2020-02-12T10:46:35 FYLS [LOG] OverrideTonnageFeature enabled
+2020-02-12T10:46:35 FYLS [DEBUG] EngineFeature setting up (Enabled=True Namespace=MechEngineer.Features.Engines)
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch MechStatisticsRules_CalculateChassisMovementStat_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch Mech_CalcJumpHeat_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch Mech_JumpDistance_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch Contract_GenerateSalvage_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch MechLabMechInfoWidget_GetTotalHardpoints_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch MechStatisticsRules_CalculateHeatEfficiencyStat_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch MechStatisticsRules_CalculateMovementStat_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch Mech_GetHeatSinkDissipation_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch Mech_InitEffectStats_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch StatTooltipData_SetHeatData_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch StatTooltipData_SetMovementData_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Custom CoolingDef
+2020-02-12T10:46:35 FYLS [DEBUG]  Custom EngineCoreDef
+2020-02-12T10:46:35 FYLS [DEBUG]  Custom EngineHeatBlockDef
+2020-02-12T10:46:35 FYLS [DEBUG]  Custom EngineHeatSinkDef
+2020-02-12T10:46:35 FYLS [LOG] EngineFeature enabled
+2020-02-12T10:46:35 FYLS [DEBUG] MoveMultiplierStatFeature setting up (Enabled=True Namespace=MechEngineer.Features.MoveMultiplierStat)
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch Mech_InitEffectStats_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch Mech_MoveMultiplier_Patch
+2020-02-12T10:46:35 FYLS [LOG] MoveMultiplierStatFeature enabled
+2020-02-12T10:46:35 FYLS [DEBUG] CompressFloatieMessagesFeature setting up (Enabled=True Namespace=MechEngineer.Features.CompressFloatieMessages)
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch CombatHUDFloatieStack_AddFloatie_Patch
+2020-02-12T10:46:35 FYLS [LOG] CompressFloatieMessagesFeature enabled
+2020-02-12T10:46:35 FYLS [DEBUG] DamageIgnoreFeature setting up (Enabled=True Namespace=MechEngineer.Features.DamageIgnore)
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch MechComponent_DamageComponent_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch MechComponent_inventorySize_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch Mech_OnLocationDestroyed_Patch
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch Mech_GetComponentInSlot_Patch
+2020-02-12T10:46:35 FYLS [LOG] DamageIgnoreFeature enabled
+2020-02-12T10:46:35 FYLS [DEBUG] LocationalEffectsFeature setting up (Enabled=True Namespace=MechEngineer.Features.LocationalEffects)
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch MechComponent_ApplyPassiveEffectToTarget_Patch
+2020-02-12T10:46:35 FYLS [LOG] LocationalEffectsFeature enabled
+2020-02-12T10:46:35 FYLS [DEBUG] CriticalEffectsFeature setting up (Enabled=True Namespace=MechEngineer.Features.CriticalEffects)
+2020-02-12T10:46:35 FYLS [DEBUG]  Patch Mech_CheckForCrit_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechComponent_inventorySize_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechComponent_DamageComponent_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Custom MechCriticalEffects
+2020-02-12T10:46:36 FYLS [DEBUG]  Custom TurretCriticalEffects
+2020-02-12T10:46:36 FYLS [DEBUG]  Custom VehicleCriticalEffects
+2020-02-12T10:46:36 FYLS [DEBUG]  Custom CriticalEffects
+2020-02-12T10:46:36 FYLS [LOG] CriticalEffectsFeature enabled
+2020-02-12T10:46:36 FYLS [DEBUG] AccuracyEffectsFeature setting up (Enabled=True Namespace=MechEngineer.Features.AccuracyEffects)
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch ToHit_GetSelfArmMountedModifier_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch Mech_InitEffectStats_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch CombatHUDWeaponSlot_AddToolTipDetail_Patch
+2020-02-12T10:46:36 FYLS [LOG] AccuracyEffectsFeature enabled
+2020-02-12T10:46:36 FYLS [DEBUG] OverrideDescriptionsFeature setting up (Enabled=True Namespace=MechEngineer.Features.OverrideDescriptions)
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch ListElementController_BASE_NotListView_SetComponentTooltipData_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabPanel_CreateMechComponentItem_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabPanel_ValidateLoadout_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch TooltipPrefab_EquipmentSetData_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Custom BonusDescriptions
+2020-02-12T10:46:36 FYLS [LOG] OverrideDescriptionsFeature enabled
+2020-02-12T10:46:36 FYLS [DEBUG] ArmActuatorFeature setting up (Enabled=True Namespace=MechEngineer.Features.ArmActuators)
+2020-02-12T10:46:36 FYLS [DEBUG]  Custom ArmActuator
+2020-02-12T10:46:36 FYLS [DEBUG]  Custom ArmActuatorSupport
+2020-02-12T10:46:36 FYLS [LOG] ArmActuatorFeature enabled
+2020-02-12T10:46:36 FYLS [DEBUG] DynamicSlotsFeature setting up (Enabled=True Namespace=MechEngineer.Features.DynamicSlots)
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabItemSlotElement_SetIconAndText_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabItemSlotElement_OnPointerEnter_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabItemSlotElement_OnPointerExit_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabPanel_ValidateLoadout_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Custom DynamicSlots
+2020-02-12T10:46:36 FYLS [LOG] DynamicSlotsFeature enabled
+2020-02-12T10:46:36 FYLS [DEBUG] ShutdownInjuryProtectionFeature setting up (Enabled=True Namespace=MechEngineer.Features.ShutdownInjuryProtection)
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch Pilot_InjuryReasonDescription_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch Mech_CheckForHeatDamage_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch Mech_InitEffectStats_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechShutdownSequence_CheckForHeatDamage_Patch
+2020-02-12T10:46:36 FYLS [LOG] ShutdownInjuryProtectionFeature enabled
+2020-02-12T10:46:36 FYLS [DEBUG] MechLabSlotsFeature setting up (Enabled=True Namespace=MechEngineer.Features.MechLabSlots)
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabLocationWidget_OnAddItem_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabLocationWidget_OnDrop_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabLocationWidget_SetData_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabLocationWidget_ShowHighlightFrame_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabPanel_InitWidgets_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabPanel_LoadMech_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabPanel_RefreshDropHighlights_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Custom MechConfiguration
+2020-02-12T10:46:36 FYLS [LOG] MechLabSlotsFeature enabled
+2020-02-12T10:46:36 FYLS [DEBUG] InvalidInventoryFeature setting up (Enabled=True Namespace=MechEngineer.Features.InvalidInventory)
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechValidationRules_ValidateMechDef_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabPanel_GetCantSaveErrorString_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechLabPanel_GetNonFieldableErrorString_Patch
+2020-02-12T10:46:36 FYLS [LOG] InvalidInventoryFeature enabled
+2020-02-12T10:46:36 FYLS [DEBUG] ComponentExplosionsFeature setting up (Enabled=True Namespace=MechEngineer.Features.ComponentExplosions)
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch Vehicle_DamageLocation_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch MechComponent_DamageComponent_Patch
+2020-02-12T10:46:36 FYLS [DEBUG]  Patch Mech_DamageLocation_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch AmmunitionBox_DamageComponent_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Custom CASEComponent
+2020-02-12T10:46:37 FYLS [DEBUG]  Custom ComponentExplosion
+2020-02-12T10:46:37 FYLS [LOG] ComponentExplosionsFeature enabled
+2020-02-12T10:46:37 FYLS [DEBUG] ArmorStructureRatioFeature setting up (Enabled=True Namespace=MechEngineer.Features.ArmorStructureRatio)
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechValidationRules_ValidateMechStructureSimple_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechValidationRules_ValidateMechStructure_Patch
+2020-02-12T10:46:37 FYLS [LOG] ArmorStructureRatioFeature enabled
+2020-02-12T10:46:37 FYLS [DEBUG] ArmorStructureChangesFeature setting up (Enabled=True Namespace=MechEngineer.Features.ArmorStructureChanges)
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch Mech_GetMaxArmor_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch Mech_GetMaxStructure_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch Mech_InitStats_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch Mech_ToMechDef_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch Mech_get_ArmorMultiplier_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch Mech_get_StructureMultiplier_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Custom ArmorStructureChanges
+2020-02-12T10:46:37 FYLS [LOG] ArmorStructureChangesFeature enabled
+2020-02-12T10:46:37 FYLS [DEBUG] HardpointFixFeature setting up (Enabled=True Namespace=MechEngineer.Features.HardpointFix)
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch ChassisDef_refreshLocationReferences_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch ChassisDef_RefreshHardpointData_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechLabLocationWidget_OnMechLabDrop_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch HardpointDataDef_FromJSON_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechHardpointRules_GetComponentBlankNames_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechHardpointRules_GetComponentPrefabName_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch Mech_InitGameRep_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechRepresentationSimGame_LoadWeapons_Patch
+2020-02-12T10:46:37 FYLS [LOG] HardpointFixFeature enabled
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch JumpJetDef_FromJSON_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch WeaponDef_FromJSON_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch UpgradeDef_FromJSON_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch ChassisDef_FromJSON_Patch
+2020-02-12T10:46:37 FYLS [LOG] AutoFixerFeature enabled
+2020-02-12T10:46:37 FYLS [DEBUG] GlobalsFeature setting up (Enabled=True Namespace=MechEngineer.Features.Globals)
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechBayPanel_CloseMechBay_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechBayPanel_SelectMech_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechLabPanel_ExitMechLab_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechLabPanel_LoadMech_Patch
+2020-02-12T10:46:37 FYLS [LOG] GlobalsFeature enabled
+2020-02-12T10:46:37 FYLS [DEBUG] TurretMechComponentsFeature setting up (Enabled=True Namespace=MechEngineer.Features.TurretMechComponents)
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch Turret_InitStats_Patch
+2020-02-12T10:46:37 FYLS [LOG] TurretMechComponentsFeature enabled
+2020-02-12T10:46:37 FYLS [DEBUG] TurretLimitedAmmoFeature setting up (Enabled=True Namespace=MechEngineer.Features.TurretLimitedAmmo)
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch Turret_OnNewRound_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch Weapon_DecrementAmmo_Patch
+2020-02-12T10:46:37 FYLS [LOG] TurretLimitedAmmoFeature enabled
+2020-02-12T10:46:37 FYLS [DEBUG] OverrideGhostVFXFeature setting up (Enabled=True Namespace=MechEngineer.Features.OverrideGhostVFX)
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch PilotableActorRepresentation_OnPlayerVisibilityChanged_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch GameRepresentation_PlayVFXAt_Patch
+2020-02-12T10:46:37 FYLS [LOG] OverrideGhostVFXFeature enabled
+2020-02-12T10:46:37 FYLS [DEBUG] OmniSlotsFeature setting up (Enabled=True Namespace=MechEngineer.Features.OmniSlots)
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechBayMechInfoWidget_GetTotalHardpoints_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechLabLocationWidget_ValidateAdd_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch SG_Shop_ItemSelectedPanel_FillInHardPoints_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechBayMechInfoWidget_SetHardpoints_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechLabLocationWidget_ValidateAddSimple_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechLabLocationWidget_RefreshHardpointData_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechLabLocationWidget_ShowHighlightFrame_Patch
+2020-02-12T10:46:37 FYLS [DEBUG]  Patch MechValidationRules_ValidateMechInventorySlots_Patch
+2020-02-12T10:46:38 FYLS [LOG] OmniSlotsFeature enabled
+2020-02-12T10:46:38 FYLS [DEBUG] TagManagerFeature setting up (Enabled=True Namespace=MechEngineer.Features.TagManager)
+2020-02-12T10:46:38 FYLS [DEBUG]  Patch JSONSerializationUtility_RehydrateObjectFromDictionary_Patch
+2020-02-12T10:46:38 FYLS [DEBUG]  Patch MechLabPanel_ComponentDefTagsValid_Patch
+2020-02-12T10:46:38 FYLS [LOG] TagManagerFeature enabled
+2020-02-12T10:46:38 FYLS [DEBUG] DebugSaveMechToFileFeature setting up (Enabled=False Namespace=MechEngineer.Features.DebugSaveMechToFile)
+2020-02-12T10:46:38 FYLS [LOG] DebugSaveMechToFileFeature disabled
+2020-02-12T10:46:38 FYLS [DEBUG] DebugCycleCombatSoundsFeature setting up (Enabled=False Namespace=MechEngineer.Features.DebugCycleCombatSounds)
+2020-02-12T10:46:38 FYLS [LOG] DebugCycleCombatSoundsFeature disabled
+2020-02-12T10:46:38 FYLS [DEBUG] DebugScreenshotMechsFeature setting up (Enabled=False Namespace=MechEngineer.Features.DebugScreenshotMechs)
+2020-02-12T10:46:38 FYLS [LOG] DebugScreenshotMechsFeature disabled
+2020-02-12T10:46:38 FYLS [LOG] started
+2020-02-12T10:46:50 FYLS [LOG] MDD opened successfully.
+2020-02-12T10:46:50 FYLS [LOG] MDD Saved.
+2020-02-12T10:46:52 FYLS [DEBUG] Get data:
+2020-02-12T10:46:52 FYLS [DEBUG] - key: key.svg C:\Program Files (x86)\Steam\steamapps\common\BATTLETECH\Mods\CustomComponents\test\icons\key.svg key
+2020-02-12T10:46:52 FYLS [DEBUG] - laptop: laptop.svg C:\Program Files (x86)\Steam\steamapps\common\BATTLETECH\Mods\CustomComponents\test\icons\laptop.svg laptop
+2020-02-12T10:46:52 FYLS [DEBUG] - layers: layers.svg C:\Program Files (x86)\Steam\steamapps\common\BATTLETECH\Mods\CustomComponents\test\icons\layers.svg layers
+2020-02-12T10:46:52 FYLS [LOG] loaded
+2020-02-12T10:46:53 FYLS [LOG] [NetworkSynchronizationMessageHandler] Creating!
+2020-02-12T10:46:53 FYLS [LOG] GameInstance created: Wed Feb 12 2020 15:46:53
+2020-02-12T10:46:53 FYLS [LOG] clearing
+2020-02-12T10:46:53 FYLS [LOG] starting refresh
+2020-02-12T10:46:53 FYLS [LOG] 	Failed to load Newtonsoft.Json.dll at path C:\Users\Dadderino\Documents\My Games\BattleTech\mods\HBS\Newtonsoft.Json.dll, because it doesn't exist at that path.
+2020-02-12T10:46:53 FYLS [LOG] ModPath : C:\Users\Dadderino\Documents\My Games\BattleTech\mods\HBS\ModSample\mod.json
+2020-02-12T10:46:53 FYLS [WARNING] Node UIRoot already contains module uixPrf_UIManagerFader(Clone)
+2020-02-12T10:46:53 FYLS [LOG] StoreStats - success
+2020-02-12T10:46:53 FYLS [LOG] Received stats and achievements from Steam
 
-2020-02-12T10:18:58 FYLS [DEBUG] [NOT_A_BLOCK] BattleTech.Save.Core.SaveBlockException: Invalid file signature.
+2020-02-12T10:46:53 FYLS [DEBUG] [NOT_A_BLOCK] BattleTech.Save.Core.SaveBlockException: Invalid file signature.
   at BattleTech.Save.Core.SaveBlock`1[T].ProcessFileSignature (System.Byte[] bytes) [0x00041] in <3a3b490f618743a4be67f60469483e7a>:0 
   at BattleTech.Save.Core.MultiReadSaveBlock`1[T].ProcessBytes_MultiRead_MetaData (System.Byte[] bytes) [0x00008] in <3a3b490f618743a4be67f60469483e7a>:0 
   at BattleTech.Save.Core.MultiReadSaveBlock`1[T].ProcessBytes (System.Byte[] bytes) [0x00058] in <3a3b490f618743a4be67f60469483e7a>:0 
-2020-02-12T10:18:58 FYLS [DEBUG] [NOT_A_BLOCK] BattleTech.Save.Core.SaveBlockException: Invalid file signature.
+2020-02-12T10:46:53 FYLS [DEBUG] [NOT_A_BLOCK] BattleTech.Save.Core.SaveBlockException: Invalid file signature.
   at BattleTech.Save.Core.SaveBlock`1[T].ProcessFileSignature (System.Byte[] bytes) [0x00041] in <3a3b490f618743a4be67f60469483e7a>:0 
   at BattleTech.Save.Core.MultiReadSaveBlock`1[T].ProcessBytes_MultiRead_MetaData (System.Byte[] bytes) [0x00008] in <3a3b490f618743a4be67f60469483e7a>:0 
   at BattleTech.Save.Core.MultiReadSaveBlock`1[T].ProcessBytes (System.Byte[] bytes) [0x00058] in <3a3b490f618743a4be67f60469483e7a>:0 
-2020-02-12T10:18:58 FYLS [DEBUG] [NOT_A_BLOCK] BattleTech.Save.Core.SaveBlockException: Invalid file signature.
+2020-02-12T10:46:53 FYLS [DEBUG] [NOT_A_BLOCK] BattleTech.Save.Core.SaveBlockException: Invalid file signature.
   at BattleTech.Save.Core.SaveBlock`1[T].ProcessFileSignature (System.Byte[] bytes) [0x00041] in <3a3b490f618743a4be67f60469483e7a>:0 
   at BattleTech.Save.Core.MultiReadSaveBlock`1[T].ProcessBytes_MultiRead_MetaData (System.Byte[] bytes) [0x00008] in <3a3b490f618743a4be67f60469483e7a>:0 
   at BattleTech.Save.Core.MultiReadSaveBlock`1[T].ProcessBytes (System.Byte[] bytes) [0x00058] in <3a3b490f618743a4be67f60469483e7a>:0 
-2020-02-12T10:18:58 FYLS [DEBUG] [NOT_A_BLOCK] BattleTech.Save.Core.SaveBlockException: Invalid file signature.
+2020-02-12T10:46:53 FYLS [DEBUG] [NOT_A_BLOCK] BattleTech.Save.Core.SaveBlockException: Invalid file signature.
   at BattleTech.Save.Core.SaveBlock`1[T].ProcessFileSignature (System.Byte[] bytes) [0x00041] in <3a3b490f618743a4be67f60469483e7a>:0 
   at BattleTech.Save.Core.MultiReadSaveBlock`1[T].ProcessBytes_MultiRead_MetaData (System.Byte[] bytes) [0x00008] in <3a3b490f618743a4be67f60469483e7a>:0 
   at BattleTech.Save.Core.MultiReadSaveBlock`1[T].ProcessBytes (System.Byte[] bytes) [0x00058] in <3a3b490f618743a4be67f60469483e7a>:0 
-2020-02-12T10:18:58 FYLS [DEBUG] [NOT_A_BLOCK] BattleTech.Save.Core.SaveBlockException: Invalid file signature.
+2020-02-12T10:46:53 FYLS [DEBUG] [NOT_A_BLOCK] BattleTech.Save.Core.SaveBlockException: Invalid file signature.
   at BattleTech.Save.Core.SaveBlock`1[T].ProcessFileSignature (System.Byte[] bytes) [0x00041] in <3a3b490f618743a4be67f60469483e7a>:0 
   at BattleTech.Save.Core.MultiReadSaveBlock`1[T].ProcessBytes_MultiRead_MetaData (System.Byte[] bytes) [0x00008] in <3a3b490f618743a4be67f60469483e7a>:0 
   at BattleTech.Save.Core.MultiReadSaveBlock`1[T].ProcessBytes (System.Byte[] bytes) [0x00058] in <3a3b490f618743a4be67f60469483e7a>:0 
-2020-02-12T10:18:58 FYLS [ERROR] invalid handle
-2020-02-12T10:18:58 FYLS [ERROR] invalid handle
-2020-02-12T10:18:58 FYLS [ERROR] invalid handle
-2020-02-12T10:18:58 FYLS [ERROR] invalid handle
-2020-02-12T10:18:58 FYLS [ERROR] invalid handle
-2020-02-12T10:18:58 FYLS [LOG] refresh complete
-2020-02-12T10:18:58 FYLS [LOG] notifying users UI refresh is needed
-2020-02-12T10:18:58 FYLS [DEBUG] Using existing local settings from save manager
-2020-02-12T10:18:59 FYLS [LOG] Hash [YWp66Wsf/mD9f3ecTrm5vpeueWXwqna4JFcketcG3xM=] calc time 659 
-2020-02-12T10:19:02 FYLS [LOG] Loading level MainMenu
-2020-02-12T10:19:02 FYLS [LOG] Level MainMenu took 2.594678s to load
+2020-02-12T10:46:53 FYLS [ERROR] invalid handle
+2020-02-12T10:46:53 FYLS [ERROR] invalid handle
+2020-02-12T10:46:53 FYLS [ERROR] invalid handle
+2020-02-12T10:46:53 FYLS [ERROR] invalid handle
+2020-02-12T10:46:53 FYLS [ERROR] invalid handle
+2020-02-12T10:46:53 FYLS [LOG] refresh complete
+2020-02-12T10:46:53 FYLS [LOG] notifying users UI refresh is needed
+2020-02-12T10:46:53 FYLS [DEBUG] Using existing local settings from save manager
+2020-02-12T10:46:54 FYLS [LOG] Hash [/Mjd1vY+F7O/VXHSGT/bOrJo+9+yCkTOxyAesOrRR6k=] calc time 658 
+2020-02-12T10:46:57 FYLS [LOG] Loading level MainMenu
+2020-02-12T10:46:58 FYLS [LOG] Level MainMenu took 2.587125s to load
+2020-02-12T10:47:05 FYLS [LOG] shutting down game
+2020-02-12T10:47:05 FYLS [LOG] attempting to quit
+2020-02-12T10:47:05 FYLS [LOG] invoking appshutdown message
+2020-02-12T10:47:06 FYLS [LOG] SHUTTING DOWN
+2020-02-12T10:47:06 FYLS [LOG] idle. shutting down now
+2020-02-12T10:47:06 FYLS [LOG] shutdown complete
+2020-02-12T10:47:06 FYLS [LOG] quit systems
+2020-02-12T10:47:06 FYLS [LOG] Closed File Log Appenders
+2020-02-12T10:47:06 FYLS [LOG] quit systems complete
+2020-02-12T10:47:06 FYLS [LOG] shutting down steam
+2020-02-12T10:47:06 FYLS [LOG] quiting application

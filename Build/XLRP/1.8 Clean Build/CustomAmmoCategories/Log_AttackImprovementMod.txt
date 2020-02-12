@@ -1,13 +1,13 @@
-10:18:42.8330 INFO 2020-02-12 Loading AttackImprovementMod Version 3.1.0.38 @ C:\Program Files (x86)\Steam\steamapps\common\BATTLETECH\Mods\CustomAmmoCategories/
-10:18:42.8330 INFO Game Version 1.8.1, Harmony Version 1.2.0.1, Mod Dll Version 3.1.0.38
+10:46:38.9880 INFO 2020-02-12 Loading AttackImprovementMod Version 3.1.0.38 @ C:\Program Files (x86)\Steam\steamapps\common\BATTLETECH\Mods\CustomAmmoCategories/
+10:46:38.9880 INFO Game Version 1.8.1, Harmony Version 1.2.0.1, Mod Dll Version 3.1.0.38
 
-10:18:42.8789 INFO Harmony instance "Sheepy.BattleTechMod.AttackImprovementMod"
-10:18:42.8799 FINE Patched: BattleTech.UnityGameInstance Void InitUserSettings() [  : RunGameStarts :  ]
-10:18:42.8809 FINE Patched: BattleTech.SimGameState Void Init(BattleTech.GameInstance, SimGameType, Boolean, BattleTech.SimGameDifficulty) [  : RunCampaignStarts :  ]
-10:18:42.8839 FINE Patched: BattleTech.UI.CombatHUD Void Init(BattleTech.CombatGameState) [  : RunCombatStarts :  ]
-10:18:42.8849 FINE Patched: BattleTech.UI.CombatHUD Void OnCombatGameDestroyed() [  : RunCombatEnds :  ]
-10:18:42.8973 INFO WARNING: Do NOT change settings here. This is just a log.
-10:18:42.8973 INFO Loaded Settings: {
+10:46:39.0199 INFO Harmony instance "Sheepy.BattleTechMod.AttackImprovementMod"
+10:46:39.0209 FINE Patched: BattleTech.UnityGameInstance Void InitUserSettings() [  : RunGameStarts :  ]
+10:46:39.0220 FINE Patched: BattleTech.SimGameState Void Init(BattleTech.GameInstance, SimGameType, Boolean, BattleTech.SimGameDifficulty) [  : RunCampaignStarts :  ]
+10:46:39.0249 FINE Patched: BattleTech.UI.CombatHUD Void Init(BattleTech.CombatGameState) [  : RunCombatStarts :  ]
+10:46:39.0259 FINE Patched: BattleTech.UI.CombatHUD Void OnCombatGameDestroyed() [  : RunCombatEnds :  ]
+10:46:39.0409 INFO WARNING: Do NOT change settings here. This is just a log.
+10:46:39.0409 INFO Loaded Settings: {
   "FixWeaponStats": true,
   "FixMultiTargetBackout": true,
   "AggressiveMultiTargetAssignment": false,
@@ -154,24 +154,24 @@
   "LogFolder": "",
   "SettingVersion": 2007000
 }
-10:18:42.8973 INFO WARNING: Do NOT change settings here. This is just a log.
-10:18:58.0346 INFO Detected Mods: io.github.mpstark.ModTek, com.joelmeador.FYLS, us.frostraptor.IRTweaks, io.mission.customlocalization, com.github.m22spencer.BattletechPerformanceFix, MechEngineer.Features.Globals, io.github.denadan.CustomComponents, dZ.Zappo.Pilot_Quirks, io.mission.modrepuation, Sheepy.BattleTechMod.AttackImprovementMod, us.frostraptor.IRBTModUtils, MechEngineer.Features.TagManager, us.frostraptor.LootMagnet, MechEngineer.Features.Engines, MechEngineer.Features.MechLabSlots, MechEngineer.Features.HardpointFix, MechEngineer.Features.InvalidInventory, MechEngineer.Features.OrderedStatusEffects, MechEngineer.Features.OverrideTonnage, MechEngineer.Features.OmniSlots, MechEngineer.Features.MoveMultiplierStat, MechEngineer.Features.AccuracyEffects, MechEngineer.Features.ShutdownInjuryProtection, MechEngineer.Features.CompressFloatieMessages, com.BattleTech.PanicSystem, MechEngineer.Features.DamageIgnore, MechEngineer.Features.CriticalEffects, MechEngineer.Features.ComponentExplosions, MechEngineer.Features.LocationalEffects, MechEngineer.Features.OverrideDescriptions, MechEngineer.Features.DynamicSlots, us.frostraptor.CBTBehaviorsEnhanced, MechEngineer.Features.ArmorStructureRatio, MechEngineer.Features.ArmorStructureChanges, MechEngineer.Features.AutoFix, MechEngineer.Features.TurretMechComponents, MechEngineer.Features.TurretLimitedAmmo, MechEngineer.Features.OverrideGhostVFX, io.github.mpstark.SkipIntro, io.github.mpstark.SkipTravelCutscenes, de.ben.MightyChargingJuggernaut, dZ.Zappo.Pilot_Fatigue, io.github.mpstark.PilotHealthPopup, Battletech.realitymachina.ShutUpDarius, com.battletech.repairbays
-10:18:58.0376 FINE Patched: BattleTech.UI.HUDMechArmorReadout Void RefreshMechStructureAndArmor() [  : ShowStructureDamageThroughArmour :  ]
-10:18:58.0406 FINE Patched: BattleTech.UI.HUDMechArmorReadout Void UpdateMechStructureAndArmor(BattleTech.AttackDirection) [  : FixRearStructureDisplay :  ]
-10:18:58.0426 FINE Patched: BattleTech.UI.HUDMechArmorReadout Void Init(BattleTech.UI.CombatHUD, Boolean, Boolean, Boolean) [  : AddPaperDollSideLabel :  ]
-10:18:58.0436 FINE Patched: BattleTech.WeaponDef Void FromJSON(System.String) [  : FixWeaponStats :  ]
-10:19:00.3805 INFO Weapon_LRM_LRM10_2-Delta Instability seems to be already fixed.
-10:19:00.3865 INFO Weapon_LRM_LRM15_2-Delta Instability seems to be already fixed.
-10:19:00.4184 INFO Weapon_LRM_LRM5_2-Delta Instability seems to be already fixed.
-10:19:00.4234 INFO Weapon_PPC_PPCER_0-STOCK statusEffects seems to be already fixed.
-10:19:00.4334 INFO PPC debuff cloned.
-10:19:00.4483 INFO Weapon_SRM_SRM6_1-Holly AccuracyModifier seems to be already fixed.
-10:19:00.4493 INFO Weapon_SRM_SRM6_2-Holly AccuracyModifier seems to be already fixed.
-10:19:00.4543 INFO Weapon_Laser_LargeLaserER_2-BlazeFire BonusValueA seems to be already fixed.
-10:19:00.4553 INFO Weapon_Laser_LargeLaserPulse_2-Exostar BonusValueA seems to be already fixed.
-10:19:00.4563 INFO Weapon_Laser_MediumLaserER_2-BrightBloom BonusValueA seems to be already fixed.
-10:19:00.4573 INFO Weapon_Laser_MediumLaserPulse_2-Magna400P BonusValueA seems to be already fixed.
-10:19:00.4583 INFO Weapon_Laser_SmallLaserER_2-BlazeFire BonusValueA seems to be already fixed.
-10:19:00.4623 INFO Weapon_PPC_PPCER_1-MagnaFirestar statusEffects seems to be already fixed.
-10:19:00.4633 INFO Last weapon checked.
-10:19:00.4633 INFO Weapon_PPC_PPCER_2-TiegartMagnum statusEffects seems to be already fixed.
+10:46:39.0409 INFO WARNING: Do NOT change settings here. This is just a log.
+10:46:53.5480 INFO Detected Mods: io.github.mpstark.ModTek, com.joelmeador.FYLS, io.mission.customlocalization, com.github.m22spencer.BattletechPerformanceFix, MechEngineer.Features.Globals, io.github.denadan.CustomComponents, dZ.Zappo.Pilot_Quirks, io.mission.modrepuation, us.frostraptor.IRBTModUtils, Sheepy.BattleTechMod.AttackImprovementMod, MechEngineer.Features.TagManager, us.frostraptor.LootMagnet, MechEngineer.Features.Engines, MechEngineer.Features.MechLabSlots, MechEngineer.Features.HardpointFix, MechEngineer.Features.InvalidInventory, us.frostraptor.IRTweaks, MechEngineer.Features.OrderedStatusEffects, MechEngineer.Features.OverrideTonnage, MechEngineer.Features.OmniSlots, MechEngineer.Features.MoveMultiplierStat, MechEngineer.Features.AccuracyEffects, MechEngineer.Features.ShutdownInjuryProtection, MechEngineer.Features.CompressFloatieMessages, com.BattleTech.PanicSystem, MechEngineer.Features.DamageIgnore, MechEngineer.Features.CriticalEffects, MechEngineer.Features.ComponentExplosions, MechEngineer.Features.LocationalEffects, MechEngineer.Features.OverrideDescriptions, MechEngineer.Features.DynamicSlots, us.frostraptor.CBTBehaviorsEnhanced, MechEngineer.Features.ArmorStructureRatio, MechEngineer.Features.ArmorStructureChanges, MechEngineer.Features.AutoFix, MechEngineer.Features.TurretMechComponents, MechEngineer.Features.TurretLimitedAmmo, MechEngineer.Features.OverrideGhostVFX, de.ben.MightyChargingJuggernaut, io.github.mpstark.PilotHealthPopup, Battletech.realitymachina.ShutUpDarius, com.battletech.repairbays, io.github.mpstark.SkipIntro, io.github.mpstark.SkipTravelCutscenes, dZ.Zappo.Pilot_Fatigue
+10:46:53.5510 FINE Patched: BattleTech.UI.HUDMechArmorReadout Void RefreshMechStructureAndArmor() [  : ShowStructureDamageThroughArmour :  ]
+10:46:53.5540 FINE Patched: BattleTech.UI.HUDMechArmorReadout Void UpdateMechStructureAndArmor(BattleTech.AttackDirection) [  : FixRearStructureDisplay :  ]
+10:46:53.5559 FINE Patched: BattleTech.UI.HUDMechArmorReadout Void Init(BattleTech.UI.CombatHUD, Boolean, Boolean, Boolean) [  : AddPaperDollSideLabel :  ]
+10:46:53.5569 FINE Patched: BattleTech.WeaponDef Void FromJSON(System.String) [  : FixWeaponStats :  ]
+10:46:55.9435 INFO Weapon_LRM_LRM10_2-Delta Instability seems to be already fixed.
+10:46:55.9485 INFO Weapon_LRM_LRM15_2-Delta Instability seems to be already fixed.
+10:46:55.9585 INFO Weapon_LRM_LRM5_2-Delta Instability seems to be already fixed.
+10:46:55.9634 INFO Weapon_PPC_PPCER_0-STOCK statusEffects seems to be already fixed.
+10:46:55.9964 INFO PPC debuff cloned.
+10:46:56.0103 INFO Weapon_SRM_SRM6_1-Holly AccuracyModifier seems to be already fixed.
+10:46:56.0123 INFO Weapon_SRM_SRM6_2-Holly AccuracyModifier seems to be already fixed.
+10:46:56.0163 INFO Weapon_Laser_LargeLaserER_2-BlazeFire BonusValueA seems to be already fixed.
+10:46:56.0173 INFO Weapon_Laser_LargeLaserPulse_2-Exostar BonusValueA seems to be already fixed.
+10:46:56.0193 INFO Weapon_Laser_MediumLaserER_2-BrightBloom BonusValueA seems to be already fixed.
+10:46:56.0203 INFO Weapon_Laser_MediumLaserPulse_2-Magna400P BonusValueA seems to be already fixed.
+10:46:56.0213 INFO Weapon_Laser_SmallLaserER_2-BlazeFire BonusValueA seems to be already fixed.
+10:46:56.0253 INFO Weapon_PPC_PPCER_1-MagnaFirestar statusEffects seems to be already fixed.
+10:46:56.0263 INFO Last weapon checked.
+10:46:56.0263 INFO Weapon_PPC_PPCER_2-TiegartMagnum statusEffects seems to be already fixed.
