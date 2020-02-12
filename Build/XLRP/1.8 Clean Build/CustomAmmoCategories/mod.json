@@ -14,7 +14,8 @@
     "Website": "https://www.nexusmods.com/battletech/mods/381",
 	"Settings": {
 		"debug": true
-	}/*
+	},
+/*
   "DataAddendumEntries":[
     {
       "name": "BattleTech.FactionEnumeration",
@@ -24,21 +25,21 @@
       "name": "BattleTech.WeaponCategoryEnumeration",
       "path": "WeaponCategory.json"
     }
-  ],
+  ],*/
 	"Manifest": [
-    { "Type": "AssetBundle", "Path": "assetbundles" },	
-		{ "Type": "AmmunitionDef", "Path": "ammunition\\" },
-		{ "Type": "AmmunitionBoxDef", "Path": "ammunitionBox\\" },
-		{ "Type": "WeaponDef", "Path": "weapon\\" },
-		{ "Type": "DesignMaskDef", "Path": "designmask\\" },
-		{ "Type": "AbilityDef", "Path": "abilities\\" },
-		{ "Type": "UpgradeDef", "Path": "upgrades\\" },
-		{ "Type": "ChassisDef", "Path": "chassis\\" },
-		{ "Type": "MechDef", "Path": "mech\\" },
-		{ "Type": "PilotDef", "Path": "pilot\\" },
-		{ "Type": "FactionDef", "Path": "Factions" },
-		{ "Type": "HeatSinkDef", "Path": "heatsinks\\" },
-		{ "Type": "HardpointDataDef", "Path": "hardpoints\\" },
-    { "Type": "Prefab", "Path": "assets/circlesaw/circle_saw_gringer.prefab", "AssetBundleName": "circle_saw" }
-  ]*/
+		//{ "Type": "AssetBundle", "Path": "assetbundles" },	
+		//{ "Type": "AmmunitionDef", "Path": "ammunition\\" },
+		//{ "Type": "AmmunitionBoxDef", "Path": "ammunitionBox\\" },
+		//{ "Type": "WeaponDef", "Path": "weapon\\" },
+		//{ "Type": "DesignMaskDef", "Path": "designmask\\" },
+		{ "Type": "AbilityDef", "Path": "abilities\\" }
+		//{ "Type": "UpgradeDef", "Path": "upgrades\\" },
+		//{ "Type": "ChassisDef", "Path": "chassis\\" },
+		//{ "Type": "MechDef", "Path": "mech\\" },
+		//{ "Type": "PilotDef", "Path": "pilot\\" },
+		//{ "Type": "FactionDef", "Path": "Factions" },
+		//{ "Type": "HeatSinkDef", "Path": "heatsinks\\" },
+		//{ "Type": "HardpointDataDef", "Path": "hardpoints\\" },
+		//{ "Type": "Prefab", "Path": "assets/circlesaw/circle_saw_gringer.prefab", "AssetBundleName": "circle_saw" }
+  ]
 }
