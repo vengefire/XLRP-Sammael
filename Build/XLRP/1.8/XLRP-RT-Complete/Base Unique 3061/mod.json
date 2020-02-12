@@ -1,0 +1,17 @@
+{
+  "Name": "Base 3061 Uniques",
+  "Author": "the RT Team",
+  "Enabled": true,
+  "DependsOn": [],
+  "ConflictsWith": [],
+  "Manifest": [
+    {
+      "Type": "MechDef",
+      "Path": "mech"
+    },
+    {
+      "Type": "ChassisDef",
+      "Path": "chassis"
+    }
+  ]
+}

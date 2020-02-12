@@ -4,7 +4,7 @@
 
     "DependsOn": [],
 
-    "OptionallyDependsOn": [ "cfixes", "CommunityBundles", "LC_SLDFRoyal_DLC", "LC_SLDFRoyal_Addon", "LC_SLDFRoyal_WR", "LC_SLDFRoyal_Unique", "BT_Extended_3025" , "BT_Extended_3025_Plus", "BT_Extended_3025_PlusVee", "JK_VariantsCAB", "JK_VariantsStarLeague", "JK_VariantsDLC", "JK_VariantsCampaign", "XLRP", "XLRP-CAB-3030", "XLRP-Flashpoint", "XLRP-Flashpoint-3049", "XLRP-UrbanWarfare", "XLRP-UrbanWarfare-3049"],
+    "OptionallyDependsOn": [ "cfixes", "LC_SLDFRoyal_DLC", "LC_SLDFRoyal_Addon", "LC_SLDFRoyal_WR", "LC_SLDFRoyal_Unique", "BT_Extended_3025" , "BT_Extended_3025_Plus", "BT_Extended_3025_PlusVee", "JK_VariantsCAB", "JK_VariantsStarLeague", "JK_VariantsDLC", "JK_VariantsCampaign", "XLRP", "XLRP-CAB-3030", "XLRP-Flashpoint", "XLRP-Flashpoint-3049", "XLRP-UrbanWarfare", "XLRP-UrbanWarfare-3049"],
 
 	"Version": "1.6.2.1",
 	"PackagedOn": "2019-06-21T16:45:00Z",

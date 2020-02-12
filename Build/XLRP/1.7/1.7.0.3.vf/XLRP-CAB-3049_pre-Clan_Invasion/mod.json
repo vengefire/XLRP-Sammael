@@ -5,7 +5,7 @@
     "Description": "An expansion pack for XLRP containing Battlemechs using community made models. Equipment availability for the era leading up to the Clan invasion up to the year 3049.",
     "Author": "XTRMNTR2K and Xalibur75",
     "Website": "https://www.nexusmods.com/battletech/mods/339",
-	"DependsOn": [ "XLRP", "XLRP-CAB-3030", "CommunityBundles", "MechEngineer" ],
+	"DependsOn": [ "XLRP", "XLRP-CAB-3030", "MechEngineer" ],
   
     "Manifest": [
         {

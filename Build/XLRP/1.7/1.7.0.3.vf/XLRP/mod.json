@@ -12,7 +12,7 @@
   "DLL": "CustomAmmoCategories.dll",
   "DLLEntryPoint": "CACMain.Core.Init",
   "DependsOn": ["MechEngineer", "CustomActivatableEquipment" ],
-  "OptionallyDependsOn": ["CommunityBundles"],
+  "OptionallyDependsOn": [],
   "ConflictsWith": [ "WeaponRealizer", "CustomAmmoCategories", "WeaponRealizer", "AIM: Attack Improvement Mod", "ScorchedEarth" ],
   
     "Manifest": [

@@ -1,0 +1,185 @@
+{
+  "Name": "RogueModuleTech",
+  "Enabled": true,
+  "Hidden": true,
+  "Version": "0.1.0",
+  "Description": "The Tech of RogueTech - Core Module",
+  "Author": "LadyAlekto",
+  "Website": "",
+  "Contact": "fakeemail@fakeemail.com",
+  "DependsOn": [
+    "CustomComponents",
+    "SkillBasedInit",
+    "Custom Ammo Categories",
+    "BTRandomStartByDifficultyMenu",
+    "IttyBittyLivingSpace",
+    "MechEngineer",
+    "CustomFilters",
+    "CustomActivatableEquipment",
+    "CustomSalvage",
+    "Mission Control",
+    "GlobalDifficulty",
+    "BiggerDrops",
+    "LowVisibility",
+    "CustomLocalization",
+    "BattletechPerformanceFix",
+    "CustomUnits",
+    "AbilityRealizer",
+    "Rogue Munitions",
+    "DropCostPerMech",
+    "DisorderlyWithdrawal",
+    "MonthlyMoraleReset",
+    "PainTolerance",
+    "PilotHealthPopup",
+    "CleverGirl",
+    "Monthly Tech Adjustment",
+    "PanicSystem",
+    "LootMagnet",
+    "CBTBehaviors",
+    "Repair Bays",
+    "EvasivePipsGainedAdditionalRestorer",
+    "VehicleEvasivePipsGainiedAdditionalFix",
+    "HighDifficultyLanceSpawnFixer",
+    "InnerSphereMap",
+    "BetterJuggernaut"
+  ],
+  "ConflictsWith": [],
+  "Manifest": [
+    {
+      "Type": "UpgradeDef",
+      "Path": "Lootable/Internals"
+    },
+    {
+      "Type": "HeatSinkDef",
+      "Path": "RISC/Engines"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Upgrade"
+    },
+    {
+      "Type": "WeaponDef",
+      "Path": "Artillery"
+    },
+    {
+      "Type": "WeaponDef",
+      "Path": "AMS"
+    },
+    {
+      "Type": "JumpJetDef",
+      "Path": "Jumpjets"
+    },
+    {
+      "Type": "WeaponDef",
+      "Path": "Weapons"
+    },
+    {
+      "Type": "WeaponDef",
+      "Path": "VanillaWeapons"
+    },
+    {
+      "Type": "HeatSinkDef",
+      "Path": "Engines"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Armors"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Cockpit/Other"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Cockpit/Cockpit"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Cockpit/FCS"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Cockpit/FCS_Vanilla"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Cockpit/Sensors"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Gyro"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Structure"
+    },
+    {
+      "Type": "HeatSinkDef",
+      "Path": "Heatsink"
+    },
+    {
+      "Type": "JumpJetDef",
+      "Path": "Quirks/JumpJets"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Quirks/Upgrade/"
+    },
+    {
+      "Type": "HeatSinkDef",
+      "Path": "Quirks/Heatsink"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Basic/Internals"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Basic/ChassisDefaults"
+    },
+    {
+      "Type": "HeatSinkDef",
+      "Path": "Basic/EngineCores"
+    },
+    {
+      "Type": "HeatSinkDef",
+      "Path": "Basic/Engines"
+    },
+    {
+      "Type": "WeaponDef",
+      "Path": "Primitive/Weapons"
+    },
+    {
+      "Type": "HeatSinkDef",
+      "Path": "Primitive/Engines"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Clan/Internals"
+    },
+    {
+      "Type": "WeaponDef",
+      "Path": "Clan/Weapons"
+    },
+    {
+      "Type": "WeaponDef",
+      "Path": "Widget/HandHelds"
+    },
+    {
+      "Type": "WeaponDef",
+      "Path": "Widget/BoltOn"
+    },
+    {
+      "Type": "HeatSinkDef",
+      "Path": "Widget/Cooling"
+    },
+    {
+      "Type": "JumpJetDef",
+      "Path": "Widget/JumpJet"
+    },
+    {
+      "Type": "UpgradeDef",
+      "Path": "Quirks/PositiveQuirks"
+    }
+  ]
+}

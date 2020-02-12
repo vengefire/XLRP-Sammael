@@ -1,0 +1,57 @@
+{
+  "Name": "Base 3061",
+  "Author": "the RT Team",
+  "Enabled": true,
+  "DependsOn": [],
+  "ConflictsWith": [],
+  "Manifest": [
+    {
+      "Type": "MechDef",
+      "Path": "mech"
+    },
+    {
+      "Type": "ChassisDef",
+      "Path": "chassis"
+    },
+    {
+      "Type": "VehicleChassisDef",
+      "Path": "vehicleChassis"
+    },
+    {
+      "Type": "VehicleDef",
+      "Path": "vehicle"
+    },
+    {
+      "Type": "VehicleDef",
+      "Path": "vehicle/light"
+    },
+    {
+      "Type": "VehicleDef",
+      "Path": "vehicle/medium"
+    },
+    {
+      "Type": "VehicleDef",
+      "Path": "vehicle/heavy"
+    },
+    {
+      "Type": "VehicleDef",
+      "Path": "vehicle/assault"
+    },
+    {
+      "Type": "VehicleDef",
+      "Path": "vehicle/carrier"
+    },
+    {
+      "Type": "VehicleDef",
+      "Path": "vehicle/apc"
+    },
+    {
+      "Type": "VehicleChassisDef",
+      "Path": "PrimitiveTanks/vehiclechassis"
+    },
+    {
+      "Type": "VehicleDef",
+      "Path": "PrimitiveTanks/vehicle"
+    }
+  ]
+}

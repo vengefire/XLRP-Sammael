@@ -14,11 +14,11 @@ namespace Data.Console
     {
         private static void Main(string[] args)
         {
-            var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\BEX-CE";
+            var sourceDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH\Mods";
             //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\RogueTech";
             //var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
-            var btDirectory = @"D:\Test Data\BT Base Data";
-            var dlcDirectory = @"C:\Users\Stephen Weistra\gitrepos\bt-dlc-designdata";
+            var btDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH";
+            var dlcDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH\Repository\bt-dlc-designdata";
 
             var manifestService = new ManifestService();
             var manifest = manifestService.InitManifestFromDisk(btDirectory, dlcDirectory);

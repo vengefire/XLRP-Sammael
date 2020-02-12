@@ -79,5 +79,8 @@
         VehicleChassisDef,
         VehicleDef,
         WeaponDef,
+        SoundBankDef,
+        SVGAsset,
+        CustomSVGIcon
     }
 }

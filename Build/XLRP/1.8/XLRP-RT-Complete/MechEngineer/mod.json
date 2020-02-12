@@ -1,0 +1,19 @@
+{
+	"Name": "MechEngineer",
+	"Author": "Maintainer: CptMoore",
+	"Website": "https://github.com/BattletechModders/MechEngineer",
+
+	"Enabled": true,
+	"DependsOn": ["CustomComponents"],
+	"DLL": "MechEngineer.dll",
+	"DLLEntryPoint": "MechEngineer.Control.Start",
+	
+	"LogSettings": {
+		"Enabled" : false
+	},
+	
+	"CustomResourceTypes": ["MEBonusDescriptions", "MECriticalEffects"],
+	
+	"Manifest": [
+	]
+}

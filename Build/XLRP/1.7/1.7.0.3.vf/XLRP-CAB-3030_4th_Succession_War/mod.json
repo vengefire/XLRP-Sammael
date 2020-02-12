@@ -5,7 +5,7 @@
     "Description": "An expansion pack for XLRP containing Battlemechs using community made models. Equipment availability for the 4th Succession War up to the year 3030.",
     "Author": "XTRMNTR2K and Xalibur75",
     "Website": "https://www.nexusmods.com/battletech/mods/339",
-	"DependsOn": [ "XLRP", "CommunityBundles", "MechEngineer"],
+	"DependsOn": [ "XLRP", "MechEngineer"],
   
     "Manifest": [
         {

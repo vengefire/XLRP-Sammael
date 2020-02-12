@@ -31,7 +31,7 @@ namespace Data.Core.ModObjects
 
         [JsonProperty("Contact")] public string Contact { get; set; }
 
-        [JsonProperty("PackagedOn")] public DateTimeOffset PackagedOn { get; set; }
+        [JsonProperty("PackagedOn", NullValueHandling = NullValueHandling.Ignore)] public DateTimeOffset PackagedOn { get; set; }
 
         [JsonProperty("BattleTechVersion")] public string BattleTechVersion { get; set; }
 

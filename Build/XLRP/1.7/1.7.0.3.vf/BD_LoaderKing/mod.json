@@ -2,7 +2,7 @@
     "Name": "bd_roughneckcrane",
     "Enabled": false,
 	"IgnoreLoadFailure": true,
-	"DependsOn": [ "CommunityBundles" ],
+	"DependsOn": [],
 
     "Manifest": [
         
