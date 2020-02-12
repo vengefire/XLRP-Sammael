@@ -7,6 +7,7 @@
     "Manifest": [
 		{ "Type": "ChassisDef", "Path": "ChassisDef", "AddToDB": false},
 		{ "Type": "HardpointDataDef", "Path": "HardpointDataDef", "AddToDB": false},
+		{ "Type": "LanceDef", "Path": "LanceDef", "AddToDB": false},
         { "Type": "MechDef", "Path": "MechDef", "AddToDB": false},
 		{ "Type": "Sprite", "Path": "Sprite", "AddToDB": false },
 		{ "Type": "WeaponDef", "Path": "WeaponDef", "AddToDB": false}
