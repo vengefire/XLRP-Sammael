@@ -1,0 +1,174 @@
+00:04.701 [LOG  ] MechEngineer version 2.0.6+Branch.master.Sha.0c06d6dd8018f0304f2fded3726841f19f4246b3
+00:04.702 [LOG  ] MechEngineer settings loaded
+00:04.702 [DEBUG] MechEngineer debugging enabled
+00:04.702 [DEBUG] MechEngineer setting up features
+00:04.702 [DEBUG] MechEngineer OrderedStatusEffectsFeature setting up (Enabled=True Namespace=MechEngineer.Features.OrderedStatusEffects)
+00:04.707 [DEBUG] MechEngineer  Patch StatCollection_ModifyStatistic_Patch
+00:04.710 [LOG  ] MechEngineer OrderedStatusEffectsFeature enabled
+00:04.710 [DEBUG] MechEngineer OverrideTonnageFeature setting up (Enabled=True Namespace=MechEngineer.Features.OverrideTonnage)
+00:04.712 [DEBUG] MechEngineer  Patch MechValidationRules_ValidateMechTonnage_Patch
+00:04.741 [DEBUG] MechEngineer  Patch MechLabMechInfoWidget_CalculateTonnage_Patch
+00:04.743 [DEBUG] MechEngineer  Patch MechStatisticsRules_CalculateTonnage_Patch
+00:04.745 [DEBUG] MechEngineer  Custom Weights
+00:04.746 [LOG  ] MechEngineer OverrideTonnageFeature enabled
+00:04.746 [DEBUG] MechEngineer EngineFeature setting up (Enabled=True Namespace=MechEngineer.Features.Engines)
+00:04.748 [DEBUG] MechEngineer  Patch MechStatisticsRules_CalculateChassisMovementStat_Patch
+00:04.750 [DEBUG] MechEngineer  Patch Mech_CalcJumpHeat_Patch
+00:04.752 [DEBUG] MechEngineer  Patch Mech_JumpDistance_Patch
+00:04.753 [DEBUG] MechEngineer  Patch Contract_GenerateSalvage_Patch
+00:05.169 [DEBUG] MechEngineer  Patch MechLabMechInfoWidget_GetTotalHardpoints_Patch
+00:05.172 [DEBUG] MechEngineer  Patch MechStatisticsRules_CalculateHeatEfficiencyStat_Patch
+00:05.175 [DEBUG] MechEngineer  Patch MechStatisticsRules_CalculateMovementStat_Patch
+00:05.177 [DEBUG] MechEngineer  Patch Mech_GetHeatSinkDissipation_Patch
+00:05.178 [DEBUG] MechEngineer  Patch Mech_InitEffectStats_Patch
+00:05.183 [DEBUG] MechEngineer  Patch StatTooltipData_SetHeatData_Patch
+00:05.185 [DEBUG] MechEngineer  Patch StatTooltipData_SetMovementData_Patch
+00:05.190 [DEBUG] MechEngineer  Custom CoolingDef
+00:05.190 [DEBUG] MechEngineer  Custom EngineCoreDef
+00:05.190 [DEBUG] MechEngineer  Custom EngineHeatBlockDef
+00:05.191 [DEBUG] MechEngineer  Custom EngineHeatSinkDef
+00:05.191 [LOG  ] MechEngineer EngineFeature enabled
+00:05.191 [DEBUG] MechEngineer MoveMultiplierStatFeature setting up (Enabled=True Namespace=MechEngineer.Features.MoveMultiplierStat)
+00:05.193 [DEBUG] MechEngineer  Patch Mech_InitEffectStats_Patch
+00:05.198 [DEBUG] MechEngineer  Patch Mech_MoveMultiplier_Patch
+00:05.199 [LOG  ] MechEngineer MoveMultiplierStatFeature enabled
+00:05.200 [DEBUG] MechEngineer CompressFloatieMessagesFeature setting up (Enabled=True Namespace=MechEngineer.Features.CompressFloatieMessages)
+00:05.202 [DEBUG] MechEngineer  Patch CombatHUDFloatieStack_AddFloatie_Patch
+00:05.204 [LOG  ] MechEngineer CompressFloatieMessagesFeature enabled
+00:05.204 [DEBUG] MechEngineer DamageIgnoreFeature setting up (Enabled=True Namespace=MechEngineer.Features.DamageIgnore)
+00:05.206 [DEBUG] MechEngineer  Patch MechComponent_DamageComponent_Patch
+00:05.209 [DEBUG] MechEngineer  Patch MechComponent_inventorySize_Patch
+00:05.210 [DEBUG] MechEngineer  Patch Mech_OnLocationDestroyed_Patch
+00:05.390 [DEBUG] MechEngineer  Patch Mech_GetComponentInSlot_Patch
+00:05.475 [LOG  ] MechEngineer DamageIgnoreFeature enabled
+00:05.475 [DEBUG] MechEngineer LocationalEffectsFeature setting up (Enabled=True Namespace=MechEngineer.Features.LocationalEffects)
+00:05.477 [DEBUG] MechEngineer  Patch MechComponent_ApplyPassiveEffectToTarget_Patch
+00:05.479 [LOG  ] MechEngineer LocationalEffectsFeature enabled
+00:05.479 [DEBUG] MechEngineer CriticalEffectsFeature setting up (Enabled=True Namespace=MechEngineer.Features.CriticalEffects)
+00:05.482 [DEBUG] MechEngineer  Patch Mech_CheckForCrit_Patch
+00:05.832 [DEBUG] MechEngineer  Patch MechComponent_inventorySize_Patch
+00:05.834 [DEBUG] MechEngineer  Patch MechComponent_DamageComponent_Patch
+00:05.916 [DEBUG] MechEngineer  Custom MechCriticalEffects
+00:05.917 [DEBUG] MechEngineer  Custom TurretCriticalEffects
+00:05.917 [DEBUG] MechEngineer  Custom VehicleCriticalEffects
+00:05.918 [DEBUG] MechEngineer  Custom CriticalEffects
+00:05.918 [LOG  ] MechEngineer CriticalEffectsFeature enabled
+00:05.918 [DEBUG] MechEngineer AccuracyEffectsFeature setting up (Enabled=True Namespace=MechEngineer.Features.AccuracyEffects)
+00:05.920 [DEBUG] MechEngineer  Patch ToHit_GetSelfArmMountedModifier_Patch
+00:05.923 [DEBUG] MechEngineer  Patch Mech_InitEffectStats_Patch
+00:05.927 [DEBUG] MechEngineer  Patch CombatHUDWeaponSlot_AddToolTipDetail_Patch
+00:05.929 [LOG  ] MechEngineer AccuracyEffectsFeature enabled
+00:05.929 [DEBUG] MechEngineer OverrideDescriptionsFeature setting up (Enabled=True Namespace=MechEngineer.Features.OverrideDescriptions)
+00:05.931 [DEBUG] MechEngineer  Patch ListElementController_BASE_NotListView_SetComponentTooltipData_Patch
+00:05.933 [DEBUG] MechEngineer  Patch MechLabPanel_CreateMechComponentItem_Patch
+00:05.936 [DEBUG] MechEngineer  Patch MechLabPanel_ValidateLoadout_Patch
+00:05.938 [DEBUG] MechEngineer  Patch TooltipPrefab_EquipmentSetData_Patch
+00:05.941 [DEBUG] MechEngineer  Custom BonusDescriptions
+00:05.941 [LOG  ] MechEngineer OverrideDescriptionsFeature enabled
+00:05.941 [DEBUG] MechEngineer ArmActuatorFeature setting up (Enabled=True Namespace=MechEngineer.Features.ArmActuators)
+00:05.944 [DEBUG] MechEngineer  Custom ArmActuator
+00:05.944 [DEBUG] MechEngineer  Custom ArmActuatorSupport
+00:05.945 [LOG  ] MechEngineer ArmActuatorFeature enabled
+00:05.945 [DEBUG] MechEngineer DynamicSlotsFeature setting up (Enabled=True Namespace=MechEngineer.Features.DynamicSlots)
+00:05.947 [DEBUG] MechEngineer  Patch MechLabItemSlotElement_SetIconAndText_Patch
+00:05.949 [DEBUG] MechEngineer  Patch MechLabItemSlotElement_OnPointerEnter_Patch
+00:05.951 [DEBUG] MechEngineer  Patch MechLabItemSlotElement_OnPointerExit_Patch
+00:05.952 [DEBUG] MechEngineer  Patch MechLabPanel_ValidateLoadout_Patch
+00:05.954 [DEBUG] MechEngineer  Custom DynamicSlots
+00:05.954 [LOG  ] MechEngineer DynamicSlotsFeature enabled
+00:05.955 [DEBUG] MechEngineer ShutdownInjuryProtectionFeature setting up (Enabled=True Namespace=MechEngineer.Features.ShutdownInjuryProtection)
+00:05.957 [DEBUG] MechEngineer  Patch Pilot_InjuryReasonDescription_Patch
+00:05.959 [DEBUG] MechEngineer  Patch Mech_CheckForHeatDamage_Patch
+00:05.961 [DEBUG] MechEngineer  Patch Mech_InitEffectStats_Patch
+00:05.966 [DEBUG] MechEngineer  Patch MechShutdownSequence_CheckForHeatDamage_Patch
+00:06.029 [LOG  ] MechEngineer ShutdownInjuryProtectionFeature enabled
+00:06.029 [DEBUG] MechEngineer MechLabSlotsFeature setting up (Enabled=True Namespace=MechEngineer.Features.MechLabSlots)
+00:06.031 [DEBUG] MechEngineer  Patch MechLabLocationWidget_OnAddItem_Patch
+00:06.075 [DEBUG] MechEngineer  Patch MechLabLocationWidget_OnDrop_Patch
+00:06.076 [DEBUG] MechEngineer  Patch MechLabLocationWidget_SetData_Patch
+00:06.258 [DEBUG] MechEngineer  Patch MechLabLocationWidget_ShowHighlightFrame_Patch
+00:06.260 [DEBUG] MechEngineer  Patch MechLabPanel_InitWidgets_Patch
+00:06.262 [DEBUG] MechEngineer  Patch MechLabPanel_LoadMech_Patch
+00:06.264 [DEBUG] MechEngineer  Patch MechLabPanel_RefreshDropHighlights_Patch
+00:06.266 [DEBUG] MechEngineer  Custom MechConfiguration
+00:06.266 [LOG  ] MechEngineer MechLabSlotsFeature enabled
+00:06.266 [DEBUG] MechEngineer InvalidInventoryFeature setting up (Enabled=True Namespace=MechEngineer.Features.InvalidInventory)
+00:06.269 [DEBUG] MechEngineer  Patch MechValidationRules_ValidateMechDef_Patch
+00:06.271 [DEBUG] MechEngineer  Patch MechLabPanel_GetCantSaveErrorString_Patch
+00:06.328 [DEBUG] MechEngineer  Patch MechLabPanel_GetNonFieldableErrorString_Patch
+00:06.401 [LOG  ] MechEngineer InvalidInventoryFeature enabled
+00:06.401 [DEBUG] MechEngineer ComponentExplosionsFeature setting up (Enabled=True Namespace=MechEngineer.Features.ComponentExplosions)
+00:06.404 [DEBUG] MechEngineer  Patch Vehicle_DamageLocation_Patch
+00:06.556 [DEBUG] MechEngineer  Patch MechComponent_DamageComponent_Patch
+00:06.660 [DEBUG] MechEngineer  Patch Mech_DamageLocation_Patch
+00:07.053 [DEBUG] MechEngineer  Patch AmmunitionBox_DamageComponent_Patch
+00:07.087 [DEBUG] MechEngineer  Custom CASEComponent
+00:07.087 [DEBUG] MechEngineer  Custom ComponentExplosion
+00:07.088 [LOG  ] MechEngineer ComponentExplosionsFeature enabled
+00:07.088 [DEBUG] MechEngineer ArmorStructureRatioFeature setting up (Enabled=True Namespace=MechEngineer.Features.ArmorStructureRatio)
+00:07.090 [DEBUG] MechEngineer  Patch MechValidationRules_ValidateMechStructureSimple_Patch
+00:07.092 [DEBUG] MechEngineer  Patch MechValidationRules_ValidateMechStructure_Patch
+00:07.093 [LOG  ] MechEngineer ArmorStructureRatioFeature enabled
+00:07.094 [DEBUG] MechEngineer ArmorStructureChangesFeature setting up (Enabled=True Namespace=MechEngineer.Features.ArmorStructureChanges)
+00:07.096 [DEBUG] MechEngineer  Patch Mech_GetMaxArmor_Patch
+00:07.097 [DEBUG] MechEngineer  Patch Mech_GetMaxStructure_Patch
+00:07.100 [DEBUG] MechEngineer  Patch Mech_InitStats_Patch
+00:07.106 [DEBUG] MechEngineer  Patch Mech_ToMechDef_Patch
+00:07.108 [DEBUG] MechEngineer  Patch Mech_get_ArmorMultiplier_Patch
+00:07.111 [DEBUG] MechEngineer  Patch Mech_get_StructureMultiplier_Patch
+00:07.113 [DEBUG] MechEngineer  Custom ArmorStructureChanges
+00:07.113 [LOG  ] MechEngineer ArmorStructureChangesFeature enabled
+00:07.113 [DEBUG] MechEngineer HardpointFixFeature setting up (Enabled=True Namespace=MechEngineer.Features.HardpointFix)
+00:07.116 [DEBUG] MechEngineer  Patch ChassisDef_refreshLocationReferences_Patch
+00:07.118 [DEBUG] MechEngineer  Patch ChassisDef_RefreshHardpointData_Patch
+00:07.119 [DEBUG] MechEngineer  Patch MechLabLocationWidget_OnMechLabDrop_Patch
+00:07.121 [DEBUG] MechEngineer  Patch HardpointDataDef_FromJSON_Patch
+00:07.123 [DEBUG] MechEngineer  Patch MechHardpointRules_GetComponentBlankNames_Patch
+00:07.125 [DEBUG] MechEngineer  Patch MechHardpointRules_GetComponentPrefabName_Patch
+00:07.127 [DEBUG] MechEngineer  Patch Mech_InitGameRep_Patch
+00:07.132 [DEBUG] MechEngineer  Patch MechRepresentationSimGame_LoadWeapons_Patch
+00:07.135 [LOG  ] MechEngineer HardpointFixFeature enabled
+00:07.135 [DEBUG] MechEngineer AutoFixerFeature setting up (Enabled=True Namespace=MechEngineer.Features.AutoFix)
+00:07.137 [DEBUG] MechEngineer  Patch JumpJetDef_FromJSON_Patch
+00:07.139 [DEBUG] MechEngineer  Patch WeaponDef_FromJSON_Patch
+00:07.140 [DEBUG] MechEngineer  Patch UpgradeDef_FromJSON_Patch
+00:07.142 [DEBUG] MechEngineer  Patch ChassisDef_FromJSON_Patch
+00:07.143 [LOG  ] MechEngineer AutoFixerFeature enabled
+00:07.144 [DEBUG] MechEngineer GlobalsFeature setting up (Enabled=True Namespace=MechEngineer.Features.Globals)
+00:07.147 [DEBUG] MechEngineer  Patch MechBayPanel_CloseMechBay_Patch
+00:07.148 [DEBUG] MechEngineer  Patch MechBayPanel_SelectMech_Patch
+00:07.150 [DEBUG] MechEngineer  Patch MechLabPanel_ExitMechLab_Patch
+00:07.151 [DEBUG] MechEngineer  Patch MechLabPanel_LoadMech_Patch
+00:07.153 [LOG  ] MechEngineer GlobalsFeature enabled
+00:07.153 [DEBUG] MechEngineer TurretMechComponentsFeature setting up (Enabled=True Namespace=MechEngineer.Features.TurretMechComponents)
+00:07.156 [DEBUG] MechEngineer  Patch Turret_InitStats_Patch
+00:07.159 [LOG  ] MechEngineer TurretMechComponentsFeature enabled
+00:07.160 [DEBUG] MechEngineer TurretLimitedAmmoFeature setting up (Enabled=True Namespace=MechEngineer.Features.TurretLimitedAmmo)
+00:07.162 [DEBUG] MechEngineer  Patch Turret_OnNewRound_Patch
+00:07.195 [DEBUG] MechEngineer  Patch Weapon_DecrementAmmo_Patch
+00:07.269 [LOG  ] MechEngineer TurretLimitedAmmoFeature enabled
+00:07.269 [DEBUG] MechEngineer OverrideGhostVFXFeature setting up (Enabled=True Namespace=MechEngineer.Features.OverrideGhostVFX)
+00:07.271 [DEBUG] MechEngineer  Patch PilotableActorRepresentation_OnPlayerVisibilityChanged_Patch
+00:07.275 [DEBUG] MechEngineer  Patch GameRepresentation_PlayVFXAt_Patch
+00:07.278 [LOG  ] MechEngineer OverrideGhostVFXFeature enabled
+00:07.279 [DEBUG] MechEngineer OmniSlotsFeature setting up (Enabled=True Namespace=MechEngineer.Features.OmniSlots)
+00:07.281 [DEBUG] MechEngineer  Patch MechBayMechInfoWidget_GetTotalHardpoints_Patch
+00:07.283 [DEBUG] MechEngineer  Patch MechLabLocationWidget_ValidateAdd_Patch
+00:07.506 [DEBUG] MechEngineer  Patch SG_Shop_ItemSelectedPanel_FillInHardPoints_Patch
+00:07.508 [DEBUG] MechEngineer  Patch MechBayMechInfoWidget_SetHardpoints_Patch
+00:07.510 [DEBUG] MechEngineer  Patch MechLabLocationWidget_ValidateAddSimple_Patch
+00:07.561 [DEBUG] MechEngineer  Patch MechLabLocationWidget_RefreshHardpointData_Patch
+00:07.563 [DEBUG] MechEngineer  Patch MechLabLocationWidget_ShowHighlightFrame_Patch
+00:07.565 [DEBUG] MechEngineer  Patch MechValidationRules_ValidateMechInventorySlots_Patch
+00:08.024 [LOG  ] MechEngineer OmniSlotsFeature enabled
+00:08.024 [DEBUG] MechEngineer TagManagerFeature setting up (Enabled=True Namespace=MechEngineer.Features.TagManager)
+00:08.026 [DEBUG] MechEngineer  Patch JSONSerializationUtility_RehydrateObjectFromDictionary_Patch
+00:08.029 [DEBUG] MechEngineer  Patch MechLabPanel_ComponentDefTagsValid_Patch
+00:08.056 [LOG  ] MechEngineer TagManagerFeature enabled
+00:08.057 [DEBUG] MechEngineer DebugSaveMechToFileFeature setting up (Enabled=False Namespace=MechEngineer.Features.DebugSaveMechToFile)
+00:08.057 [LOG  ] MechEngineer DebugSaveMechToFileFeature disabled
+00:08.057 [DEBUG] MechEngineer DebugCycleCombatSoundsFeature setting up (Enabled=False Namespace=MechEngineer.Features.DebugCycleCombatSounds)
+00:08.057 [LOG  ] MechEngineer DebugCycleCombatSoundsFeature disabled
+00:08.057 [DEBUG] MechEngineer DebugScreenshotMechsFeature setting up (Enabled=False Namespace=MechEngineer.Features.DebugScreenshotMechs)
+00:08.057 [LOG  ] MechEngineer DebugScreenshotMechsFeature disabled
+00:08.057 [LOG  ] MechEngineer started
