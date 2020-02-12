@@ -93,7 +93,7 @@
     {
       "MountedLocation": "CenterTorso",
       "ComponentDefID": "emod_kit_dhs",
-      "ComponentDefType": "HeatSinks",
+      "ComponentDefType": "HeatSink",
       "HardpointSlot": 0,
       "DamageLevel": "Functional",
       "prefabName": null,
