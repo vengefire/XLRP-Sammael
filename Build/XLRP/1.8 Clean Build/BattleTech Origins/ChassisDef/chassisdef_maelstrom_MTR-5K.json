@@ -160,9 +160,9 @@
       ],
       "Tonnage": 0.0,
       "InventorySlots": 16,
-      "MaxArmor": 230,
-      "MaxRearArmor": 115,
-      "InternalStructure": 115
+      "MaxArmor": 240,
+      "MaxRearArmor": 120,
+      "InternalStructure": 120
     },
     {
       "Location": "RightTorso",

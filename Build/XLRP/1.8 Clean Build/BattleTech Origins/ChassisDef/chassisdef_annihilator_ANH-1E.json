@@ -2,7 +2,7 @@
   "FixedEquipment": [
     {
       "MountedLocation": "CenterTorso",
-      "ComponentDefID": "Gear_Quirk_StableWeapon_Annihilator",
+      "ComponentDefID": "Gear_General_GM_Ballistic_Siege_Compensators",
       "ComponentDefType": "Upgrade",
       "HardpointSlot": -1,
       "DamageLevel": "Functional",

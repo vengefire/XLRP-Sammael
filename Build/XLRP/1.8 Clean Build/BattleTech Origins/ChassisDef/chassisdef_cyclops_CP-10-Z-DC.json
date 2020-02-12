@@ -13,8 +13,8 @@
       "IsFixed": true
     },
     {
-      "MountedLocation": "Head",
-      "ComponentDefID": "emod_kit_cdhs",
+      "MountedLocation": "CenterTorso",
+      "ComponentDefID": "emod_kit_dhs",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
       "DamageLevel": "Functional",

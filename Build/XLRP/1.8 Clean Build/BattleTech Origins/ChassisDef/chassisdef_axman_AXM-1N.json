@@ -2,7 +2,7 @@
   "FixedEquipment": [
     {
       "MountedLocation": "CenterTorso",
-      "ComponentDefID": "emod_engineslots_cxl_center",
+      "ComponentDefID": "emod_engineslots_xl_center",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
       "DamageLevel": "Functional",
@@ -24,7 +24,7 @@
     },
     {
       "MountedLocation": "LeftTorso",
-      "ComponentDefID": "emod_engineslots_size2",
+      "ComponentDefID": "emod_engineslots_size3",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
       "DamageLevel": "Functional",
@@ -35,7 +35,7 @@
     },
     {
       "MountedLocation": "RightTorso",
-      "ComponentDefID": "emod_engineslots_size2",
+      "ComponentDefID": "emod_engineslots_size3",
       "ComponentDefType": "HeatSink",
       "HardpointSlot": -1,
       "DamageLevel": "Functional",
