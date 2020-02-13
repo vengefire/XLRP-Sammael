@@ -8439,3 +8439,93 @@ active: 1
 2020-02-12T11:44:27 FYLS [LOG] SaveEntry SIM_GAME_COMPLETED_CONTRACT checking to see if it replaces existing save entry
 2020-02-12T11:44:27 FYLS [LOG] Applying mood [Space]
 2020-02-12T11:44:27 FYLS [LOG] Applying mood [Space]
+2020-02-12T21:21:55 FYLS [DEBUG] OnApplicationFocus True
+2020-02-12T21:21:55 FYLS [DEBUG] Waking up Audio Engine.
+2020-02-12T21:22:10 FYLS [LOG] [34214.52] Escape key released
+2020-02-12T21:22:10 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:10 FYLS [LOG] [34214.72] Escape key released
+2020-02-12T21:22:10 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:10 FYLS [LOG] [34214.88] Escape key released
+2020-02-12T21:22:10 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:10 FYLS [LOG] SaveEntry Processing
+2020-02-12T21:22:10 FYLS [LOG] [BeginSave]
+2020-02-12T21:22:10 FYLS [LOG] [BeginSave] pause and set time moving false
+2020-02-12T21:22:10 FYLS [LOG] [SaveSerializationComplete] resuming timer
+2020-02-12T21:22:10 FYLS [LOG] [34215.08] Escape key released
+2020-02-12T21:22:10 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:10 FYLS [LOG] [SaveComplete]
+2020-02-12T21:22:10 FYLS [LOG] notifying users UI refresh is needed
+2020-02-12T21:22:10 FYLS [LOG] UI refresh took 0 seconds.
+2020-02-12T21:22:11 FYLS [LOG] [34215.54] Escape key released
+2020-02-12T21:22:11 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:11 FYLS [LOG] [CanSave] yes, yes you can
+2020-02-12T21:22:11 FYLS [LOG] [34215.84] Escape key released
+2020-02-12T21:22:11 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:11 FYLS [LOG] [34216.11] Escape key released
+2020-02-12T21:22:11 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:11 FYLS [LOG] [CanSave] yes, yes you can
+2020-02-12T21:22:11 FYLS [LOG] [34216.3] Escape key released
+2020-02-12T21:22:11 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:11 FYLS [LOG] [34216.46] Escape key released
+2020-02-12T21:22:11 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:11 FYLS [LOG] [CanSave] yes, yes you can
+2020-02-12T21:22:12 FYLS [LOG] [34216.6] Escape key released
+2020-02-12T21:22:12 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:12 FYLS [LOG] [34216.73] Escape key released
+2020-02-12T21:22:12 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:12 FYLS [LOG] [CanSave] yes, yes you can
+2020-02-12T21:22:12 FYLS [LOG] [34216.82] Escape key released
+2020-02-12T21:22:12 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:12 FYLS [LOG] [34216.99] Escape key released
+2020-02-12T21:22:12 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:12 FYLS [LOG] [CanSave] yes, yes you can
+2020-02-12T21:22:14 FYLS [LOG] [34218.89] Escape key released
+2020-02-12T21:22:14 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:14 FYLS [LOG] [34219.25] Escape key released
+2020-02-12T21:22:14 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:14 FYLS [LOG] [CanSave] yes, yes you can
+2020-02-12T21:22:14 FYLS [LOG] [34219.38] Escape key released
+2020-02-12T21:22:14 FYLS [LOG] handling escape keypress
+2020-02-12T21:22:19 FYLS [LOG] [TaskManagementWidget.SetData] pausing timer
+2020-02-12T21:22:21 FYLS [LOG] shutting down game
+2020-02-12T21:22:21 FYLS [LOG] attempting to quit
+2020-02-12T21:22:21 FYLS [LOG] invoking appshutdown message
+2020-02-12T21:22:21 FYLS [DEBUG] Connection pool blowing away all connections!!
+2020-02-12T21:22:21 FYLS [DEBUG] Connection pool blowing away all connections!!
+2020-02-12T21:22:21 FYLS [DEBUG] Connection pool blowing away all connections!!
+2020-02-12T21:22:22 FYLS [DEBUG] Connection pool blowing away all connections!!
+2020-02-12T21:22:22 FYLS [DEBUG] Connection pool blowing away all connections!!
+2020-02-12T21:22:22 FYLS [WARNING] Analytics Event requested with invalid IP
+
+ InfoStartType: NULL
+EndType: NULL
+ApplicationVersion: 191207-live-640R
+SessionID: fb477a0c-3b5e-46c0-91a7-b69bcbb77b5b
+SessionIDString: fb477a0c-3b5e-46c0-91a7-b69bcbb77b5b
+SessionIDValid: True
+SessionNum: 62
+Universe: steam
+Platform: 2
+DeviceType: 3
+DeviceName: DESKTOP-SFSAJRU
+OperatingSystem: Windows 10  (10.0.0) 64bit
+UserId: 76561198000055227
+PDXId: 
+IP: NULL
+ClientTime: 2/12/2020 12:00:00 AM
+EventName: language
+FloatValue: NULL
+
+
+Values:
+game_language: en
+os_language: en
+
+2020-02-12T21:22:22 FYLS [LOG] SHUTTING DOWN
+2020-02-12T21:22:22 FYLS [LOG] idle. shutting down now
+2020-02-12T21:22:22 FYLS [LOG] shutdown complete
+2020-02-12T21:22:22 FYLS [LOG] quit systems
+2020-02-12T21:22:22 FYLS [LOG] Closed File Log Appenders
+2020-02-12T21:22:22 FYLS [LOG] quit systems complete
+2020-02-12T21:22:22 FYLS [LOG] shutting down steam
+2020-02-12T21:22:22 FYLS [LOG] quiting application
