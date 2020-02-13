@@ -1,0 +1,609 @@
+[11:35:40.571]Resolving weapon's critical damage. Sequence id:64490416 weapon:Melee
+ target: Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0
+  LeftTorso.RearArmor armor-on-hit:5 structure-on-hit:25
+[11:35:40.574]AdvancedCriticalProcessor.CheckForCrit Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0 loc:LeftTorso.RearArmor AOH:5 SOH:25 weapon:Weapon_MeleeAttack
+ this is mech armor location:LeftTorso.RearArmor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:64490416: WEAP:0 Loc:4 Final crit chance: 10.00 %
+ SEQ:64490416: WEAP:0 Loc:4 Crit roll: 80.39 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:35:42.277]Resolving weapon's critical damage. Sequence id:78018744 weapon:MG(MG Ammo)
+ target: Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0
+  LeftTorso.RearArmor armor-on-hit:0 structure-on-hit:0
+  LeftTorso.RearArmor armor-on-hit:0 structure-on-hit:0
+  LeftTorso.RearArmor armor-on-hit:0 structure-on-hit:0
+[11:35:42.277]AdvancedCriticalProcessor.CheckForCrit Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0 loc:LeftTorso.RearArmor AOH:0 SOH:0 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:LeftTorso.RearArmor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1.5!
+ SEQ:78018744: WEAP:0 Loc:4 Final crit chance: 150.00 %
+ SEQ:78018744: WEAP:0 Loc:4 Crit roll: 7.21 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:35:42.278]AdvancedCriticalProcessor.CheckForCrit Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0 loc:LeftTorso.RearArmor AOH:0 SOH:0 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:LeftTorso.RearArmor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1.5!
+ SEQ:78018744: WEAP:0 Loc:4 Final crit chance: 150.00 %
+ SEQ:78018744: WEAP:0 Loc:4 Crit roll: 69.92 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:35:42.278]AdvancedCriticalProcessor.CheckForCrit Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0 loc:LeftTorso.RearArmor AOH:0 SOH:0 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:LeftTorso.RearArmor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1.5!
+ SEQ:78018744: WEAP:0 Loc:4 Final crit chance: 150.00 %
+ SEQ:78018744: WEAP:0 Loc:4 Crit roll: 69.93 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:35:42.280]Resolving weapon's critical damage. Sequence id:78018744 weapon:MG(MG Ammo)
+ target: Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0
+  LeftTorso.RearArmor armor-on-hit:0 structure-on-hit:0
+  CenterTorso.RearArmor armor-on-hit:0 structure-on-hit:23
+  CenterTorso.RearArmor armor-on-hit:0 structure-on-hit:20
+[11:35:42.280]AdvancedCriticalProcessor.CheckForCrit Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0 loc:LeftTorso.RearArmor AOH:0 SOH:0 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:LeftTorso.RearArmor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1.5!
+ SEQ:78018744: WEAP:1 Loc:4 Final crit chance: 150.00 %
+ SEQ:78018744: WEAP:1 Loc:4 Crit roll: 28.39 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:35:42.280]AdvancedCriticalProcessor.CheckForCrit Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0 loc:CenterTorso.RearArmor AOH:0 SOH:23 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:CenterTorso.RearArmor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1.5!
+ SEQ:78018744: WEAP:1 Loc:8 Final crit chance: 75.00 %
+ SEQ:78018744: WEAP:1 Loc:8 Crit roll: 32.04 %
+ SEQ:78018744: WEAP:1 Loc:8 Critical Hit! Found Standard Gyro in slot 3
+ SEQ:78018744: WEAP:1 Loc:8 Critical: Standard Gyro prev damage state: Destroyed
+ SEQ:78018744: WEAP:1 Loc:8 Critical: Standard Gyro new damage state: Destroyed
+[11:35:42.282]AdvancedCriticalProcessor.CheckForCrit Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0 loc:CenterTorso.RearArmor AOH:0 SOH:20 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:CenterTorso.RearArmor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1.5!
+ SEQ:78018744: WEAP:1 Loc:8 Final crit chance: 75.00 %
+ SEQ:78018744: WEAP:1 Loc:8 Crit roll: 97.50 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:35:51.102]Resolving weapon's critical damage. Sequence id:73992175 weapon:M Laser
+[11:36:22.985]Resolving weapon's critical damage. Sequence id:20233712 weapon:LRM5(LRM Ammo)
+ target: Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0
+[11:36:24.052]Resolving weapon's critical damage. Sequence id:20233712 weapon:LRM10(LRM Ammo)
+ target: Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0
+  LeftTorso.Armor armor-on-hit:2.5 structure-on-hit:35
+  LeftTorso.Armor armor-on-hit:0 structure-on-hit:33.5
+  LeftTorso.Armor armor-on-hit:0 structure-on-hit:29.5
+[11:36:24.052]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftTorso.Armor AOH:2.5 SOH:35 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:LeftTorso.Armor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:20233712: WEAP:1 Loc:4 Final crit chance: 10.00 %
+ SEQ:20233712: WEAP:1 Loc:4 Crit roll: 19.25 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:36:24.052]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftTorso.Armor AOH:0 SOH:33.5 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:LeftTorso.Armor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1!
+ SEQ:20233712: WEAP:1 Loc:4 Final crit chance: 50.00 %
+ SEQ:20233712: WEAP:1 Loc:4 Crit roll: 4.08 %
+ SEQ:20233712: WEAP:1 Loc:4 Critical Hit! Found M Laser in slot 0
+ SEQ:20233712: WEAP:1 Loc:4 Critical: M Laser prev damage state: Penalized
+ SEQ:20233712: WEAP:1 Loc:4 Critical: M Laser new damage state: Penalized
+[11:36:24.052]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftTorso.Armor AOH:0 SOH:29.5 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:LeftTorso.Armor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1!
+ SEQ:20233712: WEAP:1 Loc:4 Final crit chance: 50.00 %
+ SEQ:20233712: WEAP:1 Loc:4 Crit roll: 6.27 %
+ SEQ:20233712: WEAP:1 Loc:4 Critical Hit! Found M Laser in slot 0
+ SEQ:20233712: WEAP:1 Loc:4 Critical: M Laser prev damage state: Destroyed
+ SEQ:20233712: WEAP:1 Loc:4 Critical: M Laser new damage state: Destroyed
+[11:36:36.567]Resolving weapon's critical damage. Sequence id:94921335 weapon:M Laser
+[11:37:04.685]Resolving weapon's critical damage. Sequence id:31599323 weapon:M Laser
+[11:37:22.467]Resolving weapon's critical damage. Sequence id:42603796 weapon:M Laser
+ target: Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0
+  LeftTorso.Armor armor-on-hit:0 structure-on-hit:25.5
+[11:37:22.467]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftTorso.Armor AOH:0 SOH:25.5 weapon:Weapon_Laser_MediumLaser_0-STOCK
+ this is mech armor location:LeftTorso.Armor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1!
+ SEQ:42603796: WEAP:0 Loc:4 Final crit chance: 50.00 %
+ SEQ:42603796: WEAP:0 Loc:4 Crit roll: 88.19 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:37:22.800]Resolving weapon's critical damage. Sequence id:42603796 weapon:M Laser
+[11:37:23.217]Resolving weapon's critical damage. Sequence id:42603796 weapon:M Laser
+ target: Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0
+  LeftArm.Armor armor-on-hit:18.5 structure-on-hit:25
+[11:37:23.217]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftArm.Armor AOH:18.5 SOH:25 weapon:Weapon_Laser_MediumLaser_0-STOCK
+ this is mech armor location:LeftArm.Armor -> chassis location:LeftArm.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:42603796: WEAP:2 Loc:2 Final crit chance: 10.00 %
+ SEQ:42603796: WEAP:2 Loc:2 Crit roll: 24.09 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:37:23.401]Resolving weapon's critical damage. Sequence id:42603796 weapon:M Laser
+ target: Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0
+  LeftLeg.Armor armor-on-hit:24.5 structure-on-hit:35
+[11:37:23.401]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftLeg.Armor AOH:24.5 SOH:35 weapon:Weapon_Laser_MediumLaser_0-STOCK
+ this is mech armor location:LeftLeg.Armor -> chassis location:LeftLeg.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:42603796: WEAP:3 Loc:64 Final crit chance: 10.00 %
+ SEQ:42603796: WEAP:3 Loc:64 Crit roll: 2.11 %
+ SEQ:42603796: WEAP:3 Loc:64 Critical Hit! Found Upper Leg Actuator in slot 1
+ SEQ:42603796: WEAP:3 Loc:64 Critical: Upper Leg Actuator prev damage state: Destroyed
+ SEQ:42603796: WEAP:3 Loc:64 Critical: Upper Leg Actuator new damage state: Destroyed
+[11:37:23.734]Resolving weapon's critical damage. Sequence id:42603796 weapon:M Laser
+ target: Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0
+  LeftTorso.Armor armor-on-hit:0 structure-on-hit:0.5
+[11:37:23.734]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftTorso.Armor AOH:0 SOH:0.5 weapon:Weapon_Laser_MediumLaser_0-STOCK
+ this is mech armor location:LeftTorso.Armor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 0.9857143, multiplier = 1!
+ SEQ:42603796: WEAP:4 Loc:4 Final crit chance: 98.57 %
+ SEQ:42603796: WEAP:4 Loc:4 Crit roll: 86.95 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:37:23.735]Resolving weapon's critical damage. Sequence id:42603796 weapon:SRM2(SRM Ammo)
+ target: Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0
+  LeftLeg.Armor armor-on-hit:0 structure-on-hit:34.5
+  LeftTorso.Armor armor-on-hit:0 structure-on-hit:0
+[11:37:23.735]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftLeg.Armor AOH:0 SOH:34.5 weapon:Weapon_SRM_SRM2_0-STOCK
+ this is mech armor location:LeftLeg.Armor -> chassis location:LeftLeg.Structure
+ [GetCritChance] base = 0.5, multiplier = 1!
+ SEQ:42603796: WEAP:5 Loc:64 Final crit chance: 50.00 %
+ SEQ:42603796: WEAP:5 Loc:64 Crit roll: 76.38 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:37:23.735]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftTorso.Armor AOH:0 SOH:0 weapon:Weapon_SRM_SRM2_0-STOCK
+ this is mech armor location:LeftTorso.Armor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:42603796: WEAP:5 Loc:4 Final crit chance: 100.00 %
+ SEQ:42603796: WEAP:5 Loc:4 Crit roll: 81.14 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:37:38.701]Resolving weapon's critical damage. Sequence id:40412407 weapon:M Laser
+[11:38:01.801]Resolving weapon's critical damage. Sequence id:41336505 weapon:Melee
+ target: Blackjack:dd1b3129-0f5d-4e93-b87d-42ab13c68e7d.0
+  LeftTorso.RearArmor armor-on-hit:15 structure-on-hit:55
+[11:38:01.801]AdvancedCriticalProcessor.CheckForCrit Blackjack:dd1b3129-0f5d-4e93-b87d-42ab13c68e7d.0 loc:LeftTorso.RearArmor AOH:15 SOH:55 weapon:Weapon_MeleeAttack
+ this is mech armor location:LeftTorso.RearArmor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:41336505: WEAP:0 Loc:4 Final crit chance: 10.00 %
+ SEQ:41336505: WEAP:0 Loc:4 Crit roll: 5.94 %
+ SEQ:41336505: WEAP:0 Loc:4 Critical Hit! Found M Laser in slot 0
+ SEQ:41336505: WEAP:0 Loc:4 Critical: M Laser prev damage state: Penalized
+ SEQ:41336505: WEAP:0 Loc:4 Critical: M Laser new damage state: Penalized
+[11:38:04.653]Resolving weapon's critical damage. Sequence id:71830580 weapon:MG(MG Ammo)
+ target: Blackjack:dd1b3129-0f5d-4e93-b87d-42ab13c68e7d.0
+  LeftTorso.RearArmor armor-on-hit:0 structure-on-hit:40
+  LeftTorso.RearArmor armor-on-hit:0 structure-on-hit:37
+[11:38:04.653]AdvancedCriticalProcessor.CheckForCrit Blackjack:dd1b3129-0f5d-4e93-b87d-42ab13c68e7d.0 loc:LeftTorso.RearArmor AOH:0 SOH:40 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:LeftTorso.RearArmor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1.5!
+ SEQ:71830580: WEAP:0 Loc:4 Final crit chance: 75.00 %
+ SEQ:71830580: WEAP:0 Loc:4 Crit roll: 98.94 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:38:04.653]AdvancedCriticalProcessor.CheckForCrit Blackjack:dd1b3129-0f5d-4e93-b87d-42ab13c68e7d.0 loc:LeftTorso.RearArmor AOH:0 SOH:37 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:LeftTorso.RearArmor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1.5!
+ SEQ:71830580: WEAP:0 Loc:4 Final crit chance: 75.00 %
+ SEQ:71830580: WEAP:0 Loc:4 Crit roll: 34.05 %
+ SEQ:71830580: WEAP:0 Loc:4 Critical Hit! Found M Laser in slot 0
+ SEQ:71830580: WEAP:0 Loc:4 Critical: M Laser prev damage state: Destroyed
+ SEQ:71830580: WEAP:0 Loc:4 Critical: M Laser new damage state: Destroyed
+[11:38:04.655]Resolving weapon's critical damage. Sequence id:71830580 weapon:MG(MG Ammo)
+ target: Blackjack:dd1b3129-0f5d-4e93-b87d-42ab13c68e7d.0
+[11:38:17.083]Resolving weapon's critical damage. Sequence id:91847158 weapon:M Laser
+[11:38:17.183]Resolving weapon's critical damage. Sequence id:91847158 weapon:M Laser
+[11:38:43.919]Resolving weapon's critical damage. Sequence id:43120099 weapon:AC/5(AC/5 Ammo)
+[11:38:46.000]Resolving weapon's critical damage. Sequence id:43120099 weapon:LRM5(LRM Ammo)
+ target: Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0
+  LeftTorso.Armor armor-on-hit:0 structure-on-hit:0
+  LeftTorso.Armor armor-on-hit:0 structure-on-hit:0
+[11:38:46.001]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftTorso.Armor AOH:0 SOH:0 weapon:Weapon_LRM_LRM5_0-STOCK
+ this is mech armor location:LeftTorso.Armor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:43120099: WEAP:1 Loc:4 Final crit chance: 100.00 %
+ SEQ:43120099: WEAP:1 Loc:4 Crit roll: 38.70 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:38:46.001]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftTorso.Armor AOH:0 SOH:0 weapon:Weapon_LRM_LRM5_0-STOCK
+ this is mech armor location:LeftTorso.Armor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:43120099: WEAP:1 Loc:4 Final crit chance: 100.00 %
+ SEQ:43120099: WEAP:1 Loc:4 Crit roll: 18.03 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:38:47.001]Resolving weapon's critical damage. Sequence id:43120099 weapon:LRM10(LRM Ammo)
+ target: Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0
+  CenterTorso.Armor armor-on-hit:0 structure-on-hit:45.4
+  CenterTorso.Armor armor-on-hit:0 structure-on-hit:42.2
+  CenterTorso.Armor armor-on-hit:0 structure-on-hit:39
+[11:38:47.001]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:CenterTorso.Armor AOH:0 SOH:45.4 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:CenterTorso.Armor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1!
+ SEQ:43120099: WEAP:2 Loc:8 Final crit chance: 50.00 %
+ SEQ:43120099: WEAP:2 Loc:8 Crit roll: 96.39 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:38:47.001]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:CenterTorso.Armor AOH:0 SOH:42.2 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:CenterTorso.Armor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1!
+ SEQ:43120099: WEAP:2 Loc:8 Final crit chance: 50.00 %
+ SEQ:43120099: WEAP:2 Loc:8 Crit roll: 35.14 %
+ SEQ:43120099: WEAP:2 Loc:8 Critical Hit! Found E-Cooling in slot 12
+ SEQ:43120099: WEAP:2 Loc:8 Critical: E-Cooling prev damage state: Destroyed
+ SEQ:43120099: WEAP:2 Loc:8 Critical: E-Cooling new damage state: Destroyed
+[11:38:47.002]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:CenterTorso.Armor AOH:0 SOH:39 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:CenterTorso.Armor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1!
+ SEQ:43120099: WEAP:2 Loc:8 Final crit chance: 50.00 %
+ SEQ:43120099: WEAP:2 Loc:8 Crit roll: 30.21 %
+ SEQ:43120099: WEAP:2 Loc:8 Critical Hit! Found Standard Structure in slot 2
+ SEQ:43120099: WEAP:2 Loc:8 Critical: Standard Structure prev damage state: Destroyed
+ SEQ:43120099: WEAP:2 Loc:8 Critical: Standard Structure new damage state: Destroyed
+[11:39:01.534]Resolving weapon's critical damage. Sequence id:59455717 weapon:M Laser
+[11:39:01.535]Resolving weapon's critical damage. Sequence id:59455717 weapon:AC/2(AC/2 Ammo)
+[11:39:01.535]Resolving weapon's critical damage. Sequence id:59455717 weapon:AC/2(AC/2 Ammo)
+[11:39:39.320]Resolving weapon's critical damage. Sequence id:31764559 weapon:UAC/20(AC/20 Ammo)
+ target: Blackjack:dd1b3129-0f5d-4e93-b87d-42ab13c68e7d.0
+  RightTorso.Armor armor-on-hit:37.5 structure-on-hit:55
+  LeftArm.Armor armor-on-hit:27 structure-on-hit:35
+[11:39:39.320]AdvancedCriticalProcessor.CheckForCrit Blackjack:dd1b3129-0f5d-4e93-b87d-42ab13c68e7d.0 loc:RightTorso.Armor AOH:37.5 SOH:55 weapon:Weapon_Autocannon_UAC20_0-STOCK
+ this is mech armor location:RightTorso.Armor -> chassis location:RightTorso.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:31764559: WEAP:0 Loc:16 Final crit chance: 10.00 %
+ SEQ:31764559: WEAP:0 Loc:16 Crit roll: 21.38 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:39:39.320]AdvancedCriticalProcessor.CheckForCrit Blackjack:dd1b3129-0f5d-4e93-b87d-42ab13c68e7d.0 loc:LeftArm.Armor AOH:27 SOH:35 weapon:Weapon_Autocannon_UAC20_0-STOCK
+ this is mech armor location:LeftArm.Armor -> chassis location:LeftArm.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:31764559: WEAP:0 Loc:2 Final crit chance: 10.00 %
+ SEQ:31764559: WEAP:0 Loc:2 Crit roll: 91.73 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:40:01.299]Resolving weapon's critical damage. Sequence id:39942253 weapon:M Laser
+ target: Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0
+  LeftLeg.Armor armor-on-hit:2.5 structure-on-hit:20
+[11:40:01.299]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:LeftLeg.Armor AOH:2.5 SOH:20 weapon:Weapon_Laser_MediumLaser_0-STOCK
+ this is mech armor location:LeftLeg.Armor -> chassis location:LeftLeg.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:39942253: WEAP:0 Loc:64 Final crit chance: 10.00 %
+ SEQ:39942253: WEAP:0 Loc:64 Crit roll: 52.90 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:40:01.516]Resolving weapon's critical damage. Sequence id:39942253 weapon:M Laser
+ target: Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0
+  RightLeg.Armor armor-on-hit:2.5 structure-on-hit:20
+[11:40:01.516]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:RightLeg.Armor AOH:2.5 SOH:20 weapon:Weapon_Laser_MediumLaser_0-STOCK
+ this is mech armor location:RightLeg.Armor -> chassis location:RightLeg.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:39942253: WEAP:1 Loc:128 Final crit chance: 10.00 %
+ SEQ:39942253: WEAP:1 Loc:128 Crit roll: 92.11 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:40:01.800]Resolving weapon's critical damage. Sequence id:39942253 weapon:M Laser
+ target: Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0
+  LeftTorso.Armor armor-on-hit:5 structure-on-hit:25
+[11:40:01.800]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:LeftTorso.Armor AOH:5 SOH:25 weapon:Weapon_Laser_MediumLaser_0-STOCK
+ this is mech armor location:LeftTorso.Armor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:39942253: WEAP:2 Loc:4 Final crit chance: 10.00 %
+ SEQ:39942253: WEAP:2 Loc:4 Crit roll: 0.58 %
+ SEQ:39942253: WEAP:2 Loc:4 Critical Hit! Found Standard Heat Sink in slot 1
+ SEQ:39942253: WEAP:2 Loc:4 Critical: Standard Heat Sink prev damage state: Destroyed
+ SEQ:39942253: WEAP:2 Loc:4 Critical: Standard Heat Sink new damage state: Destroyed
+[11:40:02.083]Resolving weapon's critical damage. Sequence id:39942253 weapon:M Laser
+ target: Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0
+  LeftTorso.Armor armor-on-hit:0 structure-on-hit:15
+[11:40:02.083]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:LeftTorso.Armor AOH:0 SOH:15 weapon:Weapon_Laser_MediumLaser_0-STOCK
+ this is mech armor location:LeftTorso.Armor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1!
+ SEQ:39942253: WEAP:3 Loc:4 Final crit chance: 50.00 %
+ SEQ:39942253: WEAP:3 Loc:4 Crit roll: 63.06 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:40:02.466]Resolving weapon's critical damage. Sequence id:39942253 weapon:M Laser
+ target: Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0
+  LeftTorso.Armor armor-on-hit:0 structure-on-hit:0
+[11:40:02.466]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:LeftTorso.Armor AOH:0 SOH:0 weapon:Weapon_Laser_MediumLaser_0-STOCK
+ this is mech armor location:LeftTorso.Armor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:39942253: WEAP:4 Loc:4 Final crit chance: 100.00 %
+ SEQ:39942253: WEAP:4 Loc:4 Crit roll: 81.78 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:40:02.469]Resolving weapon's critical damage. Sequence id:39942253 weapon:SRM2(SRM Ammo)
+ target: Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0
+  RightLeg.Armor armor-on-hit:0 structure-on-hit:7.499999
+  LeftLeg.Armor armor-on-hit:0 structure-on-hit:7.499999
+[11:40:02.469]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:RightLeg.Armor AOH:0 SOH:7.499999 weapon:Weapon_SRM_SRM2_0-STOCK
+ this is mech armor location:RightLeg.Armor -> chassis location:RightLeg.Structure
+ [GetCritChance] base = 0.6250001, multiplier = 1!
+ SEQ:39942253: WEAP:5 Loc:128 Final crit chance: 62.50 %
+ SEQ:39942253: WEAP:5 Loc:128 Crit roll: 29.52 %
+ SEQ:39942253: WEAP:5 Loc:128 Critical Hit! Found Hip in slot 0
+ SEQ:39942253: WEAP:5 Loc:128 Critical: Hip prev damage state: Destroyed
+ SEQ:39942253: WEAP:5 Loc:128 Critical: Hip new damage state: Destroyed
+[11:40:02.470]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:LeftLeg.Armor AOH:0 SOH:7.499999 weapon:Weapon_SRM_SRM2_0-STOCK
+ this is mech armor location:LeftLeg.Armor -> chassis location:LeftLeg.Structure
+ [GetCritChance] base = 0.6250001, multiplier = 1!
+ SEQ:39942253: WEAP:5 Loc:64 Final crit chance: 62.50 %
+ SEQ:39942253: WEAP:5 Loc:64 Crit roll: 90.12 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:40:17.694]Resolving weapon's critical damage. Sequence id:90728942 weapon:M Laser
+ target: Blackjack:9c2cae94-8f3a-46ab-ad5b-574051e6ad07.0
+[11:40:17.700]Resolving weapon's critical damage. Sequence id:90728942 weapon:LRM5(LRM Ammo)
+ target: Blackjack:9c2cae94-8f3a-46ab-ad5b-574051e6ad07.0
+[11:40:51.365]Resolving weapon's critical damage. Sequence id:82951290 weapon:Melee
+ target: Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0
+[11:40:53.046]Resolving weapon's critical damage. Sequence id:57121770 weapon:MG(MG Ammo)
+ target: Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0
+  CenterTorso.Armor armor-on-hit:0 structure-on-hit:20
+  RightArm.Armor armor-on-hit:0.6999999 structure-on-hit:15
+  RightLeg.Armor armor-on-hit:0 structure-on-hit:2.699999
+  RightArm.Armor armor-on-hit:0 structure-on-hit:13.9
+[11:40:53.046]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:CenterTorso.Armor AOH:0 SOH:20 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:CenterTorso.Armor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1.5!
+ SEQ:57121770: WEAP:0 Loc:8 Final crit chance: 75.00 %
+ SEQ:57121770: WEAP:0 Loc:8 Crit roll: 81.25 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:40:53.046]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:RightArm.Armor AOH:0.6999999 SOH:15 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:RightArm.Armor -> chassis location:RightArm.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:57121770: WEAP:0 Loc:32 Final crit chance: 10.00 %
+ SEQ:57121770: WEAP:0 Loc:32 Crit roll: 27.07 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:40:53.046]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:RightLeg.Armor AOH:0 SOH:2.699999 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:RightLeg.Armor -> chassis location:RightLeg.Structure
+ [GetCritChance] base = 0.8650001, multiplier = 1.5!
+ SEQ:57121770: WEAP:0 Loc:128 Final crit chance: 129.75 %
+ SEQ:57121770: WEAP:0 Loc:128 Crit roll: 74.61 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:40:53.046]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:RightArm.Armor AOH:0 SOH:13.9 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:RightArm.Armor -> chassis location:RightArm.Structure
+ [GetCritChance] base = 0.5, multiplier = 1.5!
+ SEQ:57121770: WEAP:0 Loc:32 Final crit chance: 75.00 %
+ SEQ:57121770: WEAP:0 Loc:32 Crit roll: 13.50 %
+ SEQ:57121770: WEAP:0 Loc:32 Critical Hit! Found Upper Arm Actuator in slot 1
+ SEQ:57121770: WEAP:0 Loc:32 Critical: Upper Arm Actuator prev damage state: Destroyed
+ SEQ:57121770: WEAP:0 Loc:32 Critical: Upper Arm Actuator new damage state: Destroyed
+[11:40:53.050]Resolving weapon's critical damage. Sequence id:57121770 weapon:MG(MG Ammo)
+ target: Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0
+  RightArm.Armor armor-on-hit:0 structure-on-hit:12.1
+  RightArm.Armor armor-on-hit:0 structure-on-hit:10.3
+  RightArm.Armor armor-on-hit:0 structure-on-hit:8.499999
+  RightArm.Armor armor-on-hit:0 structure-on-hit:6.699999
+[11:40:53.050]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:RightArm.Armor AOH:0 SOH:12.1 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:RightArm.Armor -> chassis location:RightArm.Structure
+ [GetCritChance] base = 0.5, multiplier = 1.5!
+ SEQ:57121770: WEAP:1 Loc:32 Final crit chance: 75.00 %
+ SEQ:57121770: WEAP:1 Loc:32 Crit roll: 14.98 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:40:53.050]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:RightArm.Armor AOH:0 SOH:10.3 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:RightArm.Armor -> chassis location:RightArm.Structure
+ [GetCritChance] base = 0.5, multiplier = 1.5!
+ SEQ:57121770: WEAP:1 Loc:32 Final crit chance: 75.00 %
+ SEQ:57121770: WEAP:1 Loc:32 Crit roll: 60.09 %
+ SEQ:57121770: WEAP:1 Loc:32 Critical Hit! Found LRM5 in slot 2
+ SEQ:57121770: WEAP:1 Loc:32 Critical: LRM5 prev damage state: Penalized
+ SEQ:57121770: WEAP:1 Loc:32 Critical: LRM5 new damage state: Penalized
+[11:40:53.050]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:RightArm.Armor AOH:0 SOH:8.499999 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:RightArm.Armor -> chassis location:RightArm.Structure
+ [GetCritChance] base = 0.5, multiplier = 1.5!
+ SEQ:57121770: WEAP:1 Loc:32 Final crit chance: 75.00 %
+ SEQ:57121770: WEAP:1 Loc:32 Crit roll: 18.09 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:40:53.050]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:RightArm.Armor AOH:0 SOH:6.699999 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:RightArm.Armor -> chassis location:RightArm.Structure
+ [GetCritChance] base = 0.5533334, multiplier = 1.5!
+ SEQ:57121770: WEAP:1 Loc:32 Final crit chance: 83.00 %
+ SEQ:57121770: WEAP:1 Loc:32 Crit roll: 61.36 %
+ SEQ:57121770: WEAP:1 Loc:32 Critical Hit! Found LRM5 in slot 2
+ SEQ:57121770: WEAP:1 Loc:32 Critical: LRM5 prev damage state: Destroyed
+ SEQ:57121770: WEAP:1 Loc:32 Critical: LRM5 new damage state: Destroyed
+[11:41:03.798]Resolving weapon's critical damage. Sequence id:76910694 weapon:M Laser
+[11:41:04.081]Resolving weapon's critical damage. Sequence id:76910694 weapon:M Laser
+ target: Shadow Hawk:d7b3b2a0-a5ea-449b-8f20-e75ec9593a8b.0
+[11:41:20.365]Resolving weapon's critical damage. Sequence id:32681503 weapon:M Laser
+[11:41:20.615]Resolving weapon's critical damage. Sequence id:32681503 weapon:SRM2(SRM Ammo)
+ target: Blackjack:9c2cae94-8f3a-46ab-ad5b-574051e6ad07.0
+[11:41:33.361]Resolving weapon's critical damage. Sequence id:6136896 weapon:UAC/20(AC/20 Ammo)
+ target: Blackjack:dd1b3129-0f5d-4e93-b87d-42ab13c68e7d.0
+  RightTorso.Armor armor-on-hit:0 structure-on-hit:12.5
+  RightArm.Armor armor-on-hit:0 structure-on-hit:0
+[11:41:33.361]AdvancedCriticalProcessor.CheckForCrit Blackjack:dd1b3129-0f5d-4e93-b87d-42ab13c68e7d.0 loc:RightTorso.Armor AOH:0 SOH:12.5 weapon:Weapon_Autocannon_UAC20_0-STOCK
+ this is mech armor location:RightTorso.Armor -> chassis location:RightTorso.Structure
+ [GetCritChance] base = 0.7727273, multiplier = 1!
+ SEQ:6136896: WEAP:0 Loc:16 Final crit chance: 77.27 %
+ SEQ:6136896: WEAP:0 Loc:16 Crit roll: 60.06 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:41:33.361]AdvancedCriticalProcessor.CheckForCrit Blackjack:dd1b3129-0f5d-4e93-b87d-42ab13c68e7d.0 loc:RightArm.Armor AOH:0 SOH:0 weapon:Weapon_Autocannon_UAC20_0-STOCK
+ this is mech armor location:RightArm.Armor -> chassis location:RightArm.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:6136896: WEAP:0 Loc:32 Final crit chance: 100.00 %
+ SEQ:6136896: WEAP:0 Loc:32 Crit roll: 50.79 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:41:45.831]Resolving weapon's critical damage. Sequence id:41466557 weapon:M Laser
+ target: Blackjack:9c2cae94-8f3a-46ab-ad5b-574051e6ad07.0
+[11:42:03.721]Resolving weapon's critical damage. Sequence id:6154603 weapon:AC/5(AC/5 Ammo)
+ target: Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0
+  LeftArm.Armor armor-on-hit:0 structure-on-hit:0
+[11:42:03.721]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftArm.Armor AOH:0 SOH:0 weapon:Weapon_Autocannon_AC5_0-STOCK
+ this is mech armor location:LeftArm.Armor -> chassis location:LeftArm.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:6154603: WEAP:0 Loc:2 Final crit chance: 100.00 %
+ SEQ:6154603: WEAP:0 Loc:2 Crit roll: 46.49 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:42:05.664]Resolving weapon's critical damage. Sequence id:6154603 weapon:LRM5(LRM Ammo)
+ target: Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0
+  CenterTorso.Armor armor-on-hit:0 structure-on-hit:0
+  CenterTorso.Armor armor-on-hit:0 structure-on-hit:0
+  RightTorso.Armor armor-on-hit:0.09999895 structure-on-hit:35
+[11:42:05.664]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:CenterTorso.Armor AOH:0 SOH:0 weapon:Weapon_LRM_LRM5_0-STOCK
+ this is mech armor location:CenterTorso.Armor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:6154603: WEAP:1 Loc:8 Final crit chance: 100.00 %
+ SEQ:6154603: WEAP:1 Loc:8 Crit roll: 18.82 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:42:05.664]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:CenterTorso.Armor AOH:0 SOH:0 weapon:Weapon_LRM_LRM5_0-STOCK
+ this is mech armor location:CenterTorso.Armor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:6154603: WEAP:1 Loc:8 Final crit chance: 100.00 %
+ SEQ:6154603: WEAP:1 Loc:8 Crit roll: 13.55 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:42:05.664]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:RightTorso.Armor AOH:0.09999895 SOH:35 weapon:Weapon_LRM_LRM5_0-STOCK
+ this is mech armor location:RightTorso.Armor -> chassis location:RightTorso.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:6154603: WEAP:1 Loc:16 Final crit chance: 10.00 %
+ SEQ:6154603: WEAP:1 Loc:16 Crit roll: 59.14 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:42:07.231]Resolving weapon's critical damage. Sequence id:6154603 weapon:LRM10(LRM Ammo)
+ target: Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0
+  CenterTorso.Armor armor-on-hit:0 structure-on-hit:0
+  LeftArm.Armor armor-on-hit:0 structure-on-hit:0
+  RightTorso.Armor armor-on-hit:0 structure-on-hit:31.9
+  CenterTorso.Armor armor-on-hit:0 structure-on-hit:0
+  CenterTorso.Armor armor-on-hit:0 structure-on-hit:0
+  RightTorso.Armor armor-on-hit:0 structure-on-hit:28.7
+  CenterTorso.Armor armor-on-hit:0 structure-on-hit:0
+  LeftLeg.Armor armor-on-hit:0 structure-on-hit:26.5
+  CenterTorso.Armor armor-on-hit:0 structure-on-hit:0
+[11:42:07.231]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:CenterTorso.Armor AOH:0 SOH:0 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:CenterTorso.Armor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:6154603: WEAP:2 Loc:8 Final crit chance: 100.00 %
+ SEQ:6154603: WEAP:2 Loc:8 Crit roll: 16.45 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:42:07.231]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftArm.Armor AOH:0 SOH:0 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:LeftArm.Armor -> chassis location:LeftArm.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:6154603: WEAP:2 Loc:2 Final crit chance: 100.00 %
+ SEQ:6154603: WEAP:2 Loc:2 Crit roll: 41.80 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:42:07.231]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:RightTorso.Armor AOH:0 SOH:31.9 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:RightTorso.Armor -> chassis location:RightTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1!
+ SEQ:6154603: WEAP:2 Loc:16 Final crit chance: 50.00 %
+ SEQ:6154603: WEAP:2 Loc:16 Crit roll: 81.07 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:42:07.231]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:CenterTorso.Armor AOH:0 SOH:0 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:CenterTorso.Armor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:6154603: WEAP:2 Loc:8 Final crit chance: 100.00 %
+ SEQ:6154603: WEAP:2 Loc:8 Crit roll: 35.47 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:42:07.231]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:CenterTorso.Armor AOH:0 SOH:0 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:CenterTorso.Armor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:6154603: WEAP:2 Loc:8 Final crit chance: 100.00 %
+ SEQ:6154603: WEAP:2 Loc:8 Crit roll: 20.30 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:42:07.231]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:RightTorso.Armor AOH:0 SOH:28.7 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:RightTorso.Armor -> chassis location:RightTorso.Structure
+ [GetCritChance] base = 0.5, multiplier = 1!
+ SEQ:6154603: WEAP:2 Loc:16 Final crit chance: 50.00 %
+ SEQ:6154603: WEAP:2 Loc:16 Crit roll: 93.45 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:42:07.231]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:CenterTorso.Armor AOH:0 SOH:0 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:CenterTorso.Armor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:6154603: WEAP:2 Loc:8 Final crit chance: 100.00 %
+ SEQ:6154603: WEAP:2 Loc:8 Crit roll: 58.32 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:42:07.231]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:LeftLeg.Armor AOH:0 SOH:26.5 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:LeftLeg.Armor -> chassis location:LeftLeg.Structure
+ [GetCritChance] base = 0.5, multiplier = 1!
+ SEQ:6154603: WEAP:2 Loc:64 Final crit chance: 50.00 %
+ SEQ:6154603: WEAP:2 Loc:64 Crit roll: 54.05 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:42:07.232]AdvancedCriticalProcessor.CheckForCrit Javelin:2d62bfad-c89a-488e-94a4-25cb748f0423.0 loc:CenterTorso.Armor AOH:0 SOH:0 weapon:Weapon_LRM_LRM10_0-STOCK
+ this is mech armor location:CenterTorso.Armor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:6154603: WEAP:2 Loc:8 Final crit chance: 100.00 %
+ SEQ:6154603: WEAP:2 Loc:8 Crit roll: 64.16 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:42:31.864]Resolving weapon's critical damage. Sequence id:30120184 weapon:M Laser
+ target: Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0
+  RightTorso.Armor armor-on-hit:15 structure-on-hit:25
+[11:42:31.864]AdvancedCriticalProcessor.CheckForCrit Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0 loc:RightTorso.Armor AOH:15 SOH:25 weapon:Weapon_Laser_MediumLaser_0-STOCK
+ this is mech armor location:RightTorso.Armor -> chassis location:RightTorso.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:30120184: WEAP:0 Loc:16 Final crit chance: 10.00 %
+ SEQ:30120184: WEAP:0 Loc:16 Crit roll: 58.76 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:42:32.331]Resolving weapon's critical damage. Sequence id:30120184 weapon:M Laser
+ target: Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0
+  RightArm.Armor armor-on-hit:1.5 structure-on-hit:15
+[11:42:32.331]AdvancedCriticalProcessor.CheckForCrit Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0 loc:RightArm.Armor AOH:1.5 SOH:15 weapon:Weapon_Laser_MediumLaser_0-STOCK
+ this is mech armor location:RightArm.Armor -> chassis location:RightArm.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:30120184: WEAP:1 Loc:32 Final crit chance: 10.00 %
+ SEQ:30120184: WEAP:1 Loc:32 Crit roll: 82.69 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:42:32.731]Resolving weapon's critical damage. Sequence id:30120184 weapon:M Laser
+ target: Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0
+  RightArm.Armor armor-on-hit:0 structure-on-hit:0
+[11:42:32.731]AdvancedCriticalProcessor.CheckForCrit Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0 loc:RightArm.Armor AOH:0 SOH:0 weapon:Weapon_Laser_MediumLaser_0-STOCK
+ this is mech armor location:RightArm.Armor -> chassis location:RightArm.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:30120184: WEAP:2 Loc:32 Final crit chance: 100.00 %
+ SEQ:30120184: WEAP:2 Loc:32 Crit roll: 32.90 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:42:32.914]Resolving weapon's critical damage. Sequence id:30120184 weapon:M Laser
+ target: Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0
+  RightTorso.Armor armor-on-hit:0 structure-on-hit:0
+[11:42:32.914]AdvancedCriticalProcessor.CheckForCrit Locust:16d4b3f5-6d90-40c5-8b5b-6d0e2f69a229.0 loc:RightTorso.Armor AOH:0 SOH:0 weapon:Weapon_Laser_MediumLaser_0-STOCK
+ this is mech armor location:RightTorso.Armor -> chassis location:RightTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1!
+ SEQ:30120184: WEAP:3 Loc:16 Final crit chance: 100.00 %
+ SEQ:30120184: WEAP:3 Loc:16 Crit roll: 90.90 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:42:33.331]Resolving weapon's critical damage. Sequence id:30120184 weapon:M Laser
+[11:42:33.331]Resolving weapon's critical damage. Sequence id:30120184 weapon:SRM2(SRM Ammo)
+ target: Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0
+  RightTorso.Armor armor-on-hit:3.2 structure-on-hit:25
+[11:42:33.331]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:RightTorso.Armor AOH:3.2 SOH:25 weapon:Weapon_SRM_SRM2_0-STOCK
+ this is mech armor location:RightTorso.Armor -> chassis location:RightTorso.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:30120184: WEAP:5 Loc:16 Final crit chance: 10.00 %
+ SEQ:30120184: WEAP:5 Loc:16 Crit roll: 39.98 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:42:46.980]Resolving weapon's critical damage. Sequence id:40526819 weapon:M Laser
+ target: Shadow Hawk:d7b3b2a0-a5ea-449b-8f20-e75ec9593a8b.0
+[11:43:03.247]Resolving weapon's critical damage. Sequence id:69625439 weapon:Melee
+ target: Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0
+  LeftLeg.Armor armor-on-hit:0 structure-on-hit:2.699999
+[11:43:03.247]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:LeftLeg.Armor AOH:0 SOH:2.699999 weapon:Weapon_MeleeAttack
+ this is mech armor location:LeftLeg.Armor -> chassis location:LeftLeg.Structure
+ [GetCritChance] base = 0.8650001, multiplier = 1!
+ SEQ:69625439: WEAP:0 Loc:64 Final crit chance: 86.50 %
+ SEQ:69625439: WEAP:0 Loc:64 Crit roll: 24.59 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:43:06.069]Resolving weapon's critical damage. Sequence id:35599219 weapon:MG(MG Ammo)
+ target: Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0
+  RightLeg.Armor armor-on-hit:0 structure-on-hit:0.8999988
+  CenterTorso.RearArmor armor-on-hit:0 structure-on-hit:0
+  LeftArm.Armor armor-on-hit:0 structure-on-hit:0
+  RightTorso.RearArmor armor-on-hit:0.3999987 structure-on-hit:23.4
+[11:43:06.069]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:RightLeg.Armor AOH:0 SOH:0.8999988 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:RightLeg.Armor -> chassis location:RightLeg.Structure
+ [GetCritChance] base = 0.955, multiplier = 1.5!
+ SEQ:35599219: WEAP:0 Loc:128 Final crit chance: 143.25 %
+ SEQ:35599219: WEAP:0 Loc:128 Crit roll: 51.82 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:43:06.069]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:CenterTorso.RearArmor AOH:0 SOH:0 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:CenterTorso.RearArmor -> chassis location:CenterTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1.5!
+ SEQ:35599219: WEAP:0 Loc:8 Final crit chance: 150.00 %
+ SEQ:35599219: WEAP:0 Loc:8 Crit roll: 34.91 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:43:06.069]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:LeftArm.Armor AOH:0 SOH:0 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:LeftArm.Armor -> chassis location:LeftArm.Structure
+ [GetCritChance] base = 1, multiplier = 1.5!
+ SEQ:35599219: WEAP:0 Loc:2 Final crit chance: 150.00 %
+ SEQ:35599219: WEAP:0 Loc:2 Crit roll: 46.87 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:43:06.069]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:RightTorso.RearArmor AOH:0.3999987 SOH:23.4 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:RightTorso.RearArmor -> chassis location:RightTorso.Structure
+ [GetCritChance] base = 0.1, shards mod = 1, thickness mod = 1, ap mod = 1, result = 0.1!
+ SEQ:35599219: WEAP:0 Loc:16 Final crit chance: 10.00 %
+ SEQ:35599219: WEAP:0 Loc:16 Crit roll: 92.12 %
+ SEQ:0: WEAP:1 Loc:2 No crit
+[11:43:06.072]Resolving weapon's critical damage. Sequence id:35599219 weapon:MG(MG Ammo)
+ target: Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0
+  LeftTorso.RearArmor armor-on-hit:0 structure-on-hit:0
+  LeftArm.Armor armor-on-hit:0 structure-on-hit:0
+  LeftTorso.RearArmor armor-on-hit:0 structure-on-hit:0
+[11:43:06.072]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:LeftTorso.RearArmor AOH:0 SOH:0 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:LeftTorso.RearArmor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1.5!
+ SEQ:35599219: WEAP:1 Loc:4 Final crit chance: 150.00 %
+ SEQ:35599219: WEAP:1 Loc:4 Crit roll: 97.18 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:43:06.072]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:LeftArm.Armor AOH:0 SOH:0 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:LeftArm.Armor -> chassis location:LeftArm.Structure
+ [GetCritChance] base = 1, multiplier = 1.5!
+ SEQ:35599219: WEAP:1 Loc:2 Final crit chance: 150.00 %
+ SEQ:35599219: WEAP:1 Loc:2 Crit roll: 64.06 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3
+[11:43:06.072]AdvancedCriticalProcessor.CheckForCrit Locust:a2920539-8765-4260-ba55-1f155ae0bda8.0 loc:LeftTorso.RearArmor AOH:0 SOH:0 weapon:Weapon_MachineGun_MachineGun_0-STOCK
+ this is mech armor location:LeftTorso.RearArmor -> chassis location:LeftTorso.Structure
+ [GetCritChance] base = 1, multiplier = 1.5!
+ SEQ:35599219: WEAP:1 Loc:4 Final crit chance: 150.00 %
+ SEQ:35599219: WEAP:1 Loc:4 Crit roll: 85.75 %
+ SEQ:0: WEAP:1 Loc:2 Critical Hit! Component already destroyed 3

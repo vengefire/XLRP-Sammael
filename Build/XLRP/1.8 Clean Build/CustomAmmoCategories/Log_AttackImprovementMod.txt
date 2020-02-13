@@ -283,3 +283,19 @@
 11:29:29.1132 INFO LOS Indirect = [#3333CCFF, #2C88D3FF, #2C88D3FF, #2CD3CBFF, #24A8A2FF]
 11:29:29.1132 INFO LOS NoAttack = [#FFFFFF46, #FFFFFF46, #FFFFFF46, #FFFFFF46, #FFFFFF46]
 11:29:29.1132 INFO LOS is not animated.
+11:33:16.2737 ERR  System.ApplicationException: Error in ranged modifier 'selfterrain' ---> System.IO.FileNotFoundException: Could not load file or assembly 'CustomUnits, Version=0.0.0.19, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+  at Sheepy.BattleTechMod.AttackImprovementMod.ModifierList.SumModifiers (System.Collections.Generic.Dictionary`2[TKey,TValue] factors) [0x00033] in <6e838d6b7a3e48b2a194c9ca1e8199af>:0 
+  at Sheepy.BattleTechMod.AttackImprovementMod.ModifierList.OverrideRangedModifiers (System.Single& __result, BattleTech.AbstractActor attacker, BattleTech.Weapon weapon, BattleTech.ICombatant target, UnityEngine.Vector3 attackPosition, UnityEngine.Vector3 targetPosition, BattleTech.LineOfFireLevel lofLevel, System.Boolean isCalledShot) [0x00002] in <6e838d6b7a3e48b2a194c9ca1e8199af>:0 
+   --- End of inner exception stack trace ---
+11:35:14.3862 ERR  System.ApplicationException: Error in melee modifier 'selfterrain' ---> System.IO.FileNotFoundException: Could not load file or assembly 'CustomUnits, Version=0.0.0.19, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+  at Sheepy.BattleTechMod.AttackImprovementMod.ModifierList.SumModifiers (System.Collections.Generic.Dictionary`2[TKey,TValue] factors) [0x00033] in <6e838d6b7a3e48b2a194c9ca1e8199af>:0 
+  at Sheepy.BattleTechMod.AttackImprovementMod.ModifierList.OverrideMeleeModifiers (System.Single& __result, BattleTech.Mech attacker, BattleTech.ICombatant target, UnityEngine.Vector3 targetPosition, BattleTech.MeleeAttackType meleeAttackType) [0x00027] in <6e838d6b7a3e48b2a194c9ca1e8199af>:0 
+   --- End of inner exception stack trace ---
+11:35:29.1740 ERR  System.ApplicationException: Error in ranged modifier 'selfterrain' ---> System.IO.FileNotFoundException: Could not load file or assembly 'CustomUnits, Version=0.0.0.19, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+  at Sheepy.BattleTechMod.AttackImprovementMod.ModifierList.SetToolTips (BattleTech.UI.CombatHUDWeaponSlot slot, System.Collections.Generic.Dictionary`2[TKey,TValue] factors) [0x000e6] in <6e838d6b7a3e48b2a194c9ca1e8199af>:0 
+  at Sheepy.BattleTechMod.AttackImprovementMod.ModifierList.OverrideRangedToolTips (BattleTech.UI.CombatHUDWeaponSlot __instance, BattleTech.ICombatant target) [0x00002] in <6e838d6b7a3e48b2a194c9ca1e8199af>:0 
+   --- End of inner exception stack trace ---
+11:35:29.1760 ERR  System.ApplicationException: Error in melee modifier 'selfterrain' ---> System.IO.FileNotFoundException: Could not load file or assembly 'CustomUnits, Version=0.0.0.19, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+  at Sheepy.BattleTechMod.AttackImprovementMod.ModifierList.SetToolTips (BattleTech.UI.CombatHUDWeaponSlot slot, System.Collections.Generic.Dictionary`2[TKey,TValue] factors) [0x000e6] in <6e838d6b7a3e48b2a194c9ca1e8199af>:0 
+  at Sheepy.BattleTechMod.AttackImprovementMod.ModifierList.OverrideMeleeToolTips (BattleTech.UI.CombatHUDWeaponSlot __instance, BattleTech.ICombatant target) [0x0004a] in <6e838d6b7a3e48b2a194c9ca1e8199af>:0 
+   --- End of inner exception stack trace ---
