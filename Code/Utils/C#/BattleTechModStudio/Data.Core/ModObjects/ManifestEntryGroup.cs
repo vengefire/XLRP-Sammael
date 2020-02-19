@@ -35,7 +35,7 @@ namespace Data.Core.ModObjects
             }
             else
             {
-                ManifestSourceFiles = ContentDirectory.GetFiles().ToList();
+                ManifestSourceFiles = ContentDirectory.GetFiles("*", SearchOption.AllDirectories).ToList();
             }
 
             if (ManifestGroupObjectType != GameObjectTypeEnum.Prefab)
