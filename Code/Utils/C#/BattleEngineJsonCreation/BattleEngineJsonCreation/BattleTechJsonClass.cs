@@ -89,7 +89,7 @@ namespace BattleEngineJsonCreation
     public partial class HardpointDatum
     {
         [JsonProperty("location", NullValueHandling = NullValueHandling.Ignore)]
-        public string Location { get; set; }
+        public Location? Location { get; set; }
 
         [JsonProperty("weapons", NullValueHandling = NullValueHandling.Ignore)]
         public List<List<string>> Weapons { get; set; }
@@ -272,7 +272,7 @@ namespace BattleEngineJsonCreation
         public long? HardpointSlot { get; set; }
 
         [JsonProperty("DamageLevel", NullValueHandling = NullValueHandling.Ignore)]
-        public DamageLevel? DamageLevel { get; set; }
+        public string DamageLevel { get; set; }
 
         [JsonProperty("prefabName")]
         public string PrefabName { get; set; }
@@ -512,7 +512,7 @@ namespace BattleEngineJsonCreation
             }
             throw new Exception("Cannot unmarshal type DamageLevel");
         }
-
+        
         public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
         {
             if (untypedValue == null)
@@ -602,7 +602,6 @@ namespace BattleEngineJsonCreation
 
         public static readonly LocationConverter Singleton = new LocationConverter();
     }
-
     internal class WeaponMountConverter : JsonConverter
     {
         public override bool CanConvert(Type t) => t == typeof(WeaponMount) || t == typeof(WeaponMount?);

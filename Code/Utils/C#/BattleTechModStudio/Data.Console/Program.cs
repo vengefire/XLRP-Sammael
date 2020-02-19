@@ -1,12 +1,11 @@
-﻿using System;
-using System.IO;
-using System.Linq;
+﻿using System.Linq;
+using Data.Console.Utils;
 using Data.Core.Enums;
-using Data.Core.GameObjects.Gear;
 using Data.Core.Misc;
 using Data.Core.ModObjects;
 using Data.Core.Parsers;
 using Data.Services;
+using Newtonsoft.Json.Linq;
 
 namespace Data.Console
 {
@@ -14,11 +13,13 @@ namespace Data.Console
     {
         private static void Main(string[] args)
         {
-            var sourceDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH\Mods";
+            //var sourceDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH\Mods";
             //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\RogueTech";
             //var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
-            var btDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH";
-            var dlcDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH\Repository\bt-dlc-designdata";
+            // var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Sammael\Build\XLRP\1.8 Clean Build";
+            var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Complete";
+            var btDirectory = @"D:\Test Data\BT Base Data";
+            var dlcDirectory = @"C:\Users\Stephen Weistra\gitrepos\bt-dlc-designdata";
 
             var manifestService = new ManifestService();
             var manifest = manifestService.InitManifestFromDisk(btDirectory, dlcDirectory);
@@ -40,10 +41,7 @@ namespace Data.Console
                                      $"Invalid Mods - {invalidMods.Count}\r\n");
 
             System.Console.WriteLine("Disabled Mods:");
-            disabledMods.ForEach(mod =>
-            {
-                System.Console.WriteLine($"{mod.Name}");
-            });
+            disabledMods.ForEach(mod => { System.Console.WriteLine($"{mod.Name}"); });
             System.Console.WriteLine();
 
             System.Console.WriteLine("Invalid Mods:");
@@ -72,21 +70,79 @@ namespace Data.Console
                 "GameObjectTypeEnum"
             );
 
-            System.Console.WriteLine("Generated Type Enum:\r\n" +
-                                     $"{typeEnumString}");
+            /*System.Console.WriteLine("Generated Type Enum:\r\n" +
+                                     $"{typeEnumString}");*/
 
             modCollection.ExpandManifestGroups();
 
             var result = ModMerger.Merge(manifest, modCollection);
 
-            System.Console.WriteLine($"Failed Merges : \r\n" +
+            System.Console.WriteLine("Failed Merges : \r\n" +
                                      $"{string.Join("\r\n", ModMerger.FailedMerges.Select(tuple => $"{tuple.Item1.FileInfo.FullName} - {tuple.Item2}"))}");
+
+            var objectsWithStatusEffects = result.mergedManifestEntries.Where(entry =>
+            {
+                if (entry.GameObjectType == GameObjectTypeEnum.Prefab || !entry.FileInfo.Extension.Contains("json"))
+                {
+                    return false;
+                }
+
+                var statusEffects = entry.Json["statusEffects"];
+                if (statusEffects == null)
+                {
+                    return false;
+                }
+
+                if (!(statusEffects is JArray))
+                {
+                    if (statusEffects.Type != JTokenType.Null)
+                    {
+                        return true;
+                    }
+
+                    return false;
+                }
+
+                statusEffects = (JArray) statusEffects;
+                foreach (var statusEffect in statusEffects)
+                {
+                    var description = statusEffect["Description"];
+                    if (description == null)
+                    {
+                        return true;
+                    }
+
+                    var id = description["Id"];
+                    if (id == null)
+                    {
+                        return true;
+                    }
+                }
+
+                return false;
+            });
+
+            // StoreContentGenerator.GenerateStoreContentList(result.mergedManifestEntries, @"C:\Users\Stephen Weistra\gitrepos\vfBattleTechMod-Core\vfBattleTechMod-ProcGenStores\Res");
+            var planetTags = PlanetTagEnumerator.EnumeratePlanetTags(result.mergedManifestEntries);
+            planetTags.GroupBy(tag => tag.category, tag => tag.value, (category, tags) => new {category = category, tags = tags}).ToList().ForEach(tagGroup =>
+            {
+                System.Console.WriteLine($"-----{tagGroup.category}");
+                System.Console.WriteLine(string.Join("\r\n", tagGroup.tags));
+            });
+
+            //System.Console.WriteLine(string.Join("\r\n", );
+
+            /*System.Console.WriteLine($"Objects with JObject statusEffects, status effects with NULL descriptions or description.IDs:\r\n" +
+                                     $"{string.Join("\r\n", objectsWithStatusEffects.Select(entry => entry.FileInfo.FullName))}");*/
+
+            //var ablities = result.mergedManifestEntries.Where(entry => entry.GameObjectType == GameObjectTypeEnum.AbilityDef).ToList();
+            //var bad_abilities = ablities.Where(entry => entry.Json["Description"] == null || entry.Json["Description"].ToString() == string.Empty).ToList();
 
             /*var modifiedIds = result.manifestEntryStackById.Where(pair => pair.Value.Count > 1);
             System.Console.WriteLine($"Ids modified multiple times via modifications:\r\n" +
                                      $"{string.Join("\r\n", modifiedIds.Select(pair => $"\t{pair.Key} - {pair.Value.Count}"))}");*/
 
-            var weapons = result.mergedManifestEntries.Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => WeaponBase.FromJson(entry.Json.ToString())).ToList();
+            /*var weapons = result.mergedManifestEntries.Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => WeaponBase.FromJson(entry.Json.ToString())).ToList();
             weapons.Sort((weapon1, weapon2) => string.CompareOrdinal(weapon1.Description.Id, weapon2.Description.Id));
             using (var file = File.CreateText(@"c:\tmp\btms-weapons.csv"))
             {
@@ -105,7 +161,11 @@ namespace Data.Console
                                    $"{weapon.ProjectilesPerShot}|{weapon.RefireModifier}|{weapon.ShotsWhenFired}|{weapon.StartingAmmoCapacity}|{string.Join(",", weapon.RangeSplit)}|" +
                                    $"{weapon.WeaponSubType}");
                 }
-            }
+            }*/
+
+            /*System.Console.WriteLine($"Mechs!\r\n" +
+                                     $"{string.Join("\r\n", result.mergedManifestEntries.Where(entry => entry.GameObjectType == GameObjectTypeEnum.MechDef).Select(entry => entry.Id))}");*/
+
             /*var weapons = result.mergedManifestEntries.Where(entry => entry.GameObjectType == GameObjectTypeEnum.WeaponDef).Select(entry => $"{entry.Id} - {entry.GameObjectType} - {entry.AssetBundleName}").ToList();
             weapons.Sort();
             System.Console.WriteLine("Distinct Weapon Definitions:\r\n" +
