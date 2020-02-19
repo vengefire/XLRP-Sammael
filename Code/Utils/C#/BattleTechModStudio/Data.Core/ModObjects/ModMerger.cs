@@ -30,10 +30,10 @@ namespace Data.Core.ModObjects
                 if (manifestEntryStackItem.Value.Count == 1)
                 {
                     var entry = manifestEntryStackItem.Value.First();
-                    if (entry.ManifestEntryGroup == null || entry.ManifestEntryGroup.AddToDb)
-                    {
+                    //if (entry.ManifestEntryGroup == null || entry.ManifestEntryGroup.AddToDb)
+                    //{
                         mergedResult = entry;
-                    }
+                    //}
                 }
                 else
                 {
