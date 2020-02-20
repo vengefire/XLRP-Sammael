@@ -39,14 +39,14 @@ namespace BattleEngineJsonCreation
                     if (lines[3].Contains("Biped"))
                     {
                         //Console.WriteLine($"Processing {filename} on thread {Thread.CurrentThread.ManagedThreadId}");
-                        var chassisDef = new ChassisDef
+                        dynamic chassisDef = new ChassisDef
                         {
                             Locations = new List<ChassisDefLocation>(),
                             Description = new DefDescription()
                         };
                         //chassisDefDescription = new DefDescription();
                         //mechDefDescription = new DefDescription();
-                        var mechDef = new MechDef
+                        dynamic mechDef = new MechDef
                         {
                             Locations = new List<MechDefLocation>(),
                             Description = new DefDescription()
@@ -62,7 +62,7 @@ namespace BattleEngineJsonCreation
                         chassisDef.Radius = 8;
                         chassisDef.PunchesWithLeftArm = false;
                         chassisDefTags.TagSetSourceFile = "";
-
+                        chassisDef.Heatsinks = 0;
                         chassisDef.StockRole = "SRUPDATE";
                         chassisDef.YangsThoughts = "YTUPDATE";
 
@@ -147,8 +147,6 @@ namespace BattleEngineJsonCreation
                                     }
                                 }
                             }
-
-                            chassisDef.Heatsinks = 0;
 
                             if (words[0].ToLower().Contains("armorvals"))
                             {
