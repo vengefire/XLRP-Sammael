@@ -29,8 +29,8 @@ namespace BattleEngineJsonCreation
                 }
             }
             int tonnageIndex=0;
-            try
-            {
+            //try
+            //{
                 Parallel.ForEach(files,(currentFile) =>
                 //foreach (var currentFile in files)
                 {
@@ -38,7 +38,7 @@ namespace BattleEngineJsonCreation
                     string[] lines = System.IO.File.ReadAllLines(currentFile);
                     if (lines[3].Contains("Biped"))
                     {
-                        //Console.WriteLine($"Processing {filename} on thread {Thread.CurrentThread.ManagedThreadId}");
+                        Console.WriteLine($"Processing {filename} on thread {Thread.CurrentThread.ManagedThreadId}");
                         dynamic chassisDef = new ChassisDef
                         {
                             Locations = new List<ChassisDefLocation>(),
@@ -73,34 +73,30 @@ namespace BattleEngineJsonCreation
                             if (words[0].ToLower().Contains("name"))
                             {
                                 string[] split = words[1].Split(' ');
-                                if (split[1].Contains("("))
+                                if (split.Length > 2)
                                 {
-                                    if (split.Length > 2)
-                                    {
-                                        chassisDef.VariantName = split[2];
-                                        chassisDef.Description.Name = split[0];
-                                        mechDef.Description.Name = split[0];
-                                        chassisDef.Description.Id = "chassisdef_" + chassisDef.Description.Name
-                                        + "_" + chassisDef.VariantName;
-                                        chassisDef.Description.Icon = "uixTxrIcon_" + chassisDef.Description.Name.ToLower();
-                                        chassisDef.HardpointDataDefId = "hardpointdatadef_" + chassisDef.Description.Name.ToLower();
-                                        chassisDef.PrefabIdentifier = "chrPrfMech_" + chassisDef.Description.Name.ToLower() + "Base-001";
-                                        chassisDef.PrefabBase = chassisDef.Description.Name.ToLower();
-                                    }
-                                    else
-                                    {
-                                        chassisDef.VariantName = split[0];
-                                        chassisDef.Description.Name = split[1];
-                                        mechDef.Description.Name = split[0];
-                                        chassisDef.Description.Id = "chassisdef_" + chassisDef.Description.Name
-                                        + "_" + chassisDef.VariantName;
-                                        chassisDef.Description.Icon = "uixTxrIcon_" + chassisDef.Description.Name.ToLower();
-                                        chassisDef.HardpointDataDefId = "hardpointdatadef_" + chassisDef.Description.Name.ToLower();
-                                        chassisDef.PrefabIdentifier = "chrPrfMech_" + chassisDef.Description.Name.ToLower() + "Base-001";
-                                        chassisDef.PrefabBase = chassisDef.Description.Name.ToLower();
-                                    }
+                                    chassisDef.VariantName = split[0];
+                                    chassisDef.Description.Name = split[1] + " " + split[2];
+                                    mechDef.Description.Name = split[1] + " " + split[2];
                                 }
-
+                                if (split.Length > 3)
+                                {
+                                    chassisDef.VariantName = split[0];
+                                    chassisDef.Description.Name = split[3] + " " + split[1] + " " + split[2];
+                                    mechDef.Description.Name = split[3] + " " + split[1] + " " + split[2];
+                                }
+                                if (split.Length == 2)
+                                {
+                                    chassisDef.VariantName = split[0];
+                                    chassisDef.Description.Name = split[1];
+                                    mechDef.Description.Name = split[1];
+                                }
+                                chassisDef.Description.Id = "chassisdef_" + chassisDef.Description.Name
+                                + "_" + chassisDef.VariantName;
+                                chassisDef.Description.Icon = "uixTxrIcon_" + chassisDef.Description.Name.ToLower();
+                                chassisDef.HardpointDataDefId = "hardpointdatadef_" + chassisDef.Description.Name.ToLower();
+                                chassisDef.PrefabIdentifier = "chrPrfMech_" + chassisDef.Description.Name.ToLower() + "Base-001";
+                                chassisDef.PrefabBase = chassisDef.Description.Name.ToLower();
                             }
                             if (words[0].ToLower().Contains("tons"))
                             {
@@ -121,7 +117,7 @@ namespace BattleEngineJsonCreation
                                     if (hbsfromTTISarry[i, 0] == chassisDef.Tonnage)
                                     {
                                         tonnageIndex = i;
-                                        Console.WriteLine(hbsfromTTISarry[i, 0]);
+                                        //Console.WriteLine(hbsfromTTISarry[i, 0]);
                                         chassisDef.MovementCapDefId = "movedef_assaultmech";
                                         chassisDef.PathingCapDefId = "pathingdef_assault";
                                         chassisDef.WeightClass = "ASSAULT";
@@ -329,151 +325,6 @@ namespace BattleEngineJsonCreation
                                     chassisDef.MaxJumpjets = Convert.ToInt32(split[2]);
                                 }
                             }
-
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
-                            if (words[0].ToLower().Contains("name"))
-                            {
-
-                            }
                         }
                         string outputmechDef = Newtonsoft.Json.JsonConvert.SerializeObject(mechDef, Newtonsoft.Json.Formatting.Indented);
                         string outputchassisDef = Newtonsoft.Json.JsonConvert.SerializeObject(chassisDef, Newtonsoft.Json.Formatting.Indented);
@@ -489,12 +340,12 @@ namespace BattleEngineJsonCreation
 
                     });
                 //}
-            }
-            catch (System.Exception excpt)
+            //}
+            /*catch (System.Exception excpt)
             {
                     Console.WriteLine(excpt.Message);
                     Console.ReadKey();
-            }        
+            } */       
         }
         public void ParseEngine(string[] lines)
         {
