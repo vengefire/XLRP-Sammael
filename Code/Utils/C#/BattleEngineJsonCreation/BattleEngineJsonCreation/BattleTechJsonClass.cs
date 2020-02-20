@@ -107,7 +107,7 @@ namespace BattleEngineJsonCreation
         public List<FixedEquipment> FixedEquipment { get; set; }
 
         [JsonProperty("Description", NullValueHandling = NullValueHandling.Ignore)]
-        public ChassisDefDescription Description { get; set; }
+        public DefDescription Description { get; set; }
 
         [JsonProperty("MovementCapDefID", NullValueHandling = NullValueHandling.Ignore)]
         public string MovementCapDefId { get; set; }
@@ -128,7 +128,7 @@ namespace BattleEngineJsonCreation
         public long? Tonnage { get; set; }
 
         [JsonProperty("InitialTonnage", NullValueHandling = NullValueHandling.Ignore)]
-        public double? InitialTonnage { get; set; }
+        public float? InitialTonnage { get; set; }
 
         [JsonProperty("weightClass", NullValueHandling = NullValueHandling.Ignore)]
         public string WeightClass { get; set; }
@@ -224,7 +224,7 @@ namespace BattleEngineJsonCreation
         public string TagSetSourceFile { get; set; }
     }
 
-    public partial class ChassisDefDescription
+    public partial class DefDescription
     {
         [JsonProperty("Cost", NullValueHandling = NullValueHandling.Ignore)]
         public long? Cost { get; set; }
@@ -299,7 +299,7 @@ namespace BattleEngineJsonCreation
         public List<Hardpoint> Hardpoints { get; set; }
 
         [JsonProperty("Tonnage", NullValueHandling = NullValueHandling.Ignore)]
-        public long? Tonnage { get; set; }
+        public double? Tonnage { get; set; }
 
         [JsonProperty("InventorySlots", NullValueHandling = NullValueHandling.Ignore)]
         public long? InventorySlots { get; set; }
@@ -344,7 +344,7 @@ namespace BattleEngineJsonCreation
         public object HeraldryId { get; set; }
 
         [JsonProperty("Description", NullValueHandling = NullValueHandling.Ignore)]
-        public ChassisDefDescription Description { get; set; }
+        public DefDescription Description { get; set; }
 
         [JsonProperty("simGameMechPartCost", NullValueHandling = NullValueHandling.Ignore)]
         public long? SimGameMechPartCost { get; set; }
