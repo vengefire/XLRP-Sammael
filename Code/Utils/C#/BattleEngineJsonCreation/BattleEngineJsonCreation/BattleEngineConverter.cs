@@ -36,6 +36,8 @@ namespace BattleEngineJsonCreation
                 {
                     string filename = Path.GetFileName(currentFile);
                     string[] lines = System.IO.File.ReadAllLines(currentFile);
+                    
+
                     if (lines[3].Contains("Biped"))
                     {
                         Console.WriteLine($"Processing {filename} on thread {Thread.CurrentThread.ManagedThreadId}");
@@ -69,9 +71,11 @@ namespace BattleEngineJsonCreation
                         foreach (string l in lines)
                         {
                             string newl = l.Replace("\"", "");
+                            
                             string[] words = newl.Split(',');
                             if (words[0].ToLower().Contains("name"))
                             {
+                                words[1] = words[1].Replace("/", "");
                                 string[] split = words[1].Split(' ');
                                 if (split.Length > 2)
                                 {
@@ -328,8 +332,8 @@ namespace BattleEngineJsonCreation
                         }
                         string outputmechDef = Newtonsoft.Json.JsonConvert.SerializeObject(mechDef, Newtonsoft.Json.Formatting.Indented);
                         string outputchassisDef = Newtonsoft.Json.JsonConvert.SerializeObject(chassisDef, Newtonsoft.Json.Formatting.Indented);
-                        File.WriteAllText("mechdef_" + filename + ".json", outputmechDef);
-                        File.WriteAllText("chassisdef_" + filename + ".json", outputchassisDef);
+                        File.WriteAllText("mechdef_" + chassisDef.Description.Name + "_" + chassisDef.VariantName + ".json", outputmechDef);
+                        File.WriteAllText("chassisdef_" + chassisDef.Description.Name + "_" + chassisDef.VariantName + ".json", outputchassisDef);
                     }
                     else
                     {
