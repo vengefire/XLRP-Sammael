@@ -330,8 +330,8 @@ namespace BattleEngineJsonCreation
                                 }
                             }
                         }
-                        string outputmechDef = Newtonsoft.Json.JsonConvert.SerializeObject(mechDef, Newtonsoft.Json.Formatting.Indented);
-                        string outputchassisDef = Newtonsoft.Json.JsonConvert.SerializeObject(chassisDef, Newtonsoft.Json.Formatting.Indented);
+                        string outputmechDef = Newtonsoft.Json.JsonConvert.SerializeObject(mechDef, Newtonsoft.Json.Formatting.Indented, BattleEngineJsonCreation.Converter.Settings);
+                        string outputchassisDef = Newtonsoft.Json.JsonConvert.SerializeObject(chassisDef, Newtonsoft.Json.Formatting.Indented, BattleEngineJsonCreation.Converter.Settings);
                         File.WriteAllText("mechdef_" + chassisDef.Description.Name + "_" + chassisDef.VariantName + ".json", outputmechDef);
                         File.WriteAllText("chassisdef_" + chassisDef.Description.Name + "_" + chassisDef.VariantName + ".json", outputchassisDef);
                     }
