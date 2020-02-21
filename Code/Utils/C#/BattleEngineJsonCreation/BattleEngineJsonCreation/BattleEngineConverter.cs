@@ -29,16 +29,44 @@ namespace BattleEngineJsonCreation
                 }
             }
             int tonnageIndex=0;
+            //BED Name, (HBS weaponID "File name without.json", ComponentDefType { AmmunitionBox, HeatSink, JumpJet, Upgrade, Weapon }; 
+            var componentDefDictionary = new Dictionary<string, (string, ComponentDefType)>() {
+                                    { "Large Laser", ("Weapon_Laser_LargeLaser_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Medium Laser", ("Weapon_Laser_MediumLaser_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Small Laser", ("Weapon_Laser_SmallLaser_0-STOCK",ComponentDefType.Weapon)},
+                                    { "AC/2", ("Weapon_Autocannon_AC2_0-STOCK",ComponentDefType.Weapon)},
+                                    { "AC/5", ("Weapon_Autocannon_AC5_0-STOCK",ComponentDefType.Weapon)},
+                                    { "AC/10", ("Weapon_Autocannon_AC10_0-STOCK",ComponentDefType.Weapon)},
+                                    { "AC/20", ("Weapon_Autocannon_AC20_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Flamer", ("Weapon_Flamer_Flamer_0-STOCK",ComponentDefType.Weapon)},
+                                    { "LRM 5", ("Weapon_LRM_LRM5_0-STOCK",ComponentDefType.Weapon)},
+                                    { "LRM 10", ("Weapon_LRM_LRM10_0-STOCK",ComponentDefType.Weapon)},
+                                    { "LRM 15", ("Weapon_LRM_LRM15_0-STOCK",ComponentDefType.Weapon)},
+                                    { "LRM 20", ("Weapon_LRM_LRM20_0-STOCK",ComponentDefType.Weapon)},
+                                    { "PPC", ("Weapon_PPC_PPC_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
+                                    };
             //try
             //{
-                Parallel.ForEach(files,(currentFile) =>
+            Parallel.ForEach(files,(currentFile) =>
                 //foreach (var currentFile in files)
                 {
                     string filename = Path.GetFileName(currentFile);
                     string[] lines = System.IO.File.ReadAllLines(currentFile);
-                    
+                    string[] critLines = lines.SkipWhile(x => !x.Contains("Crits"))
+                        .Skip(1)
+                        .ToArray();
 
-                    if (lines[3].Contains("Biped"))
+                    if ((lines[3].Contains("Biped"))&&(lines[0].Contains("ARC-2K")))
                     {
                         Console.WriteLine($"Processing {filename} on thread {Thread.CurrentThread.ManagedThreadId}");
                         dynamic chassisDef = new ChassisDef
@@ -51,7 +79,8 @@ namespace BattleEngineJsonCreation
                         dynamic mechDef = new MechDef
                         {
                             Locations = new List<MechDefLocation>(),
-                            Description = new DefDescription()
+                            Description = new DefDescription(),
+                            Inventory = new List<FixedEquipment>(),
                         };
                         chassisDef.FixedEquipment = new List<FixedEquipment> { };
                         var chassisDefTags = new Tags { };
@@ -67,7 +96,7 @@ namespace BattleEngineJsonCreation
                         chassisDef.Heatsinks = 0;
                         chassisDef.StockRole = "SRUPDATE";
                         chassisDef.YangsThoughts = "YTUPDATE";
-
+                        //bool critProcessing = false;
                         foreach (string l in lines)
                         {
                             string newl = l.Replace("\"", "");
@@ -329,20 +358,49 @@ namespace BattleEngineJsonCreation
                                     chassisDef.MaxJumpjets = Convert.ToInt32(split[2]);
                                 }
                             }
+                            if (words[0].Contains("Crits"))
+                            {
+
+                                //critProcessing = true;
+                                for (int i = 0; i < critLines.Length; i++)
+                                {
+
+                                    var mountLocationVar=Location.LeftArm;
+                                    if (i <= 12) mountLocationVar = Location.LeftArm;
+                                    if ((i <= 24) && (i > 12)) mountLocationVar = Location.LeftTorso;
+                                    if ((i <= 36) && (i > 24)) mountLocationVar = Location.RightTorso;
+                                    if ((i <= 48) && (i > 36)) mountLocationVar = Location.RightArm;
+                                    if ((i <= 60) && (i > 48)) mountLocationVar = Location.CenterTorso;
+                                    if ((i <= 66) && (i > 60)) mountLocationVar = Location.Head;
+                                    if ((i <= 72) && (i > 66)) mountLocationVar = Location.LeftLeg;
+                                    if ((i <= 78) && (i > 72)) mountLocationVar = Location.RightLeg;
+                                    if (componentDefDictionary.ContainsKey(critLines[i]))
+                                    {
+                                        mechDef.Inventory.Add(new FixedEquipment
+                                        {
+                                            MountedLocation = mountLocationVar,
+                                            ComponentDefId = componentDefDictionary[critLines[i]].Item1,
+                                            ComponentDefType = componentDefDictionary[critLines[i]].Item2,
+                                            HardpointSlot = -1,
+                                            DamageLevel = "Functional",
+                                            PrefabName = null,
+                                            HasPrefabName = false,
+                                            SimGameUid = "",
+                                            Guid = null
+                                        }) ;
+                                    }
+                                }
+                            }
                         }
                         string outputmechDef = Newtonsoft.Json.JsonConvert.SerializeObject(mechDef, Newtonsoft.Json.Formatting.Indented, BattleEngineJsonCreation.Converter.Settings);
                         string outputchassisDef = Newtonsoft.Json.JsonConvert.SerializeObject(chassisDef, Newtonsoft.Json.Formatting.Indented, BattleEngineJsonCreation.Converter.Settings);
                         File.WriteAllText("mechdef_" + chassisDef.Description.Name + "_" + chassisDef.VariantName + ".json", outputmechDef);
                         File.WriteAllText("chassisdef_" + chassisDef.Description.Name + "_" + chassisDef.VariantName + ".json", outputchassisDef);
                     }
-                    else
-                    {
-                        //Console.WriteLine($"Skiped {filename} on thread {Thread.CurrentThread.ManagedThreadId}");
-                        //Console.ReadKey();
-                    }
+                    
 
 
-                    });
+                });
                 //}
             //}
             /*catch (System.Exception excpt)
