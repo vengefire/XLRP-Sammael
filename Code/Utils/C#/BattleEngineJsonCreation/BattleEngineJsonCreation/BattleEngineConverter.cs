@@ -29,32 +29,82 @@ namespace BattleEngineJsonCreation
                 }
             }
             int tonnageIndex=0;
+
             //BED Name, (HBS weaponID "File name without.json", ComponentDefType { AmmunitionBox, HeatSink, JumpJet, Upgrade, Weapon }; 
             var componentDefDictionary = new Dictionary<string, (string, ComponentDefType)>() {
+                                    //Weapons Laser
                                     { "Large Laser", ("Weapon_Laser_LargeLaser_0-STOCK",ComponentDefType.Weapon)},
                                     { "Medium Laser", ("Weapon_Laser_MediumLaser_0-STOCK",ComponentDefType.Weapon)},
                                     { "Small Laser", ("Weapon_Laser_SmallLaser_0-STOCK",ComponentDefType.Weapon)},
+                                    //Pulse
+                                    { "Large Pulse Laser", ("Weapon_Laser_LargeLaserPulse_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Medium Pulse Laser", ("Weapon_Laser_MediumLaserPulse_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Small Pulse Laser", ("Weapon_Laser_SmallLaserPulse_0-STOCK",ComponentDefType.Weapon)},
+                                    //ER
+                                    { "ER Large Laser", ("Weapon_Laser_LargeLaserER_0-STOCK",ComponentDefType.Weapon)},
+                                    { "ER Medium Laser", ("Weapon_Laser_MediumLaserER_0-STOCK",ComponentDefType.Weapon)},
+                                    { "ER Small Laser", ("Weapon_Laser_SmallLaserER_0-STOCK",ComponentDefType.Weapon)},
+                                    //PPC
+                                    { "PPC", ("Weapon_PPC_PPC_0-STOCK",ComponentDefType.Weapon)},
+                                    { "ER PPC", ("Weapon_PPC_PPCER_0-STOCK",ComponentDefType.Weapon)},
+                                    //Weapons Ballistic
                                     { "AC/2", ("Weapon_Autocannon_AC2_0-STOCK",ComponentDefType.Weapon)},
                                     { "AC/5", ("Weapon_Autocannon_AC5_0-STOCK",ComponentDefType.Weapon)},
                                     { "AC/10", ("Weapon_Autocannon_AC10_0-STOCK",ComponentDefType.Weapon)},
                                     { "AC/20", ("Weapon_Autocannon_AC20_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Gauss Rifle", ("Weapon_Gauss_Gauss_0-STOCK",ComponentDefType.Weapon)},
+                                    //Flamers
                                     { "Flamer", ("Weapon_Flamer_Flamer_0-STOCK",ComponentDefType.Weapon)},
+                                    //Missiles
                                     { "LRM 5", ("Weapon_LRM_LRM5_0-STOCK",ComponentDefType.Weapon)},
                                     { "LRM 10", ("Weapon_LRM_LRM10_0-STOCK",ComponentDefType.Weapon)},
                                     { "LRM 15", ("Weapon_LRM_LRM15_0-STOCK",ComponentDefType.Weapon)},
                                     { "LRM 20", ("Weapon_LRM_LRM20_0-STOCK",ComponentDefType.Weapon)},
-                                    { "PPC", ("Weapon_PPC_PPC_0-STOCK",ComponentDefType.Weapon)},
                                     { "SRM 2", ("Weapon_SRM_SRM2_0-STOCK",ComponentDefType.Weapon)},
                                     { "SRM 4", ("Weapon_SRM_SRM4_0-STOCK",ComponentDefType.Weapon)},
                                     { "SRM 6", ("Weapon_SRM_SRM6_0-STOCK",ComponentDefType.Weapon)},
-                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
-                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
-                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
-                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
-                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
-                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
-                                    { "Machine Gun", ("Weapon_MachineGun_MachineGun_0-STOCK",ComponentDefType.Weapon)},
+                                    //Ammo
+                                    { "Ammo AC/2", ("Ammo_AmmunitionBox_Generic_AC2",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo AC/5", ("Ammo_AmmunitionBox_Generic_AC5",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo AC/10", ("Ammo_AmmunitionBox_Generic_AC10",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo AC/20", ("Ammo_AmmunitionBox_Generic_AC20",ComponentDefType.AmmunitionBox)},
+                                    { "Ammmo Gauss Rifle", ("Ammo_AmmunitionBox_Generic_GAUSS",ComponentDefType.AmmunitionBox)},
+                                    { "Machine Gun", ("Ammo_AmmunitionBox_Generic_MG",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo Flamer", ("Ammo_AmmunitionBox_Generic_Flamer",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo LRM 5", ("Ammo_AmmunitionBox_Generic_LRM",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo LRM 10", ("Ammo_AmmunitionBox_Generic_LRM",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo LRM 15", ("Ammo_AmmunitionBox_Generic_LRM",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo LRM 20", ("Ammo_AmmunitionBox_Generic_LRM",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo SRM 2", ("Ammo_AmmunitionBox_Generic_SRM",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo SRM 4", ("Ammo_AmmunitionBox_Generic_SRM",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo SRM 6", ("Ammo_AmmunitionBox_Generic_SRM",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo SRM 8", ("Ammo_AmmunitionBox_Generic_SRM",ComponentDefType.AmmunitionBox)},
+                                    //Actuators
+                                    { "Shoulder", ("emod_arm_part_shoulder",ComponentDefType.Upgrade)},
+                                    { "Upper Arm Actuator", ("emod_arm_part_upper",ComponentDefType.Upgrade)},
+                                    { "Lower Arm Actuator", ("emod_arm_part_lower",ComponentDefType.Upgrade)},
+                                    { "Hand Actuator", ("emod_arm_part_hand",ComponentDefType.Upgrade)},
+                                    { "Hip", ("emod_leg_hip",ComponentDefType.Upgrade)},
+                                    { "Upper Leg Actuator", ("emod_leg_upper",ComponentDefType.Upgrade)},
+                                    { "Lower Leg Actuator", ("emod_leg_lower",ComponentDefType.Upgrade)},
+                                    { "Foot Actuator", ("emod_leg_foot",ComponentDefType.Upgrade)},
+                                    //HeatSinks
+                                    { "Heat Sink", ("Gear_HeatSink_Generic_Standard",ComponentDefType.HeatSink)},
+                                    { "Double Heat Sink", ("Gear_HeatSink_Generic_Double",ComponentDefType.HeatSink)},
                                     };
+            dynamic chassisDef = new ChassisDef
+            {
+                Locations = new List<ChassisDefLocation>(),
+                Description = new DefDescription()
+            };
+            //chassisDefDescription = new DefDescription();
+            //mechDefDescription = new DefDescription();
+            dynamic mechDef = new MechDef
+            {
+                Locations = new List<MechDefLocation>(),
+                Description = new DefDescription(),
+                Inventory = new List<FixedEquipment>(),
+            };
             //try
             //{
             Parallel.ForEach(files,(currentFile) =>
@@ -69,19 +119,7 @@ namespace BattleEngineJsonCreation
                     if ((lines[3].Contains("Biped"))&&(lines[0].Contains("ARC-2K")))
                     {
                         Console.WriteLine($"Processing {filename} on thread {Thread.CurrentThread.ManagedThreadId}");
-                        dynamic chassisDef = new ChassisDef
-                        {
-                            Locations = new List<ChassisDefLocation>(),
-                            Description = new DefDescription()
-                        };
-                        //chassisDefDescription = new DefDescription();
-                        //mechDefDescription = new DefDescription();
-                        dynamic mechDef = new MechDef
-                        {
-                            Locations = new List<MechDefLocation>(),
-                            Description = new DefDescription(),
-                            Inventory = new List<FixedEquipment>(),
-                        };
+
                         chassisDef.FixedEquipment = new List<FixedEquipment> { };
                         var chassisDefTags = new Tags { };
                         chassisDef.Description.Purchasable = true;
@@ -89,6 +127,7 @@ namespace BattleEngineJsonCreation
                         chassisDef.Description.Model = "";
                         chassisDef.SpotterDistanceMultiplier = 1;
                         chassisDef.VisibilityMultiplier = 1;
+                        chassisDef.SensorRangeMultiplier = 1;
                         chassisDef.Signature = 0;
                         chassisDef.Radius = 8;
                         chassisDef.PunchesWithLeftArm = false;
@@ -122,7 +161,6 @@ namespace BattleEngineJsonCreation
                                 {
                                     chassisDef.VariantName = split[0];
                                     chassisDef.Description.Name = split[1];
-                                    mechDef.Description.Name = split[1];
                                 }
                                 chassisDef.Description.Id = "chassisdef_" + chassisDef.Description.Name
                                 + "_" + chassisDef.VariantName;
@@ -130,6 +168,22 @@ namespace BattleEngineJsonCreation
                                 chassisDef.HardpointDataDefId = "hardpointdatadef_" + chassisDef.Description.Name.ToLower();
                                 chassisDef.PrefabIdentifier = "chrPrfMech_" + chassisDef.Description.Name.ToLower() + "Base-001";
                                 chassisDef.PrefabBase = chassisDef.Description.Name.ToLower();
+
+                                mechDef.ChassisId = chassisDef.Description.Id;
+                                mechDef.HeraldryId = null;
+                                mechDef.Description.Cost = 666666666;
+                                mechDef.Description.Rarity = 0;
+                                mechDef.Description.Purchasable = true;
+                                mechDef.Description.Manufacturer = null;
+                                mechDef.Description.Model = null;
+                                mechDef.Description.UiName = chassisDef.Description.Name + " " + chassisDef.VariantName;
+                                mechDef.Description.Id = "mechdef_" + chassisDef.Description.Name + "_" + chassisDef.VariantName;
+                                mechDef.Description.Name = chassisDef.Description.Name;
+                                mechDef.Description.Details = "MECHDEFDETAILSUPDATE";
+                                mechDef.Description.Icon = "uixTxrIcon_" + chassisDef.Description.Name.ToLower();
+                                mechDef.SimGameMechPartCost = 666666666;
+                                mechDef.Version = 1.0;
+
                             }
                             if (words[0].ToLower().Contains("tons"))
                             {
@@ -196,9 +250,9 @@ namespace BattleEngineJsonCreation
                                     //Hardpoints = 
                                     Tonnage = 0.0,
                                     InventorySlots = 12,
-                                    MaxArmor = hbsfromTTISarry[tonnageIndex, 4] * 2,
+                                    MaxArmor = hbsfromTTISarry[tonnageIndex, 3] * 2,
                                     MaxRearArmor = -1,
-                                    InternalStructure = hbsfromTTISarry[tonnageIndex, 4],
+                                    InternalStructure = hbsfromTTISarry[tonnageIndex, 3],
                                 });
                                 chassisDef.Locations.Add(new ChassisDefLocation
                                 {
@@ -206,9 +260,9 @@ namespace BattleEngineJsonCreation
                                     //Hardpoints = 
                                     Tonnage = 0.0,
                                     InventorySlots = 12,
-                                    MaxArmor = hbsfromTTISarry[tonnageIndex, 4] * 2,
+                                    MaxArmor = hbsfromTTISarry[tonnageIndex, 3] * 2,
                                     MaxRearArmor = -1,
-                                    InternalStructure = hbsfromTTISarry[tonnageIndex, 4],
+                                    InternalStructure = hbsfromTTISarry[tonnageIndex, 3],
                                 });
                                 chassisDef.Locations.Add(new ChassisDefLocation
                                 {
@@ -217,7 +271,7 @@ namespace BattleEngineJsonCreation
                                     Tonnage = 0.0,
                                     InventorySlots = 12,
                                     MaxArmor = hbsfromTTISarry[tonnageIndex, 2] * 2,
-                                    MaxRearArmor = -1,
+                                    MaxRearArmor = hbsfromTTISarry[tonnageIndex, 2],
                                     InternalStructure = hbsfromTTISarry[tonnageIndex, 2],
                                 });
                                 chassisDef.Locations.Add(new ChassisDefLocation
@@ -227,7 +281,7 @@ namespace BattleEngineJsonCreation
                                     Tonnage = 0.0,
                                     InventorySlots = 12,
                                     MaxArmor = hbsfromTTISarry[tonnageIndex, 2] * 2,
-                                    MaxRearArmor = -1,
+                                    MaxRearArmor = hbsfromTTISarry[tonnageIndex, 2],
                                     InternalStructure = hbsfromTTISarry[tonnageIndex, 2],
                                 });
                                 chassisDef.Locations.Add(new ChassisDefLocation
@@ -237,7 +291,7 @@ namespace BattleEngineJsonCreation
                                     Tonnage = 0.0,
                                     InventorySlots = 16,
                                     MaxArmor = hbsfromTTISarry[tonnageIndex, 1] * 2,
-                                    MaxRearArmor = -1,
+                                    MaxRearArmor = hbsfromTTISarry[tonnageIndex, 1],
                                     InternalStructure = hbsfromTTISarry[tonnageIndex, 1],
                                 });
                                 chassisDef.Locations.Add(new ChassisDefLocation
@@ -297,8 +351,8 @@ namespace BattleEngineJsonCreation
                                     CurrentArmor = Convert.ToInt32(words[3]) * 5,
                                     CurrentRearArmor = Convert.ToInt32(words[6]) * 5,
                                     CurrentInternalStructure = hbsfromTTISarry[tonnageIndex, 2],
-                                    AssignedArmor = Convert.ToInt32(words[6]) * 5,
-                                    AssignedRearArmor = -1,
+                                    AssignedArmor = Convert.ToInt32(words[3]) * 5,
+                                    AssignedRearArmor = Convert.ToInt32(words[6]) * 5,
                                 });
                                 mechDef.Locations.Add(new MechDefLocation
                                 {
@@ -307,8 +361,8 @@ namespace BattleEngineJsonCreation
                                     CurrentArmor = Convert.ToInt32(words[3]) * 5,
                                     CurrentRearArmor = Convert.ToInt32(words[6]) * 5,
                                     CurrentInternalStructure = hbsfromTTISarry[tonnageIndex, 2],
-                                    AssignedArmor = Convert.ToInt32(words[6]) * 5,
-                                    AssignedRearArmor = -1,
+                                    AssignedArmor = Convert.ToInt32(words[3]) * 5,
+                                    AssignedRearArmor = Convert.ToInt32(words[6]) * 5,
                                 });
                                 mechDef.Locations.Add(new MechDefLocation
                                 {
@@ -357,6 +411,114 @@ namespace BattleEngineJsonCreation
                                     chassisDef.TurnRadius = 90;
                                     chassisDef.MaxJumpjets = Convert.ToInt32(split[2]);
                                 }
+                                string engineType = "emod_engineslots_std_center";
+                                if (words[1] == "XL")
+                                {
+                                    engineType = "emod_engineslots_xl_center";
+                                    mechDef.Inventory.Add(new FixedEquipment
+                                    {
+                                        MountedLocation = Location.CenterTorso,
+                                        ComponentDefId = engineType,
+                                        ComponentDefType = ComponentDefType.HeatSink,
+                                        HardpointSlot = -1,
+                                        DamageLevel = "Functional",
+                                        PrefabName = null,
+                                        HasPrefabName = false,
+                                        SimGameUid = "",
+                                        Guid = null
+                                    }) ;
+                                    mechDef.Inventory.Add(new FixedEquipment
+                                    {
+                                        MountedLocation = Location.LeftTorso,
+                                        ComponentDefId = "emod_engineslots_size3",
+                                        ComponentDefType = ComponentDefType.HeatSink,
+                                        HardpointSlot = -1,
+                                        DamageLevel = "Functional",
+                                        PrefabName = null,
+                                        HasPrefabName = false,
+                                        SimGameUid = "",
+                                        Guid = null
+                                    });
+                                    mechDef.Inventory.Add(new FixedEquipment
+                                    {
+                                        MountedLocation = Location.RightTorso,
+                                        ComponentDefId = "emod_engineslots_size3",
+                                        ComponentDefType = ComponentDefType.HeatSink,
+                                        HardpointSlot = -1,
+                                        DamageLevel = "Functional",
+                                        PrefabName = null,
+                                        HasPrefabName = false,
+                                        SimGameUid = "",
+                                        Guid = null
+                                    });
+                                }
+                            }
+                            if (words[0] == "Sinks")
+                            {
+                                string hsType = "emod_kit_shs";
+                                if (words[1] == "Double")
+                                {
+                                    hsType = "emod_kit_dhs";
+                                }
+                                mechDef.Inventory.Add(new FixedEquipment
+                                {
+                                    MountedLocation = Location.CenterTorso,
+                                    ComponentDefId = hsType,
+                                    ComponentDefType = ComponentDefType.HeatSink,
+                                    HardpointSlot = -1,
+                                    DamageLevel = "Functional",
+                                    PrefabName = null,
+                                    HasPrefabName = false,
+                                    SimGameUid = "",
+                                    Guid = null
+                                });
+                            }
+                            if (words[0] == "Gyro")
+                            {
+                                string gyroType = null;
+                                if (words[1] == "XL")
+                                {
+                                    gyroType = "Gear_Gyro_XL";
+                                }
+                                if (words[1]== "Standard")
+                                {
+                                    gyroType = "Gear_Gyro_Generic_Standard";
+                                }
+                                if (gyroType != null)
+                                {
+                                    mechDef.Inventory.Add(new FixedEquipment
+                                    {
+                                        MountedLocation = Location.CenterTorso,
+                                        ComponentDefId = gyroType,
+                                        ComponentDefType = ComponentDefType.Upgrade,
+                                        HardpointSlot = -1,
+                                        DamageLevel = "Functional",
+                                        PrefabName = null,
+                                        HasPrefabName = false,
+                                        SimGameUid = "",
+                                        Guid = null
+                                    });
+                                }
+                            }
+                            if (words[0] == "Internal")
+                            {
+                                string structureType = "emod_structureslots_standard";
+                                if (words[1] == "Endo-Steel")
+                                {
+                                    structureType = "emod_structureslots_endosteel";
+                                }
+                                mechDef.Inventory.Add(new FixedEquipment
+                                {
+                                    MountedLocation = Location.CenterTorso,
+                                    ComponentDefId = structureType,
+                                    ComponentDefType = ComponentDefType.Upgrade,
+                                    HardpointSlot = -1,
+                                    DamageLevel = "Functional",
+                                    PrefabName = null,
+                                    HasPrefabName = false,
+                                    SimGameUid = "",
+                                    Guid = null
+                                });
                             }
                             if (words[0].Contains("Crits"))
                             {
@@ -366,21 +528,23 @@ namespace BattleEngineJsonCreation
                                 {
 
                                     var mountLocationVar=Location.LeftArm;
-                                    if (i <= 12) mountLocationVar = Location.LeftArm;
-                                    if ((i <= 24) && (i > 12)) mountLocationVar = Location.LeftTorso;
-                                    if ((i <= 36) && (i > 24)) mountLocationVar = Location.RightTorso;
-                                    if ((i <= 48) && (i > 36)) mountLocationVar = Location.RightArm;
-                                    if ((i <= 60) && (i > 48)) mountLocationVar = Location.CenterTorso;
-                                    if ((i <= 66) && (i > 60)) mountLocationVar = Location.Head;
-                                    if ((i <= 72) && (i > 66)) mountLocationVar = Location.LeftLeg;
-                                    if ((i <= 78) && (i > 72)) mountLocationVar = Location.RightLeg;
-                                    if (componentDefDictionary.ContainsKey(critLines[i]))
+                                    if (i <= 11) mountLocationVar = Location.LeftArm;
+                                    if ((i <= 23) && (i > 11)) mountLocationVar = Location.LeftTorso;
+                                    if ((i <= 35) && (i > 23)) mountLocationVar = Location.RightTorso;
+                                    if ((i <= 47) && (i > 35)) mountLocationVar = Location.RightArm;
+                                    if ((i <= 59) && (i > 49)) mountLocationVar = Location.CenterTorso;
+                                    if ((i <= 65) && (i > 59)) mountLocationVar = Location.Head;
+                                    if ((i <= 71) && (i > 65)) mountLocationVar = Location.LeftLeg;
+                                    if ((i <= 77) && (i > 71)) mountLocationVar = Location.RightLeg;
+                                    critLines[i] = critLines[i].Replace("\"", "");
+                                    string[] split = critLines[i].Split(',');
+                                    if (componentDefDictionary.ContainsKey(split[0]))
                                     {
                                         mechDef.Inventory.Add(new FixedEquipment
                                         {
                                             MountedLocation = mountLocationVar,
-                                            ComponentDefId = componentDefDictionary[critLines[i]].Item1,
-                                            ComponentDefType = componentDefDictionary[critLines[i]].Item2,
+                                            ComponentDefId = componentDefDictionary[split[0]].Item1,
+                                            ComponentDefType = componentDefDictionary[split[0]].Item2,
                                             HardpointSlot = -1,
                                             DamageLevel = "Functional",
                                             PrefabName = null,

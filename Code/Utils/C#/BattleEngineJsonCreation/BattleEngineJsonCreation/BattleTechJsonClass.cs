@@ -350,7 +350,7 @@ namespace BattleEngineJsonCreation
         public long? SimGameMechPartCost { get; set; }
 
         [JsonProperty("Version", NullValueHandling = NullValueHandling.Ignore)]
-        public long? Version { get; set; }
+        public double? Version { get; set; }
 
         [JsonProperty("Locations", NullValueHandling = NullValueHandling.Ignore)]
         public List<MechDefLocation> Locations { get; set; }
