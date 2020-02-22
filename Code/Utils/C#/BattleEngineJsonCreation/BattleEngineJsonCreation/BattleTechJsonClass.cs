@@ -329,7 +329,7 @@ namespace BattleEngineJsonCreation
         public double? X { get; set; }
 
         [JsonProperty("y", NullValueHandling = NullValueHandling.Ignore)]
-        public long? Y { get; set; }
+        public double? Y { get; set; }
 
         [JsonProperty("z", NullValueHandling = NullValueHandling.Ignore)]
         public double? Z { get; set; }
