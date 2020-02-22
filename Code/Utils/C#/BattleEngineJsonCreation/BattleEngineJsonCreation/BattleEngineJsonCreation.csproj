@@ -46,8 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BattleTechJsonClass.cs" />
     <Compile Include="BattleEngineConverter.cs" />
+    <Compile Include="JSONClass\sharedClasses.cs" />
+    <Compile Include="JSONClass\HardpointDataDef.cs" />
+    <Compile Include="JSONClass\ChassisDef.cs" />
+    <Compile Include="JSONClass\MovementCapabilitiesDef.cs" />
+    <Compile Include="JSONClass\MechDef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -5,17 +5,33 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.IO;
-using System.Text.RegularExpressions;
-
 
 namespace BattleEngineJsonCreation
 {
-    class BattleEngineConverter
+    static class BattleEngineConverter
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            var filepath = Directory.GetCurrentDirectory();
+
+            //Gets Application current directory
+            string filepath = Directory.GetCurrentDirectory();
+            //Gets all files *.bed in all sub directories.
             string[] files = Directory.GetFiles(filepath, "*.bed", SearchOption.AllDirectories);
+            Parallel.ForEach(files, (currentFile) =>
+            //foreach (string currentFile in files)
+            {
+                string filename = Path.GetFileName(currentFile);
+                string[] filelines = System.IO.File.ReadAllLines(currentFile);
+                string[] criticalLines = filelines.SkipWhile(x => !x.Contains("Crits"))
+                   .Skip(1)
+                   .ToArray();
+                FileBEDProcessing(filelines, criticalLines);
+                });
+            //}
+        }
+        private static void FileBEDProcessing(this string[] lines, string[] critLines)
+        {
+            //Declares
             int[,] cbtISarry = new int[17, 5] { {20,6,5,3,4},{25,8,6,4,6},{30,10,7,5,7},{35,11,8,6,8},
                 {40,12,10,6,10},{45,14,11,7,11},{50,16,12,8,12},{55,18,13,9,13},{60,20,14,10,14},
                 {65,21,15,10,15},{70,22,15,11,15},{75,23,16,12,16},{80,25,17,13,17},{85,27,18,14,18},
@@ -29,8 +45,6 @@ namespace BattleEngineJsonCreation
                     hbsfromTTISarry[i, a] = cbtISarry[i, a] * cbt2hbsISarry[0, a];
                 }
             }
-            int tonnageIndex = 0;
-
             //BED Name, (HBS weaponID "File name without.json", ComponentDefType { AmmunitionBox, HeatSink, JumpJet, Upgrade, Weapon }; 
             var componentDefDictionary = new Dictionary<string, (string, ComponentDefType)>() {
                                     //Weapons Laser
@@ -93,165 +107,447 @@ namespace BattleEngineJsonCreation
                                     { "Heat Sink", ("Gear_HeatSink_Generic_Standard",ComponentDefType.HeatSink)},
                                     { "Double Heat Sink", ("Gear_HeatSink_Generic_Double",ComponentDefType.HeatSink)},
                                     };
-
-            Parallel.ForEach(files, (currentFile) =>
-            //foreach (var currentFile in files)
+            //Have CAB for
+            var cabDictionary = new Dictionary<string, string>
             {
-                string filename = Path.GetFileName(currentFile);
-                string[] lines = System.IO.File.ReadAllLines(currentFile);
-                string[] critLines = lines.SkipWhile(x => !x.Contains("Crits"))
-                   .Skip(1)
-                   .ToArray();
-                dynamic chassisDef = new ChassisDef
+                //DLCs
+                {"crab","chrprfmech_crabbase-001"},
+                {"cyclops","chrprfmech_cyclopsbase-001"},
+                {"hatchetman","chrprfmech_hatchetmanbase-001"},
+                {"annihilator","chrprfmech_annihilatorbase-001"},
+                {"archer","chrprfmech_archerbase-001"},
+                {"assassin","chrprfmech_assassinbase-001"},
+                {"bullshark","chrprfmech_bullsharkbase-001"},
+                {"flea","chrprfmech_fleabase-001"},
+                {"phoenixhawk","chrprfmech_phoenixhawkbase-001"},
+                {"rifleman","chrprfmech_riflemanbase-001"},
+                {"vulcan","chrprfmech_vulcanbase-001"},
+                {"javelin","chrprfmech_javelinmanbase-001"},
+                {"raven","chrprfmech_ravenbase-001"},
+                //CAB
+                {"adder","chrprfmech_adderbase-001"},
+                {"arce","chrprfmech_arcebase-001"},
+                {"archangel","chrprfmech_archangelbase-001"},
+                {"arcticcheetah","chrprfmech_arcticcheetahbase-001"},
+                {"arcticwolf","chrprfmech_arcticwolfbase-001"},
+                {"avatar","chrprfmech_avatarbase-001"},
+                {"blackbeard","chrprfmech_blackbeardbase-001"},
+                {"blacklanner","chrprfmech_blacklannerbase-001"},
+                {"bloodasp","chrprfmech_bloodaspbase-001"},
+                {"bombard","chrprfmech_bombardbase-001"},
+                {"bumb","chrprfmech_bumbbase-001"},
+                {"bushwacker","chrprfmech_bushwackerbase-001"},
+                {"champion","chrprfmech_championbase-001"},
+                {"charger","chrprfmech_chargerhotd-001"},
+                {"chargerpb","chrprfmech_chargerpbhotd-001"},
+                {"clif","chrprfmech_clifbase-001"},
+                {"clint","chrprfmech_clintbase-001"},
+                {"cougar","chrprfmech_cougarbase-001"},
+                {"crusader","chrprfmech_crusaderhotd-001"},
+                {"dervish","chrprfmech_dervishbase-001"},
+                {"direwolf","chrprfmech_direwolfbase-001"},
+                {"ebonjaguar","chrprfmech_ebonjaguarbase-001"},
+                {"elemental","chrprfmech_elementalbase-001"},
+                {"emperor","chrprfmech_emperorbase-001"},
+                {"executioner","chrprfmech_executionerbase-001"},
+                {"fafnir","chrprfmech_fafnirbase-001"},
+                {"firebee","chrprfmech_firebeebase-001"},
+                {"gargoyle","chrprfmech_gargoylebase-001"},
+                {"grimlock","chrprfmech_grimlockbase-001"},
+                {"groovey","chrprfmech_grooveybase-001"},
+                {"hatamotochi","chrprfmech_hatamotochibase-001"},
+                {"hauptmann","chrprfmech_hauptmannbase-001"},
+                {"helepolis","chrprfmech_helepolisbase-001"},
+                {"hellbringer","chrprfmech_hellbringerbase-001"},
+                {"hellfire","chrprfmech_hellfirebase-001"},
+                {"hellhound","chrprfmech_hellhoundbase-001"},
+                {"hellspawn","chrprfmech_hellspawnbase-001"},
+                {"highlanderiic","chrprfmech_highlanderiicbase-001"},
+                {"hollander","chrprfmech_hollanderbase-001"},
+                {"hunchbackiic","chrprfmech_hunchbackiichotd-001"},
+                {"huntsman","chrprfmech_huntsmanbase-001"},
+                {"huronw","chrprfmech_huronwbase-001"},
+                {"icarusii","chrprfmech_icarusiibase-001"},
+                {"iceferret","chrprfmech_iceferretbase-001"},
+                {"incubus","chrprfmech_incubusbase-001"},
+                {"jenneriic","chrprfmech_jenneriicbase-001"},
+                {"juggernaut","chrprfmech_juggernautbase-001"},
+                {"k2pult","chrprfmech_k2pultbase-001"},
+                {"k9","chrprfmech_k9base-001"},
+                {"kanazuchi","chrprfmech_kanazuchibase-001"},
+                {"kanazuchis","chrprfmech_kanazuchisbase-001"},
+                {"kitfox","chrprfmech_kitfoxbase-001"},
+                {"kodiak","chrprfmech_kodiakbase-001"},
+                {"lament","chrprfmech_lamentbase-001"},
+                {"linebacker","chrprfmech_linebackerbase-001"},
+                {"longbow","chrprfmech_longbowbase-001"},
+                {"lupus","chrprfmech_lupusbase-001"},
+                {"mackie","chrprfmech_mackiebase-001"},
+                {"madcat","chrprfmech_madcatbase-001"},
+                {"madcatmkii","chrprfmech_madcatmkiibase-001"},
+                {"maddog","chrprfmech_maddogbase-001"},
+                {"marauderii","chrprfmech_marauderiibase-001"},
+                {"marauderiic","chrprfmech_marauderiicbase-001"},
+                {"mauler","chrprfmech_maulerbase-001"},
+                {"mira","chrprfmech_mirabase-001"},
+                {"mistlynx","chrprfmech_mistlynxbase-001"},
+                {"mongoose","chrprfmech_mongoosebase-001"},
+                {"nightgyr","chrprfmech_nightgyrbase-001"},
+                {"nightstar","chrprfmech_nightstarbase-001"},
+                {"nova","chrprfmech_novabase-001"},
+                {"novacat","chrprfmech_novacatbase-001"},
+                {"opt","chrprfmech_optbase-001"},
+                {"orioniic","chrprfmech_orioniicbase-001"},
+                {"osiris","chrprfmech_osirisbase-001"},
+                {"ostroc","chrprfmech_ostrochotd-001"},
+                {"ostsol","chrprfmech_ostsolhotd-001"},
+                {"ostwar","chrprfmech_ostwarhotd-001"},
+                {"phawklam","chrprfmech_phawklambase-001"},
+                {"piranha","chrprfmech_piranhabase-001"},
+                {"preta","chrprfmech_pretabase-001"},
+                {"redreaper","chrprfmech_redreaperbase-001"},
+                {"riflemaniic","chrprfmech_riflemaniicbase-001"},
+                {"roughneck","chrprfmech_roughneckbase-001"},
+                {"roughneckcrane-001","chrprfmech_roughneckcrane-001"},
+                {"rtcorsair1","chrprfmech_rtcorsair1base-001"},
+                {"rtcorsair2","chrprfmech_rtcorsair2base-001"},
+                {"rtcorsair3","chrprfmech_rtcorsair3base-001"},
+                {"rtcorsair4","chrprfmech_rtcorsair4base-001"},
+                {"rtcorsair5","chrprfmech_rtcorsair5base-001"},
+                {"shadowcat","chrprfmech_shadowcatbase-001"},
+                {"shankey","chrprfmech_shankeybase-001"},
+                {"shawklam","chrprfmech_shawklambase-001"},
+                {"side","chrprfmech_sidebase-001"},
+                {"star","chrprfmech_starbase-001"},
+                {"stinger","chrprfmech_stingerhotd-001"},
+                {"stingerlam","chrprfmech_stingerlambase-001"},
+                {"stonerhino","chrprfmech_stonerhinobase-001"},
+                {"stormcrow","chrprfmech_stormcrowbase-001"},
+                {"summoner","chrprfmech_summonerbase-001"},
+                {"sun","chrprfmech_sunbase-001"},
+                {"sunspider","chrprfmech_sunspiderbase-001"},
+                {"supernova","chrprfmech_supernovabase-001"},
+                {"swav","chrprfmech_swavbase-001"},
+                {"talos","chrprfmech_talosbase-001"},
+                {"templar","chrprfmech_templarbase-001"},
+                {"thanatos","chrprfmech_thanatosbase-001"},
+                {"urbanmech50","chrprfmech_urbanmech50base-001"},
+                {"urbie","chrprfmech_urbiebase-001"},
+                {"uziel","chrprfmech_uzielbase-001"},
+                {"valiant","chrprfmech_valiantbase-001"},
+                {"valkyrie","chrprfmech_valkyriehotd-001"},
+                {"valkyrieii","chrprfmech_valkyrieiibase-001"},
+                {"vaporeagle","chrprfmech_vaporeaglebase-001"},
+                {"viper","chrprfmech_viperbase-001"},
+                {"warhammeriic","chrprfmech_warhammeriicbase-001"},
+                {"warhawk","chrprfmech_warhawkbase-001"},
+                {"wasp","chrprfmech_wasphotd-001"},
+                {"wasplam","chrprfmech_wasplambase-001"},
+                {"wolfhound","chrprfmech_wolfhoundbase-001"},
+                {"xenorauder","chrprfmech_xenorauderbase-001"},
+                //Base
+                {"atlas","chrprfmech_atlasbase-001"},
+                {"atlas_bha","chrprfmech_atlas_bhabase-001"},
+                {"awesome","chrprfmech_awesomebase-001"},
+                {"banshee","chrprfmech_bansheebase-001"},
+                {"battlemaster","chrprfmech_battlemasterbase-001"},
+                {"blackjack","chrprfmech_blackjackbase-001"},
+                {"blackknight","chrprfmech_blackknightbase-001"},
+                {"cataphract","chrprfmech_cataphractbase-001"},
+                {"catapult","chrprfmech_catapultbase-001"},
+                {"centurion","chrprfmech_centurionbase-001"},
+                {"cicada","chrprfmech_cicadabase-001"},
+                {"commando","chrprfmech_commandobase-001"},
+                {"dragon","chrprfmech_dragonbase-001"},
+                {"enforcer","chrprfmech_enforcerbase-001"},
+                {"firestarter","chrprfmech_firestarterbase-001"},
+                {"grasshopper","chrprfmech_grasshopperbase-001"},
+                {"griffin","chrprfmech_griffinbase-001"},
+                {"highlander","chrprfmech_highlanderbase-001"},
+                {"highlander_sldf","chrprfmech_highlander_sldfbase-001"},
+                {"hunchback","chrprfmech_hunchbackbase-001"},
+                {"jagermech","chrprfmech_jagermechbase-001"},
+                {"jenner","chrprfmech_jennerbase-001"},
+                {"kingcrab","chrprfmech_kingcrabbase-001"},
+                {"kintaro","chrprfmech_kintarobase-001"},
+                {"locust","chrprfmech_locustbase-001"},
+                {"marauder","chrprfmech_marauderbase-001"},
+                {"marauder_bha","chrprfmech_marauder_bhabase-001"},
+                {"marauder_blackwidow","chrprfmech_marauder_blackwidowbase-001"},
+                {"orion","chrprfmech_orionbase-001"},
+                {"panther","chrprfmech_pantherbase-001"},
+                {"quickdraw","chrprfmech_quickdrawbase-001"},
+                {"shadowhawk","chrprfmech_shadowhawkbase-001"},
+                {"spider","chrprfmech_spiderbase-001"},
+                {"stalker","chrprfmech_stalkerbase-001"},
+                {"thunderbolt","chrprfmech_thunderboltbase-001"},
+                {"trebuchet","chrprfmech_trebuchetbase-001"},
+                {"urbanmech","chrprfmech_urbanmechbase-001"},
+                {"victor","chrprfmech_victorbase-001"},
+                {"vindicator","chrprfmech_vindicatorbase-001"},
+                {"warhammer","chrprfmech_warhammerbase-001"},
+                {"warhammer_blackwidow","chrprfmech_warhammer_blackwidowbase-001"},
+                {"wolverine","chrprfmech_wolverinebase-001"},
+                {"zeus","chrprfmech_zeusbase-001"}
+            };
+            int totalHeatSinks = 0;
+            int installedHeatSinks = 0;
+            int tonnageIndex = 0;
+            //int chassisDefTonnage = 0;
+            var chassisDef = new ChassisDef
+            {
+                FixedEquipment = new List<FixedEquipment>
                 {
-                    Locations = new List<ChassisDefLocation>(),
-                    Description = new DefDescription(),
-                    StabilityDefenses = new List<long>(),
-                    LosTargetPositions = new List<LosPosition>(),
-                    LosSourcePositions = new List<LosPosition>(),
-                };
-                //chassisDefDescription = new DefDescription();
-                //mechDefDescription = new DefDescription();
-                dynamic mechDef = new MechDef
-                {
-                    Locations = new List<MechDefLocation>(),
-                    Description = new DefDescription(),
-                    Inventory = new List<FixedEquipment>(),
-                };
-                int totalHeatSinks = 0;
-                int installedHeatSinks = 0;
-                if (lines[3].Contains("Biped"))
-                //&&(lines[0].Contains("ARC-2K")))
-                {
-                    //Console.WriteLine($"Processing {filename} on thread {Thread.CurrentThread.ManagedThreadId}");
 
-                    chassisDef.FixedEquipment = new List<FixedEquipment> { };
-                    var chassisDefTags = new Tags { };
-                    chassisDef.Description.Cost = 666666;
-                    chassisDef.Description.Rarity = 5;
-                    chassisDef.Description.Purchasable = true;
-                    chassisDef.Description.Manufacturer = "";
-                    chassisDef.Description.Model = "";
-                    chassisDef.SpotterDistanceMultiplier = 1;
-                    chassisDef.VisibilityMultiplier = 1;
-                    chassisDef.SensorRangeMultiplier = 1;
-                    chassisDef.Signature = 0;
-                    chassisDef.Radius = 8;
-                    chassisDef.PunchesWithLeftArm = false;
-                    chassisDefTags.TagSetSourceFile = "";
-                    chassisDef.Heatsinks = 0;
-                    chassisDef.StockRole = "SRUPDATE";
-                    chassisDef.YangsThoughts = "YTUPDATE";
-                    for (int i = 0; i < 6; i++)
+                },
+                Description = new DefDescription
+                {
+                    //Needs to be calcuated first
+                    Cost = 0,
+                    //How do we want to do Rarity?
+                    Rarity = 0,
+                    Purchasable = true,
+                    //Lore Never used
+                    Manufacturer = "",
+                    //Lore Never Used
+                    Model = "",
+                    //Display Name in Combat?
+                    //UiName = chassisDefDescriptionName,
+                    //File name must match saved file name
+                    //Id = "chassisdef_" + chassisDefDescriptionName.Replace(" ", "_").ToLower() +
+                    //chassisDefVariantName.Replace(" ", "_").ToLower(),
+                    //Name = chassisDefDescriptionName,
+                    //Details Can be pulled from File Later
+                    Details = "DETAILS_UPDATE",
+                    //Icon must match SVG,DDS filename
+                    //Icon = "uixTxrIcon_" + chassisDefDescriptionName.Replace(" ", "_").ToLower(),
+                },
+                //InitialTonnage = chassisDefTonnage / 10,
+                //Stability = chassisDefTonnage * 2,
+                //MeleeDamage = chassisDefTonnage,
+                //MeleeInstability = chassisDefTonnage,
+                MeleeToHitModifier = 0,
+                //DfaDamage = chassisDefTonnage,
+                DfaToHitModifier = 0,
+                //DfaSelfDamage = chassisDefTonnage,
+                //DfaInstability = chassisDefTonnage,
+                BattleValue = 0,
+                Heatsinks = 0,
+                StabilityDefenses = new List<int>
+                {
+                    0,0,0,0,0,0
+                },
+                SpotterDistanceMultiplier = 1,
+                VisibilityMultiplier = 1,
+                SensorRangeMultiplier = 1,
+                Signature = 0,
+                Radius = 8,
+                PunchesWithLeftArm = false,
+                ChassisTags = new Tags
+                {
+                    Items = new List<string>
                     {
-                        chassisDef.StabilityDefenses.Add(0);
+
+                    },
+                    TagSetSourceFile = "",
+                },
+                StockRole = "SRUPDATE",
+                YangsThoughts = "YTUpdate",
+
+                LosSourcePositions = new List<LosPosition>
+                {
+                    new LosPosition
+                    {
+                        X = 0.0,
+                        Y = 19.0,
+                        Z = 0.0
+                    },
+                    new LosPosition
+                    {
+                        X = 4.5,
+                        Y = 16.0,
+                        Z = -0.5
+                    },
+                    new LosPosition
+                    {
+                        X = -4.5,
+                        Y = 16.0,
+                        Z = -0.5
                     }
-                    chassisDef.LosSourcePositions.Add(new LosPosition
+                },
+                LosTargetPositions = new List<LosPosition>
+                {
+                    new LosPosition
                     {
                         X = 0.0,
                         Y = 19.0,
                         Z = 0.0
-                    });
-                    chassisDef.LosSourcePositions.Add(new LosPosition
+                    },
+                    new LosPosition
                     {
                         X = 4.5,
                         Y = 16.0,
                         Z = -0.5
-                    });
-                    chassisDef.LosSourcePositions.Add(new LosPosition
-                    {
-                        X = -4.5,
-                        Y = 16.0,
-                        Z = -0.5
-                    });
-                    chassisDef.LosTargetPositions.Add(new LosPosition
-                    {
-                        X = 0.0,
-                        Y = 19.0,
-                        Z = 0.0
-                    });
-                    chassisDef.LosTargetPositions.Add(new LosPosition
+                    },
+                    new LosPosition
                     {
                         X = 4.5,
                         Y = 16.0,
                         Z = -0.5
-                    });
-                    chassisDef.LosTargetPositions.Add(new LosPosition
+                    },
+                    new LosPosition
                     {
-                        X = -4.5,
+                        X = 4.5,
                         Y = 16.0,
                         Z = -0.5
-                    });
-                    chassisDef.LosTargetPositions.Add(new LosPosition
+                    },
+                    new LosPosition
                     {
-                        X = -3.0,
-                        Y = 5.5,
-                        Z = 1.0
-                    });
-                    //bool critProcessing = false;
+                        X = -3.5,
+                        Y= 5.5,
+                        Z= 1
+                    }
+                },
+                Locations = new List<ChassisDefLocation>(),
+            };
+            var mechDef = new MechDef
+            {
+                HeraldryId = null,
+                Description = new DefDescription
+                {
+                    Cost = 0,
+                    Rarity = 0,
+                    Purchasable = true,
+                    Manufacturer = null,
+                    Model = null,
+                    Details = "DETAILS UPDATE",
+                },
+                SimGameMechPartCost = 0,
+                Version = 1,
+                Locations = new List<MechDefLocation>(),
+                Inventory = new List<Inventory>(),
+                MechTags = new Tags
+                {
+                    Items = new List<string>
+                    {
+                        "unit_indirectFire",
+                        "unit_mech",
+                        "unit_assault",
+                        "unit_release",
+                        "unit_ready",
+                        "unit_lance_tank",
+                        "unit_role_brawler",
+                        "unit_range_short",
+                        "unit_indirectFire",
+                        "unit_speed_low",
+                        "unit_armor_high",
+                        "Davion",
+                        "Kurita",
+                        "Liao",
+                        "Marik",
+                        "Steiner"
+                    }
+                }
+            };
+            if (lines[3].Contains("Biped"))
+            {
+                string[] cabCheck = lines[0].Split(',');
+                cabCheck = cabCheck[1].Split(' ');
+                cabCheck[1] = RemoveSpecialCharacters(cabCheck[1]);
+                if (cabDictionary.ContainsKey(cabCheck[1].ToLower()))
+                {
                     foreach (string l in lines)
                     {
-                        string newl = l.Replace("\"", "");
-                        //string remove = "(\\[.*\\])|(\".*\")|('.*')|(\\(.*\\))";
-                        //newl = Regex.Replace(newl, remove, "");
-                        newl = newl.Replace("(", "");
-                        newl = newl.Replace(")", "");
+                        string newl = RemoveSpecialCharacters(l);
                         string[] words = newl.Split(',');
-                        if (words[0].ToLower().Contains("name"))
+                        if (words[0] == "Name")
                         {
-                            words[1] = words[1].Replace("/", "");
+                            words = newl.Split(',');
                             string[] split = words[1].Split(' ');
-                            if (split.Length > 2)
+                            string shortName = "Nothing";
+                            switch (split.Length)
                             {
-                                chassisDef.VariantName = split[0];
-                                chassisDef.Description.Name = split[1] + " " + split[2];
-                                mechDef.Description.Name = split[1] + " " + split[2];
-                            }
-                            if (split.Length > 3)
-                            {
-                                chassisDef.VariantName = split[3];
-                                chassisDef.Description.Name = split[0] + " " + split[1] + " " + split[2];
-                                mechDef.Description.Name = split[0] + " " + split[1] + " " + split[2];
-                            }
-                            if (split.Length > 4)
-                            {
-                                chassisDef.VariantName = split[4];
-                                chassisDef.Description.Name = split[0] + " " + split[1] + " " + split[2] + " " + split[3];
-                                mechDef.Description.Name = split[0] + " " + split[1] + " " + split[2] + " " + split[3];
-                            }
-                            if (split.Length == 2)
-                            {
-                                chassisDef.VariantName = split[0];
-                                chassisDef.Description.Name = split[1];
-                                mechDef.Description.Name = split[1];
+                                case 5:
+                                    if (split[3] == "II")
+                                    {
+                                        chassisDef.Description.Name = split[0] + " " + split[1] + " " + split[2] + " " + split[3];
+                                        chassisDef.VariantName = split[4];
+                                        shortName = split[0];
+                                        break;
+                                    }
+                                    chassisDef.Description.Name = split[0] + " " + split[1];
+                                    chassisDef.VariantName = split[4];
+                                    shortName = split[0];
+                                    break;
+                                case 4:
+                                    if (split[3] == "Hunter")
+                                    {
+                                        chassisDef.Description.Name = split[0] + " " + split[1];
+                                        chassisDef.VariantName = split[2] + " " + split[3];
+                                        shortName = split[0];
+                                        break;
+                                    }
+                                    chassisDef.Description.Name = split[0] + " " + split[1] + " " + split[2];
+                                    chassisDef.VariantName = split[3];
+                                    shortName = split[0];
+                                    break;
+                                case 3:
+                                    {
+                                        if (split[2] == "Hunter")
+                                        {
+                                            chassisDef.Description.Name = split[0];
+                                            chassisDef.VariantName = split[1] + " " + split[2];
+                                            shortName = split[0];
+                                            break;
+                                        }
+                                        if (split[0] == "Puma")
+                                        {
+                                            chassisDef.Description.Name = split[1];
+                                            chassisDef.VariantName = split[2];
+                                            shortName = split[1];
+                                            break;
+                                        }
+                                        if ((split[2] == "Standard") || (split[2].Length == 1))
+                                        {
+                                            chassisDef.Description.Name = split[0] + " " + split[1];
+                                            chassisDef.VariantName = split[2];
+                                            shortName = split[0];
+                                            break;
+                                        }
+                                        //Default 3s
+                                        chassisDef.Description.Name = split[1] + " " + split[2];
+                                        chassisDef.VariantName = split[0];
+                                        shortName = split[1];
+                                        break;
+                                    }
+                                default: //Default 2s
+                                    if ((split[1] == "Standard") || (split[1].Length == 1))
+                                    {
+                                        chassisDef.Description.Name = split[0] + " " + split[1];
+                                        chassisDef.VariantName = split[1];
+                                        shortName = split[0];
+                                        break;
+                                    }
+                                    chassisDef.Description.Name = split[1];
+                                    chassisDef.VariantName = split[0];
+                                    shortName = split[1];
+                                    break;
                             }
                             chassisDef.Description.UiName = chassisDef.Description.Name;
-                            string chassisDefVariantName = chassisDef.VariantName.Replace(" ", "_").ToLower();
-                            string chassisDefDescriptionName = chassisDef.Description.Name.Replace(" ", "_").ToLower();
-                            //chassisDef.VariantName = chassisDef.VariantName.Replace(" ", "");
-                            //chassisDef.VariantName = chassisDef.VariantName.Replace(" ", "");
+                            chassisDef.Description.Id = "chassisdef_" + chassisDef.Description.Name.Replace(" ", "_").ToLower() +
+                                "_" + chassisDef.VariantName.Replace(" ", "_");
 
-                            chassisDef.Description.Id = "chassisdef_" + chassisDefDescriptionName
-                           + "_" + chassisDefVariantName;
-                            chassisDef.Description.Icon = "uixTxrIcon_" + chassisDefDescriptionName;
-                            //chassisDef.HardpointDataDefId = "hardpointdatadef_" + chassisDefDescriptionName;
-                            chassisDef.HardpointDataDefId = "hardpointdatadef_atlas";
-                            chassisDef.PrefabIdentifier = "chrPrfMech_" + chassisDefDescriptionName + "Base-001";
-                            chassisDef.PrefabBase = chassisDefDescriptionName;
+                            chassisDef.Description.Icon = "uixTxrIcon_" + shortName.ToLower();
+                            chassisDef.HardpointDataDefId = "hardpointdatadef_" + shortName.ToLower();
+                            chassisDef.PrefabIdentifier = "chrPrfMech_" + shortName.ToLower() + "Base-001";
+                            chassisDef.PrefabBase = shortName.ToLower();
+                            
                             mechDef.ChassisId = chassisDef.Description.Id;
-                            mechDef.HeraldryId = null;
-                            mechDef.Description.Cost = 666666666;
-                            mechDef.Description.Rarity = 0;
-                            mechDef.Description.Purchasable = true;
-                            mechDef.Description.Manufacturer = null;
-                            mechDef.Description.Model = null;
-                            mechDef.Description.UiName = chassisDef.Description.Name + " " + chassisDef.VariantName;
-                            mechDef.Description.Id = "mechdef_" + chassisDefDescriptionName + "_" + chassisDefVariantName;
+                            mechDef.Description.UiName = chassisDef.Description.UiName + " " + chassisDef.VariantName;
+                            mechDef.Description.Id = "mechdef_" + chassisDef.Description.Name.Replace(" ", "_").ToLower() +
+                                "_" + chassisDef.VariantName.Replace(" ", "_");
                             mechDef.Description.Name = chassisDef.Description.Name;
-                            mechDef.Description.Details = "MECHDEFDETAILSUPDATE";
-                            mechDef.Description.Icon = "uixTxrIcon_" + chassisDefDescriptionName;
-                            mechDef.SimGameMechPartCost = 666666666;
-                            mechDef.Version = 1.0;
+                            mechDef.Description.Icon = "uixTxrIcon_" + shortName.ToLower();
 
                         }
                         if (words[0].ToLower().Contains("tons"))
@@ -299,7 +595,6 @@ namespace BattleEngineJsonCreation
                                 }
                             }
                         }
-
                         if (words[0].ToLower().Contains("armorvals"))
                         {
                             //string[] split = words[1].Split(',');
@@ -308,26 +603,11 @@ namespace BattleEngineJsonCreation
                                 Location = Location.Head,
                                 Hardpoints = new List<Hardpoint>
                                     {
-                                        new Hardpoint 
+                                        new Hardpoint
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
                                             Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Energy,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Missile,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Ballistic,
-                                            Omni = true,
-                                        },
+                                        }
                                     },
                                 Tonnage = 0.0,
                                 InventorySlots = 4,
@@ -344,22 +624,7 @@ namespace BattleEngineJsonCreation
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
                                             Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Energy,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Missile,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Ballistic,
-                                            Omni = true,
-                                        },
+                                        }
                                     },
                                 Tonnage = 0.0,
                                 InventorySlots = 12,
@@ -376,22 +641,7 @@ namespace BattleEngineJsonCreation
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
                                             Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Energy,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Missile,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Ballistic,
-                                            Omni = true,
-                                        },
+                                        }
                                     },
                                 Tonnage = 0.0,
                                 InventorySlots = 12,
@@ -408,22 +658,7 @@ namespace BattleEngineJsonCreation
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
                                             Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Energy,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Missile,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Ballistic,
-                                            Omni = true,
-                                        },
+                                        }
                                     },
                                 Tonnage = 0.0,
                                 InventorySlots = 12,
@@ -440,22 +675,7 @@ namespace BattleEngineJsonCreation
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
                                             Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Energy,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Missile,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Ballistic,
-                                            Omni = true,
-                                        },
+                                        }
                                     },
                                 Tonnage = 0.0,
                                 InventorySlots = 12,
@@ -472,22 +692,7 @@ namespace BattleEngineJsonCreation
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
                                             Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Energy,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Missile,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Ballistic,
-                                            Omni = true,
-                                        },
+                                        }
                                     },
                                 Tonnage = 0.0,
                                 InventorySlots = 16,
@@ -504,25 +709,10 @@ namespace BattleEngineJsonCreation
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
                                             Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Energy,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Missile,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Ballistic,
-                                            Omni = true,
-                                        },
+                                        }
                                     },
                                 Tonnage = 0.0,
-                                InventorySlots = 16,
+                                InventorySlots = 6,
                                 MaxArmor = hbsfromTTISarry[tonnageIndex, 4] * 2,
                                 MaxRearArmor = -1,
                                 InternalStructure = hbsfromTTISarry[tonnageIndex, 4],
@@ -536,25 +726,10 @@ namespace BattleEngineJsonCreation
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
                                             Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Energy,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Missile,
-                                            Omni = true,
-                                        },
-                                        new Hardpoint
-                                        {
-                                            WeaponMount = WeaponMount.Ballistic,
-                                            Omni = true,
-                                        },
+                                        }
                                     },
                                 Tonnage = 0.0,
-                                InventorySlots = 16,
+                                InventorySlots = 6,
                                 MaxArmor = hbsfromTTISarry[tonnageIndex, 4] * 2,
                                 MaxRearArmor = -1,
                                 InternalStructure = hbsfromTTISarry[tonnageIndex, 4],
@@ -660,7 +835,7 @@ namespace BattleEngineJsonCreation
                             if (words[1] == "XL")
                             {
                                 engineType = "emod_engineslots_xl_center";
-                                mechDef.Inventory.Add(new FixedEquipment
+                                mechDef.Inventory.Add(new Inventory
                                 {
                                     MountedLocation = Location.CenterTorso,
                                     ComponentDefId = engineType,
@@ -672,7 +847,7 @@ namespace BattleEngineJsonCreation
                                     SimGameUid = "",
                                     Guid = null
                                 });
-                                mechDef.Inventory.Add(new FixedEquipment
+                                mechDef.Inventory.Add(new Inventory
                                 {
                                     MountedLocation = Location.LeftTorso,
                                     ComponentDefId = "emod_engineslots_size3",
@@ -684,7 +859,7 @@ namespace BattleEngineJsonCreation
                                     SimGameUid = "",
                                     Guid = null
                                 });
-                                mechDef.Inventory.Add(new FixedEquipment
+                                mechDef.Inventory.Add(new Inventory
                                 {
                                     MountedLocation = Location.RightTorso,
                                     ComponentDefId = "emod_engineslots_size3",
@@ -697,6 +872,19 @@ namespace BattleEngineJsonCreation
                                     Guid = null
                                 });
                             }
+                            int engineRating = Convert.ToInt32(split[0]);
+                            mechDef.Inventory.Add(new Inventory
+                            {
+                                MountedLocation = Location.CenterTorso,
+                                ComponentDefId = "emod_engine_"+engineRating*chassisDef.Tonnage,
+                                ComponentDefType = ComponentDefType.HeatSink,
+                                HardpointSlot = -1,
+                                DamageLevel = "Functional",
+                                PrefabName = null,
+                                HasPrefabName = false,
+                                SimGameUid = "",
+                                Guid = null
+                            });
                         }
                         if (words[0] == "Sinks")
                         {
@@ -705,7 +893,7 @@ namespace BattleEngineJsonCreation
                             {
                                 hsType = "emod_kit_dhs";
                             }
-                            mechDef.Inventory.Add(new FixedEquipment
+                            mechDef.Inventory.Add(new Inventory
                             {
                                 MountedLocation = Location.CenterTorso,
                                 ComponentDefId = hsType,
@@ -732,7 +920,7 @@ namespace BattleEngineJsonCreation
                             }
                             if (gyroType != null)
                             {
-                                mechDef.Inventory.Add(new FixedEquipment
+                                mechDef.Inventory.Add(new Inventory
                                 {
                                     MountedLocation = Location.CenterTorso,
                                     ComponentDefId = gyroType,
@@ -753,7 +941,7 @@ namespace BattleEngineJsonCreation
                             {
                                 structureType = "emod_structureslots_endosteel";
                             }
-                            mechDef.Inventory.Add(new FixedEquipment
+                            mechDef.Inventory.Add(new Inventory
                             {
                                 MountedLocation = Location.CenterTorso,
                                 ComponentDefId = structureType,
@@ -786,7 +974,7 @@ namespace BattleEngineJsonCreation
                                 string[] split = critLines[i].Split(',');
                                 if (componentDefDictionary.ContainsKey(split[0]))
                                 {
-                                    mechDef.Inventory.Add(new FixedEquipment
+                                    mechDef.Inventory.Add(new Inventory
                                     {
                                         MountedLocation = mountLocationVar,
                                         ComponentDefId = componentDefDictionary[split[0]].Item1,
@@ -804,7 +992,7 @@ namespace BattleEngineJsonCreation
                             if (installedHeatSinks != totalHeatSinks)
                             {
                                 int engineHS = totalHeatSinks - installedHeatSinks;
-                                mechDef.Inventory.Add(new FixedEquipment
+                                mechDef.Inventory.Add(new Inventory
                                 {
                                     MountedLocation = Location.CenterTorso,
                                     ComponentDefId = "emod_engine_cooling_" + engineHS,
@@ -819,19 +1007,25 @@ namespace BattleEngineJsonCreation
                             }
                         }
                     }
-                    string chassisDefVariantName2 = chassisDef.VariantName.Replace(" ", "_").ToLower();
-                    string chassisDefDescriptionName2 = chassisDef.Description.Name.Replace(" ", "_").ToLower();
                     string outputmechDef = Newtonsoft.Json.JsonConvert.SerializeObject(mechDef, Newtonsoft.Json.Formatting.Indented, BattleEngineJsonCreation.Converter.Settings);
                     string outputchassisDef = Newtonsoft.Json.JsonConvert.SerializeObject(chassisDef, Newtonsoft.Json.Formatting.Indented, BattleEngineJsonCreation.Converter.Settings);
-                    File.WriteAllText("mechdef_" + chassisDefDescriptionName2 + "_" + chassisDefVariantName2 + ".json", outputmechDef);
-                    File.WriteAllText("chassisdef_" + chassisDefDescriptionName2 + "_" + chassisDefVariantName2 + ".json", outputchassisDef);
+                    File.WriteAllText(mechDef.Description.Id + ".json", outputmechDef);
+                    File.WriteAllText(chassisDef.Description.Id + ".json", outputchassisDef);
                 }
-            });
-            //}
+            }
         }
-        public void ParseEngine(string[] lines)
+        private static string RemoveSpecialCharacters(this string str)
         {
-
+            StringBuilder sb = new StringBuilder();
+            foreach (char c in str)
+            {
+                if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || c == '.' || c == '_' || c == ',' || c == '/' || c == ' ' || c == '-')
+                {
+                    sb.Append(c);
+                }
+            }
+            //Console.WriteLine(sb.ToString());
+            return sb.ToString();
         }
     }
 }
