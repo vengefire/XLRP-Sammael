@@ -47,11 +47,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BattleEngineConverter.cs" />
+    <Compile Include="JSONClass\ComponentTypes\AmmunitionBox.cs" />
+    <Compile Include="JSONClass\ComponentTypes\Weapon.cs" />
+    <Compile Include="JSONClass\ComponentTypes\HeatSink.cs" />
+    <Compile Include="JSONClass\ComponentTypes\Jumpjet.cs" />
+    <Compile Include="JSONClass\ComponentTypes\Upgrade.cs" />
+    <Compile Include="JSONClass\settings.cs" />
     <Compile Include="JSONClass\sharedClasses.cs" />
-    <Compile Include="JSONClass\HardpointDataDef.cs" />
-    <Compile Include="JSONClass\ChassisDef.cs" />
-    <Compile Include="JSONClass\MovementCapabilitiesDef.cs" />
-    <Compile Include="JSONClass\MechDef.cs" />
+    <Compile Include="JSONClass\Mechs\HardpointDataDef.cs" />
+    <Compile Include="JSONClass\Mechs\ChassisDef.cs" />
+    <Compile Include="JSONClass\Mechs\MovementCapabilitiesDef.cs" />
+    <Compile Include="JSONClass\Mechs\MechDef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
