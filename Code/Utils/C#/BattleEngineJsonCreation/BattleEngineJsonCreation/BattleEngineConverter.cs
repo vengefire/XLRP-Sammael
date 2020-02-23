@@ -62,12 +62,23 @@ namespace BattleEngineJsonCreation
                                     //PPC
                                     { "PPC", ("Weapon_PPC_PPC_0-STOCK",ComponentDefType.Weapon)},
                                     { "ER PPC", ("Weapon_PPC_PPCER_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Snub-Nose PPC", ("Weapon_PPC_PPCSnub_0-STOCK",ComponentDefType.Weapon)},
+                                    //TAG
+                                    { "TAG", ("Weapon_TAG_Standard_0-STOCK",ComponentDefType.Weapon)},
                                     //Weapons Ballistic
                                     { "AC/2", ("Weapon_Autocannon_AC2_0-STOCK",ComponentDefType.Weapon)},
                                     { "AC/5", ("Weapon_Autocannon_AC5_0-STOCK",ComponentDefType.Weapon)},
                                     { "AC/10", ("Weapon_Autocannon_AC10_0-STOCK",ComponentDefType.Weapon)},
                                     { "AC/20", ("Weapon_Autocannon_AC20_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Ultra AC/2", ("Weapon_Autocannon_UAC2_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Ultra AC/5", ("Weapon_Autocannon_UAC5_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Ultra AC/10", ("Weapon_Autocannon_UAC10_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Ultra AC/20", ("Weapon_Autocannon_UAC20_0-STOCK",ComponentDefType.Weapon)},
                                     { "Gauss Rifle", ("Weapon_Gauss_Gauss_0-STOCK",ComponentDefType.Weapon)},
+                                    { "LB 2-X AC", ("Weapon_Autocannon_LB2X_0-STOCK",ComponentDefType.Weapon)},
+                                    { "LB 5-X AC", ("Weapon_Autocannon_LB5X_0-STOCK",ComponentDefType.Weapon)},
+                                    { "LB 10-X AC", ("Weapon_Autocannon_LB10X_0-STOCK",ComponentDefType.Weapon)},
+                                    { "LB 20-X AC", ("Weapon_Autocannon_LB20X_0-STOCK",ComponentDefType.Weapon)},
                                     //Flamers
                                     { "Flamer", ("Weapon_Flamer_Flamer_0-STOCK",ComponentDefType.Weapon)},
                                     //Missiles
@@ -78,12 +89,21 @@ namespace BattleEngineJsonCreation
                                     { "SRM 2", ("Weapon_SRM_SRM2_0-STOCK",ComponentDefType.Weapon)},
                                     { "SRM 4", ("Weapon_SRM_SRM4_0-STOCK",ComponentDefType.Weapon)},
                                     { "SRM 6", ("Weapon_SRM_SRM6_0-STOCK",ComponentDefType.Weapon)},
+                                    { "Narc Missile Beacon", ("Weapon_Narc_Standard_0-STOCK",ComponentDefType.Weapon)},
                                     //Ammo
                                     { "Ammo AC/2", ("Ammo_AmmunitionBox_Generic_AC2",ComponentDefType.AmmunitionBox)},
                                     { "Ammo AC/5", ("Ammo_AmmunitionBox_Generic_AC5",ComponentDefType.AmmunitionBox)},
                                     { "Ammo AC/10", ("Ammo_AmmunitionBox_Generic_AC10",ComponentDefType.AmmunitionBox)},
                                     { "Ammo AC/20", ("Ammo_AmmunitionBox_Generic_AC20",ComponentDefType.AmmunitionBox)},
-                                    { "Ammmo Gauss Rifle", ("Ammo_AmmunitionBox_Generic_GAUSS",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo Ultra AC/2", ("Ammo_AmmunitionBox_Generic_AC2",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo Ultra AC/5", ("Ammo_AmmunitionBox_Generic_AC5",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo Ultra AC/10", ("Ammo_AmmunitionBox_Generic_AC10",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo Ultra AC/20", ("Ammo_AmmunitionBox_Generic_AC20",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo LB 2-X AC", ("Ammo_AmmunitionBox_Generic_LB2X",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo LB 5-X AC", ("Ammo_AmmunitionBox_Generic_LB5X",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo LB 10-X AC", ("Ammo_AmmunitionBox_Generic_LB10X",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo LB 20-X AC", ("Ammo_AmmunitionBox_Generic_LB20X",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo Gauss Rifle", ("Ammo_AmmunitionBox_Generic_GAUSS",ComponentDefType.AmmunitionBox)},
                                     { "Machine Gun", ("Ammo_AmmunitionBox_Generic_MG",ComponentDefType.AmmunitionBox)},
                                     { "Ammo Flamer", ("Ammo_AmmunitionBox_Generic_Flamer",ComponentDefType.AmmunitionBox)},
                                     { "Ammo LRM 5", ("Ammo_AmmunitionBox_Generic_LRM",ComponentDefType.AmmunitionBox)},
@@ -94,6 +114,8 @@ namespace BattleEngineJsonCreation
                                     { "Ammo SRM 4", ("Ammo_AmmunitionBox_Generic_SRM",ComponentDefType.AmmunitionBox)},
                                     { "Ammo SRM 6", ("Ammo_AmmunitionBox_Generic_SRM",ComponentDefType.AmmunitionBox)},
                                     { "Ammo SRM 8", ("Ammo_AmmunitionBox_Generic_SRM",ComponentDefType.AmmunitionBox)},
+                                    { "Ammo Narc Missile Beacon", ("Ammo_AmmunitionBox_Generic_Narc",ComponentDefType.AmmunitionBox)},
+                                    
                                     //Actuators
                                     { "Shoulder", ("emod_arm_part_shoulder",ComponentDefType.Upgrade)},
                                     { "Upper Arm Actuator", ("emod_arm_part_upper",ComponentDefType.Upgrade)},
@@ -106,6 +128,9 @@ namespace BattleEngineJsonCreation
                                     //HeatSinks
                                     { "Heat Sink", ("Gear_HeatSink_Generic_Standard",ComponentDefType.HeatSink)},
                                     { "Double Heat Sink", ("Gear_HeatSink_Generic_Double",ComponentDefType.HeatSink)},
+                                    //Gear
+                                    { "CASE", ("emod_case",ComponentDefType.Upgrade)},
+                                    { "CASE II", ("emod_case2",ComponentDefType.Upgrade)}
                                     };
             //Have CAB for
             var cabDictionary = new Dictionary<string, string>
@@ -453,8 +478,13 @@ namespace BattleEngineJsonCreation
             {
                 string[] cabCheck = lines[0].Split(',');
                 cabCheck = cabCheck[1].Split(' ');
+                cabCheck[0] = RemoveSpecialCharacters(cabCheck[0]);
                 cabCheck[1] = RemoveSpecialCharacters(cabCheck[1]);
-                if (cabDictionary.ContainsKey(cabCheck[1].ToLower()))
+                if (lines[0].Contains("Hellhound"))
+                {
+                    string something = "break";
+                }
+                if ((cabDictionary.ContainsKey(cabCheck[1].ToLower())) || (cabDictionary.ContainsKey(cabCheck[0].ToLower())))
                 {
                     foreach (string l in lines)
                     {
@@ -501,6 +531,20 @@ namespace BattleEngineJsonCreation
                                             break;
                                         }
                                         if (split[0] == "Puma")
+                                        {
+                                            chassisDef.Description.Name = split[1];
+                                            chassisDef.VariantName = split[2];
+                                            shortName = split[1];
+                                            break;
+                                        }
+                                        if (split[1] == "Viper")
+                                        {
+                                            chassisDef.Description.Name = split[0] + " " + split[1];
+                                            chassisDef.VariantName = split[2];
+                                            shortName = split[1];
+                                            break;
+                                        }
+                                        if (split[1] == "Executioner")
                                         {
                                             chassisDef.Description.Name = split[1];
                                             chassisDef.VariantName = split[2];
@@ -607,6 +651,21 @@ namespace BattleEngineJsonCreation
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
                                             Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Ballistic,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Energy,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Missile,
+                                            Omni = true,
                                         }
                                     },
                                 Tonnage = 0.0,
@@ -623,6 +682,21 @@ namespace BattleEngineJsonCreation
                                         new Hardpoint
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Ballistic,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Energy,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Missile,
                                             Omni = true,
                                         }
                                     },
@@ -641,6 +715,21 @@ namespace BattleEngineJsonCreation
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
                                             Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Ballistic,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Energy,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Missile,
+                                            Omni = true,
                                         }
                                     },
                                 Tonnage = 0.0,
@@ -657,6 +746,21 @@ namespace BattleEngineJsonCreation
                                         new Hardpoint
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Ballistic,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Energy,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Missile,
                                             Omni = true,
                                         }
                                     },
@@ -675,6 +779,21 @@ namespace BattleEngineJsonCreation
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
                                             Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Ballistic,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Energy,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Missile,
+                                            Omni = true,
                                         }
                                     },
                                 Tonnage = 0.0,
@@ -691,6 +810,21 @@ namespace BattleEngineJsonCreation
                                         new Hardpoint
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Ballistic,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Energy,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Missile,
                                             Omni = true,
                                         }
                                     },
@@ -709,6 +843,21 @@ namespace BattleEngineJsonCreation
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
                                             Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Ballistic,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Energy,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Missile,
+                                            Omni = true,
                                         }
                                     },
                                 Tonnage = 0.0,
@@ -725,6 +874,21 @@ namespace BattleEngineJsonCreation
                                         new Hardpoint
                                         {
                                             WeaponMount = WeaponMount.AntiPersonnel,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Ballistic,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Energy,
+                                            Omni = true,
+                                        },
+                                        new Hardpoint
+                                        {
+                                            WeaponMount = WeaponMount.Missile,
                                             Omni = true,
                                         }
                                     },
@@ -987,9 +1151,9 @@ namespace BattleEngineJsonCreation
                                         Guid = null
                                     });
                                 }
-                                if (split[0] == "Heat Sink") installedHeatSinks++;
+                                if (split[0].Contains("Heat Sink")) installedHeatSinks++;
                             }
-                            if (installedHeatSinks != totalHeatSinks)
+                            if (installedHeatSinks < totalHeatSinks)
                             {
                                 int engineHS = totalHeatSinks - installedHeatSinks;
                                 mechDef.Inventory.Add(new Inventory
