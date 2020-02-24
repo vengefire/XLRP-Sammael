@@ -18,6 +18,7 @@ namespace Data.Console
             //var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
             // var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Sammael\Build\XLRP\1.8 Clean Build";
             var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Complete";
+            //var sourceDirectory = @"D:\Test Data\XAI";
             var btDirectory = @"D:\Test Data\BT Base Data";
             var dlcDirectory = @"C:\Users\Stephen Weistra\gitrepos\bt-dlc-designdata";
 
@@ -122,13 +123,14 @@ namespace Data.Console
                 return false;
             });
 
-            // StoreContentGenerator.GenerateStoreContentList(result.mergedManifestEntries, @"C:\Users\Stephen Weistra\gitrepos\vfBattleTechMod-Core\vfBattleTechMod-ProcGenStores\Res");
-            var planetTags = PlanetTagEnumerator.EnumeratePlanetTags(result.mergedManifestEntries);
+            ContentExtractors.GenerateStoreContentList(result.mergedManifestEntries, @"C:\tmp\", @"test-xlrp-store-content.xlsx");
+            // ContentExtractors.GenerateTacticalContentList(result.mergedManifestEntries, @"C:\tmp\", @"content.xlsx");
+            /*var planetTags = PlanetTagEnumerator.EnumeratePlanetTags(result.mergedManifestEntries);
             planetTags.GroupBy(tag => tag.category, tag => tag.value, (category, tags) => new {category = category, tags = tags}).ToList().ForEach(tagGroup =>
             {
                 System.Console.WriteLine($"-----{tagGroup.category}");
                 System.Console.WriteLine(string.Join("\r\n", tagGroup.tags));
-            });
+            });*/
 
             //System.Console.WriteLine(string.Join("\r\n", );
 
