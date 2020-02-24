@@ -17,8 +17,6 @@ namespace BattleEngineJsonCreation
 
     public partial class Upgrade
     {
-        [JsonProperty("Custom", NullValueHandling = NullValueHandling.Ignore)]
-        public Custom Custom { get; set; }
 
         [JsonProperty("Description", NullValueHandling = NullValueHandling.Ignore)]
         public UpgradeDescription Description { get; set; }

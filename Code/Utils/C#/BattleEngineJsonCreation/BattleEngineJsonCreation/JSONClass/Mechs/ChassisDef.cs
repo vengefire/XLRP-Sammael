@@ -31,7 +31,7 @@ namespace BattleEngineJsonCreation
         public string PrefabBase { get; set; }
 
         [JsonProperty("Tonnage", NullValueHandling = NullValueHandling.Ignore)]
-        public int? Tonnage { get; set; }
+        public double? Tonnage { get; set; }
 
         [JsonProperty("InitialTonnage", NullValueHandling = NullValueHandling.Ignore)]
         public double? InitialTonnage { get; set; }
@@ -40,7 +40,7 @@ namespace BattleEngineJsonCreation
         public string WeightClass { get; set; }
 
         [JsonProperty("BattleValue", NullValueHandling = NullValueHandling.Ignore)]
-        public int? BattleValue { get; set; }
+        public double? BattleValue { get; set; }
 
         [JsonProperty("Heatsinks", NullValueHandling = NullValueHandling.Ignore)]
         public int? Heatsinks { get; set; }
@@ -55,7 +55,7 @@ namespace BattleEngineJsonCreation
         public int? MaxJumpjets { get; set; }
 
         [JsonProperty("Stability", NullValueHandling = NullValueHandling.Ignore)]
-        public int? Stability { get; set; }
+        public double? Stability { get; set; }
 
         [JsonProperty("StabilityDefenses", NullValueHandling = NullValueHandling.Ignore)]
         public List<int> StabilityDefenses { get; set; }
@@ -79,25 +79,25 @@ namespace BattleEngineJsonCreation
         public bool? PunchesWithLeftArm { get; set; }
 
         [JsonProperty("MeleeDamage", NullValueHandling = NullValueHandling.Ignore)]
-        public int? MeleeDamage { get; set; }
+        public double? MeleeDamage { get; set; }
 
         [JsonProperty("MeleeInstability", NullValueHandling = NullValueHandling.Ignore)]
-        public int? MeleeInstability { get; set; }
+        public double? MeleeInstability { get; set; }
 
         [JsonProperty("MeleeToHitModifier", NullValueHandling = NullValueHandling.Ignore)]
         public int? MeleeToHitModifier { get; set; }
 
         [JsonProperty("DFADamage", NullValueHandling = NullValueHandling.Ignore)]
-        public int? DfaDamage { get; set; }
+        public double? DfaDamage { get; set; }
 
         [JsonProperty("DFAToHitModifier", NullValueHandling = NullValueHandling.Ignore)]
         public int? DfaToHitModifier { get; set; }
 
         [JsonProperty("DFASelfDamage", NullValueHandling = NullValueHandling.Ignore)]
-        public int? DfaSelfDamage { get; set; }
+        public double? DfaSelfDamage { get; set; }
 
         [JsonProperty("DFAInstability", NullValueHandling = NullValueHandling.Ignore)]
-        public int? DfaInstability { get; set; }
+        public double? DfaInstability { get; set; }
 
         [JsonProperty("Locations", NullValueHandling = NullValueHandling.Ignore)]
         public List<ChassisDefLocation> Locations { get; set; }

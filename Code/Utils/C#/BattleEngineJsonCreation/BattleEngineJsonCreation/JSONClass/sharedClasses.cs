@@ -1,14 +1,14 @@
 ﻿//
 // To parse this JSON data, add NuGet 'Newtonsoft.Json' then do one of these:
 //
-//    using BattleEngineJsonCreation;
+//    using BEV3;
 //
 //    var movementCapabilitiesDef = MovementCapabilitiesDef.FromJson(jsonString);
 //    var hardpointDataDef = HardpointDataDef.FromJson(jsonString);
 //    var chassisDef = ChassisDef.FromJson(jsonString);
 //    var mechDef = MechDef.FromJson(jsonString);
 
-namespace BattleEngineJsonCreation
+namespace BEV3
 {
     using System;
     using System.Collections.Generic;
@@ -67,10 +67,10 @@ namespace BattleEngineJsonCreation
     public enum WeaponMount { AntiPersonnel, Ballistic, Energy, Missile };
     public static class Serialize
     {
-        public static string ToJson(this MovementCapabilitiesDef self) => JsonConvert.SerializeObject(self, BattleEngineJsonCreation.Converter.Settings);
-        public static string ToJson(this HardpointDataDef self) => JsonConvert.SerializeObject(self, BattleEngineJsonCreation.Converter.Settings);
-        public static string ToJson(this ChassisDef self) => JsonConvert.SerializeObject(self, BattleEngineJsonCreation.Converter.Settings);
-        public static string ToJson(this MechDef self) => JsonConvert.SerializeObject(self, BattleEngineJsonCreation.Converter.Settings);
+        public static string ToJson(this MovementCapabilitiesDef self) => JsonConvert.SerializeObject(self, BEV3.Converter.Settings);
+        public static string ToJson(this HardpointDataDef self) => JsonConvert.SerializeObject(self, BEV3.Converter.Settings);
+        public static string ToJson(this ChassisDef self) => JsonConvert.SerializeObject(self, BEV3.Converter.Settings);
+        public static string ToJson(this MechDef self) => JsonConvert.SerializeObject(self, BEV3.Converter.Settings);
     }
 
     internal static class Converter
