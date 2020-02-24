@@ -31,7 +31,7 @@ namespace BattleEngineJsonCreation
         public string PrefabBase { get; set; }
 
         [JsonProperty("Tonnage", Required = Required.Always)]
-        public double? Tonnage { get; set; }
+        public double Tonnage { get; set; }
 
         [JsonProperty("InitialTonnage", NullValueHandling = NullValueHandling.Ignore)]
         public double? InitialTonnage { get; set; }

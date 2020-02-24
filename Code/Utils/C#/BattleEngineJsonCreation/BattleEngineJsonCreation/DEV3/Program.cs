@@ -11,9 +11,7 @@ namespace BattleEngineJsonCreation
     {
         static void Main(string[] args)
         {
-            //Load Settings.json and int
             var settings = settingsLoad.LoadSettings();
-            //Hidden DLC Prefabs Added by hand
             var dlcDictionary = new Dictionary<string, string>             {
                 //DLCs these files are hidden in assest and have to be added by hand
                 {"crab","chrprfmech_crabbase-001"},
@@ -30,15 +28,13 @@ namespace BattleEngineJsonCreation
                 {"javelin","chrprfmech_javelinmanbase-001"},
                 {"raven","chrprfmech_ravenbase-001"},
             };
-            //Calls Reuse Dictionary Population for CAB Directory
             var cabDictionary = Reuse.PreFabDicPop(Directory.GetFiles(Path.Combine(settings.BtInstallDir, "mods\\CommunityAssets"), "chrprfmech*", SearchOption.AllDirectories));
-            //Calls Dictionary Population for BT Base install (Directory from Settings)
             var btDictionary = Reuse.PreFabDicPop(Directory.GetFiles(Path.Combine(settings.BtInstallDir, "BattleTech_Data\\StreamingAssets\\data\\assetbundles"), "chrprfmech*", SearchOption.AllDirectories));
-            //Combine all preFab Dictionaries (Count should be 177)
+            //(Count should be 177)
             var preFabDictionary = dlcDictionary.Concat(cabDictionary).Concat(btDictionary).ToDictionary(k => k.Key, k => k.Value);
-            //Load ChassisFiles
-            string[] chassisFiles = Directory.GetFiles(settings.BtInstallDir, "chassis*.json", SearchOption.AllDirectories);
-            //Load Bed files into array and parse
+            //Populate Gear Dictionary Tuple (key, vaule, componentDefType)
+            var gearDic = ComponetDictionaryParse.ComDefDicPop(Directory.GetFiles(settings.BtInstallDir, "*.json", SearchOption.AllDirectories));
+            string[] chassisFiles = Directory.GetFiles(settings.ChassisDefpath, "chassis*.json", SearchOption.AllDirectories);
             string[] chassisNames = null;
             foreach (var file in Directory.GetFiles(settings.BedPath, "*.bed", SearchOption.AllDirectories))
             {
@@ -48,25 +44,19 @@ namespace BattleEngineJsonCreation
                 {
                     if (preFabDictionary.ContainsKey(cabCheck[i]))
                     {
-                        //String Name, Variant, Shortname
                         chassisNames = MechBuilder.ChassisName(file);
-                        //Return JSON chassisDefMatching Name
                         var chassisDef = MechBuilder.ChassisDefs(chassisNames, chassisFiles);
-                        var mechDef = MechBuilder.MechDefs(chassisDef, file);
-                        //Log(Path.GetFileName(file) + "," + chassisNames[0] + "," + chassisNames[1] + "," + chassisNames[2], settings.OutputDir);
-                        break;
+                        if (chassisDef.Description != null)
+                        {
+                            Console.WriteLine(file + " " + chassisDef.Description.Id);
+                            var mechDef = MechBuilder.MechDefs(chassisDef);
+                            mechDef = MechBuilder.MechLocations(gearDic, mechDef, file);
+                            break;
+                        }
                     }
                 }
                 if (chassisNames.Length == 0) Log(Path.GetFileName(file) + ",NO CAB", settings.OutputDir);
             }
-
-            //Populate Gear Dictionary Tuple (key, vaule, componentDefType)
-            //var gearDic = ComponetDictionaryParse.ComDefDicPop(Directory.GetFiles(settings.BtInstallDir, "*.json", SearchOption.AllDirectories));
-
-            // String csv2 = String.Join(Environment.NewLine, gearDic.Select(d => $"{d.Key},{d.Value}"));
-            // System.IO.File.WriteAllText(Path.Combine(settings.OutputDir, "componentDefTuple.csv"), csv2);
-
-            //Console.ReadKey();
         }
         public static void Log(string logMessage, string logdir)
         {

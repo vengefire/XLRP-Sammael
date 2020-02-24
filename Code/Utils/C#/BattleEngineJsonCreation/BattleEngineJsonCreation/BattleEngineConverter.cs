@@ -9,10 +9,9 @@ using System.Text.RegularExpressions;
 
 namespace BattleEngineJsonCreation
 {
-    static class BattleEngineConverter
+    class BattleEngineConverter
     {
-
-        static void Main()
+        public void Test()
         {
             string filepath = Directory.GetCurrentDirectory();
             //Settings Processing and Loading
@@ -36,7 +35,7 @@ namespace BattleEngineJsonCreation
                 }
                 else
                 {
-                    EndProgram(settings.BedPath + " directory not found.");
+                    //EndProgram(settings.BedPath + " directory not found.");
                 }
                 generateFromChassis = settings.GenerateFromchassisDef;
                 if (generateFromChassis == true)
@@ -51,7 +50,7 @@ namespace BattleEngineJsonCreation
                     }
                     else
                     {
-                        EndProgram("Generate from Chassis set to true, but chassis directory not found");
+                        //EndProgram("Generate from Chassis set to true, but chassis directory not found");
                     }
                 }
                 //mechDefs = Directory.GetFiles(settings.MechDefPath, "mechDef*.json");
@@ -62,18 +61,18 @@ namespace BattleEngineJsonCreation
                 }
                 else
                 {
-                    EndProgram("Cab not installed in Mods Directory [CAB IS REQUIRED]");
+                    //EndProgram("Cab not installed in Mods Directory [CAB IS REQUIRED]");
                 }
                 useMods = settings.LoadDefsFromMods;
                 outputDir = settings.OutputDir;
             }
             else
             {
-                EndProgram("Settings File not found.");
+                //EndProgram("Settings File not found.");
             }
             if (bedfiles.Length == 0)
             {
-                EndProgram("No Bed Files Found");
+                //EndProgram("No Bed Files Found");
             }
             if (!Directory.Exists(outputDir))
             {
@@ -112,9 +111,12 @@ namespace BattleEngineJsonCreation
                 string mechname = filename.Replace("chrprfmech_", "").Replace("base-001", "");
                 preFabDictionary.Add(mechname, filename);
             }
+        }
+    }
+}
             //Build componentDefs
-            string[] jsonFiles = Directory.GetFiles(btinstall, "*.json", SearchOption.AllDirectories);
-            var componentDefDictionaryTuple = new Dictionary<string, (string, ComponentDefType)>();
+            //string[] jsonFiles = Directory.GetFiles(btinstall, "*.json", SearchOption.AllDirectories);
+            //var componentDefDictionaryTuple = new Dictionary<string, (string, ComponentDefType)>();
             /*{
             Weapons Laser
             //{ "Large Laser", ("Weapon_Laser_LargeLaser_0-STOCK",ComponentDefType.Weapon)},
@@ -199,7 +201,7 @@ namespace BattleEngineJsonCreation
             { "Double Heat Sink", ("Gear_HeatSink_Generic_Double",ComponentDefType.HeatSink)},
             //Gear
             { "CASE", ("emod_case",ComponentDefType.Upgrade)},
-            { "CASE II", ("emod_case2",ComponentDefType.Upgrade)}*/
+            { "CASE II", ("emod_case2",ComponentDefType.Upgrade)}
             //};
             var componentDefDictionary = new Dictionary<string, ComponentDefType>();
             foreach (string files in jsonFiles)
@@ -1401,3 +1403,4 @@ namespace BattleEngineJsonCreation
         }
     }
 }
+*/

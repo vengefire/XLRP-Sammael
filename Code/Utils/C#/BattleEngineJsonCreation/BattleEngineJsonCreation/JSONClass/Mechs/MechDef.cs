@@ -74,19 +74,19 @@ namespace BattleEngineJsonCreation
         public Location? Location { get; set; }
 
         [JsonProperty("CurrentArmor", NullValueHandling = NullValueHandling.Ignore)]
-        public long? CurrentArmor { get; set; }
+        public double? CurrentArmor { get; set; }
 
         [JsonProperty("CurrentRearArmor", NullValueHandling = NullValueHandling.Ignore)]
-        public long? CurrentRearArmor { get; set; }
+        public double? CurrentRearArmor { get; set; }
 
         [JsonProperty("CurrentInternalStructure", NullValueHandling = NullValueHandling.Ignore)]
-        public long? CurrentInternalStructure { get; set; }
+        public double? CurrentInternalStructure { get; set; }
 
         [JsonProperty("AssignedArmor", NullValueHandling = NullValueHandling.Ignore)]
-        public long? AssignedArmor { get; set; }
+        public double? AssignedArmor { get; set; }
 
         [JsonProperty("AssignedRearArmor", NullValueHandling = NullValueHandling.Ignore)]
-        public long? AssignedRearArmor { get; set; }
+        public double? AssignedRearArmor { get; set; }
     }
     public partial class MechDef
     {
