@@ -8,7 +8,7 @@
 //    var chassisDef = ChassisDef.FromJson(jsonString);
 //    var mechDef = MechDef.FromJson(jsonString);
 
-namespace BEV3
+namespace BattleEngineJsonCreation
 {
     using System;
     using System.Collections.Generic;
@@ -67,10 +67,10 @@ namespace BEV3
     public enum WeaponMount { AntiPersonnel, Ballistic, Energy, Missile };
     public static class Serialize
     {
-        public static string ToJson(this MovementCapabilitiesDef self) => JsonConvert.SerializeObject(self, BEV3.Converter.Settings);
-        public static string ToJson(this HardpointDataDef self) => JsonConvert.SerializeObject(self, BEV3.Converter.Settings);
-        public static string ToJson(this ChassisDef self) => JsonConvert.SerializeObject(self, BEV3.Converter.Settings);
-        public static string ToJson(this MechDef self) => JsonConvert.SerializeObject(self, BEV3.Converter.Settings);
+        public static string ToJson(this MovementCapabilitiesDef self) => JsonConvert.SerializeObject(self, BattleEngineJsonCreation.Converter.Settings);
+        public static string ToJson(this HardpointDataDef self) => JsonConvert.SerializeObject(self, BattleEngineJsonCreation.Converter.Settings);
+        public static string ToJson(this ChassisDef self) => JsonConvert.SerializeObject(self, BattleEngineJsonCreation.Converter.Settings);
+        public static string ToJson(this MechDef self) => JsonConvert.SerializeObject(self, BattleEngineJsonCreation.Converter.Settings);
     }
 
     internal static class Converter
