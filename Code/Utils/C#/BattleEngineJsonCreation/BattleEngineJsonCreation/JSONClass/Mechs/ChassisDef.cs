@@ -30,7 +30,7 @@ namespace BattleEngineJsonCreation
         [JsonProperty("PrefabBase", NullValueHandling = NullValueHandling.Ignore)]
         public string PrefabBase { get; set; }
 
-        [JsonProperty("Tonnage", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("Tonnage", Required = Required.Always)]
         public double? Tonnage { get; set; }
 
         [JsonProperty("InitialTonnage", NullValueHandling = NullValueHandling.Ignore)]
@@ -129,7 +129,7 @@ namespace BattleEngineJsonCreation
         public List<Hardpoint> Hardpoints { get; set; }
 
         [JsonProperty("Tonnage", NullValueHandling = NullValueHandling.Ignore)]
-        public double? Tonnage { get; set; }
+        public double Tonnage { get; set; }
 
         [JsonProperty("InventorySlots", NullValueHandling = NullValueHandling.Ignore)]
         public long? InventorySlots { get; set; }

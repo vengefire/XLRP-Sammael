@@ -49,10 +49,10 @@ namespace BattleEngineJsonCreation
                     if (preFabDictionary.ContainsKey(cabCheck[i]))
                     {
                         //String Name, Variant, Shortname
-                        chassisNames = chassisHelper.ChassisName(file);
+                        chassisNames = MechBuilder.ChassisName(file);
                         //Return JSON chassisDefMatching Name
-                        var chassisDef = chassisHelper.ChassisDefs(chassisNames, chassisFiles);
-                        var mechDef = chassisHelper.MechDefs(chassisDef, file);
+                        var chassisDef = MechBuilder.ChassisDefs(chassisNames, chassisFiles);
+                        var mechDef = MechBuilder.MechDefs(chassisDef, file);
                         //Log(Path.GetFileName(file) + "," + chassisNames[0] + "," + chassisNames[1] + "," + chassisNames[2], settings.OutputDir);
                         break;
                     }

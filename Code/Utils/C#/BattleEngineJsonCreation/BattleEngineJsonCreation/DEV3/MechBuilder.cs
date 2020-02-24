@@ -3,7 +3,7 @@ using System.IO;
 
 namespace BattleEngineJsonCreation
 {
-    public static class chassisHelper
+    public static class MechBuilder
     {
         public static ChassisDef ChassisDefs(string[] chassisNames, string[] files)
         {
@@ -29,7 +29,100 @@ namespace BattleEngineJsonCreation
             mechdef.Description.UiName = chassisDef.Description.UiName + " " + chassisDef.VariantName;
             mechdef.Description.Id = chassisDef.Description.Id.Replace("chassisdef", "mechdef");
             mechdef.Description.Name = chassisDef.Description.Name + "_" + chassisDef.VariantName;
-            mechdef.Description.Name = chassisDef.Description.Icon;
+            mechdef.Description.Icon = chassisDef.Description.Icon;
+            foreach(Location location in Enum.GetValues(typeof(Location)))
+            {
+                mechdef.Locations.Add(new MechDefLocation
+                {
+                    DamageLevel = DamageLevel.Functional,
+                    Location = location,
+                    CurrentArmor = MechISArmor(chassisDef.Tonnage.HasValue(), location,true),
+                    CurrentRearArmor = MechISArmor(chassisDef.Tonnage, location, true),
+                    AssignedArmor = MechISArmor(chassisDef.Tonnage, location, false),
+                    AssignedRearArmor= MechISArmor(chassisDef.Tonnage, location, true)
+                })
+            }
+            mechDef.Locations.Add(new MechDefLocation
+            {
+                DamageLevel = DamageLevel.Functional,
+                Location = Location.Head,
+                CurrentArmor = 45,
+                CurrentRearArmor = -1,
+                CurrentInternalStructure = 16,
+                AssignedArmor = 45,
+                AssignedRearArmor = -1,
+            });
+            mechDef.Locations.Add(new MechDefLocation
+            {
+                DamageLevel = DamageLevel.Functional,
+                Location = Location.LeftArm,
+                CurrentArmor = Convert.ToInt32(words[1]) * 5,
+                CurrentRearArmor = -1,
+                CurrentInternalStructure = hbsfromTTISarry[tonnageIndex, 3],
+                AssignedArmor = Convert.ToInt32(words[1]) * 5,
+                AssignedRearArmor = -1,
+            });
+            mechDef.Locations.Add(new MechDefLocation
+            {
+                DamageLevel = DamageLevel.Functional,
+                Location = Location.RightArm,
+                CurrentArmor = Convert.ToInt32(words[1]) * 5,
+                CurrentRearArmor = -1,
+                CurrentInternalStructure = hbsfromTTISarry[tonnageIndex, 3],
+                AssignedArmor = Convert.ToInt32(words[1]) * 5,
+                AssignedRearArmor = -1,
+            });
+            mechDef.Locations.Add(new MechDefLocation
+            {
+                DamageLevel = DamageLevel.Functional,
+                Location = Location.LeftTorso,
+                CurrentArmor = Convert.ToInt32(words[3]) * 5,
+                CurrentRearArmor = Convert.ToInt32(words[6]) * 5,
+                CurrentInternalStructure = hbsfromTTISarry[tonnageIndex, 2],
+                AssignedArmor = Convert.ToInt32(words[3]) * 5,
+                AssignedRearArmor = Convert.ToInt32(words[6]) * 5,
+            });
+            mechDef.Locations.Add(new MechDefLocation
+            {
+                DamageLevel = DamageLevel.Functional,
+                Location = Location.RightTorso,
+                CurrentArmor = Convert.ToInt32(words[3]) * 5,
+                CurrentRearArmor = Convert.ToInt32(words[6]) * 5,
+                CurrentInternalStructure = hbsfromTTISarry[tonnageIndex, 2],
+                AssignedArmor = Convert.ToInt32(words[3]) * 5,
+                AssignedRearArmor = Convert.ToInt32(words[6]) * 5,
+            });
+            mechDef.Locations.Add(new MechDefLocation
+            {
+                DamageLevel = DamageLevel.Functional,
+                Location = Location.CenterTorso,
+                CurrentArmor = Convert.ToInt32(words[5]) * 5,
+                CurrentRearArmor = Convert.ToInt32(words[8]) * 5,
+                CurrentInternalStructure = hbsfromTTISarry[tonnageIndex, 1],
+                AssignedArmor = Convert.ToInt32(words[5]) * 5,
+                AssignedRearArmor = Convert.ToInt32(words[8]) * 5,
+            });
+            mechDef.Locations.Add(new MechDefLocation
+            {
+                DamageLevel = DamageLevel.Functional,
+                Location = Location.LeftLeg,
+                CurrentArmor = Convert.ToInt32(words[10]) * 5,
+                CurrentRearArmor = -1,
+                CurrentInternalStructure = hbsfromTTISarry[tonnageIndex, 4],
+                AssignedArmor = Convert.ToInt32(words[10]) * 5,
+                AssignedRearArmor = -1,
+            });
+            mechDef.Locations.Add(new MechDefLocation
+            {
+                DamageLevel = DamageLevel.Functional,
+                Location = Location.RightLeg,
+                CurrentArmor = Convert.ToInt32(words[10]) * 5,
+                CurrentRearArmor = -1,
+                CurrentInternalStructure = hbsfromTTISarry[tonnageIndex, 4],
+                AssignedArmor = Convert.ToInt32(words[10]) * 5,
+                AssignedRearArmor = -1,
+            });
+
 
             return mechdef;
         }
@@ -140,5 +233,23 @@ namespace BattleEngineJsonCreation
             }
             return new string[] { chassisName, chassisVariantName, chassisShortName };
         }
+        public static double MechISArmor(double tons,Location location, bool rear)
+        {
+            int[,] cbtISarry = new int[17, 5] { {20,6,5,3,4},{25,8,6,4,6},{30,10,7,5,7},{35,11,8,6,8},
+                {40,12,10,6,10},{45,14,11,7,11},{50,16,12,8,12},{55,18,13,9,13},{60,20,14,10,14},
+                {65,21,15,10,15},{70,22,15,11,15},{75,23,16,12,16},{80,25,17,13,17},{85,27,18,14,18},
+                {90,29,19,15,19},{95,30,20,16,20},{100,31,21,17,21} };
+            int[,] cbt2hbsISarry = new int[1, 5] { { 1, 5, 5, 5, 5 } };
+            int[,] hbsfromTTISarry = new int[17, 5];
+            for (int i = 0; i < hbsfromTTISarry.GetLength(0); i++)
+            {
+                for (int a = 0; a < cbt2hbsISarry.Length; a++)
+                {
+                    hbsfromTTISarry[i, a] = cbtISarry[i, a] * cbt2hbsISarry[0, a];
+                }
+            }
+            return 
+        }
+
     }
 }
