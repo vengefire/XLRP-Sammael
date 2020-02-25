@@ -1,7 +1,7 @@
 ﻿//
 // To parse this JSON data, add NuGet 'Newtonsoft.Json' then do one of these:
 //
-//    using BattleEngineJsonCreation;
+//    using BEV3;
 //
 //    var movementCapabilitiesDef = MovementCapabilitiesDef.FromJson(jsonString);
 //    var hardpointDataDef = HardpointDataDef.FromJson(jsonString);
@@ -62,7 +62,7 @@ namespace BattleEngineJsonCreation
 
     public enum DamageLevel { Functional };
 
-    public enum Location { CenterTorso, Head, LeftArm, LeftLeg, LeftTorso, RightArm, RightLeg, RightTorso };
+    public enum Location {  Head, CenterTorso, LeftTorso, RightTorso, LeftArm, RightArm, LeftLeg, RightLeg };
 
     public enum WeaponMount { AntiPersonnel, Ballistic, Energy, Missile };
     public static class Serialize

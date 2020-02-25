@@ -47,6 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BattleEngineConverter.cs" />
+    <Compile Include="DEV3\MechBuilder.cs" />
+    <Compile Include="DEV3\Program.cs" />
+    <Compile Include="DEV3\ComponetDictionaryParse.cs" />
+    <Compile Include="DEV3\settingsLoad.cs" />
+    <Compile Include="DEV3\ReUse.cs" />
     <Compile Include="JSONClass\ComponentTypes\AmmunitionBox.cs" />
     <Compile Include="JSONClass\ComponentTypes\Weapon.cs" />
     <Compile Include="JSONClass\ComponentTypes\HeatSink.cs" />
