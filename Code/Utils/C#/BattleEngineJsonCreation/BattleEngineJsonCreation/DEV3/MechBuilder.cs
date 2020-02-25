@@ -35,7 +35,7 @@ namespace BattleEngineJsonCreation
         }
         public static MechDef MechDefs(ChassisDef chassisDef, string bedfile)
         {
-            
+
             var mechdef = new MechDef
             {
                 ChassisId = chassisDef.Description.Id,
@@ -46,13 +46,14 @@ namespace BattleEngineJsonCreation
                     Rarity = chassisDef.Description.Rarity,
                     UiName = chassisDef.Description.UiName + " " + chassisDef.VariantName,
                     Id = chassisDef.Description.Id.Replace("chassisdef", "mechdef"),
-                    Name = chassisDef.Description.Name + "_" + chassisDef.VariantName,
+                    Name = chassisDef.Description.Name + " " + chassisDef.VariantName,
+                    Details = chassisDef.Description.Details,
                     Icon = chassisDef.Description.Icon
                 },
                 Locations = new List<MechDefLocation>(),
                 Inventory = new List<Inventory>(),
             };
-            string[] filelines= File.ReadAllLines(bedfile);
+            string[] filelines = File.ReadAllLines(bedfile);
             string armorline = "";
             int internalStructre = -1;
             foreach (string lines in filelines)
@@ -65,7 +66,7 @@ namespace BattleEngineJsonCreation
                     break;
                 }
             }
-            if (!armorline.Contains("ArmorVals"))Reuse.EndProgram("FATAL ERROR: Unable to parse ArmorVals from Bedfile");
+            if (!armorline.Contains("ArmorVals")) Reuse.EndProgram("FATAL ERROR: Unable to parse ArmorVals from Bedfile");
             string[] armorvaulewords = armorline.Split(',');
             foreach (Location location in Enum.GetValues(typeof(Location)))
             {
@@ -78,22 +79,26 @@ namespace BattleEngineJsonCreation
                 }
                 else
                 {
-                    frontarmorvaule=Convert.ToInt32(armorvaulewords[(int)location]) * 5;
+                    frontarmorvaule = Convert.ToInt32(armorvaulewords[(int)location]) * 5;
                 }
-                if (((int)location == 3) || ((int)location == 4)) 
+                if (((int)location == 3) || ((int)location == 4))
                     reararmorvaule = Convert.ToInt32(armorvaulewords[6]) * 5;
                 if ((int)location == 5) reararmorvaule = Convert.ToInt32(armorvaulewords[8]) * 5;
                 if (((int)location == 6) || ((int)location == 7)) frontarmorvaule = Convert.ToInt32(armorvaulewords[10]) * 5;
-                if (chassisDef.Locations[(int)location]== Location.Head){
-
+                foreach (Location chassislocation in Enum.GetValues(typeof(Location)))
+                {
+                    if (chassisDef.Locations[(int)chassislocation].Location == location)
+                    {
+                        internalStructre = chassisDef.Locations[(int)chassislocation].InternalStructure;
+                    }
                 }
-                    mechdef.Locations.Add(new MechDefLocation
+                mechdef.Locations.Add(new MechDefLocation
                 {
                     DamageLevel = DamageLevel.Functional,
                     Location = location,
                     CurrentArmor = frontarmorvaule,
                     CurrentRearArmor = reararmorvaule,
-                    CurrentInternalStructure= internalStructre,
+                    CurrentInternalStructure = internalStructre,
                     AssignedArmor = frontarmorvaule,
                     AssignedRearArmor = reararmorvaule,
                 });
@@ -122,7 +127,7 @@ namespace BattleEngineJsonCreation
                 string[] split = critLines[i].Split(',');
                 if (componentDefDictionaryTuple.ContainsKey(split[0]))
                 {
-                    if (!(split[0].Contains("Endo") || split[0].Contains("Ferro") || split[0].Contains("Gyro") || split[0].Contains("Sensors")))
+                    if (!(split[0].Contains("Endo") || split[0].Contains("Ferro") || split[0].Contains("Gyro") || split[0].Contains("Sensors") || split[0].Contains("Life")))
                     {
                         mechdef.Inventory.Add(new Inventory
                         {
@@ -137,6 +142,36 @@ namespace BattleEngineJsonCreation
                             Guid = null
                         });
                     }
+                }
+            }
+            return mechdef;
+        }
+        public static MechDef Engines(ChassisDef chassisDef, MechDef mechdef, string bedfile)
+        {
+            string[] filelines = File.ReadAllLines(bedfile);
+            int enginerating = 1;
+            string engineString = "emod_engine_";
+            foreach (string lines in filelines)
+            {
+                string newl = lines.Replace("\"", "");
+                if (newl.Contains("Engine"))
+                {
+                    string[] split = newl.Split(',');
+                    split = split[3].Split('/');
+                    enginerating = Convert.ToInt32(split[0]) * Convert.ToInt32(chassisDef.Tonnage);
+                    if (enginerating < 100) engineString = "emod_engine_0";
+                    mechdef.Inventory.Add(new Inventory
+                    {
+                        MountedLocation = Location.CenterTorso,
+                        ComponentDefId = engineString + enginerating,
+                        ComponentDefType = ComponentDefType.HeatSink,
+                        HardpointSlot = -1,
+                        DamageLevel = "Functional",
+                        PrefabName = null,
+                        HasPrefabName = false,
+                        SimGameUid = "",
+                        Guid = null
+                    });
                 }
             }
             return mechdef;
@@ -276,7 +311,7 @@ namespace BattleEngineJsonCreation
                         }
                         if (a == (int)location)
                         {
-                            if (rear == false) vaule = cbtISarray[i,a] * 5;
+                            if (rear == false) vaule = cbtISarray[i, a] * 5;
                             if (rear == true) vaule = cbtISarray[i, a] * 5;
                         }
 

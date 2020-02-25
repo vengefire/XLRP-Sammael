@@ -41,6 +41,10 @@ namespace BattleEngineJsonCreation
                 string[] filelines = System.IO.File.ReadAllLines(file);
                 if (filelines[3].Contains("Biped"))
                 {
+                    if (filelines[0].Contains("Annihilator"))
+                    {
+                        string something = "break";
+                    }
                     var cabCheck = new List<string>(Reuse.CabCheck(filelines[0]));
                     for (int i = 0; i < cabCheck.Count; i++)
                     {
@@ -53,6 +57,7 @@ namespace BattleEngineJsonCreation
                                 Console.WriteLine(file + " " + chassisDef.Description.Id);
                                 var mechDef = MechBuilder.MechDefs(chassisDef, file);
                                 mechDef = MechBuilder.MechLocations(gearDic, mechDef, file);
+                                mechDef = MechBuilder.Engines(chassisDef, mechDef, file);
                                 string outputmechDef = Newtonsoft.Json.JsonConvert.SerializeObject(mechDef, Newtonsoft.Json.Formatting.Indented, BattleEngineJsonCreation.Converter.Settings);
                                 File.WriteAllText(Path.Combine(settings.OutputDir, mechDef.Description.Id + ".json"), outputmechDef);
                                 //var mechDef = MechBuilder.MechDefs(chassisDef);
