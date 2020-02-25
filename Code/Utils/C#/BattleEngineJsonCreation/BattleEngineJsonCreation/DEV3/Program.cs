@@ -39,19 +39,25 @@ namespace BattleEngineJsonCreation
             foreach (var file in Directory.GetFiles(settings.BedPath, "*.bed", SearchOption.AllDirectories))
             {
                 string[] filelines = System.IO.File.ReadAllLines(file);
-                var cabCheck = new List<string>(Reuse.CabCheck(filelines[0]));
-                for (int i = 0; i < cabCheck.Count; i++)
+                if (filelines[3].Contains("Biped"))
                 {
-                    if (preFabDictionary.ContainsKey(cabCheck[i]))
+                    var cabCheck = new List<string>(Reuse.CabCheck(filelines[0]));
+                    for (int i = 0; i < cabCheck.Count; i++)
                     {
-                        chassisNames = MechBuilder.ChassisName(file);
-                        var chassisDef = MechBuilder.ChassisDefs(chassisNames, chassisFiles);
-                        if (chassisDef.Description != null)
+                        if (preFabDictionary.ContainsKey(cabCheck[i]))
                         {
-                            Console.WriteLine(file + " " + chassisDef.Description.Id);
-                            var mechDef = MechBuilder.MechDefs(chassisDef);
-                            mechDef = MechBuilder.MechLocations(gearDic, mechDef, file);
-                            break;
+                            chassisNames = MechBuilder.ChassisName(file);
+                            var chassisDef = MechBuilder.ChassisDefs(chassisNames, chassisFiles, false);
+                            if (chassisDef.Description != null)
+                            {
+                                Console.WriteLine(file + " " + chassisDef.Description.Id);
+                                var mechDef = MechBuilder.MechDefs(chassisDef, file);
+                                mechDef = MechBuilder.MechLocations(gearDic, mechDef, file);
+                                string outputmechDef = Newtonsoft.Json.JsonConvert.SerializeObject(mechDef, Newtonsoft.Json.Formatting.Indented, BattleEngineJsonCreation.Converter.Settings);
+                                File.WriteAllText(Path.Combine(settings.OutputDir, mechDef.Description.Id + ".json"), outputmechDef);
+                                //var mechDef = MechBuilder.MechDefs(chassisDef);
+                                break;
+                            }
                         }
                     }
                 }

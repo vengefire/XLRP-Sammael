@@ -62,7 +62,7 @@ namespace BattleEngineJsonCreation
 
     public enum DamageLevel { Functional };
 
-    public enum Location {  Head, CenterTorso, LeftTorso, RightTorso, LeftArm, RightArm, LeftLeg, RightLeg };
+    public enum Location {  Head, LeftArm, RightArm, LeftTorso, RightTorso, CenterTorso,  LeftLeg, RightLeg };
 
     public enum WeaponMount { AntiPersonnel, Ballistic, Energy, Missile };
     public static class Serialize

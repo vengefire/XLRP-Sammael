@@ -9,24 +9,31 @@ namespace BattleEngineJsonCreation
 {
     public static class MechBuilder
     {
-        public static ChassisDef ChassisDefs(string[] chassisNames, string[] files)
+        public static ChassisDef ChassisDefs(string[] chassisNames, string[] files, bool rebuild)
         {
             var chassisDef = new ChassisDef();
             string toSearch = chassisNames[0].ToLower() + "_" + chassisNames[1].ToUpper();
-            int index = -1;
+            //int index = -1;
             string filename;
             foreach (string file in files)
             {
                 filename = Path.GetFileName(file);
-                if (file.Contains(chassisNames[1]))
+                if ((file.Contains(chassisNames[1])) && (rebuild == false))
                 {
                     string jsonString = File.ReadAllText(file);
                     chassisDef = ChassisDef.FromJson(jsonString);
                 }
+                //Rebuild is an attempt to rebuild ChassisDefs if they are missing for variants BETA Use Wisely. 
+                if ((file.Contains(chassisNames[0])) && (rebuild == true))
+                {
+                    string jsonString = File.ReadAllText(file);
+                    chassisDef = ChassisDef.FromJson(jsonString);
+                    break;
+                }
             }
             return chassisDef;
         }
-        public static MechDef MechDefs(ChassisDef chassisDef)
+        public static MechDef MechDefs(ChassisDef chassisDef, string bedfile)
         {
             
             var mechdef = new MechDef
@@ -45,16 +52,50 @@ namespace BattleEngineJsonCreation
                 Locations = new List<MechDefLocation>(),
                 Inventory = new List<Inventory>(),
             };
+            string[] filelines= File.ReadAllLines(bedfile);
+            string armorline = "";
+            int internalStructre = -1;
+            foreach (string lines in filelines)
+            {
+                string newl = Reuse.RemoveSpecialCharacters(lines);
+                newl = newl.Replace("\"", "");
+                if (newl.Contains("ArmorVals"))
+                {
+                    armorline = newl;
+                    break;
+                }
+            }
+            if (!armorline.Contains("ArmorVals"))Reuse.EndProgram("FATAL ERROR: Unable to parse ArmorVals from Bedfile");
+            string[] armorvaulewords = armorline.Split(',');
             foreach (Location location in Enum.GetValues(typeof(Location)))
             {
-                mechdef.Locations.Add(new MechDefLocation
+                //ArmorVaule to Location  If Array
+                int frontarmorvaule = -1;
+                int reararmorvaule = -1;
+                if ((int)location == 0)
+                {
+                    frontarmorvaule = 45;
+                }
+                else
+                {
+                    frontarmorvaule=Convert.ToInt32(armorvaulewords[(int)location]) * 5;
+                }
+                if (((int)location == 3) || ((int)location == 4)) 
+                    reararmorvaule = Convert.ToInt32(armorvaulewords[6]) * 5;
+                if ((int)location == 5) reararmorvaule = Convert.ToInt32(armorvaulewords[8]) * 5;
+                if (((int)location == 6) || ((int)location == 7)) frontarmorvaule = Convert.ToInt32(armorvaulewords[10]) * 5;
+                if (chassisDef.Locations[(int)location]== Location.Head){
+
+                }
+                    mechdef.Locations.Add(new MechDefLocation
                 {
                     DamageLevel = DamageLevel.Functional,
                     Location = location,
-                    CurrentArmor = MechISArmor(chassisDef.Tonnage, location, true),
-                    CurrentRearArmor = MechISArmor(chassisDef.Tonnage, location, true),
-                    AssignedArmor = MechISArmor(chassisDef.Tonnage, location, false),
-                    AssignedRearArmor = MechISArmor(chassisDef.Tonnage, location, true)
+                    CurrentArmor = frontarmorvaule,
+                    CurrentRearArmor = reararmorvaule,
+                    CurrentInternalStructure= internalStructre,
+                    AssignedArmor = frontarmorvaule,
+                    AssignedRearArmor = reararmorvaule,
                 });
             }
             return mechdef;
@@ -211,22 +252,39 @@ namespace BattleEngineJsonCreation
         {
             int index = (int)location + 2;
             double vaule = 0;
+            //Tons=0, CT=1, ST=2, LEGS=3, ARMS=4
             int[,] cbtISarray = new int[17, 5] { {20,6,5,3,4},{25,8,6,4,6},{30,10,7,5,7},{35,11,8,6,8},
                 {40,12,10,6,10},{45,14,11,7,11},{50,16,12,8,12},{55,18,13,9,13},{60,20,14,10,14},
                 {65,21,15,10,15},{70,22,15,11,15},{75,23,16,12,16},{80,25,17,13,17},{85,27,18,14,18},
                 {90,29,19,15,19},{95,30,20,16,20},{100,31,21,17,21} };
-            int[,] cbt2hbsISarray = new int[1, 5] { { 1, 5, 5, 5, 5 } };
-            int[,] hbsfromTTISarray = new int[17, 5];
-            for (int i = 0; i < hbsfromTTISarray.GetLength(0); i++)
+            //int[,] cbt2hbsISarray = new int[1, 5] { { 1, 5, 5, 5, 5 } };
+            //int[,] hbsfromTTISarray = new int[17, 5];
+            //Loop to match chassisTonnage as tons int i
+            for (int i = 0; i < cbtISarray.GetLength(0); i++)
             {
-                for (int a = 0; a < cbt2hbsISarray.Length; a++)
+                if ((cbtISarray[i, 0] == tons))
                 {
-                    //hbsfromTTISarray[i, a] = cbt2hbsISarray[i, a] * cbt2hbsISarray[0, a];
-                    if ((i == tons) && (a == (int)location))
+                    //Once tonnage is foud loop to find index position matching location index
+                    //Head is 0, Vaules based on order of Enum from ChassisDef Class should match array.
+                    for (int a = 0; a < 5; a++)
                     {
-                        if (rear == false) vaule = cbtISarray[Array.IndexOf(cbtISarray, tons), index];
+                        //hbsfromTTISarray[i, a] = cbt2hbsISarray[i, a] * cbt2hbsISarray[0, a];
+                        if ((int)location == 0)
+                        {
+                            vaule = 45;
+                            break;
+                        }
+                        if (a == (int)location)
+                        {
+                            if (rear == false) vaule = cbtISarray[i,a] * 5;
+                            if (rear == true) vaule = cbtISarray[i, a] * 5;
+                        }
+
                     }
                 }
+
+
+
             }
             return vaule;
         }

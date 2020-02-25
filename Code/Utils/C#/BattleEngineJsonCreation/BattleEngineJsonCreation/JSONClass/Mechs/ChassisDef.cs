@@ -135,13 +135,13 @@ namespace BattleEngineJsonCreation
         public long? InventorySlots { get; set; }
 
         [JsonProperty("MaxArmor", NullValueHandling = NullValueHandling.Ignore)]
-        public long? MaxArmor { get; set; }
+        public int MaxArmor { get; set; }
 
         [JsonProperty("MaxRearArmor", NullValueHandling = NullValueHandling.Ignore)]
-        public long? MaxRearArmor { get; set; }
+        public int MaxRearArmor { get; set; }
 
         [JsonProperty("InternalStructure", NullValueHandling = NullValueHandling.Ignore)]
-        public long? InternalStructure { get; set; }
+        public int InternalStructure { get; set; }
     }
     public partial class FixedEquipment
     {
