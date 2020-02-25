@@ -1,10 +1,10 @@
-﻿namespace Framework.Logic.Tasks.Async
-{
-    using System.Threading;
-    using System.Threading.Tasks;
-    using Interfaces.Async;
-    using Interfaces.Tasks;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Framework.Interfaces.Async;
+using Framework.Interfaces.Tasks;
 
+namespace Framework.Logic.Tasks.Async
+{
     public class BackgroundTaskRunner<TEventArgs> : IServiceTaskRunner
     {
         private readonly CancellationToken cancellationToken;
@@ -18,9 +18,9 @@
             ICancellationTokenProvider cancellationTokenProvider,
             ITaskEventTrigger<TEventArgs> taskEventTrigger)
         {
-            this.Name = name;
+            Name = name;
             this.serviceTask = serviceTask;
-            this.cancellationToken = cancellationTokenProvider.CancellationToken;
+            cancellationToken = cancellationTokenProvider.CancellationToken;
             this.taskEventTrigger = taskEventTrigger;
             this.taskEventTrigger.TriggerEventHandler += this.serviceTask.ExecuteTask;
         }
@@ -31,17 +31,20 @@
 
         public async Task StartProcessing()
         {
-            this.Task = new Task(this.Execute, TaskCreationOptions.LongRunning);
-            this.Task.Start();
-            await this.Task;
+            Task = new Task(Execute, TaskCreationOptions.LongRunning);
+            Task.Start();
+            await Task;
         }
 
         private void Execute()
         {
-            this.taskEventTrigger.StartMonitoring();
-            while (!this.cancellationToken.IsCancellationRequested) Thread.Sleep(1);
+            taskEventTrigger.StartMonitoring();
+            while (!cancellationToken.IsCancellationRequested)
+            {
+                Thread.Sleep(1);
+            }
 
-            this.taskEventTrigger.StopMonitoring();
+            taskEventTrigger.StopMonitoring();
         }
     }
 }

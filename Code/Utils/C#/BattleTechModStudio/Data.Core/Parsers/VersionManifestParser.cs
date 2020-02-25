@@ -18,7 +18,7 @@ namespace Data.Core.Parsers
 
             var dataDirectoryInfo = new DirectoryInfo(dataDirectory);
             var versionManifestInfo = new FileInfo(versionManifestFilePath);
-            
+
             if (!versionManifestInfo.Exists)
             {
                 Console.WriteLine($"Warning: VersionManifest file [{versionManifestInfo.FullName}] does not exist.");
@@ -77,10 +77,10 @@ namespace Data.Core.Parsers
                             continue;
                         }
 
-                        AllTypes.Add(typeString);
+                        VersionManifestParser.AllTypes.Add(typeString);
                         if (!Enum.TryParse(typeString, out GameObjectTypeEnum gameObjectType))
                         {
-                            UnknownTypes.Add(typeString);
+                            VersionManifestParser.UnknownTypes.Add(typeString);
                         }
 
                         var fileInfo = gameObjectType == GameObjectTypeEnum.Prefab ? null : new FileInfo(Path.Combine(dataDirectory, pathString));

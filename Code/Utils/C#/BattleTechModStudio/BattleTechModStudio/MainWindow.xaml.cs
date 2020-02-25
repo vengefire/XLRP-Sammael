@@ -3,10 +3,10 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using BattleTechModStudio.Commands;
+using Framework.Interfaces.Injection;
 using UI.Core.Interfaces.Data;
 using UI.Core.Interfaces.Models;
 using UI.Core.Services;
-using Framework.Interfaces.Injection;
 
 namespace BattleTechModStudio
 {
@@ -88,7 +88,7 @@ namespace BattleTechModStudio
 
         private void ClearMessages_OnClick(object sender, RoutedEventArgs e)
         {
-            this.MainViewModel.ClearMessages();
+            MainViewModel.ClearMessages();
         }
     }
 }

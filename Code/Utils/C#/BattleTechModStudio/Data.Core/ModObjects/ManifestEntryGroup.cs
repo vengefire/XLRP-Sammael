@@ -11,8 +11,6 @@ namespace Data.Core.ModObjects
     public partial class ManifestEntryGroup
     {
         public GameObjectTypeEnum ManifestGroupObjectType { get; set; }
-
-        //public List<FileInfo> ManifestSourceFiles { get; set; }
         public List<FileInfo> ManifestSourceFiles { get; set; }
         public List<ManifestEntry> ManifestEntries { get; set; } = new List<ManifestEntry>();
 
@@ -45,6 +43,7 @@ namespace Data.Core.ModObjects
                     //throw new Exception($"ManifestGroup [{ManifestGroupObjectType} - {baseDirectory.FullName} - {ContentDirectory.Name}] contains no entries.");
                     Console.WriteLine($"ManifestGroup [{ManifestGroupObjectType}] - [{baseDirectory.FullName}] - [{ContentDirectory.Name}] contains no entries.");
                 }
+
                 ManifestSourceFiles.ForEach(info => ManifestEntries.Add(new ManifestEntry(ContentDirectory, info, ManifestGroupObjectType, System.IO.Path.GetFileNameWithoutExtension(info.Name), this, AssetBundleName)));
             }
             else

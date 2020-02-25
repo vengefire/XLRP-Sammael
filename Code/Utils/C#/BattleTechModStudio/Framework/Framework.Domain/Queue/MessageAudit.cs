@@ -1,8 +1,8 @@
-﻿namespace Framework.Domain.Queue
-{
-    using System;
-    using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
+namespace Framework.Domain.Queue
+{
     public class MessageAudit
     {
         public long Id { get; set; }

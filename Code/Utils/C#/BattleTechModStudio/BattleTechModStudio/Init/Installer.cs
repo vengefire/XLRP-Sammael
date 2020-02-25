@@ -4,10 +4,10 @@ using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Services.Logging.Log4netIntegration;
 using Castle.Windsor;
+using Framework.Interfaces.Logging;
 using UI.Core.Interfaces.Models;
 using UI.Core.Interfaces.Services;
 using UI.Core.Services;
-using Framework.Interfaces.Logging;
 
 namespace BattleTechModStudio.Init
 {
@@ -23,7 +23,7 @@ namespace BattleTechModStudio.Init
                 Component.For<ISettingsService>().ImplementedBy<SettingsService>().LifestyleSingleton(),
                 Component.For<IMainModel>().ImplementedBy<MainModel>().LifestyleSingleton(),
                 Component.For<IMainViewModel>().ImplementedBy<MainViewModel>().LifestyleSingleton()
-                );
+            );
         }
     }
 }

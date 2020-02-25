@@ -1,7 +1,7 @@
-﻿namespace Framework.Interfaces.Environment
-{
-    using Domain;
+﻿using Framework.Domain;
 
+namespace Framework.Interfaces.Environment
+{
     public interface IEnvironment
     {
         EnvironmentType EnvironmentType { get; }

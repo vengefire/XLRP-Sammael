@@ -8,7 +8,7 @@ namespace Data.Console.Utils
     {
         internal static void GenerateStoreContentList(List<ManifestEntry> manifestEntries, string outputDirectory, string filename)
         {
-            var typesQualifyingForStores = new List<GameObjectTypeEnum>()
+            var typesQualifyingForStores = new List<GameObjectTypeEnum>
             {
                 GameObjectTypeEnum.UpgradeDef,
                 GameObjectTypeEnum.HeatSinkDef,
@@ -23,7 +23,7 @@ namespace Data.Console.Utils
 
         internal static void GenerateTacticalContentList(List<ManifestEntry> manifestEntries, string outputDirectory, string filename)
         {
-            var typesQualifyingForStores = new List<GameObjectTypeEnum>()
+            var typesQualifyingForStores = new List<GameObjectTypeEnum>
             {
                 GameObjectTypeEnum.UpgradeDef,
                 GameObjectTypeEnum.HeatSinkDef,

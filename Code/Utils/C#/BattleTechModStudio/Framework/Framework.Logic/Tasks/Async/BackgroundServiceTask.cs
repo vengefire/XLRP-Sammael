@@ -1,10 +1,10 @@
-﻿namespace Framework.Logic.Tasks.Async
-{
-    using System.Threading;
-    using Castle.Core.Logging;
-    using Interfaces.Async;
-    using Interfaces.Tasks;
+﻿using System.Threading;
+using Castle.Core.Logging;
+using Framework.Interfaces.Async;
+using Framework.Interfaces.Tasks;
 
+namespace Framework.Logic.Tasks.Async
+{
     public abstract class BackgroundServiceTask<TEventArgs> : IBackgroundServiceTask<TEventArgs>
     {
         protected readonly CancellationToken CancellationToken;
@@ -14,8 +14,8 @@
             ILogger logger,
             ICancellationTokenProvider cancellationTokenProvider)
         {
-            this.Logger = logger;
-            this.CancellationToken = cancellationTokenProvider.CancellationToken;
+            Logger = logger;
+            CancellationToken = cancellationTokenProvider.CancellationToken;
         }
 
         public abstract void ExecuteTask(TEventArgs eventArgs);

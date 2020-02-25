@@ -1,9 +1,9 @@
-﻿namespace Framework.Utils.Validation
-{
-    using System;
-    using System.Globalization;
-    using Extensions.String;
+﻿using System;
+using System.Globalization;
+using Framework.Utils.Extensions.String;
 
+namespace Framework.Utils.Validation
+{
     public static class SouthAfricanIdentityNumber
     {
         public static string Generate()
@@ -11,10 +11,10 @@
             var rand = new Random();
             while (true)
             {
-                var dd = (int)Math.Floor(rand.NextDouble() * 31) + 1;
-                var mm = (int)Math.Floor(rand.NextDouble() * 12) + 1;
-                var yy = (int)(92 - Math.Floor(rand.NextDouble() * 50));
-                var g = (int)Math.Floor(rand.NextDouble() * 9999);
+                var dd = (int) Math.Floor(rand.NextDouble() * 31) + 1;
+                var mm = (int) Math.Floor(rand.NextDouble() * 12) + 1;
+                var yy = (int) (92 - Math.Floor(rand.NextDouble() * 50));
+                var g = (int) Math.Floor(rand.NextDouble() * 9999);
 
                 if (dd >= 29)
                 {
@@ -56,7 +56,10 @@
 
         private static string Space(string n, int width)
         {
-            while (n.Length < width) n = "0" + n;
+            while (n.Length < width)
+            {
+                n = "0" + n;
+            }
 
             return n;
         }

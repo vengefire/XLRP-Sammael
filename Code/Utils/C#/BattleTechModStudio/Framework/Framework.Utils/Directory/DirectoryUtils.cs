@@ -1,10 +1,10 @@
-﻿namespace Framework.Utils.Directory
-{
-    using System;
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
+namespace Framework.Utils.Directory
+{
     public static class DirectoryUtils
     {
         public static string ConstructDateSegmentedDirectoryPath(string baseDirectory)
@@ -22,31 +22,31 @@
 
             di.GetFiles().ToList().ForEach(
                 fi =>
+                {
+                    if (filesToCopy == null || filesToCopy.Contains(fi.Name))
                     {
-                        if (filesToCopy == null || filesToCopy.Contains(fi.Name))
-                        {
-                            File.Copy(fi.FullName, Path.Combine(dest, fi.Name), true);
-                        }
-                    });
+                        File.Copy(fi.FullName, Path.Combine(dest, fi.Name), true);
+                    }
+                });
 
             if (copySubDirs)
             {
                 di.GetDirectories().ToList().ForEach(
-                    subDi => DirectoryCopy(subDi.FullName, Path.Combine(dest, subDi.Name), true, filesToCopy));
+                    subDi => DirectoryUtils.DirectoryCopy(subDi.FullName, Path.Combine(dest, subDi.Name), true, filesToCopy));
             }
         }
 
         public static void EnsureExists(string directory)
         {
-            if (!Directory.Exists(directory))
+            if (!System.IO.Directory.Exists(directory))
             {
-                Directory.CreateDirectory(directory);
+                System.IO.Directory.CreateDirectory(directory);
             }
         }
 
         public static bool Exists(string directory)
         {
-            return Directory.Exists(directory);
+            return System.IO.Directory.Exists(directory);
         }
     }
 }

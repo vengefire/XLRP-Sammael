@@ -1,8 +1,8 @@
-﻿namespace Framework.Interfaces.Factories
-{
-    using System;
-    using System.Data;
+﻿using System;
+using System.Data;
 
+namespace Framework.Interfaces.Factories
+{
     public interface IDbConnectionFactory : IDisposable
     {
         IDbConnection Create();

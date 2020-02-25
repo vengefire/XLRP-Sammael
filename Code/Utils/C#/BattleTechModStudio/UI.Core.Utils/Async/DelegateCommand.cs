@@ -35,10 +35,10 @@ namespace UI.Core.Utils.Async
 
         public DelegateCommand(Action<T> executeMethod, Func<T, bool> canExecuteMethod)
         {
-            this._executeMethod = executeMethod ?? throw new ArgumentNullException(
-                                     "executeMethod",
-                                     @"Execute Method cannot be null");
-            this._canExecuteMethod = canExecuteMethod;
+            _executeMethod = executeMethod ?? throw new ArgumentNullException(
+                "executeMethod",
+                @"Execute Method cannot be null");
+            _canExecuteMethod = canExecuteMethod;
         }
 
         public event EventHandler CanExecuteChanged

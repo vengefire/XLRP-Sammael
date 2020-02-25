@@ -1,14 +1,14 @@
+using System;
+using Framework.Interfaces.Tasks;
+
 namespace Framework.Logic.Tasks.Schedulers
 {
-    using System;
-    using Interfaces.Tasks;
-
     public class DateEveryYearTaskScheduler : ITaskScheduler
     {
         public DateEveryYearTaskScheduler(int month, int day)
         {
-            this.Month = month;
-            this.Day = day;
+            Month = month;
+            Day = day;
         }
 
         public int Day { get; }
@@ -20,12 +20,12 @@ namespace Framework.Logic.Tasks.Schedulers
             var runBefore = new DateTime(lastRun.Year, lastRun.Month, lastRun.Day).AddYears(1);
 
             missed = lastRun != DateTime.MinValue && now > runBefore;
-            return lastRun.Date != now.Date && this.Month == now.Date.Month && this.Day == now.Date.Day;
+            return lastRun.Date != now.Date && Month == now.Date.Month && Day == now.Date.Day;
         }
 
         public DateTime NextRun(DateTime lastRun, DateTime now)
         {
-            var nextRun = new DateTime(now.Year, this.Month, this.Day);
+            var nextRun = new DateTime(now.Year, Month, Day);
 
             if (lastRun > nextRun)
             {

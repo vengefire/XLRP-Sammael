@@ -18,7 +18,10 @@ namespace Data.Core.ModObjects
         public int LoadCycle { get; set; }
         public DirectoryInfo ModDirectory { get; set; }
 
-        public IEnumerable<ManifestEntry> ManifestEntries() => ManifestEntryGroups.SelectMany(group => group.ManifestEntries);
+        public IEnumerable<ManifestEntry> ManifestEntries()
+        {
+            return ManifestEntryGroups.SelectMany(group => group.ManifestEntries);
+        }
 
         public void ExpandManifestEntries()
         {

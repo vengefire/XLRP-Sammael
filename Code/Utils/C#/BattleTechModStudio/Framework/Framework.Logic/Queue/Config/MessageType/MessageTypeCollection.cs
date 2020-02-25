@@ -1,7 +1,7 @@
-﻿namespace Framework.Logic.Queue.Config.MessageType
-{
-    using System.Configuration;
+﻿using System.Configuration;
 
+namespace Framework.Logic.Queue.Config.MessageType
+{
     /// <summary>
     ///     Provides a configuration collection of named queues.
     /// </summary>
@@ -22,15 +22,15 @@
         /// <returns>The named queue element.</returns>
         public MessageTypeElement this[int index]
         {
-            get => (MessageTypeElement)this.BaseGet(index);
+            get => (MessageTypeElement) BaseGet(index);
             set
             {
-                if (this.BaseGet(index) != null)
+                if (BaseGet(index) != null)
                 {
-                    this.BaseRemove(index);
+                    BaseRemove(index);
                 }
 
-                this.BaseAdd(index, value);
+                BaseAdd(index, value);
             }
         }
 
@@ -39,31 +39,31 @@
         /// </summary>
         /// <param name="name">The name of the named queue element to get or set.</param>
         /// <returns>The named queue element.</returns>
-        public new MessageTypeElement this[string name] => (MessageTypeElement)this.BaseGet(name);
+        public new MessageTypeElement this[string name] => (MessageTypeElement) BaseGet(name);
 
         public int IndexOf(MessageTypeElement queue)
         {
-            return this.BaseIndexOf(queue);
+            return BaseIndexOf(queue);
         }
 
         public void RemoveAt(int index)
         {
-            this.BaseRemoveAt(index);
+            BaseRemoveAt(index);
         }
 
         public void Add(MessageTypeElement item)
         {
-            this.BaseAdd(item);
+            BaseAdd(item);
         }
 
         public void Clear()
         {
-            this.BaseClear();
+            BaseClear();
         }
 
         public bool Contains(MessageTypeElement item)
         {
-            return this.BaseIndexOf(item) >= 0;
+            return BaseIndexOf(item) >= 0;
         }
 
         public void CopyTo(MessageTypeElement[] array, int arrayIndex)
@@ -73,9 +73,9 @@
 
         public bool Remove(MessageTypeElement item)
         {
-            if (this.BaseIndexOf(item) >= 0)
+            if (BaseIndexOf(item) >= 0)
             {
-                this.BaseRemove(item);
+                BaseRemove(item);
                 return true;
             }
 
@@ -89,8 +89,8 @@
 
         protected override object GetElementKey(ConfigurationElement element)
         {
-            var queue = (MessageTypeElement)element;
-            return this.GetKey(queue);
+            var queue = (MessageTypeElement) element;
+            return GetKey(queue);
         }
 
         /// <summary>

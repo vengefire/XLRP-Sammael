@@ -1,8 +1,8 @@
-﻿namespace Framework.Interfaces.Factories
-{
-    using System;
-    using Queue;
+﻿using System;
+using Framework.Interfaces.Queue;
 
+namespace Framework.Interfaces.Factories
+{
     public interface IReadQueueFactory<TRequestType> : IDisposable
         where TRequestType : class
     {

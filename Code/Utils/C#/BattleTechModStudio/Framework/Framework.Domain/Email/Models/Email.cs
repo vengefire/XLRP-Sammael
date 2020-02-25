@@ -1,8 +1,8 @@
-﻿namespace Framework.Domain.Email.Models
-{
-    using System;
-    using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
+namespace Framework.Domain.Email.Models
+{
     public class Email
     {
         public List<string> BCCAddresses { get; set; }

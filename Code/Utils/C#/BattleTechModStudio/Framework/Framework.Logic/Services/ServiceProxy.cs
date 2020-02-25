@@ -1,8 +1,8 @@
-﻿namespace Framework.Logic.Services
-{
-    using System.ServiceProcess;
-    using Interfaces.Services;
+﻿using System.ServiceProcess;
+using Framework.Interfaces.Services;
 
+namespace Framework.Logic.Services
+{
     public class ServiceProxy : ServiceBase
     {
         private readonly IService engineService;
@@ -10,17 +10,17 @@
         public ServiceProxy(IService engineService)
         {
             this.engineService = engineService;
-            this.ServiceName = this.engineService.ServiceName();
+            ServiceName = this.engineService.ServiceName();
         }
 
         protected override void OnStart(string[] args)
         {
-            this.engineService.OnStart();
+            engineService.OnStart();
         }
 
         protected override void OnStop()
         {
-            this.engineService.OnStop();
+            engineService.OnStop();
         }
     }
 }

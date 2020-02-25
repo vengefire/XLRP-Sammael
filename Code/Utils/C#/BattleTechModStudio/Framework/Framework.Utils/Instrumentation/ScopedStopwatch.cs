@@ -1,10 +1,9 @@
-﻿namespace Framework.Utils.Instrumentation
+﻿using System;
+using System.Diagnostics;
+using Castle.Core.Logging;
+
+namespace Framework.Utils.Instrumentation
 {
-    using System;
-    using System.Diagnostics;
-
-    using Castle.Core.Logging;
-
     public class ScopedStopwatch : IDisposable
     {
         private readonly ILogger logger;
@@ -14,15 +13,15 @@
         public ScopedStopwatch(ILogger logger)
         {
             this.logger = logger;
-            this.stopwatch.Start();
+            stopwatch.Start();
         }
 
-        private long ElapsedMilliseconds => this.stopwatch.ElapsedMilliseconds;
+        private long ElapsedMilliseconds => stopwatch.ElapsedMilliseconds;
 
         public void Dispose()
         {
-            this.stopwatch.Stop();
-            this.logger.Info($"Operation took [{this.ElapsedMilliseconds}]ms to complete.");
+            stopwatch.Stop();
+            logger.Info($"Operation took [{ElapsedMilliseconds}]ms to complete.");
         }
     }
 }

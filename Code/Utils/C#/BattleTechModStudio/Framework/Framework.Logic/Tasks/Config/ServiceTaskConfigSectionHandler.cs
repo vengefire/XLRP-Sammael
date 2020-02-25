@@ -1,18 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Globalization;
+using System.Linq;
+using System.Xml;
+using Framework.Interfaces.Injection;
+using Framework.Interfaces.Logging;
+using Framework.Interfaces.Providers;
+using Framework.Interfaces.Repositories;
+using Framework.Interfaces.Tasks;
+using Framework.Logic.Tasks.Schedulers;
+
 namespace Framework.Logic.Tasks.Config
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Configuration;
-    using System.Globalization;
-    using System.Linq;
-    using System.Xml;
-    using Interfaces.Injection;
-    using Interfaces.Logging;
-    using Interfaces.Providers;
-    using Interfaces.Repositories;
-    using Interfaces.Tasks;
-    using Schedulers;
-
     [Obsolete("Use the new TaskConfigSectionHandler instead, with associated Async centric implementation.")]
     public class ServiceTaskConfigSectionHandler : IConfigurationSectionHandler
     {
@@ -25,20 +25,21 @@ namespace Framework.Logic.Tasks.Config
 
         public ServiceTaskConfigSectionHandler(IContainer container)
         {
-            this.Container = container;
+            Container = container;
         }
 
         private IContainer Container { get; }
 
         public object Create(object parent, object configContext, XmlNode section)
         {
-            var taskPersistenceProvider = this.Container.GetInstance<ITaskRepository>();
-            var dateTimeProvider = this.Container.GetInstance<IDateTimeProvider>();
-            var exceptionLogger = this.Container.GetInstance<IExceptionLogger>();
+            var taskPersistenceProvider = Container.GetInstance<ITaskRepository>();
+            var dateTimeProvider = Container.GetInstance<IDateTimeProvider>();
+            var exceptionLogger = Container.GetInstance<IExceptionLogger>();
 
             var tasks = new List<TaskRunner>();
 
             foreach (XmlNode child in section.ChildNodes)
+            {
                 if (child.Name == "task")
                 {
                     if (child.Attributes["name"] == null ||
@@ -70,13 +71,13 @@ namespace Framework.Logic.Tasks.Config
                             taskScheduler = ServiceTaskConfigSectionHandler.GetPerformDateEveryYear(child);
                             break;
                         case "EveryMonthTaskScheduler":
-                            taskScheduler = ServiceTaskConfigSectionHandler.GetPerformDateEveryMonth(child, this.Container);
+                            taskScheduler = ServiceTaskConfigSectionHandler.GetPerformDateEveryMonth(child, Container);
                             break;
                         default:
                             ServiceTaskConfigSectionHandler.RaiseException(
-                                                                           child,
-                                                                           "Attribute '{0}' expects a value of 'IntervalTaskScheduler' or 'EveryDayTaskScheduler' or 'DateEveryYearTaskScheduler'",
-                                                                           "type");
+                                child,
+                                "Attribute '{0}' expects a value of 'IntervalTaskScheduler' or 'EveryDayTaskScheduler' or 'DateEveryYearTaskScheduler'",
+                                "type");
                             taskScheduler = null;
                             break;
                     }
@@ -91,15 +92,16 @@ namespace Framework.Logic.Tasks.Config
                     var serviceTaskType = ServiceTaskConfigSectionHandler.GetIServiceTaskType(child, child.Attributes["target"].InnerText);
 
                     tasks.Add(
-                              new TaskRunner(
-                                             name,
-                                             serviceTaskType,
-                                             taskScheduler,
-                                             this.Container,
-                                             taskPersistenceProvider,
-                                             dateTimeProvider,
-                                             exceptionLogger));
+                        new TaskRunner(
+                            name,
+                            serviceTaskType,
+                            taskScheduler,
+                            Container,
+                            taskPersistenceProvider,
+                            dateTimeProvider,
+                            exceptionLogger));
                 }
+            }
 
             return tasks;
         }
@@ -168,18 +170,18 @@ namespace Framework.Logic.Tasks.Config
             if (!Enum.TryParse(child.Attributes["dayScheduleType"].Value, out scheduleType))
             {
                 ServiceTaskConfigSectionHandler.RaiseException(
-                                                               child,
-                                                               "Unable to parse DayScheduleType '{0}' ({1})",
-                                                               "dayScheduleType",
-                                                               child.Attributes["dayScheduleType"].Value);
+                    child,
+                    "Unable to parse DayScheduleType '{0}' ({1})",
+                    "dayScheduleType",
+                    child.Attributes["dayScheduleType"].Value);
             }
 
             return new EveryMonthTaskScheduler(
-                                               time.Hour,
-                                               time.Minute,
-                                               scheduleType,
-                                               day,
-                                               container.GetInstance<IBusinessDayProvider>());
+                time.Hour,
+                time.Minute,
+                scheduleType,
+                day,
+                container.GetInstance<IBusinessDayProvider>());
         }
 
         private static ITaskScheduler GetPerformEveryDay(XmlNode child)

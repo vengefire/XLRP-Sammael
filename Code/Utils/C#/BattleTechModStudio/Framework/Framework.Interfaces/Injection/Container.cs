@@ -1,9 +1,9 @@
-﻿namespace Framework.Interfaces.Injection
-{
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
+namespace Framework.Interfaces.Injection
+{
     /// <summary>
     ///     Proxy to IOC container.
     /// </summary>
@@ -15,7 +15,7 @@
 
         private Container(IContainer target)
         {
-            this.proxy = target;
+            proxy = target;
         }
 
         public static IContainer Instance
@@ -33,47 +33,47 @@
 
         public bool ConfigurationIsValid(out string details)
         {
-            return this.proxy.ConfigurationIsValid(out details);
+            return proxy.ConfigurationIsValid(out details);
         }
 
         public bool ConfigurationIsValid(Type type, out string details)
         {
-            return this.proxy.ConfigurationIsValid(type, out details);
+            return proxy.ConfigurationIsValid(type, out details);
         }
 
         public T GetInstance<T>()
         {
-            return this.proxy.GetInstance<T>();
+            return proxy.GetInstance<T>();
         }
 
-        public T GetInstance<T>(IEnumerable<KeyValuePair<string,object>>args)
+        public T GetInstance<T>(IEnumerable<KeyValuePair<string, object>> args)
         {
-            return this.proxy.GetInstance<T>(args);
+            return proxy.GetInstance<T>(args);
         }
 
         public T GetInstance<T>(string name)
         {
-            return this.proxy.GetInstance<T>(name);
+            return proxy.GetInstance<T>(name);
         }
 
         public object GetInstance(Type type)
         {
-            return this.proxy.GetInstance(type);
+            return proxy.GetInstance(type);
         }
 
         public IEnumerable<T> GetAllInstances<T>()
         {
-            return this.proxy.GetAllInstances<T>();
+            return proxy.GetAllInstances<T>();
         }
 
         public IEnumerable GetAllInstances(Type type)
         {
-            return this.proxy.GetAllInstances(type);
+            return proxy.GetAllInstances(type);
         }
 
         public void Release(object instance)
         {
-            this.proxy.Release(instance);
+            proxy.Release(instance);
         }
 
         public static void RegisterContainer(IContainer container)

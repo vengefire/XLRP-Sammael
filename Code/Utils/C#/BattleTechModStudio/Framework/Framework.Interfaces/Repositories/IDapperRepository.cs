@@ -1,8 +1,8 @@
-﻿namespace Framework.Interfaces.Repositories
-{
-    using System.Collections.Generic;
-    using DapperExtensions;
+﻿using System.Collections.Generic;
+using DapperExtensions;
 
+namespace Framework.Interfaces.Repositories
+{
     public interface IDapperRepository<TEntity> : IRepository<TEntity>
         where TEntity : class
     {

@@ -1,7 +1,7 @@
-﻿namespace Framework.Logic.Tasks.Config.Scheduled
-{
-    using System.Configuration;
+﻿using System.Configuration;
 
+namespace Framework.Logic.Tasks.Config.Scheduled
+{
     /// <summary>
     ///     Provides a configuration collection of named queues.
     /// </summary>
@@ -22,15 +22,15 @@
         /// <returns>The named queue element.</returns>
         public ScheduledTaskElement this[int index]
         {
-            get => (ScheduledTaskElement)this.BaseGet(index);
+            get => (ScheduledTaskElement) BaseGet(index);
             set
             {
-                if (this.BaseGet(index) != null)
+                if (BaseGet(index) != null)
                 {
-                    this.BaseRemove(index);
+                    BaseRemove(index);
                 }
 
-                this.BaseAdd(index, value);
+                BaseAdd(index, value);
             }
         }
 
@@ -39,31 +39,31 @@
         /// </summary>
         /// <param name="name">The name of the named queue element to get or set.</param>
         /// <returns>The named queue element.</returns>
-        public new ScheduledTaskElement this[string name] => (ScheduledTaskElement)this.BaseGet(name);
+        public new ScheduledTaskElement this[string name] => (ScheduledTaskElement) BaseGet(name);
 
         public int IndexOf(ScheduledTaskElement queue)
         {
-            return this.BaseIndexOf(queue);
+            return BaseIndexOf(queue);
         }
 
         public void RemoveAt(int index)
         {
-            this.BaseRemoveAt(index);
+            BaseRemoveAt(index);
         }
 
         public void Add(ScheduledTaskElement item)
         {
-            this.BaseAdd(item);
+            BaseAdd(item);
         }
 
         public void Clear()
         {
-            this.BaseClear();
+            BaseClear();
         }
 
         public bool Contains(ScheduledTaskElement item)
         {
-            return this.BaseIndexOf(item) >= 0;
+            return BaseIndexOf(item) >= 0;
         }
 
         public void CopyTo(ScheduledTaskElement[] array, int arrayIndex)
@@ -73,9 +73,9 @@
 
         public bool Remove(ScheduledTaskElement item)
         {
-            if (this.BaseIndexOf(item) >= 0)
+            if (BaseIndexOf(item) >= 0)
             {
-                this.BaseRemove(item);
+                BaseRemove(item);
                 return true;
             }
 
@@ -89,8 +89,8 @@
 
         protected override object GetElementKey(ConfigurationElement element)
         {
-            var queue = (ScheduledTaskElement)element;
-            return this.GetKey(queue);
+            var queue = (ScheduledTaskElement) element;
+            return GetKey(queue);
         }
 
         /// <summary>

@@ -1,13 +1,13 @@
-﻿namespace Framework.Logic.Queue.SubResolvers
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using Castle.Core;
-    using Castle.MicroKernel;
-    using Castle.MicroKernel.Context;
-    using Interfaces.Queue;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Castle.Core;
+using Castle.MicroKernel;
+using Castle.MicroKernel.Context;
+using Framework.Interfaces.Queue;
 
+namespace Framework.Logic.Queue.SubResolvers
+{
     public class OpenQueueProcessorNodeSubResolver : ISubDependencyResolver
     {
         private readonly IKernel kernel;
@@ -37,7 +37,7 @@
             ComponentModel model,
             DependencyModel dependency)
         {
-            return this.queueProcessorNodeTypes.Select(type => this.kernel.Resolve(typeof(IQueueProcessorNode<>).MakeGenericType(type)));
+            return queueProcessorNodeTypes.Select(type => kernel.Resolve(typeof(IQueueProcessorNode<>).MakeGenericType(type)));
         }
     }
 }

@@ -1,9 +1,9 @@
+using AutoMapper;
+using Framework.Domain.Email.Models;
+using Microsoft.Exchange.WebServices.Data;
+
 namespace Framework.Logic.Email.Mapping
 {
-    using AutoMapper;
-    using Domain.Email.Models;
-    using Microsoft.Exchange.WebServices.Data;
-
     public class EmailFileAttachmentTypeConverter : ITypeConverter<FileAttachment, EmailFileAttachment>
     {
         public EmailFileAttachment Convert(ResolutionContext context)

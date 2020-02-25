@@ -2,11 +2,10 @@
 using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media;
+using IWin32Window = System.Windows.Forms.IWin32Window;
 
 namespace UI.Core.Utils.WinForms.Extensions
 {
-    using IWin32Window = System.Windows.Forms.IWin32Window;
-
     public static class WpfExtensions
     {
         public static IWin32Window GetIWin32Window(this Visual visual)
@@ -25,7 +24,7 @@ namespace UI.Core.Utils.WinForms.Extensions
                 this.handle = handle;
             }
 
-            IntPtr IWin32Window.Handle => this.handle;
+            IntPtr IWin32Window.Handle => handle;
         }
     }
 }

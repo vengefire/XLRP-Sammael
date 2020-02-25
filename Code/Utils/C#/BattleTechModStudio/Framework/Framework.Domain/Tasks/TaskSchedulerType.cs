@@ -1,7 +1,7 @@
-﻿namespace Framework.Domain.Tasks
-{
-    using System;
+﻿using System;
 
+namespace Framework.Domain.Tasks
+{
     public enum TaskSchedulerType
     {
         Interval,

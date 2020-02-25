@@ -1,12 +1,12 @@
-﻿namespace Framework.Windsor.Installer
-{
-    using System.Diagnostics.CodeAnalysis;
-    using Castle.DynamicProxy;
-    using Castle.MicroKernel.Registration;
-    using Castle.MicroKernel.SubSystems.Configuration;
-    using Castle.Windsor;
-    using Interceptors;
+﻿using System.Diagnostics.CodeAnalysis;
+using Castle.DynamicProxy;
+using Castle.MicroKernel.Registration;
+using Castle.MicroKernel.SubSystems.Configuration;
+using Castle.Windsor;
+using Framework.Windsor.Interceptors;
 
+namespace Framework.Windsor.Installer
+{
     [SuppressMessage(
         "StyleCop.CSharp.ReadabilityRules",
         "SA1118:ParameterMustNotSpanMultipleLines",
@@ -16,18 +16,18 @@
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
             container.Register(
-                               Component.For<IInterceptor>()
-                                        .ImplementedBy<LogAspect>()
-                                        .Named("LogAspect")
-                                        .LifeStyle.Transient.DependsOn(Dependency.OnAppSettingsValue("SkipLog", "SkipServiceInstrumentLog")),
-                               Component.For<IInterceptor>()
-                                        .ImplementedBy<LogAspect>()
-                                        .Named("LogEntryAspect")
-                                        .LifeStyle.Transient.DependsOn(Parameter.ForKey("EntryLog").Eq("true")),
-                               Component.For<IInterceptor>()
-                                        .ImplementedBy<EFDBEntityValidationExceptionAspect>()
-                                        .Named("EFDBEntityValidationExceptionAspect")
-                                        .LifeStyle.Transient);
+                Component.For<IInterceptor>()
+                    .ImplementedBy<LogAspect>()
+                    .Named("LogAspect")
+                    .LifeStyle.Transient.DependsOn(Dependency.OnAppSettingsValue("SkipLog", "SkipServiceInstrumentLog")),
+                Component.For<IInterceptor>()
+                    .ImplementedBy<LogAspect>()
+                    .Named("LogEntryAspect")
+                    .LifeStyle.Transient.DependsOn(Parameter.ForKey("EntryLog").Eq("true")),
+                Component.For<IInterceptor>()
+                    .ImplementedBy<EFDBEntityValidationExceptionAspect>()
+                    .Named("EFDBEntityValidationExceptionAspect")
+                    .LifeStyle.Transient);
         }
     }
 }

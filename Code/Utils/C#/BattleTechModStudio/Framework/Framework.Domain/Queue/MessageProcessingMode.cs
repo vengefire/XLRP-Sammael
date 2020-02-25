@@ -1,7 +1,7 @@
-﻿namespace Framework.Domain.Queue
-{
-    using System;
+﻿using System;
 
+namespace Framework.Domain.Queue
+{
     public enum MessageProcessingMode
     {
         LocalChildNodeConcurrent
@@ -22,10 +22,10 @@
             }
 
             throw new InvalidProgramException(
-                                              string.Format(
-                                                            "Invalid value [{0}] encountered converting to MessageProcessingMode, expected [{1}].",
-                                                            value,
-                                                            "Single|SingleConcurrent|Dispatch"));
+                string.Format(
+                    "Invalid value [{0}] encountered converting to MessageProcessingMode, expected [{1}].",
+                    value,
+                    "Single|SingleConcurrent|Dispatch"));
         }
     }
 }

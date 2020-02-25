@@ -1,10 +1,10 @@
-﻿namespace Framework.Logic.Environment
-{
-    using System.Configuration;
-    using Castle.Core.Internal;
-    using Domain;
-    using Interfaces.Environment;
+﻿using System.Configuration;
+using Castle.Core.Internal;
+using Framework.Domain;
+using Framework.Interfaces.Environment;
 
+namespace Framework.Logic.Environment
+{
     public class EnvironmentImpl : IEnvironment
     {
         public EnvironmentImpl()
@@ -13,16 +13,16 @@
             if (!env.IsNullOrEmpty() &&
                 env == "Production")
             {
-                this.EnvironmentType = EnvironmentType.Production;
+                EnvironmentType = EnvironmentType.Production;
             }
             else
             {
-                this.EnvironmentType = EnvironmentType.Dev;
+                EnvironmentType = EnvironmentType.Dev;
             }
 
             var devStream = ConfigurationManager.AppSettings["DevStream"];
-            this.DevStream = devStream ?? string.Empty;
-            this.MessageQueueHostServerName = ConfigurationManager.AppSettings["MessageQueueHostServerName"];
+            DevStream = devStream ?? string.Empty;
+            MessageQueueHostServerName = ConfigurationManager.AppSettings["MessageQueueHostServerName"];
         }
 
         public EnvironmentType EnvironmentType { get; }

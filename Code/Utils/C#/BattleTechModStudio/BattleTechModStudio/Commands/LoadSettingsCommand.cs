@@ -11,7 +11,7 @@ namespace BattleTechModStudio.Commands
 
         public LoadSettingsCommand(ISettingsService settingsService)
         {
-            this._settingsService = settingsService;
+            _settingsService = settingsService;
         }
 
         public IPluginCommandCategory Category { get; }

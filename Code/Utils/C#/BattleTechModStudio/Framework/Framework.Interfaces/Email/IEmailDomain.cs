@@ -1,17 +1,15 @@
 ﻿namespace Framework.Interfaces.Email
 {
-    using Domain.Email.Models;
-
     public interface IEmailDomain
     {
-        byte[] GetEmailMimeBytes(Email email);
+        byte[] GetEmailMimeBytes(Domain.Email.Models.Email email);
 
-        Email LoadEmailFromDatabase(int id);
+        Domain.Email.Models.Email LoadEmailFromDatabase(int id);
 
-        void PersistEmailToDatabase(ref Email email);
+        void PersistEmailToDatabase(ref Domain.Email.Models.Email email);
 
-        string PersistEmailToDisk(ref Email email);
+        string PersistEmailToDisk(ref Domain.Email.Models.Email email);
 
-        long SendEmail(string context, ref Email email);
+        long SendEmail(string context, ref Domain.Email.Models.Email email);
     }
 }

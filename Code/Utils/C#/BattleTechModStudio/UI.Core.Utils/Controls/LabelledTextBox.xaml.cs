@@ -28,26 +28,26 @@ namespace UI.Core.Utils.Controls
 
         public LabelledTextBox()
         {
-            this.InitializeComponent();
-            this.Root.DataContext = this;
+            InitializeComponent();
+            Root.DataContext = this;
         }
 
         public string Label
         {
-            get => (string)this.GetValue(LabelledTextBox.LabelProperty);
-            set => this.SetValue(LabelledTextBox.LabelProperty, value);
+            get => (string) GetValue(LabelledTextBox.LabelProperty);
+            set => SetValue(LabelledTextBox.LabelProperty, value);
         }
 
         public string Text
         {
-            get => (string)this.GetValue(LabelledTextBox.TextProperty);
-            set => this.SetValue(LabelledTextBox.TextProperty, value);
+            get => (string) GetValue(LabelledTextBox.TextProperty);
+            set => SetValue(LabelledTextBox.TextProperty, value);
         }
 
         public bool IsReadOnly
         {
-            get => (bool)this.GetValue(LabelledTextBox.ReadOnlyProperty);
-            set => this.SetValue(LabelledTextBox.ReadOnlyProperty, value);
+            get => (bool) GetValue(LabelledTextBox.ReadOnlyProperty);
+            set => SetValue(LabelledTextBox.ReadOnlyProperty, value);
         }
     }
 }

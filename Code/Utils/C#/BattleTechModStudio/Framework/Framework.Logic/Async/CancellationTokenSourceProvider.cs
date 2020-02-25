@@ -1,21 +1,21 @@
-﻿namespace Framework.Logic.Async
-{
-    using System.Threading;
-    using Interfaces.Async;
+﻿using System.Threading;
+using Framework.Interfaces.Async;
 
+namespace Framework.Logic.Async
+{
     public class CancellationTokenSourceProvider : ICancellationTokenSourceProvider, ICancellationTokenProvider
     {
         public CancellationTokenSourceProvider()
         {
-            this.CancellationTokenSource = new CancellationTokenSource();
+            CancellationTokenSource = new CancellationTokenSource();
         }
 
         public CancellationTokenSourceProvider(CancellationTokenSource cancellationTokenSource)
         {
-            this.CancellationTokenSource = cancellationTokenSource;
+            CancellationTokenSource = cancellationTokenSource;
         }
 
-        public CancellationToken CancellationToken => this.CancellationTokenSource.Token;
+        public CancellationToken CancellationToken => CancellationTokenSource.Token;
 
         public CancellationTokenSource CancellationTokenSource { get; }
     }

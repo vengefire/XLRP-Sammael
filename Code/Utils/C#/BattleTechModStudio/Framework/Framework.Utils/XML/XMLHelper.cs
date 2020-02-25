@@ -1,15 +1,15 @@
-﻿namespace Framework.Utils.XML
-{
-    using System;
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Linq;
-    using System.Runtime.Serialization;
-    using System.Text;
-    using System.Xml;
-    using System.Xml.Schema;
-    using System.Xml.Serialization;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.Text;
+using System.Xml;
+using System.Xml.Schema;
+using System.Xml.Serialization;
 
+namespace Framework.Utils.XML
+{
     public class XmlHelper
     {
         public static T Deserialize<T>(string xmlString, Encoding encoding = null) where T : class
@@ -188,19 +188,19 @@
             xmlReaderSettings.ValidationFlags = XmlSchemaValidationFlags.ReportValidationWarnings;
             xmlReaderSettings.Schemas = schemaSet;
             xmlReaderSettings.ValidationEventHandler += (sender, args) =>
-                                                        {
-                                                            switch (args.Severity)
-                                                            {
-                                                                case XmlSeverityType.Warning:
-                                                                    warningsList.Add(args.Message);
-                                                                    break;
-                                                                case XmlSeverityType.Error:
-                                                                    errorsList.Add(args.Message);
-                                                                    break;
-                                                                default:
-                                                                    throw new InvalidProgramException("Unknown Xml Severity argument value detected.");
-                                                            }
-                                                        };
+            {
+                switch (args.Severity)
+                {
+                    case XmlSeverityType.Warning:
+                        warningsList.Add(args.Message);
+                        break;
+                    case XmlSeverityType.Error:
+                        errorsList.Add(args.Message);
+                        break;
+                    default:
+                        throw new InvalidProgramException("Unknown Xml Severity argument value detected.");
+                }
+            };
 
             var xmlReader = XmlReader.Create(stream, xmlReaderSettings);
             while (xmlReader.Read())

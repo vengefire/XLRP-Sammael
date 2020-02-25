@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
-using UI.Core.Interfaces.Services;
 using Newtonsoft.Json;
+using UI.Core.Interfaces.Services;
 
 namespace UI.Core.Services
 {

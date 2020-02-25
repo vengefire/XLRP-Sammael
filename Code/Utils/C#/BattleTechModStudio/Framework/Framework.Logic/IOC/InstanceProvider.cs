@@ -1,11 +1,11 @@
+using System;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
+using System.ServiceModel.Dispatcher;
+using Framework.Interfaces.Injection;
+
 namespace Framework.Logic.IOC
 {
-    using System;
-    using System.ServiceModel;
-    using System.ServiceModel.Channels;
-    using System.ServiceModel.Dispatcher;
-    using Interfaces.Injection;
-
     public class InstanceProvider : IInstanceProvider
     {
         private readonly IContainer container;
@@ -20,12 +20,12 @@ namespace Framework.Logic.IOC
 
         public object GetInstance(InstanceContext instanceContext)
         {
-            return this.GetInstance(instanceContext, null);
+            return GetInstance(instanceContext, null);
         }
 
         public object GetInstance(InstanceContext instanceContext, Message message)
         {
-            return this.container.GetInstance(this.serviceType);
+            return container.GetInstance(serviceType);
         }
 
         public void ReleaseInstance(InstanceContext instanceContext, object instance)

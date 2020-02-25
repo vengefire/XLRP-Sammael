@@ -1,7 +1,7 @@
-﻿namespace Framework.Interfaces.Tasks
-{
-    using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
+namespace Framework.Interfaces.Tasks
+{
     public interface IServiceTaskRunner
     {
         string Name { get; }

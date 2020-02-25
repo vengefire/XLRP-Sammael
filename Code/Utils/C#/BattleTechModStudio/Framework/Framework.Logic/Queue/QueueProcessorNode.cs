@@ -1,11 +1,11 @@
-﻿namespace Framework.Logic.Queue
-{
-    using System;
-    using System.Messaging;
-    using System.Threading.Tasks;
-    using Interfaces.Factories;
-    using Interfaces.Queue;
+﻿using System;
+using System.Messaging;
+using System.Threading.Tasks;
+using Framework.Interfaces.Factories;
+using Framework.Interfaces.Queue;
 
+namespace Framework.Logic.Queue
+{
     public class QueueProcessorNode<TRequestType> : IQueueProcessorNode<TRequestType>, IDisposable
         where TRequestType : class
     {
@@ -18,7 +18,7 @@
         {
             this.requestQueue = requestQueue;
             this.logicFactory = logicFactory;
-            this.requestQueue.QueueMessageHandlerEvent += this.HandleMessageEvent;
+            this.requestQueue.QueueMessageHandlerEvent += HandleMessageEvent;
         }
 
         public virtual void Dispose()
@@ -27,7 +27,7 @@
 
         public async Task StartProcessing()
         {
-            await this.requestQueue.StartReading();
+            await requestQueue.StartReading();
         }
 
         private void HandleMessageEvent(
@@ -36,9 +36,9 @@
             string messageId,
             string correlationId)
         {
-            var logic = this.logicFactory.Create();
+            var logic = logicFactory.Create();
             logic.DoWork(message, messageId, correlationId);
-            this.logicFactory.Release(logic);
+            logicFactory.Release(logic);
         }
     }
 }

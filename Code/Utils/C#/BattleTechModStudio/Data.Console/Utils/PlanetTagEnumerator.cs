@@ -8,18 +8,6 @@ namespace Data.Console.Utils
 {
     internal static class PlanetTagEnumerator
     {
-        public class PlanetTag
-        {
-            public string category { get; }
-            public string value { get; }
-
-            public PlanetTag(string category, string value)
-            {
-                this.category = category;
-                this.value = value;
-            }
-        }
-
         public static List<PlanetTag> EnumeratePlanetTags(List<ManifestEntry> manifestEntries)
         {
             var planetTags = new HashSet<string>();
@@ -44,6 +32,18 @@ namespace Data.Console.Utils
             // var groupedList = parsedList.GroupBy(arg => arg.categogry, (category, tags) => tags).ToList();
             // sortedList.Sort(string.CompareOrdinal);
             // return sortedList;
+        }
+
+        public class PlanetTag
+        {
+            public PlanetTag(string category, string value)
+            {
+                this.category = category;
+                this.value = value;
+            }
+
+            public string category { get; }
+            public string value { get; }
         }
     }
 }

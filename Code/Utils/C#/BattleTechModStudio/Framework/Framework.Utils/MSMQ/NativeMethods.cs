@@ -1,9 +1,9 @@
-﻿namespace Framework.Utils.MSMQ
-{
-    using System;
-    using System.Runtime.InteropServices;
-    using System.Transactions;
+﻿using System;
+using System.Runtime.InteropServices;
+using System.Transactions;
 
+namespace Framework.Utils.MSMQ
+{
     public static class NativeMethods
     {
         [Flags]

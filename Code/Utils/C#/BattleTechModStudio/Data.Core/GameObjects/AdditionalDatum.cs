@@ -2,15 +2,12 @@
 
 namespace Data.Core.GameObjects
 {
-    public partial class AdditionalDatum
+    public class AdditionalDatum
     {
-        [JsonProperty("statName")]
-        public string StatName { get; set; }
+        [JsonProperty("statName")] public string StatName { get; set; }
 
-        [JsonProperty("statValue")]
-        public string StatValue { get; set; }
+        [JsonProperty("statValue")] public string StatValue { get; set; }
 
-        [JsonProperty("statType")]
-        public string StatType { get; set; }
+        [JsonProperty("statType")] public string StatType { get; set; }
     }
 }

@@ -1,7 +1,7 @@
-﻿namespace Framework.Interfaces.Queue
-{
-    using System;
+﻿using System;
 
+namespace Framework.Interfaces.Queue
+{
     public interface IWriteQueue<TRequestType> : IQueueBase
         where TRequestType : class
     {

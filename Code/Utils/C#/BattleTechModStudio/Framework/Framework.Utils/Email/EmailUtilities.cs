@@ -28,7 +28,9 @@ namespace Framework.Utils.Email
                     var mailAddressCollection = new System.Net.Mail.MailAddressCollection();
                     if (null != emailAddressList &&
                         emailAddressList.Any())
+                    {
                         mailAddressCollection.Add(string.Join(",", emailAddressList));
+                    }
 
                     return mailAddressCollection;
                 });
@@ -52,7 +54,9 @@ namespace Framework.Utils.Email
                     var emailAddressList = new List<string>();
                     if (null != mailAddressCollection &&
                         mailAddressCollection.Any())
+                    {
                         emailAddressList.AddRange(mailAddressCollection.Select(Mapper.Map<string>));
+                    }
 
                     return emailAddressList;
                 });
@@ -72,10 +76,12 @@ namespace Framework.Utils.Email
         {
             var mailMessage = Mapper.Map<System.Net.Mail.MailMessage>(email);
             foreach (var emailFileAttachment in email.FileAttachments)
+            {
                 mailMessage.Attachments.Add(
                     new System.Net.Mail.Attachment(
                         new MemoryStream(emailFileAttachment.Content),
                         emailFileAttachment.Name));
+            }
 
             return mailMessage.GetEmailContentBytes();
         }

@@ -1,8 +1,8 @@
-﻿namespace Framework.Utils.Extensions.Queryable
-{
-    using System.Collections.Generic;
-    using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 
+namespace Framework.Utils.Extensions.Queryable
+{
     public static class QueryableExtensions
     {
         public static IEnumerable<T> Paged<T>(
@@ -11,8 +11,8 @@
             int pageSize)
         {
             return source
-                   .Skip((page - 1) * pageSize)
-                   .Take(pageSize);
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize);
         }
     }
 }

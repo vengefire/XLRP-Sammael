@@ -49,7 +49,10 @@ namespace Framework.Logic.IOC
                 var message = new StringBuilder();
                 var inspector = new DependencyInspector(message);
 
-                foreach (IExposeDependencyInfo handler in handlers) handler.ObtainDependencyDetails(inspector);
+                foreach (IExposeDependencyInfo handler in handlers)
+                {
+                    handler.ObtainDependencyDetails(inspector);
+                }
 
                 details = message.ToString();
                 return false;
@@ -81,7 +84,10 @@ namespace Framework.Logic.IOC
                 var message = new StringBuilder();
                 var inspector = new DependencyInspector(message);
 
-                foreach (IExposeDependencyInfo handler in handlers) handler.ObtainDependencyDetails(inspector);
+                foreach (IExposeDependencyInfo handler in handlers)
+                {
+                    handler.ObtainDependencyDetails(inspector);
+                }
 
                 details = message.ToString();
                 return false;
@@ -133,7 +139,10 @@ namespace Framework.Logic.IOC
 
         private void ComponentModelCreated(ComponentModel model)
         {
-            if (model.LifestyleType == LifestyleType.Undefined) model.LifestyleType = LifestyleType.Transient;
+            if (model.LifestyleType == LifestyleType.Undefined)
+            {
+                model.LifestyleType = LifestyleType.Transient;
+            }
         }
 
         private T TransientResolve<T>()

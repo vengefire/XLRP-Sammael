@@ -7,6 +7,9 @@ namespace Data.Core.GameObjects
 {
     public class ManifestEntry
     {
+        private JObject _json;
+        private string _text;
+
         public ManifestEntry(DirectoryInfo directoryInfo, FileInfo fileInfo, GameObjectTypeEnum gameObjectType, string id, ManifestEntryGroup manifestEntryGroup, string assetBundleName)
         {
             DirectoryInfo = directoryInfo;
@@ -23,9 +26,9 @@ namespace Data.Core.GameObjects
         public string Id { get; set; }
         public GameObjectTypeEnum GameObjectType { get; set; }
         public string AssetBundleName { get; set; }
-        private JObject _json;
-        private string _text;
-        public JObject Json {
+
+        public JObject Json
+        {
             get
             {
                 if (_json == null)
@@ -46,6 +49,7 @@ namespace Data.Core.GameObjects
                 {
                     _text = ReadText();
                 }
+
                 return _text;
             }
             set => _text = value;

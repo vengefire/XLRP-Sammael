@@ -1,12 +1,12 @@
-﻿namespace Framework.Logic.Tasks.BackgroundEventTriggers
-{
-    using System;
-    using System.IO;
-    using System.Threading;
-    using Interfaces.Tasks;
-    using Utils.Directory;
-    using Utils.Extensions.File;
+﻿using System;
+using System.IO;
+using System.Threading;
+using Framework.Interfaces.Tasks;
+using Framework.Utils.Directory;
+using Framework.Utils.Extensions.File;
 
+namespace Framework.Logic.Tasks.BackgroundEventTriggers
+{
     public class FileWatchEventTrigger : ITaskEventTrigger<FileWatchEventTrigger.EventArgs>
     {
         [Flags]
@@ -27,65 +27,68 @@
         {
             DirectoryUtils.EnsureExists(watchPath);
 
-            this.fileSystemWatcher = new FileSystemWatcher {Path = watchPath, Filter = fileFilter, NotifyFilter = NotifyFilters.FileName | NotifyFilters.LastWrite};
+            fileSystemWatcher = new FileSystemWatcher {Path = watchPath, Filter = fileFilter, NotifyFilter = NotifyFilters.FileName | NotifyFilters.LastWrite};
 
-            this.fileSystemWatcher.Created += this.OnFileCreated;
-            this.fileSystemWatcher.Deleted += this.OnFileDeleted;
-            this.fileSystemWatcher.EnableRaisingEvents = false;
+            fileSystemWatcher.Created += OnFileCreated;
+            fileSystemWatcher.Deleted += OnFileDeleted;
+            fileSystemWatcher.EnableRaisingEvents = false;
         }
 
         public event Action<EventArgs> TriggerEventHandler;
 
         public void StartMonitoring()
         {
-            this.ProcessExistingFiles();
-            this.fileSystemWatcher.EnableRaisingEvents = true;
+            ProcessExistingFiles();
+            fileSystemWatcher.EnableRaisingEvents = true;
         }
 
         public void StopMonitoring()
         {
-            this.fileSystemWatcher.EnableRaisingEvents = false;
+            fileSystemWatcher.EnableRaisingEvents = false;
         }
 
         private void ProcessExistingFiles()
         {
-            foreach (var file in Directory.GetFiles(this.fileSystemWatcher.Path))
+            foreach (var file in Directory.GetFiles(fileSystemWatcher.Path))
             {
                 var fi = new FileInfo(file);
-                this.TriggerEventHandler(new EventArgs(fi.Name, fi.FullName, FileEventTrigger.Created));
+                TriggerEventHandler(new EventArgs(fi.Name, fi.FullName, FileEventTrigger.Created));
             }
         }
 
         private void OnFileDeleted(object sender, FileSystemEventArgs e)
         {
-            this.TriggerEventHandler(new EventArgs(Path.GetFileName(e.FullPath), e.FullPath, FileEventTrigger.Deleted));
+            TriggerEventHandler(new EventArgs(Path.GetFileName(e.FullPath), e.FullPath, FileEventTrigger.Deleted));
         }
 
         private void OnFileChanged(object sender, FileSystemEventArgs e)
         {
-            this.EnsureFileUnlocked(e);
-            this.TriggerEventHandler(new EventArgs(Path.GetFileName(e.FullPath), e.FullPath, FileEventTrigger.Changed));
+            EnsureFileUnlocked(e);
+            TriggerEventHandler(new EventArgs(Path.GetFileName(e.FullPath), e.FullPath, FileEventTrigger.Changed));
         }
 
         private void EnsureFileUnlocked(FileSystemEventArgs e)
         {
             var fi = new FileInfo(e.FullPath);
-            while (fi.IsFileLocked()) Thread.Sleep(1);
+            while (fi.IsFileLocked())
+            {
+                Thread.Sleep(1);
+            }
         }
 
         private void OnFileCreated(object sender, FileSystemEventArgs e)
         {
-            this.EnsureFileUnlocked(e);
-            this.TriggerEventHandler(new EventArgs(Path.GetFileName(e.FullPath), e.FullPath, FileEventTrigger.Created));
+            EnsureFileUnlocked(e);
+            TriggerEventHandler(new EventArgs(Path.GetFileName(e.FullPath), e.FullPath, FileEventTrigger.Created));
         }
 
         public class EventArgs
         {
             public EventArgs(string fileName, string fullPath, FileEventTrigger fileEventTrigger)
             {
-                this.FileName = fileName;
-                this.FullPath = fullPath;
-                this.FileEventTrigger = fileEventTrigger;
+                FileName = fileName;
+                FullPath = fullPath;
+                FileEventTrigger = fileEventTrigger;
             }
 
             public string FileName { get; }
