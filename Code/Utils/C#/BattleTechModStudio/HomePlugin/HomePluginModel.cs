@@ -13,7 +13,11 @@ namespace HomePlugin
             get => _settings;
             set
             {
-                if (Equals(value, _settings)) return;
+                if (object.Equals(value, _settings))
+                {
+                    return;
+                }
+
                 _settings = value;
                 _settings.PropertyChanged += (sender, args) => OnPropertyChanged(args.PropertyName);
                 OnPropertyChanged();

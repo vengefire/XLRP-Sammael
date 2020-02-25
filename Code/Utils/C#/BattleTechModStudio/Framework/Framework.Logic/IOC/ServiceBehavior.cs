@@ -1,19 +1,19 @@
+using System.Collections.ObjectModel;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
+using System.ServiceModel.Description;
+using System.ServiceModel.Dispatcher;
+using Framework.Interfaces.Injection;
+
 namespace Framework.Logic.IOC
 {
-    using System.Collections.ObjectModel;
-    using System.ServiceModel;
-    using System.ServiceModel.Channels;
-    using System.ServiceModel.Description;
-    using System.ServiceModel.Dispatcher;
-    using Interfaces.Injection;
-
     public class ServiceBehavior : IServiceBehavior
     {
         private readonly IContainer _container;
 
         public ServiceBehavior(IContainer container)
         {
-            this._container = container;
+            _container = container;
         }
 
         public void ApplyDispatchBehavior(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase)
@@ -24,9 +24,11 @@ namespace Framework.Logic.IOC
                 if (cd != null)
                 {
                     foreach (var ed in cd.Endpoints)
+                    {
                         ed.DispatchRuntime.InstanceProvider = new InstanceProvider(
-                                                                                   this._container,
-                                                                                   serviceDescription.ServiceType);
+                            _container,
+                            serviceDescription.ServiceType);
+                    }
                 }
             }
         }

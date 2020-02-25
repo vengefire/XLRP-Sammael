@@ -1,7 +1,7 @@
-﻿namespace Framework.Interfaces.Queue
-{
-    using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
+namespace Framework.Interfaces.Queue
+{
     public interface IQueueProcessorNode<TRequestType>
         where TRequestType : class
     {

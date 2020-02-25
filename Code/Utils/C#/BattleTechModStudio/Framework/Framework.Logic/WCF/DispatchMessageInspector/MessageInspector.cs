@@ -1,16 +1,16 @@
-﻿namespace Framework.Logic.WCF.DispatchMessageInspector
-{
-    using System;
-    using System.Collections.Generic;
-    using System.ServiceModel;
-    using System.ServiceModel.Channels;
-    using System.ServiceModel.Dispatcher;
-    using System.Threading;
-    using Castle.Core.Logging;
-    using Domain.Services;
-    using Interfaces.Data.Services;
-    using Interfaces.Injection;
+﻿using System;
+using System.Collections.Generic;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
+using System.ServiceModel.Dispatcher;
+using System.Threading;
+using Castle.Core.Logging;
+using Framework.Domain.Services;
+using Framework.Interfaces.Data.Services;
+using Framework.Interfaces.Injection;
 
+namespace Framework.Logic.WCF.DispatchMessageInspector
+{
     public class MessageInspector : IDispatchMessageInspector
     {
         private static readonly Dictionary<int, Message> MessageDictionary = new Dictionary<int, Message>();
@@ -19,14 +19,14 @@
 
         public MessageInspector()
         {
-            this._container = Container.Instance;
+            _container = Container.Instance;
         }
 
         public ILogger Logger { get; set; } = NullLogger.Instance;
 
         public object AfterReceiveRequest(ref Message request, IClientChannel channel, InstanceContext instanceContext)
         {
-            var serviceMethodLogService = this._container.GetInstance<IServiceMethodLogService>();
+            var serviceMethodLogService = _container.GetInstance<IServiceMethodLogService>();
             int threadId;
             int logId;
             try
@@ -39,7 +39,7 @@
             }
             finally
             {
-                this._container.Release(serviceMethodLogService);
+                _container.Release(serviceMethodLogService);
             }
 
             return new MessageInspectorContext(threadId, logId, DateTime.Now);
@@ -47,17 +47,17 @@
 
         public void BeforeSendReply(ref Message reply, object correlationState)
         {
-            var serviceMethodLogService = this._container.GetInstance<IServiceMethodLogService>();
+            var serviceMethodLogService = _container.GetInstance<IServiceMethodLogService>();
             try
             {
-                var context = (MessageInspectorContext)correlationState;
+                var context = (MessageInspectorContext) correlationState;
                 var elapsedTime = DateTime.Now - context.InvocationTimeStamp;
                 serviceMethodLogService.UpdateLog(context.LogId, reply.ToString(), elapsedTime.Ticks);
                 MessageInspector.MessageDictionary.Remove(context.ThreadId);
             }
             finally
             {
-                this._container.Release(serviceMethodLogService);
+                _container.Release(serviceMethodLogService);
             }
         }
 
@@ -70,9 +70,9 @@
         {
             public MessageInspectorContext(int threadId, int logId, DateTime invocationTimeStamp)
             {
-                this.ThreadId = threadId;
-                this.LogId = logId;
-                this.InvocationTimeStamp = invocationTimeStamp;
+                ThreadId = threadId;
+                LogId = logId;
+                InvocationTimeStamp = invocationTimeStamp;
             }
 
             public int ThreadId { get; set; }

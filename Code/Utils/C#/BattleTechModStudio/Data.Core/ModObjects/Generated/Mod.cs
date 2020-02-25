@@ -8,10 +8,8 @@
 
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using Data.Core.GameObjects;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 
 namespace Data.Core.ModObjects
 {
@@ -31,7 +29,8 @@ namespace Data.Core.ModObjects
 
         [JsonProperty("Contact")] public string Contact { get; set; }
 
-        [JsonProperty("PackagedOn", NullValueHandling = NullValueHandling.Ignore)] public DateTimeOffset PackagedOn { get; set; }
+        [JsonProperty("PackagedOn", NullValueHandling = NullValueHandling.Ignore)]
+        public DateTimeOffset PackagedOn { get; set; }
 
         [JsonProperty("BattleTechVersion")] public string BattleTechVersion { get; set; }
 
@@ -84,7 +83,7 @@ namespace Data.Core.ModObjects
         public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
         {
             MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
-            Converters = new List<JsonConverter> { new BadDateFixingConverter("yyyyMMddHHmmss") },
+            Converters = new List<JsonConverter> {new BadDateFixingConverter("yyyyMMddHHmmss")},
             DateParseHandling = DateParseHandling.None
             /*DateParseHandling = DateParseHandling.DateTimeOffset,
             Converters =
@@ -95,20 +94,23 @@ namespace Data.Core.ModObjects
 
         internal class BadDateFixingConverter : JsonConverter
         {
-            string FormatStringVaue;
+            private readonly string FormatStringVaue;
+
             public BadDateFixingConverter(string FormatString)
             {
-                this.FormatStringVaue = FormatString;
+                FormatStringVaue = FormatString;
             }
+
+            public override bool CanWrite => false;
 
             public override bool CanConvert(Type objectType)
             {
-                return (objectType == typeof(DateTime) || objectType == typeof(DateTime?));
+                return objectType == typeof(DateTime) || objectType == typeof(DateTime?);
             }
 
             public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
             {
-                string rawDate = (string)reader.Value;
+                var rawDate = (string) reader.Value;
 
                 try
                 {
@@ -118,16 +120,12 @@ namespace Data.Core.ModObjects
                 {
                     // It's not a date after all, so just return the default value
                     if (objectType == typeof(DateTime?))
+                    {
                         return null;
+                    }
 
                     return null;
-
                 }
-            }
-
-            public override bool CanWrite
-            {
-                get { return false; }
             }
 
             public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)

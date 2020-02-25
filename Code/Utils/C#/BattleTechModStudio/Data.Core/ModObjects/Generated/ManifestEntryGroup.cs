@@ -15,11 +15,12 @@ namespace Data.Core.ModObjects
         public bool AddToDb { get; set; } = true;
 
         [JsonProperty("ShouldMergeJSON", NullValueHandling = NullValueHandling.Ignore)]
-        public bool ShouldMergeJson { get; set; } = false;
+        public bool ShouldMergeJson { get; set; }
 
-        [JsonProperty("AssetBundleName", NullValueHandling = NullValueHandling.Ignore)] public string AssetBundleName { get; set; } = string.Empty;
+        [JsonProperty("AssetBundleName", NullValueHandling = NullValueHandling.Ignore)]
+        public string AssetBundleName { get; set; } = string.Empty;
 
-        [JsonProperty("ShouldAppendText", NullValueHandling = NullValueHandling.Ignore)] 
-        public bool ShouldAppendText { get; set; } = false;
+        [JsonProperty("ShouldAppendText", NullValueHandling = NullValueHandling.Ignore)]
+        public bool ShouldAppendText { get; set; }
     }
 }

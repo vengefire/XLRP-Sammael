@@ -1,8 +1,8 @@
-﻿namespace Framework.Logic.Services
-{
-    using Domain.Services;
-    using Interfaces.Data.Services;
+﻿using Framework.Domain.Services;
+using Framework.Interfaces.Data.Services;
 
+namespace Framework.Logic.Services
+{
     public class NullServiceMethodLogService : IServiceMethodLogService
     {
         private static readonly IServiceMethodLogService Singleton = new NullServiceMethodLogService();

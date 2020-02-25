@@ -32,7 +32,7 @@ namespace Data.Core.ModObjects
                     var entry = manifestEntryStackItem.Value.First();
                     //if (entry.ManifestEntryGroup == null || entry.ManifestEntryGroup.AddToDb)
                     //{
-                        mergedResult = entry;
+                    mergedResult = entry;
                     //}
                 }
                 else
@@ -56,7 +56,7 @@ namespace Data.Core.ModObjects
                     {
                         if (mergedResult == null)
                         {
-                            if (currentManifestEntry.ManifestEntryGroup == null || currentManifestEntry.ManifestEntryGroup.AddToDb)
+                            // if (currentManifestEntry.ManifestEntryGroup == null || currentManifestEntry.ManifestEntryGroup.AddToDb)
                             {
                                 mergedResult = currentManifestEntry;
                             }
@@ -64,11 +64,11 @@ namespace Data.Core.ModObjects
                             continue;
                         }
 
-                        if (currentManifestEntry.ManifestEntryGroup == null)
+                        /*if (currentManifestEntry.ManifestEntryGroup == null)
                         {
                             mergedResult = currentManifestEntry;
                             continue;
-                        }
+                        }*/
 
                         if (currentManifestEntry.ManifestEntryGroup.ShouldAppendText)
                         {

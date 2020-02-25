@@ -11,7 +11,7 @@ namespace BattleTechModStudio.Commands
 
         public SaveSettingsCommand(ISettingsService settingsService)
         {
-            this._settingsService = settingsService;
+            _settingsService = settingsService;
         }
 
         public IPluginCommandCategory Category { get; }

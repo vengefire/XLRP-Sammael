@@ -1,7 +1,7 @@
-﻿namespace Framework.Interfaces.Providers
-{
-    using System;
+﻿using System;
 
+namespace Framework.Interfaces.Providers
+{
     /// <summary>
     ///     Provider for relative <see cref="DateTime" /> methods.
     /// </summary>

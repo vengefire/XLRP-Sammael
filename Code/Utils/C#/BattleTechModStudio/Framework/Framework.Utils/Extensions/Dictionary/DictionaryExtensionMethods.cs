@@ -1,11 +1,11 @@
-﻿namespace Framework.Utils.Extensions.Dictionary
-{
-    using System;
-    using System.Collections;
-    using System.IO;
-    using System.Text;
-    using Newtonsoft.Json;
+﻿using System;
+using System.Collections;
+using System.IO;
+using System.Text;
+using Newtonsoft.Json;
 
+namespace Framework.Utils.Extensions.Dictionary
+{
     public static class DictionaryExtensionMethods
     {
         /// <summary>

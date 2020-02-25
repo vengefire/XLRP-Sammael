@@ -9,17 +9,17 @@ namespace BattleTechModStudio
 {
     public class MainModel : INotifyPropertyChanged, IMainModel
     {
-        public bool IsBusy { get; set;  }
-
         public MainModel(IMessageService messageService)
         {
             MessageService = messageService;
-            MessageService.PropertyChanged += (sender, args) => this.OnPropertyChanged(args.PropertyName);
-            MessageService.AddMessage(new MessageData()
+            MessageService.PropertyChanged += (sender, args) => OnPropertyChanged(args.PropertyName);
+            MessageService.AddMessage(new MessageData
             {
                 Message = "Main Model has been Initialized."
             });
         }
+
+        public bool IsBusy { get; set; }
 
         public IMessageService MessageService { get; }
         public event PropertyChangedEventHandler PropertyChanged;

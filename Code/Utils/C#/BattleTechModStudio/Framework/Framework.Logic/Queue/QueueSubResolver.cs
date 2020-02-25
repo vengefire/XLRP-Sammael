@@ -1,11 +1,11 @@
-﻿namespace Framework.Logic.Queue
-{
-    using System;
-    using System.Configuration;
-    using Castle.Core;
-    using Castle.MicroKernel;
-    using Castle.MicroKernel.Context;
+﻿using System;
+using System.Configuration;
+using Castle.Core;
+using Castle.MicroKernel;
+using Castle.MicroKernel.Context;
 
+namespace Framework.Logic.Queue
+{
     public class QueueSubResolver : ISubDependencyResolver
     {
         public bool CanResolve(

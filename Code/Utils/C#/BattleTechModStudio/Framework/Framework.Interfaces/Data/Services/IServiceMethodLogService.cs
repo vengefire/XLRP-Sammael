@@ -1,7 +1,7 @@
-﻿namespace Framework.Interfaces.Data.Services
-{
-    using Domain.Services;
+﻿using Framework.Domain.Services;
 
+namespace Framework.Interfaces.Data.Services
+{
     public interface IServiceMethodLogService
     {
         int AddLog(ref ServiceMethodLog logEntry);

@@ -1,10 +1,10 @@
-﻿namespace Framework.Utils.MSMQ
-{
-    using System;
-    using System.ComponentModel;
-    using System.Messaging;
-    using System.Transactions;
+﻿using System;
+using System.ComponentModel;
+using System.Messaging;
+using System.Transactions;
 
+namespace Framework.Utils.MSMQ
+{
     public static class MessageQueueExtensions
     {
         public static void MoveToSubQueue(
@@ -24,15 +24,15 @@
 
             var queueHandle = IntPtr.Zero;
             var error = NativeMethods.MQOpenQueue(
-                                                  destQueueName,
-                                                  NativeMethods.MQ_MOVE_ACCESS,
-                                                  NativeMethods.MQ_DENY_NONE,
-                                                  ref queueHandle);
+                destQueueName,
+                NativeMethods.MQ_MOVE_ACCESS,
+                NativeMethods.MQ_DENY_NONE,
+                ref queueHandle);
             if (error != 0)
             {
                 throw new InvalidProgramException(
-                                                  "Failed to open queue: " + destQueueName,
-                                                  new Win32Exception(error));
+                    "Failed to open queue: " + destQueueName,
+                    new Win32Exception(error));
             }
 
             try
@@ -46,15 +46,15 @@
                 }
 
                 error = NativeMethods.MQMoveMessage(
-                                                    queue.ReadHandle,
-                                                    queueHandle,
-                                                    message.LookupId,
-                                                    transaction);
+                    queue.ReadHandle,
+                    queueHandle,
+                    message.LookupId,
+                    transaction);
                 if (error != 0)
                 {
                     throw new InvalidProgramException(
-                                                      "Failed to move message to queue: " + destQueueName,
-                                                      new Win32Exception(error));
+                        "Failed to move message to queue: " + destQueueName,
+                        new Win32Exception(error));
                 }
             }
             finally
@@ -63,8 +63,8 @@
                 if (error != 0)
                 {
                     throw new InvalidProgramException(
-                                                      "Failed to close queue: " + destQueueName,
-                                                      new Win32Exception(error));
+                        "Failed to close queue: " + destQueueName,
+                        new Win32Exception(error));
                 }
             }
         }
@@ -78,31 +78,31 @@
             var targetQueue = IntPtr.Zero;
 
             var error = NativeMethods.MQOpenQueue(
-                                                  destQueueName,
-                                                  (int)NativeMethods.MqAccess.Move,
-                                                  NativeMethods.MQ_DENY_NONE,
-                                                  ref targetQueue);
+                destQueueName,
+                (int) NativeMethods.MqAccess.Move,
+                NativeMethods.MQ_DENY_NONE,
+                ref targetQueue);
 
             if (error != 0)
             {
                 throw new InvalidProgramException(
-                                                  "Failed to open queue: " + destQueueName,
-                                                  new Win32Exception(error));
+                    "Failed to open queue: " + destQueueName,
+                    new Win32Exception(error));
             }
 
             var srcQueue = IntPtr.Zero;
 
             error = NativeMethods.MQOpenQueue(
-                                              srcQueueName,
-                                              (int)NativeMethods.MqAccess.Receive,
-                                              NativeMethods.MQ_DENY_NONE,
-                                              ref srcQueue);
+                srcQueueName,
+                (int) NativeMethods.MqAccess.Receive,
+                NativeMethods.MQ_DENY_NONE,
+                ref srcQueue);
 
             if (error != 0)
             {
                 throw new InvalidProgramException(
-                                                  "Failed to open queue: " + srcQueueName,
-                                                  new Win32Exception(error));
+                    "Failed to open queue: " + srcQueueName,
+                    new Win32Exception(error));
             }
 
             try
@@ -115,15 +115,15 @@
                 }
 
                 error = NativeMethods.MQMoveMessage(
-                                                    srcQueue,
-                                                    targetQueue,
-                                                    message.LookupId,
-                                                    transaction);
+                    srcQueue,
+                    targetQueue,
+                    message.LookupId,
+                    transaction);
                 if (error != 0)
                 {
                     throw new InvalidProgramException(
-                                                      "Failed to move message to queue: " + destQueueName,
-                                                      new Win32Exception(error));
+                        "Failed to move message to queue: " + destQueueName,
+                        new Win32Exception(error));
                 }
             }
             finally

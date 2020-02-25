@@ -1,12 +1,12 @@
-﻿namespace Framework.Utils.DPHelper
-{
-    using System;
-    using System.IO;
-    using System.Runtime.Serialization;
-    using System.Text;
-    using System.Xml;
-    using Castle.DynamicProxy;
+﻿using System;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Text;
+using System.Xml;
+using Castle.DynamicProxy;
 
+namespace Framework.Utils.DPHelper
+{
     public static class DPHelper
     {
         public static string CreateInvocationCompleteString(IInvocation invocation)
@@ -38,9 +38,9 @@
             else
             {
                 sb.AppendFormat(
-                                "Returned {0} = [{1}]",
-                                retType,
-                                DPHelper.CreateObjectLogString(invocation.ReturnValue));
+                    "Returned {0} = [{1}]",
+                    retType,
+                    DPHelper.CreateObjectLogString(invocation.ReturnValue));
             }
 
             return sb.ToString();
@@ -103,7 +103,10 @@
                 DPHelper.SterilizeElement(node.NextSibling);
             }
 
-            foreach (var childNode in node.ChildNodes) DPHelper.SterilizeElement((XmlNode)childNode);
+            foreach (var childNode in node.ChildNodes)
+            {
+                DPHelper.SterilizeElement((XmlNode) childNode);
+            }
         }
 
         private static string DumpObject(object argument)

@@ -8,8 +8,8 @@ namespace HomePlugin
     {
         private string _battleTechDirectory;
         private string _battleTechDlcDirectory;
-        private string _modDirectory;
         private string _modCollectionName;
+        private string _modDirectory;
         private string _modTargetDirectory;
 
         public string ModTargetDirectory
@@ -17,7 +17,11 @@ namespace HomePlugin
             get => _modTargetDirectory;
             set
             {
-                if (value == _modTargetDirectory) return;
+                if (value == _modTargetDirectory)
+                {
+                    return;
+                }
+
                 _modTargetDirectory = value;
                 OnPropertyChanged();
             }
@@ -28,7 +32,11 @@ namespace HomePlugin
             get => _modCollectionName;
             set
             {
-                if (value == _modCollectionName) return;
+                if (value == _modCollectionName)
+                {
+                    return;
+                }
+
                 _modCollectionName = value;
                 OnPropertyChanged();
             }
@@ -39,7 +47,11 @@ namespace HomePlugin
             get => _modDirectory;
             set
             {
-                if (value == _modDirectory) return;
+                if (value == _modDirectory)
+                {
+                    return;
+                }
+
                 _modDirectory = value;
                 OnPropertyChanged();
             }
@@ -50,7 +62,11 @@ namespace HomePlugin
             get => _battleTechDlcDirectory;
             set
             {
-                if (value == _battleTechDlcDirectory) return;
+                if (value == _battleTechDlcDirectory)
+                {
+                    return;
+                }
+
                 _battleTechDlcDirectory = value;
                 OnPropertyChanged();
             }
@@ -61,7 +77,11 @@ namespace HomePlugin
             get => _battleTechDirectory;
             set
             {
-                if (value == _battleTechDirectory) return;
+                if (value == _battleTechDirectory)
+                {
+                    return;
+                }
+
                 _battleTechDirectory = value;
                 OnPropertyChanged();
             }

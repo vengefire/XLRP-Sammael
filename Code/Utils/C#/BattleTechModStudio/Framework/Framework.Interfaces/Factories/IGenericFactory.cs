@@ -1,7 +1,7 @@
-﻿namespace Framework.Interfaces.Factories
-{
-    using System;
+﻿using System;
 
+namespace Framework.Interfaces.Factories
+{
     public interface IGenericFactory<T> : IDisposable
         where T : class
     {

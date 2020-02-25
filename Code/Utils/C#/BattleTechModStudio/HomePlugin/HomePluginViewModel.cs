@@ -9,13 +9,13 @@ namespace HomePlugin
         public HomePluginViewModel(HomePluginModel homePluginModel)
         {
             HomePluginModel = homePluginModel;
-            HomePluginModel.PropertyChanged += (sender, args) => this.OnPropertyChanged(args.PropertyName);
+            HomePluginModel.PropertyChanged += (sender, args) => OnPropertyChanged(args.PropertyName);
         }
 
         public HomePluginSettings HomePluginSettings
         {
-            get => this.HomePluginModel.Settings; 
-            set => this.HomePluginModel.Settings = value;
+            get => HomePluginModel.Settings;
+            set => HomePluginModel.Settings = value;
         }
 
         public HomePluginModel HomePluginModel { get; }

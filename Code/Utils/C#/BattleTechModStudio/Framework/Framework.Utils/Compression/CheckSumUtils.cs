@@ -1,9 +1,9 @@
-﻿namespace Framework.Utils.Compression
-{
-    using System;
-    using System.Linq;
-    using System.Security.Cryptography;
+﻿using System;
+using System.Linq;
+using System.Security.Cryptography;
 
+namespace Framework.Utils.Compression
+{
     public static class CheckSumUtils
     {
         /// <summary>

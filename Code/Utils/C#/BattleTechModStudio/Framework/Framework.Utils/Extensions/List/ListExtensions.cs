@@ -1,12 +1,12 @@
-﻿namespace Framework.Utils.Extensions.List
-{
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Linq;
-    using System.Runtime.Serialization;
-    using System.Xml;
-    using System.Xml.Linq;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.Xml;
+using System.Xml.Linq;
 
+namespace Framework.Utils.Extensions.List
+{
     public static class ListExtensions
     {
         public static XElement ToXml<T>(this List<T> list)

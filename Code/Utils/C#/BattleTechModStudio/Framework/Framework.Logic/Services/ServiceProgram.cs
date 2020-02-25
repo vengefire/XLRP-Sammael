@@ -1,18 +1,18 @@
-﻿namespace Framework.Logic.Services
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Configuration.Install;
-    using System.Globalization;
-    using System.Linq;
-    using System.Reflection;
-    using System.ServiceProcess;
-    using System.Threading;
-    using Castle.Core.Logging;
-    using Interfaces.Injection;
-    using Interfaces.Logging;
-    using Interfaces.Services;
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration.Install;
+using System.Globalization;
+using System.Linq;
+using System.Reflection;
+using System.ServiceProcess;
+using System.Threading;
+using Castle.Core.Logging;
+using Framework.Interfaces.Injection;
+using Framework.Interfaces.Logging;
+using Framework.Interfaces.Services;
 
+namespace Framework.Logic.Services
+{
     public static class ServiceProgram
     {
         private static volatile bool run = true;
@@ -32,13 +32,13 @@
                 var exceptionLogger = ServiceProgram.Container.GetInstance<IExceptionLogger>();
 
                 Thread.GetDomain().UnhandledException += (sender, eventArgs) =>
-                                                         {
-                                                             var ex = (Exception)eventArgs.ExceptionObject;
-                                                             ServiceProgram.logger.ErrorFormat(ex, "An unhandled exception was encountered.");
-                                                             exceptionLogger.Log(ex);
-                                                         };
+                {
+                    var ex = (Exception) eventArgs.ExceptionObject;
+                    ServiceProgram.logger.ErrorFormat(ex, "An unhandled exception was encountered.");
+                    exceptionLogger.Log(ex);
+                };
 
-                if (Environment.UserInteractive)
+                if (System.Environment.UserInteractive)
                 {
                     var parameter = string.Concat(args).ToLower(CultureInfo.InvariantCulture);
                     switch (parameter)
@@ -79,16 +79,16 @@
         private static void RunAsConsole(IService service)
         {
             Thread.GetDomain().UnhandledException += (sender, args) =>
-                                                     {
-                                                         var ex = (Exception)args.ExceptionObject;
-                                                         ServiceProgram.logger.ErrorFormat(ex, "An unhandled exception was encountered.");
-                                                     };
+            {
+                var ex = (Exception) args.ExceptionObject;
+                ServiceProgram.logger.ErrorFormat(ex, "An unhandled exception was encountered.");
+            };
 
             Console.CancelKeyPress += (sender, args) =>
-                                      {
-                                          args.Cancel = true;
-                                          ServiceProgram.run = false;
-                                      };
+            {
+                args.Cancel = true;
+                ServiceProgram.run = false;
+            };
 
             ServiceProgram.logger.Info("Interactive mode initiated");
             ServiceProgram.logger.InfoFormat("Start with execute \"{0} --help\" for options.", AppDomain.CurrentDomain.FriendlyName);
@@ -97,7 +97,10 @@
 
             ServiceProgram.logger.Info("Press CTRL+C to exit...");
 
-            while (ServiceProgram.run) Thread.Sleep(1);
+            while (ServiceProgram.run)
+            {
+                Thread.Sleep(1);
+            }
 
             ServiceProgram.logger.Info("Shutting down...");
             service.OnStop();
@@ -109,7 +112,10 @@
             var help = new Dictionary<string, string> {{"install", "Install service"}, {"uninstall", "Uninstall service"}, {"console", "Run in console mode"}, {"help", "This help page"}};
 
             var maxKeyLength = help.Keys.Max(x => x.Length);
-            foreach (var item in help) Console.WriteLine("--{0}\t{1}", item.Key.PadRight(maxKeyLength, ' '), item.Value);
+            foreach (var item in help)
+            {
+                Console.WriteLine("--{0}\t{1}", item.Key.PadRight(maxKeyLength, ' '), item.Value);
+            }
         }
     }
 }

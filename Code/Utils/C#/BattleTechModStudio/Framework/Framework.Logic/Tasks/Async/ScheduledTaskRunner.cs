@@ -1,17 +1,17 @@
-﻿namespace Framework.Logic.Tasks.Async
-{
-    using System;
-    using System.Diagnostics;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using Castle.Core.Logging;
-    using Interfaces.Async;
-    using Interfaces.Logging;
-    using Interfaces.Providers;
-    using Interfaces.Repositories;
-    using Interfaces.Tasks;
-    using Utils.Extensions.Dictionary;
+﻿using System;
+using System.Diagnostics;
+using System.Threading;
+using System.Threading.Tasks;
+using Castle.Core.Logging;
+using Framework.Interfaces.Async;
+using Framework.Interfaces.Logging;
+using Framework.Interfaces.Providers;
+using Framework.Interfaces.Repositories;
+using Framework.Interfaces.Tasks;
+using Framework.Utils.Extensions.Dictionary;
 
+namespace Framework.Logic.Tasks.Async
+{
     public class ScheduledTaskRunner : IServiceTaskRunner
     {
         private readonly IDateTimeProvider dateTimeProvider;
@@ -32,19 +32,19 @@
             ICancellationTokenProvider cancellationTokenProvider,
             ILogger logger)
         {
-            this.Name = name;
-            this.Scheduler = scheduler;
-            this.ServiceTask = scheduledTask;
+            Name = name;
+            Scheduler = scheduler;
+            ServiceTask = scheduledTask;
             this.taskRepository = taskRepository;
             this.dateTimeProvider = dateTimeProvider;
             this.exceptionLogger = exceptionLogger;
             this.logger = logger;
-            this.CancellationToken = cancellationTokenProvider.CancellationToken;
+            CancellationToken = cancellationTokenProvider.CancellationToken;
 
-            var lastRunTime = this.taskRepository.GetLastExecution(this.Name);
-            this.LastRunTime = lastRunTime ?? DateTime.MinValue;
+            var lastRunTime = this.taskRepository.GetLastExecution(Name);
+            LastRunTime = lastRunTime ?? DateTime.MinValue;
 
-            this.FailureCount = 0;
+            FailureCount = 0;
         }
 
         public CancellationToken CancellationToken { get; }
@@ -63,23 +63,23 @@
 
         public async Task StartProcessing()
         {
-            this.Task = new Task(this.Execute, TaskCreationOptions.LongRunning);
-            this.Task.Start();
-            await this.Task;
+            Task = new Task(Execute, TaskCreationOptions.LongRunning);
+            Task.Start();
+            await Task;
         }
 
         public void Execute()
         {
             var handledMissedSlot = false;
 
-            while (!this.CancellationToken.IsCancellationRequested)
+            while (!CancellationToken.IsCancellationRequested)
             {
                 bool missedSlot;
-                var run = this.Scheduler.RunTask(this.LastRunTime, this.dateTimeProvider.Now, out missedSlot);
+                var run = Scheduler.RunTask(LastRunTime, dateTimeProvider.Now, out missedSlot);
 
                 if (!handledMissedSlot && missedSlot)
                 {
-                    this.logger.InfoFormat("Previous execution slot missed. Please check for consistency issues.");
+                    logger.InfoFormat("Previous execution slot missed. Please check for consistency issues.");
                     handledMissedSlot = true;
                 }
 
@@ -87,103 +87,103 @@
                 {
                     try
                     {
-                        this.logger.InfoFormat("Executing task");
+                        logger.InfoFormat("Executing task");
 
                         var watch = Stopwatch.StartNew();
-                        this.ServiceTask.ExecuteTask();
+                        ServiceTask.ExecuteTask();
 
-                        if (this.CancellationToken.IsCancellationRequested)
+                        if (CancellationToken.IsCancellationRequested)
                         {
                             return;
                         }
 
                         watch.Stop();
 
-                        this.logger.InfoFormat("Execution completed in {0}", watch.Elapsed);
-                        this.LastRunTime = this.dateTimeProvider.Now;
+                        logger.InfoFormat("Execution completed in {0}", watch.Elapsed);
+                        LastRunTime = dateTimeProvider.Now;
 
                         handledMissedSlot = false;
 
-                        this.PersistLastExecutionTime(this.LastRunTime, watch.Elapsed);
-                        this.ResetFailureCount();
+                        PersistLastExecutionTime(LastRunTime, watch.Elapsed);
+                        ResetFailureCount();
                     }
                     catch (Exception ex)
                     {
-                        this.LogException(ex);
-                        this.IncrementFailureCount();
+                        LogException(ex);
+                        IncrementFailureCount();
                     }
                 }
 
-                this.Sleep();
+                Sleep();
             }
 
-            this.logger.InfoFormat("Shut down");
+            logger.InfoFormat("Shut down");
         }
 
         protected TimeSpan GetSafeFailureSleep(TimeSpan proposedSleep)
         {
-            var now = this.dateTimeProvider.Now;
+            var now = dateTimeProvider.Now;
 
             var expected = now.Add(proposedSleep);
-            var actual = this.Scheduler.NextRun(now, now);
+            var actual = Scheduler.NextRun(now, now);
 
             return expected > actual ? new TimeSpan(actual.Ticks - now.Ticks) : proposedSleep;
         }
 
         private void LogException(Exception ex)
         {
-            ex.Data.SafeAdd("Task name", this.Name);
-            ex.Data.SafeAdd("Task type", this.ServiceTask.GetType().AssemblyQualifiedName);
-            if (this.LastRunTime != DateTime.MinValue)
+            ex.Data.SafeAdd("Task name", Name);
+            ex.Data.SafeAdd("Task type", ServiceTask.GetType().AssemblyQualifiedName);
+            if (LastRunTime != DateTime.MinValue)
             {
-                ex.Data.SafeAdd("Last run time", this.LastRunTime);
+                ex.Data.SafeAdd("Last run time", LastRunTime);
             }
             else
             {
                 ex.Data.SafeAdd("Last run time", "[Never]");
             }
 
-            this.exceptionLogger.Log(ex);
+            exceptionLogger.Log(ex);
         }
 
         private void PersistLastExecutionTime(DateTime lastRunTime, TimeSpan duration)
         {
-            this.taskRepository.UpdateTaskExecution(this.Name, lastRunTime, duration);
+            taskRepository.UpdateTaskExecution(Name, lastRunTime, duration);
         }
 
         private void IncrementFailureCount()
         {
-            this.FailureCount++;
+            FailureCount++;
         }
 
         private void ResetFailureCount()
         {
-            this.FailureCount = 0;
+            FailureCount = 0;
         }
 
         private void Sleep()
         {
             TimeSpan sleep;
-            switch (this.FailureCount)
+            switch (FailureCount)
             {
                 case 0:
-                    var nextRun = this.Scheduler.NextRun(this.LastRunTime, this.dateTimeProvider.Now);
-                    sleep = nextRun.Subtract(this.dateTimeProvider.Now);
+                    var nextRun = Scheduler.NextRun(LastRunTime, dateTimeProvider.Now);
+                    sleep = nextRun.Subtract(dateTimeProvider.Now);
                     break;
                 case 1:
-                    sleep = this.GetSafeFailureSleep(new TimeSpan(0, 0, 0, 10));
+                    sleep = GetSafeFailureSleep(new TimeSpan(0, 0, 0, 10));
                     break;
                 case 2:
-                    sleep = this.GetSafeFailureSleep(new TimeSpan(0, 0, 1, 0));
+                    sleep = GetSafeFailureSleep(new TimeSpan(0, 0, 1, 0));
                     break;
                 case 3:
-                    sleep = this.GetSafeFailureSleep(new TimeSpan(0, 0, 10, 0));
+                    sleep = GetSafeFailureSleep(new TimeSpan(0, 0, 10, 0));
                     break;
                 case 4:
-                    sleep = this.GetSafeFailureSleep(new TimeSpan(0, 0, 30, 0));
+                    sleep = GetSafeFailureSleep(new TimeSpan(0, 0, 30, 0));
                     break;
                 default:
-                    sleep = this.GetSafeFailureSleep(new TimeSpan(0, 1, 0, 0));
+                    sleep = GetSafeFailureSleep(new TimeSpan(0, 1, 0, 0));
                     break;
             }
 
@@ -199,9 +199,9 @@
                 sleep = new TimeSpan(0, 0, 0, 1);
             }
 
-            if (!this.CancellationToken.IsCancellationRequested)
+            if (!CancellationToken.IsCancellationRequested)
             {
-                this.CancellationToken.WaitHandle.WaitOne(sleep);
+                CancellationToken.WaitHandle.WaitOne(sleep);
             }
         }
     }

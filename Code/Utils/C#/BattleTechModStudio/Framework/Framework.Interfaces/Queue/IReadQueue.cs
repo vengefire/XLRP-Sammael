@@ -1,9 +1,9 @@
-﻿namespace Framework.Interfaces.Queue
-{
-    using System;
-    using System.Messaging;
-    using System.Threading.Tasks;
+﻿using System;
+using System.Messaging;
+using System.Threading.Tasks;
 
+namespace Framework.Interfaces.Queue
+{
     public interface IReadQueue : IQueueBase
     {
         event Action<Message, object, string, string> QueueMessageHandlerEvent;

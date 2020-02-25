@@ -25,7 +25,8 @@ namespace Data.Core.GameObjects.Gear
 
         [JsonProperty("MaxRange")] public long MaxRange { get; set; }
 
-        [JsonProperty("RangeSplit", NullValueHandling = NullValueHandling.Ignore)] public List<long> RangeSplit { get; set; } = new List<long>();
+        [JsonProperty("RangeSplit", NullValueHandling = NullValueHandling.Ignore)]
+        public List<long> RangeSplit { get; set; } = new List<long>();
 
         [JsonProperty("AmmoCategory")] public string AmmoCategory { get; set; }
 

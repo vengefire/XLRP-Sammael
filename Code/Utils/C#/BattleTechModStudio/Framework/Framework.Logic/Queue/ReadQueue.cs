@@ -1,18 +1,18 @@
-﻿namespace Framework.Logic.Queue
-{
-    using System;
-    using System.Diagnostics;
-    using System.Messaging;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using System.Transactions;
-    using Castle.Core.Logging;
-    using Domain.Queue;
-    using Interfaces.Async;
-    using Interfaces.Data.Services;
-    using Interfaces.Environment;
-    using Interfaces.Queue;
+﻿using System;
+using System.Diagnostics;
+using System.Messaging;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Transactions;
+using Castle.Core.Logging;
+using Framework.Domain.Queue;
+using Framework.Interfaces.Async;
+using Framework.Interfaces.Data.Services;
+using Framework.Interfaces.Environment;
+using Framework.Interfaces.Queue;
 
+namespace Framework.Logic.Queue
+{
     public class ReadQueue<TRequestType> : QueueBase<TRequestType>, IReadQueue<TRequestType>
         where TRequestType : class
     {
@@ -30,29 +30,33 @@
             bool defaultRecoverable = true,
             string multicastAddress = null)
             : base(
-                   logger,
-                   environment,
-                   queueName,
-                   messageQueueHostServerName,
-                   multicastAddress,
-                   QueueMode.Recv,
-                   isTransactional,
-                   auditActivity,
-                   defaultRecoverable,
-                   messageQueueService)
+                logger,
+                environment,
+                queueName,
+                messageQueueHostServerName,
+                multicastAddress,
+                QueueMode.Recv,
+                isTransactional,
+                auditActivity,
+                defaultRecoverable,
+                messageQueueService)
         {
-            this.cancellationToken = cancellationTokenProvider.CancellationToken;
+            cancellationToken = cancellationTokenProvider.CancellationToken;
         }
 
         public event Action<Message, TRequestType, string, string> QueueMessageHandlerEvent;
 
-        event Action<Message, object, string, string> IReadQueue.QueueMessageHandlerEvent { add => this.QueueMessageHandlerEvent += value; remove => this.QueueMessageHandlerEvent -= value; }
+        event Action<Message, object, string, string> IReadQueue.QueueMessageHandlerEvent
+        {
+            add => QueueMessageHandlerEvent += value;
+            remove => QueueMessageHandlerEvent -= value;
+        }
 
         public Task ReadTask { get; private set; }
 
         public TRequestType ReceiveMessage()
         {
-            var msg = this.MsmqMessageQueue.Receive(new TimeSpan(0, 0, 0, 10));
+            var msg = MsmqMessageQueue.Receive(new TimeSpan(0, 0, 0, 10));
             if (null == msg)
             {
                 return null;
@@ -63,9 +67,9 @@
 
         public TRequestType ReceiveMessageByCorrelationId(string correlationId, int timeoutInMilliseconds)
         {
-            var msg = this.MsmqMessageQueue.ReceiveByCorrelationId(
-                                                                   correlationId,
-                                                                   new TimeSpan(0, 0, 0, 0, timeoutInMilliseconds));
+            var msg = MsmqMessageQueue.ReceiveByCorrelationId(
+                correlationId,
+                new TimeSpan(0, 0, 0, 0, timeoutInMilliseconds));
             msg.Formatter = new XmlMessageFormatter(new[] {typeof(TRequestType)});
             return msg.Body as TRequestType;
         }
@@ -74,7 +78,7 @@
         {
             try
             {
-                return this.MsmqMessageQueue.Peek(timeSpan);
+                return MsmqMessageQueue.Peek(timeSpan);
             }
             catch (Exception ex)
             {
@@ -91,35 +95,35 @@
 
         public async Task StartReading()
         {
-            this.ReadTask = new Task(this.Read, TaskCreationOptions.LongRunning);
-            this.ReadTask.Start();
-            this.Logger.InfoFormat("[{0}] has started reading...", this);
-            await this.ReadTask;
+            ReadTask = new Task(Read, TaskCreationOptions.LongRunning);
+            ReadTask.Start();
+            Logger.InfoFormat("[{0}] has started reading...", this);
+            await ReadTask;
         }
 
         object IReadQueue.ReceiveMessageByCorrelationId(string correlationId, int timeoutInMilliseconds)
         {
-            return this.ReceiveMessageByCorrelationId(correlationId, timeoutInMilliseconds);
+            return ReceiveMessageByCorrelationId(correlationId, timeoutInMilliseconds);
         }
 
         object IReadQueue.ReceiveMessage()
         {
-            return this.ReceiveMessage();
+            return ReceiveMessage();
         }
 
         public void Read()
         {
             var timer = new Stopwatch();
-            while (!this.cancellationToken.IsCancellationRequested)
+            while (!cancellationToken.IsCancellationRequested)
             {
                 Message msg = null;
                 timer.Reset();
                 timer.Start();
-                var transaction = this.IsTransactional
+                var transaction = IsTransactional
                     ? new TransactionScope(
-                                           TransactionScopeOption.RequiresNew,
-                                           new TransactionOptions {IsolationLevel = IsolationLevel.ReadCommitted},
-                                           TransactionScopeAsyncFlowOption.Enabled)
+                        TransactionScopeOption.RequiresNew,
+                        new TransactionOptions {IsolationLevel = IsolationLevel.ReadCommitted},
+                        TransactionScopeAsyncFlowOption.Enabled)
                     : null;
                 using (transaction)
                 {
@@ -128,11 +132,11 @@
                         var handleTimer = new Stopwatch();
                         try
                         {
-                            msg = this.MsmqMessageQueue.Receive(
-                                                                new TimeSpan(0, 0, 0, 3),
-                                                                this.IsTransactional
-                                                                    ? MessageQueueTransactionType.Automatic
-                                                                    : MessageQueueTransactionType.None);
+                            msg = MsmqMessageQueue.Receive(
+                                new TimeSpan(0, 0, 0, 3),
+                                IsTransactional
+                                    ? MessageQueueTransactionType.Automatic
+                                    : MessageQueueTransactionType.None);
                         }
                         catch (MessageQueueException ex)
                         {
@@ -143,10 +147,10 @@
                         }
 
                         handleTimer.Start();
-                        Task.WaitAll(this.OnMessageRead(msg));
+                        Task.WaitAll(OnMessageRead(msg));
                         handleTimer.Stop();
 
-                        this.UpdateMessageAudit(msg, MessageStatus.Processed, timer.ElapsedMilliseconds);
+                        UpdateMessageAudit(msg, MessageStatus.Processed, timer.ElapsedMilliseconds);
 
                         if (null != transaction)
                         {
@@ -154,40 +158,40 @@
                         }
 
                         timer.Stop();
-                        this.Logger.DebugFormat(
-                                                "Processed message from Queue [{0}] in [{1}] ms. Handling took [{2}]ms, overhead = [{3}]ms.",
-                                                this.QueueName,
-                                                timer.ElapsedMilliseconds,
-                                                handleTimer.ElapsedMilliseconds,
-                                                timer.ElapsedMilliseconds - handleTimer.ElapsedMilliseconds);
+                        Logger.DebugFormat(
+                            "Processed message from Queue [{0}] in [{1}] ms. Handling took [{2}]ms, overhead = [{3}]ms.",
+                            QueueName,
+                            timer.ElapsedMilliseconds,
+                            handleTimer.ElapsedMilliseconds,
+                            timer.ElapsedMilliseconds - handleTimer.ElapsedMilliseconds);
                     }
                     catch (Exception ex)
                     {
                         timer.Stop();
-                        this.Logger.ErrorFormat(
-                                                ex,
-                                                "An exception occurred processing message [{0}] in Queue[{1}].",
-                                                msg,
-                                                this);
+                        Logger.ErrorFormat(
+                            ex,
+                            "An exception occurred processing message [{0}] in Queue[{1}].",
+                            msg,
+                            this);
                         if (transaction != null)
                         {
                             transaction.Dispose();
                         }
 
                         using (var errorTransaction = new TransactionScope(
-                                                                           TransactionScopeOption.RequiresNew,
-                                                                           new TransactionOptions {IsolationLevel = IsolationLevel.ReadCommitted}))
+                            TransactionScopeOption.RequiresNew,
+                            new TransactionOptions {IsolationLevel = IsolationLevel.ReadCommitted}))
                         {
                             // If transactional, then move the errored message to the SubQueue, else just read the message off the queue...
-                            if (this.IsTransactional)
+                            if (IsTransactional)
                             {
-                                this.MoveToSubQueue("error", msg);
+                                MoveToSubQueue("error", msg);
                             }
 
-                            this.UpdateMessageAudit(msg, MessageStatus.Errored, timer.ElapsedMilliseconds);
-                            if (this.IsTransactional)
+                            UpdateMessageAudit(msg, MessageStatus.Errored, timer.ElapsedMilliseconds);
+                            if (IsTransactional)
                             {
-                                this.AddMessageAudit(msg, "error", ex);
+                                AddMessageAudit(msg, "error", ex);
                             }
 
                             errorTransaction.Complete();
@@ -201,10 +205,10 @@
         {
             msg.Formatter = new XmlMessageFormatter(new[] {typeof(TRequestType)});
 
-            if (this.QueueMessageHandlerEvent != null)
+            if (QueueMessageHandlerEvent != null)
             {
-                this.Logger.DebugFormat("Calling Queue Message Handler Event [{0}].", this.QueueMessageHandlerEvent);
-                await Task.Run(() => this.QueueMessageHandlerEvent(msg, (TRequestType)msg.Body, msg.Id, msg.CorrelationId));
+                Logger.DebugFormat("Calling Queue Message Handler Event [{0}].", QueueMessageHandlerEvent);
+                await Task.Run(() => QueueMessageHandlerEvent(msg, (TRequestType) msg.Body, msg.Id, msg.CorrelationId));
             }
         }
     }

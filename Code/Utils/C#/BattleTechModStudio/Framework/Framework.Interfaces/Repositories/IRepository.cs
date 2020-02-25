@@ -1,9 +1,9 @@
-﻿namespace Framework.Interfaces.Repositories
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Data;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
 
+namespace Framework.Interfaces.Repositories
+{
     public interface IRepository<TEntity> : IDisposable
         where TEntity : class
     {

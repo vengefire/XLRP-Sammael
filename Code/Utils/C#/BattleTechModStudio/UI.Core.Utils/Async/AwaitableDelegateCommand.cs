@@ -32,7 +32,7 @@ namespace UI.Core.Utils.Async
 
         public AwaitableDelegateCommand(Func<T, Task> executeMethod, Func<T, bool> canExecuteMethod)
         {
-            this._executeMethod = executeMethod;
+            _executeMethod = executeMethod;
             _underlyingCommand = new DelegateCommand<T>(x => { }, canExecuteMethod);
         }
 

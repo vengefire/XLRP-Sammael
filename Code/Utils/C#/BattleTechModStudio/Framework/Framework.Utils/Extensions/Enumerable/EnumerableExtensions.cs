@@ -1,8 +1,8 @@
-﻿namespace Framework.Utils.Extensions.Enumerable
-{
-    using System.Collections.Generic;
-    using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 
+namespace Framework.Utils.Extensions.Enumerable
+{
     public static class EnumerableExtensions
     {
         public static IEnumerable<T> Paged<T>(
@@ -11,8 +11,8 @@
             int pageSize)
         {
             return source
-                   .Skip((page - 1) * pageSize)
-                   .Take(pageSize);
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize);
         }
     }
 }

@@ -10,8 +10,6 @@ namespace HomePlugin
     /// </summary>
     public partial class HomePluginControl : UserControl, IPluginControl
     {
-        public HomePluginViewModel HomePluginViewModel { get; }
-
         public HomePluginControl()
         {
             HomePluginViewModel = new HomePluginViewModel(new HomePluginModel());
@@ -20,14 +18,17 @@ namespace HomePlugin
             PluginCommands = new List<IPluginCommand>();
         }
 
+        public HomePluginViewModel HomePluginViewModel { get; }
+
         public string ModuleName => @"Battle Tech Mod Studio - Home";
         public List<IPluginCommand> PluginCommands { get; }
 
         public object Settings
         {
-            get => HomePluginViewModel.HomePluginSettings; 
+            get => HomePluginViewModel.HomePluginSettings;
             set => HomePluginViewModel.HomePluginSettings = value as HomePluginSettings;
         }
+
         public Type SettingsType => typeof(HomePluginSettings);
     }
 }

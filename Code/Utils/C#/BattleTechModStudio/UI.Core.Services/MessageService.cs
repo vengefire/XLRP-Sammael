@@ -25,8 +25,8 @@ namespace UI.Core.Services
 
         public void ClearMessages()
         {
-            this._messageData.Clear();
-            OnPropertyChanged(nameof(Messages));
+            _messageData.Clear();
+            OnPropertyChanged(nameof(MessageService.Messages));
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

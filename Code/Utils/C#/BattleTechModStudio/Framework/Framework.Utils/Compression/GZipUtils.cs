@@ -1,9 +1,9 @@
-﻿namespace Framework.Utils.Compression
-{
-    using System;
-    using System.IO;
-    using System.IO.Compression;
+﻿using System;
+using System.IO;
+using System.IO.Compression;
 
+namespace Framework.Utils.Compression
+{
     public class GZipUtils
     {
         /// <summary>

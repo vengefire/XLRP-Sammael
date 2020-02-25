@@ -30,11 +30,11 @@
             <Expander Grid.Row="0" ExpandDirection="Up">
                 <Expander.Header>
                     <StackPanel Orientation="Horizontal">
-                        <Label Content="Messages"></Label>
-                        <Button Content="Clear List" Margin="5,2,0,2" Click="ClearMessages_OnClick"></Button>
+                        <Label Content="Messages" />
+                        <Button Content="Clear List" Margin="5,2,0,2" Click="ClearMessages_OnClick" />
                     </StackPanel>
                 </Expander.Header>
-                <ListView ItemsSource="{Binding Messages, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"></ListView>
+                <ListView ItemsSource="{Binding Messages, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
             </Expander>
             <StatusBar Grid.Row="1">
                 <StatusBar.ItemsPanel>

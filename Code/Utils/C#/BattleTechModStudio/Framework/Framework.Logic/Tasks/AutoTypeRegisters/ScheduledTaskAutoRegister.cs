@@ -1,15 +1,15 @@
-﻿namespace Framework.Logic.Tasks.AutoTypeRegisters
-{
-    using System.Collections.Generic;
-    using Async;
-    using Castle.MicroKernel.Registration;
-    using Castle.Windsor;
-    using Config;
-    using Config.Scheduled;
-    using Domain.Tasks;
-    using Interfaces.Tasks;
-    using Schedulers;
+﻿using System.Collections.Generic;
+using Castle.MicroKernel.Registration;
+using Castle.Windsor;
+using Framework.Domain.Tasks;
+using Framework.Interfaces.Tasks;
+using Framework.Logic.Tasks.Async;
+using Framework.Logic.Tasks.Config;
+using Framework.Logic.Tasks.Config.Scheduled;
+using Framework.Logic.Tasks.Schedulers;
 
+namespace Framework.Logic.Tasks.AutoTypeRegisters
+{
     public static class ScheduledTaskAutoRegister
     {
         public static void RegisterConfiguredScheduledTasks(TaskConfigSectionHandler config, IWindsorContainer container)
@@ -60,11 +60,11 @@
 
             registrations.Add(Component.For<IServiceTask>().ImplementedBy(taskConfig.Target).Named(taskName + "Impl"));
             registrations.Add(
-                              Component.For<IServiceTaskRunner>()
-                                       .ImplementedBy<ScheduledTaskRunner>()
-                                       .DependsOn(parameters)
-                                       .DependsOn(Dependency.OnComponent(typeof(ITaskScheduler), scheduledName)).Named(taskName)
-                                       .DependsOn(Dependency.OnComponent(typeof(IServiceTask), taskName + "Impl")));
+                Component.For<IServiceTaskRunner>()
+                    .ImplementedBy<ScheduledTaskRunner>()
+                    .DependsOn(parameters)
+                    .DependsOn(Dependency.OnComponent(typeof(ITaskScheduler), scheduledName)).Named(taskName)
+                    .DependsOn(Dependency.OnComponent(typeof(IServiceTask), taskName + "Impl")));
 
             return registrations.ToArray();
         }
@@ -79,9 +79,9 @@
             scheduleName = string.Format("yearlyScheduled-{0}", name);
             return
                 Component.For<ITaskScheduler>()
-                         .ImplementedBy<DateEveryYearTaskScheduler>()
-                         .DependsOn(parameters)
-                         .Named(scheduleName);
+                    .ImplementedBy<DateEveryYearTaskScheduler>()
+                    .DependsOn(parameters)
+                    .Named(scheduleName);
         }
 
         private static IRegistration RegisterNamedMonthlyScheduler(
@@ -90,19 +90,19 @@
             out string scheduleName)
         {
             var parameters = new Dictionary<string, object>
-                             {
-                                 {"hour", taskConfig.Time.Hour},
-                                 {"minute", taskConfig.Time.Minute},
-                                 {"day", taskConfig.Day},
-                                 {"dayScheduleType", EveryMonthTaskScheduler.DayScheduleTypeFromString(taskConfig.DayScheduleType)}
-                             };
+            {
+                {"hour", taskConfig.Time.Hour},
+                {"minute", taskConfig.Time.Minute},
+                {"day", taskConfig.Day},
+                {"dayScheduleType", EveryMonthTaskScheduler.DayScheduleTypeFromString(taskConfig.DayScheduleType)}
+            };
 
             scheduleName = string.Format("monthlyScheduled-{0}", name);
             return
                 Component.For<ITaskScheduler>()
-                         .ImplementedBy<EveryMonthTaskScheduler>()
-                         .DependsOn(parameters)
-                         .Named(scheduleName);
+                    .ImplementedBy<EveryMonthTaskScheduler>()
+                    .DependsOn(parameters)
+                    .Named(scheduleName);
         }
 
         private static IRegistration RegisterNamedDailyScheduler(
@@ -115,9 +115,9 @@
             scheduleName = string.Format("dailyScheduled-{0}", name);
             return
                 Component.For<ITaskScheduler>()
-                         .ImplementedBy<EveryDayTaskScheduler>()
-                         .DependsOn(parameters)
-                         .Named(scheduleName);
+                    .ImplementedBy<EveryDayTaskScheduler>()
+                    .DependsOn(parameters)
+                    .Named(scheduleName);
         }
 
         private static IRegistration RegisterNamedIntervalScheduler(
@@ -130,9 +130,9 @@
             scheduleName = string.Format("intervalScheduled-{0}", name);
             return
                 Component.For<ITaskScheduler>()
-                         .ImplementedBy<IntervalTaskScheduler>()
-                         .DependsOn(parameters)
-                         .Named(scheduleName);
+                    .ImplementedBy<IntervalTaskScheduler>()
+                    .DependsOn(parameters)
+                    .Named(scheduleName);
         }
     }
 }

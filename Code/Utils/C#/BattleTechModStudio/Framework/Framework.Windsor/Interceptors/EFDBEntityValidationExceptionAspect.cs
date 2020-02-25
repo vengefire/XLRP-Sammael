@@ -1,9 +1,9 @@
-﻿namespace Framework.Windsor.Interceptors
-{
-    using System.Data.Entity.Validation;
-    using System.Text;
-    using Castle.DynamicProxy;
+﻿using System.Data.Entity.Validation;
+using System.Text;
+using Castle.DynamicProxy;
 
+namespace Framework.Windsor.Interceptors
+{
     public class EFDBEntityValidationExceptionAspect : IInterceptor
     {
         public void Intercept(IInvocation invocation)

@@ -1,10 +1,10 @@
-﻿namespace Framework.Logic.Queue
-{
-    using System.Diagnostics.CodeAnalysis;
-    using Castle.MicroKernel.Registration;
-    using Castle.MicroKernel.SubSystems.Configuration;
-    using Castle.Windsor;
+﻿using System.Diagnostics.CodeAnalysis;
+using Castle.MicroKernel.Registration;
+using Castle.MicroKernel.SubSystems.Configuration;
+using Castle.Windsor;
 
+namespace Framework.Logic.Queue
+{
     [SuppressMessage(
         "StyleCop.CSharp.ReadabilityRules",
         "SA1118:ParameterMustNotSpanMultipleLines",

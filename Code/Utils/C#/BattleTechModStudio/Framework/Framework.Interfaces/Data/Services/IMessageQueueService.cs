@@ -1,7 +1,7 @@
-﻿namespace Framework.Interfaces.Data.Services
-{
-    using Domain.Queue;
+﻿using Framework.Domain.Queue;
 
+namespace Framework.Interfaces.Data.Services
+{
     public interface IMessageQueueService
     {
         long CreateMessageAudit(MessageAudit messageAudit);
