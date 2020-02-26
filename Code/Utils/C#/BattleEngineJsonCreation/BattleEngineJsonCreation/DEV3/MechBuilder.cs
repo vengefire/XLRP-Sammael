@@ -26,178 +26,6 @@ namespace BattleEngineJsonCreation
             }
             return result;
         }
-        public static ChassisDef ChassisDefs(string[] chassisNames, string[] files, bool rebuild)
-        {
-            var chassisDef = new ChassisDef();
-            string toSearch = chassisNames[0].ToLower() + "_" + chassisNames[1].ToUpper();
-            //int index = -1;
-            string filename;
-            foreach (string file in files)
-            {
-                filename = Path.GetFileName(file);
-                string[] split = filename.Split('_');
-                foreach (string s in split)
-                {
-                    string news = s.Replace(".json","");
-                    if ((news==(chassisNames[1])) && (rebuild == false))
-                    {
-                        string jsonString = File.ReadAllText(file);
-                        chassisDef = ChassisDef.FromJson(jsonString);
-                    }
-                    //Rebuild is an attempt to rebuild ChassisDefs if they are missing for variants BETA Use Wisely. 
-                    if ((file.Contains(chassisNames[0])) && (rebuild == true))
-                    {
-                        string jsonString = File.ReadAllText(file);
-                        chassisDef = ChassisDef.FromJson(jsonString);
-                        break;
-                    }
-                }
-            }
-            return chassisDef;
-        }
-        public static MechDef MechDefs(ChassisDef chassisDef, string bedfile)
-        {
-
-            var mechdef = new MechDef
-            {
-                ChassisId = chassisDef.Description.Id,
-                HeraldryId = null,
-                Description = new DefDescription
-                {
-                    Cost = chassisDef.Description.Cost,
-                    Rarity = chassisDef.Description.Rarity,
-                    UiName = chassisDef.Description.UiName + " " + chassisDef.VariantName,
-                    Id = chassisDef.Description.Id.Replace("chassisdef", "mechdef"),
-                    Name = chassisDef.Description.Name + " " + chassisDef.VariantName,
-                    Details = chassisDef.Description.Details,
-                    Icon = chassisDef.Description.Icon
-                },
-                Locations = new List<MechDefLocation>(),
-                Inventory = new List<Inventory>(),
-            };
-            string[] filelines = File.ReadAllLines(bedfile);
-            string armorline = "";
-            int internalStructre = -1;
-            foreach (string lines in filelines)
-            {
-                string newl = Reuse.RemoveSpecialCharacters(lines);
-                newl = newl.Replace("\"", "");
-                if (newl.Contains("ArmorVals"))
-                {
-                    armorline = newl;
-                    break;
-                }
-            }
-            if (!armorline.Contains("ArmorVals")) Reuse.EndProgram("FATAL ERROR: Unable to parse ArmorVals from Bedfile");
-            string[] armorvaulewords = armorline.Split(',');
-            foreach (Location location in Enum.GetValues(typeof(Location)))
-            {
-                //ArmorVaule to Location  If Array
-                int frontarmorvaule = -1;
-                int reararmorvaule = -1;
-                if ((int)location == 0)
-                {
-                    frontarmorvaule = 45;
-                }
-                else
-                {
-                    frontarmorvaule = Convert.ToInt32(armorvaulewords[(int)location]) * 5;
-                }
-                if (((int)location == 3) || ((int)location == 4))
-                    reararmorvaule = Convert.ToInt32(armorvaulewords[6]) * 5;
-                if ((int)location == 5) reararmorvaule = Convert.ToInt32(armorvaulewords[8]) * 5;
-                if (((int)location == 6) || ((int)location == 7)) frontarmorvaule = Convert.ToInt32(armorvaulewords[10]) * 5;
-                foreach (Location chassislocation in Enum.GetValues(typeof(Location)))
-                {
-                    if (chassisDef.Locations[(int)chassislocation].Location == location)
-                    {
-                        internalStructre = chassisDef.Locations[(int)chassislocation].InternalStructure;
-                    }
-                }
-                mechdef.Locations.Add(new MechDefLocation
-                {
-                    DamageLevel = DamageLevel.Functional,
-                    Location = location,
-                    CurrentArmor = frontarmorvaule,
-                    CurrentRearArmor = reararmorvaule,
-                    CurrentInternalStructure = internalStructre,
-                    AssignedArmor = frontarmorvaule,
-                    AssignedRearArmor = reararmorvaule,
-                });
-            }
-            return mechdef;
-        }
-        public static MechDef MechLocations(Dictionary<string, (string, ComponentDefType)> componentDefDictionaryTuple, MechDef mechdef, string file)
-        {
-            string[] filelines = System.IO.File.ReadAllLines(file);
-            string[] critLines = filelines.SkipWhile(x => !x.Contains("Crits"))
-            .Skip(1)
-            .ToArray();
-            for (int i = 0; i < critLines.Length; i++)
-            {
-
-                var mountLocationVar = Location.LeftArm;
-                if (i <= 11) mountLocationVar = Location.LeftArm;
-                if ((i <= 23) && (i > 11)) mountLocationVar = Location.LeftTorso;
-                if ((i <= 35) && (i > 23)) mountLocationVar = Location.RightTorso;
-                if ((i <= 47) && (i > 35)) mountLocationVar = Location.RightArm;
-                if ((i <= 59) && (i > 49)) mountLocationVar = Location.CenterTorso;
-                if ((i <= 65) && (i > 59)) mountLocationVar = Location.Head;
-                if ((i <= 71) && (i > 65)) mountLocationVar = Location.LeftLeg;
-                if ((i <= 77) && (i > 71)) mountLocationVar = Location.RightLeg;
-                critLines[i] = critLines[i].Replace("\"", "");
-                string[] split = critLines[i].Split(',');
-                if (componentDefDictionaryTuple.ContainsKey(split[0]))
-                {
-                    if (!(split[0].Contains("Endo") || split[0].Contains("Ferro") || split[0].Contains("Gyro") || split[0].Contains("Sensors") || split[0].Contains("Life")))
-                    {
-                        mechdef.Inventory.Add(new Inventory
-                        {
-                            MountedLocation = mountLocationVar,
-                            ComponentDefId = componentDefDictionaryTuple[split[0]].Item1,
-                            ComponentDefType = componentDefDictionaryTuple[split[0]].Item2,
-                            HardpointSlot = -1,
-                            DamageLevel = "Functional",
-                            PrefabName = null,
-                            HasPrefabName = false,
-                            SimGameUid = "",
-                            Guid = null
-                        });
-                    }
-                }
-            }
-            return mechdef;
-        }
-        public static MechDef Engines(ChassisDef chassisDef, MechDef mechdef, string bedfile)
-        {
-            string[] filelines = File.ReadAllLines(bedfile);
-            int enginerating = 1;
-            string engineString = "emod_engine_";
-            foreach (string lines in filelines)
-            {
-                string newl = lines.Replace("\"", "");
-                if (newl.Contains("Engine"))
-                {
-                    string[] split = newl.Split(',');
-                    split = split[3].Split('/');
-                    enginerating = Convert.ToInt32(split[0]) * Convert.ToInt32(chassisDef.Tonnage);
-                    if (enginerating < 100) engineString = "emod_engine_0";
-                    mechdef.Inventory.Add(new Inventory
-                    {
-                        MountedLocation = Location.CenterTorso,
-                        ComponentDefId = engineString + enginerating,
-                        ComponentDefType = ComponentDefType.HeatSink,
-                        HardpointSlot = -1,
-                        DamageLevel = "Functional",
-                        PrefabName = null,
-                        HasPrefabName = false,
-                        SimGameUid = "",
-                        Guid = null
-                    });
-                }
-            }
-            return mechdef;
-        }
         public static string[] ChassisName(string filename)
         {
             string chassisName;
@@ -305,6 +133,195 @@ namespace BattleEngineJsonCreation
             }
             return new string[] { chassisName, chassisVariantName, chassisShortName };
         }
+        public static ChassisDef ChassisDefs(string[] chassisNames, string[] files, bool rebuild)
+        {
+            var chassisDef = new ChassisDef();
+            string toSearch = chassisNames[0].ToLower() + "_" + chassisNames[1].ToUpper();
+            //int index = -1;
+            string filename;
+            foreach (string file in files)
+            {
+                filename = Path.GetFileName(file);
+                string[] split = filename.Split('_');
+                foreach (string s in split)
+                {
+                    string news = s.Replace(".json","");
+                    if ((news==(chassisNames[1])) && (rebuild == false))
+                    {
+                        string jsonString = File.ReadAllText(file);
+                        chassisDef = ChassisDef.FromJson(jsonString);
+                    }
+                    //Rebuild is an attempt to rebuild ChassisDefs if they are missing for variants BETA Use Wisely. 
+                    if ((file.Contains(chassisNames[0])) && (rebuild == true))
+                    {
+                        string jsonString = File.ReadAllText(file);
+                        chassisDef = ChassisDef.FromJson(jsonString);
+                        break;
+                    }
+                }
+            }
+            return chassisDef;
+        }
+        public static MechDef MechDefs(ChassisDef chassisDef, string bedfile)
+        {
+
+            var mechdef = new MechDef
+            {
+                ChassisId = chassisDef.Description.Id,
+                HeraldryId = null,
+                Description = new DefDescription
+                {
+                    Cost = chassisDef.Description.Cost,
+                    Rarity = chassisDef.Description.Rarity,
+                    UiName = chassisDef.Description.UiName,
+                    Id = chassisDef.Description.Id.Replace("chassisdef", "mechdef"),
+                    Name = chassisDef.Description.Name,
+                    Details = chassisDef.Description.Details,
+                    Icon = chassisDef.Description.Icon
+                },
+                Locations = new List<MechDefLocation>(),
+                Inventory = new List<Inventory>(),
+            };
+            string[] filelines = File.ReadAllLines(bedfile);
+            string armorline = "";
+            int internalStructre = -1;
+            foreach (string lines in filelines)
+            {
+                string newl = Reuse.RemoveSpecialCharacters(lines);
+                newl = newl.Replace("\"", "");
+                if (newl.Contains("ArmorVals"))
+                {
+                    armorline = newl;
+                    break;
+                }
+            }
+            if (!armorline.Contains("ArmorVals")) Reuse.EndProgram("FATAL ERROR: Unable to parse ArmorVals from Bedfile");
+            string[] armorvaulewords = armorline.Split(',');
+            foreach (Location location in Enum.GetValues(typeof(Location)))
+            {
+                //ArmorVaule to Location  If Array
+                int frontarmorvaule = -1;
+                int reararmorvaule = -1;
+                if ((int)location == 0)
+                {
+                    frontarmorvaule = 45;
+                }
+                else
+                {
+                    frontarmorvaule = Convert.ToInt32(armorvaulewords[(int)location]) * 5;
+                }
+                if (((int)location == 3) || ((int)location == 4))
+                    reararmorvaule = Convert.ToInt32(armorvaulewords[6]) * 5;
+                if ((int)location == 5) reararmorvaule = Convert.ToInt32(armorvaulewords[8]) * 5;
+                if (((int)location == 6) || ((int)location == 7)) frontarmorvaule = Convert.ToInt32(armorvaulewords[10]) * 5;
+                foreach (Location chassislocation in Enum.GetValues(typeof(Location)))
+                {
+                    if (chassisDef.Locations[(int)chassislocation].Location == location)
+                    {
+                        internalStructre = chassisDef.Locations[(int)chassislocation].InternalStructure;
+                    }
+                }
+                mechdef.Locations.Add(new MechDefLocation
+                {
+                    DamageLevel = DamageLevel.Functional,
+                    Location = location,
+                    CurrentArmor = frontarmorvaule,
+                    CurrentRearArmor = reararmorvaule,
+                    CurrentInternalStructure = internalStructre,
+                    AssignedArmor = frontarmorvaule,
+                    AssignedRearArmor = reararmorvaule,
+                });
+            }
+            return mechdef;
+        }
+        public static MechDef MechLocations(Dictionary<string, (string, ComponentDefType)> componentDefDictionaryTuple, MechDef mechdef, string file)
+        {
+            string[] filelines = System.IO.File.ReadAllLines(file);
+            string[] critLines = filelines.SkipWhile(x => !x.Contains("Crits"))
+            .Skip(1)
+            .ToArray();
+            for (int i = 0; i < critLines.Length; i++)
+            {
+
+                var mountLocationVar = Location.LeftArm;
+                if (i <= 11) mountLocationVar = Location.LeftArm;
+                if ((i <= 23) && (i > 11)) mountLocationVar = Location.LeftTorso;
+                if ((i <= 35) && (i > 23)) mountLocationVar = Location.RightTorso;
+                if ((i <= 47) && (i > 35)) mountLocationVar = Location.RightArm;
+                if ((i <= 59) && (i > 49)) mountLocationVar = Location.CenterTorso;
+                if ((i <= 65) && (i > 59)) mountLocationVar = Location.Head;
+                if ((i <= 71) && (i > 65)) mountLocationVar = Location.LeftLeg;
+                if ((i <= 77) && (i > 71)) mountLocationVar = Location.RightLeg;
+                critLines[i] = critLines[i].Replace("\"", "");
+                string[] split = critLines[i].Split(',');
+                if (componentDefDictionaryTuple.ContainsKey(split[0]))
+                {
+                    if (!(split[0].Contains("Endo") || split[0].Contains("XL") || split[0].Contains("Ferro") || split[0].Contains("Gyro") || split[0].Contains("Sensors") || split[0].Contains("Life")))
+                    {
+                        mechdef.Inventory.Add(new Inventory
+                        {
+                            MountedLocation = mountLocationVar,
+                            ComponentDefId = componentDefDictionaryTuple[split[0]].Item1,
+                            ComponentDefType = componentDefDictionaryTuple[split[0]].Item2,
+                            HardpointSlot = -1,
+                            DamageLevel = "Functional",
+                            PrefabName = null,
+                            HasPrefabName = false,
+                            SimGameUid = "",
+                            Guid = null
+                        });
+                    }
+                }
+            }
+            return mechdef;
+        }
+        public static MechDef Engines(ChassisDef chassisDef, MechDef mechdef, string bedfile)
+        {
+            string[] filelines = File.ReadAllLines(bedfile);
+            int enginerating = 1;
+            string engineString = "emod_engine_";
+            foreach (string lines in filelines)
+            {
+                string newl = lines.Replace("\"", "");
+                if (newl.Contains("Engine"))
+                {
+                    string[] split = newl.Split(',');
+                    split = split[3].Split('/');
+                    enginerating = Convert.ToInt32(split[0]) * Convert.ToInt32(chassisDef.Tonnage);
+                    if (enginerating == 0)
+                    {
+                        string something = "broken";
+                    }
+                    if (enginerating < 100) engineString = "emod_engine_0";
+                    mechdef.Inventory.Add(new Inventory
+                    {
+                        MountedLocation = Location.CenterTorso,
+                        ComponentDefId = engineString + enginerating,
+                        ComponentDefType = ComponentDefType.HeatSink,
+                        HardpointSlot = -1,
+                        DamageLevel = "Functional",
+                        PrefabName = null,
+                        HasPrefabName = false,
+                        SimGameUid = "",
+                        Guid = null
+                    });
+                    break;
+                }
+            }
+            return mechdef;
+        }
+        public static MechDef Tags(MechDef mechdef)
+        {
+            mechdef.MechTags = new Tags
+            {
+                Items = new List<string>
+                {
+                    "unit_release"
+                }
+            };
+            return mechdef;
+        }
+
         public static double MechISArmor(double tons, Location location, bool rear)
         {
             int index = (int)location + 2;
