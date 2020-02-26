@@ -9,6 +9,23 @@ namespace BattleEngineJsonCreation
 {
     public static class MechBuilder
     {
+        public static bool CabCheck(Dictionary<string, string> preFabDictionary, string file)
+        {
+            bool result = false;
+            string[] filelines = System.IO.File.ReadAllLines(file);
+            if (filelines[3].Contains("Biped"))
+            {
+                var cabCheck = new List<string>(Reuse.CabCheck(filelines[0]));
+                for (int i = 0; i < cabCheck.Count; i++)
+                {
+                    if (preFabDictionary.ContainsKey(cabCheck[i]))
+                    {
+                        result = true;
+                    }
+                }
+            }
+            return result;
+        }
         public static ChassisDef ChassisDefs(string[] chassisNames, string[] files, bool rebuild)
         {
             var chassisDef = new ChassisDef();
@@ -18,17 +35,22 @@ namespace BattleEngineJsonCreation
             foreach (string file in files)
             {
                 filename = Path.GetFileName(file);
-                if ((file.Contains(chassisNames[1])) && (rebuild == false))
+                string[] split = filename.Split('_');
+                foreach (string s in split)
                 {
-                    string jsonString = File.ReadAllText(file);
-                    chassisDef = ChassisDef.FromJson(jsonString);
-                }
-                //Rebuild is an attempt to rebuild ChassisDefs if they are missing for variants BETA Use Wisely. 
-                if ((file.Contains(chassisNames[0])) && (rebuild == true))
-                {
-                    string jsonString = File.ReadAllText(file);
-                    chassisDef = ChassisDef.FromJson(jsonString);
-                    break;
+                    string news = s.Replace(".json","");
+                    if ((news==(chassisNames[1])) && (rebuild == false))
+                    {
+                        string jsonString = File.ReadAllText(file);
+                        chassisDef = ChassisDef.FromJson(jsonString);
+                    }
+                    //Rebuild is an attempt to rebuild ChassisDefs if they are missing for variants BETA Use Wisely. 
+                    if ((file.Contains(chassisNames[0])) && (rebuild == true))
+                    {
+                        string jsonString = File.ReadAllText(file);
+                        chassisDef = ChassisDef.FromJson(jsonString);
+                        break;
+                    }
                 }
             }
             return chassisDef;

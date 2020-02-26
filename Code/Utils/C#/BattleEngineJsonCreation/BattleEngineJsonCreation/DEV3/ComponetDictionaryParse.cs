@@ -225,9 +225,7 @@ namespace BattleEngineJsonCreation
                     }
                     catch (Exception e)
                     {
-                        Program.Log("Something wrong in the component dictionary parse " + e, "output");
                     }
-
                 }
             }
             //String csv = String.Join(Environment.NewLine, cDDic.Select(d => $"{d.Key},{d.Value}"));
