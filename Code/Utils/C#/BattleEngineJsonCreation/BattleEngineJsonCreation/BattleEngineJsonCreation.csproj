@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BattleEngineConverter.cs" />
+    <Compile Include="OLDCODE\BattleEngineConverter.cs" />
     <Compile Include="DEV3\MechBuilder.cs" />
     <Compile Include="DEV3\Program.cs" />
     <Compile Include="DEV3\ComponetDictionaryParse.cs" />

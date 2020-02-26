@@ -167,6 +167,6 @@ namespace BattleEngineJsonCreation
 
     public partial class AmmunitionBox
     {
-        public static AmmunitionBox FromJson(string json) => JsonConvert.DeserializeObject<AmmunitionBox>(json, BattleEngineJsonCreation.Converter.Settings);
+        public static AmmunitionBox FromJson(string json) => JsonConvert.DeserializeObject<AmmunitionBox>(json, Converter.Settings);
     }
 }

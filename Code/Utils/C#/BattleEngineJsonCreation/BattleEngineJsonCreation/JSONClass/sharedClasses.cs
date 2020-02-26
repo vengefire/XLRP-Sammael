@@ -10,12 +10,11 @@
 
 namespace BattleEngineJsonCreation
 {
-    using System;
-    using System.Collections.Generic;
-
-    using System.Globalization;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
+    using System;
+    using System.Collections.Generic;
+    using System.Globalization;
     public partial class Tags
     {
         [JsonProperty("items", NullValueHandling = NullValueHandling.Ignore)]
@@ -62,15 +61,15 @@ namespace BattleEngineJsonCreation
 
     public enum DamageLevel { Functional };
 
-    public enum Location {  Head, LeftArm, RightArm, LeftTorso, RightTorso, CenterTorso,  LeftLeg, RightLeg };
+    public enum Location { Head, LeftArm, RightArm, LeftTorso, RightTorso, CenterTorso, LeftLeg, RightLeg };
 
     public enum WeaponMount { AntiPersonnel, Ballistic, Energy, Missile };
     public static class Serialize
     {
-        public static string ToJson(this MovementCapabilitiesDef self) => JsonConvert.SerializeObject(self, BattleEngineJsonCreation.Converter.Settings);
-        public static string ToJson(this HardpointDataDef self) => JsonConvert.SerializeObject(self, BattleEngineJsonCreation.Converter.Settings);
-        public static string ToJson(this ChassisDef self) => JsonConvert.SerializeObject(self, BattleEngineJsonCreation.Converter.Settings);
-        public static string ToJson(this MechDef self) => JsonConvert.SerializeObject(self, BattleEngineJsonCreation.Converter.Settings);
+        public static string ToJson(this MovementCapabilitiesDef self) => JsonConvert.SerializeObject(self, Converter.Settings);
+        public static string ToJson(this HardpointDataDef self) => JsonConvert.SerializeObject(self, Converter.Settings);
+        public static string ToJson(this ChassisDef self) => JsonConvert.SerializeObject(self, Converter.Settings);
+        public static string ToJson(this MechDef self) => JsonConvert.SerializeObject(self, Converter.Settings);
     }
 
     internal static class Converter
@@ -160,7 +159,7 @@ namespace BattleEngineJsonCreation
             }
             throw new Exception("Cannot unmarshal type DamageLevel");
         }
-        
+
         public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
         {
             if (untypedValue == null)

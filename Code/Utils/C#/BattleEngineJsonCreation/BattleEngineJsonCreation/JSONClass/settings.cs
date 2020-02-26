@@ -29,6 +29,9 @@ namespace BattleEngineJsonCreation
         [JsonProperty("GenerateFromchassisDef", NullValueHandling = NullValueHandling.Ignore)]
         public bool GenerateFromchassisDef { get; set; }
 
+        [JsonProperty("UpdateCSV", NullValueHandling = NullValueHandling.Ignore)]
+        public bool UpdateCSV { get; set; }
+
         [JsonProperty("BTInstallDir", NullValueHandling = NullValueHandling.Ignore)]
         public string BtInstallDir { get; set; }
 
@@ -41,7 +44,7 @@ namespace BattleEngineJsonCreation
 
     public partial class Settings
     {
-        public static Settings FromJson(string json) => JsonConvert.DeserializeObject<Settings>(json, BattleEngineJsonCreation.Converter.Settings);
+        public static Settings FromJson(string json) => JsonConvert.DeserializeObject<Settings>(json, Converter.Settings);
     }
 }
 

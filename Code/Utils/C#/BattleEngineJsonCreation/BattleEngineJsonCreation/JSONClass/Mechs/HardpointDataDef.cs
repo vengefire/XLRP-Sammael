@@ -31,6 +31,6 @@ namespace BattleEngineJsonCreation
     }
     public partial class HardpointDataDef
     {
-        public static HardpointDataDef FromJson(string json) => JsonConvert.DeserializeObject<HardpointDataDef>(json, BattleEngineJsonCreation.Converter.Settings);
+        public static HardpointDataDef FromJson(string json) => JsonConvert.DeserializeObject<HardpointDataDef>(json, Converter.Settings);
     }
 }

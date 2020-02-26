@@ -90,6 +90,6 @@ namespace BattleEngineJsonCreation
     }
     public partial class MechDef
     {
-        public static MechDef FromJson(string json) => JsonConvert.DeserializeObject<MechDef>(json, BattleEngineJsonCreation.Converter.Settings);
+        public static MechDef FromJson(string json) => JsonConvert.DeserializeObject<MechDef>(json, Converter.Settings);
     }
 }

@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace BattleEngineJsonCreation
+/*namespace BattleEngineJsonCreation
 {
     class BattleEngineConverter
     {
         public void Test()
         {
-            string filepath = Directory.GetCurrentDirectory();
+            /*string filepath = Directory.GetCurrentDirectory();
             //Settings Processing and Loading
             string settingfile = Path.Combine(filepath, "settings.json");
             string[] bedfiles = null;
@@ -117,7 +117,7 @@ namespace BattleEngineJsonCreation
             //Build componentDefs
             //string[] jsonFiles = Directory.GetFiles(btinstall, "*.json", SearchOption.AllDirectories);
             //var componentDefDictionaryTuple = new Dictionary<string, (string, ComponentDefType)>();
-            /*{
+            {
             Weapons Laser
             //{ "Large Laser", ("Weapon_Laser_LargeLaser_0-STOCK",ComponentDefType.Weapon)},
             //{ "Medium Laser", ("Weapon_Laser_MediumLaser_0-STOCK",ComponentDefType.Weapon)},
@@ -1373,8 +1373,8 @@ namespace BattleEngineJsonCreation
                                 }
                             }
                         }
-                        string outputmechDef = Newtonsoft.Json.JsonConvert.SerializeObject(mechDef, Newtonsoft.Json.Formatting.Indented, BattleEngineJsonCreation.Converter.Settings);
-                        string outputchassisDef = Newtonsoft.Json.JsonConvert.SerializeObject(chassisDef, Newtonsoft.Json.Formatting.Indented, BattleEngineJsonCreation.Converter.Settings);
+                        string outputmechDef = Newtonsoft.Json.JsonConvert.SerializeObject(mechDef, Newtonsoft.Json.Formatting.Indented, Converter.Settings);
+                        string outputchassisDef = Newtonsoft.Json.JsonConvert.SerializeObject(chassisDef, Newtonsoft.Json.Formatting.Indented, Converter.Settings);
                         File.WriteAllText(Path.Combine(outputDir, chassisDef.Description.Id + ".json"), outputchassisDef);
                         File.WriteAllText(Path.Combine(outputDir, mechDef.Description.Id + ".json"), outputmechDef);
                         indexChassisDef = -1;

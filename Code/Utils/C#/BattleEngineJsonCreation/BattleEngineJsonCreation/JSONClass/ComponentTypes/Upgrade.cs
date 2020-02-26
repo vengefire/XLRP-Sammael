@@ -218,7 +218,7 @@ namespace BattleEngineJsonCreation
 
     public partial class Upgrade
     {
-        public static Upgrade FromJson(string json) => JsonConvert.DeserializeObject<Upgrade>(json, BattleEngineJsonCreation.Converter.Settings);
+        public static Upgrade FromJson(string json) => JsonConvert.DeserializeObject<Upgrade>(json, Converter.Settings);
     }
 }
 

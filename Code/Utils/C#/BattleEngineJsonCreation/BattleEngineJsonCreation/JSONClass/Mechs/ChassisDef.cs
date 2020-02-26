@@ -196,7 +196,7 @@ namespace BattleEngineJsonCreation
     }
     public partial class ChassisDef
     {
-        public static ChassisDef FromJson(string json) => JsonConvert.DeserializeObject<ChassisDef>(json, BattleEngineJsonCreation.Converter.Settings);
+        public static ChassisDef FromJson(string json) => JsonConvert.DeserializeObject<ChassisDef>(json, Converter.Settings);
     }
 
 }

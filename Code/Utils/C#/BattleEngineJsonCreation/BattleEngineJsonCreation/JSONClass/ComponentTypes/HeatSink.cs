@@ -59,6 +59,6 @@ namespace BattleEngineJsonCreation
 
     public partial class HeatSink
     {
-        public static HeatSink FromJson(string json) => JsonConvert.DeserializeObject<HeatSink>(json, BattleEngineJsonCreation.Converter.Settings);
+        public static HeatSink FromJson(string json) => JsonConvert.DeserializeObject<HeatSink>(json, Converter.Settings);
     }
 }

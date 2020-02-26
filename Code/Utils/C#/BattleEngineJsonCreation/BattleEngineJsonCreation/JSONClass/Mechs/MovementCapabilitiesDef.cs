@@ -67,6 +67,6 @@ namespace BattleEngineJsonCreation
     }
     public partial class MovementCapabilitiesDef
     {
-        public static MovementCapabilitiesDef FromJson(string json) => JsonConvert.DeserializeObject<MovementCapabilitiesDef>(json, BattleEngineJsonCreation.Converter.Settings);
+        public static MovementCapabilitiesDef FromJson(string json) => JsonConvert.DeserializeObject<MovementCapabilitiesDef>(json, Converter.Settings);
     }
 }

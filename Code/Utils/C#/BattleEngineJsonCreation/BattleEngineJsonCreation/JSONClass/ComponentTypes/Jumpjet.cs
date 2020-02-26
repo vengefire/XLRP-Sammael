@@ -65,6 +65,6 @@ namespace BattleEngineJsonCreation
 
     public partial class Jumpjet
     {
-        public static Jumpjet FromJson(string json) => JsonConvert.DeserializeObject<Jumpjet>(json, BattleEngineJsonCreation.Converter.Settings);
+        public static Jumpjet FromJson(string json) => JsonConvert.DeserializeObject<Jumpjet>(json, Converter.Settings);
     }
 }

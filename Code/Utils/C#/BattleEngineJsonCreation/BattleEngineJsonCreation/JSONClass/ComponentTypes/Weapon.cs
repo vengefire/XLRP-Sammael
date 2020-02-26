@@ -137,6 +137,6 @@ namespace BattleEngineJsonCreation
 
     public partial class Weapon
     {
-        public static Weapon FromJson(string json) => JsonConvert.DeserializeObject<Weapon>(json, BattleEngineJsonCreation.Converter.Settings);
+        public static Weapon FromJson(string json) => JsonConvert.DeserializeObject<Weapon>(json, Converter.Settings);
     }
 }
