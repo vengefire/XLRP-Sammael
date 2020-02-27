@@ -145,11 +145,15 @@ namespace BattleEngineJsonCreation
                 string[] split = filename.Split('_');
                 foreach (string s in split)
                 {
-                    string news = s.Replace(".json","");
-                    if ((news==(chassisNames[1])) && (rebuild == false))
+                    string news = s.Replace(".json", "");
+                    if ((news == (chassisNames[1])) && (rebuild == false))
                     {
                         string jsonString = File.ReadAllText(file);
                         chassisDef = ChassisDef.FromJson(jsonString);
+                        if (chassisDef.Description.Name.Contains("__"))
+                        {
+                            LocalizationParse(chassisDef, file);
+                        }
                     }
                     //Rebuild is an attempt to rebuild ChassisDefs if they are missing for variants BETA Use Wisely. 
                     if ((file.Contains(chassisNames[0])) && (rebuild == true))
@@ -160,6 +164,36 @@ namespace BattleEngineJsonCreation
                     }
                 }
             }
+            return chassisDef;
+        }
+        private static ChassisDef LocalizationParse(ChassisDef chassisDef, string file)
+        {
+            string jsonString = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "Localization.json"));
+            var localization = Localization.FromJson(jsonString);
+            foreach (var obj in localization)
+            {
+                chassisDef.Description.UiName = chassisDef.Description.UiName.Replace("__/", "");
+                chassisDef.Description.UiName = chassisDef.Description.UiName.Replace("/__", "");
+                chassisDef.Description.Name = chassisDef.Description.Name.Replace("__/", "");
+                chassisDef.Description.Name = chassisDef.Description.Name.Replace("/__", "");
+                chassisDef.Description.Details = chassisDef.Description.Details.Replace("__/", "");
+                chassisDef.Description.Details = chassisDef.Description.Details.Replace("/__", "");
+                if (chassisDef.Description.UiName == obj.Name)
+                {
+                    chassisDef.Description.UiName = obj.Original;
+                }
+                if (chassisDef.Description.Name == obj.Name)
+                {
+                    chassisDef.Description.Name = obj.Original;
+                }
+                if (chassisDef.Description.Details == obj.Name)
+                {
+                    chassisDef.Description.Details = obj.Original;
+                }
+            }
+            string outputchassisDef = Newtonsoft.Json.JsonConvert.SerializeObject(chassisDef, Newtonsoft.Json.Formatting.Indented, Converter.Settings);
+            File.WriteAllText(file, outputchassisDef);
+
             return chassisDef;
         }
         public static MechDef MechDefs(ChassisDef chassisDef, string bedfile)
@@ -234,12 +268,13 @@ namespace BattleEngineJsonCreation
             }
             return mechdef;
         }
-        public static MechDef MechLocations(Dictionary<string, (string, ComponentDefType)> componentDefDictionaryTuple, MechDef mechdef, string file)
+        public static MechDef MechLocations(Dictionary<string, (string, ComponentDefType)> componentDefDictionaryTuple, MechDef mechdef, string file, ChassisDef chassisDef)
         {
             string[] filelines = System.IO.File.ReadAllLines(file);
             string[] critLines = filelines.SkipWhile(x => !x.Contains("Crits"))
             .Skip(1)
             .ToArray();
+            bool addedDHS = false;
             for (int i = 0; i < critLines.Length; i++)
             {
 
@@ -254,15 +289,49 @@ namespace BattleEngineJsonCreation
                 if ((i <= 77) && (i > 71)) mountLocationVar = Location.RightLeg;
                 critLines[i] = critLines[i].Replace("\"", "");
                 string[] split = critLines[i].Split(',');
-                if (componentDefDictionaryTuple.ContainsKey(split[0]))
+                if ((componentDefDictionaryTuple.ContainsKey(split[0])) || (split[0].Contains("Jump Jet")))
                 {
                     if (!(split[0].Contains("Endo") || split[0].Contains("XL") || split[0].Contains("Ferro") || split[0].Contains("Gyro") || split[0].Contains("Sensors") || split[0].Contains("Life")))
                     {
+                        string compDefId = "";
+                        var componentDefType = new ComponentDefType();
+                        if (split[0].Contains("Jump Jet"))
+                        {
+                            componentDefType = ComponentDefType.JumpJet;
+                            if (chassisDef.Tonnage <= 90) compDefId = "Gear_JumpJet_Generic_Assault";
+                            if (chassisDef.Tonnage <= 60) compDefId = "Gear_JumpJet_Generic_Heavy";
+                            if (chassisDef.Tonnage <= 35) compDefId = "Gear_JumpJet_Generic_Standard";
+                        }
+                        else
+                        {
+                            compDefId = componentDefDictionaryTuple[split[0]].Item1;
+                            componentDefType = componentDefDictionaryTuple[split[0]].Item2;
+                        }
+                        if (chassisDef.Description.UiName.Contains("Wolf"))
+                        {
+                            string something = "broke";
+                        }
+                        if ((split[0].Contains("Double Heat Sink")) && (addedDHS == false))
+                        {
+                            mechdef.Inventory.Add(new Inventory
+                            {
+                                MountedLocation = Location.CenterTorso,
+                                ComponentDefId = "emod_kit_dhs",
+                                ComponentDefType = ComponentDefType.HeatSink,
+                                HardpointSlot = -1,
+                                DamageLevel = "Functional",
+                                PrefabName = null,
+                                HasPrefabName = false,
+                                SimGameUid = "",
+                                Guid = null
+                            });
+                            addedDHS = true;
+                        }
                         mechdef.Inventory.Add(new Inventory
                         {
                             MountedLocation = mountLocationVar,
-                            ComponentDefId = componentDefDictionaryTuple[split[0]].Item1,
-                            ComponentDefType = componentDefDictionaryTuple[split[0]].Item2,
+                            ComponentDefId = compDefId,
+                            ComponentDefType = componentDefType,
                             HardpointSlot = -1,
                             DamageLevel = "Functional",
                             PrefabName = null,

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JSONClass\Localization.cs" />
     <Compile Include="OLDCODE\BattleEngineConverter.cs" />
     <Compile Include="DEV3\MechBuilder.cs" />
     <Compile Include="DEV3\Program.cs" />
