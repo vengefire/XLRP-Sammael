@@ -59,14 +59,20 @@ namespace BattleEngineJsonCreation
                 preFabDictionary = File.ReadLines("preFabDictionary.csv").Select(line => line.Split(',')).ToDictionary(line => line[0], line => line[1]);
                 //gearDic = File.ReadLines("preFabDictionary.csv").Select(line => line.Split('|')).ToDictionary(line => line[0], line => line[1]);
                 //gearDic = ComponetDictionaryParse.ComDefDicPop(Directory.GetFiles(settings.BtInstallDir, "*.json", SearchOption.AllDirectories));
-                gearDic = File.ReadLines("gearDic.csv").Select(line => line.Split(',')).ToDictionary(line => line[0], line => (line[1], (ComponentDefType)Enum.Parse(typeof(ComponentDefType), line[2])));
+                /*string[] gearDicLines = File.ReadAllLines("gearDic.csv");
+                foreach (string line in gearDicLines)
+                {
+                    string[] split = line.Split(',');
+                    gearDic.Add(split[0],(split[1], (ComponentDefType)Enum.Parse(typeof(ComponentDefType), split[2])));
+                }*/
+                gearDic = File.ReadLines("gearDic.csv").Select(line => line.Split(',')).ToDictionary(line => line[0], line => 
+                    (line[1], (ComponentDefType)Enum.Parse(typeof(ComponentDefType), line[2])));
             }
-
             string[] chassisFiles = Directory.GetFiles(settings.ChassisDefpath, "chassis*.json", SearchOption.AllDirectories);
             string[] chassisNames = null;
             string[] bedfiles = Directory.GetFiles(settings.BedPath, "*.bed", SearchOption.AllDirectories);
-            Parallel.ForEach(bedfiles, (file) =>
-            //foreach (var file in Directory.GetFiles(settings.BedPath, "*.bed", SearchOption.AllDirectories))
+            //Parallel.ForEach(bedfiles, (file) =>
+            foreach (var file in Directory.GetFiles(settings.BedPath, "*.bed", SearchOption.AllDirectories))
             {
                 Console.WriteLine($"Processing {file} on thread {Thread.CurrentThread.ManagedThreadId}");
                 bool cabCheck = MechBuilder.CabCheck(preFabDictionary, file);
@@ -77,10 +83,16 @@ namespace BattleEngineJsonCreation
                     if (chassisDef.Description != null)
                     {
                         //Console.WriteLine(file + " " + chassisDef.Description.Id);
+                        //Build MechDef from ChassisFile
                         var mechDef = MechBuilder.MechDefs(chassisDef, file);
-                        mechDef = MechBuilder.MechLocations(gearDic, mechDef, file);
+                        //Add Mech Inventory "Parts"
+                        mechDef = MechBuilder.MechLocations(gearDic, mechDef, file, chassisDef);
+                        //Add Mech Engine = TTWalk * Tonnage
                         mechDef = MechBuilder.Engines(chassisDef, mechDef, file);
+                        //Add Mech Tags 
+                        mechDef = MechBuilder.Tags(mechDef);
                         string outputmechDef = Newtonsoft.Json.JsonConvert.SerializeObject(mechDef, Newtonsoft.Json.Formatting.Indented, Converter.Settings);
+                        
                         File.WriteAllText(Path.Combine(settings.OutputDir, mechDef.Description.Id + ".json"), outputmechDef);
                         logMemory = logMemory + Path.GetFileName(file) + "," + mechDef.Description.Id + ",Generated\r\n";
                         //var mechDef = MechBuilder.MechDefs(chassisDef);
@@ -95,8 +107,8 @@ namespace BattleEngineJsonCreation
                 {
                     logMemory = logMemory + Path.GetFileName(file) + ",NO CAB,Not Generated\r\n";
                 }
-            });
-            //}
+            //});
+            }
             Log(logMemory, settings.OutputDir);
         }
         public static void Log(string logMessage, string logdir)
