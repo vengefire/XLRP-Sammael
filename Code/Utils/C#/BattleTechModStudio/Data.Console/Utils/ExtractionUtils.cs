@@ -201,6 +201,24 @@ namespace Data.Console.Utils
                         ExtractionUtils.ExtractTags(entry.Id, (JArray) manifestEntry.Json["Inventory"], manifestEntry.Json, requiredTags, excludedTags, validFactions);
                         ExtractionUtils.ExtractTags(entry.Id, (JArray) manifestEntry.Json["Specials"], manifestEntry.Json, requiredTags, excludedTags, validFactions);
                     });
+                    
+                    DateTime? appearanceDate = null;
+                    if (entry.GameObjectType == GameObjectTypeEnum.MechDef)
+                    {
+                        var minAppearanceDateString = entry.Json["MinAppearanceDate"]?.ToString();
+                        if (!string.IsNullOrEmpty(minAppearanceDateString))
+                        {
+                            appearanceDate = DateTime.Parse(minAppearanceDateString);
+                        }
+                        else
+                        {
+                            var mechModelEntry = mechList.FirstOrDefault(model => model.Name.Trim('"') == entry.Json["Description"]?["UIName"]?.ToString());
+                            if (mechModelEntry != null)
+                            {
+                                appearanceDate = new DateTime((int)mechModelEntry.Year, 1, 1);
+                            }
+                        }
+                    }
 
                     currentSheet.Cells[rowIndex, 1].Value = entry.Id;
                     var itemRarity = Convert.ToInt32(entry.Json["Description"]?["Rarity"]?.ToString());
@@ -208,6 +226,7 @@ namespace Data.Console.Utils
                     currentSheet.Cells[rowIndex, columnHeadersDict["Availability"]].Value = mappedRarity.bracket;
                     currentSheet.Cells[rowIndex, columnHeadersDict["Required PlanetTags (Any of)"]].Value = string.Join("|", requiredTags);
                     currentSheet.Cells[rowIndex, columnHeadersDict["Restricted PlanetTags (Any of)"]].Value = string.Join("|", excludedTags);
+                    currentSheet.Cells[rowIndex, columnHeadersDict["Common Date"]].Value = appearanceDate.ToString();
                     // currentSheet.Cells[rowIndex, columnHeadersDict["Notes"]].Value = entry.FileInfo.FullName;
                     rowIndex += 1;
                 });
