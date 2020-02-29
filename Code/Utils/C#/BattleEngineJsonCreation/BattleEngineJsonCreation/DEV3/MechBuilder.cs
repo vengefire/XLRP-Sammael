@@ -21,6 +21,15 @@ namespace BattleEngineJsonCreation
                     if (preFabDictionary.ContainsKey(cabCheck[i]))
                     {
                         result = true;
+                        break;
+                    }
+                    if (i + 1 < cabCheck.Count)
+                    {
+                        if (preFabDictionary.ContainsKey(cabCheck[i] + cabCheck[i + 1]))
+                        {
+                            result = true;
+                            break;
+                        }
                     }
                 }
             }
@@ -131,6 +140,10 @@ namespace BattleEngineJsonCreation
                     chassisShortName = split[1];
                     break;
             }
+            if (chassisShortName.Contains("Stinger"))
+            {
+                string something = "broken";
+            }
             return new string[] { chassisName, chassisVariantName, chassisShortName };
         }
         public static ChassisDef ChassisDefs(string[] chassisNames, string[] files, bool rebuild)
@@ -218,6 +231,8 @@ namespace BattleEngineJsonCreation
             };
             string[] filelines = File.ReadAllLines(bedfile);
             string armorline = "";
+            string armortypeline = "";
+            string sturcturetypeline = "";
             int internalStructre = -1;
             foreach (string lines in filelines)
             {
@@ -226,7 +241,16 @@ namespace BattleEngineJsonCreation
                 if (newl.Contains("ArmorVals"))
                 {
                     armorline = newl;
+                    
                     break;
+                }
+                if (newl.Contains("Armor"))
+                {
+                    armortypeline = newl;
+                }
+                if (newl.Contains("Internal"))
+                {
+                    sturcturetypeline = newl;
                 }
             }
             if (!armorline.Contains("ArmorVals")) Reuse.EndProgram("FATAL ERROR: Unable to parse ArmorVals from Bedfile");
@@ -266,6 +290,48 @@ namespace BattleEngineJsonCreation
                     AssignedRearArmor = reararmorvaule,
                 });
             }
+            string armortype = "";
+            if (armortypeline.Contains("Standard"))
+            {
+                armortype = "emod_armorslots_standard";
+            }
+            if (armortypeline.Contains("Ferro"))
+            {
+                armortype = "emod_armorslots_ferrosfibrous";
+            }
+            mechdef.Inventory.Add(new Inventory
+            {
+                MountedLocation = Location.CenterTorso,
+                ComponentDefId = armortype,
+                ComponentDefType = ComponentDefType.Upgrade,
+                HardpointSlot = -1,
+                DamageLevel = "Functional",
+                PrefabName = null,
+                HasPrefabName = false,
+                SimGameUid = "",
+                Guid = null
+            });
+            string sturcturetype = "";
+            if (sturcturetypeline.Contains("Standard"))
+            {
+                sturcturetype = "emod_structureslots_standard";
+            }
+            if (sturcturetypeline.Contains("Endo"))
+            {
+                sturcturetype = "emod_structureslots_endosteel";
+            }
+            mechdef.Inventory.Add(new Inventory
+            {
+                MountedLocation = Location.CenterTorso,
+                ComponentDefId = sturcturetype,
+                ComponentDefType = ComponentDefType.Upgrade,
+                HardpointSlot = -1,
+                DamageLevel = "Functional",
+                PrefabName = null,
+                HasPrefabName = false,
+                SimGameUid = "",
+                Guid = null
+            });
             return mechdef;
         }
         public static MechDef MechLocations(Dictionary<string, (string, ComponentDefType)> componentDefDictionaryTuple, MechDef mechdef, string file, ChassisDef chassisDef)
@@ -341,6 +407,25 @@ namespace BattleEngineJsonCreation
                         });
                     }
                 }
+                //Testing Dummy Plug
+                else
+                {
+                    if (!(split[0].Contains(" -") || split[0].Contains(":ditto:")|| split[0].Contains("Engine")||split[0].Contains("Actuator")))
+                    {
+                        mechdef.Inventory.Add(new Inventory
+                        {
+                            MountedLocation = mountLocationVar,
+                            ComponentDefId = "dummyplug",
+                            ComponentDefType = ComponentDefType.Upgrade,
+                            HardpointSlot = -1,
+                            DamageLevel = "Functional",
+                            PrefabName = null,
+                            HasPrefabName = false,
+                            SimGameUid = "",
+                            Guid = null
+                        });
+                    }
+                }
             }
             return mechdef;
         }
@@ -379,13 +464,19 @@ namespace BattleEngineJsonCreation
             }
             return mechdef;
         }
-        public static MechDef Tags(MechDef mechdef)
+        public static MechDef Tags(ChassisDef chassisDef, MechDef mechdef)
         {
+            string unitWeightClass = "";
+            if (chassisDef.Tonnage >= 35) unitWeightClass = "unit_light";
+            if (chassisDef.Tonnage >= 55) unitWeightClass = "unit_medium";
+            if (chassisDef.Tonnage >= 60) unitWeightClass = "unit_heavy";
+            if (chassisDef.Tonnage >= 80) unitWeightClass = "unit_assault";
             mechdef.MechTags = new Tags
             {
                 Items = new List<string>
                 {
-                    "unit_release"
+                    "unit_release",
+                    unitWeightClass
                 }
             };
             return mechdef;

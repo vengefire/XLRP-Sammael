@@ -74,6 +74,7 @@ namespace BattleEngineJsonCreation
             //Parallel.ForEach(bedfiles, (file) =>
             foreach (var file in Directory.GetFiles(settings.BedPath, "*.bed", SearchOption.AllDirectories))
             {
+
                 Console.WriteLine($"Processing {file} on thread {Thread.CurrentThread.ManagedThreadId}");
                 bool cabCheck = MechBuilder.CabCheck(preFabDictionary, file);
                 if (cabCheck == true)
@@ -90,7 +91,7 @@ namespace BattleEngineJsonCreation
                         //Add Mech Engine = TTWalk * Tonnage
                         mechDef = MechBuilder.Engines(chassisDef, mechDef, file);
                         //Add Mech Tags 
-                        mechDef = MechBuilder.Tags(mechDef);
+                        mechDef = MechBuilder.Tags(chassisDef, mechDef);
                         string outputmechDef = Newtonsoft.Json.JsonConvert.SerializeObject(mechDef, Newtonsoft.Json.Formatting.Indented, Converter.Settings);
                         
                         File.WriteAllText(Path.Combine(settings.OutputDir, mechDef.Description.Id + ".json"), outputmechDef);
