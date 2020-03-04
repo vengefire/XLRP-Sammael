@@ -196,6 +196,7 @@ namespace Data.Console.Utils
                     var requiredTags = new List<string>();
                     var validFactions = new List<string>();
                     var excludedTags = new List<string>();
+                    
                     shopDefinitions.ForEach(manifestEntry =>
                     {
                         ExtractionUtils.ExtractTags(entry.Id, (JArray) manifestEntry.Json["Inventory"], manifestEntry.Json, requiredTags, excludedTags, validFactions);
@@ -223,6 +224,12 @@ namespace Data.Console.Utils
                     currentSheet.Cells[rowIndex, 1].Value = entry.Id;
                     var itemRarity = Convert.ToInt32(entry.Json["Description"]?["Rarity"]?.ToString());
                     var mappedRarity = rarityMap.First(tuple => itemRarity < tuple.max && itemRarity >= tuple.min);
+                    
+                    if (entry.Id.Contains("Template"))
+                    {
+                        mappedRarity = (-1, -1, "NA");
+                    }
+                    
                     currentSheet.Cells[rowIndex, columnHeadersDict["Availability"]].Value = mappedRarity.bracket;
                     currentSheet.Cells[rowIndex, columnHeadersDict["Required PlanetTags (Any of)"]].Value = string.Join("|", requiredTags);
                     currentSheet.Cells[rowIndex, columnHeadersDict["Restricted PlanetTags (Any of)"]].Value = string.Join("|", excludedTags);
