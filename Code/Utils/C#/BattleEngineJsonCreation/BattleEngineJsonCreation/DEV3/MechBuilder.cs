@@ -140,7 +140,7 @@ namespace BattleEngineJsonCreation
                     chassisShortName = split[1];
                     break;
             }
-            if (chassisShortName.Contains("Stinger"))
+            if (chassisShortName.Contains("Vulcan"))
             {
                 string something = "broken";
             }
@@ -220,12 +220,15 @@ namespace BattleEngineJsonCreation
                 {
                     Cost = chassisDef.Description.Cost,
                     Rarity = chassisDef.Description.Rarity,
-                    UiName = chassisDef.Description.UiName,
+                    Purchasable=chassisDef.Description.Purchasable,
+                    UiName = chassisDef.Description.UiName+" "+chassisDef.VariantName,
                     Id = chassisDef.Description.Id.Replace("chassisdef", "mechdef"),
                     Name = chassisDef.Description.Name,
                     Details = chassisDef.Description.Details,
                     Icon = chassisDef.Description.Icon
                 },
+                SimGameMechPartCost=chassisDef.Description.Cost,
+                Version=1,
                 Locations = new List<MechDefLocation>(),
                 Inventory = new List<Inventory>(),
             };
@@ -241,7 +244,7 @@ namespace BattleEngineJsonCreation
                 if (newl.Contains("ArmorVals"))
                 {
                     armorline = newl;
-                    
+
                     break;
                 }
                 if (newl.Contains("Armor"))
@@ -410,7 +413,7 @@ namespace BattleEngineJsonCreation
                 //Testing Dummy Plug
                 else
                 {
-                    if (!(split[0].Contains(" -") || split[0].Contains(":ditto:")|| split[0].Contains("Engine")||split[0].Contains("Actuator")))
+                    if (!(split[0].Contains(" -") || split[0].Contains(":ditto:") || split[0].Contains("Engine") || split[0].Contains("Actuator")))
                     {
                         mechdef.Inventory.Add(new Inventory
                         {
@@ -441,11 +444,8 @@ namespace BattleEngineJsonCreation
                 {
                     string[] split = newl.Split(',');
                     split = split[3].Split('/');
-                    enginerating = Convert.ToInt32(split[0]) * Convert.ToInt32(chassisDef.Tonnage);
-                    if (enginerating == 0)
-                    {
-                        string something = "broken";
-                    }
+                    int walkMP = Convert.ToInt32(split[0]);
+                    enginerating = walkMP * Convert.ToInt32(chassisDef.Tonnage);
                     if (enginerating < 100) engineString = "emod_engine_0";
                     mechdef.Inventory.Add(new Inventory
                     {
@@ -462,26 +462,180 @@ namespace BattleEngineJsonCreation
                     break;
                 }
             }
+
             return mechdef;
         }
-        public static MechDef Tags(ChassisDef chassisDef, MechDef mechdef)
+        public static MechDef Tags(ChassisDef chassisDef, MechDef mechDef)
         {
+            if (chassisDef.VariantName== "COM-1B")
+            {
+                string something = "broken";
+            }
+            int totalArmor = 0;
+            foreach (var item in mechDef.Locations)
+            {
+                totalArmor += Convert.ToInt32(item.CurrentArmor);
+            }
             string unitWeightClass = "";
-            if (chassisDef.Tonnage >= 35) unitWeightClass = "unit_light";
-            if (chassisDef.Tonnage >= 55) unitWeightClass = "unit_medium";
-            if (chassisDef.Tonnage >= 60) unitWeightClass = "unit_heavy";
-            if (chassisDef.Tonnage >= 80) unitWeightClass = "unit_assault";
-            mechdef.MechTags = new Tags
+            bool highArmor = false;
+            if (chassisDef.Tonnage <= 100)
+            {
+                unitWeightClass = "unit_assault";
+                if (totalArmor >= 999)
+                {
+                    highArmor = true;
+                }
+            }
+            if (chassisDef.Tonnage <= 75)
+            {
+                unitWeightClass = "unit_heavy";
+                if (totalArmor >= 750)
+                {
+                    highArmor = true;
+                }
+            }
+            if (chassisDef.Tonnage <= 55)
+            {
+                unitWeightClass = "unit_medium";
+                if (totalArmor >= 575)
+                {
+                    highArmor = true;
+                }
+            }
+            if (chassisDef.Tonnage <= 35)
+            {
+                unitWeightClass = "unit_light";
+                if (totalArmor >= 400)
+                {
+                    highArmor = true;
+                }
+            }
+            mechDef.MechTags = new Tags
             {
                 Items = new List<string>
                 {
                     "unit_release",
+                    "unit_ready",
                     unitWeightClass
                 }
             };
-            return mechdef;
+            if (highArmor == true)
+            {
+                CustomTags(mechDef, "unit_armor_high");
+                CustomTags(mechDef, "unit_lance_tank");
+            }
+            return mechDef;
         }
+        public static MechDef CustomTags(MechDef mechDef, string tagToAdd)
+        {
+            mechDef.MechTags.Items.Add(tagToAdd);
+            return mechDef;
+        }
+        public static MechDef RoleTag(ChassisDef chassisDef, MechDef mechDef)
+        {
+            int sniper = 0;
+            int scout = 0;
+            int brawler = 0;
+            int flanker = 0;
+            int jumpJets = 0;
+            int lrmCount = 0;
+            int mediumCount = 0;
+            int shortCount = 0;
+            if (chassisDef.Description.Name.Contains("Cicada"))
+            {
+                string something = "broken";
+            }
+            foreach (var item in mechDef.Inventory)
+            {
+                if ((item.ComponentDefId.Contains("Weapon_Autocannon_AC2_") || (item.ComponentDefId.Contains("PPC")) || 
+                    (item.ComponentDefId.Contains("Weapon_Autocannon_AC5_")))||(item.ComponentDefId.Contains("Weapon_Gauss"))) sniper++;
+                if (item.ComponentDefId.Contains("Weapon_LRM"))
+                {
+                    sniper++;
+                    lrmCount++;
+                }
+                if ((item.ComponentDefId.Contains("Weapon_SRM"))|| (item.ComponentDefId.Contains("Weapon_Laser_Medium")))
+                {
+                    flanker++;
+                    mediumCount++;
+                }
+                if ((item.ComponentDefId.Contains("Weapon_Laser_SmallLaser"))|| (item.ComponentDefId.Contains("Weapon_MachineGun")) || (item.ComponentDefId.Contains("Weapon_Flamer")))
+                {
+                    brawler++;
+                    shortCount++;
+                }
+                if (item.ComponentDefId.Contains("emod_engine"))
+                {
+                    string[] split = item.ComponentDefId.Split('_');
+                    if (split.Length == 3)
+                    {
+                        if (Convert.ToInt32(split[2])/Convert.ToInt32(chassisDef.Tonnage) >= 6) scout = 6;
+                    }
+                }
+                if (item.ComponentDefId.Contains("Actuator")) brawler++;
+            }
+            if (chassisDef.MeleeDamage > chassisDef.Tonnage) brawler ++;
+            if (scout > brawler)
+            {
+                if ((shortCount + mediumCount + sniper >= 3) && !mechDef.MechTags.Items.Contains("unit_lance"))
+                {
+                    CustomTags(mechDef, "unit_lance_assassin");
+                }
+                else
+                {
+                    if (!mechDef.MechTags.Items.Contains("unit_lance"))
+                    {
+                        CustomTags(mechDef, "unit_lance_vanguard");
+                    }
+                }
 
+                CustomTags(mechDef, "unit_role_scout");
+                CustomTags(mechDef, "unit_speed_high");
+            }
+            else if (brawler > sniper)
+            {
+                CustomTags(mechDef, "unit_role_brawler");
+                CustomTags(mechDef, "unit_lance_vanguard");
+                CustomTags(mechDef, "unit_speed_low");
+            }
+            else if (sniper > flanker)
+            {
+                CustomTags(mechDef, "unit_role_sniper");
+                CustomTags(mechDef, "unit_range_long");
+                CustomTags(mechDef, "unit_speed_low");
+                CustomTags(mechDef, "unit_lance_assassin");
+            }
+            else
+            {
+                CustomTags(mechDef, "unit_role_flanker");
+                CustomTags(mechDef, "unit_speed_low");
+                CustomTags(mechDef, "unit_lance_assassin");
+            }
+            //Other Tags
+            if (jumpJets > 0)
+            {
+                CustomTags(mechDef, "unit_jumpOK");
+            }
+            if (lrmCount > 0)
+            {
+                CustomTags(mechDef, "unit_indirectFire");
+                if (!mechDef.MechTags.Items.Contains("unit_range_long")) CustomTags(mechDef, "unit_range_long");
+                if (!mechDef.MechTags.Items.Contains("unit_lance_support")) CustomTags(mechDef, "unit_lance_support");
+            }
+            if (chassisDef.Description.Name.Contains("Urban"))
+            {
+                CustomTags(mechDef, "unit_urbie");
+            }
+            if (mediumCount > 0)
+            {
+                CustomTags(mechDef, "unit_range_medium");
+            }
+            if (shortCount > 0)
+            {
+                CustomTags(mechDef, "unit_range_short");
+            }
+            return mechDef;
+        }
         public static double MechISArmor(double tons, Location location, bool rear)
         {
             int index = (int)location + 2;

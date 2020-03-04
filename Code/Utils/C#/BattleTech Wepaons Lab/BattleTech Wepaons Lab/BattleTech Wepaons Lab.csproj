@@ -72,6 +72,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\StatisticData.datasource" />
+    <None Include="Properties\DataSources\StatusEffect.datasource" />
+    <None Include="Properties\DataSources\StatusEffectDescription.datasource" />
+    <None Include="Properties\DataSources\Tags.datasource" />
+    <None Include="Properties\DataSources\TargetingData.datasource" />
+    <None Include="Properties\DataSources\Weapons.datasource" />
+    <None Include="Properties\DataSources\WeaponsDescription.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace BattleTech_Wepaons_Lab
 {
@@ -21,47 +22,21 @@ namespace BattleTech_Wepaons_Lab
 
         private void BattleTechWeaponLab_Load(object sender, EventArgs e)
         {
-            ListBox lb = new ListBox();
-            this.Controls.Add(lb);
-            lb.Items.Add("123");
-            lb.Items.Add(456);
-            lb.Items.Add(false);
+
         }
-        private void CreateLabels(int topControl, int leftControl, int count)
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < count; i++)
-            {
-                Label dynamicLabel = new Label();
-                this.Controls.Add(dynamicLabel);
-                dynamicLabel.Top = topControl * 25;
-                dynamicLabel.Left = 25;
-                dynamicLabel.Text = "Text: " + this.leftcontrol.ToString();
-                topControl++;
-            }
+            //var jsonString= JsonConvert.DeserializeObject<DataSet>(File.ReadAllText("weaponTemplate.json"));
+            string jsonString = File.ReadAllText("weaponTemplate.json");
+            var weapons = Weapons.FromJson(jsonString);
+            dataGridView1.DataSource = new List<Weapons>() { weapons };
+
         }
-        private void CreateTexBox(int topControl, int leftControl, int count)
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            for (int i = 0; i < count; i++)
-            {
-                TextBox textBox = new TextBox();
-                this.Controls.Add(textBox);
-                textBox.Top = topControl*25;
-                textBox.Left = leftControl;
-                textBox.Text = "Box of text" + count.ToString();
-                topControl++;
-            }
-        }
-        private void CreateComboBox(int topControl, int leftControl, int count)
-        {
-            for (int i = 0; i < count; i++)
-            {
-                ComboBox cmbBox = new ComboBox();
-                this.Controls.Add(cmbBox);
-                cmbBox.Top = topControl * 25;
-                cmbBox.Left = leftControl;
-                cmbBox.Text = "Box of text" + count.ToString();
-                topControl++;
-            }
+
         }
     }
 }

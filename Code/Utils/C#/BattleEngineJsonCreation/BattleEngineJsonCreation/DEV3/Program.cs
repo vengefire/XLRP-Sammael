@@ -86,14 +86,14 @@ namespace BattleEngineJsonCreation
                         //Console.WriteLine(file + " " + chassisDef.Description.Id);
                         //Build MechDef from ChassisFile
                         var mechDef = MechBuilder.MechDefs(chassisDef, file);
+                        //Add Mech Tags 
+                        mechDef = MechBuilder.Tags(chassisDef, mechDef);
                         //Add Mech Inventory "Parts"
                         mechDef = MechBuilder.MechLocations(gearDic, mechDef, file, chassisDef);
                         //Add Mech Engine = TTWalk * Tonnage
                         mechDef = MechBuilder.Engines(chassisDef, mechDef, file);
-                        //Add Mech Tags 
-                        mechDef = MechBuilder.Tags(chassisDef, mechDef);
+                        mechDef = MechBuilder.RoleTag(chassisDef, mechDef);
                         string outputmechDef = Newtonsoft.Json.JsonConvert.SerializeObject(mechDef, Newtonsoft.Json.Formatting.Indented, Converter.Settings);
-                        
                         File.WriteAllText(Path.Combine(settings.OutputDir, mechDef.Description.Id + ".json"), outputmechDef);
                         logMemory = logMemory + Path.GetFileName(file) + "," + mechDef.Description.Id + ",Generated\r\n";
                         //var mechDef = MechBuilder.MechDefs(chassisDef);

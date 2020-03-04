@@ -10,18 +10,18 @@ namespace BattleTech_Wepaons_Lab
 {
     using System;
     using System.Collections.Generic;
+
     using System.Globalization;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
 
-    public enum WeaponMount { AntiPersonnel, Ballistic, Energy, Missile };
     public partial class Weapons
     {
         [JsonProperty("Category", NullValueHandling = NullValueHandling.Ignore)]
         public string Category { get; set; }
 
         [JsonProperty("Type", NullValueHandling = NullValueHandling.Ignore)]
-        public WeaponMount WeaponType { get; set; }
+        public string Type { get; set; }
 
         [JsonProperty("WeaponSubType", NullValueHandling = NullValueHandling.Ignore)]
         public string WeaponSubType { get; set; }
@@ -315,55 +315,5 @@ namespace BattleTech_Wepaons_Lab
                 new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
             },
         };
-    }
-    internal class WeaponMountConverter : JsonConverter
-    {
-        public override bool CanConvert(Type t) => t == typeof(WeaponMount) || t == typeof(WeaponMount?);
-
-        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
-        {
-            if (reader.TokenType == JsonToken.Null) return null;
-            var value = serializer.Deserialize<string>(reader);
-            switch (value)
-            {
-                case "AntiPersonnel":
-                    return WeaponMount.AntiPersonnel;
-                case "Ballistic":
-                    return WeaponMount.Ballistic;
-                case "Energy":
-                    return WeaponMount.Energy;
-                case "Missile":
-                    return WeaponMount.Missile;
-            }
-            throw new Exception("Cannot unmarshal type WeaponMount");
-        }
-
-        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
-        {
-            if (untypedValue == null)
-            {
-                serializer.Serialize(writer, null);
-                return;
-            }
-            var value = (WeaponMount)untypedValue;
-            switch (value)
-            {
-                case WeaponMount.AntiPersonnel:
-                    serializer.Serialize(writer, "AntiPersonnel");
-                    return;
-                case WeaponMount.Ballistic:
-                    serializer.Serialize(writer, "Ballistic");
-                    return;
-                case WeaponMount.Energy:
-                    serializer.Serialize(writer, "Energy");
-                    return;
-                case WeaponMount.Missile:
-                    serializer.Serialize(writer, "Missile");
-                    return;
-            }
-            throw new Exception("Cannot marshal type WeaponMount");
-        }
-
-        public static readonly WeaponMountConverter Singleton = new WeaponMountConverter();
     }
 }
