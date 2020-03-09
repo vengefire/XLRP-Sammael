@@ -50,6 +50,11 @@ namespace Data.Core.ModObjects
             {
                 ManifestEntries.Add(new ManifestEntry(null, null, ManifestGroupObjectType, Utils.GetPrefabIdFromPath(Path), this, AssetBundleName));
             }
+
+            var ignoreList = new List<string>() {"desktop.ini"};
+            ManifestEntries.Where(entry => entry.FileInfo != null && ignoreList.Contains(entry.FileInfo.Name))
+                .ToList()
+                .ForEach(entry => ManifestEntries.Remove(entry));
         }
     }
 }
