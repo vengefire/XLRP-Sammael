@@ -13,14 +13,19 @@ namespace Data.Console
     {
         private static void Main(string[] args)
         {
-            //var sourceDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH\Mods";
             //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\RogueTech";
             //var sourceDirectory = @"D:\XLRP Fixes\XLRP - Reference - 20190725 - With CAB";
-            // var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Sammael\Build\XLRP\1.8 Clean Build";
-            var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Complete";
+            //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Sammael\Build\XLRP\1.8 Clean Build";
+            //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Complete";
             //var sourceDirectory = @"D:\Test Data\XAI";
-            var btDirectory = @"D:\Test Data\BT Base Data";
-            var dlcDirectory = @"C:\Users\Stephen Weistra\gitrepos\bt-dlc-designdata";
+            
+            //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Complete";
+            //var btDirectory = @"D:\Test Data\BT Base Data";
+            //var dlcDirectory = @"C:\Users\Stephen Weistra\gitrepos\bt-dlc-designdata";
+         
+            var sourceDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH\Mods";
+            var btDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH";
+            var dlcDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH\Repository\bt-dlc-designdata";
 
             var manifestService = new ManifestService();
             var manifest = manifestService.InitManifestFromDisk(btDirectory, dlcDirectory);
@@ -81,7 +86,7 @@ namespace Data.Console
             System.Console.WriteLine("Failed Merges : \r\n" +
                                      $"{string.Join("\r\n", ModMerger.FailedMerges.Select(tuple => $"{tuple.Item1.FileInfo.FullName} - {tuple.Item2}"))}");
 
-            var objectsWithStatusEffects = result.mergedManifestEntries.Where(entry =>
+            /*var objectsWithStatusEffects = result.mergedManifestEntries.Where(entry =>
             {
                 if (entry.GameObjectType == GameObjectTypeEnum.Prefab || !entry.FileInfo.Extension.Contains("json"))
                 {
@@ -121,7 +126,7 @@ namespace Data.Console
                 }
 
                 return false;
-            });
+            });*/
 
             ContentExtractors.GenerateStoreContentList(result.mergedManifestEntries, @"C:\tmp\", @"test-xlrp-store-content.xlsx");
             // ContentExtractors.GenerateTacticalContentList(result.mergedManifestEntries, @"C:\tmp\", @"content.xlsx");
