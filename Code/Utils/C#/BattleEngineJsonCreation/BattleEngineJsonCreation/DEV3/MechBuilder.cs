@@ -369,7 +369,7 @@ namespace BattleEngineJsonCreation
                             componentDefType = ComponentDefType.JumpJet;
                             if (chassisDef.Tonnage <= 90) compDefId = "Gear_JumpJet_Generic_Assault";
                             if (chassisDef.Tonnage <= 60) compDefId = "Gear_JumpJet_Generic_Heavy";
-                            if (chassisDef.Tonnage <= 35) compDefId = "Gear_JumpJet_Generic_Standard";
+                            if (chassisDef.Tonnage <= 55) compDefId = "Gear_JumpJet_Generic_Standard";
                         }
                         else
                         {
