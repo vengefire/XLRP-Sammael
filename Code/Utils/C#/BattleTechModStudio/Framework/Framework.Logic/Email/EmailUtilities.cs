@@ -19,7 +19,8 @@ namespace Framework.Logic.Email
         static EmailUtilities()
         {
             Mapper.CreateMap<string, System.Net.Mail.MailAddress>()
-                .ConvertUsing(emailAddress => null == emailAddress ? null : new System.Net.Mail.MailAddress(emailAddress));
+                .ConvertUsing(emailAddress =>
+                    null == emailAddress ? null : new System.Net.Mail.MailAddress(emailAddress));
 
             Mapper.CreateMap<List<string>, System.Net.Mail.MailAddressCollection>().ConvertUsing(
                 emailAddressList =>
@@ -100,7 +101,8 @@ namespace Framework.Logic.Email
                 }
 
                 email.FileAttachments = email.FileAttachments ?? new List<EmailFileAttachment>();
-                email.FileAttachments.Add(new EmailFileAttachment {Email = email, Name = att.Name, Length = (int) att.ContentStream.Length, Content = bytes});
+                email.FileAttachments.Add(new EmailFileAttachment
+                    {Email = email, Name = att.Name, Length = (int) att.ContentStream.Length, Content = bytes});
             }
 
             return email;

@@ -84,7 +84,7 @@ namespace Data.Console.Utils
                         continue;
                     }
 
-                    var mech = MechModel.FromCsv(line);
+                    var mech = FromCsv(line);
                     mechList.Add(mech);
                 }
             }

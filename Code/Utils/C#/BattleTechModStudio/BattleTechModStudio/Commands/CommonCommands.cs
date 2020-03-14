@@ -7,9 +7,9 @@ namespace BattleTechModStudio.Commands
     {
         static CommonCommands()
         {
-            CommonCommands.SettingsService = App.Container.GetInstance<ISettingsService>();
-            CommonCommands.SaveCurrentSettingsCommand = new SaveSettingsCommand(CommonCommands.SettingsService);
-            CommonCommands.LoadCurrentSettingsCommand = new LoadSettingsCommand(CommonCommands.SettingsService);
+            SettingsService = App.Container.GetInstance<ISettingsService>();
+            SaveCurrentSettingsCommand = new SaveSettingsCommand(SettingsService);
+            LoadCurrentSettingsCommand = new LoadSettingsCommand(SettingsService);
         }
 
         public static ICommand LoadCurrentSettingsCommand { get; }

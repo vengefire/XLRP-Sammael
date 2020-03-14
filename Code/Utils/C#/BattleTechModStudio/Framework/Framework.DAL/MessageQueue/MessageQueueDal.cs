@@ -25,7 +25,7 @@ namespace Framework.Data.MessageQueue
 
         static MessageQueueService()
         {
-            MessageQueueService.InitTypeMaps();
+            InitTypeMaps();
         }
 
         public MessageQueueService(

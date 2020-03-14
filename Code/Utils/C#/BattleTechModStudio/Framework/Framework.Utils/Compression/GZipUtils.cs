@@ -71,13 +71,13 @@ namespace Framework.Utils.Compression
         public static string GetBase64Document(string path)
         {
             return !string.IsNullOrEmpty(path)
-                ? Convert.ToBase64String(GZipUtils.Compress(File.ReadAllBytes(path)))
+                ? Convert.ToBase64String(Compress(File.ReadAllBytes(path)))
                 : string.Empty;
         }
 
         public static byte[] GetCompressedDocumentContentBytes(string path)
         {
-            return !string.IsNullOrEmpty(path) ? GZipUtils.Compress(File.ReadAllBytes(path)) : null;
+            return !string.IsNullOrEmpty(path) ? Compress(File.ReadAllBytes(path)) : null;
         }
     }
 }

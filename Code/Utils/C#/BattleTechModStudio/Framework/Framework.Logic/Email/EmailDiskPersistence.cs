@@ -19,7 +19,8 @@ namespace Framework.Logic.Email
         {
             if (null == repositoryBaseDirectory)
             {
-                throw new InvalidProgramException("No Email repository base directory setting could be found in the application configuration file.");
+                throw new InvalidProgramException(
+                    "No Email repository base directory setting could be found in the application configuration file.");
             }
 
             var repositoryRelativeDirectory = string.Format(

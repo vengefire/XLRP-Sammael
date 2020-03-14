@@ -60,7 +60,10 @@ namespace Framework.Logic.Queue
             {
                 case MessageProcessingMode.LocalChildNodeConcurrent:
                 {
-                    for (var i = 0; i < numWorkers; i++) processorNodes.Add(CreateProcessorNode());
+                    for (var i = 0; i < numWorkers; i++)
+                    {
+                        processorNodes.Add(CreateProcessorNode());
+                    }
 
                     break;
                 }

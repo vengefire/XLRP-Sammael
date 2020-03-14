@@ -10,11 +10,11 @@ namespace UI.Core.Utils.Utils
             "Margin",
             typeof(Thickness),
             typeof(MarginSetter),
-            new UIPropertyMetadata(new Thickness(), MarginSetter.MarginChangedCallback));
+            new UIPropertyMetadata(new Thickness(), MarginChangedCallback));
 
         public static Thickness GetMargin(DependencyObject obj)
         {
-            return (Thickness) obj.GetValue(MarginSetter.MarginProperty);
+            return (Thickness) obj.GetValue(MarginProperty);
         }
 
         public static void MarginChangedCallback(object sender, DependencyPropertyChangedEventArgs e)
@@ -26,12 +26,12 @@ namespace UI.Core.Utils.Utils
                 return;
             }
 
-            panel.Loaded += MarginSetter.PanelLoaded;
+            panel.Loaded += PanelLoaded;
         }
 
         public static void SetMargin(DependencyObject obj, Thickness value)
         {
-            obj.SetValue(MarginSetter.MarginProperty, value);
+            obj.SetValue(MarginProperty, value);
         }
 
         private static void PanelLoaded(object sender, RoutedEventArgs e)
@@ -47,7 +47,7 @@ namespace UI.Core.Utils.Utils
                     continue;
                 }
 
-                fe.Margin = MarginSetter.GetMargin(panel);
+                fe.Margin = GetMargin(panel);
             }
         }
     }

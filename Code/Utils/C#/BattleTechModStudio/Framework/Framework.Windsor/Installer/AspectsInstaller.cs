@@ -19,7 +19,8 @@ namespace Framework.Windsor.Installer
                 Component.For<IInterceptor>()
                     .ImplementedBy<LogAspect>()
                     .Named("LogAspect")
-                    .LifeStyle.Transient.DependsOn(Dependency.OnAppSettingsValue("SkipLog", "SkipServiceInstrumentLog")),
+                    .LifeStyle.Transient
+                    .DependsOn(Dependency.OnAppSettingsValue("SkipLog", "SkipServiceInstrumentLog")),
                 Component.For<IInterceptor>()
                     .ImplementedBy<LogAspect>()
                     .Named("LogEntryAspect")

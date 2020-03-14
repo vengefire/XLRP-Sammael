@@ -119,7 +119,11 @@ namespace Framework.Logic.Email
             }
             else
             {
-                var folderView = new FolderView(100) {PropertySet = new PropertySet(BasePropertySet.IdOnly) {FolderSchema.DisplayName}, Traversal = FolderTraversal.Shallow};
+                var folderView = new FolderView(100)
+                {
+                    PropertySet = new PropertySet(BasePropertySet.IdOnly) {FolderSchema.DisplayName},
+                    Traversal = FolderTraversal.Shallow
+                };
 
                 var findFolder = new Func<FolderId, string, FolderId>(
                     (parentFolder, searchFolderName) =>
@@ -205,14 +209,15 @@ namespace Framework.Logic.Email
             return emailAddressCollection.Select(address => address.ToString()).ToList();
         }
 
-        private static async Task<List<EmailFileAttachment>> ConvertAttachmentCollection(AttachmentCollection attachmenCollection)
+        private static async Task<List<EmailFileAttachment>> ConvertAttachmentCollection(
+            AttachmentCollection attachmenCollection)
         {
             var emailFileAttachments = new EditableList<EmailFileAttachment>();
 
             var fileAttachments = attachmenCollection.Where(attachment => attachment is FileAttachment);
             foreach (var fileAttachment in fileAttachments)
             {
-                var emailFileAttachment = await ExchangeHandler.ConvertFileAttachment(fileAttachment as FileAttachment);
+                var emailFileAttachment = await ConvertFileAttachment(fileAttachment as FileAttachment);
                 emailFileAttachments.Add(emailFileAttachment);
             }
 
@@ -225,7 +230,8 @@ namespace Framework.Logic.Email
         {
             await Task.Factory.StartNew(attachment.Load);
 
-            return new EmailFileAttachment {Name = attachment.Name, Length = attachment.Size, Content = attachment.Content};
+            return new EmailFileAttachment
+                {Name = attachment.Name, Length = attachment.Size, Content = attachment.Content};
         }
 
         private async void PollMailboxTick(object state)
@@ -298,13 +304,13 @@ namespace Framework.Logic.Email
             var email = new Domain.Email.Models.Email
             {
                 FromAddress = emailMessage.From.ToString(),
-                ToAddresses = ExchangeHandler.ConvertEmailAddressCollection(emailMessage.ToRecipients),
-                CCAddresses = ExchangeHandler.ConvertEmailAddressCollection(emailMessage.CcRecipients),
-                BCCAddresses = ExchangeHandler.ConvertEmailAddressCollection(emailMessage.BccRecipients),
+                ToAddresses = ConvertEmailAddressCollection(emailMessage.ToRecipients),
+                CCAddresses = ConvertEmailAddressCollection(emailMessage.CcRecipients),
+                BCCAddresses = ConvertEmailAddressCollection(emailMessage.BccRecipients),
                 Subject = emailMessage.Subject,
                 Body = emailMessage.Body,
                 DateReceived = DateTime.Now,
-                FileAttachments = await ExchangeHandler.ConvertAttachmentCollection(emailMessage.Attachments),
+                FileAttachments = await ConvertAttachmentCollection(emailMessage.Attachments),
                 MimeBytes = emailMessage.MimeContent.Content
             };
 

@@ -31,10 +31,10 @@ namespace Framework.Utils.Validation
 
                 for (var i = 80; i < 90; i++)
                 {
-                    var gen = SouthAfricanIdentityNumber.Space(yy.ToString(), 2) + SouthAfricanIdentityNumber.Space(mm.ToString(), 2) + SouthAfricanIdentityNumber.Space(dd.ToString(), 2)
-                              + SouthAfricanIdentityNumber.Space(g.ToString(), 2) + SouthAfricanIdentityNumber.Space(i.ToString(), 3);
+                    var gen = Space(yy.ToString(), 2) + Space(mm.ToString(), 2) + Space(dd.ToString(), 2)
+                              + Space(g.ToString(), 2) + Space(i.ToString(), 3);
 
-                    if (SouthAfricanIdentityNumber.IsValid(gen))
+                    if (IsValid(gen))
                     {
                         return gen;
                     }
@@ -48,7 +48,7 @@ namespace Framework.Utils.Validation
             if (identityNumber.IsNumeric())
             {
                 return identityNumber.Length == 13 &&
-                       SouthAfricanIdentityNumber.GetIdentityNumberControlDigit(identityNumber).ToString().Equals(identityNumber.Substring(12, 1));
+                       GetIdentityNumberControlDigit(identityNumber).ToString().Equals(identityNumber.Substring(12, 1));
             }
 
             return false;
@@ -70,13 +70,22 @@ namespace Framework.Utils.Validation
             var evenComposite = string.Empty;
             var even = 0;
 
-            for (var i = 0; i < str.Length - 1; i += 2) odd += Convert.ToInt16(str.Substring(i, 1));
+            for (var i = 0; i < str.Length - 1; i += 2)
+            {
+                odd += Convert.ToInt16(str.Substring(i, 1));
+            }
 
-            for (var i = 1; i < str.Length - 1; i += 2) evenComposite += str.Substring(i, 1);
+            for (var i = 1; i < str.Length - 1; i += 2)
+            {
+                evenComposite += str.Substring(i, 1);
+            }
 
             var evenCompositeValue = Convert.ToInt32(evenComposite) * 2;
 
-            for (var i = 0; i < evenCompositeValue.ToString().Length; i++) even += Convert.ToInt16(evenCompositeValue.ToString().Substring(i, 1));
+            for (var i = 0; i < evenCompositeValue.ToString().Length; i++)
+            {
+                even += Convert.ToInt16(evenCompositeValue.ToString().Substring(i, 1));
+            }
 
             return Convert.ToInt16(str.Substring(str.Length - 1, 1)) == 10 - (even + odd) % 10;
         }
@@ -85,10 +94,16 @@ namespace Framework.Utils.Validation
         {
             int d;
             var a = 0;
-            for (var i = 0; i < 6; i++) a += int.Parse(idNumber[2 * i].ToString());
+            for (var i = 0; i < 6; i++)
+            {
+                a += int.Parse(idNumber[2 * i].ToString());
+            }
 
             var b = 0;
-            for (var i = 0; i < 6; i++) b = b * 10 + int.Parse(idNumber[2 * i + 1].ToString(CultureInfo.InvariantCulture));
+            for (var i = 0; i < 6; i++)
+            {
+                b = b * 10 + int.Parse(idNumber[2 * i + 1].ToString(CultureInfo.InvariantCulture));
+            }
 
             b *= 2;
             var c = 0;

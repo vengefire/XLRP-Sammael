@@ -32,8 +32,12 @@ namespace Framework.Logic.WCF.DispatchMessageInspector
             try
             {
                 threadId = Thread.CurrentThread.ManagedThreadId;
-                MessageInspector.MessageDictionary.Add(threadId, request);
-                var logEntry = new ServiceMethodLog {Service = request.Headers.To.LocalPath, Method = request.Headers.Action, RequestMessage = request.ToString()};
+                MessageDictionary.Add(threadId, request);
+                var logEntry = new ServiceMethodLog
+                {
+                    Service = request.Headers.To.LocalPath, Method = request.Headers.Action,
+                    RequestMessage = request.ToString()
+                };
 
                 logId = serviceMethodLogService.AddLog(ref logEntry);
             }
@@ -53,7 +57,7 @@ namespace Framework.Logic.WCF.DispatchMessageInspector
                 var context = (MessageInspectorContext) correlationState;
                 var elapsedTime = DateTime.Now - context.InvocationTimeStamp;
                 serviceMethodLogService.UpdateLog(context.LogId, reply.ToString(), elapsedTime.Ticks);
-                MessageInspector.MessageDictionary.Remove(context.ThreadId);
+                MessageDictionary.Remove(context.ThreadId);
             }
             finally
             {
@@ -63,7 +67,7 @@ namespace Framework.Logic.WCF.DispatchMessageInspector
 
         public static Message GetCurrentThreadContextRequestMessage()
         {
-            return MessageInspector.MessageDictionary[Thread.CurrentThread.ManagedThreadId];
+            return MessageDictionary[Thread.CurrentThread.ManagedThreadId];
         }
 
         public struct MessageInspectorContext

@@ -10,7 +10,8 @@ namespace Data.Core.GameObjects
         private JObject _json;
         private string _text;
 
-        public ManifestEntry(DirectoryInfo directoryInfo, FileInfo fileInfo, GameObjectTypeEnum gameObjectType, string id, ManifestEntryGroup manifestEntryGroup, string assetBundleName)
+        public ManifestEntry(DirectoryInfo directoryInfo, FileInfo fileInfo, GameObjectTypeEnum gameObjectType,
+            string id, ManifestEntryGroup manifestEntryGroup, string assetBundleName)
         {
             DirectoryInfo = directoryInfo;
             FileInfo = fileInfo;

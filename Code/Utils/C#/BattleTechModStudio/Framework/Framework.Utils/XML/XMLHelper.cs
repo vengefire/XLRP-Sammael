@@ -21,7 +21,7 @@ namespace Framework.Utils.XML
 
             using (var stream = new MemoryStream(encoding.GetBytes(xmlString)))
             {
-                return XmlHelper.Deserialize<T>(stream);
+                return Deserialize<T>(stream);
             }
         }
 
@@ -38,7 +38,7 @@ namespace Framework.Utils.XML
             encoding = encoding ?? new UTF8Encoding();
             using (var memoryStream = new MemoryStream(encoding.GetBytes(xml)))
             {
-                return XmlHelper.DataContractDeserialize<T>(memoryStream);
+                return DataContractDeserialize<T>(memoryStream);
             }
         }
 
@@ -47,7 +47,7 @@ namespace Framework.Utils.XML
             encoding = encoding ?? new UTF8Encoding();
             using (var memoryStream = new MemoryStream(encoding.GetBytes(xml)))
             {
-                return XmlHelper.DataContractDeserialize(typeInfo, memoryStream);
+                return DataContractDeserialize(typeInfo, memoryStream);
             }
         }
 
@@ -81,9 +81,9 @@ namespace Framework.Utils.XML
             out string[] warnings,
             out string[] errors) where T : class
         {
-            XmlHelper.Validate(stream, schemaStreams, out warnings, out errors);
+            Validate(stream, schemaStreams, out warnings, out errors);
 
-            return errors.Any() ? null : XmlHelper.Deserialize<T>(stream);
+            return errors.Any() ? null : Deserialize<T>(stream);
         }
 
         public static T DataContractDeserializewithValidation<T>(
@@ -92,9 +92,9 @@ namespace Framework.Utils.XML
             out string[] warnings,
             out string[] errors) where T : class
         {
-            XmlHelper.Validate(stream, schemaStreams, out warnings, out errors);
+            Validate(stream, schemaStreams, out warnings, out errors);
 
-            return errors.Any() ? null : XmlHelper.DataContractDeserialize<T>(stream);
+            return errors.Any() ? null : DataContractDeserialize<T>(stream);
         }
 
         public static MemoryStream Serialize(Type typeInfo, object classInstance, Encoding encoding = null)

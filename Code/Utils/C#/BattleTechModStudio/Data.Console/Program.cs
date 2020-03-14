@@ -1,11 +1,9 @@
 ﻿using System.Linq;
 using Data.Console.Utils;
-using Data.Core.Enums;
 using Data.Core.Misc;
 using Data.Core.ModObjects;
 using Data.Core.Parsers;
 using Data.Services;
-using Newtonsoft.Json.Linq;
 
 namespace Data.Console
 {
@@ -18,11 +16,11 @@ namespace Data.Console
             //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Sammael\Build\XLRP\1.8 Clean Build";
             //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Complete";
             //var sourceDirectory = @"D:\Test Data\XAI";
-            
+
             //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Complete";
             //var btDirectory = @"D:\Test Data\BT Base Data";
             //var dlcDirectory = @"C:\Users\Stephen Weistra\gitrepos\bt-dlc-designdata";
-         
+
             var sourceDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH\Mods";
             var btDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH";
             var dlcDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH\Repository\bt-dlc-designdata";
@@ -67,7 +65,8 @@ namespace Data.Console
             });
 
             var typeUnion = VersionManifestParser.AllTypes;
-            modCollection.Mods.SelectMany(mod => mod.ManifestEntryGroups.Select(group => group.Type)).Distinct().ToList().ForEach(s => typeUnion.Add(s));
+            modCollection.Mods.SelectMany(mod => mod.ManifestEntryGroups.Select(group => group.Type)).Distinct()
+                .ToList().ForEach(s => typeUnion.Add(s));
             var sortedTypes = typeUnion.ToList();
             sortedTypes.Sort(string.CompareOrdinal);
             var typeEnumString = TypeEnumGenerator.GenerateEnum(
@@ -128,7 +127,8 @@ namespace Data.Console
                 return false;
             });*/
 
-            ContentExtractors.GenerateStoreContentList(result.mergedManifestEntries, @"C:\tmp\", @"test-xlrp-store-content.xlsx");
+            ContentExtractors.GenerateStoreContentList(result.mergedManifestEntries, @"C:\tmp\",
+                @"test-xlrp-store-content.xlsx");
             // ContentExtractors.GenerateTacticalContentList(result.mergedManifestEntries, @"C:\tmp\", @"content.xlsx");
             /*var planetTags = PlanetTagEnumerator.EnumeratePlanetTags(result.mergedManifestEntries);
             planetTags.GroupBy(tag => tag.category, tag => tag.value, (category, tags) => new {category = category, tags = tags}).ToList().ForEach(tagGroup =>

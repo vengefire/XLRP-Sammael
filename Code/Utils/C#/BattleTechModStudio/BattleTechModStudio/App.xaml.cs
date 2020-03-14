@@ -14,8 +14,8 @@ namespace BattleTechModStudio
         protected override void OnStartup(StartupEventArgs e)
         {
             var bootstrapper = new Bootstrap();
-            App.Container = bootstrapper.RegisterContainer();
-            var mainWindow = App.Container.GetInstance<Window>();
+            Container = bootstrapper.RegisterContainer();
+            var mainWindow = Container.GetInstance<Window>();
             mainWindow.Show();
         }
     }

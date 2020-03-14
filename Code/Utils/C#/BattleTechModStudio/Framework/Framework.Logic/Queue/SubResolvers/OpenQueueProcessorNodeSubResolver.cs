@@ -37,7 +37,8 @@ namespace Framework.Logic.Queue.SubResolvers
             ComponentModel model,
             DependencyModel dependency)
         {
-            return queueProcessorNodeTypes.Select(type => kernel.Resolve(typeof(IQueueProcessorNode<>).MakeGenericType(type)));
+            return queueProcessorNodeTypes.Select(type =>
+                kernel.Resolve(typeof(IQueueProcessorNode<>).MakeGenericType(type)));
         }
     }
 }

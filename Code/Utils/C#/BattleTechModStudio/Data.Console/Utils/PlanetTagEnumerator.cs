@@ -16,7 +16,8 @@ namespace Data.Console.Utils
                 .ForEach(entry =>
                 {
                     var tags = (JArray) entry.Json["Tags"]?["items"];
-                    tags?.Where(token => !token.Value<string>().Contains("planet_name_")).ToList().ForEach(token => planetTags.Add(token.Value<string>()));
+                    tags?.Where(token => !token.Value<string>().Contains("planet_name_")).ToList()
+                        .ForEach(token => planetTags.Add(token.Value<string>()));
                 });
 
             var sortedList = planetTags.ToList();

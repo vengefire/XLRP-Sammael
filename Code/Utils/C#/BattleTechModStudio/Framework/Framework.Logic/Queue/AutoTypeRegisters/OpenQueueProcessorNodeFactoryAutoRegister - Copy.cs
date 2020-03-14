@@ -13,7 +13,8 @@ namespace Framework.Logic.Queue.AutoTypeRegisters
         public static void RegisterQueueProcessorNodeFactories(IEnumerable<Type> types, IWindsorContainer container)
         {
             container.Register(
-                types.Select(type => Component.For(typeof(IQueueProcessorNodeFactory<>).MakeGenericType(type)).AsFactory())
+                types.Select(type =>
+                        Component.For(typeof(IQueueProcessorNodeFactory<>).MakeGenericType(type)).AsFactory())
                     .Cast<IRegistration>()
                     .ToArray());
         }

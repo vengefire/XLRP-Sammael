@@ -12,7 +12,8 @@ namespace Framework.Logic.Tasks.AutoTypeRegisters
 {
     public static class ScheduledTaskAutoRegister
     {
-        public static void RegisterConfiguredScheduledTasks(TaskConfigSectionHandler config, IWindsorContainer container)
+        public static void RegisterConfiguredScheduledTasks(TaskConfigSectionHandler config,
+            IWindsorContainer container)
         {
             var registrations = new List<IRegistration>();
 
@@ -32,20 +33,20 @@ namespace Framework.Logic.Tasks.AutoTypeRegisters
                 switch (schedulerType)
                 {
                     case TaskSchedulerType.Interval:
-                        registrations.Add(ScheduledTaskAutoRegister.RegisterNamedIntervalScheduler(taskName, taskConfig, out scheduleName));
+                        registrations.Add(RegisterNamedIntervalScheduler(taskName, taskConfig, out scheduleName));
                         break;
                     case TaskSchedulerType.Daily:
-                        registrations.Add(ScheduledTaskAutoRegister.RegisterNamedDailyScheduler(taskName, taskConfig, out scheduleName));
+                        registrations.Add(RegisterNamedDailyScheduler(taskName, taskConfig, out scheduleName));
                         break;
                     case TaskSchedulerType.Monthly:
-                        registrations.Add(ScheduledTaskAutoRegister.RegisterNamedMonthlyScheduler(taskName, taskConfig, out scheduleName));
+                        registrations.Add(RegisterNamedMonthlyScheduler(taskName, taskConfig, out scheduleName));
                         break;
                     case TaskSchedulerType.Yearly:
-                        registrations.Add(ScheduledTaskAutoRegister.RegisterNamedYearlyScheduler(taskName, taskConfig, out scheduleName));
+                        registrations.Add(RegisterNamedYearlyScheduler(taskName, taskConfig, out scheduleName));
                         break;
                 }
 
-                registrations.AddRange(ScheduledTaskAutoRegister.RegisterNamedScheduledTask(taskName, scheduleName, taskConfig));
+                registrations.AddRange(RegisterNamedScheduledTask(taskName, scheduleName, taskConfig));
                 container.Register(registrations.ToArray());
             }
         }
@@ -110,7 +111,8 @@ namespace Framework.Logic.Tasks.AutoTypeRegisters
             ScheduledTaskElement taskConfig,
             out string scheduleName)
         {
-            var parameters = new Dictionary<string, object> {{"hour", taskConfig.Time.Hour}, {"minute", taskConfig.Time.Minute}};
+            var parameters = new Dictionary<string, object>
+                {{"hour", taskConfig.Time.Hour}, {"minute", taskConfig.Time.Minute}};
 
             scheduleName = string.Format("dailyScheduled-{0}", name);
             return

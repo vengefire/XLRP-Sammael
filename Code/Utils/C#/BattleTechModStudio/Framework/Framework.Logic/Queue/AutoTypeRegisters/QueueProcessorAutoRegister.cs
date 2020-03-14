@@ -21,10 +21,11 @@ namespace Framework.Logic.Queue.AutoTypeRegisters
 
             foreach (QueueProcessorElement config in queueConfig.QueueProcessors)
             {
-                var parameters = new Dictionary<string, object> {{"messageProcessingMode", config.MessageProcessingMode}, {"numWorkers", config.NumWorkers}};
+                var parameters = new Dictionary<string, object>
+                    {{"messageProcessingMode", config.MessageProcessingMode}, {"numWorkers", config.NumWorkers}};
                 var queueType =
                     queueConfig.MessageTypes[queueConfig.MessageQueues[config.MessageQueue].MessageType].Type;
-                registrations.AddRange(QueueProcessorAutoRegister.RegisterQueueProcessorAndNode(queueType, parameters));
+                registrations.AddRange(RegisterQueueProcessorAndNode(queueType, parameters));
             }
 
             container.Register(registrations.ToArray());
@@ -65,7 +66,8 @@ namespace Framework.Logic.Queue.AutoTypeRegisters
             registrations.AddRange(
                 types.Select(
                         type =>
-                            Component.For(typeof(IMessageProcessingLogic<>).MakeGenericType(type.GetInterfaces().First().GenericTypeArguments.First())).ImplementedBy(type))
+                            Component.For(typeof(IMessageProcessingLogic<>).MakeGenericType(type.GetInterfaces().First()
+                                .GenericTypeArguments.First())).ImplementedBy(type))
                     .Cast<IRegistration>()
                     .ToArray());
             registrations.AddRange(
@@ -95,7 +97,8 @@ namespace Framework.Logic.Queue.AutoTypeRegisters
             registrations.Add(
                 Component.For(typeof(IQueueProcessorNode<>).MakeGenericType(queueType))
                     .ImplementedBy(typeof(QueueProcessorNode<>).MakeGenericType(queueType)));
-            registrations.Add(Component.For(typeof(IQueueProcessorNodeFactory<>).MakeGenericType(queueType)).AsFactory());
+            registrations.Add(
+                Component.For(typeof(IQueueProcessorNodeFactory<>).MakeGenericType(queueType)).AsFactory());
             registrations.Add(
                 Component.For(typeof(IWritableQueueProcessorNode<>).MakeGenericType(queueType))
                     .ImplementedBy(typeof(WritableQueueProcessorNode<>).MakeGenericType(queueType)));

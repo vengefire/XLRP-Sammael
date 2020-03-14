@@ -40,7 +40,7 @@ namespace Framework.Utils.DPHelper
                 sb.AppendFormat(
                     "Returned {0} = [{1}]",
                     retType,
-                    DPHelper.CreateObjectLogString(invocation.ReturnValue));
+                    CreateObjectLogString(invocation.ReturnValue));
             }
 
             return sb.ToString();
@@ -55,7 +55,7 @@ namespace Framework.Utils.DPHelper
             sb.AppendFormat("{0}.{1}(", targetTypeName, invocation.Method.Name);
             foreach (var argument in invocation.Arguments)
             {
-                var argumentDescription = argument == null ? "null" : DPHelper.DumpObject(argument);
+                var argumentDescription = argument == null ? "null" : DumpObject(argument);
                 sb.Append(argumentDescription /*.Substring(0, Math.Min(100, argumentDescription.Length))*/).Append(",");
             }
 
@@ -85,7 +85,7 @@ namespace Framework.Utils.DPHelper
             xmlDoc.LoadXml(rawXml);
 
             var curnode = xmlDoc.DocumentElement;
-            DPHelper.SterilizeElement(curnode);
+            SterilizeElement(curnode);
 
             return xmlDoc.InnerXml;
         }
@@ -100,12 +100,12 @@ namespace Framework.Utils.DPHelper
 
             if (node.NextSibling != null)
             {
-                DPHelper.SterilizeElement(node.NextSibling);
+                SterilizeElement(node.NextSibling);
             }
 
             foreach (var childNode in node.ChildNodes)
             {
-                DPHelper.SterilizeElement((XmlNode) childNode);
+                SterilizeElement((XmlNode) childNode);
             }
         }
 
@@ -132,7 +132,7 @@ namespace Framework.Utils.DPHelper
                 return argument.ToString();
             }
 
-            return DPHelper.CreateObjectLogString(argument);
+            return CreateObjectLogString(argument);
         }
     }
 }

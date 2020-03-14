@@ -17,28 +17,28 @@ namespace BattleEngineJsonCreation
 
     public partial class Settings
     {
-        [JsonProperty("BEDPath", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("BEDPath")]
         public string BedPath { get; set; }
 
-        [JsonProperty("chassisDefpath", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("chassisDefpath")]
         public string ChassisDefpath { get; set; }
 
-        [JsonProperty("mechDefPath", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("mechDefPath")]
         public string MechDefPath { get; set; }
 
-        [JsonProperty("GenerateFromchassisDef", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("GenerateFromchassisDef")]
         public bool GenerateFromchassisDef { get; set; }
 
-        [JsonProperty("UpdateCSV", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("UpdateCSV")]
         public bool UpdateCSV { get; set; }
 
-        [JsonProperty("BTInstallDir", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("BTInstallDir")]
         public string BtInstallDir { get; set; }
 
-        [JsonProperty("LoadDefsFromMods", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("LoadDefsFromMods")]
         public bool LoadDefsFromMods { get; set; }
 
-        [JsonProperty("OutputDir", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("OutputDir")]
         public string OutputDir { get; set; }
     }
 

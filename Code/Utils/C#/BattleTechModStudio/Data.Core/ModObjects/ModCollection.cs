@@ -37,15 +37,21 @@ namespace Data.Core.ModObjects
                 .ToList().ForEach(
                     mod =>
                     {
-                        mod.ConflictsWithMods = EnabledMods.Where(mod1 => mod.ConflictsWithModNames.Contains(mod1.Name)).ToList();
+                        mod.ConflictsWithMods = EnabledMods.Where(mod1 => mod.ConflictsWithModNames.Contains(mod1.Name))
+                            .ToList();
                         var conflictingMods = mod.ConflictsWithMods.Select(mod1 => mod1.Name);
-                        conflictingMods.ToList().ForEach(s => mod.InvalidReasonList.Add($"Conflicting dependency [{s}]"));
+                        conflictingMods.ToList()
+                            .ForEach(s => mod.InvalidReasonList.Add($"Conflicting dependency [{s}]"));
 
-                        mod.OptionallyDependsOnMods = EnabledMods.Where(mod1 => mod.OptionallyDependsOnModNames.Contains(mod1.Name)).ToList();
+                        mod.OptionallyDependsOnMods = EnabledMods
+                            .Where(mod1 => mod.OptionallyDependsOnModNames.Contains(mod1.Name)).ToList();
 
-                        mod.DependsOnMods = EnabledMods.Where(mod1 => mod.DependsOnModNames.Contains(mod1.Name)).ToList();
-                        var missingDependencies = mod.DependsOnModNames.Except(mod.DependsOnMods.Select(mod1 => mod1.Name));
-                        missingDependencies.ToList().ForEach(s => mod.InvalidReasonList.Add($"Missing dependency [{s}]"));
+                        mod.DependsOnMods = EnabledMods.Where(mod1 => mod.DependsOnModNames.Contains(mod1.Name))
+                            .ToList();
+                        var missingDependencies =
+                            mod.DependsOnModNames.Except(mod.DependsOnMods.Select(mod1 => mod1.Name));
+                        missingDependencies.ToList()
+                            .ForEach(s => mod.InvalidReasonList.Add($"Missing dependency [{s}]"));
 
                         mod.IsValid = !mod.InvalidReasonList.Any();
                     });
@@ -60,10 +66,12 @@ namespace Data.Core.ModObjects
                         dependencyTree.Sort((o, o1) => o1.level.CompareTo(o.level));
 
                         var invalidDependencies = dependencyTree.Where(o => !o.mod.IsValid).Select(o => o.mod.Name);
-                        invalidDependencies.ToList().ForEach(s => mod.InvalidReasonList.Add($"Dependency [{s}] is invalid."));
+                        invalidDependencies.ToList()
+                            .ForEach(s => mod.InvalidReasonList.Add($"Dependency [{s}] is invalid."));
 
                         var disabledDependencies = dependencyTree.Where(o => !o.mod.Enabled).Select(o => o.mod.Name);
-                        disabledDependencies.ToList().ForEach(s => mod.InvalidReasonList.Add($"Dependency [{s}] is disabled."));
+                        disabledDependencies.ToList()
+                            .ForEach(s => mod.InvalidReasonList.Add($"Dependency [{s}] is disabled."));
 
                         mod.IsValid = !mod.InvalidReasonList.Any();
                     });
@@ -90,7 +98,9 @@ namespace Data.Core.ModObjects
             {
                 loadCycle += 1;
                 var modsToLoad = remainingModsToLoad
-                    .Where(mod => mod.DependsOnMods.All(mod1 => modsLoaded.Contains(mod1)) && mod.OptionallyDependsOnMods.Where(mod2 => mod2.IsValid).All(mod2 => modsLoaded.Contains(mod2)))
+                    .Where(mod => mod.DependsOnMods.All(mod1 => modsLoaded.Contains(mod1)) && mod
+                        .OptionallyDependsOnMods.Where(mod2 => mod2.IsValid)
+                        .All(mod2 => modsLoaded.Contains(mod2)))
                     .OrderBy(mod => mod.Name).ToList();
                 modsToLoad.ForEach(mod =>
                 {

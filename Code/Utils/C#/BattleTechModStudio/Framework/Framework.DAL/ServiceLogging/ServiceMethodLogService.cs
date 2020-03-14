@@ -15,7 +15,8 @@ namespace Framework.Data.ServiceLogging
         {
             _serviceMethodLogRepository = serviceMethodLogRepository;
             var mapConfig =
-                new MapperConfiguration(configuration => { configuration.CreateMap<ServiceMethodLog, DalServiceLog>(); });
+                new MapperConfiguration(
+                    configuration => { configuration.CreateMap<ServiceMethodLog, DalServiceLog>(); });
             _mapper = mapConfig.CreateMapper();
         }
 

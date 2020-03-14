@@ -22,11 +22,13 @@ namespace Data.Core.ModObjects
             BaseDirectory = baseDirectory;
             ContentDirectory = new DirectoryInfo(System.IO.Path.Combine(BaseDirectory.FullName, Path));
             ManifestGroupObjectType = (GameObjectTypeEnum) Enum.Parse(typeof(GameObjectTypeEnum), Type);
-            if (!string.IsNullOrEmpty(AssetBundleName) || string.IsNullOrEmpty(AssetBundleName) && !ContentDirectory.Exists)
+            if (!string.IsNullOrEmpty(AssetBundleName) ||
+                string.IsNullOrEmpty(AssetBundleName) && !ContentDirectory.Exists)
             {
                 if (string.IsNullOrEmpty(AssetBundleName) && !ContentDirectory.Exists)
                 {
-                    Console.WriteLine($"Warning : Manifest Content Directory [{ContentDirectory.FullName}] does not exist.");
+                    Console.WriteLine(
+                        $"Warning : Manifest Content Directory [{ContentDirectory.FullName}] does not exist.");
                 }
 
                 ManifestSourceFiles = new List<FileInfo>();
@@ -41,17 +43,21 @@ namespace Data.Core.ModObjects
                 if (!ManifestSourceFiles.Any())
                 {
                     //throw new Exception($"ManifestGroup [{ManifestGroupObjectType} - {baseDirectory.FullName} - {ContentDirectory.Name}] contains no entries.");
-                    Console.WriteLine($"ManifestGroup [{ManifestGroupObjectType}] - [{baseDirectory.FullName}] - [{ContentDirectory.Name}] contains no entries.");
+                    Console.WriteLine(
+                        $"ManifestGroup [{ManifestGroupObjectType}] - [{baseDirectory.FullName}] - [{ContentDirectory.Name}] contains no entries.");
                 }
 
-                ManifestSourceFiles.ForEach(info => ManifestEntries.Add(new ManifestEntry(ContentDirectory, info, ManifestGroupObjectType, System.IO.Path.GetFileNameWithoutExtension(info.Name), this, AssetBundleName)));
+                ManifestSourceFiles.ForEach(info => ManifestEntries.Add(new ManifestEntry(ContentDirectory, info,
+                    ManifestGroupObjectType, System.IO.Path.GetFileNameWithoutExtension(info.Name), this,
+                    AssetBundleName)));
             }
             else
             {
-                ManifestEntries.Add(new ManifestEntry(null, null, ManifestGroupObjectType, Utils.GetPrefabIdFromPath(Path), this, AssetBundleName));
+                ManifestEntries.Add(new ManifestEntry(null, null, ManifestGroupObjectType,
+                    Utils.GetPrefabIdFromPath(Path), this, AssetBundleName));
             }
 
-            var ignoreList = new List<string>() {"desktop.ini"};
+            var ignoreList = new List<string> {"desktop.ini"};
             ManifestEntries.Where(entry => entry.FileInfo != null && ignoreList.Contains(entry.FileInfo.Name))
                 .ToList()
                 .ForEach(entry => ManifestEntries.Remove(entry));

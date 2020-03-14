@@ -22,12 +22,12 @@ namespace Framework.Interfaces.Injection
         {
             get
             {
-                if (!Container.InstanceRegistered())
+                if (!InstanceRegistered())
                 {
                     throw new InvalidOperationException("Container has not been registered.");
                 }
 
-                return Container.instance;
+                return instance;
             }
         }
 
@@ -78,28 +78,28 @@ namespace Framework.Interfaces.Injection
 
         public static void RegisterContainer(IContainer container)
         {
-            if (Container.InstanceRegistered())
+            if (InstanceRegistered())
             {
                 throw new InvalidOperationException("Container has already been registered.");
             }
 
-            Container.instance = new Container(container);
+            instance = new Container(container);
         }
 
         public static void DeregisterContainer()
         {
-            if (!Container.InstanceRegistered())
+            if (!InstanceRegistered())
             {
                 throw new InvalidOperationException("Container has not been registered.");
             }
 
-            Container.Instance.Release(Container.Instance);
-            Container.instance = null;
+            Instance.Release(Instance);
+            instance = null;
         }
 
         private static bool InstanceRegistered()
         {
-            return Container.instance != null;
+            return instance != null;
         }
     }
 }

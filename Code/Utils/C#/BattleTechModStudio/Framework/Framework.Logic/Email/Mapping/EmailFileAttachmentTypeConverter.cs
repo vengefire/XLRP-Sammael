@@ -10,7 +10,8 @@ namespace Framework.Logic.Email.Mapping
         {
             var fileAttachment = context.SourceValue as FileAttachment;
             fileAttachment.Load();
-            return new EmailFileAttachment {Name = fileAttachment.Name, Length = fileAttachment.Size, Content = fileAttachment.Content};
+            return new EmailFileAttachment
+                {Name = fileAttachment.Name, Length = fileAttachment.Size, Content = fileAttachment.Content};
         }
     }
 }

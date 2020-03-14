@@ -13,7 +13,7 @@ namespace HomePlugin
             get => _settings;
             set
             {
-                if (object.Equals(value, _settings))
+                if (Equals(value, _settings))
                 {
                     return;
                 }

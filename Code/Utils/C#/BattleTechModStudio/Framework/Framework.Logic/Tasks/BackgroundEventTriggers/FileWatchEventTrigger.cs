@@ -27,7 +27,10 @@ namespace Framework.Logic.Tasks.BackgroundEventTriggers
         {
             DirectoryUtils.EnsureExists(watchPath);
 
-            fileSystemWatcher = new FileSystemWatcher {Path = watchPath, Filter = fileFilter, NotifyFilter = NotifyFilters.FileName | NotifyFilters.LastWrite};
+            fileSystemWatcher = new FileSystemWatcher
+            {
+                Path = watchPath, Filter = fileFilter, NotifyFilter = NotifyFilters.FileName | NotifyFilters.LastWrite
+            };
 
             fileSystemWatcher.Created += OnFileCreated;
             fileSystemWatcher.Deleted += OnFileDeleted;
