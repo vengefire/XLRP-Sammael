@@ -33,38 +33,9 @@ namespace Data.Console
 
             var modService = new ModService();
             var modCollection = modService.LoadModCollectionFromDirectory(sourceDirectory);
+            modService.PublishLoadResults(modCollection);
 
-            var disabledMods = modCollection.DisabledMods.ToList();
-            var validMods = modCollection.ValidMods.ToList();
-            var invalidMods = modCollection.InvalidMods.ToList();
-
-            System.Console.WriteLine($"Summary for mods loaded from [{sourceDirectory}]:\r\n" +
-                                     $"Total Mods Found - {modCollection.Mods.Count}\r\n" +
-                                     $"Disabled Mods - {disabledMods.Count}\r\n" +
-                                     $"Valid Mods Loaded - {validMods.Count}\r\n" +
-                                     $"Invalid Mods - {invalidMods.Count}\r\n");
-
-            System.Console.WriteLine("Disabled Mods:");
-            disabledMods.ForEach(mod => { System.Console.WriteLine($"{mod.Name}"); });
-            System.Console.WriteLine();
-
-            System.Console.WriteLine("Invalid Mods:");
-            invalidMods.ForEach(mod =>
-            {
-                System.Console.WriteLine($"{mod.Name}\r\n" +
-                                         $"\t{string.Join("\r\n", mod.InvalidReasonList)}");
-            });
-            System.Console.WriteLine();
-
-            System.Console.WriteLine("Valid Mods Load Order : ");
-            validMods.GroupBy(mod => mod.LoadCycle).OrderBy(mods => mods.Key).ToList().ForEach(mods =>
-            {
-                System.Console.WriteLine($"Load Cycle [{mods.Key}]:\r\n" +
-                                         $"{new string('-', 10)}\r\n" +
-                                         $"{string.Join("\r\n", mods.OrderBy(mod => mod.LoadOrder).Select(mod => $"[{mod.LoadOrder,-3}] - {mod.Name}"))}\r\n");
-            });
-
-            var typeUnion = VersionManifestParser.AllTypes;
+            /*var typeUnion = VersionManifestParser.AllTypes;
             modCollection.Mods.SelectMany(mod => mod.ManifestEntryGroups.Select(group => group.Type)).Distinct()
                 .ToList().ForEach(s => typeUnion.Add(s));
             var sortedTypes = typeUnion.ToList();
@@ -75,7 +46,7 @@ namespace Data.Console
                 "GameObjectTypeEnum"
             );
 
-            /*System.Console.WriteLine("Generated Type Enum:\r\n" +
+            System.Console.WriteLine("Generated Type Enum:\r\n" +
                                      $"{typeEnumString}");*/
 
             modCollection.ExpandManifestGroups();

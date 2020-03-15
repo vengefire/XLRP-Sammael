@@ -17,7 +17,7 @@ namespace Data.Core.ModObjects
     {
         [JsonProperty("Name")] public string Name { get; set; }
 
-        [JsonProperty("Enabled")] public bool Enabled { get; set; }
+        [JsonProperty("Enabled")] public bool Enabled { get; set; } = true;
 
         [JsonProperty("Version")] public string Version { get; set; }
 

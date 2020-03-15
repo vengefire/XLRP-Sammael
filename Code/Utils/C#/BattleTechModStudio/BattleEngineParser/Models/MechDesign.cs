@@ -9,20 +9,93 @@ namespace BattleEngineParser.Models
 {
     public class MechDesign
     {
-        public string Name { get; set; }
+        private string _name;
+
+        public string Name
+        {
+            get => _name;
+            set
+            {
+                _name = value;
+                var parts = value.Replace("_", " ").Split(' ').ToList();
+                if (parts[0].Contains("-"))
+                {
+                    // Standard IS mech. Smart!
+                    VariantDesignation = parts[0];
+                    parts.Skip(1).ToList().ForEach(s =>
+                    {
+                        if (s.Contains("("))
+                        {
+                            s = s.Replace("(", "");
+                            s = s.Replace(")", "");
+                            HeroDesignation += $" {s}";
+                        }
+                        else if (s.Contains("'"))
+                        {
+                            s = s.Replace("'", "");
+                            HeroDesignation += $" {s}";
+                        }
+                        else
+                        {
+                            InnerSphereChassisDesignation = s;
+                        }
+                    });
+                }
+                else
+                {
+                    // Clan Mech. Ugh, crapy naming system.
+                    InnerSphereChassisDesignation = parts[0];
+                    List<string> remainingParts;
+                    if (parts[1].Contains("("))
+                    {
+                        FilthyClanChassisDesignation = parts[1].Replace("(", "").Replace(")", "");
+                        remainingParts = parts.Skip(2).ToList();
+                    }
+                    else
+                    {
+                        FilthyClanChassisDesignation = InnerSphereChassisDesignation;
+                        remainingParts = parts.Skip(1).ToList();
+                    }
+
+                    remainingParts.ForEach(s =>
+                    {
+                        if (s.Contains("("))
+                        {
+                            s = s.Replace("(", "");
+                            s = s.Replace(")", "");
+                            HeroDesignation += $" {s}";
+                        }
+                        else if (s.Contains("'"))
+                        {
+                            s = s.Replace("'", "");
+                            HeroDesignation += $" {s}";
+                        }
+                        else
+                        {
+                            VariantDesignation = s;
+                        }
+                    });
+                }
+            }
+        }
+
+        public string InnerSphereChassisDesignation { get; set; }
+        public string FilthyClanChassisDesignation { get; set; }
+        public string VariantDesignation { get; set; }
+        public string HeroDesignation { get; set; }
         public TechLevel TechLevel { get; set; }
         public RulesLevel RulesLevel { get; set; }
         public ChassisType ChassisType { get; set; }
         public double BattleValue { get; set; }
         public int Tonnage { get; set; }
-        public int Year { get; set; }
+        public int? Year { get; set; }
         public List<EraData> Eras { get; set; } = new List<EraData>();
         public string EngineRating { get; set; }
         public string HeatSinks { get; set; }
         public string StructureType { get; set; }
         public string ArmorType { get; set; }
         public bool IsOmni { get; set; }
-        
+
         public static MechDesign MechDesignFromFile(string filePath)
         {
             var mechDesign = new MechDesign();
@@ -55,7 +128,7 @@ namespace BattleEngineParser.Models
                             mechDesign.Tonnage = Convert.ToInt32(parts[1]);
                             break;
                         case "Year":
-                            mechDesign.Year = string.IsNullOrEmpty(parts[1]) ? 0 : Convert.ToInt32(parts[1]);
+                            mechDesign.Year = string.IsNullOrEmpty(parts[1]) ? (int?) null : Convert.ToInt32(parts[1]);
                             break;
                         case "Era":
                             var era = new EraDetail(parts[1].FromEnumStringValue<Era>(), parts[2]);
@@ -70,6 +143,7 @@ namespace BattleEngineParser.Models
                     }
                 }
             }
+
             return mechDesign;
         }
     }
