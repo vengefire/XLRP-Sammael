@@ -1,0 +1,121 @@
+"Name","ASN-23 Assassin"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",740
+"Tons",40
+"Year","3050"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Commonwealth","Federated Suns"
+"Factions","Periphery","Marian Hegemony"
+"Factions","Mercenary","Mercenary"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Commonwealth","Federated Suns"
+"Factions","Periphery","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Rim Commonality)"
+"Factions","Periphery","Filtvelt Coalition","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",7,"7/11/7"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",72
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",7
+"LArmAct","Full Arm"
+"RArmAct","No Hand"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",6,6,10,10,12,2,2,4,8,6,6
+"Equips",4
+"1","Medium Pulse Laser","Energy"
+"1","LRM 5","Missile"
+"1","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hand Actuator",-8,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"LRM 5",2,0,0,2,0
+"Artemis IV FCS",4,0,0,2,1
+"Ammo LRM 5: Artemis",3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Medium Pulse Laser",1,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+" -",0,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+" -",0,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0

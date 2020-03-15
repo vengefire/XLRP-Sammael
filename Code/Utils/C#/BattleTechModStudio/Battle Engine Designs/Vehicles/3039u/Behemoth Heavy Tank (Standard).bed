@@ -1,0 +1,79 @@
+"Name","Behemoth Heavy Tank (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",1173
+"Tons",100
+"Year","2952"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Factions","Periphery","Pirates"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Suns","Lyran Commonwealth","St. Ives Compact"
+"Factions","Periphery","Outworlds Alliance","Pirates"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Lyran Alliance","Lyran Commonwealth","St. Ives Compact","Word of Blake"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Lyran Alliance","St. Ives Compact","Word of Blake"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Suns","Free Rasalhague Republic","Lyran Alliance","Word of Blake"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark"
+"Factions","Periphery","Periphery General","Pirates"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",2,"2/3/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",208
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",46,38,40,38,46
+"Equips",10
+"4","LRM 5","Missile"
+"2","Standard","Ammo"
+"4","Machine Gun","Ballistic"
+"1","Standard","Ammo"
+"4","SRM 2","Missile"
+"1","Standard","Ammo"
+"2","SRM 6","Missile"
+"2","Standard","Ammo"
+"2","AC/10","Ballistic"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"LRM 5",1,0
+"LRM 5",1,0
+"LRM 5",1,0
+"LRM 5",1,0
+"Machine Gun",3,0
+"Machine Gun",3,0
+"SRM 2",5,0
+"SRM 2",5,0
+"<right>"
+"Machine Gun",3,0
+"SRM 2",5,0
+"<left>"
+"Machine Gun",3,0
+"SRM 2",5,0
+"<turret>"
+"SRM 6",7,0
+"SRM 6",7,0
+"AC/10",9,0
+"AC/10",9,0
+"<body>"
+"Ammo LRM 5",2,1
+"Ammo Machine Gun",4,1
+"Ammo SRM 6",8,1
+"Ammo AC/10",10,1
+"Ammo SRM 2",6,1

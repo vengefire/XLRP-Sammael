@@ -1,0 +1,44 @@
+"Name","Carnivore Assault Tank (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1997
+"Tons",80
+"Year","3082"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Jade Falcon","Clan Wolf"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Jade Falcon","Clan Wolf"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Jade Falcon","Clan Wolf"
+"Engine","XL",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",248
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",62,46,42,46,52
+"Equips",6
+"2","ER Medium Laser","Energy"
+"2","Machine Gun (Heavy)","Ballistic"
+"1","Half","Ammo"
+"2","Gauss Rifle","Ballistic"
+"4","Standard","Ammo"
+"1","ECM Suite","Electronics"
+"Crits"
+"<front>"
+"ER Medium Laser",1,0
+"ER Medium Laser",1,0
+"<right>"
+"Machine Gun (Heavy)",2,0
+"<left>"
+"Machine Gun (Heavy)",2,0
+"<turret>"
+"Gauss Rifle",4,0
+"Gauss Rifle",4,0
+"<body>"
+"Ammo Gauss Rifle",5,1
+"Ammo Machine Gun (Heavy): Half",3,1
+"ECM Suite",6,1

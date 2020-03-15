@@ -1,0 +1,61 @@
+"Name","Schiltron Mobile Fire-Support Platform E"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1120
+"Tons",80
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Rasalhague Republic","Free Worlds League","Word of Blake"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Oriente Protectorate)","Free Worlds League (Tamarind-Abbey District)","Republic of the Sphere"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Oriente Protectorate)","Free Worlds League (Tamarind-Abbey District)","Republic of the Sphere"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Oriente Protectorate)","Free Worlds League (Tamarind-Abbey District)","Republic of the Sphere"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",160
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",2
+9,80,3,0,10,160,46,34,25,34,40,0,0,0,0,0,0
+3
+"",-1,-1,0,0
+"",-4,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",46,34,25,34,40
+"Equips",7
+"3","MML 9","Missile"
+"3","LRM","Ammo"
+"3","SRM","Ammo"
+"3","Light AC/5","Ballistic"
+"3","Standard","Ammo"
+"1","C3 Computer (Master)","Electronics"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<front>"
+"MML 9",1,0
+"MML 9",1,0
+"MML 9",1,0
+"<turret>"
+"Light AC/5",4,0
+"Light AC/5",4,0
+"Light AC/5",4,0
+"<body>"
+"C3 Computer (Master)",6,1
+"Guardian ECM Suite",7,1
+"Ammo Light AC/5",5,1
+"Ammo MML 9: LRM",2,1
+"Ammo MML 9: SRM",3,1

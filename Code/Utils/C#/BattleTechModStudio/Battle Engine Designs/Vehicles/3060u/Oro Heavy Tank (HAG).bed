@@ -1,0 +1,34 @@
+"Name","Oro Heavy Tank (HAG)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1492
+"Tons",60
+"Year","3073"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Snow Raven"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Diamond Shark","Rasalhague Dominion","Raven Alliance"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Sea Fox","Rasalhague Dominion","Raven Alliance"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Sea Fox","Rasalhague Dominion","Raven Alliance"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",136
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",45,30,28,30,30
+"Equips",3
+"1","Large Pulse Laser","Energy"
+"1","Hyper-Assault Gauss 30","Ballistic"
+"4","Standard","Ammo"
+"Crits"
+"<turret>"
+"Large Pulse Laser",1,0
+"Hyper-Assault Gauss 30",2,0
+"<body>"
+"Ammo Hyper-Assault Gauss 30",3,1

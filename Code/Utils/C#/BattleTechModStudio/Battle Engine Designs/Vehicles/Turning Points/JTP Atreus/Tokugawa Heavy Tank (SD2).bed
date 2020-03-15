@@ -1,0 +1,42 @@
+"Name","Tokugawa Heavy Tank (SD2)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",961
+"Tons",60
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Free Worlds League"
+"Factions","Other","Unique"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League (Marik-Stewart Commonwealth)"
+"Factions","Other","Unique"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",150
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#FALSE#
+"ArmorVals",40,33,26,33,36
+"Equips",7
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"1","Flamer","Energy"
+"2","Streak SRM 4","Missile"
+"1","Standard","Ammo"
+"1","Ultra AC/10","Ballistic"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"Anti-Missile System",1,0
+"Flamer",3,0
+"<turret>"
+"Streak SRM 4",4,0
+"Streak SRM 4",4,0
+"Ultra AC/10",6,0
+"<body>"
+"Ammo Anti-Missile System",2,1
+"Ammo Ultra AC/10",7,1
+"Ammo Streak SRM 4",5,1

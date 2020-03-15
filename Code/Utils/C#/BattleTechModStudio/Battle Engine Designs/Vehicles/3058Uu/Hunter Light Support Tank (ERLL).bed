@@ -1,0 +1,39 @@
+"Name","Hunter Light Support Tank (ERLL)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",660
+"Tons",35
+"Year","3059"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Ferro-Fibrous",64
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",27,15,14,15,0
+"Equips",4
+"1","ER Large Laser","Energy"
+"1","LRM 15","Missile"
+"3","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"Crits"
+"<front>"
+"ER Large Laser",1,0
+"LRM 15",2,0
+"<body>"
+"Ammo LRM 15: Artemis",3,1

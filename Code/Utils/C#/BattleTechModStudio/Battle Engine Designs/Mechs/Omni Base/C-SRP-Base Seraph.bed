@@ -1,0 +1,120 @@
+"Name","C-SRP-O Base Seraph"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",1080
+"Tons",85
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Era","Late Republic","(3101-3130)"
+"Factions","Other","Extinct"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Other","Extinct"
+"Engine","Light",3,"3/5(6)/0"
+"Sinks","Double",10
+"Internal","Standard"
+"Armor","Standard",256
+"Cockpit","Compact"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","Full Arm"
+"RArmAct","No Lower Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",1
+10,85,3,0,10,256,27,27,26,26,40,9,9,13,9,35,35
+6
+"Triple-Strength Myomer",1,0,0,0
+"Triple-Strength Myomer",1,0,0,0
+"Triple-Strength Myomer",1,6,0,0
+"Triple-Strength Myomer",1,6,0,0
+"Triple-Strength Myomer",1,7,0,0
+"Triple-Strength Myomer",1,7,0,0
+"Improved C3 Computer",2,1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",27,27,26,26,40,9,9,13,9,35,35
+"Equips",2
+"1","Triple-Strength Myomer","Miscellaneous"
+"1","Improved C3 Computer","Electronics"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hand Actuator",-8,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Triple-Strength Myomer",1,0,0,2,0
+"Triple-Strength Myomer",1,0,0,2,0
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Improved C3 Computer",2,0,0,2,0
+":ditto:",2,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Small Cockpit",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Triple-Strength Myomer",1,0,0,2,0
+"Triple-Strength Myomer",1,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Triple-Strength Myomer",1,0,0,2,0
+"Triple-Strength Myomer",1,0,0,2,0

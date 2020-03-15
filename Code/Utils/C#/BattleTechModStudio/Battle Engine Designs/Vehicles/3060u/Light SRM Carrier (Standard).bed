@@ -1,0 +1,46 @@
+"Name","Light SRM Carrier (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Wheeled"
+"BV2",578
+"Tons",40
+"Year","3058"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Periphery","Periphery General"
+"Era","Civil War","(3062-3067)"
+"Factions","Periphery","Periphery General"
+"Era","Jihad","(3068-3085)"
+"Factions","Periphery","Periphery General"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","IS Clan","Raven Alliance"
+"Factions","Periphery","Periphery General"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","IS Clan","Raven Alliance"
+"Factions","Periphery","Periphery General"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","IS Clan","Raven Alliance"
+"Factions","Periphery","Periphery General"
+"Engine","ICE",4,"4/6/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",72
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",16,14,12,14,16
+"Equips",2
+"5","SRM 6","Missile"
+"3","Standard","Ammo"
+"Crits"
+"<turret>"
+"SRM 6",1,0
+"SRM 6",1,0
+"SRM 6",1,0
+"SRM 6",1,0
+"SRM 6",1,0
+"<body>"
+"Ammo SRM 6",2,1

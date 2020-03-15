@@ -1,0 +1,121 @@
+"Name","Champion C"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",2191
+"Tons",60
+"Year","2867"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General","Society"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Engine","XL",5,"5/8/5"
+"Sinks","Double",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",160
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",5
+"LArmAct","No Lower Arm"
+"RArmAct","No Lower Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",19,19,20,20,28,7,7,9,9,27,27
+"Equips",9
+"2","ER Medium Laser","Energy"
+"1","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"1","Standard","Ammo"
+"2","Medium Pulse Laser","Energy"
+"1","SRM 6","Missile"
+"1","Artemis","Ammo"
+"2","Small Pulse Laser","Energy"
+"1","Artemis IV FCS","Electronics"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"ER Medium Laser",1,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Medium Pulse Laser",5,0,0,2,0
+"Medium Pulse Laser",5,0,0,2,0
+"SRM 6",6,0,0,2,0
+"Artemis IV FCS",9,0,0,2,1
+"Ammo SRM 6: Artemis",7,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"LB 10-X AC",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+"Ammo LB 10-X AC",4,0,0,2,0
+"Ammo LB 10-X AC: Cluster",3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"ER Medium Laser",1,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Small Pulse Laser",8,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Small Pulse Laser",8,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Jump Jet",-7,0,0,2,0

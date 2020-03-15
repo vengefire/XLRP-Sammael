@@ -1,0 +1,44 @@
+"Name","Karnov UR Transport (Periphery)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",590
+"Tons",30
+"Year","3064"
+"Era","Civil War","(3062-3067)"
+"Factions","Periphery","Periphery General"
+"Era","Jihad","(3068-3085)"
+"Factions","Periphery","Periphery General","Pirates"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)"
+"Factions","Periphery","Periphery General","Pirates"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)"
+"Factions","Periphery","Periphery General","Pirates"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)"
+"Factions","Periphery","Periphery General","Pirates"
+"Engine","ICE",10,"10/15/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",24
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",5,6,5,6,2
+"Equips",2
+"4","Rocket Launcher 20","Missile"
+"6","Rocket Launcher 10","Missile"
+"Crits"
+"<front>"
+"Rocket Launcher 20",1,0
+"Rocket Launcher 20",1,0
+"Rocket Launcher 20",1,0
+"Rocket Launcher 20",1,0
+"Rocket Launcher 10",2,0
+"Rocket Launcher 10",2,0
+"Rocket Launcher 10",2,0
+"Rocket Launcher 10",2,0
+"Rocket Launcher 10",2,0
+"Rocket Launcher 10",2,0

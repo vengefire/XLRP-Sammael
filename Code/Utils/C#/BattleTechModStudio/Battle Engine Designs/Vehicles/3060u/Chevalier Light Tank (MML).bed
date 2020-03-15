@@ -1,0 +1,40 @@
+"Name","Chevalier Light Tank (MML)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",671
+"Tons",35
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Diamond Shark"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Sea Fox"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Sea Fox"
+"Engine","Fusion",6,"6/9/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",88
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",26,20,20,20,23
+"Equips",4
+"1","MML 5","Missile"
+"1","LRM","Ammo"
+"1","SRM","Ammo"
+"1","ER Large Laser","Energy"
+"Crits"
+"<front>"
+"MML 5",1,0
+"<turret>"
+"ER Large Laser",4,0
+"<body>"
+"Ammo MML 5: LRM",2,1
+"Ammo MML 5: SRM",3,1

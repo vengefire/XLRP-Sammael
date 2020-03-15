@@ -1,0 +1,44 @@
+"Name","Mobile Headquarters (LRM)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",402
+"Tons",25
+"Year","2620"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine"
+"Engine","Fusion",6,"6/9/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",80
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",16,19,16,19,10
+"Equips",4
+"1","LRM 10","Missile"
+"1","Standard","Ammo"
+"2","Communications Equipment","Electronics"
+"1","Cargo, Standard","Miscellaneous"
+"Crits"
+"<turret>"
+"LRM 10",1,0
+"<body>"
+"Communications Equipment",3,1
+"Ammo LRM 10",2,1
+"Cargo, Standard",4,1

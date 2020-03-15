@@ -1,0 +1,49 @@
+"Name","Axel Heavy Tank Mk 2"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",902
+"Tons",65
+"Year","3036"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Periphery","Outworlds Alliance"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Free Rasalhague Republic"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Free Rasalhague Republic"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Free Rasalhague Republic"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Rasalhague Dominion"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",160
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",34,34,24,34,34
+"Equips",8
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","Flamer (Vehicle)","Ballistic"
+"1","Standard","Ammo"
+"1","LRM 10","Missile"
+"1","Standard","Ammo"
+"1","AC/20","Ballistic"
+"4","Standard","Ammo"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<rear>"
+"Flamer (Vehicle)",3,0
+"<turret>"
+"LRM 10",5,0
+"Machine Gun",1,0
+"AC/20",7,0
+"<body>"
+"Ammo Machine Gun: Half",2,1
+"Ammo LRM 10",6,1
+"Ammo AC/20",8,1
+"Ammo Flamer (Vehicle)",4,1

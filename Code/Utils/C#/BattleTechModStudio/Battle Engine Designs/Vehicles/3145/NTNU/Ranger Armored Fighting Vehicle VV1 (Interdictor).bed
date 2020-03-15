@@ -1,0 +1,45 @@
+"Name","Ranger Armored Fighting Vehicle VV1 (Interdictor)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",688
+"Tons",45
+"Year","3087"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns"
+"Engine","Fusion",6,"6/9/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",168
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",50,34,22,34,28
+"Equips",4
+"4","Small Laser","Energy"
+"8","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<front>"
+"Small Laser",1,0
+"Small Laser",1,0
+"Small Laser",1,0
+"Small Laser",1,0
+"<turret>"
+"Machine Gun",2,0
+"Machine Gun",2,0
+"Machine Gun",2,0
+"Machine Gun",2,0
+"Machine Gun",2,0
+"Machine Gun",2,0
+"Machine Gun",2,0
+"Machine Gun",2,0
+"<body>"
+"Guardian ECM Suite",4,1
+"Ammo Machine Gun: Half",3,1

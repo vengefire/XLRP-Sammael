@@ -1,0 +1,123 @@
+"Name","BRZ-C3 Berserker"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",2395
+"Tons",100
+"Year","3067"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Engine","Light",4,"4/6(8)/0"
+"Sinks","Double",15
+"Internal","Endo-Steel"
+"Armor","Standard",296
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","No Hand"
+"RArmAct","Full Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",34,34,31,31,46,10,10,15,9,38,38
+"Equips",9
+"1","ER PPC","Energy"
+"6","ER Medium Laser","Energy"
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"1","Flamer","Energy"
+"1","Triple-Strength Myomer","Miscellaneous"
+"1","Hatchet","Miscellaneous"
+"1","C3 Computer (Slave)","Electronics"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"ER PPC",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Triple-Strength Myomer",6,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"ER Medium Laser",2,0,0,2,0
+"ER Medium Laser",2,0,0,2,0
+"ER Medium Laser",2,0,0,2,0
+"C3 Computer (Slave)",8,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Triple-Strength Myomer",6,0,0,2,0
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"ER Medium Laser",2,0,0,2,0
+"ER Medium Laser",2,0,0,2,0
+"ER Medium Laser",2,0,0,2,0
+"Guardian ECM Suite",9,0,0,2,0
+":ditto:",9,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Triple-Strength Myomer",6,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Hand Actuator",-9,1,0,2,1
+"Hatchet",7,0,0,2,0
+":ditto:",7,0,0,2,0
+":ditto:",7,0,0,2,0
+":ditto:",7,0,0,2,0
+":ditto:",7,0,0,2,0
+":ditto:",7,0,0,2,0
+":ditto:",7,0,0,2,0
+"Triple-Strength Myomer",6,0,0,2,0
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Anti-Missile System",3,0,0,2,0
+"Ammo Anti-Missile System",4,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Flamer",5,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Triple-Strength Myomer",6,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Triple-Strength Myomer",6,0,0,2,0

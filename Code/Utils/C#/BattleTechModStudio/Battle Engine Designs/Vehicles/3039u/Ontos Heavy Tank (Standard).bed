@@ -1,0 +1,59 @@
+"Name","Ontos Heavy Tank (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",938
+"Tons",95
+"Year","2832"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns","Free Worlds League","Lyran Commonwealth"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns","Free Worlds League","Lyran Commonwealth"
+"Factions","Periphery","Pirates"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns","Free Worlds League","Lyran Commonwealth","St. Ives Compact"
+"Factions","Periphery","Pirates"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Commonwealth","Federated Suns","Free Worlds League","Lyran Alliance","Lyran Commonwealth","St. Ives Compact"
+"Factions","IS Clan","Clan Diamond Shark"
+"Factions","Periphery","Pirates"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Commonwealth","Federated Suns","Free Worlds League","Lyran Alliance","St. Ives Compact"
+"Factions","IS Clan","Clan Diamond Shark"
+"Factions","Periphery","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns","Free Worlds League","Lyran Alliance"
+"Factions","IS Clan","Clan Diamond Shark"
+"Factions","Periphery","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat"
+"Factions","Periphery","Periphery General","Pirates"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",24
+"Internal","Standard"
+"Armor","Standard",128
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",28,24,24,24,28
+"Equips",3
+"2","LRM 5","Missile"
+"1","Standard","Ammo"
+"8","Medium Laser","Energy"
+"Crits"
+"<turret>"
+"LRM 5",1,0
+"LRM 5",1,0
+"Medium Laser",3,0
+"Medium Laser",3,0
+"Medium Laser",3,0
+"Medium Laser",3,0
+"Medium Laser",3,0
+"Medium Laser",3,0
+"Medium Laser",3,0
+"Medium Laser",3,0
+"<body>"
+"Ammo LRM 5",2,1

@@ -1,0 +1,43 @@
+"Name","Glaive Medium Tank (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",806
+"Tons",45
+"Year","3066"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Engine","Fusion",5,"5/8/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Standard",88
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",27,17,12,17,15
+"Equips",6
+"1","LRM 15","Missile"
+"2","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","ER Large Laser","Energy"
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"Crits"
+"<front>"
+"LRM 15",1,0
+"<turret>"
+"ER Large Laser",4,0
+"Machine Gun",5,0
+"Machine Gun",5,0
+"<body>"
+"Ammo LRM 15: Artemis",2,1
+"Ammo Machine Gun: Half",6,1

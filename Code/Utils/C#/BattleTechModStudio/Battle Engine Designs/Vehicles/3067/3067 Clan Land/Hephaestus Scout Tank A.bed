@@ -1,0 +1,59 @@
+"Name","Hephaestus Scout Tank A"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",768
+"Tons",30
+"Year","3064"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Factions","Home Clan","Clan Star Adder"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Factions","Home Clan","Clan Burrock","Clan Star Adder","Clan Stone Lion"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Engine","Fusion",8,"8/12/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",80
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",.5
+9,30,8,0,10,80,20,20,18,20,18,0,0,0,0,0,0
+12
+"",-1,-1,0,0
+"",-4,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"Active Probe",5,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",20,20,18,20,18
+"Equips",6
+"1","LRM 15","Missile"
+"1","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","ER Small Laser","Energy"
+"1","Active Probe","Electronics"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"LRM 15",1,0
+"ER Small Laser",4,0
+"<body>"
+"Ammo LRM 15: Artemis",2,1
+"Active Probe",5,1
+"Infantry Compartment",6,1

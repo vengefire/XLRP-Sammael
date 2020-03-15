@@ -1,0 +1,47 @@
+"Name","Winston Combat Vehicle (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1551
+"Tons",70
+"Year","3086"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Engine","Light",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",230
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#FALSE#
+"ArmorVals",65,58,50,58,54
+"Equips",9
+"1","Streak SRM 6","Missile"
+"1","Standard","Ammo"
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"2","LRM 15","Missile"
+"3","Standard","Ammo"
+"2","Light PPC","Energy"
+"1","Targeting Computer","Electronics"
+"1","CASE","Miscellaneous"
+"Crits"
+"<front>"
+"Streak SRM 6",1,0
+"Anti-Missile System",3,0
+"<turret>"
+"LRM 15",5,0
+"LRM 15",5,0
+"Light PPC",7,0
+"Light PPC",7,0
+"<body>"
+"Ammo LRM 15",6,1
+"Ammo Streak SRM 6",2,1
+"Ammo Anti-Missile System",4,1
+"Targeting Computer",8,1
+"CASE",9,0

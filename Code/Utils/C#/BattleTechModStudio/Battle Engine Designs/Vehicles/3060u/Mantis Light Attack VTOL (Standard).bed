@@ -1,0 +1,48 @@
+"Name","Mantis Light Attack VTOL (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",434
+"Tons",15
+"Year","3061"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",11,"11/17/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",40
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",14,8,8,8,2
+"Equips",3
+"5","ER Small Laser","Energy"
+"1","Guardian ECM Suite","Electronics"
+"1","Beagle Active Probe","Electronics"
+"Crits"
+"<front>"
+"ER Small Laser",1,0
+"ER Small Laser",1,0
+"ER Small Laser",1,0
+"ER Small Laser",1,0
+"ER Small Laser",1,0
+"Beagle Active Probe",3,0
+"<body>"
+"Guardian ECM Suite",2,1

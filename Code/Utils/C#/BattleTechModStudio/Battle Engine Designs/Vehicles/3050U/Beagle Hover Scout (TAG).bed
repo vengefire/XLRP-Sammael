@@ -1,0 +1,28 @@
+"Name","Beagle Hover Scout (TAG)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",295
+"Tons",15
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Engine","XL",14,"14/21/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",56
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",16,13,11,13,16
+"Equips",3
+"1","TAG","Electronics"
+"1","Beagle Active Probe","Electronics"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<turret>"
+"TAG",1,0
+"Beagle Active Probe",2,0
+"<body>"
+"Guardian ECM Suite",3,1

@@ -1,0 +1,50 @@
+"Name","Heavy LRM Carrier (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",948
+"Tons",80
+"Year","3058"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",2,"2/3/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",64
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",14,12,12,12,14
+"Equips",2
+"4","LRM 20","Missile"
+"8","Standard","Ammo"
+"Crits"
+"<turret>"
+"LRM 20",1,0
+"LRM 20",1,0
+"LRM 20",1,0
+"LRM 20",1,0
+"<body>"
+"Ammo LRM 20",2,1

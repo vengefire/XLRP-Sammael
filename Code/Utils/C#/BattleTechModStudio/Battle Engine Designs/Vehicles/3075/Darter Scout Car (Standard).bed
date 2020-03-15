@@ -1,0 +1,47 @@
+"Name","Darter Scout Car (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",125
+"Tons",13
+"Year","2822"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition"
+"Engine","ICE",7,"7/11/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",32
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",10,7,8,7,0
+"Equips",3
+"1","Machine Gun","Ballistic"
+"1","Standard","Ammo"
+"6","Cargo, Standard","Miscellaneous"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<body>"
+"Ammo Machine Gun",2,1
+"Cargo, Standard",3,1

@@ -1,0 +1,34 @@
+"Name","Donar Assault Helicopter (Recon)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",808
+"Tons",21
+"Year","3019"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Home Clan","Clan Cloud Cobra","Clan Goliath Scorpion","Clan Ice Hellion","Clan Star Adder"
+"Era","Civil War","(3062-3067)"
+"Factions","Home Clan","Clan Cloud Cobra","Clan Goliath Scorpion","Clan Ice Hellion","Clan Star Adder"
+"Era","Jihad","(3068-3085)"
+"Factions","Home Clan","Clan Burrock","Clan Cloud Cobra","Clan Goliath Scorpion","Clan Ice Hellion","Clan Star Adder","Clan Stone Lion"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Ferro-Fibrous",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",16,14,11,14,2
+"Equips",4
+"1","ER Large Laser","Energy"
+"1","TAG","Electronics"
+"1","Active Probe","Electronics"
+"1","ECM Suite","Electronics"
+"Crits"
+"<front>"
+"ER Large Laser",1,0
+"TAG",2,0
+"<body>"
+"Active Probe",3,1
+"ECM Suite",4,1

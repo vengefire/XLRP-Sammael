@@ -1,0 +1,58 @@
+"Name","Partisan Heavy Tank (AC2)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",580
+"Tons",80
+"Year","3002"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Circinus Federation","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Circinus Federation","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General","Pirates"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",96
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",22,18,16,18,22
+"Equips",4
+"2","Machine Gun","Ballistic"
+"1","Standard","Ammo"
+"5","AC/2","Ballistic"
+"4","Standard","Ammo"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<turret>"
+"AC/2",3,0
+"AC/2",3,0
+"AC/2",3,0
+"AC/2",3,0
+"AC/2",3,0
+"<body>"
+"Ammo Machine Gun",2,1
+"Ammo AC/2",4,1

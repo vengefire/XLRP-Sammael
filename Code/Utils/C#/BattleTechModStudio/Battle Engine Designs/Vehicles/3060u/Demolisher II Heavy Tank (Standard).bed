@@ -1,0 +1,58 @@
+"Name","Demolisher II Heavy Tank (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1619
+"Tons",100
+"Year","3059"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Lyran Alliance"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",232
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",60,50,40,50,59
+"Equips",8
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","Ultra AC/20","Ballistic"
+"4","Standard","Ammo"
+"1","LB 20-X AC","Ballistic"
+"2","Cluster","Ammo"
+"2","Standard","Ammo"
+"1","CASE","Miscellaneous"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<turret>"
+"Ultra AC/20",3,0
+"LB 20-X AC",5,0
+"<body>"
+"Ammo Machine Gun: Half",2,1
+"Ammo Ultra AC/20",4,1
+"Ammo LB 20-X AC: Cluster",6,1
+"Ammo LB 20-X AC",7,1
+"CASE",8,0

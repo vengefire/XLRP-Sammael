@@ -1,0 +1,41 @@
+"Name","Tufana Hovercraft (iNarc)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",756
+"Tons",35
+"Year","3083"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)"
+"Factions","Periphery","Magistracy of Canopus"
+"Engine","XL",11,"11/17/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",72
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",25,15,10,15,15
+"Equips",5
+"1","ER Small Laser","Energy"
+"1","iNarc Missile Beacon","Missile"
+"3","Standard","Ammo"
+"2","Medium Pulse Laser","Energy"
+"1","TAG","Electronics"
+"Crits"
+"<front>"
+"ER Small Laser",1,0
+"<turret>"
+"iNarc Missile Beacon",2,0
+"Medium Pulse Laser",4,0
+"Medium Pulse Laser",4,0
+"TAG",5,0
+"<body>"
+"Ammo iNarc Missile Beacon",3,1

@@ -1,0 +1,43 @@
+"Name","Kruger Combat Car (Original)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",336
+"Tons",10
+"Year","2620"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Other","Extinct"
+"Era","Civil War","(3062-3067)"
+"Factions","Other","Extinct"
+"Era","Jihad","(3068-3085)"
+"Factions","Other","Extinct"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition","Taurian Concordat"
+"Factions","Other","Extinct"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition","Taurian Concordat"
+"Factions","Other","Extinct"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition","Taurian Concordat"
+"Engine","Fusion",7,"7/11/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",56
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",15,10,11,10,10
+"Equips",1
+"2","Medium Laser","Energy"
+"Crits"
+"<turret>"
+"Medium Laser",1,0
+"Medium Laser",1,0

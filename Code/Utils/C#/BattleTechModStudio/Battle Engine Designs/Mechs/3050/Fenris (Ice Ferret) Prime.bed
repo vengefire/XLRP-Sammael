@@ -1,0 +1,144 @@
+"Name","Fenris (Ice Ferret) Prime"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",1678
+"Tons",45
+"Year","2948"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Factions","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General","Society"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Mercenary","Kell Hounds","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Mercenary","Kell Hounds","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Clan Wolf","Clan Wolf (in Exile)"
+"Engine","XL",8,"8/12/0"
+"Sinks","Double",12
+"Internal","Endo-Steel"
+"Armor","Ferro-Fibrous",120
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","No Lower Arm"
+"RArmAct","Full Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",1
+12,45,8,0,12,120,14,14,14,14,19,7,7,8,9,19,19
+13
+"",-3,1,0,0
+"",-3,2,0,0
+"",-3,4,0,0
+"",-3,6,0,0
+"",-3,6,0,0
+"",-3,7,0,0
+"",-3,7,0,0
+"",-4,0,0,0
+"",-4,1,0,0
+"",-4,1,0,0
+"",-4,2,0,0
+"",-4,2,0,0
+"",-4,3,0,0
+"",-4,5,0,0
+"Rules",0,#TRUE#
+"ArmorVals",14,14,14,14,19,7,7,8,9,19,19
+"Equips",5
+"1","Active Probe","Electronics"
+"1","ER PPC","Energy"
+"1","ER Small Laser","Energy"
+"1","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"ER PPC",2,0,0,2,0
+":ditto:",2,0,0,2,0
+"ER Small Laser",3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Hand Actuator",-9,1,0,2,1
+"Streak SRM 2",4,0,0,2,0
+"Ammo Streak SRM 2",5,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Active Probe",1,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Ferro-Fibrous",-4,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0

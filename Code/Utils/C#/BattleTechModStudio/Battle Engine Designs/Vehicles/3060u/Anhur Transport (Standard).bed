@@ -1,0 +1,43 @@
+"Name","Anhur Transport (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",720
+"Tons",30
+"Year","2840"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General","Society"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Hell's Horses","Clan Jade Falcon","Clan Wolf (in Exile)","Rasalhague Dominion","Raven Alliance"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Clan Sea Fox","Clan Wolf (in Exile)","Rasalhague Dominion","Raven Alliance"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Clan Sea Fox","Clan Wolf (in Exile)","Rasalhague Dominion","Raven Alliance"
+"Engine","Fusion",8,"8/12/0"
+"Sinks","Single",13
+"Internal","Standard"
+"Armor","Ferro-Fibrous",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",15,14,12,14,2
+"Equips",3
+"1","ER Medium Laser","Energy"
+"2","Medium Pulse Laser","Energy"
+"14","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"ER Medium Laser",1,0
+"Medium Pulse Laser",2,0
+"<rear>"
+"Medium Pulse Laser",2,0
+"<body>"
+"Infantry Compartment",3,1

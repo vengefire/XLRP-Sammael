@@ -1,0 +1,53 @@
+"Name","Drillson Heavy Hover Tank (SRM)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Hover"
+"BV2",926
+"Tons",50
+"Year","3028"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",24,19,18,19,24
+"Equips",5
+"6","SRM 2","Missile"
+"3","Standard","Ammo"
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","Large Laser","Energy"
+"Crits"
+"<front>"
+"SRM 2",1,0
+"SRM 2",1,0
+"SRM 2",1,0
+"SRM 2",1,0
+"Machine Gun",3,0
+"Machine Gun",3,0
+"<turret>"
+"Large Laser",5,0
+"SRM 2",1,0
+"SRM 2",1,0
+"<body>"
+"Ammo SRM 2",2,1
+"Ammo Machine Gun: Half",4,1

@@ -1,0 +1,54 @@
+"Name","Rommel Tank (Gauss)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1178
+"Tons",65
+"Year","3054"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Periphery","Filtvelt Coalition","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",168
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",42,40,26,40,40
+"Equips",5
+"5","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"2","Medium Laser","Energy"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<rear>"
+"Machine Gun",1,0
+"<turret>"
+"Gauss Rifle",3,0
+"Medium Laser",5,0
+"Medium Laser",5,0
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<body>"
+"Ammo Gauss Rifle",4,1
+"Ammo Machine Gun: Half",2,1

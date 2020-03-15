@@ -1,0 +1,43 @@
+"Name","Fury Command Tank (Fury II)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1234
+"Tons",80
+"Year","2732"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Other","Extinct"
+"Era","Civil War","(3062-3067)"
+"Factions","Other","Extinct"
+"Era","Jihad","(3068-3085)"
+"Factions","Other","Extinct"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",248
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",60,44,40,44,60
+"Equips",3
+"1","Medium Laser","Energy"
+"1","Gauss Rifle","Ballistic"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Medium Laser",1,0
+"<turret>"
+"Gauss Rifle",2,0
+"<body>"
+"Ammo Gauss Rifle",3,1

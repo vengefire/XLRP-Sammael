@@ -1,0 +1,53 @@
+"Name","Shoden Assault Vehicle (Streak)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1425
+"Tons",70
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Jade Falcon","Clan Nova Cat","Clan Wolf"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat","Clan Sea Fox"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat","Clan Sea Fox"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",184
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",55,37,25,37,30
+"Equips",8
+"2","Machine Gun (Light)","Ballistic"
+"1","Standard","Ammo"
+"1","ATM 9","Missile"
+"1","ER","Ammo"
+"1","HE","Ammo"
+"1","Standard","Ammo"
+"4","Streak SRM 6","Missile"
+"4","Standard","Ammo"
+"Crits"
+"<right>"
+"Machine Gun (Light)",1,0
+"<left>"
+"Machine Gun (Light)",1,0
+"<turret>"
+"ATM 9",3,0
+"Streak SRM 6",7,0
+"Streak SRM 6",7,0
+"Streak SRM 6",7,0
+"Streak SRM 6",7,0
+"<body>"
+"Ammo Streak SRM 6",8,1
+"Ammo ATM 9: ER",4,1
+"Ammo ATM 9",6,1
+"Ammo ATM 9: HE",5,1
+"Ammo Machine Gun (Light)",2,1

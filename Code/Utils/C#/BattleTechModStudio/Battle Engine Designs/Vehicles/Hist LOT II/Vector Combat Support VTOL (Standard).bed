@@ -1,0 +1,47 @@
+"Name","Vector Combat Support VTOL (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",512
+"Tons",22
+"Year","2732"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Periphery","Rim Worlds Republic - Terran Corps"
+"Factions","Other","Star League Regular","Star League Royal"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Other","Extinct"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Other","Extinct"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Other","Extinct"
+"Era","Civil War","(3062-3067)"
+"Factions","Other","Extinct"
+"Era","Jihad","(3068-3085)"
+"Factions","Other","Extinct"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Era","Late Republic","(3101-3130)"
+"Factions","Other","Extinct"
+"Engine","Fusion",12,"12/18/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",56
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",18,18,6,18,2
+"Equips",3
+"1","Small Pulse Laser","Energy"
+"2","Medium Laser","Energy"
+"6","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Small Pulse Laser",1,0
+"Medium Laser",2,0
+"Medium Laser",2,0
+"<body>"
+"Infantry Compartment",3,1

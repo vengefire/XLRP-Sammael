@@ -1,0 +1,36 @@
+"Name","Harasser Missile Platform 'Mini-Peggy'"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",351
+"Tons",25
+"Year","3028"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Free Worlds League"
+"Factions","Periphery","Outworlds Alliance"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance","Lyran Commonwealth"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance"
+"Engine","ICE",10,"10/15/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",40
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",8,8,8,8,8
+"Equips",3
+"2","SRM 4","Missile"
+"2","Standard","Ammo"
+"1","Remote Sensor Dispenser","Electronics"
+"Crits"
+"<turret>"
+"SRM 4",1,0
+"SRM 4",1,0
+"<body>"
+"Ammo SRM 4",2,1
+"Remote Sensor Dispenser",3,0

@@ -1,0 +1,56 @@
+"Name","Hetzer Wheeled Assault Gun (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Wheeled"
+"BV2",574
+"Tons",40
+"Year","2887"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark","Clan Ghost Bear","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark","Clan Ghost Bear","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat","Clan Wolf (in Exile)","Rasalhague Dominion","Raven Alliance"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",4,"4/6/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",96
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",30,22,22,22,0
+"Equips",2
+"1","AC/20","Ballistic"
+"4","Standard","Ammo"
+"Crits"
+"<front>"
+"AC/20",1,0
+"<body>"
+"Ammo AC/20",2,1

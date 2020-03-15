@@ -1,0 +1,48 @@
+"Name","Cavalry Attack Helicopter (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","VTOL"
+"BV2",503
+"Tons",25
+"Year","3054"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",10,"10/15/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",56
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",20,13,8,13,2
+"Equips",4
+"1","SRM 6","Missile"
+"1","Standard","Ammo"
+"3","SRM 2","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"SRM 6",1,0
+"SRM 2",3,0
+"SRM 2",3,0
+"SRM 2",3,0
+"<body>"
+"Ammo SRM 6",2,1
+"Ammo SRM 2",4,1

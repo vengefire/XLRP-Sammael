@@ -1,0 +1,35 @@
+"Name","Zephyr Hovertank (LRM)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",889
+"Tons",40
+"Year","3063"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",120
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",31,26,20,26,31
+"Equips",4
+"2","LRM 5","Missile"
+"2","Standard","Ammo"
+"2","ER Medium Laser","Energy"
+"1","Improved C3 Computer","Electronics"
+"Crits"
+"<front>"
+"LRM 5",1,0
+"LRM 5",1,0
+"<turret>"
+"ER Medium Laser",3,0
+"ER Medium Laser",3,0
+"<body>"
+"Ammo LRM 5",2,1
+"Improved C3 Computer",4,1

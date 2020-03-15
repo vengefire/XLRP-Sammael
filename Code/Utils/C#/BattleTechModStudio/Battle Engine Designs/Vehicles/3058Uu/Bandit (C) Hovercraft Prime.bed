@@ -1,0 +1,56 @@
+"Name","Bandit (C) Hovercraft Prime"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1087
+"Tons",50
+"Year","2875"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Wolf"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Wolf"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Wolf"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",144
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",1
+10,50,9,0,10,144,40,40,20,40,32,0,0,0,0,0,0
+13
+"",-1,-1,0,0
+"",-4,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"Infantry Compartment",3,-1,0,0
+"Infantry Compartment",3,-1,0,0
+"Infantry Compartment",3,-1,0,0
+"Infantry Compartment",3,-1,0,0
+"Infantry Compartment",3,-1,0,0
+"Infantry Compartment",3,-1,0,0
+"Infantry Compartment",3,-1,0,0
+"Infantry Compartment",3,-1,0,0
+"Infantry Compartment",3,-1,0,0
+"Infantry Compartment",3,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",40,40,20,40,32
+"Equips",3
+"2","Streak SRM 6","Missile"
+"2","Standard","Ammo"
+"10","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"Streak SRM 6",1,0
+"Streak SRM 6",1,0
+"<body>"
+"Ammo Streak SRM 6",2,1
+"Infantry Compartment",3,1

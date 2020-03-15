@@ -1,0 +1,28 @@
+"Name","Cyrano Gunship (Plasma)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",927
+"Tons",30
+"Year","3071"
+"Era","Jihad","(3068-3085)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Taurian Concordat"
+"Engine","Light",12,"12/18/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",18,13,7,13,2
+"Equips",2
+"1","Plasma Rifle","Energy"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"Plasma Rifle",1,0
+"<body>"
+"Ammo Plasma Rifle",2,1

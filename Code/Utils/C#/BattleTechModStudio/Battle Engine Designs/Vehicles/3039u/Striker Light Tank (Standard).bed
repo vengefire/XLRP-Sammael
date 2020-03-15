@@ -1,0 +1,51 @@
+"Name","Striker Light Tank (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Wheeled"
+"BV2",564
+"Tons",35
+"Year","3006"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Free Worlds League","Lyran Commonwealth"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Periphery","Filtvelt Coalition"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",5,"5/8/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",24,20,18,20,22
+"Equips",4
+"1","LRM 10","Missile"
+"1","Standard","Ammo"
+"1","SRM 6","Missile"
+"2","Standard","Ammo"
+"Crits"
+"<turret>"
+"LRM 10",1,0
+"SRM 6",3,0
+"<body>"
+"Ammo SRM 6",4,1
+"Ammo LRM 10",2,1

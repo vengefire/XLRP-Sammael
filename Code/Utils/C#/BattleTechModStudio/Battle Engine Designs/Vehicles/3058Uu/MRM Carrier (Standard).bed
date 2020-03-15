@@ -1,0 +1,48 @@
+"Name","MRM Carrier (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",779
+"Tons",60
+"Year","3063"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Ferro-Fibrous",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",14,14,11,14,0
+"Equips",3
+"3","MRM 30","Missile"
+"3","Standard","Ammo"
+"1","C3 Computer (Slave)","Electronics"
+"Crits"
+"<front>"
+"MRM 30",1,0
+"MRM 30",1,0
+"MRM 30",1,0
+"<body>"
+"Ammo MRM 30",2,1
+"C3 Computer (Slave)",3,1

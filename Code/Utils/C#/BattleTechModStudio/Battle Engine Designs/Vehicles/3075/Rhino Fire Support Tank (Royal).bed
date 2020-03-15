@@ -1,0 +1,59 @@
+"Name","Rhino Fire Support Tank (Royal)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1670
+"Tons",80
+"Year","2708"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Periphery","Rim Worlds Republic - Terran Corps"
+"Factions","Other","Star League Regular","Star League Royal"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General","Society"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Hell's Horses","Clan Jade Falcon","Clan Wolf","Raven Alliance"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf","Raven Alliance"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses","Raven Alliance"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",272
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",64,54,40,54,60
+"Equips",9
+"1","LRM 10","Missile"
+"1","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"2","Medium Pulse Laser","Energy"
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"2","LRM 20","Missile"
+"3","Artemis","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<front>"
+"LRM 10",1,0
+"<turret>"
+"Medium Pulse Laser",4,0
+"Medium Pulse Laser",4,0
+"Anti-Missile System",5,0
+"LRM 20",7,0
+"LRM 20",7,0
+"<body>"
+"Ammo Anti-Missile System",6,1
+"Ammo LRM 10: Artemis",2,1
+"Guardian ECM Suite",9,1
+"Ammo LRM 20: Artemis",8,1

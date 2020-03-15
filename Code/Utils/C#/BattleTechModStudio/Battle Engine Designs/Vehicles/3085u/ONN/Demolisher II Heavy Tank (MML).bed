@@ -1,0 +1,52 @@
+"Name","Demolisher II Heavy Tank (MML)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1397
+"Tons",100
+"Year","3076"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",232
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",60,50,40,50,59
+"Equips",8
+"2","Machine Gun","Ballistic"
+"1","Standard","Ammo"
+"4","MML 9","Missile"
+"4","LRM Artemis","Ammo"
+"3","SRM Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","Guardian ECM Suite","Electronics"
+"1","CASE","Miscellaneous"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<turret>"
+"MML 9",3,0
+"MML 9",3,0
+"MML 9",3,0
+"MML 9",3,0
+"<body>"
+"Ammo MML 9: LRM Artemis",4,1
+"Ammo MML 9: SRM Artemis",5,1
+"Ammo Machine Gun",2,1
+"Guardian ECM Suite",7,1
+"CASE",8,0

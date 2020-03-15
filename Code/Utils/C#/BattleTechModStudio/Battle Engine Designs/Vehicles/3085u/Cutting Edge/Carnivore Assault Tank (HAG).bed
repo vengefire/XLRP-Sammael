@@ -1,0 +1,50 @@
+"Name","Carnivore Assault Tank (HAG)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",2286
+"Tons",80
+"Year","3083"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Jade Falcon","Clan Wolf"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Jade Falcon","Clan Wolf"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Jade Falcon","Clan Wolf"
+"Engine","XL",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",248
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",62,46,42,46,52
+"Equips",8
+"2","Medium Pulse Laser","Energy"
+"4","AP Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"1","Hyper-Assault Gauss 40","Ballistic"
+"5","Standard","Ammo"
+"2","Anti-Missile System","Ballistic"
+"2","Standard","Ammo"
+"1","ECM Suite","Electronics"
+"Crits"
+"<front>"
+"Medium Pulse Laser",1,0
+"Medium Pulse Laser",1,0
+"<right>"
+"AP Gauss Rifle",2,0
+"AP Gauss Rifle",2,0
+"<left>"
+"AP Gauss Rifle",2,0
+"AP Gauss Rifle",2,0
+"<turret>"
+"Hyper-Assault Gauss 40",4,0
+"Anti-Missile System",6,0
+"Anti-Missile System",6,0
+"<body>"
+"Ammo Hyper-Assault Gauss 40",5,1
+"Ammo AP Gauss Rifle",3,1
+"Ammo Anti-Missile System",7,1
+"ECM Suite",8,1

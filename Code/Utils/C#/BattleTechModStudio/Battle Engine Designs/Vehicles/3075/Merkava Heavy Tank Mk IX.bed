@@ -1,0 +1,46 @@
+"Name","Merkava Heavy Tank Mk IX"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1038
+"Tons",75
+"Year","3073"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Free Worlds League"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth"
+"Engine","Light",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",160
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",36,32,26,32,34
+"Equips",8
+"2","Machine Gun","Ballistic"
+"2","Half","Ammo"
+"1","LRM 15","Missile"
+"2","Standard","Ammo"
+"1","Streak SRM 4","Missile"
+"1","Standard","Ammo"
+"1","Light Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<turret>"
+"Machine Gun",1,0
+"LRM 15",3,0
+"Streak SRM 4",5,0
+"Light Gauss Rifle",7,0
+"<body>"
+"Ammo LRM 15",4,1
+"Ammo Streak SRM 4",6,1
+"Ammo Machine Gun: Half",2,1
+"Ammo Light Gauss Rifle",8,1

@@ -1,0 +1,60 @@
+"Name","Condor Heavy Hover Tank (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Hover"
+"BV2",653
+"Tons",50
+"Year","2564"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Federated Suns","Lyran Commonwealth"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Federated Suns","Lyran Commonwealth","St. Ives Compact"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","ICE",8,"8/12/0"
+"Sinks","Single",6
+"Internal","Standard"
+"Armor","Standard",96
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",30,15,14,15,22
+"Equips",5
+"1","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","AC/5","Ballistic"
+"1","Standard","Ammo"
+"2","Medium Laser","Energy"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<turret>"
+"AC/5",3,0
+"Medium Laser",5,0
+"Medium Laser",5,0
+"<body>"
+"Ammo AC/5",4,1
+"Ammo Machine Gun: Half",2,1

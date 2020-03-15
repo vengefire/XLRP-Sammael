@@ -1,0 +1,57 @@
+"Name","Manticore Heavy Tank (3055 Upgrade)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",957
+"Tons",60
+"Year","3055"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth"
+"Factions","Mercenary","Mercenary"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Factions","Mercenary","Mercenary"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Factions","Mercenary","Mercenary"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Filtvelt Coalition"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Filtvelt Coalition"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Filtvelt Coalition"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",160
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",43,34,26,34,42
+"Equips",8
+"1","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"1","Large Pulse Laser","Energy"
+"1","LRM 10","Missile"
+"1","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","SRM 6","Missile"
+"1","Artemis","Ammo"
+"Crits"
+"<front>"
+"Streak SRM 2",1,0
+"<turret>"
+"Large Pulse Laser",3,0
+"LRM 10",4,0
+"SRM 6",7,0
+"<body>"
+"Ammo LRM 10: Artemis",5,1
+"Ammo SRM 6: Artemis",8,1
+"Ammo Streak SRM 2",2,1

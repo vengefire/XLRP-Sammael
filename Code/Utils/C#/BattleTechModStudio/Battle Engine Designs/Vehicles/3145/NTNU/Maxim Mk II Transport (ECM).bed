@@ -1,0 +1,39 @@
+"Name","Maxim Mk II Transport (ECM)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",483
+"Tons",50
+"Year","3087"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",8,"8/12/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",88
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",30,20,19,20,20
+"Equips",5
+"1","Streak SRM 2","Missile"
+"2","Standard","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"1","CASE","Miscellaneous"
+"32","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"Streak SRM 2",1,0
+"<body>"
+"Guardian ECM Suite",3,1
+"Ammo Streak SRM 2",2,1
+"CASE",4,0
+"Infantry Compartment",5,1

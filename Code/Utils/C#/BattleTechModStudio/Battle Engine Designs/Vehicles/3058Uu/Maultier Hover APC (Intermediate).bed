@@ -1,0 +1,40 @@
+"Name","Maultier Hover APC (Intermediate)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",210
+"Tons",15
+"Year","3043"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Civil War","(3062-3067)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Jihad","(3068-3085)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Late Republic","(3101-3130)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Periphery","Taurian Concordat"
+"Engine","ICE",9,"9/14/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Ferro-Fibrous",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",18,12,11,12,0
+"Equips",3
+"1","SRM 2","Missile"
+"1","Standard","Ammo"
+"6","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"SRM 2",1,0
+"<body>"
+"Ammo SRM 2",2,1
+"Infantry Compartment",3,1

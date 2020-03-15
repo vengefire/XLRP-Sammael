@@ -1,0 +1,42 @@
+"Name","Tyr Infantry Support Tank (Kurita)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",687
+"Tons",45
+"Year","3070"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",21,21,21,21,20
+"Equips",6
+"2","MML 7","Missile"
+"1","LRM","Ammo"
+"1","SRM","Ammo"
+"2","Machine Gun (Light)","Ballistic"
+"1","Half","Ammo"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"MML 7",1,0
+"MML 7",1,0
+"Machine Gun (Light)",4,0
+"Machine Gun (Light)",4,0
+"<body>"
+"Ammo MML 7: LRM",2,1
+"Ammo MML 7: SRM",3,1
+"Ammo Machine Gun (Light): Half",5,1
+"Infantry Compartment",6,1

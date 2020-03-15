@@ -1,0 +1,41 @@
+"Name","Harasser Missile Platform (Flamer)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Hover"
+"BV2",365
+"Tons",25
+"Year","2851"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance","Lyran Commonwealth"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance"
+"Engine","ICE",10,"10/15/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",40
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",8,8,8,8,8
+"Equips",4
+"1","Flamer (Vehicle)","Ballistic"
+"1","Standard","Ammo"
+"2","SRM 4","Missile"
+"2","Standard","Ammo"
+"Crits"
+"<turret>"
+"Flamer (Vehicle)",1,0
+"SRM 4",3,0
+"SRM 4",3,0
+"<body>"
+"Ammo SRM 4",4,1
+"Ammo Flamer (Vehicle)",2,1

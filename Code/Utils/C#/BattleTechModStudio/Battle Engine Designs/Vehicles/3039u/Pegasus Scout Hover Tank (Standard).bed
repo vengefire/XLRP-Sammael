@@ -1,0 +1,55 @@
+"Name","Pegasus Scout Hover Tank (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Hover"
+"BV2",640
+"Tons",35
+"Year","2791"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Circinus Federation","Magistracy of Canopus","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","ICE",8,"8/12/0"
+"Sinks","Single",3
+"Internal","Standard"
+"Armor","Standard",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",26,19,19,19,21
+"Equips",3
+"1","Medium Laser","Energy"
+"2","SRM 6","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Medium Laser",1,0
+"<turret>"
+"SRM 6",2,0
+"SRM 6",2,0
+"<body>"
+"Ammo SRM 6",3,1

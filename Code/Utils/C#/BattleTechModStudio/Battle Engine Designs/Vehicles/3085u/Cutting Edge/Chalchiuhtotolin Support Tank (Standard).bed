@@ -1,0 +1,53 @@
+"Name","Chalchiuhtotolin Support Tank (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1057
+"Tons",50
+"Year","3084"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Jade Falcon"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Jade Falcon","Clan Wolf"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Jade Falcon","Clan Wolf"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Jade Falcon","Clan Wolf"
+"Engine","Fusion",5,"5/8/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Ferro-Fibrous",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",37,25,15,25,22
+"Equips",8
+"4","Machine Gun (Light)","Ballistic"
+"1","Standard","Ammo"
+"2","Micro Pulse Laser","Energy"
+"1","Large Pulse Laser","Energy"
+"1","Flamer (Vehicle)","Ballistic"
+"2","Standard","Ammo"
+"2","Streak SRM 4","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Machine Gun (Light)",1,0
+"Micro Pulse Laser",3,0
+"Micro Pulse Laser",3,0
+"<right>"
+"Machine Gun (Light)",1,0
+"<rear>"
+"Machine Gun (Light)",1,0
+"<left>"
+"Machine Gun (Light)",1,0
+"<turret>"
+"Large Pulse Laser",4,0
+"Flamer (Vehicle)",5,0
+"Streak SRM 4",7,0
+"Streak SRM 4",7,0
+"<body>"
+"Ammo Streak SRM 4",8,1
+"Ammo Flamer (Vehicle)",6,1
+"Ammo Machine Gun (Light)",2,1

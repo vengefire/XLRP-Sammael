@@ -1,0 +1,42 @@
+"Name","Musketeer Hover Tank (Armor)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",897
+"Tons",50
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns"
+"Engine","ICE",7,"7/11/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Ferro-Fibrous",152
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",51,34,23,34,28
+"Equips",6
+"1","TAG","Electronics"
+"1","Rotary AC/2","Ballistic"
+"3","Standard","Ammo"
+"2","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"1","CASE","Miscellaneous"
+"Crits"
+"<front>"
+"TAG",1,0
+"<turret>"
+"Rotary AC/2",2,0
+"Streak SRM 2",4,0
+"Streak SRM 2",4,0
+"<body>"
+"Ammo Rotary AC/2",3,1
+"Ammo Streak SRM 2",5,1
+"CASE",6,1

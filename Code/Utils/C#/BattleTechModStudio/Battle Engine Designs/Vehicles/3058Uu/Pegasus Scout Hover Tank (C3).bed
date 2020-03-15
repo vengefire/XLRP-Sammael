@@ -1,0 +1,38 @@
+"Name","Pegasus Scout Hover Tank (C3)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",785
+"Tons",35
+"Year","3070"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Alliance","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",88
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",29,17,10,17,25
+"Equips",4
+"2","Medium Pulse Laser","Energy"
+"2","Streak SRM 4","Missile"
+"1","Standard","Ammo"
+"1","C3 Computer (Slave)","Electronics"
+"Crits"
+"<turret>"
+"Medium Pulse Laser",1,0
+"Medium Pulse Laser",1,0
+"Streak SRM 4",2,0
+"Streak SRM 4",2,0
+"<body>"
+"Ammo Streak SRM 4",3,1
+"C3 Computer (Slave)",4,1

@@ -1,0 +1,58 @@
+"Name","Hephaestus Scout Tank D"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",850
+"Tons",30
+"Year","3071"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Engine","Fusion",8,"8/12/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",80
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",.5
+9,30,8,0,10,80,20,20,18,20,18,0,0,0,0,0,0
+12
+"",-1,-1,0,0
+"",-4,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"Active Probe",4,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Infantry Compartment",6,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",20,20,18,20,18
+"Equips",6
+"2","AP Gauss Rifle","Ballistic"
+"1","Standard","Ammo"
+"2","ER Medium Laser","Energy"
+"1","Active Probe","Electronics"
+"1","ECM Suite","Electronics"
+"10","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"AP Gauss Rifle",1,0
+"AP Gauss Rifle",1,0
+"ER Medium Laser",3,0
+"ER Medium Laser",3,0
+"<body>"
+"Active Probe",4,1
+"ECM Suite",5,1
+"Ammo AP Gauss Rifle",2,1
+"Infantry Compartment",6,1

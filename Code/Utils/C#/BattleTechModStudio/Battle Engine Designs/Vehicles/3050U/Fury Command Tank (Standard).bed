@@ -1,0 +1,33 @@
+"Name","Fury Command Tank (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1184
+"Tons",80
+"Year","3064"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",232
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",60,39,36,39,58
+"Equips",3
+"1","Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"2","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"Gauss Rifle",1,0
+"<body>"
+"Ammo Gauss Rifle",2,1
+"Infantry Compartment",3,1

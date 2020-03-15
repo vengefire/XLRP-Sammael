@@ -1,0 +1,58 @@
+"Name","Schrek AC Carrier (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",773
+"Tons",80
+"Year","2916"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",144
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",36,24,24,24,36
+"Equips",4
+"8","Machine Gun","Ballistic"
+"4","Half","Ammo"
+"3","AC/5","Ballistic"
+"3","Standard","Ammo"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<right>"
+"Machine Gun",1,0
+"<left>"
+"Machine Gun",1,0
+"<turret>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"Machine Gun",1,0
+"Machine Gun",1,0
+"AC/5",3,0
+"AC/5",3,0
+"AC/5",3,0
+"<body>"
+"Ammo AC/5",4,1
+"Ammo Machine Gun: Half",2,1

@@ -1,0 +1,33 @@
+"Name","Saracen Mk II HCV (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",837
+"Tons",35
+"Year","3137"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Free Worlds League"
+"Factions","IS Clan","Clan Nova Cat"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",10,"10/15/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",96
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",28,22,21,22,26
+"Equips",4
+"2","ER Medium Laser","Energy"
+"1","MML 7","Missile"
+"1","LRM","Ammo"
+"1","SRM","Ammo"
+"Crits"
+"<turret>"
+"ER Medium Laser",1,0
+"ER Medium Laser",1,0
+"MML 7",2,0
+"<body>"
+"Ammo MML 7: LRM",3,1
+"Ammo MML 7: SRM",4,1

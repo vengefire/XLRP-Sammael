@@ -1,0 +1,52 @@
+"Name","Enyo Strike Tank (LB-X) 'Sholef'"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1423
+"Tons",55
+"Year","3075"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Engine","XL",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",120
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",30,29,29,29,27
+"Equips",10
+"2","AP Gauss Rifle","Ballistic"
+"1","Standard","Ammo"
+"3","SRM 6","Missile"
+"2","Standard","Ammo"
+"1","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"1","Standard","Ammo"
+"1","Plasma Cannon","Ballistic"
+"1","Standard","Ammo"
+"1","ECM Suite","Electronics"
+"Crits"
+"<front>"
+"AP Gauss Rifle",1,0
+"AP Gauss Rifle",1,0
+"SRM 6",3,0
+"SRM 6",3,0
+"<turret>"
+"LB 10-X AC",5,0
+"Plasma Cannon",8,0
+"SRM 6",3,0
+"<body>"
+"ECM Suite",10,1
+"Ammo AP Gauss Rifle",2,1
+"Ammo SRM 6",4,1
+"Ammo LB 10-X AC: Cluster",6,1
+"Ammo Plasma Cannon",9,1
+"Ammo LB 10-X AC",7,1

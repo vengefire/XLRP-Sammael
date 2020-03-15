@@ -1,0 +1,44 @@
+"Name","Manticore Heavy Tank (C3M)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",958
+"Tons",60
+"Year","3063"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Republic of the Sphere"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",168
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",44,38,26,38,42
+"Equips",7
+"1","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"1","PPC","Energy"
+"1","LRM 10","Missile"
+"1","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","C3 Computer (Master)","Electronics"
+"Crits"
+"<front>"
+"Streak SRM 2",1,0
+"<turret>"
+"PPC",3,0
+"LRM 10",4,0
+"<body>"
+"C3 Computer (Master)",7,1
+"Ammo LRM 10: Artemis",5,1
+"Ammo Streak SRM 2",2,1

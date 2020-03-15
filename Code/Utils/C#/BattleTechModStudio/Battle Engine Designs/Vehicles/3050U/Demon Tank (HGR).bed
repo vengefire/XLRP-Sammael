@@ -1,0 +1,43 @@
+"Name","Demon Tank (HGR)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1314
+"Tons",60
+"Year","3070"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","XL",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",52,32,22,32,0
+"Equips",8
+"1","Heavy Gauss Rifle","Ballistic"
+"3","Standard","Ammo"
+"1","Streak SRM 6","Missile"
+"1","Standard","Ammo"
+"2","ER Medium Laser","Energy"
+"1","Improved C3 Computer","Electronics"
+"1","Targeting Computer","Electronics"
+"1","CASE","Miscellaneous"
+"Crits"
+"<front>"
+"Heavy Gauss Rifle",1,0
+"Streak SRM 6",3,0
+"<right>"
+"ER Medium Laser",5,0
+"<left>"
+"ER Medium Laser",5,0
+"<body>"
+"Improved C3 Computer",6,1
+"Targeting Computer",7,1
+"Ammo Streak SRM 6",4,1
+"Ammo Heavy Gauss Rifle",2,1
+"CASE",8,0

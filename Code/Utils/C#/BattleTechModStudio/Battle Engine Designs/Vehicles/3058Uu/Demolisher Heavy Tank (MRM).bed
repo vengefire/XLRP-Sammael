@@ -1,0 +1,37 @@
+"Name","Demolisher Heavy Tank (MRM)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1242
+"Tons",80
+"Year","3060"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine"
+"Factions","Periphery","Periphery General"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",168
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",48,40,20,40,40
+"Equips",3
+"3","MRM 30","Missile"
+"6","Standard","Ammo"
+"1","C3 Computer (Slave)","Electronics"
+"Crits"
+"<turret>"
+"MRM 30",1,0
+"MRM 30",1,0
+"MRM 30",1,0
+"<body>"
+"Ammo MRM 30",2,1
+"C3 Computer (Slave)",3,1

@@ -1,0 +1,108 @@
+"Name","ALM-XF Fireball"
+"Tech","IS"
+"Rules","Experimental"
+"Chassis","Biped"
+"BV2",612
+"Tons",20
+"Year","3077"
+"Era","Jihad","(3068-3085)"
+"Factions","Other","Unique"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Unique"
+"Engine","XXL",16,"16/24(40)/0"
+"Sinks","Double",10
+"Internal","Endo-Steel"
+"Armor","Ferro-Fibrous",56
+"Cockpit","Standard"
+"Gyro","XL"
+"JumpJets","Standard",0
+"LArmAct","Full Arm"
+"RArmAct","Full Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",5,5,7,7,9,2,2,2,9,7,7
+"Equips",3
+"2","ER Small Laser","Energy"
+"1","MASC","Miscellaneous"
+"1","Supercharger","Miscellaneous"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hand Actuator",-8,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"XXL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"ER Small Laser",1,0,0,2,0
+"ER Small Laser",1,0,0,2,0
+"MASC",2,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"XXL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Supercharger",3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Hand Actuator",-9,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"XXL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"XL Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XXL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+" -",0,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0

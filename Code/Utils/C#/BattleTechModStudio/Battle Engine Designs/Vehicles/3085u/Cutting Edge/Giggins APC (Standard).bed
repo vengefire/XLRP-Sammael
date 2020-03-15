@@ -1,0 +1,37 @@
+"Name","Giggins APC (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",476
+"Tons",40
+"Year","3085"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Engine","Fusion",6,"6/9/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",28,25,25,25,25
+"Equips",4
+"2","Machine Gun (Heavy)","Ballistic"
+"1","Half","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"16","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"Machine Gun (Heavy)",1,0
+"Machine Gun (Heavy)",1,0
+"<body>"
+"Guardian ECM Suite",3,1
+"Infantry Compartment",4,1
+"Ammo Machine Gun (Heavy): Half",2,1

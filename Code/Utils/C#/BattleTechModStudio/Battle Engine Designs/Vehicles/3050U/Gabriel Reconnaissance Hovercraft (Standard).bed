@@ -1,0 +1,39 @@
+"Name","Gabriel Reconnaissance Hovercraft (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",198
+"Tons",5
+"Year","2712"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Comstar"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Comstar"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Comstar","Free Rasalhague Republic","Word of Blake"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Comstar","Free Rasalhague Republic","Word of Blake"
+"Factions","Periphery","Taurian Concordat"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Comstar","Free Rasalhague Republic","Word of Blake"
+"Factions","Periphery","Taurian Concordat"
+"Engine","Fusion",13,"13/20/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",16
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",5,3,3,3,3
+"Equips",1
+"1","Medium Laser","Energy"
+"Crits"
+"<turret>"
+"Medium Laser",1,0

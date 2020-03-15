@@ -1,0 +1,44 @@
+"Name","DI Morgan Assault Tank (Gauss)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1621
+"Tons",100
+"Year","3075"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Engine","XL",2,"2/3/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",128
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",48,30,20,30,30
+"Equips",6
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"3","Gauss Rifle","Ballistic"
+"6","Standard","Ammo"
+"1","C3 Computer (Slave)","Electronics"
+"1","Targeting Computer","Electronics"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<turret>"
+"Gauss Rifle",3,0
+"Gauss Rifle",3,0
+"Gauss Rifle",3,0
+"<body>"
+"C3 Computer (Slave)",5,1
+"Ammo Gauss Rifle",4,1
+"Ammo Machine Gun: Half",2,1
+"Targeting Computer",6,1

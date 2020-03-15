@@ -1,0 +1,42 @@
+"Name","Pegasus Scout Hover Tank (Sensors)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",571
+"Tons",35
+"Year","2798"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Engine","ICE",8,"8/12/0"
+"Sinks","Single",3
+"Internal","Standard"
+"Armor","Standard",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",26,19,19,19,21
+"Equips",4
+"1","Medium Laser","Energy"
+"2","SRM 4","Missile"
+"2","Standard","Ammo"
+"1","Remote Sensor Dispenser","Electronics"
+"Crits"
+"<front>"
+"Medium Laser",1,0
+"<turret>"
+"SRM 4",2,0
+"SRM 4",2,0
+"<body>"
+"Ammo SRM 4",3,1
+"Remote Sensor Dispenser",4,0

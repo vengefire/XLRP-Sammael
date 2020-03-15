@@ -1,0 +1,44 @@
+"Name","Eldingar Hover Sled (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1402
+"Tons",50
+"Year","3081"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Rasalhague Dominion"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Rasalhague Dominion"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Rasalhague Dominion"
+"Engine","XL",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",120
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",38,28,24,28,26
+"Equips",8
+"1","ATM 9","Missile"
+"1","ER","Ammo"
+"1","HE","Ammo"
+"2","Standard","Ammo"
+"3","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"1","ECM Suite","Electronics"
+"10","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"ATM 9",1,0
+"Streak SRM 2",5,0
+"Streak SRM 2",5,0
+"Streak SRM 2",5,0
+"<body>"
+"Ammo ATM 9",4,1
+"Ammo ATM 9: ER",2,1
+"Ammo ATM 9: HE",3,1
+"Ammo Streak SRM 2",6,1
+"ECM Suite",7,1
+"Infantry Compartment",8,1

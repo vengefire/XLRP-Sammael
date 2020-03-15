@@ -1,0 +1,51 @@
+"Name","Galleon Light Tank GAL-200"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",345
+"Tons",30
+"Year","2915"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Draconis Combine","Lyran Commonwealth"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Draconis Combine","Lyran Commonwealth"
+"Factions","Periphery","Magistracy of Canopus","Outworlds Alliance"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",6,"6/9/0"
+"Sinks","Single",3
+"Internal","Standard"
+"Armor","Standard",72
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",14,13,14,13,18
+"Equips",3
+"2","Machine Gun","Ballistic"
+"1","Standard","Ammo"
+"1","Medium Laser","Energy"
+"Crits"
+"<right>"
+"Machine Gun",1,0
+"<left>"
+"Machine Gun",1,0
+"<turret>"
+"Medium Laser",3,0
+"<body>"
+"Ammo Machine Gun",2,1

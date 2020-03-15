@@ -1,0 +1,115 @@
+"Name","THE-F Thorn"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Biped"
+"BV2",510
+"Tons",20
+"Year","3035"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine"
+"Factions","Periphery","Periphery General"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","Fusion",6,"6/9/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",64
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","Full Arm"
+"RArmAct","No Lower Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",6,6,6,6,8,3,3,4,8,7,7
+"Equips",3
+"2","Medium Laser","Energy"
+"1","LRM 5","Missile"
+"1","Standard","Ammo"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hand Actuator",-8,1,0,2,1
+"Medium Laser",1,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Heat Sink",-2,0,0,2,0
+"Heat Sink",-2,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Heat Sink",-2,0,0,2,0
+"Heat Sink",-2,0,0,2,0
+"Ammo LRM 5",3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"LRM 5",2,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Heat Sink",-2,0,0,2,0
+"Heat Sink",-2,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Medium Laser",1,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0

@@ -1,0 +1,39 @@
+"Name","Giggins APC (Fire Support)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",718
+"Tons",40
+"Year","3085"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Engine","Fusion",6,"6/9/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",120
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",34,28,30,28,28
+"Equips",5
+"2","ER Medium Laser","Energy"
+"1","MML 5","Missile"
+"1","LRM","Ammo"
+"1","SRM","Ammo"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"ER Medium Laser",1,0
+"ER Medium Laser",1,0
+"MML 5",2,0
+"<body>"
+"Ammo MML 5: LRM",3,1
+"Ammo MML 5: SRM",4,1
+"Infantry Compartment",5,1

@@ -1,0 +1,24 @@
+"Name","Skimmer"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",86
+"Tons",5
+"Year",""
+"Engine","Fusion",17,"17/26/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",8
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",3,2,1,2,0
+"Equips",2
+"1","Small Laser","Energy"
+"1","Flamer","Energy"
+"Crits"
+"<front>"
+"Small Laser",1,0
+"<rear>"
+"Flamer",2,0

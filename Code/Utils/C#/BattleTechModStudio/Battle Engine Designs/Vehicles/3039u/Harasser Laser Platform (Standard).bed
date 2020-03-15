@@ -1,0 +1,33 @@
+"Name","Harasser Laser Platform (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Hover"
+"BV2",321
+"Tons",25
+"Year","2957"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Draconis Combine","Free Worlds League"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Draconis Combine","Free Worlds League"
+"Factions","Periphery","Outworlds Alliance"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance","Lyran Commonwealth"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance"
+"Engine","ICE",10,"10/15/0"
+"Sinks","Single",6
+"Internal","Standard"
+"Armor","Standard",24
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",5,5,4,5,5
+"Equips",1
+"2","Medium Laser","Energy"
+"Crits"
+"<turret>"
+"Medium Laser",1,0
+"Medium Laser",1,0

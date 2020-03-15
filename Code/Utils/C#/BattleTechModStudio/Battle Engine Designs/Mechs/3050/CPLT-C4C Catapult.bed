@@ -1,0 +1,121 @@
+"Name","CPLT-C4C Catapult"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",1449
+"Tons",65
+"Year","3055"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Commonwealth","Federated Suns"
+"Factions","Mercenary","Mercenary"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Commonwealth","Federated Suns"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",4,"4/6/4"
+"Sinks","Double",10
+"Internal","Standard"
+"Armor","Standard",160
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",4
+"LArmAct","No Lower Arm"
+"RArmAct","No Lower Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",15,15,17,17,22,6,6,7,9,23,23
+"Equips",5
+"1","Small Pulse Laser","Energy"
+"1","Large Laser","Energy"
+"2","LRM 20","Missile"
+"4","Standard","Ammo"
+"1","Beagle Active Probe","Electronics"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"LRM 20",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"Beagle Active Probe",5,0,0,2,0
+":ditto:",5,0,0,2,0
+"Ammo LRM 20",4,0,0,2,0
+"Ammo LRM 20",4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"Large Laser",2,0,0,2,0
+":ditto:",2,0,0,2,0
+"Ammo LRM 20",4,0,0,2,0
+"Ammo LRM 20",4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"LRM 20",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Small Pulse Laser",1,0,0,2,0
+" -",0,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+" -",0,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0

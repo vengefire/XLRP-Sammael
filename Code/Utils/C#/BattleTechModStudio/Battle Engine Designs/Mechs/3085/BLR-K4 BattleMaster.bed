@@ -1,0 +1,117 @@
+"Name","BLR-K4 BattleMaster"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",2232
+"Tons",85
+"Year","3073"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Free Rasalhague Republic","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Rasalhague Dominion"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Rasalhague Dominion"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Rasalhague Dominion"
+"Engine","XL",3,"3/5/5"
+"Sinks","Double",14
+"Internal","Standard"
+"Armor","Standard",240
+"Cockpit","Standard"
+"Gyro","Heavy-Duty"
+"JumpJets","Improved",5
+"LArmAct","Full Arm"
+"RArmAct","Full Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",27,27,28,28,37,8,8,12,9,28,28
+"Equips",5
+"1","Large Pulse Laser","Energy"
+"1","Snub-Nose PPC","Energy"
+"1","Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"2","ER Medium Laser","Energy"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hand Actuator",-8,1,0,2,1
+"Double Heat Sink",-2,0,0,2,0
+":ditto:",-2,0,0,2,0
+":ditto:",-2,0,0,2,0
+"Large Pulse Laser",1,0,0,2,0
+":ditto:",1,0,0,2,0
+"Snub-Nose PPC",2,0,0,2,0
+":ditto:",2,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Double Heat Sink",-2,0,0,2,0
+":ditto:",-2,0,0,2,0
+":ditto:",-2,0,0,2,0
+"Double Heat Sink",-2,0,0,2,0
+":ditto:",-2,0,0,2,0
+":ditto:",-2,0,0,2,0
+"Improved Jump Jet",-7,0,0,2,0
+":ditto:",-7,0,0,2,0
+"ER Medium Laser",5,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Double Heat Sink",-2,0,0,2,0
+":ditto:",-2,0,0,2,0
+":ditto:",-2,0,0,2,0
+"Improved Jump Jet",-7,0,0,2,0
+":ditto:",-7,0,0,2,0
+"ER Medium Laser",5,0,0,2,0
+"Ammo Gauss Rifle",4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Hand Actuator",-9,1,0,2,1
+"Gauss Rifle",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+"Ammo Gauss Rifle",4,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Heavy-Duty Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Improved Jump Jet",-7,0,0,2,0
+":ditto:",-7,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+" -",0,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Improved Jump Jet",-7,0,0,2,0
+":ditto:",-7,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Improved Jump Jet",-7,0,0,2,0
+":ditto:",-7,0,0,2,0

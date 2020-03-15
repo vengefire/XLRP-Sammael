@@ -1,0 +1,34 @@
+"Name","Aeron Strike VTOL (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",875
+"Tons",25
+"Year","3082"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League (Duchy of Andurien)"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League (Duchy of Andurien)","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League (Duchy of Andurien)","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League (Duchy of Andurien)","Republic of the Sphere"
+"Engine","XL",12,"12/18/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",56
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",18,16,17,16,2
+"Equips",3
+"1","ER Large Laser","Energy"
+"1","Guardian ECM Suite","Electronics"
+"1","Targeting Computer","Electronics"
+"Crits"
+"<front>"
+"ER Large Laser",1,0
+"<body>"
+"Guardian ECM Suite",2,1
+"Targeting Computer",3,1

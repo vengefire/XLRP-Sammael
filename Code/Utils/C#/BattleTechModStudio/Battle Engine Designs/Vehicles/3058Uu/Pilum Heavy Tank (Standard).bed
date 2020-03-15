@@ -1,0 +1,50 @@
+"Name","Pilum Heavy Tank (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1121
+"Tons",70
+"Year","3057"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",160
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",40,33,33,33,40
+"Equips",6
+"2","Medium Pulse Laser","Energy"
+"2","LRM 15","Missile"
+"3","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"2","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Medium Pulse Laser",1,0
+"Medium Pulse Laser",1,0
+"<turret>"
+"LRM 15",2,0
+"LRM 15",2,0
+"Streak SRM 2",5,0
+"Streak SRM 2",5,0
+"<body>"
+"Ammo LRM 15: Artemis",3,1
+"Ammo Streak SRM 2",6,1

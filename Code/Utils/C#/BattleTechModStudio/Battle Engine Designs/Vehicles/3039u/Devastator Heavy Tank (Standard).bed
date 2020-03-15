@@ -1,0 +1,57 @@
+"Name","Devastator Heavy Tank (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",1037
+"Tons",80
+"Year","3003"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",144
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",38,26,16,26,38
+"Equips",6
+"1","Flamer","Energy"
+"1","SRM 6","Missile"
+"1","Standard","Ammo"
+"3","Small Laser","Energy"
+"2","AC/20","Ballistic"
+"4","Standard","Ammo"
+"Crits"
+"<front>"
+"Flamer",1,0
+"SRM 6",2,0
+"<turret>"
+"Small Laser",4,0
+"Small Laser",4,0
+"Small Laser",4,0
+"AC/20",5,0
+"AC/20",5,0
+"<body>"
+"Ammo AC/20",6,1
+"Ammo SRM 6",3,1

@@ -1,0 +1,51 @@
+"Name","Cyrano Gunship (Royal)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",740
+"Tons",30
+"Year","2721"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Other","Star League Royal"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General","Society"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Raven Alliance"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Raven Alliance"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses","Raven Alliance"
+"Engine","XL",12,"12/18/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Ferro-Fibrous",40
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",12,10,10,10,2
+"Equips",5
+"1","TAG","Electronics"
+"1","ER Large Laser","Energy"
+"2","Anti-Missile System","Ballistic"
+"2","Standard","Ammo"
+"1","Beagle Active Probe","Electronics"
+"Crits"
+"<front>"
+"TAG",1,0
+"ER Large Laser",2,0
+"<right>"
+"Anti-Missile System",3,0
+"<left>"
+"Anti-Missile System",3,0
+"<body>"
+"Ammo Anti-Missile System",4,1
+"Beagle Active Probe",5,0

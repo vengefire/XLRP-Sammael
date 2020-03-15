@@ -1,0 +1,60 @@
+"Name","Scorpion Light Tank (LRM)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",425
+"Tons",25
+"Year","2813"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Jade Falcon"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Jade Falcon"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Jade Falcon"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Jade Falcon"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",4,"4/6/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",80
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",20,14,12,14,20
+"Equips",4
+"1","LRM 5","Missile"
+"1","Standard","Ammo"
+"1","LRM 10","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<turret>"
+"LRM 5",1,0
+"LRM 10",3,0
+"<body>"
+"Ammo LRM 10",4,1
+"Ammo LRM 5",2,1

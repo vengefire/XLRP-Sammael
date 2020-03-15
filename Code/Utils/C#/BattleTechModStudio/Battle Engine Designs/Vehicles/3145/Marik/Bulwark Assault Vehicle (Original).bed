@@ -1,0 +1,41 @@
+"Name","Bulwark Assault Vehicle (Original)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1681
+"Tons",85
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Free Worlds League"
+"Factions","Mercenary","Mercenary"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Free Worlds League"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Free Worlds League","Free Worlds League (Duchy of Andurien)","Free Worlds League (Regulan Fiefs)"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",176
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",55,40,22,40,40
+"Equips",4
+"1","Heavy Gauss Rifle","Ballistic"
+"4","Standard","Ammo"
+"1","Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"Heavy Gauss Rifle",1,0
+"<turret>"
+"Gauss Rifle",3,0
+"<body>"
+"Ammo Gauss Rifle",4,1
+"Ammo Heavy Gauss Rifle",2,1

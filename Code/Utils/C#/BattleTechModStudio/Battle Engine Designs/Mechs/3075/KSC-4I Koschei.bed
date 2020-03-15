@@ -1,0 +1,124 @@
+"Name","KSC-4I Koschei"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",1516
+"Tons",65
+"Year","2719"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Other","Extinct"
+"Era","Civil War","(3062-3067)"
+"Factions","Other","Extinct"
+"Era","Jihad","(3068-3085)"
+"Factions","Mercenary","Mercenary"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",5,"5/8/0"
+"Sinks","Double",10
+"Internal","Endo-Steel"
+"Armor","Ferro-Fibrous",184
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","No Lower Arm"
+"RArmAct","Full Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",20,20,22,22,31,7,7,10,9,29,29
+"Equips",6
+"1","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"1","Standard","Ammo"
+"2","Medium Laser","Energy"
+"2","Medium Pulse Laser","Energy"
+"1","CASE","Miscellaneous"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"LB 10-X AC",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Medium Laser",4,0,0,2,0
+"Medium Pulse Laser",5,0,0,2,0
+"Ammo LB 10-X AC",3,0,0,2,0
+"Ammo LB 10-X AC: Cluster",2,0,0,2,0
+"CASE",6,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+"Medium Laser",4,0,0,2,0
+"Medium Pulse Laser",5,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Hand Actuator",-9,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Ferro-Fibrous",-4,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0

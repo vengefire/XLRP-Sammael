@@ -1,0 +1,48 @@
+"Name","Manticore Heavy Tank (HPPC)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1149
+"Tons",60
+"Year","3074"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Mercenary"
+"Engine","Light",4,"4/6/0"
+"Sinks","Single",15
+"Internal","Standard"
+"Armor","Ferro-Fibrous",160
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",43,34,26,34,42
+"Equips",7
+"1","Heavy PPC","Energy"
+"1","MML 7","Missile"
+"1","LRM","Ammo"
+"1","SRM","Ammo"
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"1","Targeting Computer","Electronics"
+"Crits"
+"<turret>"
+"Heavy PPC",1,0
+"MML 7",2,0
+"Anti-Missile System",5,0
+"<body>"
+"Ammo MML 7: LRM",3,1
+"Ammo MML 7: SRM",4,1
+"Ammo Anti-Missile System",6,1
+"Targeting Computer",7,1

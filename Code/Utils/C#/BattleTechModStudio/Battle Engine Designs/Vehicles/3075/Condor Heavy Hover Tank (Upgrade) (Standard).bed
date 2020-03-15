@@ -1,0 +1,49 @@
+"Name","Condor Heavy Hover Tank (Upgrade) (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",965
+"Tons",50
+"Year","3066"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Free Worlds League","Lyran Alliance"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Free Worlds League","Lyran Alliance"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","XL",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",96
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",31,21,14,21,20
+"Equips",6
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","LB 5-X AC","Ballistic"
+"2","Standard","Ammo"
+"1","LRM 15","Missile"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"LB 5-X AC",3,0
+"<turret>"
+"LRM 15",5,0
+"<body>"
+"Ammo LRM 15",6,1
+"Ammo Machine Gun: Half",2,1
+"Ammo LB 5-X AC",4,1

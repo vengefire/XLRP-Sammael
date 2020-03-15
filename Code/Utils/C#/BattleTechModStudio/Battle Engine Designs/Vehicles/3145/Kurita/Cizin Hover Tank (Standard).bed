@@ -1,0 +1,46 @@
+"Name","Cizin Hover Tank (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1762
+"Tons",45
+"Year","3097"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Clan Jade Falcon","Clan Nova Cat"
+"Factions","Mercenary","Mercenary"
+"Factions","Other","Unique"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Clan Jade Falcon","Clan Nova Cat","Clan Sea Fox"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Free Worlds League","Republic of the Sphere"
+"Factions","IS Clan","Clan Jade Falcon","Clan Nova Cat","Clan Sea Fox"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",10,"10/15/0"
+"Sinks","Single",20
+"Internal","Standard"
+"Armor","Ferro-Fibrous",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",45,25,18,25,21
+"Equips",4
+"2","SRM 2","Missile"
+"1","Standard","Ammo"
+"4","ER Medium Laser","Energy"
+"1","Targeting Computer","Electronics"
+"Crits"
+"<front>"
+"SRM 2",1,0
+"SRM 2",1,0
+"<turret>"
+"ER Medium Laser",3,0
+"ER Medium Laser",3,0
+"ER Medium Laser",3,0
+"ER Medium Laser",3,0
+"<body>"
+"Ammo SRM 2",2,1
+"Targeting Computer",4,1

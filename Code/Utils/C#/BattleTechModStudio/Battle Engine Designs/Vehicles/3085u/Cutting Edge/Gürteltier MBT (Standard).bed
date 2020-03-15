@@ -1,0 +1,55 @@
+"Name","Gürteltier MBT (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",2125
+"Tons",100
+"Year","3081"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",15
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",304
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",109,75,50,75,67
+"Equips",12
+"3","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","ER PPC","Energy"
+"1","Gauss Rifle","Ballistic"
+"3","Standard","Ammo"
+"1","MML 7","Missile"
+"2","LRM","Ammo"
+"1","SRM","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"1","Targeting Computer","Electronics"
+"1","C3 Computer (Slave)","Electronics"
+"1","CASE","Miscellaneous"
+"Crits"
+"<right>"
+"Machine Gun",1,0
+"<rear>"
+"Machine Gun",1,0
+"<left>"
+"Machine Gun",1,0
+"<turret>"
+"ER PPC",3,0
+"Gauss Rifle",4,0
+"MML 7",6,0
+"<body>"
+"Ammo Gauss Rifle",5,1
+"Ammo MML 7: LRM",7,1
+"Ammo MML 7: SRM",8,1
+"Ammo Machine Gun: Half",2,1
+"Guardian ECM Suite",9,1
+"Targeting Computer",10,1
+"C3 Computer (Slave)",11,1
+"CASE",12,0

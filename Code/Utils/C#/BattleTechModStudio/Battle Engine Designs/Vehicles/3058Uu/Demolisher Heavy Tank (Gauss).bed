@@ -1,0 +1,45 @@
+"Name","Demolisher Heavy Tank (Gauss)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1529
+"Tons",80
+"Year","3053"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",176
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",50,36,30,36,45
+"Equips",3
+"2","Gauss Rifle","Ballistic"
+"4","Standard","Ammo"
+"2","Medium Laser","Energy"
+"Crits"
+"<turret>"
+"Gauss Rifle",1,0
+"Gauss Rifle",1,0
+"Medium Laser",3,0
+"Medium Laser",3,0
+"<body>"
+"Ammo Gauss Rifle",2,1

@@ -1,0 +1,124 @@
+"Name","MR-5M Cerberus"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",2057
+"Tons",95
+"Year","3055"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League","Word of Blake"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League","Republic of the Sphere"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Republic of the Sphere"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Republic of the Sphere"
+"Factions","Periphery","Magistracy of Canopus"
+"Engine","XL",4,"4/6/0"
+"Sinks","Double",15
+"Internal","Standard"
+"Armor","Ferro-Fibrous",224
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","No Hand"
+"RArmAct","No Hand"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",26,26,28,28,40,12,12,15,9,27,27
+"Equips",8
+"1","Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"1","ER PPC","Energy"
+"6","Medium Pulse Laser","Energy"
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Gauss Rifle",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+"Ammo Gauss Rifle",2,0,0,2,0
+"Ammo Gauss Rifle",2,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Medium Pulse Laser",4,0,0,2,0
+"Medium Pulse Laser",4,0,0,2,0
+"Machine Gun",5,0,0,1,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Medium Pulse Laser",4,0,0,2,0
+"Medium Pulse Laser",4,0,0,2,0
+"Machine Gun",5,0,0,1,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"ER PPC",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+"Medium Pulse Laser",4,0,0,2,0
+"Medium Pulse Laser",4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Ammo Machine Gun: Half",6,0,0,2,0
+"Ammo Anti-Missile System",8,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Anti-Missile System",7,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0

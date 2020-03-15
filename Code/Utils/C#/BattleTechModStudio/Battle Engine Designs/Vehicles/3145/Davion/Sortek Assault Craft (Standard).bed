@@ -1,0 +1,37 @@
+"Name","Sortek Assault Craft (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",937
+"Tons",45
+"Year","3098"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",80
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",30,24,21,24,0
+"Equips",4
+"2","Rotary AC/2","Ballistic"
+"2","Standard","Ammo"
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Rotary AC/2",1,0
+"Rotary AC/2",1,0
+"Anti-Missile System",3,0
+"<body>"
+"Ammo Rotary AC/2",2,1
+"Ammo Anti-Missile System",4,1

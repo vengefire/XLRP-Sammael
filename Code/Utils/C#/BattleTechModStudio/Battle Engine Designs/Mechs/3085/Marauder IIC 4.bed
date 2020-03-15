@@ -1,0 +1,107 @@
+"Name","Marauder IIC 4"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",3447
+"Tons",85
+"Year","3070"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Ghost Bear","Clan Nova Cat"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Nova Cat","Rasalhague Dominion","Raven Alliance"
+"Engine","XL",4,"4/6/3"
+"Sinks","Double",10
+"Internal","Endo-Steel"
+"Armor","Standard",240
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",3
+"LArmAct","No Hand"
+"RArmAct","No Hand"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",25,25,28,28,33,8,8,12,9,32,32
+"Equips",2
+"2","Hyper-Assault Gauss 40","Ballistic"
+"10","Standard","Ammo"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hyper-Assault Gauss 40",1,0,1,2,0
+":ditto:",1,0,1,2,0
+":ditto:",1,0,1,2,0
+":ditto:",1,0,1,2,0
+":ditto:",1,0,1,2,0
+":ditto:",1,0,1,2,0
+":ditto:",1,0,1,2,0
+":ditto:",1,0,1,2,0
+":ditto:",1,0,1,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Hyper-Assault Gauss 40",1,0,1,2,0
+"Ammo Hyper-Assault Gauss 40",2,0,0,2,0
+"Ammo Hyper-Assault Gauss 40",2,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Hyper-Assault Gauss 40",1,0,2,2,0
+"Ammo Hyper-Assault Gauss 40",2,0,0,2,0
+"Ammo Hyper-Assault Gauss 40",2,0,0,2,0
+"Ammo Hyper-Assault Gauss 40",2,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Hyper-Assault Gauss 40",1,0,2,2,0
+":ditto:",1,0,2,2,0
+":ditto:",1,0,2,2,0
+":ditto:",1,0,2,2,0
+":ditto:",1,0,2,2,0
+":ditto:",1,0,2,2,0
+":ditto:",1,0,2,2,0
+":ditto:",1,0,2,2,0
+":ditto:",1,0,2,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Ammo Hyper-Assault Gauss 40",2,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+" -",0,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Ammo Hyper-Assault Gauss 40",2,0,0,2,0
+"Ammo Hyper-Assault Gauss 40",2,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Ammo Hyper-Assault Gauss 40",2,0,0,2,0
+"Ammo Hyper-Assault Gauss 40",2,0,0,2,0

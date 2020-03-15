@@ -1,0 +1,40 @@
+"Name","Vedette Medium Tank (Liao)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",495
+"Tons",50
+"Year","2968"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Capellan Confederation","St. Ives Compact"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","St. Ives Compact"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","St. Ives Compact"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Engine","ICE",5,"5/8/0"
+"Sinks","Single",6
+"Internal","Standard"
+"Armor","Standard",96
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",20,18,20,18,20
+"Equips",3
+"1","Machine Gun","Ballistic"
+"2","Standard","Ammo"
+"2","Medium Laser","Energy"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<turret>"
+"Medium Laser",3,0
+"Medium Laser",3,0
+"<body>"
+"Ammo Machine Gun",2,1

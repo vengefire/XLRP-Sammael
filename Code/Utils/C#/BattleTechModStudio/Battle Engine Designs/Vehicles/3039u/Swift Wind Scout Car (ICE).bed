@@ -1,0 +1,38 @@
+"Name","Swift Wind Scout Car (ICE)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Wheeled"
+"BV2",83
+"Tons",8
+"Year","2841"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Taurian Concordat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Taurian Concordat"
+"Engine","ICE",10,"10/15/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",24
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",6,6,6,6,0
+"Equips",1
+"2","Communications Equipment","Electronics"
+"Crits"
+"<body>"
+"Communications Equipment",1,1

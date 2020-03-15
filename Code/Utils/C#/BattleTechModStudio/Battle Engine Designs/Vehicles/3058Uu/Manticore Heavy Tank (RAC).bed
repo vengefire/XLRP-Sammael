@@ -1,0 +1,43 @@
+"Name","Manticore Heavy Tank (RAC)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1241
+"Tons",60
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",160
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",43,34,26,34,42
+"Equips",7
+"2","ER Medium Laser","Energy"
+"1","Rotary AC/5","Ballistic"
+"2","Standard","Ammo"
+"1","SRM 6","Missile"
+"1","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","Targeting Computer","Electronics"
+"Crits"
+"<front>"
+"ER Medium Laser",1,0
+"ER Medium Laser",1,0
+"<turret>"
+"Rotary AC/5",2,0
+"SRM 6",4,0
+"<body>"
+"Ammo Rotary AC/5",3,1
+"Ammo SRM 6: Artemis",5,1
+"Targeting Computer",7,1

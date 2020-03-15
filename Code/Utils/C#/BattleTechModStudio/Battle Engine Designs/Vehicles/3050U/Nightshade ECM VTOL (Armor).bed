@@ -1,0 +1,38 @@
+"Name","Nightshade ECM VTOL (Armor)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",344
+"Tons",25
+"Year","2820"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Comstar"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Comstar"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Comstar"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Engine","Fusion",14,"14/21/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",14,10,12,10,2
+"Equips",2
+"1","Medium Laser","Energy"
+"2","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Medium Laser",1,0
+"<body>"
+"Infantry Compartment",2,1

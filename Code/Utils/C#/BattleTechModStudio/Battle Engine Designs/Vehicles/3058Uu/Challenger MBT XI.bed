@@ -1,0 +1,42 @@
+"Name","Challenger MBT XI"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1830
+"Tons",90
+"Year","3062"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",224
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",57,50,36,50,57
+"Equips",5
+"1","ER Medium Laser","Energy"
+"2","Gauss Rifle","Ballistic"
+"4","Standard","Ammo"
+"1","C3 Computer (Master)","Electronics"
+"1","Targeting Computer","Electronics"
+"Crits"
+"<front>"
+"ER Medium Laser",1,0
+"<turret>"
+"Gauss Rifle",2,0
+"Gauss Rifle",2,0
+"<body>"
+"C3 Computer (Master)",4,1
+"Targeting Computer",5,1
+"Ammo Gauss Rifle",3,1

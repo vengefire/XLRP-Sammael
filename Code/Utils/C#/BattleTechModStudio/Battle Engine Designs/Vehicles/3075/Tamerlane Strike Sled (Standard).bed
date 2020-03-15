@@ -1,0 +1,43 @@
+"Name","Tamerlane Strike Sled (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",403
+"Tons",20
+"Year","3071"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","Fusion",12,"12/18/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",10,10,8,10,10
+"Equips",3
+"1","SRM 2","Missile"
+"1","Standard","Ammo"
+"1","ER Medium Laser","Energy"
+"Crits"
+"<front>"
+"SRM 2",1,0
+"<turret>"
+"ER Medium Laser",3,0
+"<body>"
+"Ammo SRM 2",2,1

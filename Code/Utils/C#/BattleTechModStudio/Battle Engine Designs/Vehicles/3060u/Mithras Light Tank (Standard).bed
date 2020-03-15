@@ -1,0 +1,43 @@
+"Name","Mithras Light Tank (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",670
+"Tons",25
+"Year","2845"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Snow Raven"
+"Factions","Home Clan","Home Clan General","Society"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Era","Late Republic","(3101-3130)"
+"Factions","Other","Extinct"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Other","Extinct"
+"Engine","Fusion",6,"6/9/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",56
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",16,14,9,14,14
+"Equips",3
+"2","ER Medium Laser","Energy"
+"1","Ultra AC/2","Ballistic"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"ER Medium Laser",1,0
+"<turret>"
+"ER Medium Laser",1,0
+"Ultra AC/2",2,0
+"<body>"
+"Ammo Ultra AC/2",3,1

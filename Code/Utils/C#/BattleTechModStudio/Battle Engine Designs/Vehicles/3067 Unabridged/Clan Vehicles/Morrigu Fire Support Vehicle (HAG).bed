@@ -1,0 +1,50 @@
+"Name","Morrigu Fire Support Vehicle (HAG)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",2059
+"Tons",80
+"Year","3083"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Sea Fox"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Sea Fox"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",208
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",63,41,28,41,35
+"Equips",7
+"2","SRM 2","Missile"
+"1","Standard","Ammo"
+"1","Hyper-Assault Gauss 40","Ballistic"
+"5","Standard","Ammo"
+"2","LRM 15","Missile"
+"4","Standard","Ammo"
+"1","ECM Suite","Electronics"
+"Crits"
+"<right>"
+"SRM 2",1,0
+"<left>"
+"SRM 2",1,0
+"<turret>"
+"Hyper-Assault Gauss 40",3,0
+"LRM 15",5,0
+"LRM 15",5,0
+"<body>"
+"ECM Suite",7,1
+"Ammo SRM 2",2,1
+"Ammo Hyper-Assault Gauss 40",4,1
+"Ammo LRM 15",6,1

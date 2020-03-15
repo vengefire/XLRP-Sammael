@@ -1,0 +1,39 @@
+"Name","Sprint Scout Helicopter (Interdictor)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",139
+"Tons",10
+"Year","3076"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League","Lyran Alliance"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Filtvelt Coalition"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Filtvelt Coalition"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Filtvelt Coalition"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",13,"13/20/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",16
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",6,3,3,3,2
+"Equips",2
+"1","TAG","Electronics"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<front>"
+"TAG",1,0
+"<body>"
+"Guardian ECM Suite",2,1

@@ -1,0 +1,36 @@
+"Name","Vedette Medium Tank (Light Gauss)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",478
+"Tons",50
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",5,"5/8/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Ferro-Fibrous",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",11,11,10,11,10
+"Equips",2
+"1","Light Gauss Rifle","Ballistic"
+"1","Standard","Ammo"
+"Crits"
+"<turret>"
+"Light Gauss Rifle",1,0
+"<body>"
+"Ammo Light Gauss Rifle",2,1

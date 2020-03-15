@@ -1,0 +1,46 @@
+"Name","Daimyo HQ 67-R"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",749
+"Tons",50
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Free Rasalhague Republic"
+"Factions","Other","Unique"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Other","Unique"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Other","Unique"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Other","Unique"
+"Engine","Fusion",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",34,22,15,22,19
+"Equips",5
+"3","Rocket Launcher 10","Missile"
+"1","Plasma Rifle","Energy"
+"1","Standard","Ammo"
+"7","Communications Equipment","Electronics"
+"6","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Rocket Launcher 10",1,0
+"Rocket Launcher 10",1,0
+"<rear>"
+"Rocket Launcher 10",1,0
+"<turret>"
+"Plasma Rifle",2,0
+"<body>"
+"Communications Equipment",4,1
+"Ammo Plasma Rifle",3,1
+"Infantry Compartment",5,1

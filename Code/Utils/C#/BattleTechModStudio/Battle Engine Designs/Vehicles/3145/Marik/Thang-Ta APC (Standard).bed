@@ -1,0 +1,31 @@
+"Name","Thang-Ta APC (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",241
+"Tons",10
+"Year","3093"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",15,10,10,10,8
+"Equips",2
+"2","ER Small Laser","Energy"
+"2","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"ER Small Laser",1,0
+"ER Small Laser",1,0
+"<body>"
+"Infantry Compartment",2,1

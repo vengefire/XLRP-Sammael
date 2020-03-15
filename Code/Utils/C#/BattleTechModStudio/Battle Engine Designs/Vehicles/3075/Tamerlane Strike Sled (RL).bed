@@ -1,0 +1,36 @@
+"Name","Tamerlane Strike Sled (RL)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",484
+"Tons",20
+"Year","3073"
+"Era","Jihad","(3068-3085)"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Early Republic","(3086-3100)"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Late Republic","(3101-3130)"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Periphery","Magistracy of Canopus"
+"Engine","Fusion",12,"12/18/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",10,10,8,10,10
+"Equips",2
+"4","Rocket Launcher 10","Missile"
+"1","ER Medium Laser","Energy"
+"Crits"
+"<front>"
+"Rocket Launcher 10",1,0
+"Rocket Launcher 10",1,0
+"<rear>"
+"Rocket Launcher 10",1,0
+"Rocket Launcher 10",1,0
+"<turret>"
+"ER Medium Laser",2,0

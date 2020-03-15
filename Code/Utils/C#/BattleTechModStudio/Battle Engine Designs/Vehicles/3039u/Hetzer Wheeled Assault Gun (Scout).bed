@@ -1,0 +1,44 @@
+"Name","Hetzer Wheeled Assault Gun (Scout)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",553
+"Tons",40
+"Year","3014"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Commonwealth","Federated Suns","Free Worlds League","Lyran Alliance","Lyran Commonwealth"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Commonwealth","Federated Suns","Free Worlds League"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Free Worlds League"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Free Worlds League"
+"Factions","Periphery","Filtvelt Coalition","Magistracy of Canopus","Taurian Concordat"
+"Engine","ICE",4,"4/6/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",32,24,24,24,0
+"Equips",3
+"1","AC/20","Ballistic"
+"2","Standard","Ammo"
+"1","Beagle Active Probe","Electronics"
+"Crits"
+"<front>"
+"AC/20",1,0
+"<body>"
+"Ammo AC/20",2,1
+"Beagle Active Probe",3,0

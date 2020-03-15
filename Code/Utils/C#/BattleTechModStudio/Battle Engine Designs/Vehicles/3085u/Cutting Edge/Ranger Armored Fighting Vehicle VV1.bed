@@ -1,0 +1,50 @@
+"Name","Ranger Armored Fighting Vehicle VV1"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",644
+"Tons",45
+"Year","3076"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Comstar","Draconis Combine","Federated Suns","Free Worlds League","Lyran Alliance"
+"Factions","Periphery","Marian Hegemony"
+"Factions","Mercenary","Mercenary"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition","Marian Hegemony"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition","Marian Hegemony"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition","Marian Hegemony"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",6,"6/9/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",160
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",36,32,28,32,32
+"Equips",6
+"2","ER Small Laser","Energy"
+"1","Machine Gun Array (Light 4)","Ballistic"
+"1","Half","Ammo"
+"1","Standard","Ammo"
+"1","Machine Gun Array (4)","Ballistic"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"ER Small Laser",1,0
+"ER Small Laser",1,0
+"<turret>"
+"Machine Gun Array (Light 4)",2,0
+"Machine Gun Array (4)",5,0
+"<body>"
+"Ammo Machine Gun Array (4)",6,1
+"Ammo Machine Gun Array (Light 4)",4,1
+"Ammo Machine Gun Array (Light 4): Half",3,1

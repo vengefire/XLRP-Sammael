@@ -1,0 +1,49 @@
+"Name","Carnivore Assault Tank (Second Line)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1248
+"Tons",80
+"Year","3084"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",248
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",62,46,42,46,52
+"Equips",6
+"2","Medium Pulse Laser","Energy"
+"2","Machine Gun (Light)","Ballistic"
+"1","Standard","Ammo"
+"1","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Medium Pulse Laser",1,0
+"Medium Pulse Laser",1,0
+"<right>"
+"Machine Gun (Light)",2,0
+"<left>"
+"Machine Gun (Light)",2,0
+"<turret>"
+"LB 10-X AC",4,0
+"<body>"
+"Ammo LB 10-X AC",6,1
+"Ammo LB 10-X AC: Cluster",5,1
+"Ammo Machine Gun (Light)",3,1

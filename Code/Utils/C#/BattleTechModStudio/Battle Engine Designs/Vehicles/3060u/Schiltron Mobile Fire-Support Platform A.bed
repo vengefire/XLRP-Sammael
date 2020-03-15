@@ -1,0 +1,71 @@
+"Name","Schiltron Mobile Fire-Support Platform A"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1456
+"Tons",80
+"Year","3059"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Word of Blake"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Word of Blake"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Rasalhague Republic","Free Worlds League","Word of Blake"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Oriente Protectorate)","Free Worlds League (Tamarind-Abbey District)","Republic of the Sphere"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Oriente Protectorate)","Free Worlds League (Tamarind-Abbey District)","Republic of the Sphere"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Oriente Protectorate)","Free Worlds League (Tamarind-Abbey District)","Republic of the Sphere"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",160
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",2
+9,80,3,0,10,160,46,34,25,34,40,0,0,0,0,0,0
+3
+"",-1,-1,0,0
+"",-4,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",46,34,25,34,40
+"Equips",8
+"2","MRM 40","Missile"
+"6","Standard","Ammo"
+"2","Medium Laser","Energy"
+"4","Small Laser","Energy"
+"2","MRM 10","Missile"
+"2","Standard","Ammo"
+"1","C3 Computer (Master)","Electronics"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<front>"
+"MRM 40",1,0
+"MRM 40",1,0
+"<turret>"
+"Medium Laser",3,0
+"Medium Laser",3,0
+"Small Laser",4,0
+"Small Laser",4,0
+"Small Laser",4,0
+"Small Laser",4,0
+"MRM 10",5,0
+"MRM 10",5,0
+"<body>"
+"Ammo MRM 40",2,1
+"Ammo MRM 10",6,1
+"C3 Computer (Master)",7,1
+"Guardian ECM Suite",8,1

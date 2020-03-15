@@ -1,0 +1,130 @@
+"Name","ALB-3U Albatross"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",1668
+"Tons",95
+"Year","3053"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Free Worlds League","Word of Blake"
+"Factions","Mercenary","Mercenary"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Free Worlds League","Word of Blake"
+"Factions","Mercenary","Mercenary"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Free Worlds League","Word of Blake"
+"Factions","Mercenary","Mercenary"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",4,"4/6/0"
+"Sinks","Double",14
+"Internal","Standard"
+"Armor","Standard",208
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","No Hand"
+"RArmAct","No Hand"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",21,21,24,24,37,8,8,10,9,23,23
+"Equips",11
+"1","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"1","Standard","Ammo"
+"1","Large Pulse Laser","Energy"
+"2","Medium Laser","Energy"
+"1","ER Large Laser","Energy"
+"1","LRM 15","Missile"
+"2","Standard","Ammo"
+"1","SRM 6","Missile"
+"1","Standard","Ammo"
+"2","CASE","Miscellaneous"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"LB 10-X AC",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"ER Large Laser",6,0,0,2,0
+":ditto:",6,0,0,2,0
+"Ammo LB 10-X AC",3,0,0,2,0
+"Ammo LB 10-X AC: Cluster",2,0,0,2,0
+"CASE",11,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"LRM 15",7,0,0,2,0
+":ditto:",7,0,0,2,0
+":ditto:",7,0,0,2,0
+"SRM 6",9,0,0,2,0
+":ditto:",9,0,0,2,0
+"Ammo LRM 15",8,0,0,2,0
+"Ammo LRM 15",8,0,0,2,0
+"Ammo SRM 6",10,0,0,2,0
+"CASE",11,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Large Pulse Laser",4,0,0,2,0
+":ditto:",4,0,0,2,0
+"Medium Laser",5,0,0,2,0
+"Medium Laser",5,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+" -",0,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0

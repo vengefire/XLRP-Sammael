@@ -1,0 +1,120 @@
+"Name","Icestorm (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",728
+"Tons",25
+"Year","2830"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Home Clan","Clan Ice Hellion"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Home Clan","Clan Ice Hellion"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Home Clan","Clan Ice Hellion"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf"
+"Engine","XL",12,"12/18/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",56
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","Full Arm"
+"RArmAct","No Hand"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",6,6,6,6,8,1,1,2,6,7,7
+"Equips",4
+"1","ER Medium Laser","Energy"
+"1","TAG","Electronics"
+"1","SRM 2","Missile"
+"1","Standard","Ammo"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hand Actuator",-8,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Ammo SRM 2",4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"ER Medium Laser",1,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"TAG",2,0,0,2,0
+" -",0,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"SRM 2",3,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0

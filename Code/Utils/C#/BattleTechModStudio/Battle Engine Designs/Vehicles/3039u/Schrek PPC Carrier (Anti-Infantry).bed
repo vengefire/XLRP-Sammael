@@ -1,0 +1,43 @@
+"Name","Schrek PPC Carrier (Anti-Infantry)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",881
+"Tons",80
+"Year","2833"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",30
+"Internal","Standard"
+"Armor","Standard",88
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",20,16,16,16,20
+"Equips",3
+"3","PPC","Energy"
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"Crits"
+"<turret>"
+"PPC",1,0
+"PPC",1,0
+"PPC",1,0
+"Machine Gun",2,0
+"Machine Gun",2,0
+"<body>"
+"Ammo Machine Gun: Half",3,1

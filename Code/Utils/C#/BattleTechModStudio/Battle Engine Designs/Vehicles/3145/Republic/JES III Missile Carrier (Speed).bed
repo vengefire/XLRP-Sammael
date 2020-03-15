@@ -1,0 +1,30 @@
+"Name","JES III Missile Carrier (Speed)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1108
+"Tons",60
+"Year","3135"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",40,21,20,21,26
+"Equips",2
+"4","LRM 15","Missile"
+"6","Standard","Ammo"
+"Crits"
+"<turret>"
+"LRM 15",1,0
+"LRM 15",1,0
+"LRM 15",1,0
+"LRM 15",1,0
+"<body>"
+"Ammo LRM 15",2,1

@@ -1,0 +1,119 @@
+"Name","MR-P1 Morpheus"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",1340
+"Tons",65
+"Year","3051"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Other","Solaris 7"
+"Era","Civil War","(3062-3067)"
+"Factions","Other","Solaris 7"
+"Era","Jihad","(3068-3085)"
+"Factions","Other","Solaris 7"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Solaris 7"
+"Era","Late Republic","(3101-3130)"
+"Factions","Other","Solaris 7"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Other","Solaris 7"
+"Engine","XL",6,"6/9/6"
+"Sinks","Double",10
+"Internal","Standard"
+"Armor","Standard",208
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",6
+"LArmAct","Full Arm"
+"RArmAct","Full Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",20,20,23,23,34,6,6,7,9,30,30
+"Equips",6
+"2","Medium Pulse Laser","Energy"
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"1","Medium Laser","Energy"
+"1","Guardian ECM Suite","Electronics"
+"1","Beagle Active Probe","Electronics"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hand Actuator",-8,1,0,2,1
+"Medium Pulse Laser",1,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Guardian ECM Suite",5,0,0,2,0
+":ditto:",5,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Beagle Active Probe",6,0,0,2,0
+":ditto:",6,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Hand Actuator",-9,1,0,2,1
+"Medium Pulse Laser",1,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Anti-Missile System",2,0,0,2,0
+"Ammo Anti-Missile System",3,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Medium Laser",4,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Jump Jet",-7,0,0,2,0

@@ -1,0 +1,45 @@
+"Name","Scorpion Light Tank (LAC)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",289
+"Tons",25
+"Year","3072"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Free Worlds League","Lyran Alliance","Word of Blake"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","ICE",4,"4/6/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",64
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",16,11,10,11,16
+"Equips",4
+"1","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"2","Light AC/2","Ballistic"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<turret>"
+"Light AC/2",3,0
+"Light AC/2",3,0
+"<body>"
+"Ammo Light AC/2",4,1
+"Ammo Machine Gun: Half",2,1

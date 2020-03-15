@@ -1,0 +1,57 @@
+"Name","Zephyr Hovertank (Royal)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",811
+"Tons",40
+"Year","2621"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Periphery","Rim Worlds Republic - Terran Corps"
+"Factions","Other","Star League Regular","Star League Royal"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General","Society"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Era","Late Republic","(3101-3130)"
+"Factions","Other","Extinct"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Other","Extinct"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",29,24,19,24,29
+"Equips",6
+"1","Narc Missile Beacon","Missile"
+"2","Standard","Ammo"
+"1","Small Laser","Energy"
+"3","Medium Laser","Energy"
+"1","TAG","Electronics"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<front>"
+"Narc Missile Beacon",1,0
+"<rear>"
+"Small Laser",3,0
+"<turret>"
+"Medium Laser",4,0
+"Medium Laser",4,0
+"Medium Laser",4,0
+"TAG",5,0
+"<body>"
+"Ammo Narc Missile Beacon",2,1
+"Guardian ECM Suite",6,1

@@ -1,0 +1,37 @@
+"Name","Fortune Wheeled Assault Vehicle (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1349
+"Tons",80
+"Year","3067"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth","Republic of the Sphere"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",224
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",50,45,35,45,49
+"Equips",3
+"2","LB 20-X AC","Ballistic"
+"4","Cluster","Ammo"
+"4","Standard","Ammo"
+"Crits"
+"<turret>"
+"LB 20-X AC",1,0
+"LB 20-X AC",1,0
+"<body>"
+"Ammo LB 20-X AC: Cluster",2,1
+"Ammo LB 20-X AC",3,1

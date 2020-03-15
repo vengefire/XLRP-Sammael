@@ -1,0 +1,121 @@
+"Name","HM-1r Hitman"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",938
+"Tons",30
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Rasalhague Republic"
+"Factions","Mercenary","Mercenary"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",7,"7/11(14)/0"
+"Sinks","Single",10
+"Internal","Endo-Steel"
+"Armor","Light Ferro-Fibrous",80
+"Cockpit","Standard"
+"Gyro","XL"
+"JumpJets","Standard",0
+"LArmAct","No Hand"
+"RArmAct","Full Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",7,7,10,10,10,4,4,6,8,9,9
+"Equips",8
+"1","TAG","Electronics"
+"2","ER Medium Laser","Energy"
+"1","MML 7","Missile"
+"1","LRM","Ammo"
+"1","SRM","Ammo"
+"1","MASC","Miscellaneous"
+"1","Guardian ECM Suite","Electronics"
+"1","Beagle Active Probe","Electronics"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"ER Medium Laser",2,0,0,2,0
+"ER Medium Laser",2,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Light Ferro-Fibrous",-4,0,0,2,0
+"Light Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"MML 7",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+"Ammo MML 7: LRM",4,0,0,2,0
+"Ammo MML 7: SRM",5,0,0,2,0
+"Guardian ECM Suite",7,0,0,2,0
+":ditto:",7,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Heat Sink",-2,0,0,2,0
+"Heat Sink",-2,0,0,2,0
+"Beagle Active Probe",8,0,0,2,0
+":ditto:",8,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Light Ferro-Fibrous",-4,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Hand Actuator",-9,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Light Ferro-Fibrous",-4,0,0,2,0
+"Light Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"XL Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"TAG",1,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Light Ferro-Fibrous",-4,0,0,2,0
+"Light Ferro-Fibrous",-4,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"MASC",6,0,0,2,0
+":ditto:",6,0,0,2,0

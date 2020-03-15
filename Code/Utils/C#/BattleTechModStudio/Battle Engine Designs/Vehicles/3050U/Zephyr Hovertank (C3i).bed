@@ -1,0 +1,42 @@
+"Name","Zephyr Hovertank (C3i)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",820
+"Tons",40
+"Year","3062"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",29,24,19,24,29
+"Equips",7
+"1","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"1","Small Laser","Energy"
+"3","Medium Laser","Energy"
+"1","TAG","Electronics"
+"1","Guardian ECM Suite","Electronics"
+"1","Improved C3 Computer","Electronics"
+"Crits"
+"<front>"
+"Streak SRM 2",1,0
+"<rear>"
+"Small Laser",3,0
+"<turret>"
+"Medium Laser",4,0
+"Medium Laser",4,0
+"Medium Laser",4,0
+"TAG",5,0
+"<body>"
+"Ammo Streak SRM 2",2,1
+"Guardian ECM Suite",6,1
+"Improved C3 Computer",7,1

@@ -1,0 +1,43 @@
+"Name","Drillson Heavy Hover Tank (ERLL)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",960
+"Tons",50
+"Year","3039"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance","Word of Blake"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Standard",96
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",22,18,16,18,22
+"Equips",7
+"1","LRM 10","Missile"
+"1","Standard","Ammo"
+"1","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","ER Large Laser","Energy"
+"1","SRM 2","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"LRM 10",1,0
+"Machine Gun",3,0
+"<turret>"
+"ER Large Laser",5,0
+"SRM 2",6,0
+"<body>"
+"Ammo LRM 10",2,1
+"Ammo SRM 2",7,1
+"Ammo Machine Gun: Half",4,1

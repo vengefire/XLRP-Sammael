@@ -1,0 +1,45 @@
+"Name","Tokugawa Heavy Tank (MRM)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",941
+"Tons",60
+"Year","3062"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",168
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",40,33,26,33,36
+"Equips",7
+"2","Medium Pulse Laser","Energy"
+"1","TAG","Electronics"
+"1","MRM 30","Missile"
+"3","Standard","Ammo"
+"1","SRM 6","Missile"
+"2","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"Crits"
+"<front>"
+"Medium Pulse Laser",1,0
+"Medium Pulse Laser",1,0
+"TAG",2,0
+"<turret>"
+"MRM 30",3,0
+"SRM 6",5,0
+"<body>"
+"Ammo MRM 30",4,1
+"Ammo SRM 6: Artemis",6,1

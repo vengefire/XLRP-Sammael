@@ -1,0 +1,140 @@
+"Name","AS7-D Atlas"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Biped"
+"BV2",1897
+"Tons",100
+"Year","2755"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Periphery","Rim Worlds Republic - Terran Corps"
+"Factions","Other","Star League Regular","Star League Royal"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Magistracy of Canopus","Outworlds Alliance","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",20
+"Internal","Standard"
+"Armor","Standard",304
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","Full Arm"
+"RArmAct","Full Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",34,34,32,32,47,10,10,14,9,41,41
+"Equips",7
+"4","Medium Laser","Energy"
+"1","AC/20","Ballistic"
+"2","Standard","Ammo"
+"1","LRM 20","Missile"
+"2","Standard","Ammo"
+"1","SRM 6","Missile"
+"1","Standard","Ammo"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hand Actuator",-8,1,0,2,1
+"Heat Sink",-2,0,0,2,0
+"Medium Laser",1,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Heat Sink",-2,0,0,2,0
+"LRM 20",4,0,0,2,0
+":ditto:",4,0,0,2,0
+":ditto:",4,0,0,2,0
+":ditto:",4,0,0,2,0
+":ditto:",4,0,0,2,0
+"SRM 6",6,0,0,2,0
+":ditto:",6,0,0,2,0
+"Ammo LRM 20",5,0,0,2,0
+"Ammo LRM 20",5,0,0,2,0
+"Ammo SRM 6",7,0,0,2,0
+" -",0,0,0,2,0
+"AC/20",2,0,1,2,0
+":ditto:",2,0,1,2,0
+":ditto:",2,0,1,2,0
+":ditto:",2,0,1,2,0
+":ditto:",2,0,1,2,0
+":ditto:",2,0,1,2,0
+":ditto:",2,0,1,2,0
+":ditto:",2,0,1,2,0
+":ditto:",2,0,1,2,0
+":ditto:",2,0,1,2,0
+"Ammo AC/20",3,0,0,2,0
+"Ammo AC/20",3,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Hand Actuator",-9,1,0,2,1
+"Heat Sink",-2,0,0,2,0
+"Medium Laser",1,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Medium Laser",1,0,0,1,0
+"Medium Laser",1,0,0,1,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Heat Sink",-2,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Heat Sink",-2,0,0,2,0
+"Heat Sink",-2,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Heat Sink",-2,0,0,2,0
+"Heat Sink",-2,0,0,2,0

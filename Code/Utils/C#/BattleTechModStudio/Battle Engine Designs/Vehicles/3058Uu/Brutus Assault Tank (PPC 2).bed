@@ -1,0 +1,55 @@
+"Name","Brutus Assault Tank (PPC 2)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",979
+"Tons",75
+"Year","3011"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",26
+"Internal","Standard"
+"Armor","Standard",136
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",34,27,21,27,27
+"Equips",4
+"4","SRM 2","Missile"
+"1","Standard","Ammo"
+"2","Large Laser","Energy"
+"1","PPC","Energy"
+"Crits"
+"<front>"
+"SRM 2",1,0
+"SRM 2",1,0
+"SRM 2",1,0
+"SRM 2",1,0
+"<turret>"
+"Large Laser",3,0
+"Large Laser",3,0
+"PPC",4,0
+"<body>"
+"Ammo SRM 2",2,1

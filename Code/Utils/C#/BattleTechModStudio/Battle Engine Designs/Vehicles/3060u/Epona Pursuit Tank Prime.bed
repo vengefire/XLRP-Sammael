@@ -1,0 +1,51 @@
+"Name","Epona Pursuit Tank Prime"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1477
+"Tons",50
+"Year","2884"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Factions","Home Clan","Clan Burrock","Clan Cloud Cobra","Clan Goliath Scorpion","Clan Ice Hellion"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Ghost Bear","Clan Hell's Horses","Clan Nova Cat","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Home Clan","Clan Cloud Cobra","Clan Goliath Scorpion","Clan Ice Hellion","Clan Star Adder"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Ghost Bear","Clan Hell's Horses","Clan Nova Cat","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Home Clan","Clan Burrock","Clan Cloud Cobra","Clan Goliath Scorpion","Clan Ice Hellion","Clan Star Adder","Clan Stone Lion"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Hell's Horses","Clan Wolf","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Sea Fox","Clan Wolf","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Sea Fox","Clan Wolf","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",16
+"Internal","Standard"
+"Armor","Ferro-Fibrous",80
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",1
+10,50,9,0,10,80,21,20,18,20,17,0,0,0,0,0,0
+3
+"",-1,-1,0,0
+"",-4,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",21,20,18,20,17
+"Equips",3
+"4","Medium Pulse Laser","Energy"
+"1","Streak SRM 4","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<turret>"
+"Medium Pulse Laser",1,0
+"Medium Pulse Laser",1,0
+"Medium Pulse Laser",1,0
+"Medium Pulse Laser",1,0
+"Streak SRM 4",2,0
+"<body>"
+"Ammo Streak SRM 4",3,1

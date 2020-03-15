@@ -1,0 +1,46 @@
+"Name","Partisan Air Defense Tank (Lance Command)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",836
+"Tons",80
+"Year","3058"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Word of Blake"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",128
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",35,26,21,26,35
+"Equips",6
+"2","Ultra AC/5","Ballistic"
+"3","Standard","Ammo"
+"2","AC/2","Ballistic"
+"1","Standard","Ammo"
+"1","C3 Computer (Master)","Electronics"
+"1","CASE","Miscellaneous"
+"Crits"
+"<turret>"
+"Ultra AC/5",1,0
+"Ultra AC/5",1,0
+"AC/2",3,0
+"AC/2",3,0
+"<body>"
+"Ammo Ultra AC/5",2,1
+"Ammo AC/2",4,1
+"C3 Computer (Master)",5,1
+"CASE",6,0

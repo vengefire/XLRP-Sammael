@@ -1,0 +1,68 @@
+"Name","Puma Assault Tank PAT-005"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",1353
+"Tons",95
+"Year","2681"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Comstar"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Comstar"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Comstar","Free Rasalhague Republic","Word of Blake"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf","Clan Wolf (in Exile)"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Comstar","Free Rasalhague Republic","Word of Blake"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf","Clan Wolf (in Exile)"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Comstar","Free Rasalhague Republic","Word of Blake"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf","Clan Wolf (in Exile)"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",17
+"Internal","Standard"
+"Armor","Standard",184
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",48,32,24,32,48
+"Equips",9
+"2","Medium Laser","Energy"
+"1","SRM 4","Missile"
+"1","Standard","Ammo"
+"2","LRM 20","Missile"
+"2","Standard","Ammo"
+"1","Small Laser","Energy"
+"1","Flamer (Vehicle)","Ballistic"
+"1","Standard","Ammo"
+"1","PPC","Energy"
+"Crits"
+"<front>"
+"Medium Laser",1,0
+"Medium Laser",1,0
+"SRM 4",2,0
+"<right>"
+"LRM 20",4,0
+"<rear>"
+"Small Laser",6,0
+"Flamer (Vehicle)",7,0
+"<left>"
+"LRM 20",4,0
+"<turret>"
+"PPC",9,0
+"<body>"
+"Ammo Flamer (Vehicle)",8,1
+"Ammo SRM 4",3,1
+"Ammo LRM 20",5,1

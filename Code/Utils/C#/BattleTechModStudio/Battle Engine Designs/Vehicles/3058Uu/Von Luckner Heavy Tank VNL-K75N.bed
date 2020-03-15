@@ -1,0 +1,47 @@
+"Name","Von Luckner Heavy Tank VNL-K75N"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1350
+"Tons",75
+"Year","3062"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",160
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",43,30,30,30,46
+"Equips",9
+"1","MRM 20","Missile"
+"2","Standard","Ammo"
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","Ultra AC/20","Ballistic"
+"5","Standard","Ammo"
+"1","SRM 6","Missile"
+"1","Standard","Ammo"
+"2","Medium Laser","Energy"
+"Crits"
+"<front>"
+"MRM 20",1,0
+"Machine Gun",3,0
+"Machine Gun",3,0
+"<turret>"
+"Ultra AC/20",5,0
+"SRM 6",7,0
+"Medium Laser",9,0
+"Medium Laser",9,0
+"<body>"
+"Ammo Ultra AC/20",6,1
+"Ammo SRM 6",8,1
+"Ammo MRM 20",2,1
+"Ammo Machine Gun: Half",4,1

@@ -1,0 +1,44 @@
+"Name","Centipede Scout Car (SRM)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Hover"
+"BV2",431
+"Tons",20
+"Year","3062"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","ICE",8,"8/12/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",64
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",16,16,16,16,0
+"Equips",2
+"6","SRM 2","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"SRM 2",1,0
+"SRM 2",1,0
+"SRM 2",1,0
+"SRM 2",1,0
+"SRM 2",1,0
+"SRM 2",1,0
+"<body>"
+"Ammo SRM 2",2,1
