@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using BattleEngineParser.Models;
+using Data.Core.Enums;
 using Data.Core.ModObjects;
 using Data.Services;
 
@@ -51,10 +52,21 @@ namespace BattleEngineParser
             
             // Merge the base manifest with the mod collection resources
             var result = ModMerger.Merge(manifest, modCollection);
+            var groupedData = result.mergedManifestEntries.GroupBy(entry => entry.GameObjectType, entry => entry,
+                (type, entries) => new {GameObjectType = type, objects = entries});
+            var typeDictionary = groupedData
+                .ToDictionary(arg => arg.GameObjectType, arg => arg.objects.ToList());
+            
+            Console.WriteLine(string.Join("\r\n", typeDictionary[GameObjectTypeEnum.AssetBundle].Select(entry => entry.Id)));
+            
             System.Console.WriteLine("Failed Merges : \r\n" +
                                      $"{string.Join("\r\n", ModMerger.FailedMerges.Select(tuple => $"{tuple.Item1.FileInfo.FullName} - {tuple.Item2}"))}");
+
+            var designsWithPrefabs = mechDesigns.Where(design =>
+                typeDictionary[GameObjectTypeEnum.AssetBundle]
+                    .Any(entry => entry.Id.Contains(design.InnerSphereChassisDesignation)));
             
-            // var modValidDesigns = mechDesigns.Where(design => result.manifestEntryStackById.ContainsKey($"chassisdef_"))
+            Console.WriteLine($"Filtered mech designs to [{designsWithPrefabs.Count()}] designs with prefab support...");
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Data.Core.ModObjects
         public static List<(ManifestEntry, string)> FailedMerges { get; set; } = new List<(ManifestEntry, string)>();
 
         public static (List<ManifestEntry> mergedManifestEntries,
-            Dictionary<Tuple<string, GameObjectTypeEnum, string>, List<ManifestEntry>> manifestEntryStackById) Merge(
+            Dictionary<(string Id, GameObjectTypeEnum GameObjectType, string AssetBundleName), List<ManifestEntry>> manifestEntryStackById) Merge(
                 Manifest manifest, ModCollection modCollection)
         {
             var manifestEntryStackById = BuildMergeStack(manifest, modCollection);
@@ -24,7 +24,7 @@ namespace Data.Core.ModObjects
         }
 
         private static List<ManifestEntry> ProcessMergeStack(
-            Dictionary<Tuple<string, GameObjectTypeEnum, string>, List<ManifestEntry>> manifestEntryStackById)
+            Dictionary<(string Id, GameObjectTypeEnum GameObjectType, string AssetBundleName), List<ManifestEntry>> manifestEntryStackById)
         {
             var mergedManifestEntries = new List<ManifestEntry>(manifestEntryStackById.Keys.Count);
             foreach (var manifestEntryStackItem in manifestEntryStackById)
@@ -186,18 +186,16 @@ namespace Data.Core.ModObjects
             return mergedManifestEntries;
         }
 
-        private static Dictionary<Tuple<string, GameObjectTypeEnum, string>, List<ManifestEntry>> BuildMergeStack(
+        private static Dictionary<(string Id, GameObjectTypeEnum GameObjectType, string AssetBundleName), List<ManifestEntry>> BuildMergeStack(
             Manifest manifest, ModCollection modCollection)
         {
-            var manifestEntryStackById =
-                new Dictionary<Tuple<string, GameObjectTypeEnum, string>, List<ManifestEntry>>();
+            var manifestEntryStackById = new Dictionary<(string, GameObjectTypeEnum, string), List<ManifestEntry>>();
 
             modCollection.ValidModsLoadOrder.ForEach(mod =>
             {
                 mod.ManifestEntries().ToList().ForEach(entry =>
                 {
-                    var key = new Tuple<string, GameObjectTypeEnum, string>(entry.Id, entry.GameObjectType,
-                        entry.AssetBundleName);
+                    var key = (entry.Id, entry.GameObjectType, entry.AssetBundleName);
 
                     if (key.Item2 != GameObjectTypeEnum.AdvancedJSONMerge)
                     {

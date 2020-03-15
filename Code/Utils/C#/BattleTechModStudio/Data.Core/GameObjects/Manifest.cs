@@ -13,8 +13,9 @@ namespace Data.Core.GameObjects
         private List<ManifestEntry> _baseManifestEntries;
         private List<ManifestEntry> _dlcManifestEntries;
 
-        public Dictionary<Tuple<string, GameObjectTypeEnum, string>, ManifestEntry> ManifestEntriesById =
-            new Dictionary<Tuple<string, GameObjectTypeEnum, string>, ManifestEntry>();
+        public Dictionary<(string Id, GameObjectTypeEnum GameObjectType, string AssetBundleName), ManifestEntry>
+            ManifestEntriesById =
+                new Dictionary<(string, GameObjectTypeEnum, string), ManifestEntry>();
 
         public void InitBaseManifest(string battleTechDirectory)
         {
@@ -34,8 +35,7 @@ namespace Data.Core.GameObjects
             _baseManifestEntries.ForEach(entry =>
             {
                 ManifestEntriesById[
-                    new Tuple<string, GameObjectTypeEnum, string>(entry.Id, entry.GameObjectType,
-                        entry.AssetBundleName ?? string.Empty)] = entry;
+                    (entry.Id, entry.GameObjectType, entry.AssetBundleName ?? string.Empty)] = entry;
             });
         }
 
@@ -58,14 +58,14 @@ namespace Data.Core.GameObjects
             _dlcManifestEntries.ForEach(entry =>
             {
                 if (ManifestEntriesById.ContainsKey(
-                    new Tuple<string, GameObjectTypeEnum, string>(entry.Id, entry.GameObjectType,
+                    (entry.Id, entry.GameObjectType,
                         entry.AssetBundleName)))
                 {
                     Console.WriteLine($"DLC overwriting original base def for [{entry.Id}]");
                 }
 
                 ManifestEntriesById[
-                    new Tuple<string, GameObjectTypeEnum, string>(entry.Id, entry.GameObjectType,
+                    (entry.Id, entry.GameObjectType,
                         entry.AssetBundleName ?? string.Empty)] = entry;
             });
         }
