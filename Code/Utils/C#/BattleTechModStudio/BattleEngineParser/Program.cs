@@ -119,22 +119,31 @@ namespace BattleEngineParser
                     {
                         var id = entry.Id.ToLower();
                         var parts = id.ToLower().Split('_');
-                        if (!parts.Contains(design.VariantDesignation.ToLower()))
+                        if (!string.IsNullOrEmpty(design.VariantDesignation) && !parts.Contains(design.VariantDesignation.ToLower()))
                         {
                             return false;
                         }
                         
                         // Must contain all hero designations if any exist
-                        var missingHeroDesignations = design.HeroDesignation.Except(parts);
+                        var missingHeroDesignations = design.HeroDesignations.Except(parts);
                         if (missingHeroDesignations.Any())
                         {
                             return false;
                         }
 
                         return true;
-                    }));
+                    }))
+                .ToList();
             
             Console.WriteLine($"Found [{chassisFilteredDesigns.Count()}] designs with dedicated chassis defs...");
+            var outputDirectory = @"c:\tmp\Beds";
+            if (Directory.Exists(outputDirectory))
+            {
+                Directory.Delete(outputDirectory);
+            }
+
+            Directory.CreateDirectory(outputDirectory);
+            chassisFilteredDesigns.AsParallel().ForAll(design => File.Copy(design.FileInfo.FullName, Path.Combine(outputDirectory, design.FileInfo.Name)));
         }
     }
 }

@@ -28,12 +28,12 @@ namespace BattleEngineParser.Models
                         {
                             s = s.Replace("(", "");
                             s = s.Replace(")", "");
-                            HeroDesignation.Add(s);
+                            HeroDesignations.Add(s);
                         }
                         else if (s.Contains("'"))
                         {
                             s = s.Replace("'", "");
-                            HeroDesignation.Add(s);
+                            HeroDesignations.Add(s);
                         }
                         else
                         {
@@ -43,18 +43,39 @@ namespace BattleEngineParser.Models
                 }
                 else
                 {
-                    // Clan Mech. Ugh, crapy naming system.
-                    InnerSphereChassisDesignation = parts[0];
-                    List<string> remainingParts;
-                    if (parts[1].Contains("("))
+                    // Clan Mech. Ugh, crappy naming system.
+                    
+                    // Find the first part containing a '(' character
+                    int i = 0;
+                    int j = 0;
+                    bool hasAlternativeDesignation = false;
+                    for (i = 0; i < parts.Count; i++)
                     {
-                        FilthyClanChassisDesignation = parts[1].Replace("(", "").Replace(")", "");
-                        remainingParts = parts.Skip(2).ToList();
+                        if (parts[i].Contains("("))
+                        {
+                            j = i;
+                            hasAlternativeDesignation = true;
+                        }
+
+                        if (parts[i].Contains(")"))
+                        {
+                            break;
+                        }
+                    }
+                    
+                    List<string> remainingParts;
+
+                    if (hasAlternativeDesignation)
+                    {
+                        InnerSphereChassisDesignation = string.Join(" ", parts.Take(j));
+                        FilthyClanChassisDesignation = string.Join(" ", parts.Skip(j).Take(i - j + 1)).Replace("(", "").Replace(")", "");
+                        remainingParts = parts.Skip(i + 1).ToList();
                     }
                     else
                     {
+                        InnerSphereChassisDesignation = string.Join(" ", parts.Take(parts.Count - 1));
                         FilthyClanChassisDesignation = InnerSphereChassisDesignation;
-                        remainingParts = parts.Skip(1).ToList();
+                        remainingParts = parts.Skip(parts.Count - 1).ToList();
                     }
 
                     remainingParts.ForEach(s =>
@@ -63,18 +84,23 @@ namespace BattleEngineParser.Models
                         {
                             s = s.Replace("(", "");
                             s = s.Replace(")", "");
-                            HeroDesignation.Add(s);
+                            HeroDesignations.Add(s);
                         }
                         else if (s.Contains("'"))
                         {
                             s = s.Replace("'", "");
-                            HeroDesignation.Add(s);
+                            HeroDesignations.Add(s);
                         }
                         else
                         {
                             VariantDesignation = s;
                         }
                     });
+                    
+                    if (string.IsNullOrEmpty(VariantDesignation) && HeroDesignations.Any())
+                    {
+                        VariantDesignation = HeroDesignations.First();
+                    }
                 }
             }
         }
@@ -82,7 +108,7 @@ namespace BattleEngineParser.Models
         public string InnerSphereChassisDesignation { get; set; }
         public string FilthyClanChassisDesignation { get; set; }
         public string VariantDesignation { get; set; }
-        public List<string> HeroDesignation { get; set; } = new List<string>();
+        public List<string> HeroDesignations { get; set; } = new List<string>();
         public TechLevel TechLevel { get; set; }
         public RulesLevel RulesLevel { get; set; }
         public ChassisType ChassisType { get; set; }
