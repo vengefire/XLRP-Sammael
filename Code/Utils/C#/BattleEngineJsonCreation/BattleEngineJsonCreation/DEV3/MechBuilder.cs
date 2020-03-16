@@ -413,7 +413,7 @@ namespace BattleEngineJsonCreation
                 //Testing Dummy Plug
                 else
                 {
-                    if (!(split[0].Contains(" -") || split[0].Contains(":ditto:") || split[0].Contains("Engine") || split[0].Contains("Actuator")))
+                    if (!(split[0].Contains("C3") || split[0].Contains(" -") || split[0].Contains(":ditto:") || split[0].Contains("Engine") || split[0].Contains("Actuator")))
                     {
                         mechdef.Inventory.Add(new Inventory
                         {
@@ -427,6 +427,10 @@ namespace BattleEngineJsonCreation
                             SimGameUid = "",
                             Guid = null
                         });
+                        using (StreamWriter w = File.AppendText("log.txt"))
+                        {
+                            Log(split[0]+","+file, w);
+                        }
                     }
                 }
             }
@@ -676,6 +680,9 @@ namespace BattleEngineJsonCreation
             }
             return vaule;
         }
-
+        public static void Log(string logMessage, TextWriter w)
+        {
+            w.WriteLine(logMessage);
+        }
     }
 }
