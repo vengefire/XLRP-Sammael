@@ -1,0 +1,50 @@
+"Name","Po II Heavy Tank (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1181
+"Tons",60
+"Year","3077"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Magistracy of Canopus"
+"Engine","XL",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",176
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",40,32,30,32,42
+"Equips",8
+"1","Ultra AC/20","Ballistic"
+"3","Standard","Ammo"
+"2","LRM 5","Missile"
+"1","Standard","Ammo"
+"2","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"Crits"
+"<turret>"
+"Ultra AC/20",1,0
+"LRM 5",3,0
+"LRM 5",3,0
+"Streak SRM 2",5,0
+"Streak SRM 2",5,0
+"Machine Gun",7,0
+"Machine Gun",7,0
+"<body>"
+"Ammo Ultra AC/20",2,1
+"Ammo LRM 5",4,1
+"Ammo Streak SRM 2",6,1
+"Ammo Machine Gun: Half",8,1

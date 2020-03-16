@@ -1,0 +1,52 @@
+"Name","SturmFeur Heavy Tank (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",1400
+"Tons",85
+"Year","3018"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","St. Ives Compact"
+"Factions","Periphery","Outworlds Alliance"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Lyran Alliance","Lyran Commonwealth","St. Ives Compact"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",312
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",66,66,48,66,66
+"Equips",4
+"2","LRM 20","Missile"
+"3","Standard","Ammo"
+"2","Machine Gun","Ballistic"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"LRM 20",1,0
+"<turret>"
+"LRM 20",1,0
+"Machine Gun",3,0
+"Machine Gun",3,0
+"<body>"
+"Ammo LRM 20",2,1
+"Ammo Machine Gun",4,1

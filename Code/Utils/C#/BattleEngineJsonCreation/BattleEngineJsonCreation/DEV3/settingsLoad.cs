@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace BattleEngineJsonCreation
 {
@@ -12,18 +14,21 @@ namespace BattleEngineJsonCreation
         public static Settings LoadSettings()
         {
             string filepath = Directory.GetCurrentDirectory();
+            
             string settingfile = Path.Combine(filepath, "settings.json");
+            var fullPath = Path.Combine(filepath, settingfile);
             //var settings = new Settings();
             var settings = new Settings();
 
-            if (File.Exists(Path.Combine(filepath, settingfile)))
+            if (File.Exists(fullPath))
             {
                 string jsonString = File.ReadAllText(settingfile);
                 settings = Settings.FromJson(jsonString);
             }
             else
             {
-                Reuse.EndProgram("Settings file not found!");
+                File.WriteAllText(fullPath, JsonConvert.SerializeObject(settings, Formatting.Indented));
+                Reuse.EndProgram("Settings file not found, created new default.");
             }
             if (!Directory.Exists(settings.BtInstallDir)) Reuse.EndProgram("BT Direcotry not found at " + settings.BtInstallDir);
             if (!Directory.Exists(settings.BedPath)) Reuse.EndProgram("BED Files not found at " + settings.BedPath);

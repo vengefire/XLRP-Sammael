@@ -1,0 +1,35 @@
+"Name","Alacorn Heavy Tank Mk VII"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",2163
+"Tons",95
+"Year","3063"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Comstar","Federated Commonwealth","Federated Suns","Lyran Alliance","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Comstar","Federated Suns","Lyran Alliance","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",312
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",112,75,50,75,0
+"Equips",2
+"2","Heavy Gauss Rifle","Ballistic"
+"12","Standard","Ammo"
+"Crits"
+"<front>"
+"Heavy Gauss Rifle",1,0
+"Heavy Gauss Rifle",1,0
+"<body>"
+"Ammo Heavy Gauss Rifle",2,1

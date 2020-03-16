@@ -1,0 +1,47 @@
+"Name","Axel Heavy Tank IIC (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1612
+"Tons",65
+"Year","3074"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Free Rasalhague Republic"
+"Factions","IS Clan","Clan Ghost Bear"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Factions","IS Clan","Clan Diamond Shark","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Factions","IS Clan","Clan Sea Fox","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Factions","IS Clan","Clan Hell's Horses","Clan Sea Fox","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",184
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",65,45,30,45,35
+"Equips",7
+"1","AP Gauss Rifle","Ballistic"
+"1","Standard","Ammo"
+"1","Large Pulse Laser","Energy"
+"2","LRM 15","Missile"
+"4","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","ECM Suite","Electronics"
+"Crits"
+"<front>"
+"AP Gauss Rifle",1,0
+"<turret>"
+"Large Pulse Laser",3,0
+"LRM 15",4,0
+"LRM 15",4,0
+"<body>"
+"Ammo LRM 15: Artemis",5,1
+"Ammo AP Gauss Rifle",2,1
+"ECM Suite",7,1

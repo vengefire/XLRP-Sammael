@@ -25,16 +25,16 @@ namespace Framework.Logic.Services
         {
             try
             {
-                ServiceProgram.Container = bootstrap.RegisterContainer();
-                ServiceProgram.logger = ServiceProgram.Container.GetInstance<ILogger>();
-                ServiceProgram.logger.InfoFormat("IOC boot strapped...");
+                Container = bootstrap.RegisterContainer();
+                logger = Container.GetInstance<ILogger>();
+                logger.InfoFormat("IOC boot strapped...");
 
-                var exceptionLogger = ServiceProgram.Container.GetInstance<IExceptionLogger>();
+                var exceptionLogger = Container.GetInstance<IExceptionLogger>();
 
                 Thread.GetDomain().UnhandledException += (sender, eventArgs) =>
                 {
                     var ex = (Exception) eventArgs.ExceptionObject;
-                    ServiceProgram.logger.ErrorFormat(ex, "An unhandled exception was encountered.");
+                    logger.ErrorFormat(ex, "An unhandled exception was encountered.");
                     exceptionLogger.Log(ex);
                 };
 
@@ -50,28 +50,28 @@ namespace Framework.Logic.Services
                             ManagedInstallerClass.InstallHelper(new[] {"/u", Assembly.GetExecutingAssembly().Location});
                             break;
                         case "--help":
-                            ServiceProgram.ShowHelp();
+                            ShowHelp();
                             break;
                         default:
-                            ServiceProgram.RunAsConsole(ServiceProgram.Container.GetInstance<IService>());
+                            RunAsConsole(Container.GetInstance<IService>());
                             break;
                     }
                 }
                 else
                 {
-                    var servicesToRun = new ServiceBase[] {ServiceProgram.Container.GetInstance<ServiceProxy>()};
+                    var servicesToRun = new ServiceBase[] {Container.GetInstance<ServiceProxy>()};
 
-                    ServiceProgram.logger.InfoFormat("Executing ServiceBase.Run...");
+                    logger.InfoFormat("Executing ServiceBase.Run...");
                     ServiceBase.Run(servicesToRun);
                 }
             }
             catch (Exception ex)
             {
-                ServiceProgram.logger.ErrorFormat(ex, "Exception encountered in Main, exiting...");
+                logger.ErrorFormat(ex, "Exception encountered in Main, exiting...");
                 return -1;
             }
 
-            ServiceProgram.logger.InfoFormat("Cleanly exiting application.");
+            logger.InfoFormat("Cleanly exiting application.");
 
             return 0;
         }
@@ -81,35 +81,39 @@ namespace Framework.Logic.Services
             Thread.GetDomain().UnhandledException += (sender, args) =>
             {
                 var ex = (Exception) args.ExceptionObject;
-                ServiceProgram.logger.ErrorFormat(ex, "An unhandled exception was encountered.");
+                logger.ErrorFormat(ex, "An unhandled exception was encountered.");
             };
 
             Console.CancelKeyPress += (sender, args) =>
             {
                 args.Cancel = true;
-                ServiceProgram.run = false;
+                run = false;
             };
 
-            ServiceProgram.logger.Info("Interactive mode initiated");
-            ServiceProgram.logger.InfoFormat("Start with execute \"{0} --help\" for options.", AppDomain.CurrentDomain.FriendlyName);
+            logger.Info("Interactive mode initiated");
+            logger.InfoFormat("Start with execute \"{0} --help\" for options.", AppDomain.CurrentDomain.FriendlyName);
 
             service.OnStart();
 
-            ServiceProgram.logger.Info("Press CTRL+C to exit...");
+            logger.Info("Press CTRL+C to exit...");
 
-            while (ServiceProgram.run)
+            while (run)
             {
                 Thread.Sleep(1);
             }
 
-            ServiceProgram.logger.Info("Shutting down...");
+            logger.Info("Shutting down...");
             service.OnStop();
-            ServiceProgram.logger.Info("Done");
+            logger.Info("Done");
         }
 
         private static void ShowHelp()
         {
-            var help = new Dictionary<string, string> {{"install", "Install service"}, {"uninstall", "Uninstall service"}, {"console", "Run in console mode"}, {"help", "This help page"}};
+            var help = new Dictionary<string, string>
+            {
+                {"install", "Install service"}, {"uninstall", "Uninstall service"}, {"console", "Run in console mode"},
+                {"help", "This help page"}
+            };
 
             var maxKeyLength = help.Keys.Max(x => x.Length);
             foreach (var item in help)

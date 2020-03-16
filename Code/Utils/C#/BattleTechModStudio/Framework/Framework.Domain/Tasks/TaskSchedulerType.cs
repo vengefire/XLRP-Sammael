@@ -41,7 +41,8 @@ namespace Framework.Domain.Tasks
                 return TaskSchedulerType.Yearly;
             }
 
-            throw new InvalidProgramException(string.Format("Source value [{0}] is not valid for conversion to TaskSchedulerType.", src));
+            throw new InvalidProgramException(
+                string.Format("Source value [{0}] is not valid for conversion to TaskSchedulerType.", src));
         }
     }
 }

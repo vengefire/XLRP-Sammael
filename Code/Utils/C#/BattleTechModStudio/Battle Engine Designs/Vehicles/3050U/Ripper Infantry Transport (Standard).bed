@@ -1,0 +1,46 @@
+"Name","Ripper Infantry Transport (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",345
+"Tons",10
+"Year","2680"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Comstar"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Comstar"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Lyran Alliance","Lyran Commonwealth","Word of Blake"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Lyran Alliance","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Suns","Free Rasalhague Republic","Lyran Alliance","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Filtvelt Coalition"
+"Engine","Fusion",12,"12/18/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",24
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",9,5,5,5,2
+"Equips",2
+"2","Medium Laser","Energy"
+"2","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Medium Laser",1,0
+"Medium Laser",1,0
+"<body>"
+"Infantry Compartment",2,1

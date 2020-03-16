@@ -1,0 +1,55 @@
+"Name","Athena Combat Vehicle (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1855
+"Tons",75
+"Year","3008"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Ghost Bear","Clan Hell's Horses","Clan Jade Falcon","Clan Snow Raven","Clan Wolf"
+"Factions","Home Clan","Clan Coyote","Clan Fire Mandrill","Clan Goliath Scorpion","Clan Steel Viper"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Ghost Bear","Clan Hell's Horses","Clan Jade Falcon","Clan Snow Raven","Clan Wolf"
+"Factions","Home Clan","Clan Cloud Cobra","Clan Coyote","Clan Fire Mandrill","Clan Goliath Scorpion","Clan Steel Viper"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Ghost Bear","Clan Hell's Horses","Clan Jade Falcon","Clan Snow Raven","Clan Wolf"
+"Factions","Home Clan","Clan Cloud Cobra","Clan Coyote","Clan Fire Mandrill","Clan Goliath Scorpion","Clan Steel Viper","Clan Stone Lion"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Hell's Horses","Clan Jade Falcon","Clan Wolf","Rasalhague Dominion","Raven Alliance"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Clan Sea Fox","Clan Wolf","Rasalhague Dominion","Raven Alliance"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Clan Sea Fox","Clan Wolf","Rasalhague Dominion","Raven Alliance"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",120
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",38,26,24,26,30
+"Equips",8
+"2","Gauss Rifle","Ballistic"
+"4","Standard","Ammo"
+"1","LRM 10","Missile"
+"1","Standard","Ammo"
+"2","ER Medium Laser","Energy"
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","Targeting Computer","Electronics"
+"Crits"
+"<front>"
+"Gauss Rifle",1,0
+"Gauss Rifle",1,0
+"LRM 10",3,0
+"<turret>"
+"ER Medium Laser",5,0
+"ER Medium Laser",5,0
+"Machine Gun",6,0
+"Machine Gun",6,0
+"<body>"
+"Targeting Computer",8,1
+"Ammo Machine Gun: Half",7,1
+"Ammo LRM 10",4,1
+"Ammo Gauss Rifle",2,1

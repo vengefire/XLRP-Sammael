@@ -1,0 +1,42 @@
+"Name","Balac Strike VTOL (Spotter)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",934
+"Tons",25
+"Year","3079"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","IS Clan General"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","IS Clan General"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","IS Clan General"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","IS Clan General"
+"Engine","XL",11,"11/17/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",40
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",15,12,7,12,2
+"Equips",5
+"2","ATM 6","Missile"
+"2","Standard","Ammo"
+"1","TAG","Electronics"
+"1","ECM Suite","Electronics"
+"1","Active Probe","Electronics"
+"Crits"
+"<front>"
+"ATM 6",1,0
+"ATM 6",1,0
+"TAG",3,0
+"<body>"
+"Ammo ATM 6",2,1
+"ECM Suite",4,1
+"Active Probe",5,1

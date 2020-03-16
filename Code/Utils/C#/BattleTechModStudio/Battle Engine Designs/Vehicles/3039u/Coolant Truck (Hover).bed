@@ -1,0 +1,54 @@
+"Name","Coolant Truck (Hover)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Hover"
+"BV2",347
+"Tons",30
+"Year","2602"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Other","Star League Royal"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","ICE",8,"8/12/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",24,28,20,28,12
+"Equips",3
+"2","Flamer (Vehicle)","Ballistic"
+"2","Standard","Ammo"
+"10","Cargo, Insulated","Miscellaneous"
+"Crits"
+"<turret>"
+"Flamer (Vehicle)",1,0
+"Flamer (Vehicle)",1,0
+"<body>"
+"Ammo Flamer (Vehicle)",2,1
+"Cargo, Insulated",3,1

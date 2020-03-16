@@ -1,0 +1,52 @@
+"Name","Marksman MBT M1"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1474
+"Tons",95
+"Year","3088"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",184
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",62,41,28,41,34
+"Equips",10
+"1","Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"2","MRM 10","Missile"
+"1","Standard","Ammo"
+"2","SRM 6","Missile"
+"1","Standard","Ammo"
+"2","Streak SRM 4","Missile"
+"1","Standard","Ammo"
+"4","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"Crits"
+"<turret>"
+"Gauss Rifle",1,0
+"MRM 10",3,0
+"MRM 10",3,0
+"SRM 6",5,0
+"SRM 6",5,0
+"Streak SRM 4",7,0
+"Streak SRM 4",7,0
+"Machine Gun",9,0
+"Machine Gun",9,0
+"Machine Gun",9,0
+"Machine Gun",9,0
+"<body>"
+"Ammo Gauss Rifle",2,1
+"Ammo MRM 10",4,1
+"Ammo SRM 6",6,1
+"Ammo Streak SRM 4",8,1
+"Ammo Machine Gun: Half",10,1

@@ -6,7 +6,8 @@ namespace Data.Console.Utils
 {
     internal static class ContentExtractors
     {
-        internal static void GenerateStoreContentList(List<ManifestEntry> manifestEntries, string outputDirectory, string filename)
+        internal static void GenerateStoreContentList(List<ManifestEntry> manifestEntries, string outputDirectory,
+            string filename)
         {
             var typesQualifyingForStores = new List<GameObjectTypeEnum>
             {
@@ -18,10 +19,12 @@ namespace Data.Console.Utils
                 GameObjectTypeEnum.MechDef
             };
 
-            ExtractionUtils.ExtractItemsByTypeToExcel(manifestEntries, outputDirectory, filename, typesQualifyingForStores);
+            ExtractionUtils.ExtractItemsByTypeToExcel(manifestEntries, outputDirectory, filename,
+                typesQualifyingForStores);
         }
 
-        internal static void GenerateTacticalContentList(List<ManifestEntry> manifestEntries, string outputDirectory, string filename)
+        internal static void GenerateTacticalContentList(List<ManifestEntry> manifestEntries, string outputDirectory,
+            string filename)
         {
             var typesQualifyingForStores = new List<GameObjectTypeEnum>
             {
@@ -34,7 +37,8 @@ namespace Data.Console.Utils
                 GameObjectTypeEnum.VehicleDef
             };
 
-            ExtractionUtils.ExtractItemsByTypeToExcel(manifestEntries, outputDirectory, filename, typesQualifyingForStores);
+            ExtractionUtils.ExtractItemsByTypeToExcel(manifestEntries, outputDirectory, filename,
+                typesQualifyingForStores);
         }
     }
 }

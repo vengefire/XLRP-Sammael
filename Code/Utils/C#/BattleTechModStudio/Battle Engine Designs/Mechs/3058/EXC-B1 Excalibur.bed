@@ -1,0 +1,123 @@
+"Name","EXC-B1 Excalibur"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",1549
+"Tons",70
+"Year","2619"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Periphery","Rim Worlds Republic - Terran Corps"
+"Factions","Other","Star League Regular","Star League Royal"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Other","Extinct"
+"Era","Civil War","(3062-3067)"
+"Factions","Other","Extinct"
+"Era","Jihad","(3068-3085)"
+"Factions","Other","Extinct"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","XL",5,"5/8/0"
+"Sinks","Single",11
+"Internal","Standard"
+"Armor","Standard",120
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","Full Arm"
+"RArmAct","No Hand"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",13,13,14,14,16,5,5,5,9,13,13
+"Equips",8
+"1","Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"1","LRM 20","Missile"
+"2","Artemis","Ammo"
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"1","Small Pulse Laser","Energy"
+"1","Artemis IV FCS","Electronics"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hand Actuator",-8,1,0,2,1
+"Small Pulse Laser",7,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"LRM 20",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+"Artemis IV FCS",8,0,0,2,1
+"Anti-Missile System",5,0,0,2,0
+"Ammo LRM 20: Artemis",4,0,0,2,0
+"Ammo LRM 20: Artemis",4,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Ammo Gauss Rifle",2,0,0,2,0
+"Ammo Gauss Rifle",2,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Gauss Rifle",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Ammo Anti-Missile System",6,0,0,2,0
+" -",0,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+" -",0,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0

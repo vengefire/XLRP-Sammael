@@ -1,0 +1,37 @@
+"Name","Cyrano Gunship (ML)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",645
+"Tons",30
+"Year","3071"
+"Era","Jihad","(3068-3085)"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",12,"12/18/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",24
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",9,6,3,6,2
+"Equips",3
+"2","Medium Laser","Energy"
+"1","Beagle Active Probe","Electronics"
+"5","Rocket Launcher 10","Missile"
+"Crits"
+"<front>"
+"Medium Laser",1,0
+"Medium Laser",1,0
+"Beagle Active Probe",2,0
+"Rocket Launcher 10",3,0
+"Rocket Launcher 10",3,0
+"Rocket Launcher 10",3,0
+"Rocket Launcher 10",3,0
+"Rocket Launcher 10",3,0

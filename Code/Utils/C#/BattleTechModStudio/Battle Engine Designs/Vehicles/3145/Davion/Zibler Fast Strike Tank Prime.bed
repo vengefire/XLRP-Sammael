@@ -1,0 +1,50 @@
+"Name","Zibler Fast Strike Tank Prime"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1205
+"Tons",50
+"Year","3096"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Engine","Fusion",8,"8/12/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",2
+10,50,8,0,10,112,30,30,20,30,28,0,0,0,0,0,0
+3
+"",-1,-1,0,0
+"",-4,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",30,30,20,30,28
+"Equips",6
+"4","Medium Laser","Energy"
+"3","Streak SRM 4","Missile"
+"1","Standard","Ammo"
+"1","C3 Computer (Slave)","Electronics"
+"1","Targeting Computer","Electronics"
+"1","CASE","Miscellaneous"
+"Crits"
+"<turret>"
+"Medium Laser",1,0
+"Medium Laser",1,0
+"Medium Laser",1,0
+"Medium Laser",1,0
+"Streak SRM 4",2,0
+"Streak SRM 4",2,0
+"Streak SRM 4",2,0
+"<body>"
+"C3 Computer (Slave)",4,1
+"Targeting Computer",5,1
+"Ammo Streak SRM 4",3,1
+"CASE",6,1

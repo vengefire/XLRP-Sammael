@@ -1,0 +1,42 @@
+"Name","Yasha VTOL (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",799
+"Tons",30
+"Year","3085"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark","Clan Hell's Horses","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Hell's Horses","Clan Nova Cat","Clan Sea Fox","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Hell's Horses","Clan Nova Cat","Clan Sea Fox","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",7,"7/11/0"
+"Sinks","Single",15
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",56
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",21,18,10,18,2
+"Equips",5
+"1","Heavy PPC","Energy"
+"1","Machine Gun (Light)","Ballistic"
+"1","Half","Ammo"
+"1","C3 Computer (Slave)","Electronics"
+"1","CASE","Miscellaneous"
+"Crits"
+"<front>"
+"Heavy PPC",1,0
+"Machine Gun (Light)",2,0
+"<body>"
+"C3 Computer (Slave)",4,1
+"Ammo Machine Gun (Light): Half",3,1
+"CASE",5,0

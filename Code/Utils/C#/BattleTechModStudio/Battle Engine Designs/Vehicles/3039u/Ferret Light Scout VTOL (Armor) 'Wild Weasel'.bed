@@ -1,0 +1,36 @@
+"Name","Ferret Light Scout VTOL (Armor) 'Wild Weasel'"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","VTOL"
+"BV2",103
+"Tons",5
+"Year","2967"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League","Lyran Commonwealth"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League","Lyran Commonwealth"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Free Worlds League","Lyran Alliance","Lyran Commonwealth"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns"
+"Engine","ICE",15,"15/23/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",24
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",6,6,4,6,2
+"Equips",2
+"1","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<body>"
+"Ammo Machine Gun: Half",2,1

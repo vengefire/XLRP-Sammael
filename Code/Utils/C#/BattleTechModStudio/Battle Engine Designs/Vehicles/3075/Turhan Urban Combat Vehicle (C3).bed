@@ -1,0 +1,44 @@
+"Name","Turhan Urban Combat Vehicle (C3)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",709
+"Tons",50
+"Year","3072"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Engine","XL",4,"4/6/0"
+"Sinks","Single",16
+"Internal","Standard"
+"Armor","Ferro-Fibrous",120
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",30,29,26,29,20
+"Equips",7
+"1","Machine Gun","Ballistic"
+"1","Standard","Ammo"
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"2","Large Laser","Energy"
+"1","C3 Computer (Master)","Electronics"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<turret>"
+"Anti-Missile System",3,0
+"Large Laser",5,0
+"Large Laser",5,0
+"<body>"
+"Ammo Machine Gun",2,1
+"C3 Computer (Master)",6,1
+"Ammo Anti-Missile System",4,1
+"Infantry Compartment",7,1

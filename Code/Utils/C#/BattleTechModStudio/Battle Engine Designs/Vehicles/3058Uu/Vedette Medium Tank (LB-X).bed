@@ -1,0 +1,41 @@
+"Name","Vedette Medium Tank (LB-X)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",552
+"Tons",50
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Taurian Concordat"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Taurian Concordat"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Taurian Concordat"
+"Engine","ICE",5,"5/8/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Ferro-Fibrous",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",25,21,24,21,25
+"Equips",4
+"1","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","LB 5-X AC","Ballistic"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<turret>"
+"LB 5-X AC",3,0
+"<body>"
+"Ammo LB 5-X AC",4,1
+"Ammo Machine Gun: Half",2,1

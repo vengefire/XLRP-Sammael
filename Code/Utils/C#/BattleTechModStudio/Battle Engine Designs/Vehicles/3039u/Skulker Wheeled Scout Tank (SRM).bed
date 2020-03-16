@@ -1,0 +1,37 @@
+"Name","Skulker Wheeled Scout Tank (SRM)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Wheeled"
+"BV2",319
+"Tons",20
+"Year","2901"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Filtvelt Coalition"
+"Engine","ICE",7,"7/11/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",72
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",18,18,18,18,0
+"Equips",2
+"1","SRM 4","Missile"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"SRM 4",1,0
+"<body>"
+"Ammo SRM 4",2,1

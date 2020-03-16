@@ -20,7 +20,8 @@ namespace Framework.Logic.Queue.Config
 
         [ConfigurationProperty("messageLogicHandlers", IsRequired = true, IsDefaultCollection = false)]
         [ConfigurationCollection(typeof(MessageLogicHandlerCollection))]
-        public MessageLogicHandlerCollection MessageLogicHandlers => (MessageLogicHandlerCollection) this["messageLogicHandlers"];
+        public MessageLogicHandlerCollection MessageLogicHandlers =>
+            (MessageLogicHandlerCollection) this["messageLogicHandlers"];
 
         [ConfigurationProperty("queueProcessors", IsRequired = true, IsDefaultCollection = false)]
         [ConfigurationCollection(typeof(QueueProcessorCollection))]

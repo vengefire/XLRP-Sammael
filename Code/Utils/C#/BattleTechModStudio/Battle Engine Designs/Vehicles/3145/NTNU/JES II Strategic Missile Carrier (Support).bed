@@ -1,0 +1,44 @@
+"Name","JES II Strategic Missile Carrier (Support)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1209
+"Tons",95
+"Year","3088"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Factions","IS Clan","Clan Jade Falcon"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Factions","IS Clan","Clan Jade Falcon"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Factions","IS Clan","Clan Jade Falcon"
+"Engine","Fusion",2,"2/3/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",18,11,8,11,0
+"Equips",5
+"4","LRM 20","Missile"
+"8","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"2","LRM 10","Missile"
+"2","Artemis","Ammo"
+"Crits"
+"<front>"
+"LRM 20",1,0
+"LRM 20",1,0
+"LRM 20",1,0
+"LRM 20",1,0
+"<right>"
+"LRM 10",4,0
+"<left>"
+"LRM 10",4,0
+"<body>"
+"Ammo LRM 20: Artemis",2,1
+"Ammo LRM 10: Artemis",5,1

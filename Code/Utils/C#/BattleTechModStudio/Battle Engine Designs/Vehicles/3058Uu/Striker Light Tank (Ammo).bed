@@ -1,0 +1,53 @@
+"Name","Striker Light Tank (Ammo)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",701
+"Tons",35
+"Year","3054"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Periphery","Filtvelt Coalition"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat","Clan Sea Fox","Clan Wolf (in Exile)"
+"Factions","Periphery","Filtvelt Coalition"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat","Clan Sea Fox","Clan Wolf (in Exile)"
+"Factions","Periphery","Filtvelt Coalition"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",28,25,21,25,26
+"Equips",4
+"1","LRM 15","Missile"
+"2","Standard","Ammo"
+"2","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<turret>"
+"LRM 15",1,0
+"Streak SRM 2",3,0
+"Streak SRM 2",3,0
+"<body>"
+"Ammo LRM 15",2,1
+"Ammo Streak SRM 2",4,1

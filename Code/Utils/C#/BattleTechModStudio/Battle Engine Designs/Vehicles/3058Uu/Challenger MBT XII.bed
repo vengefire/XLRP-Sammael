@@ -1,0 +1,55 @@
+"Name","Challenger MBT XII"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1851
+"Tons",90
+"Year","3065"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",224
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",57,50,36,50,57
+"Equips",12
+"2","ER Medium Laser","Energy"
+"1","Gauss Rifle","Ballistic"
+"3","Standard","Ammo"
+"1","Rotary AC/2","Ballistic"
+"2","Standard","Ammo"
+"1","LRM 15","Missile"
+"3","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","Streak SRM 4","Missile"
+"1","Standard","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"1","C3 Computer (Slave)","Electronics"
+"Crits"
+"<front>"
+"ER Medium Laser",1,0
+"ER Medium Laser",1,0
+"<turret>"
+"Gauss Rifle",2,0
+"Rotary AC/2",4,0
+"LRM 15",6,0
+"Streak SRM 4",9,0
+"<body>"
+"Guardian ECM Suite",11,1
+"C3 Computer (Slave)",12,1
+"Ammo Gauss Rifle",3,1
+"Ammo LRM 15: Artemis",7,1
+"Ammo Rotary AC/2",5,1
+"Ammo Streak SRM 4",10,1

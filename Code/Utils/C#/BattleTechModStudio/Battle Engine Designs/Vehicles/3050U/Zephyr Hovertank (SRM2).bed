@@ -1,0 +1,48 @@
+"Name","Zephyr Hovertank (SRM2)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",893
+"Tons",40
+"Year","2620"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Periphery","Rim Worlds Republic - Terran Corps"
+"Factions","Other","Star League Regular","Star League Royal"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Other","Extinct"
+"Era","Civil War","(3062-3067)"
+"Factions","Other","Extinct"
+"Era","Jihad","(3068-3085)"
+"Factions","Other","Extinct"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",119
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#FALSE#
+"ArmorVals",37,24,19,24,29
+"Equips",6
+"1","SRM 6","Missile"
+"2","Standard","Ammo"
+"1","SRM 2","Missile"
+"1","Standard","Ammo"
+"1","Small Laser","Energy"
+"3","Medium Laser","Energy"
+"Crits"
+"<front>"
+"SRM 6",1,0
+"<rear>"
+"SRM 2",3,0
+"Small Laser",5,0
+"<turret>"
+"Medium Laser",6,0
+"Medium Laser",6,0
+"Medium Laser",6,0
+"<body>"
+"Ammo SRM 6",2,1
+"Ammo SRM 2",4,1

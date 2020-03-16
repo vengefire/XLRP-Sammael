@@ -1,0 +1,35 @@
+"Name","Saxon APC (Laser)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",565
+"Tons",35
+"Year","3071"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",10,"10/15/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",144
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",33,26,24,26,35
+"Equips",2
+"1","ER Medium Laser","Energy"
+"10","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"ER Medium Laser",1,0
+"<body>"
+"Infantry Compartment",2,1

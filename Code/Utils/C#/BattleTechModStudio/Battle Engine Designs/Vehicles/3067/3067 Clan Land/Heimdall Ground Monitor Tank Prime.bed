@@ -1,0 +1,59 @@
+"Name","Heimdall Ground Monitor Tank Prime"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1943
+"Tons",95
+"Year","3063"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Home Clan","Clan Steel Viper"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf (in Exile)"
+"Factions","Home Clan","Clan Steel Viper","Clan Stone Lion"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Factions","IS Clan","Clan Diamond Shark","Clan Hell's Horses","Clan Nova Cat","Clan Wolf (in Exile)","Raven Alliance"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Factions","IS Clan","Clan Hell's Horses","Clan Nova Cat","Clan Sea Fox","Clan Wolf (in Exile)","Raven Alliance"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Factions","IS Clan","Clan Hell's Horses","Clan Nova Cat","Clan Sea Fox","Clan Wolf (in Exile)","Raven Alliance"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",18
+"Internal","Standard"
+"Armor","Standard",352
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",1.5
+10,95,3,0,10,352,106,70,47,70,59,0,0,0,0,0,0
+4
+"",-1,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"LB 10-X AC",1,0,0,0
+"LB 10-X AC",1,0,0,0
+"Rules",0,#TRUE#
+"ArmorVals",106,70,47,70,59
+"Equips",6
+"2","LB 10-X AC","Ballistic"
+"2","Cluster","Ammo"
+"1","Standard","Ammo"
+"1","Heavy Large Laser","Energy"
+"3","Streak SRM 4","Missile"
+"3","Standard","Ammo"
+"Crits"
+"<front>"
+"LB 10-X AC",1,0
+"LB 10-X AC",1,0
+"<turret>"
+"Heavy Large Laser",4,0
+"Streak SRM 4",5,0
+"Streak SRM 4",5,0
+"Streak SRM 4",5,0
+"<body>"
+"Ammo LB 10-X AC: Cluster",2,1
+"Ammo LB 10-X AC",3,1
+"Ammo Streak SRM 4",6,1

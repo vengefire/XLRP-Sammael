@@ -1,0 +1,44 @@
+"Name","Daimyo HQ 67-K2"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",620
+"Tons",50
+"Year","3067"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine"
+"Engine","Fusion",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",34,22,15,22,19
+"Equips",5
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"2","Light PPC","Energy"
+"7","Communications Equipment","Electronics"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<right>"
+"Machine Gun",1,0
+"<left>"
+"Machine Gun",1,0
+"<turret>"
+"Light PPC",3,0
+"Light PPC",3,0
+"<body>"
+"Ammo Machine Gun: Half",2,1
+"Communications Equipment",4,1
+"Infantry Compartment",5,1

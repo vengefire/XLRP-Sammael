@@ -1,0 +1,49 @@
+"Name","Epona Pursuit Tank E"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1436
+"Tons",50
+"Year","3070"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Hell's Horses","Clan Wolf","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Sea Fox","Clan Wolf","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Sea Fox","Clan Wolf","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",14
+"Internal","Standard"
+"Armor","Ferro-Fibrous",80
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",1
+10,50,9,0,10,80,21,20,18,20,17,0,0,0,0,0,0
+3
+"",-1,-1,0,0
+"",-4,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",21,20,18,20,17
+"Equips",4
+"2","Plasma Cannon","Energy"
+"2","Standard","Ammo"
+"6","AP Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"Crits"
+"<turret>"
+"Plasma Cannon",1,0
+"Plasma Cannon",1,0
+"AP Gauss Rifle",3,0
+"AP Gauss Rifle",3,0
+"AP Gauss Rifle",3,0
+"AP Gauss Rifle",3,0
+"AP Gauss Rifle",3,0
+"AP Gauss Rifle",3,0
+"<body>"
+"Ammo Plasma Cannon",2,1
+"Ammo AP Gauss Rifle",4,1

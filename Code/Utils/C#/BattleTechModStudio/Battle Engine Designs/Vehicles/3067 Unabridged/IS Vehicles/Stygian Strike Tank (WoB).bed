@@ -1,0 +1,38 @@
+"Name","Stygian Strike Tank (WoB)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",714
+"Tons",40
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Era","Late Republic","(3101-3130)"
+"Factions","Other","Extinct"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Other","Extinct"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",88
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",18,18,18,18,16
+"Equips",4
+"2","Medium Pulse Laser","Energy"
+"1","LRM 10","Missile"
+"1","Standard","Ammo"
+"1","Improved C3 Computer","Electronics"
+"Crits"
+"<front>"
+"Medium Pulse Laser",1,0
+"Medium Pulse Laser",1,0
+"<turret>"
+"LRM 10",2,0
+"<body>"
+"Improved C3 Computer",4,1
+"Ammo LRM 10",3,1

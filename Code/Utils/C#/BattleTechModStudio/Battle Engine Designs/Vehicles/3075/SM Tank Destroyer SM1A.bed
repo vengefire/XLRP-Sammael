@@ -1,0 +1,45 @@
+"Name","SM Tank Destroyer SM1A"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1239
+"Tons",50
+"Year","3070"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine"
+"Factions","IS Clan","Clan Nova Cat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat"
+"Factions","Mercenary","Kell Hounds","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Nova Cat"
+"Factions","Mercenary","Kell Hounds","Mercenary"
+"Engine","Fusion",8,"8/12/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",120
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",43,29,19,29,24
+"Equips",5
+"1","LB 20-X AC","Ballistic"
+"5","Standard","Ammo"
+"1","Light Active Probe","Electronics"
+"1","Machine Gun Array (Light 4)","Ballistic"
+"1","Half","Ammo"
+"Crits"
+"<front>"
+"LB 20-X AC",1,0
+"<turret>"
+"Machine Gun Array (Light 4)",4,0
+"<body>"
+"Light Active Probe",3,1
+"Ammo LB 20-X AC",2,1
+"Ammo Machine Gun Array (Light 4): Half",5,1

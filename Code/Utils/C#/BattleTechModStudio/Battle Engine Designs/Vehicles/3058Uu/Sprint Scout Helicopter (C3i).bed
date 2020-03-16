@@ -1,0 +1,29 @@
+"Name","Sprint Scout Helicopter (C3i)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",71
+"Tons",10
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Comstar","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Era","Late Republic","(3101-3130)"
+"Factions","Other","Extinct"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Other","Extinct"
+"Engine","Fusion",13,"13/20/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",16
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",6,3,3,3,2
+"Equips",1
+"1","Improved C3 Computer","Electronics"
+"Crits"
+"<body>"
+"Improved C3 Computer",1,1

@@ -1,0 +1,46 @@
+"Name","Balac Strike VTOL (LRM)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",1278
+"Tons",25
+"Year","3079"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns"
+"Factions","IS Clan","IS Clan General"
+"Factions","Periphery","Outworlds Alliance"
+"Factions","Mercenary","Mercenary"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","IS Clan General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","IS Clan General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","IS Clan General"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",10,"10/15/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",40
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",15,12,7,12,2
+"Equips",4
+"2","LRM 15","Missile"
+"2","Standard","Ammo"
+"1","ER Medium Laser","Energy"
+"1","Cargo, Standard","Miscellaneous"
+"Crits"
+"<front>"
+"LRM 15",1,0
+"LRM 15",1,0
+"ER Medium Laser",3,0
+"<body>"
+"Ammo LRM 15",2,1
+"Cargo, Standard",4,1

@@ -1,0 +1,46 @@
+"Name","Pike Support Vehicle (Clan)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",892
+"Tons",60
+"Year","3055"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Factions","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Factions","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General","Society"
+"Factions","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","IS Clan","IS Clan General"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",136
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",45,26,26,26,40
+"Equips",3
+"1","ER Small Laser","Energy"
+"5","Ultra AC/2","Ballistic"
+"4","Standard","Ammo"
+"Crits"
+"<front>"
+"ER Small Laser",1,0
+"<turret>"
+"Ultra AC/2",2,0
+"Ultra AC/2",2,0
+"Ultra AC/2",2,0
+"Ultra AC/2",2,0
+"Ultra AC/2",2,0
+"<body>"
+"Ammo Ultra AC/2",3,1

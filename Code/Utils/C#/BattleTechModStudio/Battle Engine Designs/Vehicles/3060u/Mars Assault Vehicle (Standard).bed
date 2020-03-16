@@ -1,0 +1,72 @@
+"Name","Mars Assault Vehicle (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",2076
+"Tons",100
+"Year","2871"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General","Society"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Engine","Fusion",2,"2/3/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Ferro-Fibrous",184
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",50,43,37,43,47
+"Equips",14
+"1","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"1","Standard","Ammo"
+"3","LRM 15","Missile"
+"3","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"2","Streak SRM 6","Missile"
+"2","Standard","Ammo"
+"1","ER Large Laser","Energy"
+"1","Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","ECM Suite","Electronics"
+"Crits"
+"<front>"
+"LB 10-X AC",1,0
+"LRM 15",4,0
+"LRM 15",4,0
+"LRM 15",4,0
+"<right>"
+"Streak SRM 6",7,0
+"<left>"
+"Streak SRM 6",7,0
+"<turret>"
+"ER Large Laser",9,0
+"Gauss Rifle",10,0
+"Machine Gun",12,0
+"Machine Gun",12,0
+"<body>"
+"Ammo Machine Gun: Half",13,1
+"Ammo Gauss Rifle",11,1
+"Ammo Streak SRM 6",8,1
+"Ammo LRM 15: Artemis",5,1
+"Ammo LB 10-X AC: Cluster",2,1
+"Ammo LB 10-X AC",3,1
+"ECM Suite",14,1

@@ -1,0 +1,53 @@
+"Name","Condor Heavy Hover Tank (Upgrade) (Laser)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1197
+"Tons",50
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","XL",9,"9/14/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Ferro-Fibrous",96
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",31,21,14,21,20
+"Equips",8
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","ER Large Laser","Energy"
+"1","LRM 15","Missile"
+"2","Standard","Ammo"
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"ER Large Laser",3,0
+"<turret>"
+"LRM 15",4,0
+"Anti-Missile System",6,0
+"<body>"
+"Ammo Anti-Missile System",7,1
+"Ammo LRM 15",5,1
+"Guardian ECM Suite",8,1
+"Ammo Machine Gun: Half",2,1

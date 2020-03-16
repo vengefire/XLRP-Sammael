@@ -1,0 +1,41 @@
+"Name","Neptune Submarine (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Submarine"
+"BV2",963
+"Tons",100
+"Year","2950"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Alliance"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",8
+"Internal","Standard"
+"Armor","Standard",232
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",78,58,38,58,0
+"Equips",5
+"2","SRT 6","Missile"
+"1","Torpedo","Ammo"
+"1","LRT 20","Missile"
+"1","Torpedo","Ammo"
+"1","Large Laser","Energy"
+"Crits"
+"<front>"
+"SRT 6",1,0
+"SRT 6",1,0
+"LRT 20",3,0
+"Large Laser",5,0
+"<body>"
+"Ammo SRT 6: Torpedo",2,1
+"Ammo LRT 20: Torpedo",4,1

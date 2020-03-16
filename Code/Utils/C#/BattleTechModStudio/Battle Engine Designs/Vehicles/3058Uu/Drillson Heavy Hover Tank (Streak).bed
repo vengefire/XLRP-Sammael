@@ -1,0 +1,36 @@
+"Name","Drillson Heavy Hover Tank (Streak)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",899
+"Tons",50
+"Year","3053"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth","Word of Blake"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance","Word of Blake"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",25,21,20,21,25
+"Equips",3
+"4","Streak SRM 2","Missile"
+"2","Standard","Ammo"
+"1","Large Pulse Laser","Energy"
+"Crits"
+"<front>"
+"Streak SRM 2",1,0
+"Streak SRM 2",1,0
+"<turret>"
+"Large Pulse Laser",3,0
+"Streak SRM 2",1,0
+"Streak SRM 2",1,0
+"<body>"
+"Ammo Streak SRM 2",2,1

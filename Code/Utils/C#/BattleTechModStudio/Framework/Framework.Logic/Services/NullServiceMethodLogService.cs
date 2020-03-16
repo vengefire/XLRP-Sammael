@@ -18,7 +18,7 @@ namespace Framework.Logic.Services
 
         public static IServiceMethodLogService Instance()
         {
-            return NullServiceMethodLogService.Singleton;
+            return Singleton;
         }
     }
 }

@@ -1,0 +1,110 @@
+"Name","LNC25-08 Lancelot"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",1162
+"Tons",60
+"Year","3071"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","XL",6,"6/9/0"
+"Sinks","Double",10
+"Internal","Endo-Steel"
+"Armor","Light Ferro-Fibrous",144
+"Cockpit","Compact"
+"Gyro","XL"
+"JumpJets","Standard",0
+"LArmAct","No Lower Arm"
+"RArmAct","No Lower Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",15,15,16,16,24,5,5,7,9,20,20
+"Equips",5
+"1","PPC","Energy"
+"2","LB 5-X AC","Ballistic"
+"1","Cluster","Ammo"
+"1","Standard","Ammo"
+"1","Improved C3 Computer","Electronics"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"LB 5-X AC",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+"Ammo LB 5-X AC",4,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Light Ferro-Fibrous",-4,0,0,2,0
+"Light Ferro-Fibrous",-4,0,0,2,0
+"Light Ferro-Fibrous",-4,0,0,2,0
+"Light Ferro-Fibrous",-4,0,0,2,0
+"Light Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"PPC",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Light Ferro-Fibrous",-4,0,0,2,0
+"Light Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"LB 5-X AC",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+"Ammo LB 5-X AC: Cluster",3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"XL Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Small Cockpit",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Improved C3 Computer",5,0,0,2,0
+":ditto:",5,0,0,2,0
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+" -",0,0,0,2,0
+" -",0,0,0,2,0

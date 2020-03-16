@@ -65,6 +65,7 @@ namespace BattleEngineJsonCreation
                     string[] split = line.Split(',');
                     gearDic.Add(split[0],(split[1], (ComponentDefType)Enum.Parse(typeof(ComponentDefType), split[2])));
                 }*/
+
                 gearDic = File.ReadLines("gearDic.csv").Select(line => line.Split(',')).ToDictionary(line => line[0], line => 
                     (line[1], (ComponentDefType)Enum.Parse(typeof(ComponentDefType), line[2])));
             }

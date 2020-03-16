@@ -1,0 +1,114 @@
+"Name","BNC-6S Banshee"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",1889
+"Tons",95
+"Year","3062"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Engine","Light",4,"4/6/0"
+"Sinks","Double",10
+"Internal","Endo-Steel"
+"Armor","Standard",232
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","Full Arm"
+"RArmAct","Full Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",20,20,30,30,38,9,9,11,9,28,28
+"Equips",7
+"1","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"1","Standard","Ammo"
+"1","Heavy Gauss Rifle","Ballistic"
+"5","Standard","Ammo"
+"1","Small Laser","Energy"
+"2","CASE","Miscellaneous"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hand Actuator",-8,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Heavy Gauss Rifle",4,0,1,2,0
+":ditto:",4,0,1,2,0
+":ditto:",4,0,1,2,0
+":ditto:",4,0,1,2,0
+":ditto:",4,0,1,2,0
+":ditto:",4,0,1,2,0
+":ditto:",4,0,1,2,0
+":ditto:",4,0,1,2,0
+":ditto:",4,0,1,2,0
+"CASE",7,0,0,2,0
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"LB 10-X AC",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+"Ammo LB 10-X AC: Cluster",2,0,0,2,0
+"Ammo LB 10-X AC",3,0,0,2,0
+"Ammo Heavy Gauss Rifle",5,0,0,2,0
+"CASE",7,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Hand Actuator",-9,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Heavy Gauss Rifle",4,0,1,2,0
+":ditto:",4,0,1,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Small Laser",6,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Ammo Heavy Gauss Rifle",5,0,0,2,0
+"Ammo Heavy Gauss Rifle",5,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Ammo Heavy Gauss Rifle",5,0,0,2,0
+"Ammo Heavy Gauss Rifle",5,0,0,2,0

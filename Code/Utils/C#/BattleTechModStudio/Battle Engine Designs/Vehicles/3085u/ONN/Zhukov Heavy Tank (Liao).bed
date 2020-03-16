@@ -1,0 +1,53 @@
+"Name","Zhukov Heavy Tank (Liao)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1021
+"Tons",75
+"Year","3076"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",176
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",44,32,24,32,44
+"Equips",8
+"1","SRM 4","Missile"
+"1","Standard","Ammo"
+"2","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"1","Standard","Ammo"
+"1","C3 Computer (Slave)","Electronics"
+"1","Guardian ECM Suite","Electronics"
+"1","CASE","Miscellaneous"
+"Crits"
+"<front>"
+"SRM 4",1,0
+"<turret>"
+"LB 10-X AC",3,0
+"LB 10-X AC",3,0
+"<body>"
+"Ammo LB 10-X AC",5,1
+"Ammo LB 10-X AC: Cluster",4,1
+"Ammo SRM 4",2,1
+"C3 Computer (Slave)",6,1
+"Guardian ECM Suite",7,1
+"CASE",8,0

@@ -1,0 +1,112 @@
+"Name","UM-R70 UrbanMech"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",724
+"Tons",30
+"Year","3066"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns","Free Worlds League (Marik-Stewart Commonwealth)"
+"Factions","Periphery","Magistracy of Canopus"
+"Engine","Fusion",2,"2/3/2"
+"Sinks","Single",11
+"Internal","Standard"
+"Armor","Ferro-Fibrous",94
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",2
+"LArmAct","No Lower Arm"
+"RArmAct","No Lower Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#FALSE#
+"ArmorVals",10,10,10,10,15,4,4,5,9,14,14
+"Equips",4
+"1","Rotary AC/5","Ballistic"
+"2","Standard","Ammo"
+"1","ER Small Laser","Energy"
+"1","ER Medium Laser","Energy"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"ER Small Laser",3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Heat Sink",-2,0,0,2,0
+"Heat Sink",-2,0,0,2,0
+"ER Medium Laser",4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Heat Sink",-2,0,0,2,0
+"Heat Sink",-2,0,0,2,0
+"Ammo Rotary AC/5",2,0,0,2,0
+"Ammo Rotary AC/5",2,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Rotary AC/5",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Heat Sink",-2,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Heat Sink",-2,0,0,2,0
+"Heat Sink",-2,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Heat Sink",-2,0,0,2,0
+"Heat Sink",-2,0,0,2,0

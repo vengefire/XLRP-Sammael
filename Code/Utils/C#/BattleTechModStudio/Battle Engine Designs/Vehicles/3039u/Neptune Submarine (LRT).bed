@@ -1,0 +1,40 @@
+"Name","Neptune Submarine (LRT)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Submarine"
+"BV2",1104
+"Tons",100
+"Year","2971"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",240
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",80,60,40,60,0
+"Equips",4
+"2","SRT 6","Missile"
+"1","Torpedo","Ammo"
+"2","LRT 20","Missile"
+"4","Torpedo","Ammo"
+"Crits"
+"<front>"
+"SRT 6",1,0
+"SRT 6",1,0
+"LRT 20",3,0
+"LRT 20",3,0
+"<body>"
+"Ammo LRT 20: Torpedo",4,1
+"Ammo SRT 6: Torpedo",2,1

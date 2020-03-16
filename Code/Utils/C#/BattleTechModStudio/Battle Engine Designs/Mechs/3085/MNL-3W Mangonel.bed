@@ -1,0 +1,114 @@
+"Name","MNL-3W Mangonel"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",2657
+"Tons",70
+"Year","3082"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Engine","XL",5,"5/8/0"
+"Sinks","Double",12
+"Internal","Endo-Steel"
+"Armor","Ferro-Fibrous",152
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","No Lower Arm"
+"RArmAct","No Lower Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",16,16,23,23,30,7,7,7,9,22,22
+"Equips",4
+"4","ER Medium Laser","Energy"
+"2","Gauss Rifle","Ballistic"
+"4","Standard","Ammo"
+"1","ECM Suite","Electronics"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"ER Medium Laser",1,0,0,2,0
+"ER Medium Laser",1,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gauss Rifle",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+"Ammo Gauss Rifle",3,0,0,2,0
+"Ammo Gauss Rifle",3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gauss Rifle",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+"Ammo Gauss Rifle",3,0,0,2,0
+"Ammo Gauss Rifle",3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"ER Medium Laser",1,0,0,2,0
+"ER Medium Laser",1,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"ECM Suite",4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0

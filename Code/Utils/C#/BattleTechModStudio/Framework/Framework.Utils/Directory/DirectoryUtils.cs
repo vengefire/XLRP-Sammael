@@ -17,7 +17,7 @@ namespace Framework.Utils.Directory
 
         public static void DirectoryCopy(string source, string dest, bool copySubDirs, List<string> filesToCopy)
         {
-            DirectoryUtils.EnsureExists(dest);
+            EnsureExists(dest);
             var di = new DirectoryInfo(source);
 
             di.GetFiles().ToList().ForEach(
@@ -32,7 +32,7 @@ namespace Framework.Utils.Directory
             if (copySubDirs)
             {
                 di.GetDirectories().ToList().ForEach(
-                    subDi => DirectoryUtils.DirectoryCopy(subDi.FullName, Path.Combine(dest, subDi.Name), true, filesToCopy));
+                    subDi => DirectoryCopy(subDi.FullName, Path.Combine(dest, subDi.Name), true, filesToCopy));
             }
         }
 

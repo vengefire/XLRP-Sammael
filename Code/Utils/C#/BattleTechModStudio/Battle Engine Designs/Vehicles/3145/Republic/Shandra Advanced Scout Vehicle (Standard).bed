@@ -1,0 +1,42 @@
+"Name","Shandra Advanced Scout Vehicle (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",417
+"Tons",25
+"Year","3089"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",8,"8/12/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",64
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",24,15,10,15,0
+"Equips",6
+"1","SRM 4","Missile"
+"1","Standard","Ammo"
+"1","ER Small Laser","Energy"
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<front>"
+"SRM 4",1,0
+"ER Small Laser",3,0
+"<rear>"
+"Machine Gun",4,0
+"Machine Gun",4,0
+"<body>"
+"Guardian ECM Suite",6,1
+"Ammo SRM 4",2,1
+"Ammo Machine Gun: Half",5,1

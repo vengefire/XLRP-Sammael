@@ -77,25 +77,29 @@ namespace Data.Core.Parsers
                             continue;
                         }
 
-                        VersionManifestParser.AllTypes.Add(typeString);
+                        AllTypes.Add(typeString);
                         if (!Enum.TryParse(typeString, out GameObjectTypeEnum gameObjectType))
                         {
-                            VersionManifestParser.UnknownTypes.Add(typeString);
+                            UnknownTypes.Add(typeString);
                         }
 
-                        var fileInfo = gameObjectType == GameObjectTypeEnum.Prefab ? null : new FileInfo(Path.Combine(dataDirectory, pathString));
+                        var fileInfo = gameObjectType == GameObjectTypeEnum.Prefab
+                            ? null
+                            : new FileInfo(Path.Combine(dataDirectory, pathString));
                         var contentDirectory = gameObjectType == GameObjectTypeEnum.Prefab ? null : fileInfo.Directory;
 
                         if (fileInfo != null && !fileInfo.Exists)
                         {
-                            Console.WriteLine($"Warning - Manifest Entry file [{fileInfo.FullName}] does not exist. Skipping...");
+                            Console.WriteLine(
+                                $"Warning - Manifest Entry file [{fileInfo.FullName}] does not exist. Skipping...");
                         }
                         else
                         {
                             // Don't add updated entries, we don't care about these as they're overwritten...
                             if (!manifestEntries.Any(entry => entry.Id == id && entry.GameObjectType == gameObjectType))
                             {
-                                manifestEntries.Add(new ManifestEntry(contentDirectory, fileInfo, gameObjectType, id, null, assetBundleString));
+                                manifestEntries.Add(new ManifestEntry(contentDirectory, fileInfo, gameObjectType, id,
+                                    null, assetBundleString));
                             }
                             else
                             {

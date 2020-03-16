@@ -1,0 +1,26 @@
+"Name","Gabriel Reconnaissance Hovercraft (ERSL)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",162
+"Tons",5
+"Year","3067"
+"Era","Civil War","(3062-3067)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Jihad","(3068-3085)"
+"Factions","Periphery","Taurian Concordat"
+"Engine","Fusion",13,"13/20/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",16
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",5,3,3,3,3
+"Equips",1
+"2","ER Small Laser","Energy"
+"Crits"
+"<turret>"
+"ER Small Laser",1,0
+"ER Small Laser",1,0

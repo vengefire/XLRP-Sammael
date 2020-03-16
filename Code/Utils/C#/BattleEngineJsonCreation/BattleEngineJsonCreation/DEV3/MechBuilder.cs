@@ -363,7 +363,7 @@ namespace BattleEngineJsonCreation
                     if (!(split[0].Contains("Endo") || split[0].Contains("XL") || split[0].Contains("Ferro") || split[0].Contains("Gyro") || split[0].Contains("Sensors") || split[0].Contains("Life")))
                     {
                         string compDefId = "";
-                        var componentDefType = new ComponentDefType();
+                        ComponentDefType componentDefType;
                         if (split[0].Contains("Jump Jet"))
                         {
                             componentDefType = ComponentDefType.JumpJet;

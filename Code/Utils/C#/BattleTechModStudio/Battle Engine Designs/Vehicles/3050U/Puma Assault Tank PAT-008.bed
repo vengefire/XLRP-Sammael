@@ -1,0 +1,57 @@
+"Name","Puma Assault Tank PAT-008"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1631
+"Tons",95
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","Periphery","Taurian Concordat"
+"Engine","Light",3,"3/5/0"
+"Sinks","Single",15
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",160
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",51,35,26,35,51
+"Equips",10
+"6","Anti-Missile System","Ballistic"
+"5","Standard","Ammo"
+"3","MML 9","Missile"
+"2","LRM Artemis","Ammo"
+"1","SRM Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"3","B-Pod","Miscellaneous"
+"1","ER PPC","Energy"
+"1","Guardian ECM Suite","Electronics"
+"1","Targeting Computer","Electronics"
+"Crits"
+"<front>"
+"Anti-Missile System",1,0
+"Anti-Missile System",1,0
+"MML 9",3,0
+"B-Pod",7,0
+"<right>"
+"Anti-Missile System",1,0
+"MML 9",3,0
+"B-Pod",7,0
+"<rear>"
+"Anti-Missile System",1,0
+"<left>"
+"Anti-Missile System",1,0
+"MML 9",3,0
+"B-Pod",7,0
+"<turret>"
+"Anti-Missile System",1,0
+"ER PPC",8,0
+"<body>"
+"Guardian ECM Suite",9,1
+"Targeting Computer",10,1
+"Ammo MML 9: LRM Artemis",4,1
+"Ammo MML 9: SRM Artemis",5,1
+"Ammo Anti-Missile System",2,1

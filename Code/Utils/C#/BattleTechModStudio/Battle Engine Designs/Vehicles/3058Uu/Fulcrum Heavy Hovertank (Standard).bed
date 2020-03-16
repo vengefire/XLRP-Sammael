@@ -1,0 +1,60 @@
+"Name","Fulcrum Heavy Hovertank (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1167
+"Tons",50
+"Year","3057"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Raven Alliance"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Raven Alliance"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Raven Alliance"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","XL",10,"10/15/0"
+"Sinks","Single",11
+"Internal","Standard"
+"Armor","Standard",160
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",46,27,20,27,40
+"Equips",6
+"1","TAG","Electronics"
+"1","Large Laser","Energy"
+"1","Medium Laser","Energy"
+"1","LRM 10","Missile"
+"1","Standard","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<front>"
+"TAG",1,0
+"<turret>"
+"Large Laser",2,0
+"Medium Laser",3,0
+"LRM 10",4,0
+"<body>"
+"Guardian ECM Suite",6,1
+"Ammo LRM 10",5,1

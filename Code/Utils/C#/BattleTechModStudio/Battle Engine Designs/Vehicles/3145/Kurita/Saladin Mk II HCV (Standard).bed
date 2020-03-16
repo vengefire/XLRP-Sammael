@@ -1,0 +1,30 @@
+"Name","Saladin Mk II HCV (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",862
+"Tons",35
+"Year","3137"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Free Worlds League"
+"Factions","IS Clan","Clan Nova Cat"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",10,"10/15/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",88
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",45,23,18,23,0
+"Equips",3
+"1","Snub-Nose PPC","Energy"
+"1","Streak SRM 4","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Snub-Nose PPC",1,0
+"Streak SRM 4",2,0
+"<body>"
+"Ammo Streak SRM 4",3,1

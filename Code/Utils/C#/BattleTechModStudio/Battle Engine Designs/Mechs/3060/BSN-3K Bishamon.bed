@@ -1,0 +1,105 @@
+"Name","BSN-3K Bishamon"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Quad"
+"BV2",1374
+"Tons",45
+"Year","3060"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine","Free Worlds League"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Free Worlds League"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Free Worlds League"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Free Worlds League (Rim Commonality)","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Free Worlds League (Rim Commonality)","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Free Worlds League (Rim Commonality)","Republic of the Sphere"
+"Engine","XL",7,"7/11/0"
+"Sinks","Double",10
+"Internal","Endo-Steel"
+"Armor","Standard",168
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","Front Leg"
+"RArmAct","Front Leg"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",22,22,17,17,21,5,5,6,9,22,22
+"Equips",4
+"2","Medium Pulse Laser","Energy"
+"2","ER Medium Laser","Energy"
+"1","MRM 20","Missile"
+"1","Standard","Ammo"
+"Crits"
+"Hip",-8,1,0,2,1
+"Upper Leg Actuator",-8,1,0,2,1
+"Lower Leg Actuator",-8,1,0,2,1
+"Foot Actuator",-8,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Medium Pulse Laser",1,0,0,2,0
+"ER Medium Laser",2,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"MRM 20",3,0,0,2,0
+":ditto:",3,0,0,2,0
+":ditto:",3,0,0,2,0
+"Medium Pulse Laser",1,0,0,2,0
+"ER Medium Laser",2,0,0,2,0
+"Ammo MRM 20",4,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+"Hip",-9,1,0,2,1
+"Upper Leg Actuator",-9,1,0,2,1
+"Lower Leg Actuator",-9,1,0,2,1
+"Foot Actuator",-9,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+" -",0,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0

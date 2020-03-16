@@ -1,0 +1,75 @@
+"Name","Puma Assault Tank PAT-005b"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1546
+"Tons",95
+"Year","2751"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Periphery","Rim Worlds Republic - Terran Corps"
+"Factions","Other","Star League Regular","Star League Royal"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General","Society"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",23
+"Internal","Standard"
+"Armor","Standard",184
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",48,32,24,32,48
+"Equips",11
+"2","Medium Laser","Energy"
+"2","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"2","LRM 20","Missile"
+"4","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","Small Pulse Laser","Energy"
+"1","Flamer (Vehicle)","Ballistic"
+"1","Standard","Ammo"
+"1","ER PPC","Energy"
+"1","CASE","Miscellaneous"
+"Crits"
+"<front>"
+"Medium Laser",1,0
+"Medium Laser",1,0
+"Streak SRM 2",2,0
+"Streak SRM 2",2,0
+"<right>"
+"LRM 20",4,0
+"<rear>"
+"Small Pulse Laser",7,0
+"Flamer (Vehicle)",8,0
+"<left>"
+"LRM 20",4,0
+"<turret>"
+"ER PPC",10,0
+"<body>"
+"Ammo Streak SRM 2",3,1
+"Ammo Flamer (Vehicle)",9,1
+"Ammo LRM 20: Artemis",5,1
+"CASE",11,0

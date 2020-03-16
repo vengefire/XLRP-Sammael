@@ -1,0 +1,46 @@
+"Name","Po Heavy Tank (LB-X)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",778
+"Tons",60
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)"
+"Factions","Periphery","Calderon Protectorate","Magistracy of Canopus","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",4,"4/6/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",168
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",40,32,30,32,34
+"Equips",5
+"2","Machine Gun","Ballistic"
+"1","Standard","Ammo"
+"1","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<turret>"
+"LB 10-X AC",3,0
+"Machine Gun",1,0
+"<body>"
+"Ammo LB 10-X AC: Cluster",4,1
+"Ammo LB 10-X AC",5,1
+"Ammo Machine Gun",2,1

@@ -1,0 +1,51 @@
+"Name","Bandit Hovercraft E"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",839
+"Tons",50
+"Year","3008"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Mercenary","Wolf's Dragoons"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Mercenary","Wolf's Dragoons"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Era","Late Republic","(3101-3130)"
+"Factions","Other","Extinct"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Other","Extinct"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",176
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",1
+10,50,9,0,10,176,42,40,32,40,22,0,0,0,0,0,0
+2
+"",-1,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",42,40,32,40,22
+"Equips",4
+"1","Medium Laser","Energy"
+"1","LRM 10","Missile"
+"1","Standard","Ammo"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Medium Laser",1,0
+"<turret>"
+"LRM 10",2,0
+"<body>"
+"Ammo LRM 10",3,1
+"Infantry Compartment",4,1

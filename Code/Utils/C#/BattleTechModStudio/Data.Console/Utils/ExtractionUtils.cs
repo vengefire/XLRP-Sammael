@@ -11,14 +11,15 @@ namespace Data.Console.Utils
 {
     internal static class ExtractionUtils
     {
-        private static void ExtractTags(string id, JArray jArray, JObject shopdefJsonObject, List<string> requiredTags, List<string> excludedTags, List<string> validFactions)
+        private static void ExtractTags(string id, JArray jArray, JObject shopdefJsonObject, List<string> requiredTags,
+            List<string> excludedTags, List<string> validFactions)
         {
-            var progressTags = new List<string> () {"planet_progress_1", "planet_progress_2", "planet_progress_3"};
-            var ignoredRequiredTags = new List<string>() {"debug"};
-            var ignoredRestrictedTags = new List<string>() {"debug", "planet_other_empty"};
+            var progressTags = new List<string> {"planet_progress_1", "planet_progress_2", "planet_progress_3"};
+            var ignoredRequiredTags = new List<string> {"debug"};
+            var ignoredRestrictedTags = new List<string> {"debug", "planet_other_empty"};
             ignoredRequiredTags.AddRange(progressTags);
             ignoredRestrictedTags.AddRange(progressTags);
-        
+
             foreach (JObject item in jArray)
             {
                 if (item["ID"].ToString() == id)
@@ -50,16 +51,21 @@ namespace Data.Console.Utils
                     }
                 }
             }
+
             ignoredRequiredTags.ForEach(s => requiredTags.Remove(s));
             ignoredRestrictedTags.ForEach(s => excludedTags.Remove(s));
         }
 
-        public static void ExtractItemsByTypeToExcel(List<ManifestEntry> manifestEntries, string outputDirectory, string filename, List<GameObjectTypeEnum> typesQualifyingForStores, bool alwaysRecreate = false)
+        public static void ExtractItemsByTypeToExcel(List<ManifestEntry> manifestEntries, string outputDirectory,
+            string filename, List<GameObjectTypeEnum> typesQualifyingForStores, bool alwaysRecreate = false)
         {
-            var shopDefinitions = manifestEntries.Where(manifestEntry => manifestEntry.GameObjectType == GameObjectTypeEnum.ShopDef).ToList();
+            var shopDefinitions = manifestEntries
+                .Where(manifestEntry => manifestEntry.GameObjectType == GameObjectTypeEnum.ShopDef).ToList();
 
-            var itemsByCategory = manifestEntries.Where(entry => typesQualifyingForStores.Contains(entry.GameObjectType))
-                .GroupBy(entry => entry.GameObjectType, (key, entries) => new {ItemType = key, items = entries.Select(entry => entry)})
+            var itemsByCategory = manifestEntries
+                .Where(entry => typesQualifyingForStores.Contains(entry.GameObjectType))
+                .GroupBy(entry => entry.GameObjectType,
+                    (key, entries) => new {ItemType = key, items = entries.Select(entry => entry)})
                 .ToList();
 
             var outputFileName = Path.Combine(outputDirectory, filename);
@@ -75,7 +81,8 @@ namespace Data.Console.Utils
             ExcelWorksheet currentSheet = null;
 
             var index = 1;
-            var columnHeadersString = "Id\tPrototype date|Faction\tProduction Date|Faction\tExtinction Date\tReintro|Faction\tCommon Date\tAvailability\tRequired PlanetTags (Any of)\tRestricted PlanetTags (Any of)\tNotes";
+            var columnHeadersString =
+                "Id\tPrototype date|Faction\tProduction Date|Faction\tExtinction Date\tReintro|Faction\tCommon Date\tAvailability\tRequired PlanetTags (Any of)\tRestricted PlanetTags (Any of)\tNotes";
             var columnHeadersSplit = columnHeadersString.Split('\t').ToList();
             var columnHeadersDict = new Dictionary<string, int>();
             columnHeadersSplit.ForEach(s => columnHeadersDict[s] = index++);
@@ -103,13 +110,16 @@ namespace Data.Console.Utils
                     var value = currentSheet.Cells[i, columnHeadersDict["Id"]].Value;
                     if (!string.IsNullOrEmpty(value?.ToString()))
                     {
-                        currentItems.Add((i, value.ToString(), currentSheet.Cells[i, 1, i, currentSheet.Dimension.Columns]));
+                        currentItems.Add((i, value.ToString(),
+                            currentSheet.Cells[i, 1, i, currentSheet.Dimension.Columns]));
                     }
                 }
 
-                var addedItemIds = shopItemCategory.items.Select(entry => entry.Id).Except(currentItems.Select(tuple => tuple.Item2)).ToList();
+                var addedItemIds = shopItemCategory.items.Select(entry => entry.Id)
+                    .Except(currentItems.Select(tuple => tuple.Item2)).ToList();
                 var addedItems = shopItemCategory.items.Where(entry => addedItemIds.Contains(entry.Id)).ToList();
-                var removedItems = currentItems.Select(tuple => tuple.Item2).Except(shopItemCategory.items.Select(entry => entry.Id)).ToList();
+                var removedItems = currentItems.Select(tuple => tuple.Item2)
+                    .Except(shopItemCategory.items.Select(entry => entry.Id)).ToList();
 
                 if (removedItems.Any())
                 {
@@ -120,13 +130,15 @@ namespace Data.Console.Utils
                     }
 
                     var removedSheet = workBook.Worksheets.Add(removedSheetName);
-                    currentSheet.Cells[1, 1, 1, currentSheet.Dimension.Columns].Copy(removedSheet.Cells[1, 1, 1, currentSheet.Dimension.Columns]);
+                    currentSheet.Cells[1, 1, 1, currentSheet.Dimension.Columns]
+                        .Copy(removedSheet.Cells[1, 1, 1, currentSheet.Dimension.Columns]);
 
                     for (var removedIndex = 0; removedIndex < removedItems.Count; ++removedIndex)
                     {
                         var removedItemId = removedItems[removedIndex];
                         var removedEntry = currentItems.First(tuple => tuple.Item2 == removedItemId);
-                        removedEntry.Item3.Copy(removedSheet.Cells[removedIndex + 2, 1, removedIndex + 2, removedEntry.Item3.Columns]);
+                        removedEntry.Item3.Copy(removedSheet.Cells[removedIndex + 2, 1, removedIndex + 2,
+                            removedEntry.Item3.Columns]);
                         currentSheet.DeleteRow(removedEntry.Item1);
                         currentItems.Remove(removedEntry);
                     }
@@ -156,14 +168,16 @@ namespace Data.Console.Utils
                     {
                         mappedRarity = (-1, -1, "NA");
                     }
-                    
+
                     var requiredTags = new List<string>();
                     var validFactions = new List<string>();
                     var excludedTags = new List<string>();
                     shopDefinitions.ForEach(manifestEntry =>
                     {
-                        ExtractionUtils.ExtractTags(currentItem.Item2, (JArray) manifestEntry.Json["Inventory"], manifestEntry.Json, requiredTags, excludedTags, validFactions);
-                        ExtractionUtils.ExtractTags(currentItem.Item2, (JArray) manifestEntry.Json["Specials"], manifestEntry.Json, requiredTags, excludedTags, validFactions);
+                        ExtractTags(currentItem.Item2, (JArray) manifestEntry.Json["Inventory"], manifestEntry.Json,
+                            requiredTags, excludedTags, validFactions);
+                        ExtractTags(currentItem.Item2, (JArray) manifestEntry.Json["Specials"], manifestEntry.Json,
+                            requiredTags, excludedTags, validFactions);
                     });
 
                     DateTime? appearanceDate = null;
@@ -176,18 +190,23 @@ namespace Data.Console.Utils
                         }
                         else
                         {
-                            var mechModelEntry = mechList.FirstOrDefault(model => model.Name.Trim('"') == entry.Json["Description"]?["UIName"]?.ToString());
+                            var mechModelEntry = mechList.FirstOrDefault(model =>
+                                model.Name.Trim('"') == entry.Json["Description"]?["UIName"]?.ToString());
                             if (mechModelEntry != null)
                             {
-                                appearanceDate = new DateTime((int)mechModelEntry.Year, 1, 1);
+                                appearanceDate = new DateTime((int) mechModelEntry.Year, 1, 1);
                             }
                         }
                     }
 
-                    currentSheet.Cells[currentItem.Item1, columnHeadersDict["Availability"]].Value = mappedRarity.bracket;
-                    currentSheet.Cells[currentItem.Item1, columnHeadersDict["Required PlanetTags (Any of)"]].Value = string.Join("|", requiredTags);
-                    currentSheet.Cells[currentItem.Item1, columnHeadersDict["Restricted PlanetTags (Any of)"]].Value = string.Join("|", excludedTags);
-                    currentSheet.Cells[currentItem.Item1, columnHeadersDict["Common Date"]].Value = appearanceDate.ToString();
+                    currentSheet.Cells[currentItem.Item1, columnHeadersDict["Availability"]].Value =
+                        mappedRarity.bracket;
+                    currentSheet.Cells[currentItem.Item1, columnHeadersDict["Required PlanetTags (Any of)"]].Value =
+                        string.Join("|", requiredTags);
+                    currentSheet.Cells[currentItem.Item1, columnHeadersDict["Restricted PlanetTags (Any of)"]].Value =
+                        string.Join("|", excludedTags);
+                    currentSheet.Cells[currentItem.Item1, columnHeadersDict["Common Date"]].Value =
+                        appearanceDate.ToString();
                     // currentSheet.Cells[currentItem.Item1, columnHeadersDict["Notes"]].Value = entry.FileInfo.FullName;
                 });
 
@@ -196,13 +215,15 @@ namespace Data.Console.Utils
                     var requiredTags = new List<string>();
                     var validFactions = new List<string>();
                     var excludedTags = new List<string>();
-                    
+
                     shopDefinitions.ForEach(manifestEntry =>
                     {
-                        ExtractionUtils.ExtractTags(entry.Id, (JArray) manifestEntry.Json["Inventory"], manifestEntry.Json, requiredTags, excludedTags, validFactions);
-                        ExtractionUtils.ExtractTags(entry.Id, (JArray) manifestEntry.Json["Specials"], manifestEntry.Json, requiredTags, excludedTags, validFactions);
+                        ExtractTags(entry.Id, (JArray) manifestEntry.Json["Inventory"], manifestEntry.Json,
+                            requiredTags, excludedTags, validFactions);
+                        ExtractTags(entry.Id, (JArray) manifestEntry.Json["Specials"], manifestEntry.Json, requiredTags,
+                            excludedTags, validFactions);
                     });
-                    
+
                     DateTime? appearanceDate = null;
                     if (entry.GameObjectType == GameObjectTypeEnum.MechDef)
                     {
@@ -213,10 +234,11 @@ namespace Data.Console.Utils
                         }
                         else
                         {
-                            var mechModelEntry = mechList.FirstOrDefault(model => model.Name.Trim('"') == entry.Json["Description"]?["UIName"]?.ToString());
+                            var mechModelEntry = mechList.FirstOrDefault(model =>
+                                model.Name.Trim('"') == entry.Json["Description"]?["UIName"]?.ToString());
                             if (mechModelEntry != null)
                             {
-                                appearanceDate = new DateTime((int)mechModelEntry.Year, 1, 1);
+                                appearanceDate = new DateTime((int) mechModelEntry.Year, 1, 1);
                             }
                         }
                     }
@@ -224,15 +246,17 @@ namespace Data.Console.Utils
                     currentSheet.Cells[rowIndex, 1].Value = entry.Id;
                     var itemRarity = Convert.ToInt32(entry.Json["Description"]?["Rarity"]?.ToString());
                     var mappedRarity = rarityMap.First(tuple => itemRarity < tuple.max && itemRarity >= tuple.min);
-                    
+
                     if (entry.Id.Contains("Template"))
                     {
                         mappedRarity = (-1, -1, "NA");
                     }
-                    
+
                     currentSheet.Cells[rowIndex, columnHeadersDict["Availability"]].Value = mappedRarity.bracket;
-                    currentSheet.Cells[rowIndex, columnHeadersDict["Required PlanetTags (Any of)"]].Value = string.Join("|", requiredTags);
-                    currentSheet.Cells[rowIndex, columnHeadersDict["Restricted PlanetTags (Any of)"]].Value = string.Join("|", excludedTags);
+                    currentSheet.Cells[rowIndex, columnHeadersDict["Required PlanetTags (Any of)"]].Value =
+                        string.Join("|", requiredTags);
+                    currentSheet.Cells[rowIndex, columnHeadersDict["Restricted PlanetTags (Any of)"]].Value =
+                        string.Join("|", excludedTags);
                     currentSheet.Cells[rowIndex, columnHeadersDict["Common Date"]].Value = appearanceDate.ToString();
                     // currentSheet.Cells[rowIndex, columnHeadersDict["Notes"]].Value = entry.FileInfo.FullName;
                     rowIndex += 1;

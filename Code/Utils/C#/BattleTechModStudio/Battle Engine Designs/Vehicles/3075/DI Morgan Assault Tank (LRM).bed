@@ -1,0 +1,44 @@
+"Name","DI Morgan Assault Tank (LRM)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1869
+"Tons",100
+"Year","3075"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",168
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",57,41,28,41,41
+"Equips",6
+"2","ER Medium Laser","Energy"
+"4","LRM 20","Missile"
+"8","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","C3 Computer (Slave)","Electronics"
+"1","CASE","Miscellaneous"
+"Crits"
+"<front>"
+"ER Medium Laser",1,0
+"ER Medium Laser",1,0
+"<turret>"
+"LRM 20",2,0
+"LRM 20",2,0
+"LRM 20",2,0
+"LRM 20",2,0
+"<body>"
+"C3 Computer (Slave)",5,1
+"CASE",6,0
+"Ammo LRM 20: Artemis",3,1

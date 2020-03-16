@@ -1,0 +1,47 @@
+"Name","Fulcrum Heavy Hovertank III"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1185
+"Tons",50
+"Year","3078"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Factions","Mercenary","Mercenary"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",10,"10/15/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",152
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",48,40,20,40,40
+"Equips",7
+"1","TAG","Electronics"
+"1","Snub-Nose PPC","Energy"
+"1","MML 7","Missile"
+"1","LRM","Ammo"
+"1","SRM","Ammo"
+"1","C3 Computer (Slave)","Electronics"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<front>"
+"TAG",1,0
+"<turret>"
+"Snub-Nose PPC",2,0
+"MML 7",3,0
+"<body>"
+"C3 Computer (Slave)",6,1
+"Guardian ECM Suite",7,1
+"Ammo MML 7: LRM",4,1
+"Ammo MML 7: SRM",5,1

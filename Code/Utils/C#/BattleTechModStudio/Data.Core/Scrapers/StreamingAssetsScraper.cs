@@ -45,25 +45,30 @@ namespace Data.Core.Scrapers
                     if (!pathToTypeDictionary.ContainsKey(info.Name))
                     {
                         Console.WriteLine($"Unrecognised streaming assets directory path [{info.Name}]");
-                        StreamingAssetsScraper.UnknownPaths.Add(info.Name);
+                        UnknownPaths.Add(info.Name);
                     }
                     else
                     {
                         var gameObjectType = pathToTypeDictionary[info.Name];
-                        StreamingAssetsScraper.ScrapeStreamingAssetDataSubDirectory(info, manifestEntries, gameObjectType);
+                        ScrapeStreamingAssetDataSubDirectory(info, manifestEntries, gameObjectType);
                     }
                 });
 
             return manifestEntries;
         }
 
-        private static void ScrapeStreamingAssetDataSubDirectory(DirectoryInfo directoryInfo, List<ManifestEntry> manifestEntries, GameObjectTypeEnum gameObjectType)
+        private static void ScrapeStreamingAssetDataSubDirectory(DirectoryInfo directoryInfo,
+            List<ManifestEntry> manifestEntries, GameObjectTypeEnum gameObjectType)
         {
             directoryInfo.GetFiles()
-                .ToList().ForEach(fileInfo => { manifestEntries.Add(new ManifestEntry(directoryInfo, fileInfo, gameObjectType, Path.GetFileNameWithoutExtension(fileInfo.Name), null, null)); });
+                .ToList().ForEach(fileInfo =>
+                {
+                    manifestEntries.Add(new ManifestEntry(directoryInfo, fileInfo, gameObjectType,
+                        Path.GetFileNameWithoutExtension(fileInfo.Name), null, null));
+                });
 
             directoryInfo.GetDirectories()
-                .ToList().ForEach(info => StreamingAssetsScraper.ScrapeStreamingAssetDataSubDirectory(info, manifestEntries, gameObjectType));
+                .ToList().ForEach(info => ScrapeStreamingAssetDataSubDirectory(info, manifestEntries, gameObjectType));
         }
     }
 }

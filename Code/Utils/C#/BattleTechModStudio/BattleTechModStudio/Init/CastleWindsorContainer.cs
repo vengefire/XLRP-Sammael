@@ -10,7 +10,7 @@ namespace BattleTechModStudio.Init
     public class CastleWindsorContainer : BaseCastleWindsorContainer
     {
         public CastleWindsorContainer()
-            : base(CastleWindsorContainer.Init)
+            : base(Init)
         {
         }
 

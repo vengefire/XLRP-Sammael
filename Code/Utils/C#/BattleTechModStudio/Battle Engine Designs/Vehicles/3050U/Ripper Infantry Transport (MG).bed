@@ -1,0 +1,36 @@
+"Name","Ripper Infantry Transport (MG)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",125
+"Tons",10
+"Year","3053"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns"
+"Factions","Periphery","Filtvelt Coalition"
+"Engine","Fusion",12,"12/18/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",24
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",9,5,5,5,2
+"Equips",3
+"2","Machine Gun","Ballistic"
+"1","Standard","Ammo"
+"2","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<body>"
+"Ammo Machine Gun",2,1
+"Infantry Compartment",3,1

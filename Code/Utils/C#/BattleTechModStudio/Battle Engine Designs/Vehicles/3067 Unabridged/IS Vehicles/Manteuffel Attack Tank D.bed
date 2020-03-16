@@ -1,0 +1,50 @@
+"Name","Manteuffel Attack Tank D"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1172
+"Tons",70
+"Year","3075"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Engine","XL",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",184
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",1.5
+10,70,5,0,10,184,56,40,25,40,45,0,0,0,0,0,0
+3
+"",-1,-1,0,0
+"",-4,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",56,40,25,40,45
+"Equips",7
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"1","LRM 10","Missile"
+"3","Standard","Ammo"
+"2","Light PPC","Energy"
+"1","CASE","Miscellaneous"
+"16","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"Anti-Missile System",1,0
+"LRM 10",3,0
+"Light PPC",5,0
+"Light PPC",5,0
+"<body>"
+"CASE",6,1
+"Ammo Anti-Missile System",2,1
+"Ammo LRM 10",4,1
+"Infantry Compartment",7,1

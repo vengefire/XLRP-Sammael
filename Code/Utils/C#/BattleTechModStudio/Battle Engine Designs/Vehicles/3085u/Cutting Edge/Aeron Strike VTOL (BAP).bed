@@ -1,0 +1,45 @@
+"Name","Aeron Strike VTOL (BAP)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",775
+"Tons",25
+"Year","3084"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns","Free Worlds League"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark","Clan Hell's Horses"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Hell's Horses","Clan Sea Fox"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Hell's Horses","Clan Sea Fox"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",12,"12/18/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",56
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",18,16,17,16,2
+"Equips",4
+"1","ER Large Laser","Energy"
+"1","Guardian ECM Suite","Electronics"
+"1","Beagle Active Probe","Electronics"
+"1","Cargo, Standard","Miscellaneous"
+"Crits"
+"<front>"
+"ER Large Laser",1,0
+"<body>"
+"Guardian ECM Suite",2,1
+"Beagle Active Probe",3,0
+"Cargo, Standard",4,1

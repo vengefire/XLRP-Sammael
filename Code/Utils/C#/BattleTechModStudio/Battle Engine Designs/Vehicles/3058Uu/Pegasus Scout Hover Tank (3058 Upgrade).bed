@@ -1,0 +1,46 @@
+"Name","Pegasus Scout Hover Tank (3058 Upgrade)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",706
+"Tons",35
+"Year","3058"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance","Word of Blake"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Alliance","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",72
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",20,16,10,16,18
+"Equips",6
+"1","Medium Pulse Laser","Energy"
+"1","Beagle Active Probe","Electronics"
+"1","TAG","Electronics"
+"2","SRM 6","Missile"
+"1","Standard","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<front>"
+"Medium Pulse Laser",1,0
+"Beagle Active Probe",2,0
+"TAG",3,0
+"<turret>"
+"SRM 6",4,0
+"SRM 6",4,0
+"<body>"
+"Ammo SRM 6",5,1
+"Guardian ECM Suite",6,1

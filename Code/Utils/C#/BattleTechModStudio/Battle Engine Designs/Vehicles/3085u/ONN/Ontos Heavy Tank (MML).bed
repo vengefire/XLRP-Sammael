@@ -1,0 +1,53 @@
+"Name","Ontos Heavy Tank (MML)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1268
+"Tons",95
+"Year","3074"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",152
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",40,32,30,32,36
+"Equips",7
+"2","Light Gauss Rifle","Ballistic"
+"4","Standard","Ammo"
+"2","MML 7","Missile"
+"2","LRM","Ammo"
+"1","SRM","Ammo"
+"2","ER Medium Laser","Energy"
+"1","CASE","Miscellaneous"
+"Crits"
+"<turret>"
+"Light Gauss Rifle",1,0
+"Light Gauss Rifle",1,0
+"MML 7",3,0
+"MML 7",3,0
+"ER Medium Laser",6,0
+"ER Medium Laser",6,0
+"<body>"
+"Ammo Light Gauss Rifle",2,1
+"Ammo MML 7: LRM",4,1
+"Ammo MML 7: SRM",5,1
+"CASE",7,1

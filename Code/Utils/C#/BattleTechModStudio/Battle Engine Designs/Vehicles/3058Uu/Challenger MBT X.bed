@@ -1,0 +1,77 @@
+"Name","Challenger MBT X"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1710
+"Tons",90
+"Year","3057"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth"
+"Factions","Periphery","Taurian Concordat"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Factions","Periphery","Taurian Concordat"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Alliance"
+"Factions","Periphery","Taurian Concordat"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",224
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",57,50,36,50,57
+"Equips",14
+"2","Medium Pulse Laser","Energy"
+"2","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"1","Small Pulse Laser","Energy"
+"1","Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"1","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"1","Standard","Ammo"
+"1","LRM 10","Missile"
+"1","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Medium Pulse Laser",1,0
+"Medium Pulse Laser",1,0
+"<right>"
+"Streak SRM 2",2,0
+"<rear>"
+"Small Pulse Laser",4,0
+"<left>"
+"Streak SRM 2",2,0
+"<turret>"
+"Gauss Rifle",5,0
+"LB 10-X AC",7,0
+"LRM 10",10,0
+"Anti-Missile System",13,0
+"<body>"
+"Ammo Gauss Rifle",6,1
+"Ammo Anti-Missile System",14,1
+"Ammo Streak SRM 2",3,1
+"Ammo LRM 10: Artemis",11,1
+"Ammo LB 10-X AC: Cluster",8,1
+"Ammo LB 10-X AC",9,1

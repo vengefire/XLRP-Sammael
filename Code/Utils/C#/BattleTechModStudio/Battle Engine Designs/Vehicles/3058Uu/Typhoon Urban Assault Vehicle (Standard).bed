@@ -1,0 +1,62 @@
+"Name","Typhoon Urban Assault Vehicle (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1104
+"Tons",70
+"Year","3057"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",176
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",43,40,32,40,42
+"Equips",9
+"4","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"1","Beagle Active Probe","Electronics"
+"1","Small Pulse Laser","Energy"
+"1","AC/20","Ballistic"
+"3","Standard","Ammo"
+"2","Medium Pulse Laser","Energy"
+"1","SRM 6","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Streak SRM 2",1,0
+"Streak SRM 2",1,0
+"Beagle Active Probe",3,0
+"<rear>"
+"Small Pulse Laser",4,0
+"<turret>"
+"AC/20",5,0
+"Streak SRM 2",1,0
+"Streak SRM 2",1,0
+"Medium Pulse Laser",7,0
+"Medium Pulse Laser",7,0
+"SRM 6",8,0
+"<body>"
+"Ammo AC/20",6,1
+"Ammo Streak SRM 2",2,1
+"Ammo SRM 6",9,1

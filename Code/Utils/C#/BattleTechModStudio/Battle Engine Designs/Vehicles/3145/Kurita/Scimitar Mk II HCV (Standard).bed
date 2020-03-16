@@ -1,0 +1,51 @@
+"Name","Scimitar Mk II HCV (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",631
+"Tons",35
+"Year","3105"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",10,"10/15/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",31,21,14,21,17
+"Equips",7
+"1","ER Small Laser","Energy"
+"4","Small Laser","Energy"
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"1","SRM 4","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"ER Small Laser",1,0
+"Small Laser",2,0
+"Small Laser",2,0
+"Small Laser",2,0
+"Small Laser",2,0
+"Machine Gun",3,0
+"Machine Gun",3,0
+"<turret>"
+"SRM 4",6,0
+"<body>"
+"Guardian ECM Suite",5,1
+"Ammo Machine Gun: Half",4,1
+"Ammo SRM 4",7,1

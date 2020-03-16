@@ -1,0 +1,43 @@
+"Name","Tufana Hovercraft (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",583
+"Tons",35
+"Year","3079"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Free Worlds League"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)"
+"Factions","Periphery","Magistracy of Canopus"
+"Engine","XL",11,"11/17/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",72
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",25,15,10,15,15
+"Equips",6
+"1","MML 7","Missile"
+"1","LRM Narc","Ammo"
+"2","SRM Narc","Ammo"
+"1","Narc Missile Beacon","Missile"
+"2","Standard","Ammo"
+"1","TAG","Electronics"
+"Crits"
+"<turret>"
+"MML 7",1,0
+"Narc Missile Beacon",4,0
+"TAG",6,0
+"<body>"
+"Ammo MML 7: LRM Narc",2,1
+"Ammo MML 7: SRM Narc",3,1
+"Ammo Narc Missile Beacon",5,1

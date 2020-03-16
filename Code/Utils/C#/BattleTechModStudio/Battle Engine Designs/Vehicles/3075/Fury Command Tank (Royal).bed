@@ -1,0 +1,50 @@
+"Name","Fury Command Tank (Royal)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1255
+"Tons",80
+"Year","2751"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Other","Star League Royal"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General","Society"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Clan Wolf","Rasalhague Dominion"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Rasalhague Dominion"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Hell's Horses","Rasalhague Dominion"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",216
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",60,41,39,41,60
+"Equips",4
+"1","Anti-Missile System","Ballistic"
+"1","Standard","Ammo"
+"1","Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"Crits"
+"<turret>"
+"Anti-Missile System",1,0
+"Gauss Rifle",3,0
+"<body>"
+"Ammo Anti-Missile System",2,1
+"Ammo Gauss Rifle",4,1

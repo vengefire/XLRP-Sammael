@@ -75,7 +75,7 @@ namespace Framework.Logic.Queue
                     MsmqMessageQueue.Send(
                         msg,
                         IsTransactional ? MessageQueueTransactionType.Automatic : MessageQueueTransactionType.None);
-                    lock (QueueBase<TRequestType>.Synch)
+                    lock (Synch)
                     {
                         AddMessageAudit(msg);
                     }

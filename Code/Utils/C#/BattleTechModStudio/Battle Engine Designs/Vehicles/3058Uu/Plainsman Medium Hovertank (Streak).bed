@@ -1,0 +1,49 @@
+"Name","Plainsman Medium Hovertank (Streak)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",600
+"Tons",35
+"Year","3071"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","ICE",9,"9/14/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",80
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",18,16,12,16,18
+"Equips",4
+"1","SRM 2","Missile"
+"1","Standard","Ammo"
+"2","Streak SRM 4","Missile"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"SRM 2",1,0
+"<turret>"
+"Streak SRM 4",3,0
+"Streak SRM 4",3,0
+"<body>"
+"Ammo Streak SRM 4",4,1
+"Ammo SRM 2",2,1

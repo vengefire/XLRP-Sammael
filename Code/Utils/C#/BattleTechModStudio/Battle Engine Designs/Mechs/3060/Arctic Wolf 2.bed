@@ -1,0 +1,118 @@
+"Name","Arctic Wolf 2"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",1511
+"Tons",40
+"Year","3060"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","Clan Ghost Bear","Clan Nova Cat","Clan Wolf (in Exile)"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Ghost Bear","Clan Nova Cat","Clan Wolf (in Exile)"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Engine","XL",7,"7/11/0"
+"Sinks","Double",10
+"Internal","Endo-Steel"
+"Armor","Standard",96
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",0
+"LArmAct","Full Arm"
+"RArmAct","Full Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",8,8,14,14,13,3,3,4,9,10,10
+"Equips",5
+"4","SRM 6","Missile"
+"3","Narc","Ammo"
+"1","Large Pulse Laser","Energy"
+"1","Narc Missile Beacon","Missile"
+"1","Standard","Ammo"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hand Actuator",-8,1,0,2,1
+"SRM 6",1,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Large Pulse Laser",3,0,0,2,0
+":ditto:",3,0,0,2,0
+"Ammo SRM 6: Narc",2,0,0,2,0
+"Ammo SRM 6: Narc",2,0,0,2,0
+"Ammo SRM 6: Narc",2,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"SRM 6",1,0,0,2,0
+"SRM 6",1,0,0,2,0
+"Ammo Narc Missile Beacon",5,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Hand Actuator",-9,1,0,2,1
+"SRM 6",1,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Narc Missile Beacon",4,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+" -",0,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0

@@ -20,13 +20,13 @@ namespace UI.Core.Services
         public void AddMessage(IMessageData messageData)
         {
             _messageData.Add(messageData);
-            OnPropertyChanged(nameof(MessageService.Messages));
+            OnPropertyChanged(nameof(Messages));
         }
 
         public void ClearMessages()
         {
             _messageData.Clear();
-            OnPropertyChanged(nameof(MessageService.Messages));
+            OnPropertyChanged(nameof(Messages));
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

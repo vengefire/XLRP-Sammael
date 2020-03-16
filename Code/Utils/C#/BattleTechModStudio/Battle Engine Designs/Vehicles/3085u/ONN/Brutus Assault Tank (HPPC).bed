@@ -1,0 +1,56 @@
+"Name","Brutus Assault Tank (HPPC)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1186
+"Tons",75
+"Year","3075"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion","Raven Alliance"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion","Raven Alliance"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion","Raven Alliance"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",15
+"Internal","Standard"
+"Armor","Standard",136
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",34,27,21,27,27
+"Equips",8
+"2","SRM 6","Missile"
+"1","Standard","Ammo"
+"1","SRM 2","Missile"
+"1","Standard","Ammo"
+"1","Heavy PPC","Energy"
+"1","LRM 20","Missile"
+"3","Standard","Ammo"
+"1","C3 Computer (Slave)","Electronics"
+"Crits"
+"<front>"
+"SRM 6",1,0
+"SRM 6",1,0
+"SRM 2",3,0
+"<turret>"
+"Heavy PPC",5,0
+"LRM 20",6,0
+"<body>"
+"Ammo SRM 6",2,1
+"Ammo SRM 2",4,1
+"Ammo LRM 20",7,1
+"C3 Computer (Slave)",8,1

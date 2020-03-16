@@ -1,0 +1,54 @@
+"Name","Von Luckner Heavy Tank (Royal)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1261
+"Tons",75
+"Year","2761"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Periphery","Rim Worlds Republic - Terran Corps"
+"Factions","Other","Star League Regular","Star League Royal"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Other","Extinct"
+"Era","Civil War","(3062-3067)"
+"Factions","Other","Extinct"
+"Era","Jihad","(3068-3085)"
+"Factions","Other","Extinct"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",176
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",41,40,31,40,45
+"Equips",9
+"1","LRM 10","Missile"
+"1","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"2","LB 10-X AC","Ballistic"
+"2","Cluster","Ammo"
+"2","Standard","Ammo"
+"4","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"1","Small Pulse Laser","Energy"
+"Crits"
+"<front>"
+"LRM 10",1,0
+"<turret>"
+"LB 10-X AC",4,0
+"LB 10-X AC",4,0
+"Streak SRM 2",7,0
+"Streak SRM 2",7,0
+"Streak SRM 2",7,0
+"Streak SRM 2",7,0
+"Small Pulse Laser",9,0
+"<body>"
+"Ammo LB 10-X AC",6,1
+"Ammo LB 10-X AC: Cluster",5,1
+"Ammo LRM 10: Artemis",2,1
+"Ammo Streak SRM 2",8,1

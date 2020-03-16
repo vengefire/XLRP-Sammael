@@ -84,7 +84,7 @@ namespace Data.Console.Utils
                         continue;
                     }
 
-                    var mech = MechModel.FromCsv(line);
+                    var mech = FromCsv(line);
                     mechList.Add(mech);
                 }
             }
@@ -119,6 +119,7 @@ namespace Data.Console.Utils
                 Extinct = parts[6].Contains("Extinct"),
                 Selected = false
             };
+            
             var name = mech.Name;
             var heroIndex = name.IndexOf('(');
             var delim = ")";

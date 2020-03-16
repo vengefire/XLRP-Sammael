@@ -11,7 +11,7 @@ namespace Framework.Domain.Queue
     {
         public static MessageProcessingMode ToMessageProcessingMode(object value)
         {
-            return Convert.ToMessageProcessingMode(value.ToString());
+            return ToMessageProcessingMode(value.ToString());
         }
 
         public static MessageProcessingMode ToMessageProcessingMode(string value)

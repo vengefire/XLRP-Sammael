@@ -1,0 +1,44 @@
+"Name","Zhukov Heavy Tank (LB-X)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",956
+"Tons",75
+"Year","3073"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Era","Late Republic","(3101-3130)"
+"Factions","Other","Extinct"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Other","Extinct"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",176
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",44,32,24,32,44
+"Equips",7
+"1","SRM 4","Missile"
+"1","Standard","Ammo"
+"2","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"1","Standard","Ammo"
+"1","Improved C3 Computer","Electronics"
+"1","CASE","Miscellaneous"
+"Crits"
+"<front>"
+"SRM 4",1,0
+"<turret>"
+"LB 10-X AC",3,0
+"LB 10-X AC",3,0
+"<body>"
+"Ammo LB 10-X AC",5,1
+"Ammo LB 10-X AC: Cluster",4,1
+"Ammo SRM 4",2,1
+"Improved C3 Computer",6,1
+"CASE",7,0

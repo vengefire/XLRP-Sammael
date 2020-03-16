@@ -1,0 +1,33 @@
+"Name","J. Edgar Light Hover Tank (TAG)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",564
+"Tons",25
+"Year","3053"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Engine","Fusion",11,"11/17/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",96
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",31,20,12,20,24
+"Equips",3
+"2","Medium Laser","Energy"
+"1","TAG","Electronics"
+"1","Beagle Active Probe","Electronics"
+"Crits"
+"<turret>"
+"Medium Laser",1,0
+"Medium Laser",1,0
+"TAG",2,0
+"<body>"
+"Beagle Active Probe",3,0

@@ -1,0 +1,53 @@
+"Name","Burke Defense Tank (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",815
+"Tons",75
+"Year","2580"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Comstar"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Comstar"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Comstar","Word of Blake"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Comstar","Word of Blake"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Comstar","Word of Blake"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Diamond Shark","Clan Hell's Horses","Clan Jade Falcon","Clan Nova Cat"
+"Engine","Fusion",2,"2/3/0"
+"Sinks","Single",30
+"Internal","Standard"
+"Armor","Ferro-Fibrous",88
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",27,18,15,18,20
+"Equips",3
+"1","LRM 10","Missile"
+"1","Standard","Ammo"
+"3","PPC","Energy"
+"Crits"
+"<front>"
+"LRM 10",1,0
+"<turret>"
+"PPC",3,0
+"PPC",3,0
+"PPC",3,0
+"<body>"
+"Ammo LRM 10",2,1

@@ -1,0 +1,41 @@
+"Name","Pegasus Scout Hover Tank (MRM)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",781
+"Tons",35
+"Year","3063"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",80
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",22,19,10,19,19
+"Equips",5
+"1","ER Medium Laser","Energy"
+"1","MRM 20","Missile"
+"2","Standard","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"1","C3 Computer (Slave)","Electronics"
+"Crits"
+"<front>"
+"ER Medium Laser",1,0
+"<turret>"
+"MRM 20",2,0
+"<body>"
+"Guardian ECM Suite",4,1
+"C3 Computer (Slave)",5,1
+"Ammo MRM 20",3,1

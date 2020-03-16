@@ -1,0 +1,32 @@
+"Name","Skulker Wheeled Scout Tank (C3M)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",230
+"Tons",20
+"Year","3077"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Engine","ICE",7,"7/11/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Ferro-Fibrous",64
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",18,18,17,18,0
+"Equips",1
+"1","C3 Computer (Master)","Electronics"
+"Crits"
+"<body>"
+"C3 Computer (Master)",1,1

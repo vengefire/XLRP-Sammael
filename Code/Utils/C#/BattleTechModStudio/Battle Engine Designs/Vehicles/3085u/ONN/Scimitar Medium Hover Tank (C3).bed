@@ -1,0 +1,38 @@
+"Name","Scimitar Medium Hover Tank (C3)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",680
+"Tons",35
+"Year","3073"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Free Worlds League","Lyran Alliance","Word of Blake"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","Fusion",8,"8/12/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",32,28,22,28,28
+"Equips",3
+"1","Rotary AC/2","Ballistic"
+"2","Standard","Ammo"
+"1","C3 Computer (Slave)","Electronics"
+"Crits"
+"<turret>"
+"Rotary AC/2",1,0
+"<body>"
+"C3 Computer (Slave)",3,1
+"Ammo Rotary AC/2",2,1

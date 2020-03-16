@@ -1,0 +1,35 @@
+"Name","Zibler Fast Strike Tank Base"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",422
+"Tons",50
+"Year","3096"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Engine","Fusion",8,"8/12/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",2
+10,50,8,0,10,112,30,30,20,30,28,0,0,0,0,0,0
+4
+"",-1,-1,0,0
+"",-4,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"CASE",1,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",30,30,20,30,28
+"Equips",1
+"1","CASE","Miscellaneous"
+"Crits"
+"<body>"
+"CASE",1,1

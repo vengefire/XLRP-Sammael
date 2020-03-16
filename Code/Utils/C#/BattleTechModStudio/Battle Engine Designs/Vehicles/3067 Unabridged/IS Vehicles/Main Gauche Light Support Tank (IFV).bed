@@ -1,0 +1,49 @@
+"Name","Main Gauche Light Support Tank (IFV)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",725
+"Tons",30
+"Year","3081"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Free Worlds League"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Magistracy of Canopus","Marian Hegemony"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Magistracy of Canopus","Marian Hegemony"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Magistracy of Canopus","Marian Hegemony"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",6,"6/9/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",88
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",30,21,16,21,0
+"Equips",5
+"4","Machine Gun (Light)","Ballistic"
+"1","Half","Ammo"
+"1","Plasma Rifle","Energy"
+"2","Standard","Ammo"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Machine Gun (Light)",1,0
+"Machine Gun (Light)",1,0
+"Plasma Rifle",3,0
+"<right>"
+"Machine Gun (Light)",1,0
+"<left>"
+"Machine Gun (Light)",1,0
+"<body>"
+"Ammo Machine Gun (Light): Half",2,1
+"Ammo Plasma Rifle",4,1
+"Infantry Compartment",5,1

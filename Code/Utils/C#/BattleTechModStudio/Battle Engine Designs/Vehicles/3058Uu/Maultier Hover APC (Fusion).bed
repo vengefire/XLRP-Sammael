@@ -1,0 +1,32 @@
+"Name","Maultier Hover APC (Fusion)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",301
+"Tons",15
+"Year","3070"
+"Era","Jihad","(3068-3085)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Late Republic","(3101-3130)"
+"Factions","Periphery","Taurian Concordat"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Periphery","Taurian Concordat"
+"Engine","Fusion",10,"10/15/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",18,12,11,12,0
+"Equips",2
+"1","ER Medium Laser","Energy"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"ER Medium Laser",1,0
+"<body>"
+"Infantry Compartment",2,1

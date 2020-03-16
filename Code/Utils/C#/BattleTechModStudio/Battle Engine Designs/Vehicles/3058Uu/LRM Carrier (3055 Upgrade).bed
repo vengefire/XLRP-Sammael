@@ -1,0 +1,56 @@
+"Name","LRM Carrier (3055 Upgrade)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",798
+"Tons",60
+"Year","3055"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Raven Alliance"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Raven Alliance"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Raven Alliance"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",2,"2/3/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Ferro-Fibrous",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",14,14,11,14,0
+"Equips",4
+"3","LRM 20","Missile"
+"6","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","C3 Computer (Slave)","Electronics"
+"Crits"
+"<front>"
+"LRM 20",1,0
+"LRM 20",1,0
+"LRM 20",1,0
+"<body>"
+"Ammo LRM 20: Artemis",2,1
+"C3 Computer (Slave)",4,1

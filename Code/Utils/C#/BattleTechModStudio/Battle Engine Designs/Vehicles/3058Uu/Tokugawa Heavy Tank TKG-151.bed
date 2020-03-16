@@ -1,0 +1,49 @@
+"Name","Tokugawa Heavy Tank TKG-151"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Wheeled"
+"BV2",654
+"Tons",60
+"Year","3025"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Draconis Combine"
+"Factions","Periphery","Outworlds Alliance"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine"
+"Engine","ICE",4,"4/6/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",168
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",40,33,26,33,36
+"Equips",6
+"1","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"2","AC/2","Ballistic"
+"2","Standard","Ammo"
+"1","SRM 6","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<turret>"
+"AC/2",3,0
+"AC/2",3,0
+"SRM 6",5,0
+"<body>"
+"Ammo AC/2",4,1
+"Ammo SRM 6",6,1
+"Ammo Machine Gun: Half",2,1

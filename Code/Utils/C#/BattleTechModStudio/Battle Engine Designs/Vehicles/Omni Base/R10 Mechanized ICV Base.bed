@@ -1,0 +1,52 @@
+"Name","R10 Mechanized ICV Base"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",395
+"Tons",45
+"Year","3097"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Factions","Mercenary","Mercenary"
+"Factions","Other","Unique"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",1.5
+9,45,5,0,10,112,34,25,21,25,20,0,0,0,0,0,0
+12
+"",-1,-1,0,0
+"",-4,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"CASE",1,-1,0,0
+"Infantry Compartment",2,-1,0,0
+"Infantry Compartment",2,-1,0,0
+"Infantry Compartment",2,-1,0,0
+"Infantry Compartment",2,-1,0,0
+"Infantry Compartment",2,-1,0,0
+"Infantry Compartment",2,-1,0,0
+"Infantry Compartment",2,-1,0,0
+"Infantry Compartment",2,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",34,25,21,25,20
+"Equips",2
+"1","CASE","Miscellaneous"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<body>"
+"CASE",1,1
+"Infantry Compartment",2,1

@@ -1,0 +1,118 @@
+"Name","VTR-10L Victor"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",2279
+"Tons",80
+"Year","3066"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Republic of the Sphere"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",4,"4/6/4"
+"Sinks","Double",10
+"Internal","Endo-Steel"
+"Armor","Stealth",247
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",4
+"LArmAct","Full Arm"
+"RArmAct","No Lower Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#FALSE#
+"ArmorVals",26,26,26,26,38,8,8,12,9,34,34
+"Equips",7
+"1","Guardian ECM Suite","Electronics"
+"1","Gauss Rifle","Ballistic"
+"3","Standard","Ammo"
+"3","ER Medium Laser","Energy"
+"1","SRM 6","Missile"
+"1","Standard","Ammo"
+"1","CASE","Miscellaneous"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hand Actuator",-8,1,0,2,1
+"ER Medium Laser",4,0,0,2,0
+"ER Medium Laser",4,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Stealth",-4,0,0,2,1
+":ditto:",-4,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"Guardian ECM Suite",1,0,0,2,0
+":ditto:",1,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Stealth",-4,0,0,2,1
+":ditto:",-4,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"SRM 6",5,0,0,2,0
+":ditto:",5,0,0,2,0
+"Ammo SRM 6",6,0,0,2,0
+"Ammo Gauss Rifle",3,0,0,2,0
+"Ammo Gauss Rifle",3,0,0,2,0
+"Ammo Gauss Rifle",3,0,0,2,0
+"CASE",7,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Stealth",-4,0,0,2,1
+":ditto:",-4,0,0,2,1
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Gauss Rifle",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Stealth",-4,0,0,2,1
+":ditto:",-4,0,0,2,1
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"ER Medium Laser",4,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Stealth",-4,0,0,2,1
+":ditto:",-4,0,0,2,1
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Stealth",-4,0,0,2,1
+":ditto:",-4,0,0,2,1

@@ -1,0 +1,37 @@
+"Name","JES III Missile Carrier (C3)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1020
+"Tons",60
+"Year","3140"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",128
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",40,21,20,21,26
+"Equips",5
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"4","LRM 15","Missile"
+"5","Standard","Ammo"
+"1","C3 Computer (Slave)","Electronics"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<turret>"
+"LRM 15",3,0
+"LRM 15",3,0
+"LRM 15",3,0
+"LRM 15",3,0
+"<body>"
+"Ammo Machine Gun: Half",2,1
+"Ammo LRM 15",4,1
+"C3 Computer (Slave)",5,1

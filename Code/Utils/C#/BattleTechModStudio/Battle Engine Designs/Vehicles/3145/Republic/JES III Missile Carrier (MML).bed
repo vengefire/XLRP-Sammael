@@ -1,0 +1,40 @@
+"Name","JES III Missile Carrier (MML)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",947
+"Tons",60
+"Year","3133"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",128
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",40,21,20,21,26
+"Equips",6
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"2","ER Medium Laser","Energy"
+"4","MML 9","Missile"
+"4","LRM","Ammo"
+"4","SRM","Ammo"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<turret>"
+"ER Medium Laser",3,0
+"ER Medium Laser",3,0
+"MML 9",4,0
+"MML 9",4,0
+"MML 9",4,0
+"MML 9",4,0
+"<body>"
+"Ammo Machine Gun: Half",2,1
+"Ammo MML 9: LRM",5,1
+"Ammo MML 9: SRM",6,1

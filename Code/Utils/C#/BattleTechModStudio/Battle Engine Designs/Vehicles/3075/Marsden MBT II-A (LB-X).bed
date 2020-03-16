@@ -1,0 +1,47 @@
+"Name","Marsden MBT II-A (LB-X)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1013
+"Tons",60
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League (Duchy of Andurien)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition","Magistracy of Canopus","Marian Hegemony"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League (Duchy of Andurien)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition","Magistracy of Canopus","Marian Hegemony"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League (Duchy of Andurien)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition","Magistracy of Canopus","Marian Hegemony"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",248
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",52,52,51,52,41
+"Equips",6
+"2","Streak SRM 2","Missile"
+"2","Standard","Ammo"
+"2","Machine Gun","Ballistic"
+"1","Standard","Ammo"
+"1","LB 10-X AC","Ballistic"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"Streak SRM 2",1,0
+"Streak SRM 2",1,0
+"<turret>"
+"Machine Gun",3,0
+"Machine Gun",3,0
+"LB 10-X AC",5,0
+"<body>"
+"Ammo LB 10-X AC",6,1
+"Ammo Streak SRM 2",2,1
+"Ammo Machine Gun",4,1

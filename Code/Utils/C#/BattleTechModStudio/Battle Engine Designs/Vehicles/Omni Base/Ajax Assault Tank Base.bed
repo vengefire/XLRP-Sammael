@@ -1,0 +1,38 @@
+"Name","Ajax Assault Tank Base"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",939
+"Tons",90
+"Year","3065"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",304
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",3.5
+10,90,3,0,10,304,76,60,40,60,68,0,0,0,0,0,0
+3
+"",-1,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"CASE",1,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",76,60,40,60,68
+"Equips",1
+"1","CASE","Miscellaneous"
+"Crits"
+"<body>"
+"CASE",1,1

@@ -85,7 +85,7 @@ namespace Framework.Logic.Queue
             if (!(IsMulticast && QueueMode == QueueMode.Send) &&
                 IsLocal)
             {
-                lock (QueueBase<TRequestType>.Synch)
+                lock (Synch)
                 {
                     if (!MessageQueue.Exists(GetLocalPrivateName()))
                     {
@@ -185,7 +185,10 @@ namespace Framework.Logic.Queue
                 var newId = MessageQueueService.CreateMessageAudit(messageAudit);
                 if (null != ex)
                 {
-                    var processingError = new MessageProcessingError {MessageAuditId = newId, Error = ex.Message, StackTrace = ex.StackTrace, TmStamp = DateTime.Now};
+                    var processingError = new MessageProcessingError
+                    {
+                        MessageAuditId = newId, Error = ex.Message, StackTrace = ex.StackTrace, TmStamp = DateTime.Now
+                    };
                     MessageQueueService.CreateMessageAuditException(processingError);
                 }
 

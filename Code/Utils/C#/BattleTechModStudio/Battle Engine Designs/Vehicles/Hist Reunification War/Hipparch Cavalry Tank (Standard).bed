@@ -1,0 +1,38 @@
+"Name","Hipparch Cavalry Tank (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Hover"
+"BV2",382
+"Tons",30
+"Year","2562"
+"Era","Star League","(2571-2780)"
+"Factions","Periphery","Rim Worlds Republic - Home Guard","Rim Worlds Republic - Terran Corps"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Other","Extinct"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Other","Extinct"
+"Era","Civil War","(3062-3067)"
+"Factions","Other","Extinct"
+"Era","Jihad","(3068-3085)"
+"Factions","Other","Extinct"
+"Engine","ICE",9,"9/14/0"
+"Sinks","Single",4
+"Internal","Standard"
+"Armor","Standard",64
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",14,13,12,13,12
+"Equips",4
+"1","Medium Laser","Energy"
+"1","Small Laser","Energy"
+"1","SRM 2","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<turret>"
+"Medium Laser",1,0
+"Small Laser",2,0
+"SRM 2",3,0
+"<body>"
+"Ammo SRM 2",4,1

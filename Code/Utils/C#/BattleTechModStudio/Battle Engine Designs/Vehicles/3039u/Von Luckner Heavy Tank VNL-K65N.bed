@@ -1,0 +1,65 @@
+"Name","Von Luckner Heavy Tank VNL-K65N"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",1100
+"Tons",75
+"Year","2612"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Comstar","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Comstar","Draconis Combine","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",176
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",41,30,30,30,45
+"Equips",11
+"1","Flamer","Energy"
+"1","LRM 10","Missile"
+"1","Standard","Ammo"
+"2","SRM 6","Missile"
+"1","Standard","Ammo"
+"1","AC/20","Ballistic"
+"3","Standard","Ammo"
+"1","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","SRM 4","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Flamer",1,0
+"<rear>"
+"LRM 10",2,0
+"<turret>"
+"SRM 6",4,0
+"SRM 6",4,0
+"AC/20",6,0
+"Machine Gun",8,0
+"SRM 4",10,0
+"<body>"
+"Ammo AC/20",7,1
+"Ammo Machine Gun: Half",9,1
+"Ammo LRM 10",3,1
+"Ammo SRM 6",5,1
+"Ammo SRM 4",11,1

@@ -1,0 +1,55 @@
+"Name","Shoden Assault Vehicle (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1412
+"Tons",70
+"Year","3064"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine"
+"Factions","IS Clan","Clan Diamond Shark","Clan Hell's Horses","Clan Jade Falcon","Clan Nova Cat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Clan Diamond Shark","Clan Hell's Horses","Clan Nova Cat","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Clan Hell's Horses","Clan Nova Cat","Clan Sea Fox","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Clan Hell's Horses","Clan Nova Cat","Clan Sea Fox","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",184
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",55,37,25,37,30
+"Equips",6
+"4","Machine Gun (Light)","Ballistic"
+"1","Standard","Ammo"
+"3","ATM 9","Missile"
+"3","ER","Ammo"
+"3","HE","Ammo"
+"3","Standard","Ammo"
+"Crits"
+"<front>"
+"Machine Gun (Light)",1,0
+"Machine Gun (Light)",1,0
+"<right>"
+"Machine Gun (Light)",1,0
+"<left>"
+"Machine Gun (Light)",1,0
+"<turret>"
+"ATM 9",3,0
+"ATM 9",3,0
+"ATM 9",3,0
+"<body>"
+"Ammo ATM 9: ER",4,1
+"Ammo ATM 9",6,1
+"Ammo ATM 9: HE",5,1
+"Ammo Machine Gun (Light)",2,1

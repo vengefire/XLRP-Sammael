@@ -1,0 +1,35 @@
+"Name","Hasek Mechanized Combat Vehicle (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",841
+"Tons",40
+"Year","3101"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Factions","IS Clan","Clan Jade Falcon"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","Light",5,"5/8/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",144
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",48,35,30,35,30
+"Equips",3
+"1","PPC","Energy"
+"1","Small Pulse Laser","Energy"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"PPC",1,0
+"Small Pulse Laser",2,0
+"<body>"
+"Infantry Compartment",3,1

@@ -1,0 +1,39 @@
+"Name","Shandra Advanced Scout Vehicle (Original)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",311
+"Tons",25
+"Year","3087"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition","Pirates"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition","Pirates"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Calderon Protectorate","Filtvelt Coalition","Pirates"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",8,"8/12/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",64
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",24,15,10,15,0
+"Equips",3
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<rear>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<body>"
+"Guardian ECM Suite",3,1
+"Ammo Machine Gun: Half",2,1

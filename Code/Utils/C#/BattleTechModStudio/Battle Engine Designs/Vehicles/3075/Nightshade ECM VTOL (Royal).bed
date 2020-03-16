@@ -1,0 +1,44 @@
+"Name","Nightshade ECM VTOL (Royal)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",631
+"Tons",25
+"Year","2717"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Other","Star League Royal"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General","Society"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Engine","XL",14,"14/21/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",40
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",12,10,10,10,2
+"Equips",3
+"1","Large Pulse Laser","Energy"
+"1","Guardian ECM Suite","Electronics"
+"1","Cargo, Standard","Miscellaneous"
+"Crits"
+"<front>"
+"Large Pulse Laser",1,0
+"<body>"
+"Guardian ECM Suite",2,1
+"Cargo, Standard",3,1

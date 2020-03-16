@@ -1,0 +1,47 @@
+"Name","Cavalry Attack Helicopter (Infantry)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",615
+"Tons",25
+"Year","3063"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",10,"10/15/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",72
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",26,20,12,20,2
+"Equips",4
+"3","Medium Laser","Energy"
+"3","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"7","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Medium Laser",1,0
+"Medium Laser",1,0
+"Medium Laser",1,0
+"Machine Gun",2,0
+"Machine Gun",2,0
+"Machine Gun",2,0
+"<body>"
+"Ammo Machine Gun: Half",3,1
+"Infantry Compartment",4,1

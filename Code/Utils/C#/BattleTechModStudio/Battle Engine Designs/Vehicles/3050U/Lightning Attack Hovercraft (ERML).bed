@@ -1,0 +1,34 @@
+"Name","Lightning Attack Hovercraft (ERML)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",956
+"Tons",35
+"Year","3067"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Engine","Fusion",11,"11/17/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",56
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",20,16,10,16,0
+"Equips",2
+"7","Rocket Launcher 15","Missile"
+"2","ER Medium Laser","Energy"
+"Crits"
+"<front>"
+"Rocket Launcher 15",1,0
+"Rocket Launcher 15",1,0
+"Rocket Launcher 15",1,0
+"Rocket Launcher 15",1,0
+"Rocket Launcher 15",1,0
+"Rocket Launcher 15",1,0
+"Rocket Launcher 15",1,0
+"ER Medium Laser",2,0
+"ER Medium Laser",2,0

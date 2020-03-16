@@ -1,0 +1,57 @@
+"Name","Schiltron Mobile Fire-Support Platform C"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1078
+"Tons",80
+"Year","3059"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Word of Blake"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Word of Blake"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Rasalhague Republic","Free Worlds League","Word of Blake"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Oriente Protectorate)","Free Worlds League (Tamarind-Abbey District)","Republic of the Sphere"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Oriente Protectorate)","Free Worlds League (Tamarind-Abbey District)","Republic of the Sphere"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Oriente Protectorate)","Free Worlds League (Tamarind-Abbey District)","Republic of the Sphere"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",32
+"Internal","Standard"
+"Armor","Ferro-Fibrous",160
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",2
+9,80,3,0,10,160,46,34,25,34,40,0,0,0,0,0,0
+3
+"",-1,-1,0,0
+"",-4,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",46,34,25,34,40
+"Equips",3
+"4","Large Laser","Energy"
+"1","C3 Computer (Master)","Electronics"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<turret>"
+"Large Laser",1,0
+"Large Laser",1,0
+"Large Laser",1,0
+"Large Laser",1,0
+"<body>"
+"C3 Computer (Master)",2,1
+"Guardian ECM Suite",3,1

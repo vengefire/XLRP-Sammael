@@ -1,0 +1,40 @@
+"Name","Condor Heavy Hover Tank (Laser)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",977
+"Tons",50
+"Year","3061"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Lyran Alliance"
+"Factions","Mercenary","Mercenary"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","Fusion",8,"8/12/0"
+"Sinks","Single",20
+"Internal","Standard"
+"Armor","Standard",120
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",36,24,16,24,20
+"Equips",3
+"4","ER Medium Laser","Energy"
+"3","SRM 2","Missile"
+"2","Standard","Ammo"
+"Crits"
+"<turret>"
+"ER Medium Laser",1,0
+"ER Medium Laser",1,0
+"ER Medium Laser",1,0
+"ER Medium Laser",1,0
+"SRM 2",2,0
+"SRM 2",2,0
+"SRM 2",2,0
+"<body>"
+"Ammo SRM 2",3,1

@@ -1,0 +1,29 @@
+"Name","Savannah Master Hovercraft (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Hover"
+"BV2",215
+"Tons",5
+"Year","3025"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Engine","Fusion",13,"13/20/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",24
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",10,6,2,6,0
+"Equips",1
+"1","Medium Laser","Energy"
+"Crits"
+"<front>"
+"Medium Laser",1,0

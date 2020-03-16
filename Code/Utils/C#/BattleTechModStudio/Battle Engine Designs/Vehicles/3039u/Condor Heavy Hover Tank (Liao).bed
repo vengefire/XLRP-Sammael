@@ -1,0 +1,36 @@
+"Name","Condor Heavy Hover Tank (Liao)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Hover"
+"BV2",765
+"Tons",50
+"Year","2878"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Capellan Confederation","St. Ives Compact"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","St. Ives Compact"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","St. Ives Compact"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Engine","ICE",8,"8/12/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Standard",136
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",38,23,22,23,30
+"Equips",1
+"4","Medium Laser","Energy"
+"Crits"
+"<turret>"
+"Medium Laser",1,0
+"Medium Laser",1,0
+"Medium Laser",1,0
+"Medium Laser",1,0

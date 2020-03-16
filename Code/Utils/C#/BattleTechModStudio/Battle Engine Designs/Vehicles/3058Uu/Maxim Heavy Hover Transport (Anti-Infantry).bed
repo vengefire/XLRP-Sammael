@@ -1,0 +1,67 @@
+"Name","Maxim Heavy Hover Transport (Anti-Infantry)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",715
+"Tons",50
+"Year","3054"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","ICE",8,"8/12/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",25,23,16,23,17
+"Equips",8
+"2","LRM 5","Missile"
+"1","Standard","Ammo"
+"7","Machine Gun","Ballistic"
+"2","Standard","Ammo"
+"1","SRM 6","Missile"
+"1","Standard","Ammo"
+"1","TAG","Electronics"
+"6","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"LRM 5",1,0
+"LRM 5",1,0
+"Machine Gun",3,0
+"<right>"
+"Machine Gun",3,0
+"Machine Gun",3,0
+"<left>"
+"Machine Gun",3,0
+"Machine Gun",3,0
+"<turret>"
+"SRM 6",5,0
+"Machine Gun",3,0
+"Machine Gun",3,0
+"TAG",7,0
+"<body>"
+"Ammo SRM 6",6,1
+"Ammo LRM 5",2,1
+"Ammo Machine Gun",4,1
+"Infantry Compartment",8,1

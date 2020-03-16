@@ -1,0 +1,38 @@
+"Name","R10 Mechanized ICV (Coolant Truck)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",409
+"Tons",45
+"Year","3097"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Factions","Mercenary","Mercenary"
+"Factions","Other","Unique"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",34,25,21,25,20
+"Equips",2
+"2","Flamer (Vehicle)","Ballistic"
+"46","Cargo, Refrigerated","Miscellaneous"
+"Crits"
+"<front>"
+"Flamer (Vehicle)",1,0
+"Flamer (Vehicle)",1,0
+"<body>"
+"Cargo, Refrigerated",2,1

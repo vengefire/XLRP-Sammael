@@ -1,0 +1,51 @@
+"Name","Typhoon Urban Assault Vehicle (RAC)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1434
+"Tons",70
+"Year","3064"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",176
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",43,40,32,40,42
+"Equips",6
+"4","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"1","Beagle Active Probe","Electronics"
+"2","Rotary AC/5","Ballistic"
+"4","Standard","Ammo"
+"2","ER Medium Laser","Energy"
+"Crits"
+"<front>"
+"Streak SRM 2",1,0
+"Streak SRM 2",1,0
+"Beagle Active Probe",3,0
+"<turret>"
+"Rotary AC/5",4,0
+"Rotary AC/5",4,0
+"ER Medium Laser",6,0
+"ER Medium Laser",6,0
+"Streak SRM 2",1,0
+"Streak SRM 2",1,0
+"<body>"
+"Ammo Rotary AC/5",5,1
+"Ammo Streak SRM 2",2,1

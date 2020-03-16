@@ -1,0 +1,39 @@
+"Name","Pike Support Vehicle (RAC) 'Assault Pike'"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",961
+"Tons",60
+"Year","3064"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns","Free Worlds League (Duchy of Andurien)"
+"Factions","Periphery","Magistracy of Canopus","Taurian Concordat"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",152
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",42,30,28,30,40
+"Equips",3
+"1","Small Laser","Energy"
+"3","Rotary AC/2","Ballistic"
+"4","Standard","Ammo"
+"Crits"
+"<front>"
+"Small Laser",1,0
+"<turret>"
+"Rotary AC/2",2,0
+"Rotary AC/2",2,0
+"Rotary AC/2",2,0
+"<body>"
+"Ammo Rotary AC/2",3,1

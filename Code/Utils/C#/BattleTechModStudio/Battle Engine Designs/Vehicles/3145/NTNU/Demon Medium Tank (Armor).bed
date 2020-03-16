@@ -1,0 +1,37 @@
+"Name","Demon Medium Tank (Armor)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",636
+"Tons",45
+"Year","3100"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Engine","Fusion",7,"7/11/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",96
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",32,22,14,22,17
+"Equips",3
+"4","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"2","ER Medium Laser","Energy"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<turret>"
+"ER Medium Laser",3,0
+"ER Medium Laser",3,0
+"<body>"
+"Ammo Machine Gun: Half",2,1

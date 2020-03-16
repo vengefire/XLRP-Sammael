@@ -1,0 +1,51 @@
+"Name","Typhoon Urban Assault Vehicle (LB-X)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1064
+"Tons",70
+"Year","3065"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",176
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",43,40,32,40,42
+"Equips",7
+"2","Streak SRM 4","Missile"
+"1","Standard","Ammo"
+"1","ER Small Laser","Energy"
+"2","LB 10-X AC","Ballistic"
+"2","Cluster","Ammo"
+"2","Standard","Ammo"
+"1","C3 Computer (Slave)","Electronics"
+"Crits"
+"<front>"
+"Streak SRM 4",1,0
+"<rear>"
+"ER Small Laser",3,0
+"<turret>"
+"LB 10-X AC",4,0
+"LB 10-X AC",4,0
+"Streak SRM 4",1,0
+"<body>"
+"C3 Computer (Slave)",7,1
+"Ammo LB 10-X AC",6,1
+"Ammo LB 10-X AC: Cluster",5,1
+"Ammo Streak SRM 4",2,1

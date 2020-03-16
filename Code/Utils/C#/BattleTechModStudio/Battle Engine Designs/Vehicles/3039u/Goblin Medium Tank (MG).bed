@@ -1,0 +1,60 @@
+"Name","Goblin Medium Tank (MG)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",527
+"Tons",45
+"Year","2570"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Draconis Combine"
+"Factions","Periphery","Outworlds Alliance"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine","Free Rasalhague Republic"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Free Rasalhague Republic"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Era","Late Republic","(3101-3130)"
+"Factions","Other","Extinct"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Other","Extinct"
+"Engine","ICE",4,"4/6/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",128
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",30,24,20,24,30
+"Equips",5
+"6","Machine Gun","Ballistic"
+"5","Half","Ammo"
+"1","SRM 6","Missile"
+"2","Standard","Ammo"
+"10","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<right>"
+"Machine Gun",1,0
+"<rear>"
+"Machine Gun",1,0
+"<left>"
+"Machine Gun",1,0
+"<turret>"
+"Machine Gun",1,0
+"SRM 6",3,0
+"<body>"
+"Ammo Machine Gun: Half",2,1
+"Ammo SRM 6",4,1
+"Infantry Compartment",5,1

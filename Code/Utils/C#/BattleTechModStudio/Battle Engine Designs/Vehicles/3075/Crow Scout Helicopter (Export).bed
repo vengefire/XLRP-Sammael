@@ -1,0 +1,48 @@
+"Name","Crow Scout Helicopter (Export)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",415
+"Tons",15
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League (Duchy of Andurien)","Free Worlds League (Marik-Stewart Commonwealth)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Regulan Fiefs)","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat"
+"Factions","Periphery","Magistracy of Canopus"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",13,"13/20/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",16,12,6,12,2
+"Equips",4
+"2","Rocket Launcher 10","Missile"
+"2","ER Small Laser","Energy"
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"Crits"
+"<front>"
+"Rocket Launcher 10",1,0
+"Rocket Launcher 10",1,0
+"ER Small Laser",2,0
+"ER Small Laser",2,0
+"Machine Gun",3,0
+"Machine Gun",3,0
+"<body>"
+"Ammo Machine Gun: Half",4,1

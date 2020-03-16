@@ -1,0 +1,38 @@
+"Name","Mobile Headquarters (ICE - LL)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",249
+"Tons",25
+"Year","2850"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Mercenary","Mercenary"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",8
+"Internal","Standard"
+"Armor","Standard",40
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",10,11,8,11,0
+"Equips",2
+"1","Large Laser","Energy"
+"2","Communications Equipment","Electronics"
+"Crits"
+"<front>"
+"Large Laser",1,0
+"<body>"
+"Communications Equipment",2,1

@@ -1,0 +1,50 @@
+"Name","Striker Light Tank (3053 Upgrade)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",691
+"Tons",35
+"Year","3053"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Factions","IS Clan","Clan Nova Cat"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Alliance"
+"Factions","IS Clan","Clan Nova Cat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Periphery","Filtvelt Coalition"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat","Clan Sea Fox","Clan Wolf (in Exile)"
+"Factions","Periphery","Filtvelt Coalition"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat","Clan Sea Fox","Clan Wolf (in Exile)"
+"Factions","Periphery","Filtvelt Coalition"
+"Engine","Fusion",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",26,23,20,23,24
+"Equips",5
+"1","LRM 15","Missile"
+"1","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"2","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<turret>"
+"LRM 15",1,0
+"Streak SRM 2",4,0
+"Streak SRM 2",4,0
+"<body>"
+"Ammo LRM 15: Artemis",2,1
+"Ammo Streak SRM 2",5,1

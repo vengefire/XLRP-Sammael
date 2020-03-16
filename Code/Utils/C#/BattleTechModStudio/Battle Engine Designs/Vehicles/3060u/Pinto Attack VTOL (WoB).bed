@@ -1,0 +1,40 @@
+"Name","Pinto Attack VTOL (WoB)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",703
+"Tons",30
+"Year","3070"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Era","Late Republic","(3101-3130)"
+"Factions","Other","Extinct"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Other","Extinct"
+"Engine","XL",10,"10/15/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",64
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",22,20,15,20,2
+"Equips",6
+"2","ER Medium Laser","Energy"
+"1","MML 5","Missile"
+"1","LRM Artemis","Ammo"
+"1","SRM Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"12","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"ER Medium Laser",1,0
+"ER Medium Laser",1,0
+"MML 5",2,0
+"<body>"
+"Ammo MML 5: LRM Artemis",3,1
+"Ammo MML 5: SRM Artemis",4,1
+"Infantry Compartment",6,1

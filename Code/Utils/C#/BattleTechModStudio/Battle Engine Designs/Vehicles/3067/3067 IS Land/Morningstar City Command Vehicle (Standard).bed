@@ -1,0 +1,54 @@
+"Name","Morningstar City Command Vehicle (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",736
+"Tons",60
+"Year","3065"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Commonwealth","Federated Suns"
+"Factions","Mercenary","Mercenary"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns","Word of Blake"
+"Factions","Mercenary","Mercenary"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns","Republic of the Sphere"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns","Republic of the Sphere"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Federated Suns","Republic of the Sphere"
+"Factions","Periphery","Magistracy of Canopus"
+"Engine","XL",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",144
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",43,29,19,29,24
+"Equips",7
+"3","Machine Gun","Ballistic"
+"1","Standard","Ammo"
+"1","AC/10","Ballistic"
+"2","Standard","Ammo"
+"1","Targeting Computer","Electronics"
+"1","C3 Computer (Master)","Electronics"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<right>"
+"Machine Gun",1,0
+"<left>"
+"Machine Gun",1,0
+"<turret>"
+"AC/10",3,0
+"<body>"
+"Ammo AC/10",4,1
+"Ammo Machine Gun",2,1
+"Targeting Computer",5,1
+"C3 Computer (Master)",6,1
+"Infantry Compartment",7,1

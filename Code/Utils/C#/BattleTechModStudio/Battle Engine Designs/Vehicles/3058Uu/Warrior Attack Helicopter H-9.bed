@@ -1,0 +1,32 @@
+"Name","Warrior Attack Helicopter H-9"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",484
+"Tons",20
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Lyran Commonwealth"
+"Engine","XL",10,"10/15/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",15,14,8,14,2
+"Equips",2
+"1","Rotary AC/2","Ballistic"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"Rotary AC/2",1,0
+"<body>"
+"Ammo Rotary AC/2",2,1

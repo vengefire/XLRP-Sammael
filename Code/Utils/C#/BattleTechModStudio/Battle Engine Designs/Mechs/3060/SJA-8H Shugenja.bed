@@ -1,0 +1,118 @@
+"Name","SJA-8H Shugenja"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",1692
+"Tons",75
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Era","Late Republic","(3101-3130)"
+"Factions","Other","Extinct"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Other","Extinct"
+"Engine","Light",4,"4/6/0"
+"Sinks","Double",11
+"Internal","Endo-Steel"
+"Armor","Standard",231
+"Cockpit","Standard"
+"Gyro","Compact"
+"JumpJets","Standard",0
+"LArmAct","No Hand"
+"RArmAct","No Hand"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#FALSE#
+"ArmorVals",24,24,24,24,35,8,8,11,9,32,32
+"Equips",9
+"1","B-Pod","Miscellaneous"
+"1","ER PPC","Energy"
+"2","Light PPC","Energy"
+"1","MRM 30","Missile"
+"2","Standard","Ammo"
+"1","C3 Computer (Master)","Electronics"
+"1","A-Pod","Miscellaneous"
+"1","CASE","Miscellaneous"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"ER PPC",2,0,0,2,0
+":ditto:",2,0,0,2,0
+":ditto:",2,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"MRM 30",4,0,0,2,0
+":ditto:",4,0,0,2,0
+":ditto:",4,0,0,2,0
+":ditto:",4,0,0,2,0
+":ditto:",4,0,0,2,0
+"Ammo MRM 30",5,0,0,2,0
+"Ammo MRM 30",5,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"CASE",8,0,0,2,0
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"C3 Computer (Master)",6,0,0,2,0
+":ditto:",6,0,0,2,0
+":ditto:",6,0,0,2,0
+":ditto:",6,0,0,2,0
+":ditto:",6,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Light PPC",3,0,0,2,0
+":ditto:",3,0,0,2,0
+"Light PPC",3,0,0,2,0
+":ditto:",3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Compact Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"Light Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Guardian ECM Suite",9,0,0,2,0
+":ditto:",9,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+" -",0,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"B-Pod",1,0,0,2,0
+" -",0,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"A-Pod",7,0,0,2,0
+" -",0,0,0,2,0

@@ -1,0 +1,58 @@
+"Name","R10 Mechanized ICV B"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",756
+"Tons",45
+"Year","3097"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Factions","Mercenary","Mercenary"
+"Factions","Other","Unique"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Free Worlds League","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",1
+"Turret",1.5
+9,45,5,0,10,112,34,25,21,25,20,0,0,0,0,0,0
+3
+"",-1,-1,0,0
+"",-4,-1,0,0
+"",-5,-1,0,0
+"",-6,-1,0,0
+"Rules",0,#TRUE#
+"ArmorVals",34,25,21,25,20
+"Equips",8
+"2","Small Pulse Laser","Energy"
+"1","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"1","Standard","Ammo"
+"1","Beagle Active Probe","Electronics"
+"1","Guardian ECM Suite","Electronics"
+"1","CASE","Miscellaneous"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Small Pulse Laser",1,0
+"Small Pulse Laser",1,0
+"<turret>"
+"LB 10-X AC",2,0
+"<body>"
+"Beagle Active Probe",5,0
+"Guardian ECM Suite",6,1
+"CASE",7,1
+"Ammo LB 10-X AC: Cluster",3,1
+"Ammo LB 10-X AC",4,1
+"Infantry Compartment",8,1

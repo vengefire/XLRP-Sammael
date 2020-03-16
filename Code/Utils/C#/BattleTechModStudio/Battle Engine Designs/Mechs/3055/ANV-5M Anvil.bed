@@ -1,0 +1,116 @@
+"Name","ANV-5M Anvil"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",1687
+"Tons",60
+"Year","3057"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Free Worlds League","Word of Blake"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Free Worlds League","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Free Worlds League","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League (Duchy of Andurien)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Tamarind-Abbey District)"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Free Worlds League (Duchy of Andurien)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Tamarind-Abbey District)"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Free Worlds League (Duchy of Andurien)","Free Worlds League (Oriente Protectorate)","Free Worlds League (Tamarind-Abbey District)"
+"Engine","Fusion",5,"5/8/5"
+"Sinks","Double",12
+"Internal","Endo-Steel"
+"Armor","Standard",152
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",5
+"LArmAct","Full Arm"
+"RArmAct","Full Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",15,15,19,19,24,7,7,7,9,15,15
+"Equips",3
+"2","ER Large Laser","Energy"
+"4","Medium Laser","Energy"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Lower Arm Actuator",-8,1,0,2,1
+"Hand Actuator",-8,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"ER Large Laser",1,0,0,2,0
+":ditto:",1,0,0,2,0
+"Medium Laser",2,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"ER Large Laser",1,0,0,2,0
+":ditto:",1,0,0,2,0
+"Medium Laser",2,0,0,2,0
+"Guardian ECM Suite",3,0,0,2,0
+":ditto:",3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Lower Arm Actuator",-9,1,0,2,1
+"Hand Actuator",-9,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"Fusion Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Medium Laser",2,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Medium Laser",2,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Endo-Steel",-3,0,0,2,0

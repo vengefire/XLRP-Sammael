@@ -1,0 +1,35 @@
+"Name","Shamash Reconnaissance Vehicle (Interdictor)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",520
+"Tons",11
+"Year","3077"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","IS Clan General"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","IS Clan General"
+"Engine","Fusion",13,"13/20/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",32
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",9,7,7,7,8
+"Equips",2
+"1","ER Medium Laser","Energy"
+"1","ECM Suite","Electronics"
+"Crits"
+"<turret>"
+"ER Medium Laser",1,0
+"<body>"
+"ECM Suite",2,1

@@ -1,0 +1,53 @@
+"Name","Magi Infantry Support Vehicle (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",798
+"Tons",70
+"Year","2727"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Comstar"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Comstar"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Comstar","Free Rasalhague Republic","Word of Blake"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Comstar","Free Rasalhague Republic","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Comstar","Free Rasalhague Republic","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","Fusion",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",152
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",44,43,40,43,0
+"Equips",4
+"3","Medium Laser","Energy"
+"2","Machine Gun","Ballistic"
+"1","Standard","Ammo"
+"1","CASE","Miscellaneous"
+"Crits"
+"<front>"
+"Medium Laser",1,0
+"Machine Gun",2,0
+"Machine Gun",2,0
+"<right>"
+"Medium Laser",1,0
+"<left>"
+"Medium Laser",1,0
+"<body>"
+"Ammo Machine Gun",3,1
+"CASE",4,0

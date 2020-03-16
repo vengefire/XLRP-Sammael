@@ -1,0 +1,43 @@
+"Name","Pike Support Vehicle (AC5)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",715
+"Tons",60
+"Year","3004"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Civil War","(3062-3067)"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Jihad","(3068-3085)"
+"Factions","Periphery","Magistracy of Canopus"
+"Era","Early Republic","(3086-3100)"
+"Factions","Periphery","Magistracy of Canopus"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",144
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",33,25,25,25,36
+"Equips",4
+"2","SRM 2","Missile"
+"1","Standard","Ammo"
+"2","AC/5","Ballistic"
+"7","Standard","Ammo"
+"Crits"
+"<front>"
+"SRM 2",1,0
+"SRM 2",1,0
+"<turret>"
+"AC/5",3,0
+"AC/5",3,0
+"<body>"
+"Ammo SRM 2",2,1
+"Ammo AC/5",4,1

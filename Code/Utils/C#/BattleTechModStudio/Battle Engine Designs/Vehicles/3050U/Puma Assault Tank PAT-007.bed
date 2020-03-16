@@ -1,0 +1,56 @@
+"Name","Puma Assault Tank PAT-007"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1323
+"Tons",95
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Comstar","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","Light",3,"3/5/0"
+"Sinks","Single",22
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",152
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",49,33,24,33,49
+"Equips",12
+"3","MML 7","Missile"
+"2","LRM","Ammo"
+"2","SRM","Ammo"
+"1","B-Pod","Miscellaneous"
+"2","Medium Laser","Energy"
+"2","Machine Gun Array (2)","Ballistic"
+"1","Standard","Ammo"
+"1","Small Laser","Energy"
+"1","Flamer (Vehicle)","Ballistic"
+"1","Standard","Ammo"
+"1","Heavy PPC","Energy"
+"1","Improved C3 Computer","Electronics"
+"Crits"
+"<front>"
+"MML 7",1,0
+"B-Pod",4,0
+"Medium Laser",5,0
+"Medium Laser",5,0
+"<right>"
+"MML 7",1,0
+"Machine Gun Array (2)",6,0
+"<rear>"
+"Small Laser",8,0
+"Flamer (Vehicle)",9,0
+"<left>"
+"MML 7",1,0
+"Machine Gun Array (2)",6,0
+"<turret>"
+"Heavy PPC",11,0
+"<body>"
+"Ammo Flamer (Vehicle)",10,1
+"Ammo MML 7: LRM",2,1
+"Ammo MML 7: SRM",3,1
+"Ammo Machine Gun Array (2)",7,1
+"Improved C3 Computer",12,1

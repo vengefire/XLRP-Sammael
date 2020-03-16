@@ -1,0 +1,41 @@
+"Name","Anhur Transport (BA)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",637
+"Tons",30
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Wolf (in Exile)","Rasalhague Dominion"
+"Engine","Fusion",8,"8/12/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",48
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",15,14,12,14,2
+"Equips",5
+"2","ER Medium Laser","Energy"
+"2","AP Gauss Rifle","Ballistic"
+"1","Standard","Ammo"
+"1","ECM Suite","Electronics"
+"20","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"ER Medium Laser",1,0
+"AP Gauss Rifle",2,0
+"<rear>"
+"ER Medium Laser",1,0
+"AP Gauss Rifle",2,0
+"<body>"
+"Ammo AP Gauss Rifle",3,1
+"ECM Suite",4,1
+"Infantry Compartment",5,1

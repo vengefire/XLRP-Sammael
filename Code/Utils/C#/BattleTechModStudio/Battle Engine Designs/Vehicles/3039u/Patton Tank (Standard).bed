@@ -1,0 +1,50 @@
+"Name","Patton Tank (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",961
+"Tons",65
+"Year","3027"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth"
+"Factions","Periphery","Outworlds Alliance"
+"Factions","Mercenary","Mercenary"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Lyran Alliance","Lyran Commonwealth"
+"Factions","Mercenary","Mercenary"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Lyran Alliance"
+"Factions","Mercenary","Mercenary"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Free Rasalhague Republic","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Periphery","Filtvelt Coalition"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",232
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",51,46,38,46,51
+"Equips",6
+"1","Small Laser","Energy"
+"1","Flamer","Energy"
+"1","LRM 5","Missile"
+"1","Standard","Ammo"
+"1","AC/10","Ballistic"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"Small Laser",1,0
+"<rear>"
+"Flamer",2,0
+"<turret>"
+"LRM 5",3,0
+"AC/10",5,0
+"<body>"
+"Ammo LRM 5",4,1
+"Ammo AC/10",6,1

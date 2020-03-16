@@ -1,0 +1,35 @@
+"Name","Fury Command Tank (C3S)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1413
+"Tons",80
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Engine","Light",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",240
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",68,46,43,46,65
+"Equips",5
+"1","Light AC/5","Ballistic"
+"2","Standard","Ammo"
+"1","Gauss Rifle","Ballistic"
+"3","Standard","Ammo"
+"1","C3 Computer (Slave)","Electronics"
+"Crits"
+"<front>"
+"Light AC/5",1,0
+"<turret>"
+"Gauss Rifle",3,0
+"<body>"
+"C3 Computer (Slave)",5,1
+"Ammo Gauss Rifle",4,1
+"Ammo Light AC/5",2,1

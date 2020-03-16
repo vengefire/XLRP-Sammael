@@ -1,0 +1,56 @@
+"Name","DI Schmitt Tank (Targeting Computer)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1625
+"Tons",80
+"Year","3115"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Ferro-Fibrous",136
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",45,31,20,31,25
+"Equips",10
+"2","Flamer (Vehicle)","Ballistic"
+"1","Standard","Ammo"
+"2","Rotary AC/5","Ballistic"
+"4","Standard","Ammo"
+"1","LRM 15","Missile"
+"2","Standard","Ammo"
+"4","Medium Laser","Energy"
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","Targeting Computer","Electronics"
+"Crits"
+"<front>"
+"Flamer (Vehicle)",1,0
+"Flamer (Vehicle)",1,0
+"<turret>"
+"Rotary AC/5",3,0
+"Rotary AC/5",3,0
+"LRM 15",5,0
+"Medium Laser",7,0
+"Medium Laser",7,0
+"Medium Laser",7,0
+"Medium Laser",7,0
+"Machine Gun",8,0
+"Machine Gun",8,0
+"<body>"
+"Ammo LRM 15",6,1
+"Ammo Machine Gun: Half",9,1
+"Ammo Rotary AC/5",4,1
+"Targeting Computer",10,1
+"Ammo Flamer (Vehicle)",2,1

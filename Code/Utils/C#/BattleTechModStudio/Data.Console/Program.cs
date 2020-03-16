@@ -1,11 +1,9 @@
 ﻿using System.Linq;
 using Data.Console.Utils;
-using Data.Core.Enums;
 using Data.Core.Misc;
 using Data.Core.ModObjects;
 using Data.Core.Parsers;
 using Data.Services;
-using Newtonsoft.Json.Linq;
 
 namespace Data.Console
 {
@@ -18,11 +16,11 @@ namespace Data.Console
             //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Sammael\Build\XLRP\1.8 Clean Build";
             //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Complete";
             //var sourceDirectory = @"D:\Test Data\XAI";
-            
+
             //var sourceDirectory = @"C:\Users\Stephen Weistra\gitrepos\XLRP-Complete";
             //var btDirectory = @"D:\Test Data\BT Base Data";
             //var dlcDirectory = @"C:\Users\Stephen Weistra\gitrepos\bt-dlc-designdata";
-         
+
             var sourceDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH\Mods";
             var btDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH";
             var dlcDirectory = @"C:\Games\Steam\steamapps\common\BATTLETECH\Repository\bt-dlc-designdata";
@@ -35,39 +33,11 @@ namespace Data.Console
 
             var modService = new ModService();
             var modCollection = modService.LoadModCollectionFromDirectory(sourceDirectory);
+            modService.PublishLoadResults(modCollection);
 
-            var disabledMods = modCollection.DisabledMods.ToList();
-            var validMods = modCollection.ValidMods.ToList();
-            var invalidMods = modCollection.InvalidMods.ToList();
-
-            System.Console.WriteLine($"Summary for mods loaded from [{sourceDirectory}]:\r\n" +
-                                     $"Total Mods Found - {modCollection.Mods.Count}\r\n" +
-                                     $"Disabled Mods - {disabledMods.Count}\r\n" +
-                                     $"Valid Mods Loaded - {validMods.Count}\r\n" +
-                                     $"Invalid Mods - {invalidMods.Count}\r\n");
-
-            System.Console.WriteLine("Disabled Mods:");
-            disabledMods.ForEach(mod => { System.Console.WriteLine($"{mod.Name}"); });
-            System.Console.WriteLine();
-
-            System.Console.WriteLine("Invalid Mods:");
-            invalidMods.ForEach(mod =>
-            {
-                System.Console.WriteLine($"{mod.Name}\r\n" +
-                                         $"\t{string.Join("\r\n", mod.InvalidReasonList)}");
-            });
-            System.Console.WriteLine();
-
-            System.Console.WriteLine("Valid Mods Load Order : ");
-            validMods.GroupBy(mod => mod.LoadCycle).OrderBy(mods => mods.Key).ToList().ForEach(mods =>
-            {
-                System.Console.WriteLine($"Load Cycle [{mods.Key}]:\r\n" +
-                                         $"{new string('-', 10)}\r\n" +
-                                         $"{string.Join("\r\n", mods.OrderBy(mod => mod.LoadOrder).Select(mod => $"[{mod.LoadOrder,-3}] - {mod.Name}"))}\r\n");
-            });
-
-            var typeUnion = VersionManifestParser.AllTypes;
-            modCollection.Mods.SelectMany(mod => mod.ManifestEntryGroups.Select(group => group.Type)).Distinct().ToList().ForEach(s => typeUnion.Add(s));
+            /*var typeUnion = VersionManifestParser.AllTypes;
+            modCollection.Mods.SelectMany(mod => mod.ManifestEntryGroups.Select(group => group.Type)).Distinct()
+                .ToList().ForEach(s => typeUnion.Add(s));
             var sortedTypes = typeUnion.ToList();
             sortedTypes.Sort(string.CompareOrdinal);
             var typeEnumString = TypeEnumGenerator.GenerateEnum(
@@ -76,7 +46,7 @@ namespace Data.Console
                 "GameObjectTypeEnum"
             );
 
-            /*System.Console.WriteLine("Generated Type Enum:\r\n" +
+            System.Console.WriteLine("Generated Type Enum:\r\n" +
                                      $"{typeEnumString}");*/
 
             modCollection.ExpandManifestGroups();
@@ -128,7 +98,8 @@ namespace Data.Console
                 return false;
             });*/
 
-            ContentExtractors.GenerateStoreContentList(result.mergedManifestEntries, @"C:\tmp\", @"test-xlrp-store-content.xlsx");
+            ContentExtractors.GenerateStoreContentList(result.mergedManifestEntries, @"C:\tmp\",
+                @"test-xlrp-store-content.xlsx");
             // ContentExtractors.GenerateTacticalContentList(result.mergedManifestEntries, @"C:\tmp\", @"content.xlsx");
             /*var planetTags = PlanetTagEnumerator.EnumeratePlanetTags(result.mergedManifestEntries);
             planetTags.GroupBy(tag => tag.category, tag => tag.value, (category, tags) => new {category = category, tags = tags}).ToList().ForEach(tagGroup =>

@@ -1,0 +1,55 @@
+"Name","Daimyo HQ 67-K"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",561
+"Tons",50
+"Year","2781"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Draconis Combine"
+"Factions","Periphery","Outworlds Alliance"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine","Free Rasalhague Republic"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Free Rasalhague Republic"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Free Rasalhague Republic"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine"
+"Factions","IS Clan","Rasalhague Dominion"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine"
+"Factions","IS Clan","Rasalhague Dominion"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine"
+"Factions","IS Clan","Rasalhague Dominion"
+"Engine","Fusion",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",34,22,15,22,19
+"Equips",5
+"1","Large Laser","Energy"
+"4","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"7","Communications Equipment","Electronics"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"Large Laser",1,0
+"Machine Gun",2,0
+"Machine Gun",2,0
+"Machine Gun",2,0
+"Machine Gun",2,0
+"<body>"
+"Ammo Machine Gun: Half",3,1
+"Communications Equipment",4,1
+"Infantry Compartment",5,1

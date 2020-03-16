@@ -1,0 +1,39 @@
+"Name","Tyr Infantry Support Tank (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1260
+"Tons",45
+"Year","3063"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Ghost Bear","Clan Hell's Horses"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Ghost Bear","Clan Hell's Horses"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Hell's Horses","Rasalhague Dominion"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Sea Fox","Rasalhague Dominion"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Sea Fox","Rasalhague Dominion"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Standard",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",21,21,21,21,20
+"Equips",4
+"1","ER Large Laser","Energy"
+"2","Streak SRM 4","Missile"
+"2","Standard","Ammo"
+"10","Infantry Compartment","Miscellaneous"
+"Crits"
+"<turret>"
+"ER Large Laser",1,0
+"Streak SRM 4",2,0
+"Streak SRM 4",2,0
+"<body>"
+"Ammo Streak SRM 4",3,1
+"Infantry Compartment",4,1

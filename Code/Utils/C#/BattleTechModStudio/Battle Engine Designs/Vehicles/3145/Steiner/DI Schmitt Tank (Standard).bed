@@ -1,0 +1,52 @@
+"Name","DI Schmitt Tank (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1457
+"Tons",80
+"Year","3115"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",18
+"Internal","Standard"
+"Armor","Ferro-Fibrous",136
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",45,31,20,31,25
+"Equips",8
+"2","Flamer","Energy"
+"2","Rotary AC/5","Ballistic"
+"4","Standard","Ammo"
+"1","LRM 15","Missile"
+"2","Standard","Ammo"
+"4","Medium Laser","Energy"
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"Crits"
+"<front>"
+"Flamer",1,0
+"Flamer",1,0
+"<turret>"
+"Rotary AC/5",2,0
+"Rotary AC/5",2,0
+"LRM 15",4,0
+"Medium Laser",6,0
+"Medium Laser",6,0
+"Medium Laser",6,0
+"Medium Laser",6,0
+"Machine Gun",7,0
+"Machine Gun",7,0
+"<body>"
+"Ammo LRM 15",5,1
+"Ammo Machine Gun: Half",8,1
+"Ammo Rotary AC/5",3,1

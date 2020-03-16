@@ -1,0 +1,48 @@
+"Name","Ku Wheeled Assault Tank (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1091
+"Tons",50
+"Year","2842"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Civil War","(3062-3067)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General","Society"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Diamond Shark","Clan Hell's Horses","Clan Jade Falcon","Clan Wolf","Rasalhague Dominion","Raven Alliance"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Clan Sea Fox","Clan Wolf","Rasalhague Dominion","Raven Alliance"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Clan Sea Fox","Clan Wolf","Rasalhague Dominion","Raven Alliance"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",14
+"Internal","Standard"
+"Armor","Ferro-Fibrous",112
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",30,29,26,29,20
+"Equips",6
+"1","Streak SRM 4","Missile"
+"1","Standard","Ammo"
+"1","ER Large Laser","Energy"
+"1","ER Small Laser","Energy"
+"1","Ultra AC/10","Ballistic"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"Streak SRM 4",1,0
+"<turret>"
+"ER Large Laser",3,0
+"ER Small Laser",4,0
+"Ultra AC/10",5,0
+"<body>"
+"Ammo Streak SRM 4",2,1
+"Ammo Ultra AC/10",6,1

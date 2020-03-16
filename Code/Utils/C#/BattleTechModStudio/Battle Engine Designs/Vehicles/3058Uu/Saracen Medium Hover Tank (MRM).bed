@@ -1,0 +1,32 @@
+"Name","Saracen Medium Hover Tank (MRM)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",676
+"Tons",35
+"Year","3062"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine"
+"Engine","ICE",8,"8/12/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Ferro-Fibrous",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",25,21,24,21,25
+"Equips",4
+"1","MRM 20","Missile"
+"2","Standard","Ammo"
+"1","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<turret>"
+"MRM 20",1,0
+"Streak SRM 2",3,0
+"<body>"
+"Ammo MRM 20",2,1
+"Ammo Streak SRM 2",4,1

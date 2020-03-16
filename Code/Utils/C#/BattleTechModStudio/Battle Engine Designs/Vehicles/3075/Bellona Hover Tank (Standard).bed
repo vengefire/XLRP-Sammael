@@ -1,0 +1,45 @@
+"Name","Bellona Hover Tank (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1018
+"Tons",45
+"Year","3070"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Early Republic","(3086-3100)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Late Republic","(3101-3130)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Dark Ages","(3131-3999)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Engine","Fusion",9,"9/14/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",120
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",30,21,21,21,27
+"Equips",5
+"4","Machine Gun (Light)","Ballistic"
+"3","Half","Ammo"
+"2","Flamer","Energy"
+"1","Ultra AC/10","Ballistic"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"Machine Gun (Light)",1,0
+"Machine Gun (Light)",1,0
+"<right>"
+"Machine Gun (Light)",1,0
+"<left>"
+"Machine Gun (Light)",1,0
+"<turret>"
+"Flamer",3,0
+"Flamer",3,0
+"Ultra AC/10",4,0
+"<body>"
+"Ammo Ultra AC/10",5,1
+"Ammo Machine Gun (Light): Half",2,1

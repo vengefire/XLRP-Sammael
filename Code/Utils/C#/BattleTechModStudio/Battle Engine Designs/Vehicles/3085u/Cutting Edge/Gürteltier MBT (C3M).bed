@@ -1,0 +1,60 @@
+"Name","Gürteltier MBT (C3M)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1863
+"Tons",100
+"Year","3086"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",15
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",304
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",109,75,50,75,67
+"Equips",14
+"4","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","ER PPC","Energy"
+"1","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"2","Standard","Ammo"
+"1","MML 7","Missile"
+"2","LRM Artemis","Ammo"
+"1","SRM Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","Guardian ECM Suite","Electronics"
+"1","C3 Computer (Master)","Electronics"
+"1","Targeting Computer","Electronics"
+"1","CASE","Miscellaneous"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<right>"
+"Machine Gun",1,0
+"<rear>"
+"Machine Gun",1,0
+"<left>"
+"Machine Gun",1,0
+"<turret>"
+"ER PPC",3,0
+"LB 10-X AC",4,0
+"MML 7",7,0
+"<body>"
+"Ammo LB 10-X AC",6,1
+"Ammo LB 10-X AC: Cluster",5,1
+"Ammo MML 7: LRM Artemis",8,1
+"Ammo MML 7: SRM Artemis",9,1
+"Ammo Machine Gun: Half",2,1
+"Guardian ECM Suite",11,1
+"C3 Computer (Master)",12,1
+"Targeting Computer",13,1
+"CASE",14,0

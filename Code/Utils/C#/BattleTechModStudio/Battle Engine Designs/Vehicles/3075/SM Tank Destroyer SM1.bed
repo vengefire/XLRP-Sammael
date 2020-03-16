@@ -1,0 +1,46 @@
+"Name","SM Tank Destroyer SM1"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1585
+"Tons",50
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine"
+"Factions","IS Clan","Clan Nova Cat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat"
+"Factions","Mercenary","Kell Hounds","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Nova Cat"
+"Factions","Mercenary","Kell Hounds","Mercenary"
+"Engine","Fusion",8,"8/12/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",120
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",43,29,19,29,24
+"Equips",4
+"1","Ultra AC/20","Ballistic"
+"6","Standard","Ammo"
+"4","Machine Gun (Light)","Ballistic"
+"1","Half","Ammo"
+"Crits"
+"<front>"
+"Ultra AC/20",1,0
+"<turret>"
+"Machine Gun (Light)",3,0
+"Machine Gun (Light)",3,0
+"Machine Gun (Light)",3,0
+"Machine Gun (Light)",3,0
+"<body>"
+"Ammo Ultra AC/20",2,1
+"Ammo Machine Gun (Light): Half",4,1

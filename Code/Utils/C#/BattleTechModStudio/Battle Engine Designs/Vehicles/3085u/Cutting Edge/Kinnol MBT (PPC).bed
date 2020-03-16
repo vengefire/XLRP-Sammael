@@ -1,0 +1,54 @@
+"Name","Kinnol MBT (PPC)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1212
+"Tons",70
+"Year","3086"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Rasalhague Dominion"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","XL",5,"5/8/0"
+"Sinks","Single",13
+"Internal","Standard"
+"Armor","Ferro-Fibrous",192
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",65,40,30,40,40
+"Equips",9
+"2","MML 5","Missile"
+"2","LRM","Ammo"
+"1","SRM","Ammo"
+"3","Machine Gun","Ballistic"
+"1","Standard","Ammo"
+"1","PPC","Energy"
+"1","Medium Laser","Energy"
+"1","CASE","Miscellaneous"
+"1","C3 Computer (Slave)","Electronics"
+"Crits"
+"<front>"
+"MML 5",1,0
+"MML 5",1,0
+"Machine Gun",4,0
+"Machine Gun",4,0
+"<turret>"
+"PPC",6,0
+"Medium Laser",7,0
+"Machine Gun",4,0
+"<body>"
+"Ammo MML 5: LRM",2,1
+"Ammo MML 5: SRM",3,1
+"Ammo Machine Gun",5,1
+"CASE",8,0
+"C3 Computer (Slave)",9,1

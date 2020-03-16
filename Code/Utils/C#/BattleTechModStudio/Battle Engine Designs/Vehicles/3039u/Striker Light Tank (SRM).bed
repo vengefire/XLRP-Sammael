@@ -1,0 +1,50 @@
+"Name","Striker Light Tank (SRM)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Wheeled"
+"BV2",583
+"Tons",35
+"Year","3011"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Factions","Periphery","Filtvelt Coalition"
+"Factions","Mercenary","Mercenary"
+"Engine","ICE",5,"5/8/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",24,20,18,20,22
+"Equips",4
+"1","LRM 10","Missile"
+"1","Standard","Ammo"
+"4","SRM 2","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<turret>"
+"LRM 10",1,0
+"SRM 2",3,0
+"SRM 2",3,0
+"SRM 2",3,0
+"SRM 2",3,0
+"<body>"
+"Ammo SRM 2",4,1
+"Ammo LRM 10",2,1

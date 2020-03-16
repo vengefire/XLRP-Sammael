@@ -1,0 +1,41 @@
+"Name","SturmFeur Heavy Tank (Heavy Gauss)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1711
+"Tons",85
+"Year","3066"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",312
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",66,66,48,66,66
+"Equips",6
+"1","Heavy Gauss Rifle","Ballistic"
+"5","Standard","Ammo"
+"1","LRM 10","Missile"
+"2","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","ER Medium Laser","Energy"
+"Crits"
+"<front>"
+"Heavy Gauss Rifle",1,0
+"<turret>"
+"LRM 10",3,0
+"ER Medium Laser",6,0
+"<body>"
+"Ammo Heavy Gauss Rifle",2,1
+"Ammo LRM 10: Artemis",4,1

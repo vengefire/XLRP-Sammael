@@ -1,0 +1,29 @@
+"Name","Ripper Infantry Transport (Light PPC)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",371
+"Tons",10
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns"
+"Factions","IS Clan","Clan Nova Cat"
+"Engine","XL",12,"12/18/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",32
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",13,8,8,8,2
+"Equips",2
+"1","Light PPC","Energy"
+"2","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Light PPC",1,0
+"<body>"
+"Infantry Compartment",2,1

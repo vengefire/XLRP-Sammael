@@ -1,0 +1,63 @@
+"Name","Hunter Light Support Tank (LRM10)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",645
+"Tons",35
+"Year","2954"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Outworlds Alliance","Taurian Concordat"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Outworlds Alliance","Taurian Concordat"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Lyran Commonwealth"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",96
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",32,24,16,24,0
+"Equips",6
+"2","Medium Laser","Energy"
+"1","LRM 10","Missile"
+"2","Standard","Ammo"
+"4","Machine Gun","Ballistic"
+"2","Half","Ammo"
+"1","Flamer","Energy"
+"Crits"
+"<front>"
+"Medium Laser",1,0
+"Medium Laser",1,0
+"LRM 10",2,0
+"<right>"
+"Machine Gun",4,0
+"Machine Gun",4,0
+"<rear>"
+"Flamer",6,0
+"<left>"
+"Machine Gun",4,0
+"Machine Gun",4,0
+"<body>"
+"Ammo LRM 10",3,1
+"Ammo Machine Gun: Half",5,1

@@ -1,0 +1,33 @@
+"Name","Savannah Master Hovercraft (Interdictor)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",128
+"Tons",5
+"Year","3077"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Alliance"
+"Factions","Mercenary","Mercenary"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",13,"13/20/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",16
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",8,5,1,5,0
+"Equips",1
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<body>"
+"Guardian ECM Suite",1,1

@@ -1,0 +1,48 @@
+"Name","Ishtar Heavy Fire Support Tank (Gauss)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1616
+"Tons",65
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","IS Clan","Clan Hell's Horses"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Clan Wolf","Clan Wolf (in Exile)"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Clan Wolf","Clan Wolf (in Exile)"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Hell's Horses","Clan Jade Falcon","Clan Wolf","Clan Wolf (in Exile)"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",120
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",32,30,24,30,28
+"Equips",8
+"2","ER Medium Laser","Energy"
+"1","LRM 15","Missile"
+"2","Artemis","Ammo"
+"1","Artemis IV FCS","Electronics"
+"1","Hyper-Assault Gauss 20","Ballistic"
+"2","Standard","Ammo"
+"1","Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"Crits"
+"<front>"
+"ER Medium Laser",1,0
+"ER Medium Laser",1,0
+"LRM 15",2,0
+"<turret>"
+"Hyper-Assault Gauss 20",5,0
+"Gauss Rifle",7,0
+"<body>"
+"Ammo Hyper-Assault Gauss 20",6,1
+"Ammo Gauss Rifle",8,1
+"Ammo LRM 15: Artemis",3,1

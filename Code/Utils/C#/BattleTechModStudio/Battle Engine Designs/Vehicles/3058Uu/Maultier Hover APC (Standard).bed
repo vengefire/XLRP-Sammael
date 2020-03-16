@@ -1,0 +1,61 @@
+"Name","Maultier Hover APC (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",209
+"Tons",15
+"Year","2647"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Factions","Periphery","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General"
+"Factions","Periphery","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Home Clan General","Society"
+"Factions","Periphery","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","IS Clan","IS Clan General"
+"Factions","Periphery","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","IS Clan","IS Clan General"
+"Factions","Periphery","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation"
+"Factions","IS Clan","IS Clan General"
+"Factions","Periphery","Magistracy of Canopus","Marian Hegemony","Taurian Concordat"
+"Engine","ICE",9,"9/14/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Ferro-Fibrous",40
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",14,10,10,10,0
+"Equips",3
+"1","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"6","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Streak SRM 2",1,0
+"<body>"
+"Ammo Streak SRM 2",2,1
+"Infantry Compartment",3,1

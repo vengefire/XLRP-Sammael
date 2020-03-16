@@ -1,0 +1,41 @@
+"Name","Burke Defense Tank (Royal)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1105
+"Tons",75
+"Year","2713"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Other","Star League Royal"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Other","Extinct"
+"Era","Civil War","(3062-3067)"
+"Factions","Other","Extinct"
+"Era","Jihad","(3068-3085)"
+"Factions","Other","Extinct"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",30
+"Internal","Standard"
+"Armor","Ferro-Fibrous",136
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",42,30,20,30,30
+"Equips",3
+"2","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"3","PPC","Energy"
+"Crits"
+"<front>"
+"Streak SRM 2",1,0
+"Streak SRM 2",1,0
+"<turret>"
+"PPC",3,0
+"PPC",3,0
+"PPC",3,0
+"<body>"
+"Ammo Streak SRM 2",2,1

@@ -17,7 +17,7 @@ namespace Data.Core.ModObjects
     {
         [JsonProperty("Name")] public string Name { get; set; }
 
-        [JsonProperty("Enabled")] public bool Enabled { get; set; }
+        [JsonProperty("Enabled")] public bool Enabled { get; set; } = true;
 
         [JsonProperty("Version")] public string Version { get; set; }
 
@@ -42,7 +42,8 @@ namespace Data.Core.ModObjects
 
         [JsonProperty("ConflictsWith")] public List<string> ConflictsWithModNames { get; set; } = new List<string>();
 
-        [JsonProperty("OptionallyDependsOn")] public List<string> OptionallyDependsOnModNames { get; set; } = new List<string>();
+        [JsonProperty("OptionallyDependsOn")]
+        public List<string> OptionallyDependsOnModNames { get; set; } = new List<string>();
 
         [JsonProperty("DLL")] public string DllName { get; set; }
 
@@ -53,9 +54,11 @@ namespace Data.Core.ModObjects
 
         [JsonProperty("Settings")] public object Settings { get; set; }
 
-        [JsonProperty("CustomResourceTypes")] public List<string> CustomResourceTypes { get; set; } = new List<string>();
+        [JsonProperty("CustomResourceTypes")]
+        public List<string> CustomResourceTypes { get; set; } = new List<string>();
 
-        [JsonProperty("Manifest")] public List<ManifestEntryGroup> ManifestEntryGroups { get; set; } = new List<ManifestEntryGroup>();
+        [JsonProperty("Manifest")]
+        public List<ManifestEntryGroup> ManifestEntryGroups { get; set; } = new List<ManifestEntryGroup>();
 
         [JsonProperty("LoadImplicitManifest")] public bool LoadImplicitManifest { get; set; }
 
@@ -108,7 +111,8 @@ namespace Data.Core.ModObjects
                 return objectType == typeof(DateTime) || objectType == typeof(DateTime?);
             }
 
-            public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+            public override object ReadJson(JsonReader reader, Type objectType, object existingValue,
+                JsonSerializer serializer)
             {
                 var rawDate = (string) reader.Value;
 

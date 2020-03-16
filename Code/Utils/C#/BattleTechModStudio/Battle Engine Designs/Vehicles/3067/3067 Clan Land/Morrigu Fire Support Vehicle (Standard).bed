@@ -1,0 +1,52 @@
+"Name","Morrigu Fire Support Vehicle (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1685
+"Tons",80
+"Year","3064"
+"Era","Civil War","(3062-3067)"
+"Factions","Home Clan","Clan Blood Spirit","Clan Fire Mandrill"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Alliance"
+"Factions","IS Clan","IS Clan General"
+"Factions","Home Clan","Clan Blood Spirit","Clan Burrock","Clan Fire Mandrill","Clan Star Adder","Clan Stone Lion"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","IS Clan General"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","IS Clan General"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","IS Clan General"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",24
+"Internal","Standard"
+"Armor","Standard",208
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",63,41,28,41,35
+"Equips",6
+"2","SRM 2","Missile"
+"1","Standard","Ammo"
+"2","ER Large Laser","Energy"
+"2","LRM 15","Missile"
+"4","Standard","Ammo"
+"1","ECM Suite","Electronics"
+"Crits"
+"<right>"
+"SRM 2",1,0
+"<left>"
+"SRM 2",1,0
+"<turret>"
+"ER Large Laser",3,0
+"ER Large Laser",3,0
+"LRM 15",4,0
+"LRM 15",4,0
+"<body>"
+"Ammo LRM 15",5,1
+"Ammo SRM 2",2,1
+"ECM Suite",6,1

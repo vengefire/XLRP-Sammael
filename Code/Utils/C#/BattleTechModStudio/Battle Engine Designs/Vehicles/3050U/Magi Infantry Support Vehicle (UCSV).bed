@@ -1,0 +1,40 @@
+"Name","Magi Infantry Support Vehicle (UCSV)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",831
+"Tons",70
+"Year","3068"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","Light",5,"5/8/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",152
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",44,43,40,43,0
+"Equips",6
+"3","Medium Laser","Energy"
+"1","Machine Gun Array (4)","Ballistic"
+"3","Half","Ammo"
+"1","CASE","Miscellaneous"
+"1","Improved C3 Computer","Electronics"
+"12","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Medium Laser",1,0
+"Machine Gun Array (4)",2,0
+"<right>"
+"Medium Laser",1,0
+"<left>"
+"Medium Laser",1,0
+"<body>"
+"CASE",4,1
+"Ammo Machine Gun Array (4): Half",3,1
+"Improved C3 Computer",5,1
+"Infantry Compartment",6,1

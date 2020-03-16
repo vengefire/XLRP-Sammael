@@ -1,0 +1,54 @@
+"Name","Neptune Submarine (Hunter-Killer)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Submarine"
+"BV2",948
+"Tons",100
+"Year","3024"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns"
+"Engine","ICE",3,"3/5/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",208
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",66,50,42,50,0
+"Equips",8
+"1","LRT 15","Missile"
+"2","Torpedo","Ammo"
+"4","SRT 6","Missile"
+"3","Torpedo","Ammo"
+"1","SRT 4","Missile"
+"1","Torpedo","Ammo"
+"1","LRT 5","Missile"
+"1","Torpedo","Ammo"
+"Crits"
+"<front>"
+"LRT 15",1,0
+"SRT 6",3,0
+"SRT 6",3,0
+"SRT 6",3,0
+"SRT 6",3,0
+"<rear>"
+"SRT 4",5,0
+"LRT 5",7,0
+"<body>"
+"Ammo LRT 15: Torpedo",2,1
+"Ammo LRT 5: Torpedo",8,1
+"Ammo SRT 4: Torpedo",6,1
+"Ammo SRT 6: Torpedo",4,1

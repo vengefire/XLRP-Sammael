@@ -1,0 +1,42 @@
+"Name","Gladius Medium Hover Tank Mk II"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",638
+"Tons",40
+"Year","3073"
+"Era","Jihad","(3068-3085)"
+"Factions","Periphery","Marian Hegemony","Taurian Concordat"
+"Era","Early Republic","(3086-3100)"
+"Factions","Periphery","Marian Hegemony","Taurian Concordat"
+"Era","Late Republic","(3101-3130)"
+"Factions","Periphery","Marian Hegemony","Taurian Concordat"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Periphery","Marian Hegemony","Taurian Concordat"
+"Engine","ICE",8,"8/12/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",96
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",30,24,18,24,0
+"Equips",5
+"1","Light AC/5","Ballistic"
+"2","Standard","Ammo"
+"1","Machine Gun Array (Light 4)","Ballistic"
+"1","Half","Ammo"
+"4","Rocket Launcher 15","Missile"
+"Crits"
+"<front>"
+"Light AC/5",1,0
+"Machine Gun Array (Light 4)",3,0
+"Rocket Launcher 15",5,0
+"Rocket Launcher 15",5,0
+"<rear>"
+"Rocket Launcher 15",5,0
+"Rocket Launcher 15",5,0
+"<body>"
+"Ammo Light AC/5",2,1
+"Ammo Machine Gun Array (Light 4): Half",4,1

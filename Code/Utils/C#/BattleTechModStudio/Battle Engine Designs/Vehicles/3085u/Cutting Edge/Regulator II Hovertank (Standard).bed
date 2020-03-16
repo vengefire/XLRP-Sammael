@@ -1,0 +1,32 @@
+"Name","Regulator II Hovertank (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1426
+"Tons",50
+"Year","3076"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Capellan Confederation","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Capellan Confederation","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Capellan Confederation","Republic of the Sphere"
+"Engine","XL",10,"10/15/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",136
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",38,33,30,33,34
+"Equips",2
+"1","Gauss Rifle","Ballistic"
+"2","Standard","Ammo"
+"Crits"
+"<turret>"
+"Gauss Rifle",1,0
+"<body>"
+"Ammo Gauss Rifle",2,1

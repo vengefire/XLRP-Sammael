@@ -1,0 +1,42 @@
+"Name","Nacon Armored Scout (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",690
+"Tons",20
+"Year","3096"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Jade Falcon"
+"Factions","Mercenary","Mercenary"
+"Factions","Other","Unique"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Jade Falcon","Clan Sea Fox"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Republic of the Sphere"
+"Factions","IS Clan","Clan Jade Falcon","Clan Sea Fox"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",10,"10/15/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",80
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",44,21,10,21,0
+"Equips",4
+"1","ATM 6","Missile"
+"2","Standard","Ammo"
+"2","Machine Gun (Light)","Ballistic"
+"1","Half","Ammo"
+"Crits"
+"<front>"
+"ATM 6",1,0
+"Machine Gun (Light)",3,0
+"Machine Gun (Light)",3,0
+"<body>"
+"Ammo Machine Gun (Light): Half",4,1
+"Ammo ATM 6",2,1

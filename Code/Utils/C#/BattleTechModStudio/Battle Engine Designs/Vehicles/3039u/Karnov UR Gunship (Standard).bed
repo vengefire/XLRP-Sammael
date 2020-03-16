@@ -1,0 +1,46 @@
+"Name","Karnov UR Gunship (Standard)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","VTOL"
+"BV2",221
+"Tons",30
+"Year","3039"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League","Lyran Commonwealth"
+"Factions","Periphery","Outworlds Alliance"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance","Lyran Commonwealth"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Free Rasalhague Republic","Free Worlds League","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Free Worlds League (Regulan Fiefs)","Free Worlds League (Tamarind-Abbey District)"
+"Factions","Periphery","Filtvelt Coalition"
+"Engine","ICE",11,"11/17/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",24
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",6,5,6,5,2
+"Equips",2
+"8","Machine Gun","Ballistic"
+"4","Half","Ammo"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<right>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<rear>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<left>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<body>"
+"Ammo Machine Gun: Half",2,1

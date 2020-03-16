@@ -1,0 +1,30 @@
+"Name","Nightshade ECM VTOL (Light PPC)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","VTOL"
+"BV2",490
+"Tons",25
+"Year","3069"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","Fusion",12,"12/18/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",40
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",13,10,9,10,2
+"Equips",3
+"1","Light PPC","Energy"
+"1","Guardian ECM Suite","Electronics"
+"1","Improved C3 Computer","Electronics"
+"Crits"
+"<front>"
+"Light PPC",1,0
+"<body>"
+"Guardian ECM Suite",2,1
+"Improved C3 Computer",3,1

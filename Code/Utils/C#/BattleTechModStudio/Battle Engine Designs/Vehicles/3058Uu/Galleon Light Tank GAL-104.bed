@@ -1,0 +1,36 @@
+"Name","Galleon Light Tank GAL-104"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",779
+"Tons",30
+"Year","3066"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Era","Late Republic","(3101-3130)"
+"Factions","Other","Extinct"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Other","Extinct"
+"Engine","XL",7,"7/11/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Ferro-Fibrous",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",28,20,19,20,29
+"Equips",3
+"1","ER Large Laser","Energy"
+"1","Improved C3 Computer","Electronics"
+"1","Targeting Computer","Electronics"
+"Crits"
+"<turret>"
+"ER Large Laser",1,0
+"<body>"
+"Improved C3 Computer",2,1
+"Targeting Computer",3,1

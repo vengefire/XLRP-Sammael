@@ -1,0 +1,46 @@
+"Name","Patton Tank (Ultra)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1160
+"Tons",65
+"Year","3062"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns","Lyran Alliance"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Free Worlds League (Regulan Fiefs)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Periphery","Filtvelt Coalition"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Ferro-Fibrous",208
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",51,46,38,46,51
+"Equips",5
+"3","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"1","Ultra AC/10","Ballistic"
+"3","Standard","Ammo"
+"2","Medium Laser","Energy"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<rear>"
+"Machine Gun",1,0
+"<turret>"
+"Ultra AC/10",3,0
+"Medium Laser",5,0
+"Medium Laser",5,0
+"<body>"
+"Ammo Ultra AC/10",4,1
+"Ammo Machine Gun: Half",2,1

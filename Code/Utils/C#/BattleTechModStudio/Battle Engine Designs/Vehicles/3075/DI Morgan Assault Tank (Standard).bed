@@ -1,0 +1,41 @@
+"Name","DI Morgan Assault Tank (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1390
+"Tons",100
+"Year","3073"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Mercenary","Mercenary"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",45
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",168
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",57,41,28,41,41
+"Equips",3
+"2","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"3","ER PPC","Energy"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"Machine Gun",1,0
+"<turret>"
+"ER PPC",3,0
+"ER PPC",3,0
+"ER PPC",3,0
+"<body>"
+"Ammo Machine Gun: Half",2,1

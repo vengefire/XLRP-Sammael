@@ -1,0 +1,55 @@
+"Name","Goblin Medium Tank (SRM)"
+"Tech","IS"
+"Rules","Intro"
+"Chassis","Tracked"
+"BV2",647
+"Tons",45
+"Year","2570"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Lyran Commonwealth"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Capellan Confederation","Draconis Combine","Federated Suns","Lyran Commonwealth","St. Ives Compact"
+"Factions","Periphery","Outworlds Alliance"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Lyran Alliance","Lyran Commonwealth","St. Ives Compact","Word of Blake"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Commonwealth","Federated Suns","Free Rasalhague Republic","Lyran Alliance","St. Ives Compact","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Comstar","Draconis Combine","Federated Suns","Lyran Alliance","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns"
+"Factions","Periphery","Filtvelt Coalition"
+"Engine","ICE",4,"4/6/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Standard",128
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",30,24,20,24,30
+"Equips",5
+"1","Machine Gun","Ballistic"
+"1","Half","Ammo"
+"3","SRM 6","Missile"
+"4","Standard","Ammo"
+"2","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"Machine Gun",1,0
+"<turret>"
+"SRM 6",3,0
+"SRM 6",3,0
+"SRM 6",3,0
+"<body>"
+"Ammo SRM 6",4,1
+"Ammo Machine Gun: Half",2,1
+"Infantry Compartment",5,1

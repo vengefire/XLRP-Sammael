@@ -1,0 +1,59 @@
+"Name","Alacorn Heavy Tank Mk VI"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Tracked"
+"BV2",1850
+"Tons",95
+"Year","2590"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Comstar"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Comstar"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance","Lyran Commonwealth","Word of Blake"
+"Factions","IS Clan","Clan Wolf (in Exile)"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance","Word of Blake"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Mercenary","Mercenary","Wolf's Dragoons"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Capellan Confederation","Comstar","Draconis Combine","Federated Suns","Lyran Alliance","Word of Blake"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat","Clan Wolf (in Exile)"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Diamond Shark","Clan Wolf","Clan Wolf (in Exile)"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Sea Fox","Clan Wolf","Clan Wolf (in Exile)"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Sea Fox","Clan Wolf (in Exile)"
+"Engine","XL",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",208
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",50,40,28,40,50
+"Equips",2
+"3","Gauss Rifle","Ballistic"
+"5","Standard","Ammo"
+"Crits"
+"<turret>"
+"Gauss Rifle",1,0
+"Gauss Rifle",1,0
+"Gauss Rifle",1,0
+"<body>"
+"Ammo Gauss Rifle",2,1

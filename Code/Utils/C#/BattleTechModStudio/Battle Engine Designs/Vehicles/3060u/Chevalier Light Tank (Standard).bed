@@ -1,0 +1,55 @@
+"Name","Chevalier Light Tank (Standard)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",668
+"Tons",35
+"Year","2690"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Comstar","Inner Sphere General"
+"Factions","Periphery","Periphery General"
+"Factions","Mercenary","Mercenary"
+"Era","Late Succession War - LosTech","(2901-3019)"
+"Factions","Inner Sphere","Comstar"
+"Era","Late Succession War - Renaissance","(3020-3049)"
+"Factions","Inner Sphere","Comstar"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Inner Sphere","Comstar","Draconis Combine","Word of Blake"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Comstar","Draconis Combine","Word of Blake"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Comstar","Draconis Combine","Word of Blake"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat","Clan Sea Fox"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Free Worlds League (Rim Commonality)","Free Worlds League (Tamarind-Abbey District)","Lyran Commonwealth","Republic of the Sphere"
+"Factions","IS Clan","Clan Nova Cat","Clan Sea Fox"
+"Engine","Fusion",6,"6/9/0"
+"Sinks","Single",12
+"Internal","Standard"
+"Armor","Standard",104
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",26,20,16,20,22
+"Equips",3
+"2","Streak SRM 2","Missile"
+"1","Standard","Ammo"
+"1","ER Large Laser","Energy"
+"Crits"
+"<front>"
+"Streak SRM 2",1,0
+"Streak SRM 2",1,0
+"<turret>"
+"ER Large Laser",3,0
+"<body>"
+"Ammo Streak SRM 2",2,1

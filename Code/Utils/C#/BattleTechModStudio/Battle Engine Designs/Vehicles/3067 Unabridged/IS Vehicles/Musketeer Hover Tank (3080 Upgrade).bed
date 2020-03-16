@@ -1,0 +1,39 @@
+"Name","Musketeer Hover Tank (3080 Upgrade)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",1114
+"Tons",50
+"Year","3080"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Federated Suns"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Federated Suns","Republic of the Sphere"
+"Engine","Fusion",8,"8/12/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",128
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",38,32,22,32,34
+"Equips",5
+"1","TAG","Electronics"
+"1","Rotary AC/5","Ballistic"
+"3","Standard","Ammo"
+"1","CASE","Miscellaneous"
+"8","Infantry Compartment","Miscellaneous"
+"Crits"
+"<front>"
+"TAG",1,0
+"<turret>"
+"Rotary AC/5",2,0
+"<body>"
+"CASE",4,0
+"Ammo Rotary AC/5",3,1
+"Infantry Compartment",5,1

@@ -1,0 +1,44 @@
+"Name","Fortune Wheeled Assault Vehicle (C3M)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",1178
+"Tons",80
+"Year","3077"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Lyran Alliance"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Lyran Commonwealth","Republic of the Sphere"
+"Engine","Fusion",3,"3/5/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Standard",224
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",50,45,35,45,49
+"Equips",8
+"1","LB 20-X AC","Ballistic"
+"2","Cluster","Ammo"
+"2","Standard","Ammo"
+"1","LB 10-X AC","Ballistic"
+"1","Cluster","Ammo"
+"1","Standard","Ammo"
+"1","C3 Computer (Master)","Electronics"
+"1","CASE","Miscellaneous"
+"Crits"
+"<turret>"
+"LB 20-X AC",1,0
+"LB 10-X AC",4,0
+"<body>"
+"Ammo LB 20-X AC",3,1
+"Ammo LB 20-X AC: Cluster",2,1
+"Ammo LB 10-X AC",6,1
+"Ammo LB 10-X AC: Cluster",5,1
+"C3 Computer (Master)",7,1
+"CASE",8,0

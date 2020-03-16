@@ -1,0 +1,38 @@
+"Name","Scimitar Mk II HCV (3136 Upgrade)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Hover"
+"BV2",783
+"Tons",35
+"Year","3137"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Draconis Combine","Free Worlds League"
+"Factions","IS Clan","Clan Nova Cat"
+"Factions","Mercenary","Mercenary"
+"Engine","Fusion",10,"10/15/0"
+"Sinks","Single",10
+"Internal","Standard"
+"Armor","Heavy Ferro-Fibrous",88
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",31,21,15,21,21
+"Equips",5
+"4","Small Laser","Energy"
+"1","Light PPC","Energy"
+"1","SRM 4","Missile"
+"1","Standard","Ammo"
+"1","Guardian ECM Suite","Electronics"
+"Crits"
+"<front>"
+"Small Laser",1,0
+"Small Laser",1,0
+"Small Laser",1,0
+"Small Laser",1,0
+"<turret>"
+"Light PPC",2,0
+"SRM 4",3,0
+"<body>"
+"Ammo SRM 4",4,1
+"Guardian ECM Suite",5,1

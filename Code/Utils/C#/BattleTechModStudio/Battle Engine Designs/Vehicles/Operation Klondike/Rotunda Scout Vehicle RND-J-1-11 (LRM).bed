@@ -1,0 +1,33 @@
+"Name","Rotunda Scout Vehicle RND-J-1-11 (LRM)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",303
+"Tons",20
+"Year","2801"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Other","Extinct"
+"Era","Civil War","(3062-3067)"
+"Factions","Other","Extinct"
+"Era","Jihad","(3068-3085)"
+"Factions","Other","Extinct"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","ICE",8,"8/12/0"
+"Sinks","Single",0
+"Internal","Standard"
+"Armor","Ferro-Fibrous",29
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#FALSE#
+"ArmorVals",9,9,5,9,0
+"Equips",2
+"2","LRM 5","Missile"
+"1","Standard","Ammo"
+"Crits"
+"<front>"
+"LRM 5",1,0
+"LRM 5",1,0
+"<body>"
+"Ammo LRM 5",2,1

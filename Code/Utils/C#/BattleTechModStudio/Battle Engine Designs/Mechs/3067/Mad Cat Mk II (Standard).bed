@@ -1,0 +1,125 @@
+"Name","Mad Cat Mk II (Standard)"
+"Tech","Clan"
+"Rules","Standard"
+"Chassis","Biped"
+"BV2",3135
+"Tons",90
+"Year","3062"
+"Era","Civil War","(3062-3067)"
+"Factions","Inner Sphere","Draconis Combine","Federated Commonwealth","Federated Suns","Lyran Alliance"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat"
+"Era","Jihad","(3068-3085)"
+"Factions","Inner Sphere","Draconis Combine","Federated Suns","Lyran Alliance"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Home Clan","Clan Ice Hellion"
+"Era","Early Republic","(3086-3100)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Diamond Shark","Clan Nova Cat","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Late Republic","(3101-3130)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Nova Cat","Clan Sea Fox","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Era","Dark Ages","(3131-3999)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Factions","IS Clan","Clan Nova Cat","Clan Sea Fox","Clan Wolf","Clan Wolf (in Exile)"
+"Factions","Mercenary","Kell Hounds","Mercenary","Wolf's Dragoons"
+"Engine","XL",4,"4/6/3"
+"Sinks","Double",14
+"Internal","Endo-Steel"
+"Armor","Ferro-Fibrous",208
+"Cockpit","Standard"
+"Gyro","Standard"
+"JumpJets","Standard",3
+"LArmAct","No Lower Arm"
+"RArmAct","No Lower Arm"
+"LLegAct","Full Leg"
+"RLegAct","Full Leg"
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",27,27,26,26,38,8,8,12,9,34,34
+"Equips",5
+"2","Gauss Rifle","Ballistic"
+"4","Standard","Ammo"
+"4","ER Medium Laser","Energy"
+"2","LRM 10","Missile"
+"2","Standard","Ammo"
+"Crits"
+"Shoulder",-8,1,0,2,1
+"Upper Arm Actuator",-8,1,0,2,1
+"Gauss Rifle",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"ER Medium Laser",3,0,0,2,0
+"ER Medium Laser",3,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"LRM 10",4,0,0,2,0
+"Ammo LRM 10",5,0,0,2,0
+"Ammo Gauss Rifle",2,0,0,2,0
+"Ammo Gauss Rifle",2,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"ER Medium Laser",3,0,0,2,0
+"ER Medium Laser",3,0,0,2,0
+"Jump Jet",-7,0,0,2,0
+"LRM 10",4,0,0,2,0
+"Ammo LRM 10",5,0,0,2,0
+"Ammo Gauss Rifle",2,0,0,2,0
+"Ammo Gauss Rifle",2,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+"Shoulder",-9,1,0,2,1
+"Upper Arm Actuator",-9,1,0,2,1
+"Gauss Rifle",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+":ditto:",1,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+" -",0,0,0,2,0
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Gyro",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+":ditto:",-6,0,0,2,1
+"XL Engine",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+":ditto:",-1,0,0,2,1
+"Jump Jet",-7,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Life Support",-5,1,0,2,1
+"Sensors",-5,1,0,2,1
+"Cockpit",-5,1,0,2,1
+"Ferro-Fibrous",-4,0,0,2,0
+"Sensors",-5,1,0,2,1
+"Life Support",-5,1,0,2,1
+"Hip",-10,1,0,2,1
+"Upper Leg Actuator",-10,1,0,2,1
+"Lower Leg Actuator",-10,1,0,2,1
+"Foot Actuator",-10,1,0,2,1
+"Endo-Steel",-3,0,0,2,0
+"Endo-Steel",-3,0,0,2,0
+"Hip",-11,1,0,2,1
+"Upper Leg Actuator",-11,1,0,2,1
+"Lower Leg Actuator",-11,1,0,2,1
+"Foot Actuator",-11,1,0,2,1
+"Ferro-Fibrous",-4,0,0,2,0
+"Ferro-Fibrous",-4,0,0,2,0

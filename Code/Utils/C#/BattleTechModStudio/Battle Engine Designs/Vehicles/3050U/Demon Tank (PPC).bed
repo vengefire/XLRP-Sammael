@@ -1,0 +1,41 @@
+"Name","Demon Tank (PPC)"
+"Tech","IS"
+"Rules","Standard"
+"Chassis","Wheeled"
+"BV2",836
+"Tons",60
+"Year","2729"
+"Era","Star League","(2571-2780)"
+"Factions","Inner Sphere","Terran Hegemony"
+"Factions","Periphery","Rim Worlds Republic - Terran Corps"
+"Factions","Other","Star League Regular","Star League Royal"
+"Era","Early Succession War","(2781-2900)"
+"Factions","Inner Sphere","Inner Sphere General"
+"Era","Clan Invasion","(3050-3061)"
+"Factions","Other","Extinct"
+"Era","Civil War","(3062-3067)"
+"Factions","Other","Extinct"
+"Era","Jihad","(3068-3085)"
+"Factions","Other","Extinct"
+"Era","Early Republic","(3086-3100)"
+"Factions","Other","Extinct"
+"Engine","Fusion",4,"4/6/0"
+"Sinks","Single",20
+"Internal","Standard"
+"Armor","Standard",152
+"Cockpit","Standard"
+"JumpJets","None",0
+"Omni",0
+"Rules",0,#TRUE#
+"ArmorVals",48,28,19,28,29
+"Equips",3
+"2","PPC","Energy"
+"1","CASE","Miscellaneous"
+"1","Cargo, Standard","Miscellaneous"
+"Crits"
+"<turret>"
+"PPC",1,0
+"PPC",1,0
+"<body>"
+"CASE",2,0
+"Cargo, Standard",3,1

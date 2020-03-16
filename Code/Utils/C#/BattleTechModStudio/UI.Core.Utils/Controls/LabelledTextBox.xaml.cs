@@ -34,20 +34,20 @@ namespace UI.Core.Utils.Controls
 
         public string Label
         {
-            get => (string) GetValue(LabelledTextBox.LabelProperty);
-            set => SetValue(LabelledTextBox.LabelProperty, value);
+            get => (string) GetValue(LabelProperty);
+            set => SetValue(LabelProperty, value);
         }
 
         public string Text
         {
-            get => (string) GetValue(LabelledTextBox.TextProperty);
-            set => SetValue(LabelledTextBox.TextProperty, value);
+            get => (string) GetValue(TextProperty);
+            set => SetValue(TextProperty, value);
         }
 
         public bool IsReadOnly
         {
-            get => (bool) GetValue(LabelledTextBox.ReadOnlyProperty);
-            set => SetValue(LabelledTextBox.ReadOnlyProperty, value);
+            get => (bool) GetValue(ReadOnlyProperty);
+            set => SetValue(ReadOnlyProperty, value);
         }
     }
 }
