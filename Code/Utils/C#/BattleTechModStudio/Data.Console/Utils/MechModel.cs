@@ -119,6 +119,7 @@ namespace Data.Console.Utils
                 Extinct = parts[6].Contains("Extinct"),
                 Selected = false
             };
+            
             var name = mech.Name;
             var heroIndex = name.IndexOf('(');
             var delim = ")";

@@ -28,12 +28,12 @@ namespace BattleEngineParser.Models
                         {
                             s = s.Replace("(", "");
                             s = s.Replace(")", "");
-                            HeroDesignation += $" {s}";
+                            HeroDesignation.Add(s);
                         }
                         else if (s.Contains("'"))
                         {
                             s = s.Replace("'", "");
-                            HeroDesignation += $" {s}";
+                            HeroDesignation.Add(s);
                         }
                         else
                         {
@@ -63,12 +63,12 @@ namespace BattleEngineParser.Models
                         {
                             s = s.Replace("(", "");
                             s = s.Replace(")", "");
-                            HeroDesignation += $" {s}";
+                            HeroDesignation.Add(s);
                         }
                         else if (s.Contains("'"))
                         {
                             s = s.Replace("'", "");
-                            HeroDesignation += $" {s}";
+                            HeroDesignation.Add(s);
                         }
                         else
                         {
@@ -82,7 +82,7 @@ namespace BattleEngineParser.Models
         public string InnerSphereChassisDesignation { get; set; }
         public string FilthyClanChassisDesignation { get; set; }
         public string VariantDesignation { get; set; }
-        public string HeroDesignation { get; set; }
+        public List<string> HeroDesignation { get; set; } = new List<string>();
         public TechLevel TechLevel { get; set; }
         public RulesLevel RulesLevel { get; set; }
         public ChassisType ChassisType { get; set; }
@@ -95,6 +95,7 @@ namespace BattleEngineParser.Models
         public string StructureType { get; set; }
         public string ArmorType { get; set; }
         public bool IsOmni { get; set; }
+        public FileInfo FileInfo { get; set; }
 
         public static MechDesign MechDesignFromFile(string filePath)
         {
@@ -144,6 +145,7 @@ namespace BattleEngineParser.Models
                 }
             }
 
+            mechDesign.FileInfo = new FileInfo(filePath);
             return mechDesign;
         }
     }
